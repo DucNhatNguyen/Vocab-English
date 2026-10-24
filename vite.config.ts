@@ -19,7 +19,7 @@ export default defineConfig({
         // 'iife' (classic worker) is required: importScripts() is not allowed in ES-module workers,
         // and the OneSignal SDK worker is loaded with importScripts().
         rollupFormat: 'iife',
-        globPatterns: ['**/*.{js,css,html,svg,png,ico,webmanifest,woff,woff2}'],
+        globPatterns: ['**/*.{js,css,html,svg,png,ico,webmanifest,woff2}'],
       },
       manifest: {
         name: 'Từ Ngày',

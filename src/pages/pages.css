@@ -1,0 +1,196 @@
+/* Page-level layout and the Bộ từ / Chi tiết từ / Tìm kiếm screens. */
+
+.page {
+  padding: 16px;
+}
+
+.muted {
+  color: var(--ink-muted);
+}
+
+.label {
+  margin-bottom: 6px;
+  color: var(--ink-muted);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.hint {
+  margin: 12px 4px;
+  font-size: 0.9375rem;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding-block: 40px;
+  text-align: center;
+}
+
+.empty__title {
+  font-size: 1.0625rem;
+  font-weight: 500;
+}
+
+/* Decks */
+
+.group + .group {
+  margin-top: 8px;
+}
+
+.group__title {
+  margin: 16px 4px 8px;
+  color: var(--ink-muted);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.deck-row__main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.deck-row__name {
+  color: var(--purple);
+  font-weight: 600;
+}
+
+.deck-row__meta,
+.deck-row__count {
+  color: var(--ink-muted);
+  font-size: 0.8125rem;
+}
+
+.deck-row__count {
+  flex: none;
+  text-align: right;
+}
+
+.deck-row__count strong {
+  color: var(--ink);
+  font-size: 0.9375rem;
+}
+
+.deck-summary {
+  margin: 0 4px 12px;
+  color: var(--ink-muted);
+  font-size: 0.9375rem;
+}
+
+.deck-summary strong {
+  color: var(--ink);
+}
+
+/* Word detail */
+
+.word-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 24px;
+}
+
+.word-detail__emoji {
+  margin-bottom: 8px;
+  font-size: 4.5rem;
+  line-height: 1.1;
+}
+
+.word-detail__word {
+  color: var(--purple);
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+.word-detail__ipa {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 10px;
+  margin-top: 4px;
+  color: var(--ink-muted);
+  font-size: 1.0625rem;
+}
+
+.word-detail__speak {
+  margin-top: 20px;
+}
+
+.word-detail__section {
+  align-self: stretch;
+  margin-top: 28px;
+}
+
+.word-detail__meaning {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.example {
+  padding: 2px 0 2px 14px;
+  border-left: 3px solid var(--purple);
+}
+
+.example__en {
+  font-size: 1.0625rem;
+}
+
+.example__vi {
+  margin-top: 4px;
+  color: var(--ink-muted);
+}
+
+.icon-btn--on {
+  color: var(--purple);
+}
+
+/* Search */
+
+.searchbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.searchbox__icon {
+  position: absolute;
+  left: 14px;
+  color: var(--ink-muted);
+  pointer-events: none;
+}
+
+.searchbox__input {
+  width: 100%;
+  min-height: 48px;
+  padding: 0 48px 0 44px;
+  font-size: 1rem; /* 16px: avoids the iOS focus zoom */
+  background: var(--surface);
+  border: 1.5px solid var(--ink-muted);
+  border-radius: var(--radius);
+  appearance: none;
+}
+
+.searchbox__input::placeholder {
+  color: var(--ink-muted);
+  opacity: 1;
+}
+
+.searchbox__input:focus {
+  border-color: var(--purple);
+  outline: none;
+}
+
+.searchbox__clear {
+  position: absolute;
+  right: 2px;
+}

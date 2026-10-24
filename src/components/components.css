@@ -1,0 +1,192 @@
+/* Shared components: buttons, chips, ticks, speak buttons, list rows. */
+
+.icon-btn {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  color: var(--purple);
+  background: transparent;
+  border: 0;
+  border-radius: 50%;
+}
+
+.icon-btn:active {
+  background: var(--sunk);
+}
+
+.icon-btn:disabled {
+  color: var(--ink-muted);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 44px;
+  min-height: 48px;
+  padding: 0 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  border: 2px solid var(--purple);
+  border-radius: var(--radius);
+}
+
+.btn--primary {
+  color: var(--on-purple);
+  background: var(--purple);
+}
+
+.btn--ghost {
+  color: var(--purple);
+  background: transparent;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .btn {
+    transition: transform 80ms ease-out;
+  }
+}
+
+.chip {
+  display: inline-block;
+  padding: 0 8px;
+  color: var(--ink-muted);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+}
+
+.chip--mine {
+  color: var(--purple);
+  border-color: var(--purple);
+}
+
+/* Level ticks: red-pen checks, one per level */
+
+.ticks {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  color: var(--red);
+}
+
+.ticks svg {
+  margin-right: -2px;
+}
+
+/* Speak buttons */
+
+.speak {
+  display: flex;
+  gap: 10px;
+}
+
+.speak__btn {
+  min-height: 48px;
+}
+
+.speak--compact .speak__btn {
+  width: 48px;
+  padding: 0;
+  border-radius: 50%;
+}
+
+/* Ruled list: rows separated by hairlines inside one flat sheet */
+
+.sheet {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.ruled > li + li {
+  border-top: 1px solid var(--rule);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 56px;
+  padding: 8px 12px 8px 14px;
+}
+
+.row:active {
+  background: var(--sunk);
+}
+
+.row__icon {
+  flex: none;
+  color: var(--purple);
+}
+
+.row__label {
+  flex: 1;
+  min-width: 0;
+  font-weight: 500;
+}
+
+.row__chevron {
+  flex: none;
+  color: var(--ink-muted);
+}
+
+/* Word row */
+
+.word-row {
+  padding-block: 10px;
+}
+
+.word-row__emoji {
+  flex: none;
+  width: 32px;
+  font-size: 1.625rem;
+  line-height: 1;
+  text-align: center;
+}
+
+.word-row__main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+}
+
+.word-row__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 8px;
+}
+
+.word-row__word {
+  color: var(--purple);
+  font-weight: 600;
+}
+
+.word-row__ipa {
+  color: var(--ink-muted);
+  font-size: 0.8125rem;
+}
+
+.word-row__meaning {
+  max-width: 100%;
+  font-size: 0.9375rem;
+  overflow-wrap: anywhere;
+}
