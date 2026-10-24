@@ -2,9 +2,9 @@ import { useLiveQuery } from 'dexie-react-hooks'
 import { useMemo } from 'react'
 import { getWord } from '../data/index.ts'
 import type { Word } from '../data/types.ts'
-import { CUSTOM_WORD_ID_PREFIX } from '../db/customWords.ts'
 import { db } from '../db/db.ts'
 import type { CardProgress, CustomWord } from '../db/types.ts'
+import { getWordById, isCustomWordId } from '../db/words.ts'
 
 const NO_PROGRESS: CardProgress[] = []
 const EMPTY_PROGRESS = new Map<string, CardProgress>()
@@ -33,9 +33,9 @@ export function useCustomWords(): CustomWord[] {
  * undefined while loading, null when it does not exist.
  */
 export function useWord(wordId: string): Word | null | undefined {
-  const isCustom = wordId.startsWith(CUSTOM_WORD_ID_PREFIX)
+  const isCustom = isCustomWordId(wordId)
   const custom = useLiveQuery(
-    async () => (isCustom ? ((await db.customWords.get(wordId)) ?? null) : null),
+    async () => (isCustom ? ((await getWordById(wordId)) ?? null) : null),
     [wordId, isCustom],
   )
   if (!isCustom) return getWord(wordId) ?? null

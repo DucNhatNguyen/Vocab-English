@@ -2,6 +2,7 @@ import { ChevronRight } from 'lucide-react'
 import { Link } from 'react-router'
 import { useProgressMap } from '../app/hooks.ts'
 import { paths } from '../app/paths.ts'
+import { useSettings } from '../app/useSettings.ts'
 import PageHeader from '../components/PageHeader.tsx'
 import { decks } from '../data/index.ts'
 import type { Deck } from '../data/index.ts'
@@ -23,6 +24,7 @@ const groups = groupByTopic(decks)
 
 export default function Decks() {
   const progress = useProgressMap()
+  const { activeDeckIds } = useSettings()
 
   return (
     <>
@@ -41,6 +43,9 @@ export default function Decks() {
                         <span className="deck-row__name">{deck.name}</span>
                         <span className="deck-row__meta">
                           {deck.level} · {deck.wordIds.length} từ
+                          {activeDeckIds.includes(deck.id) && (
+                            <span className="chip chip--mine">Đang học</span>
+                          )}
                         </span>
                       </span>
                       <span className="deck-row__count">

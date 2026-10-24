@@ -1,0 +1,264 @@
+/* Study session frame (lesson, review) and multiple-choice questions with red-pen feedback. */
+
+/* Frame: top bar, scrolling body, fixed bottom bar */
+
+.session {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+.session__top {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: calc(52px + env(safe-area-inset-top));
+  padding: env(safe-area-inset-top) 16px 0 4px;
+  background: var(--paper);
+  border-bottom: 1px solid var(--rule);
+}
+
+.session__progress {
+  flex: 1;
+  height: 8px;
+  overflow: hidden;
+  background: var(--sunk);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+}
+
+.session__progress-fill {
+  height: 100%;
+  background: var(--purple);
+  border-radius: 999px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .session__progress-fill {
+    transition: width 240ms ease-out;
+  }
+}
+
+.session__count {
+  min-width: 40px;
+  color: var(--ink-muted);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.session__body {
+  flex: 1;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  /* clear of the fixed bottom bar (12 + 52 + 12) plus the home indicator */
+  padding: 16px 16px calc(88px + env(safe-area-inset-bottom));
+}
+
+.session__bar {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 20;
+  padding: 0 env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  background: var(--surface);
+  border-top: 1px solid var(--rule);
+}
+
+.session__bar-inner {
+  display: flex;
+  gap: 12px;
+  max-width: 640px;
+  min-height: 76px;
+  margin: 0 auto;
+  padding: 12px 16px;
+}
+
+.session__bar .btn {
+  flex: 1;
+  min-height: 52px;
+}
+
+.session__bar .btn--secondary {
+  flex: 0 0 auto;
+}
+
+/* Dialog */
+
+.dialog {
+  width: min(320px, calc(100vw - 48px));
+  padding: 20px;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+}
+
+.dialog::backdrop {
+  background: rgba(16, 12, 24, 0.55);
+}
+
+.dialog__title {
+  color: var(--purple);
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.dialog__message {
+  margin-top: 8px;
+  color: var(--ink-muted);
+}
+
+.dialog__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Multiple choice */
+
+.choices {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.choice-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.choice {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 56px;
+  padding: 12px 52px 12px 16px;
+  line-height: 1.4;
+  text-align: left;
+  background: var(--surface);
+  border: 1.5px solid var(--ink-muted);
+  border-radius: var(--radius);
+}
+
+.choice:not(:disabled):active {
+  background: var(--sunk);
+}
+
+.choice:disabled {
+  cursor: default;
+}
+
+.choice__text {
+  display: block;
+  overflow-wrap: anywhere;
+}
+
+/* The right answer once feedback shows */
+.choice--right {
+  border-color: var(--purple);
+  border-width: 2px;
+}
+
+.choice--dim {
+  color: var(--ink-muted);
+  border-color: var(--rule);
+}
+
+/* Red pen: tick for a correct pick, strike + handwritten answer for a wrong one */
+
+.red-tick {
+  color: var(--red);
+  overflow: visible;
+}
+
+.choice__tick {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 34px;
+  height: 34px;
+  margin-top: -17px;
+}
+
+.struck {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.red-strike {
+  position: absolute;
+  height: 10px;
+  margin-top: -5px;
+  color: var(--red);
+  overflow: visible;
+  pointer-events: none;
+}
+
+.choice-note {
+  padding: 0 4px 0 16px;
+  color: var(--red);
+  font-family: var(--font-hand);
+  font-size: 1.375rem;
+  line-height: 1.3;
+  transform: rotate(-1deg);
+  transform-origin: left center;
+}
+
+.quiz__verdict {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  color: var(--red);
+  font-family: var(--font-hand);
+  font-size: 1.375rem;
+  line-height: 1.3;
+}
+
+.quiz__verdict:not(:empty) {
+  margin-top: 16px;
+}
+
+.quiz__hint {
+  color: var(--ink-muted);
+  font-family: var(--font-ui);
+  font-size: 0.875rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .red-tick path,
+  .red-strike path {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    animation: pen-draw 0.4s ease-out 0.05s forwards;
+  }
+
+  .red-strike path {
+    animation-duration: 0.28s;
+  }
+
+  .choice-note {
+    animation: pen-note 0.3s ease-out 0.25s backwards;
+  }
+
+  @keyframes pen-draw {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  @keyframes pen-note {
+    from {
+      opacity: 0;
+    }
+  }
+}

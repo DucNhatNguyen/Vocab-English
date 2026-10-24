@@ -31,6 +31,21 @@ export async function getSettings(): Promise<Settings> {
   return withDefaults(stored)
 }
 
+/**
+ * Adds `deckId` to `activeDeckIds` (appended, so earlier decks keep priority) or removes it.
+ * Resolves to true when the deck is active afterwards.
+ */
+export async function toggleActiveDeck(deckId: string): Promise<boolean> {
+  return db.transaction('rw', db.settings, async () => {
+    const { activeDeckIds } = await getSettings()
+    const active = !activeDeckIds.includes(deckId)
+    await updateSettings({
+      activeDeckIds: active ? [...activeDeckIds, deckId] : activeDeckIds.filter((id) => id !== deckId),
+    })
+    return active
+  })
+}
+
 /** Merges `partial` into the stored settings and returns the resulting full settings. */
 export async function updateSettings(partial: Partial<Settings>): Promise<Settings> {
   return db.transaction('rw', db.settings, async () => {

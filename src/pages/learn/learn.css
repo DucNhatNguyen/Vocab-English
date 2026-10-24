@@ -1,0 +1,167 @@
+/* Học từ mới: start screen, word card, quick-check header, summary. Session frame and
+   choices live in components/quiz/quiz.css. */
+
+/* Start */
+
+.lesson-start__hero {
+  padding: 24px 20px;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+}
+
+.lesson-start__count {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  color: var(--purple);
+}
+
+.lesson-start__num {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.lesson-start__unit {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.lesson-start__sub {
+  margin-top: 8px;
+  color: var(--ink-muted);
+  font-size: 0.9375rem;
+}
+
+.steps {
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: step;
+}
+
+.steps li {
+  display: flex;
+  gap: 12px;
+  padding: 12px 14px;
+}
+
+.steps li::before {
+  content: counter(step);
+  counter-increment: step;
+  flex: none;
+  width: 24px;
+  color: var(--purple);
+  font-weight: 700;
+  text-align: center;
+}
+
+.steps strong {
+  display: block;
+  font-weight: 600;
+}
+
+.steps span {
+  color: var(--ink-muted);
+  font-size: 0.9375rem;
+}
+
+.lesson-start__go {
+  width: 100%;
+  min-height: 56px;
+  margin-top: 20px;
+  font-size: 1.0625rem;
+}
+
+/* Word card (reuses the .word-detail__* parts of the word detail page) */
+
+.flashcard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 20px 24px;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+}
+
+.flashcard .word-detail__emoji {
+  margin-bottom: 4px;
+  font-size: 4rem;
+}
+
+.flashcard .word-detail__section {
+  margin-top: 24px;
+}
+
+/* Quick check header */
+
+.quiz__head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.quiz__word {
+  flex: 1;
+  min-width: 0;
+  color: var(--purple);
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+.quiz__prompt {
+  margin-bottom: 16px;
+  color: var(--ink-muted);
+}
+
+/* Summary */
+
+.summary__hero {
+  padding: 4px 4px 0;
+}
+
+.summary__count {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  color: var(--purple);
+}
+
+.summary__num {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.summary__unit {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.summary__next {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.summary__next svg {
+  flex: none;
+  color: var(--purple);
+}
+
+.summary__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0 8px;
+}
+
+.summary__actions .btn {
+  min-height: 52px;
+}

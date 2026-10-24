@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { setSoundEffectsEnabled } from '../lib/sfx.ts'
 import { setSpeechSettings } from '../lib/speech.ts'
 import { applyTheme } from '../lib/theme.ts'
 import { useSettingsState } from './useSettings.ts'
@@ -10,6 +11,10 @@ export default function SettingsEffects() {
   useEffect(() => {
     setSpeechSettings(settings)
   }, [settings])
+
+  useEffect(() => {
+    setSoundEffectsEnabled(settings.soundEffects)
+  }, [settings.soundEffects])
 
   useEffect(() => {
     // Skip the defaults shown while loading: they would flash a forced theme back to "system"

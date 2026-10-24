@@ -17,6 +17,12 @@
   text-transform: uppercase;
 }
 
+.text-link {
+  color: var(--purple);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 .hint {
   margin: 12px 4px;
   font-size: 0.9375rem;
@@ -32,6 +38,7 @@
 }
 
 .empty__title {
+  text-wrap: balance;
   font-size: 1.0625rem;
   font-weight: 500;
 }
@@ -63,6 +70,13 @@
   font-weight: 600;
 }
 
+.deck-row__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px 8px;
+}
+
 .deck-row__meta,
 .deck-row__count {
   color: var(--ink-muted);
@@ -83,6 +97,10 @@
   margin: 0 4px 12px;
   color: var(--ink-muted);
   font-size: 0.9375rem;
+}
+
+.deck-toggle {
+  width: 100%;
 }
 
 .deck-summary strong {

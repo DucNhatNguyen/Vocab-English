@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router'
 import DeckDetail from '../pages/DeckDetail.tsx'
 import Decks from '../pages/Decks.tsx'
 import Home from '../pages/Home.tsx'
+import Learn from '../pages/Learn.tsx'
 import NotFound from '../pages/NotFound.tsx'
 import Placeholder from '../pages/Placeholder.tsx'
 import Search from '../pages/Search.tsx'
@@ -10,7 +11,9 @@ import AppLayout from './AppLayout.tsx'
 import SettingsEffects from './SettingsEffects.tsx'
 import './layout.css'
 import '../components/components.css'
+import '../components/quiz/quiz.css'
 import '../pages/pages.css'
+import '../pages/learn/learn.css'
 
 export default function App() {
   return (
@@ -23,7 +26,7 @@ export default function App() {
           <Route path="decks/:deckId" element={<DeckDetail />} />
           <Route path="words/:wordId" element={<WordDetail />} />
           <Route path="search" element={<Search />} />
-          <Route path="learn" element={<Placeholder title="Học" />} />
+          <Route path="learn" element={<Learn />} />
           <Route path="review" element={<Placeholder title="Ôn tập" />} />
           <Route path="notebook" element={<Placeholder title="Sổ tay" />} />
           <Route path="settings" element={<Placeholder title="Cài đặt" />} />
