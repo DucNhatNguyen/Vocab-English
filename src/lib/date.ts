@@ -46,3 +46,18 @@ export function today(): string {
 export function tomorrow(): string {
   return addDays(today(), 1)
 }
+
+const WEEKDAYS_VI = ['Chủ Nhật', 'Thứ Hai', 'Thứ Ba', 'Thứ Tư', 'Thứ Năm', 'Thứ Sáu', 'Thứ Bảy']
+
+/**
+ * Vietnamese label of a local date relative to `todayDate`: "hôm nay", "ngày mai", otherwise
+ * weekday and day/month, e.g. "Thứ Hai, 26/10" (with "/yyyy" when the year differs from today's).
+ */
+export function formatDateVi(date: string, todayDate: string = today()): string {
+  const diff = daysBetween(todayDate, date)
+  if (diff === 0) return 'hôm nay'
+  if (diff === 1) return 'ngày mai'
+  const d = parseLocalDate(date)
+  const year = d.getFullYear() === parseLocalDate(todayDate).getFullYear() ? '' : `/${d.getFullYear()}`
+  return `${WEEKDAYS_VI[d.getDay()]}, ${d.getDate()}/${d.getMonth() + 1}${year}`
+}

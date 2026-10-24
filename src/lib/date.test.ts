@@ -2,6 +2,7 @@ import { afterEach, describe, expect, it, vi } from 'vitest'
 import {
   addDays,
   daysBetween,
+  formatDateVi,
   parseLocalDate,
   today,
   toLocalDateString,
@@ -148,5 +149,34 @@ describe('today / tomorrow', () => {
 
   it('match toLocalDateString of now', () => {
     expect(today()).toBe(toLocalDateString(new Date()))
+  })
+})
+
+describe('formatDateVi', () => {
+  const NOW = '2026-10-24' // a Saturday
+
+  it('says hôm nay and ngày mai for the next two days', () => {
+    expect(formatDateVi('2026-10-24', NOW)).toBe('hôm nay')
+    expect(formatDateVi('2026-10-25', NOW)).toBe('ngày mai')
+  })
+
+  it('writes weekday and day/month otherwise', () => {
+    expect(formatDateVi('2026-10-26', NOW)).toBe('Thứ Hai, 26/10')
+    expect(formatDateVi('2026-10-27', NOW)).toBe('Thứ Ba, 27/10')
+    expect(formatDateVi('2026-10-28', NOW)).toBe('Thứ Tư, 28/10')
+    expect(formatDateVi('2026-10-29', NOW)).toBe('Thứ Năm, 29/10')
+    expect(formatDateVi('2026-10-30', NOW)).toBe('Thứ Sáu, 30/10')
+    expect(formatDateVi('2026-10-31', NOW)).toBe('Thứ Bảy, 31/10')
+    expect(formatDateVi('2026-11-01', NOW)).toBe('Chủ Nhật, 1/11')
+  })
+
+  it('adds the year when it differs from the current one', () => {
+    expect(formatDateVi('2027-01-05', '2026-12-30')).toBe('Thứ Ba, 5/1/2027')
+    expect(formatDateVi('2027-01-01', '2026-12-31')).toBe('ngày mai')
+  })
+
+  it('defaults to the real today', () => {
+    expect(formatDateVi(today())).toBe('hôm nay')
+    expect(formatDateVi(tomorrow())).toBe('ngày mai')
   })
 })

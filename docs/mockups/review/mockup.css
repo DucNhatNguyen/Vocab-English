@@ -1,0 +1,5 @@
+/* Review screen mockup: only toggles which static screen is visible. The look comes from the real
+   CSS files linked in mockup.html. */
+
+[data-screen] { display: none; }
+[data-screen].on { display: block; }

@@ -6,6 +6,7 @@ import {
   answerQuestion,
   answeredCount,
   buildChoices,
+  buildWordChoices,
   createQuizQueue,
   currentQuestion,
   isQuizDone,
@@ -118,6 +119,74 @@ describe('buildChoices', () => {
     expect(a).toEqual(b)
     expect(a).toHaveLength(CHOICE_COUNT)
     expect(buildChoices(target, [target]).length).toBe(CHOICE_COUNT)
+  })
+})
+
+describe('buildWordChoices', () => {
+  const w = (id: string, text: string, pos = 'noun'): Word => ({ ...word(id), word: text, pos })
+  const target = w('t', 'resilient', 'adj')
+
+  it('returns the target plus three other words, exactly one correct', () => {
+    const pool = [target, ...['a', 'b', 'c', 'd', 'e'].map((id) => w(id, id))]
+    for (let seed = 0; seed < 30; seed++) {
+      const choices = buildWordChoices(target, pool, seeded(seed))
+      expect(choices).toHaveLength(CHOICE_COUNT)
+      expect(choices.filter((c) => c.correct)).toEqual([
+        { wordId: 't', text: 'resilient', correct: true },
+      ])
+    }
+  })
+
+  it('prefers the same part of speech and falls back to other kinds', () => {
+    const adjs = ['adj1', 'adj2', 'adj3'].map((id) => w(id, id, 'adj'))
+    const nouns = ['n1', 'n2', 'n3', 'n4'].map((id) => w(id, id, 'noun'))
+    for (let seed = 0; seed < 30; seed++) {
+      const ids = buildWordChoices(target, [...nouns, target, ...adjs], seeded(seed)).map(
+        (c) => c.wordId,
+      )
+      expect(ids.filter((id) => id.startsWith('adj'))).toHaveLength(3)
+    }
+    const topped = buildWordChoices(target, [target, adjs[0], ...nouns], seeded(1))
+    expect(topped).toHaveLength(CHOICE_COUNT)
+    expect(topped.some((c) => c.wordId === 'adj1')).toBe(true)
+  })
+
+  it('never repeats a headword (case and accents ignored) or offers the target twice', () => {
+    const pool = [
+      target,
+      w('copy', 'Resilient', 'adj'), // same headword as the target
+      w('x1', 'Sturdy', 'adj'),
+      w('x2', 'sturdy', 'adj'), // same as x1
+      w('x3', 'fragile', 'adj'),
+      w('x4', 'tough', 'adj'),
+    ]
+    for (let seed = 0; seed < 30; seed++) {
+      const choices = buildWordChoices(target, pool, seeded(seed))
+      const keys = choices.map((c) => normalizeText(c.text))
+      expect(new Set(keys).size).toBe(keys.length)
+      expect(choices.find((c) => c.wordId === 'copy')).toBeUndefined()
+      expect(choices.filter((c) => c.wordId === 't')).toHaveLength(1)
+    }
+  })
+
+  it('returns fewer options only when the pool runs out, and works with an empty pool', () => {
+    const small = buildWordChoices(target, [target, w('a', 'a')], seeded(1))
+    expect(small.map((c) => c.wordId).sort()).toEqual(['a', 't'])
+    expect(buildWordChoices(target, [], seeded(1))).toEqual([
+      { wordId: 't', text: 'resilient', correct: true },
+    ])
+  })
+
+  it('randomises the position of the correct answer and is deterministic per RNG', () => {
+    const pool = ['a', 'b', 'c', 'd'].map((id) => w(id, id, 'adj'))
+    const positions = new Set<number>()
+    for (let seed = 0; seed < 60; seed++) {
+      positions.add(buildWordChoices(target, pool, seeded(seed)).findIndex((c) => c.correct))
+    }
+    expect(positions.size).toBe(CHOICE_COUNT)
+    expect(buildWordChoices(target, pool, seeded(9))).toEqual(
+      buildWordChoices(target, pool, seeded(9)),
+    )
   })
 })
 

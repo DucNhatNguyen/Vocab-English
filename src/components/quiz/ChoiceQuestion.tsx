@@ -1,7 +1,6 @@
-import { ArrowRight } from 'lucide-react'
-import { useEffect, useRef, useState } from 'react'
+import { useState, type ReactNode } from 'react'
+import { AnswerVerdict, NextFooter } from './AnswerFeedback.tsx'
 import { RedTick, StruckText } from './AnswerMarks.tsx'
-import { SessionFooter } from './SessionShell.tsx'
 
 export interface ChoiceOption {
   id: string
@@ -21,6 +20,12 @@ interface ChoiceQuestionProps {
   nextLabel?: string
   /** Small line under a wrong verdict, e.g. "this word will be asked again". */
   wrongHint?: string
+  /** Line under the verdict for right and wrong answers alike; wins over wrongHint. */
+  hint?: string
+  /** Right-aligned on the verdict line, e.g. the new memory level. */
+  aside?: ReactNode
+  /** Extra content under the verdict once answered, e.g. the word card of a review. */
+  reveal?: ReactNode
 }
 
 /**
@@ -35,17 +40,14 @@ export default function ChoiceQuestion({
   onNext,
   nextLabel = 'Tiếp',
   wrongHint,
+  hint,
+  aside,
+  reveal,
 }: ChoiceQuestionProps) {
   const [chosenId, setChosenId] = useState<string | null>(null)
-  const nextRef = useRef<HTMLButtonElement>(null)
   const answered = chosenId !== null
   const correct = chosenId === correctId
   const answerLabel = options.find((o) => o.id === correctId)?.label ?? ''
-
-  // The chosen button is disabled after answering, so hand focus to "Tiếp"
-  useEffect(() => {
-    if (answered) nextRef.current?.focus()
-  }, [answered])
 
   function choose(id: string) {
     if (answered) return
@@ -85,26 +87,16 @@ export default function ChoiceQuestion({
         })}
       </ul>
 
-      <div className="quiz__verdict" role="status">
-        {answered && (
-          <>
-            <span aria-hidden="true">{correct ? 'Đúng rồi!' : 'Chưa đúng.'}</span>
-            <span className="visually-hidden">
-              {correct ? 'Đúng.' : `Sai. Đáp án đúng: ${answerLabel}.`}
-            </span>
-            {!correct && wrongHint && <span className="quiz__hint">{wrongHint}</span>}
-          </>
-        )}
-      </div>
+      <AnswerVerdict
+        answered={answered}
+        correct={correct}
+        answerLabel={answerLabel}
+        hint={hint ?? (correct ? undefined : wrongHint)}
+        aside={aside}
+      />
+      {answered && reveal}
 
-      <SessionFooter>
-        {answered && (
-          <button ref={nextRef} type="button" className="btn btn--primary" onClick={onNext}>
-            {nextLabel}
-            <ArrowRight size={20} aria-hidden="true" />
-          </button>
-        )}
-      </SessionFooter>
+      <NextFooter show={answered} label={nextLabel} onNext={onNext} />
     </>
   )
 }

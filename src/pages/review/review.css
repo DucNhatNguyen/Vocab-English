@@ -1,0 +1,301 @@
+/* Ôn tập "Thời điểm vàng": start, empty state, question stems, word card, summary.
+   The session frame, choices, typed field and red-pen marks live in components/quiz/quiz.css;
+   the start hero and summary hero reuse .lesson-start__* and .summary__* from learn.css. */
+
+/* Start: due words per level */
+
+.level-list {
+  margin-top: 16px;
+}
+
+.level-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 48px;
+  padding: 8px 14px;
+}
+
+.level-list__count {
+  font-variant-numeric: tabular-nums;
+}
+
+.level-list__count strong {
+  font-weight: 700;
+}
+
+.review-start__sub {
+  margin-top: 8px;
+  color: var(--ink-muted);
+  font-size: 0.9375rem;
+}
+
+/* Empty state */
+
+.review-empty {
+  padding: 24px 20px;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+}
+
+.review-empty__icon {
+  color: var(--purple);
+}
+
+.review-empty__title {
+  margin-top: 12px;
+  color: var(--purple);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.review-empty__text {
+  margin-top: 8px;
+  color: var(--ink-muted);
+}
+
+.review-empty__next {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px dashed var(--rule);
+}
+
+.review-empty__next strong {
+  display: block;
+  font-size: 1.0625rem;
+}
+
+.review-empty__next svg {
+  flex: none;
+  margin-top: 2px;
+  color: var(--purple);
+}
+
+.review-empty__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.review-empty__actions .btn {
+  min-height: 52px;
+}
+
+/* Question header: type label on the left, level ticks or "Hỏi lại" on the right */
+
+.rq__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 28px;
+  margin-bottom: 12px;
+}
+
+.rq__meta .label {
+  margin-bottom: 0;
+}
+
+.rq__again {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--ink-muted);
+  font-size: 0.8125rem;
+}
+
+/* Stems */
+
+.listen,
+.cloze,
+.meaning-q {
+  margin-bottom: 16px;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+}
+
+.listen {
+  padding: 16px;
+}
+
+.listen__prompt {
+  margin-bottom: 12px;
+  color: var(--ink-muted);
+}
+
+.listen .speak__btn {
+  flex: 1;
+  min-height: 56px;
+}
+
+.cloze {
+  padding: 18px 18px 16px;
+}
+
+.cloze__en {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.cloze__blank {
+  display: inline-block;
+  width: 4.5em;
+  margin: 0 0.15em;
+  border-bottom: 2.5px solid var(--purple);
+}
+
+.cloze__fill {
+  padding: 0 0.1em;
+  background: transparent;
+  color: var(--purple);
+  font-weight: 700;
+}
+
+.cloze__hint {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px dashed var(--rule);
+}
+
+.cloze__hint p {
+  color: var(--ink-muted);
+  font-size: 0.9375rem;
+}
+
+.meaning-q {
+  padding: 18px;
+}
+
+.meaning-q__vi {
+  color: var(--purple);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+.meaning-q .chip {
+  margin-top: 10px;
+}
+
+/* Word card shown with the feedback */
+
+.reveal {
+  /* keeps the card clear of the fixed bottom bar when it is scrolled into view */
+  scroll-margin-bottom: calc(92px + env(safe-area-inset-bottom));
+  margin-top: 12px;
+  padding: 12px 14px;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+}
+
+.reveal__head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.reveal__main {
+  flex: 1;
+  min-width: 0;
+}
+
+.reveal__word {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 8px;
+}
+
+.reveal__word strong {
+  color: var(--purple);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+.reveal__ipa {
+  color: var(--ink-muted);
+  font-size: 0.875rem;
+}
+
+.reveal__meaning {
+  margin-top: 2px;
+  overflow-wrap: anywhere;
+}
+
+/* Summary */
+
+.summary__stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  margin-top: 12px;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stat svg {
+  flex: none;
+}
+
+.stat--up svg {
+  color: var(--purple);
+}
+
+.stat--reset svg {
+  color: var(--red);
+}
+
+.stat strong {
+  font-size: 1.25rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.review-group {
+  margin-top: 8px;
+}
+
+.review-group__title {
+  margin: 20px 4px 8px;
+  color: var(--ink-muted);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.review-group__title strong {
+  color: var(--ink);
+}
+
+.review-start__label {
+  margin: 20px 4px 8px;
+}
+
+.summary__next-review {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.summary__next-review svg {
+  flex: none;
+  margin-top: 3px;
+  color: var(--purple);
+}

@@ -53,6 +53,38 @@ export function buildChoices(
 }
 
 /**
+ * Options for "pick the English word" (listening and fill-in-the-blank questions): the target
+ * plus up to `CHOICE_COUNT - 1` other words from `pool`, in random order. Distractors prefer the
+ * target's part of speech, then fall back to any other word. Every option is a distinct
+ * headword after `normalizeText`, and the target is never duplicated. Fewer than the wanted
+ * distractors are returned only when the pool runs out.
+ */
+export function buildWordChoices(
+  target: Word,
+  pool: readonly Word[],
+  rng: Rng = Math.random,
+): Choice[] {
+  const used = new Set([normalizeText(target.word)])
+  const choices: Choice[] = [{ wordId: target.id, text: target.word, correct: true }]
+
+  const others = shuffle(
+    pool.filter((word) => word.id !== target.id),
+    rng,
+  )
+  const samePos = others.filter((word) => word.pos === target.pos)
+  const otherPos = others.filter((word) => word.pos !== target.pos)
+
+  for (const word of [...samePos, ...otherPos]) {
+    if (choices.length >= CHOICE_COUNT) break
+    const key = normalizeText(word.word)
+    if (key === '' || used.has(key)) continue
+    used.add(key)
+    choices.push({ wordId: word.id, text: word.word, correct: false })
+  }
+  return shuffle(choices, rng)
+}
+
+/**
  * Quick-check queue: each word is asked until answered correctly. A wrong answer moves the
  * word to the end of the queue; a correct one removes it. State is immutable.
  */
