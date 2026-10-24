@@ -16,6 +16,7 @@ import LevelTicks from '../components/LevelTicks.tsx'
 import { loadHomeData, type HomeData } from '../db/stats.ts'
 import { formatDateVi, formatWeekdayDateVi, today as localToday } from '../lib/date.ts'
 import type { StreakInfo } from '../lib/streak.ts'
+import InstallBanner from './home/InstallBanner.tsx'
 
 /** Flame + streak count; filled once today counts, outlined while the streak is only alive. */
 function Streak({ streak }: { streak: StreakInfo }) {
@@ -225,6 +226,7 @@ export default function Home() {
         {data && <Streak streak={data.stats.streak} />}
       </header>
       {note && <p className="home-note">{note}</p>}
+      <InstallBanner />
       {data && (
         <>
           <ReviewBlock data={data} />

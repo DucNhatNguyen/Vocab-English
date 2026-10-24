@@ -18,6 +18,7 @@ import '@fontsource/patrick-hand/latin-400.css'
 import '@fontsource/patrick-hand/vietnamese-400.css'
 import './index.css'
 import App from './app/App.tsx'
+import { installPrompt } from './lib/installPrompt.ts'
 import { initSpeech } from './lib/speech.ts'
 import { requestPersistentStorage } from './lib/storage.ts'
 
@@ -26,6 +27,9 @@ registerSW({ immediate: true })
 
 // Ask Safari/browsers not to evict our IndexedDB data. Never throws.
 void requestPersistentStorage()
+
+// Capture Chromium's install prompt: it fires early, before the UI is ready to use it.
+installPrompt.listen(window)
 
 // Start loading speech voices early (they arrive asynchronously).
 initSpeech()

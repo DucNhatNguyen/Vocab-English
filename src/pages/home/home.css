@@ -288,3 +288,40 @@
   flex: none;
   color: var(--purple);
 }
+
+/* Install banner: quiet, flat; text and close on top, action below */
+
+.install-banner {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: start;
+  gap: 4px 10px;
+  padding: 12px 4px 12px 14px;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+}
+
+.install-banner__icon {
+  margin-top: 10px; /* centres on the first text line, like the 44px close button */
+  color: var(--purple);
+}
+
+.install-banner__text {
+  padding-top: 8px;
+  font-size: 0.9375rem;
+  line-height: 1.45;
+}
+
+.install-banner__close {
+  color: var(--ink-muted);
+}
+
+.install-banner__go {
+  grid-column: 2;
+  justify-self: start;
+  min-height: 44px;
+  margin-bottom: 2px;
+  padding-inline: 16px;
+  font-size: 0.9375rem;
+}

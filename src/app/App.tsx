@@ -2,18 +2,17 @@ import { BrowserRouter, Route, Routes } from 'react-router'
 import DeckDetail from '../pages/DeckDetail.tsx'
 import Decks from '../pages/Decks.tsx'
 import Home from '../pages/Home.tsx'
+import Install from '../pages/Install.tsx'
 import Learn from '../pages/Learn.tsx'
 import MyWordForm from '../pages/my-words/MyWordForm.tsx'
 import MyWords from '../pages/MyWords.tsx'
 import Notebook from '../pages/Notebook.tsx'
 import NotFound from '../pages/NotFound.tsx'
-import Placeholder from '../pages/Placeholder.tsx'
 import Review from '../pages/Review.tsx'
 import Search from '../pages/Search.tsx'
 import Settings from '../pages/Settings.tsx'
 import Stats from '../pages/Stats.tsx'
 import WordDetail from '../pages/WordDetail.tsx'
-import { paths } from './paths.ts'
 import AppLayout from './AppLayout.tsx'
 import SettingsEffects from './SettingsEffects.tsx'
 import './layout.css'
@@ -24,6 +23,7 @@ import '../pages/learn/learn.css'
 import '../pages/review/review.css'
 import '../pages/my-words/my-words.css'
 import '../pages/home/home.css'
+import '../pages/install/install.css'
 import '../pages/stats/stats.css'
 import '../pages/settings/settings.css'
 
@@ -46,8 +46,7 @@ export default function App() {
           <Route path="notebook" element={<Notebook />} />
           <Route path="stats" element={<Stats />} />
           <Route path="settings" element={<Settings />} />
-          {/* Replaced by the real guide in step 9 */}
-          <Route path="install" element={<Placeholder title="Cài app lên iPhone" backTo={paths.settings} />} />
+          <Route path="install" element={<Install />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
