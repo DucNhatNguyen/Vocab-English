@@ -37,3 +37,15 @@ export async function toggleFavorite(wordId: string): Promise<boolean> {
 export function isLearned(progress: CardProgress | undefined): boolean {
   return progress !== undefined && progress.level >= 1
 }
+
+/**
+ * Ticks (`ignored = false`) or unticks (`ignored = true`) a learned word for review. The level
+ * and due date are kept. No-op when the word has no record or is not learned (level 0).
+ */
+export async function setIgnored(wordId: string, ignored: boolean): Promise<void> {
+  await db.transaction('rw', db.progress, async () => {
+    const existing = await db.progress.get(wordId)
+    if (!existing || existing.level === 0) return
+    if (existing.ignored !== ignored) await db.progress.put({ ...existing, ignored })
+  })
+}

@@ -1,7 +1,7 @@
 import 'fake-indexeddb/auto'
 import { afterAll, beforeEach, describe, expect, it } from 'vitest'
 import { db } from './db.ts'
-import { isLearned, toggleFavorite } from './progress.ts'
+import { isLearned, setIgnored, toggleFavorite } from './progress.ts'
 import type { CardProgress } from './types.ts'
 
 beforeEach(async () => {
@@ -71,5 +71,46 @@ describe('isLearned', () => {
   it('is true from level 1 up', () => {
     expect(isLearned({ ...base, level: 1 })).toBe(true)
     expect(isLearned({ ...base, level: 5 })).toBe(true)
+  })
+})
+
+describe('setIgnored', () => {
+  const learned: CardProgress = {
+    wordId: 'resilient',
+    level: 3,
+    dueDate: '2026-11-01',
+    learnedAt: '2026-10-20',
+    correctCount: 4,
+    wrongCount: 1,
+    favorite: true,
+    ignored: false,
+  }
+
+  it('unticks and ticks a learned word, keeping level, due date and favorite', async () => {
+    await db.progress.put(learned)
+
+    await setIgnored('resilient', true)
+    expect(await db.progress.get('resilient')).toEqual({ ...learned, ignored: true })
+
+    await setIgnored('resilient', false)
+    expect(await db.progress.get('resilient')).toEqual(learned)
+  })
+
+  it('works for custom word ids', async () => {
+    await db.progress.put({ ...learned, wordId: 'custom:abc' })
+    await setIgnored('custom:abc', true)
+    expect((await db.progress.get('custom:abc'))?.ignored).toBe(true)
+  })
+
+  it('is a no-op for a missing record', async () => {
+    await setIgnored('nothing', true)
+    expect(await db.progress.count()).toBe(0)
+  })
+
+  it('is a no-op for a level-0 favorite', async () => {
+    await toggleFavorite('hello')
+    const before = await db.progress.get('hello')
+    await setIgnored('hello', true)
+    expect(await db.progress.get('hello')).toEqual(before)
   })
 })

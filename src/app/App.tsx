@@ -3,6 +3,7 @@ import DeckDetail from '../pages/DeckDetail.tsx'
 import Decks from '../pages/Decks.tsx'
 import Home from '../pages/Home.tsx'
 import Learn from '../pages/Learn.tsx'
+import Notebook from '../pages/Notebook.tsx'
 import NotFound from '../pages/NotFound.tsx'
 import Placeholder from '../pages/Placeholder.tsx'
 import Review from '../pages/Review.tsx'
@@ -30,7 +31,7 @@ export default function App() {
           <Route path="search" element={<Search />} />
           <Route path="learn" element={<Learn />} />
           <Route path="review" element={<Review />} />
-          <Route path="notebook" element={<Placeholder title="Sổ tay" />} />
+          <Route path="notebook" element={<Notebook />} />
           <Route path="settings" element={<Placeholder title="Cài đặt" />} />
           <Route path="*" element={<NotFound />} />
         </Route>

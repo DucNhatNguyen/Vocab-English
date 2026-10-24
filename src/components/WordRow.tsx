@@ -10,10 +10,12 @@ interface WordRowProps {
   badge?: ReactNode
   /** Right-aligned content before the chevron, e.g. level ticks. */
   trailing?: ReactNode
+  /** Hide the chevron when other controls sit to the right of the row. Default true. */
+  showChevron?: boolean
 }
 
 /** One ruled-list row linking to the word detail page. */
-export default function WordRow({ word, badge, trailing }: WordRowProps) {
+export default function WordRow({ word, badge, trailing, showChevron = true }: WordRowProps) {
   return (
     <Link to={paths.word(word.id)} className="row word-row">
       <span className="word-row__emoji" aria-hidden="true">
@@ -28,7 +30,7 @@ export default function WordRow({ word, badge, trailing }: WordRowProps) {
         {badge}
       </span>
       {trailing}
-      <ChevronRight size={18} className="row__chevron" aria-hidden="true" />
+      {showChevron && <ChevronRight size={18} className="row__chevron" aria-hidden="true" />}
     </Link>
   )
 }

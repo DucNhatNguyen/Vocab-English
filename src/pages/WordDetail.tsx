@@ -4,8 +4,11 @@ import { useCardProgress, useWord } from '../app/hooks.ts'
 import { paths } from '../app/paths.ts'
 import LevelTicks from '../components/LevelTicks.tsx'
 import PageHeader from '../components/PageHeader.tsx'
+import ReviewTick from '../components/ReviewTick.tsx'
 import SpeakButtons from '../components/SpeakButtons.tsx'
-import { toggleFavorite } from '../db/progress.ts'
+import { setIgnored, toggleFavorite } from '../db/progress.ts'
+import { today } from '../lib/date.ts'
+import { reviewStatusLabel } from '../lib/notebook.ts'
 import { getPosLabel } from '../lib/pos.ts'
 import NotFound from './NotFound.tsx'
 
@@ -21,6 +24,7 @@ export default function WordDetail() {
 
   const favorite = progress?.favorite ?? false
   const level = progress?.level ?? 0
+  const reviewStatus = progress ? reviewStatusLabel(progress, today()) : null
 
   return (
     <>
@@ -71,6 +75,15 @@ export default function WordDetail() {
         <section className="word-detail__section">
           <h3 className="label">Cấp độ nhớ</h3>
           {level >= 1 ? <LevelTicks level={level} size={22} /> : <p className="muted">Chưa học</p>}
+          {progress && level >= 1 && (
+            <div className="word-detail__review">
+              <ReviewTick
+                ticked={!progress.ignored}
+                onToggle={() => void setIgnored(word.id, !progress.ignored)}
+              />
+              <span className="muted">{reviewStatus}</span>
+            </div>
+          )}
         </section>
       </article>
     </>
