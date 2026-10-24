@@ -1,0 +1,114 @@
+/* Cài đặt: grouped sheets of settings rows. Switch and Segmented live in components.css. */
+
+.settings__section + .settings__section {
+  margin-top: 24px;
+}
+
+.setting {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 14px;
+}
+
+.setting__label {
+  font-weight: 500;
+}
+
+.setting__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.setting__value {
+  color: var(--purple);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.setting__note {
+  color: var(--ink-muted);
+  font-size: 0.8125rem;
+}
+
+.setting--buttons {
+  flex-direction: row;
+}
+
+.setting--buttons .btn {
+  flex: 1;
+}
+
+.setting--status {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+  color: var(--ink-muted);
+  font-size: 0.875rem;
+}
+
+.setting__status-icon {
+  flex: none;
+  margin-top: 2px;
+  color: var(--purple);
+}
+
+.row__value {
+  flex: none;
+  color: var(--ink-muted);
+  font-size: 0.9375rem;
+}
+
+/* Range slider: a 44px tall touch area around a thin track */
+
+.range {
+  display: block;
+  width: 100%;
+  height: 44px;
+  margin: -6px 0;
+  accent-color: var(--purple);
+  background: transparent;
+  cursor: pointer;
+}
+
+.range__ends {
+  display: flex;
+  justify-content: space-between;
+  color: var(--ink-muted);
+  font-size: 0.8125rem;
+}
+
+/* Result of a backup / restore */
+
+.notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 0 4px;
+  font-size: 0.9375rem;
+}
+
+.notice > svg {
+  flex: none;
+  margin-top: 3px;
+  color: var(--purple);
+}
+
+.notice--error {
+  color: var(--red);
+  font-weight: 500;
+}
+
+.notice--error > svg {
+  color: var(--red);
+}
+
+.notice__list {
+  margin-top: 6px;
+  padding-left: 18px;
+  font-weight: 400;
+  list-style: disc;
+}

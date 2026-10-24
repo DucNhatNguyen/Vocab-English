@@ -10,6 +10,7 @@ export const paths = {
   notebook: '/notebook',
   stats: '/stats',
   settings: '/settings',
+  install: '/install',
   myWords: '/my-words',
   /** New custom word; `word` prefills the English field. */
   myWordNew: (word?: string) =>

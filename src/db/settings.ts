@@ -1,7 +1,7 @@
 import { db } from './db.ts'
 import type { Settings } from './types.ts'
 
-const SETTINGS_KEY = 'app'
+export const SETTINGS_KEY = 'app'
 
 export const DEFAULT_SETTINGS: Readonly<Settings> = {
   dailyGoal: 10,

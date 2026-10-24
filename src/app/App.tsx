@@ -10,8 +10,10 @@ import NotFound from '../pages/NotFound.tsx'
 import Placeholder from '../pages/Placeholder.tsx'
 import Review from '../pages/Review.tsx'
 import Search from '../pages/Search.tsx'
+import Settings from '../pages/Settings.tsx'
 import Stats from '../pages/Stats.tsx'
 import WordDetail from '../pages/WordDetail.tsx'
+import { paths } from './paths.ts'
 import AppLayout from './AppLayout.tsx'
 import SettingsEffects from './SettingsEffects.tsx'
 import './layout.css'
@@ -23,6 +25,7 @@ import '../pages/review/review.css'
 import '../pages/my-words/my-words.css'
 import '../pages/home/home.css'
 import '../pages/stats/stats.css'
+import '../pages/settings/settings.css'
 
 export default function App() {
   return (
@@ -42,7 +45,9 @@ export default function App() {
           <Route path="review" element={<Review />} />
           <Route path="notebook" element={<Notebook />} />
           <Route path="stats" element={<Stats />} />
-          <Route path="settings" element={<Placeholder title="Cài đặt" />} />
+          <Route path="settings" element={<Settings />} />
+          {/* Replaced by the real guide in step 9 */}
+          <Route path="install" element={<Placeholder title="Cài app lên iPhone" backTo={paths.settings} />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
