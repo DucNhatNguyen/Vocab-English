@@ -8,6 +8,7 @@ import PageHeader from '../components/PageHeader.tsx'
 import type { Word } from '../data/types.ts'
 import { completeLesson, loadLessonWords } from '../db/lesson.ts'
 import { today } from '../lib/date.ts'
+import { scheduleTagSync } from '../lib/notifications.ts'
 import { speak } from '../lib/speech.ts'
 import LessonCards from './learn/LessonCards.tsx'
 import LessonQuiz from './learn/LessonQuiz.tsx'
@@ -48,7 +49,11 @@ export default function Learn() {
       words.map((w) => w.id),
       today(),
     ).then(
-      () => setPhase({ name: 'summary', words }),
+      () => {
+        setPhase({ name: 'summary', words })
+        // The next word and the streak changed: refresh the push tags
+        scheduleTagSync()
+      },
       () => setPhase({ name: 'saving', words, failed: true }),
     )
   }

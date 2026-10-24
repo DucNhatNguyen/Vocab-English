@@ -14,6 +14,8 @@ import Settings from '../pages/Settings.tsx'
 import Stats from '../pages/Stats.tsx'
 import WordDetail from '../pages/WordDetail.tsx'
 import AppLayout from './AppLayout.tsx'
+import DeepLinkGate from './DeepLinkGate.tsx'
+import NotificationEffects from './NotificationEffects.tsx'
 import SettingsEffects from './SettingsEffects.tsx'
 import './layout.css'
 import '../components/components.css'
@@ -31,25 +33,28 @@ export default function App() {
   return (
     <BrowserRouter>
       <SettingsEffects />
-      <Routes>
-        <Route element={<AppLayout />}>
-          <Route index element={<Home />} />
-          <Route path="decks" element={<Decks />} />
-          <Route path="decks/:deckId" element={<DeckDetail />} />
-          <Route path="words/:wordId" element={<WordDetail />} />
-          <Route path="search" element={<Search />} />
-          <Route path="my-words" element={<MyWords />} />
-          <Route path="my-words/new" element={<MyWordForm />} />
-          <Route path="my-words/:wordId/edit" element={<MyWordForm />} />
-          <Route path="learn" element={<Learn />} />
-          <Route path="review" element={<Review />} />
-          <Route path="notebook" element={<Notebook />} />
-          <Route path="stats" element={<Stats />} />
-          <Route path="settings" element={<Settings />} />
-          <Route path="install" element={<Install />} />
-          <Route path="*" element={<NotFound />} />
-        </Route>
-      </Routes>
+      <NotificationEffects />
+      <DeepLinkGate>
+        <Routes>
+          <Route element={<AppLayout />}>
+            <Route index element={<Home />} />
+            <Route path="decks" element={<Decks />} />
+            <Route path="decks/:deckId" element={<DeckDetail />} />
+            <Route path="words/:wordId" element={<WordDetail />} />
+            <Route path="search" element={<Search />} />
+            <Route path="my-words" element={<MyWords />} />
+            <Route path="my-words/new" element={<MyWordForm />} />
+            <Route path="my-words/:wordId/edit" element={<MyWordForm />} />
+            <Route path="learn" element={<Learn />} />
+            <Route path="review" element={<Review />} />
+            <Route path="notebook" element={<Notebook />} />
+            <Route path="stats" element={<Stats />} />
+            <Route path="settings" element={<Settings />} />
+            <Route path="install" element={<Install />} />
+            <Route path="*" element={<NotFound />} />
+          </Route>
+        </Routes>
+      </DeepLinkGate>
     </BrowserRouter>
   )
 }

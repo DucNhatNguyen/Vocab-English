@@ -7,6 +7,7 @@ import PageHeader from '../components/PageHeader.tsx'
 import type { Word } from '../data/types.ts'
 import { loadReviewData, recordReviewAnswer, type ReviewOutcome } from '../db/review.ts'
 import { today as localToday } from '../lib/date.ts'
+import { scheduleTagSync } from '../lib/notifications.ts'
 import {
   REVIEW_ROUND_SIZE,
   getNextReview,
@@ -101,6 +102,8 @@ export default function Review() {
           })
         }
       })
+      // Cards due tomorrow and the streak changed (also after a partly failed save)
+      scheduleTagSync()
       setPhase(
         failed
           ? { name: 'saving', entries, remaining, failed: true }

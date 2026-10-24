@@ -12,6 +12,7 @@ import type { Settings as SettingsData } from '../db/types.ts'
 import { playSfx, setSoundEffectsEnabled } from '../lib/sfx.ts'
 import { isSpeechSupported, speak } from '../lib/speech.ts'
 import BackupSection from './settings/BackupSection.tsx'
+import PushRows from './settings/PushRows.tsx'
 
 const GOAL_OPTIONS: SegmentedOption<number>[] = [
   { value: 5, label: '5 từ' },
@@ -126,14 +127,6 @@ function SpeechRateSetting({ value }: { value: number }) {
   )
 }
 
-/**
- * Reminder status area. Step 10 (OneSignal) adds the "Bật nhắc học" button and the permission
- * state here; until then the toggles above only store the preference.
- */
-function PushStatus() {
-  return <p className="hint muted">Thông báo sẽ được bật ở bản cập nhật sau.</p>
-}
-
 export default function Settings() {
   const { settings, loading } = useSettingsState()
 
@@ -233,8 +226,8 @@ export default function Settings() {
                 />
               </li>
             ))}
+            <PushRows anyReminder={Object.values(settings.reminders).some(Boolean)} />
           </ul>
-          <PushStatus />
         </Section>
 
         <Section title="Dữ liệu">

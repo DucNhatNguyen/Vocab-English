@@ -13,7 +13,7 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
-      // Custom service worker (src/sw.ts) so OneSignal's worker can be merged in later (step 10).
+      // Custom service worker (src/sw.ts): it also merges in OneSignal's worker code when an App ID is set.
       strategies: 'injectManifest',
       srcDir: 'src',
       filename: 'sw.ts',
