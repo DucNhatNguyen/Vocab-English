@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- "Vở ô ly" app icon. Text is drawn as strokes (no fonts) so rasterization is reliable.
+       All artwork sits inside the central 80% circle so the same file works as a maskable icon. -->
+  <rect width="512" height="512" fill="#FBF7EE"/>
+  <g stroke="#7F93C9" stroke-opacity="0.22" stroke-width="2">
+    <path d="M0 32H512M0 64H512M0 96H512M0 128H512M0 160H512M0 192H512M0 224H512M0 256H512M0 288H512M0 320H512M0 352H512M0 384H512M0 416H512M0 448H512M0 480H512"/>
+    <path d="M32 0V512M64 0V512M96 0V512M128 0V512M160 0V512M192 0V512M224 0V512M256 0V512M288 0V512M320 0V512M352 0V512M384 0V512M416 0V512M448 0V512M480 0V512"/>
+  </g>
+  <g transform="translate(0 22)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- "Từ" in purple ink -->
+    <g stroke="#4B2A8C" stroke-width="34">
+      <path d="M100 180H236M168 180V362"/>
+      <path d="M264 254V320C264 350 282 366 308 366C334 366 350 352 350 330M350 254V366"/>
+      <path d="M350 268Q374 268 384 246"/>
+      <path d="M292 196L324 224"/>
+    </g>
+    <!-- red-pen check mark -->
+    <path d="M338 128L362 152L408 100" stroke="#D7263D" stroke-width="22"/>
+  </g>
+</svg>
