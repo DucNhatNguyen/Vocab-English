@@ -1,0 +1,1685 @@
+[
+  {
+    "id": "hello",
+    "word": "hello",
+    "emoji": "👋",
+    "ipa": "/heˈloʊ/",
+    "pos": "interj",
+    "meaningVi": "xin chào",
+    "exampleEn": "Hello, my name is Linh.",
+    "exampleVi": "Xin chào, tên mình là Linh.",
+    "level": "A1",
+    "topics": [
+      "giao-tiep"
+    ]
+  },
+  {
+    "id": "goodbye",
+    "word": "goodbye",
+    "ipa": "/ˌɡʊdˈbaɪ/",
+    "pos": "interj",
+    "meaningVi": "tạm biệt",
+    "exampleEn": "Goodbye, take care!",
+    "exampleVi": "Tạm biệt, bạn giữ gìn sức khỏe nhé!",
+    "level": "A1",
+    "topics": [
+      "giao-tiep"
+    ]
+  },
+  {
+    "id": "please",
+    "word": "please",
+    "emoji": "🙏",
+    "ipa": "/pliːz/",
+    "pos": "adv",
+    "meaningVi": "làm ơn, xin vui lòng",
+    "exampleEn": "Please close the door.",
+    "exampleVi": "Làm ơn đóng cửa lại.",
+    "level": "A1",
+    "topics": [
+      "giao-tiep"
+    ]
+  },
+  {
+    "id": "thank-you",
+    "word": "thank you",
+    "ipa": "/ˈθæŋk ˌjuː/",
+    "pos": "phrase",
+    "meaningVi": "cảm ơn",
+    "exampleEn": "Thank you for your help.",
+    "exampleVi": "Cảm ơn bạn đã giúp đỡ.",
+    "level": "A1",
+    "topics": [
+      "giao-tiep"
+    ]
+  },
+  {
+    "id": "sorry",
+    "word": "sorry",
+    "ipa": "/ˈsɑːri/",
+    "pos": "adj",
+    "meaningVi": "xin lỗi, lấy làm tiếc",
+    "exampleEn": "Sorry, I am late.",
+    "exampleVi": "Xin lỗi, tôi đến muộn.",
+    "level": "A1",
+    "topics": [
+      "giao-tiep"
+    ]
+  },
+  {
+    "id": "excuse-me",
+    "word": "excuse me",
+    "ipa": "/ɪkˈskjuːz ˌmiː/",
+    "pos": "phrase",
+    "meaningVi": "xin lỗi cho tôi hỏi, cho tôi qua",
+    "exampleEn": "Excuse me, where is the bathroom?",
+    "exampleVi": "Xin lỗi, nhà vệ sinh ở đâu ạ?",
+    "level": "A1",
+    "topics": [
+      "giao-tiep"
+    ]
+  },
+  {
+    "id": "yes",
+    "word": "yes",
+    "ipa": "/jes/",
+    "pos": "interj",
+    "meaningVi": "vâng, có, đúng",
+    "exampleEn": "Yes, I like coffee.",
+    "exampleVi": "Vâng, tôi thích cà phê.",
+    "level": "A1",
+    "topics": [
+      "giao-tiep"
+    ]
+  },
+  {
+    "id": "no",
+    "word": "no",
+    "ipa": "/noʊ/",
+    "pos": "interj",
+    "meaningVi": "không",
+    "exampleEn": "No, I do not have a pen.",
+    "exampleVi": "Không, tôi không có bút.",
+    "level": "A1",
+    "topics": [
+      "giao-tiep"
+    ]
+  },
+  {
+    "id": "name",
+    "word": "name",
+    "emoji": "📛",
+    "ipa": "/neɪm/",
+    "pos": "noun",
+    "meaningVi": "tên",
+    "exampleEn": "My name is Nam.",
+    "exampleVi": "Tên tôi là Nam.",
+    "level": "A1",
+    "topics": [
+      "giao-tiep"
+    ]
+  },
+  {
+    "id": "friend",
+    "word": "friend",
+    "emoji": "🧑‍🤝‍🧑",
+    "ipa": "/frend/",
+    "pos": "noun",
+    "meaningVi": "bạn, bạn bè",
+    "exampleEn": "She is my best friend.",
+    "exampleVi": "Cô ấy là bạn thân nhất của tôi.",
+    "level": "A1",
+    "topics": [
+      "giao-tiep"
+    ]
+  },
+  {
+    "id": "family",
+    "word": "family",
+    "emoji": "👨‍👩‍👧",
+    "ipa": "/ˈfæməli/",
+    "pos": "noun",
+    "meaningVi": "gia đình",
+    "exampleEn": "I have a big family.",
+    "exampleVi": "Tôi có một gia đình đông người.",
+    "level": "A1",
+    "topics": [
+      "giao-tiep"
+    ]
+  },
+  {
+    "id": "morning",
+    "word": "morning",
+    "emoji": "🌅",
+    "ipa": "/ˈmɔːrnɪŋ/",
+    "pos": "noun",
+    "meaningVi": "buổi sáng",
+    "exampleEn": "I drink tea every morning.",
+    "exampleVi": "Sáng nào tôi cũng uống trà.",
+    "level": "A1",
+    "topics": [
+      "giao-tiep"
+    ]
+  },
+  {
+    "id": "night",
+    "word": "night",
+    "emoji": "🌙",
+    "ipa": "/naɪt/",
+    "pos": "noun",
+    "meaningVi": "ban đêm, buổi tối",
+    "exampleEn": "We sleep at night.",
+    "exampleVi": "Chúng ta ngủ vào ban đêm.",
+    "level": "A1",
+    "topics": [
+      "giao-tiep"
+    ]
+  },
+  {
+    "id": "today",
+    "word": "today",
+    "emoji": "📅",
+    "ipa": "/təˈdeɪ/",
+    "pos": "adv",
+    "meaningVi": "hôm nay",
+    "exampleEn": "I am busy today.",
+    "exampleVi": "Hôm nay tôi bận.",
+    "level": "A1",
+    "topics": [
+      "giao-tiep"
+    ]
+  },
+  {
+    "id": "tomorrow",
+    "word": "tomorrow",
+    "ipa": "/təˈmɑːroʊ/",
+    "pos": "adv",
+    "meaningVi": "ngày mai",
+    "exampleEn": "See you tomorrow.",
+    "exampleVi": "Hẹn gặp bạn ngày mai.",
+    "level": "A1",
+    "topics": [
+      "giao-tiep"
+    ]
+  },
+  {
+    "id": "water",
+    "word": "water",
+    "emoji": "💧",
+    "ipa": "/ˈwɑːt̬ɚ/",
+    "pos": "noun",
+    "meaningVi": "nước",
+    "exampleEn": "Can I have some water?",
+    "exampleVi": "Cho tôi xin ít nước được không?",
+    "level": "A1",
+    "topics": [
+      "giao-tiep"
+    ]
+  },
+  {
+    "id": "food",
+    "word": "food",
+    "emoji": "🍜",
+    "ipa": "/fuːd/",
+    "pos": "noun",
+    "meaningVi": "đồ ăn, thức ăn",
+    "exampleEn": "I love Vietnamese food.",
+    "exampleVi": "Tôi rất thích đồ ăn Việt Nam.",
+    "level": "A1",
+    "topics": [
+      "giao-tiep"
+    ]
+  },
+  {
+    "id": "coffee",
+    "word": "coffee",
+    "emoji": "☕",
+    "ipa": "/ˈkɑːfi/",
+    "pos": "noun",
+    "meaningVi": "cà phê",
+    "exampleEn": "Would you like some coffee?",
+    "exampleVi": "Bạn có muốn dùng chút cà phê không?",
+    "level": "A1",
+    "topics": [
+      "giao-tiep"
+    ]
+  },
+  {
+    "id": "happy",
+    "word": "happy",
+    "emoji": "😊",
+    "ipa": "/ˈhæpi/",
+    "pos": "adj",
+    "meaningVi": "vui, hạnh phúc",
+    "exampleEn": "I am happy to see you.",
+    "exampleVi": "Tôi rất vui khi gặp bạn.",
+    "level": "A1",
+    "topics": [
+      "giao-tiep"
+    ]
+  },
+  {
+    "id": "hungry",
+    "word": "hungry",
+    "ipa": "/ˈhʌŋɡri/",
+    "pos": "adj",
+    "meaningVi": "đói",
+    "exampleEn": "I am very hungry.",
+    "exampleVi": "Tôi đói lắm.",
+    "level": "A1",
+    "topics": [
+      "giao-tiep"
+    ]
+  },
+  {
+    "id": "tired",
+    "word": "tired",
+    "emoji": "😴",
+    "ipa": "/taɪrd/",
+    "pos": "adj",
+    "meaningVi": "mệt, mệt mỏi",
+    "exampleEn": "I am tired after work.",
+    "exampleVi": "Tôi mệt sau giờ làm.",
+    "level": "A1",
+    "topics": [
+      "giao-tiep"
+    ]
+  },
+  {
+    "id": "help",
+    "word": "help",
+    "emoji": "🤝",
+    "ipa": "/help/",
+    "pos": "verb",
+    "meaningVi": "giúp, giúp đỡ",
+    "exampleEn": "Can you help me?",
+    "exampleVi": "Bạn có thể giúp tôi không?",
+    "level": "A1",
+    "topics": [
+      "giao-tiep"
+    ]
+  },
+  {
+    "id": "love",
+    "word": "love",
+    "emoji": "❤️",
+    "ipa": "/lʌv/",
+    "pos": "verb",
+    "meaningVi": "yêu, rất thích",
+    "exampleEn": "I love my family.",
+    "exampleVi": "Tôi yêu gia đình mình.",
+    "level": "A1",
+    "topics": [
+      "giao-tiep"
+    ]
+  },
+  {
+    "id": "understand",
+    "word": "understand",
+    "ipa": "/ˌʌndɚˈstænd/",
+    "pos": "verb",
+    "meaningVi": "hiểu",
+    "exampleEn": "I do not understand.",
+    "exampleVi": "Tôi không hiểu.",
+    "level": "A1",
+    "topics": [
+      "giao-tiep"
+    ]
+  },
+  {
+    "id": "where",
+    "word": "where",
+    "emoji": "📍",
+    "ipa": "/wer/",
+    "pos": "adv",
+    "meaningVi": "ở đâu",
+    "exampleEn": "Where is the station?",
+    "exampleVi": "Nhà ga ở đâu?",
+    "level": "A1",
+    "topics": [
+      "giao-tiep"
+    ]
+  },
+  {
+    "id": "airport",
+    "word": "airport",
+    "emoji": "✈️",
+    "ipa": "/ˈerpɔːrt/",
+    "pos": "noun",
+    "meaningVi": "sân bay",
+    "exampleEn": "The airport is far from the city.",
+    "exampleVi": "Sân bay ở xa thành phố.",
+    "level": "A2",
+    "topics": [
+      "du-lich"
+    ]
+  },
+  {
+    "id": "ticket",
+    "word": "ticket",
+    "emoji": "🎫",
+    "ipa": "/ˈtɪkɪt/",
+    "pos": "noun",
+    "meaningVi": "vé",
+    "exampleEn": "I need to buy a ticket.",
+    "exampleVi": "Tôi cần mua một chiếc vé.",
+    "level": "A2",
+    "topics": [
+      "du-lich"
+    ]
+  },
+  {
+    "id": "passport",
+    "word": "passport",
+    "emoji": "🛂",
+    "ipa": "/ˈpæspɔːrt/",
+    "pos": "noun",
+    "meaningVi": "hộ chiếu",
+    "exampleEn": "Do not forget your passport.",
+    "exampleVi": "Đừng quên hộ chiếu của bạn.",
+    "level": "A2",
+    "topics": [
+      "du-lich"
+    ]
+  },
+  {
+    "id": "luggage",
+    "word": "luggage",
+    "emoji": "🧳",
+    "ipa": "/ˈlʌɡɪdʒ/",
+    "pos": "noun",
+    "meaningVi": "hành lý",
+    "exampleEn": "My luggage is very heavy.",
+    "exampleVi": "Hành lý của tôi rất nặng.",
+    "level": "A2",
+    "topics": [
+      "du-lich"
+    ]
+  },
+  {
+    "id": "reservation",
+    "word": "reservation",
+    "ipa": "/ˌrezɚˈveɪʃən/",
+    "pos": "noun",
+    "meaningVi": "việc đặt chỗ trước",
+    "exampleEn": "I have a reservation for two.",
+    "exampleVi": "Tôi đã đặt chỗ cho hai người.",
+    "level": "A2",
+    "topics": [
+      "du-lich"
+    ]
+  },
+  {
+    "id": "hotel",
+    "word": "hotel",
+    "emoji": "🏨",
+    "ipa": "/hoʊˈtel/",
+    "pos": "noun",
+    "meaningVi": "khách sạn",
+    "exampleEn": "The hotel is near the beach.",
+    "exampleVi": "Khách sạn nằm gần bãi biển.",
+    "level": "A2",
+    "topics": [
+      "du-lich"
+    ]
+  },
+  {
+    "id": "check-in",
+    "word": "check-in",
+    "ipa": "/ˈtʃekɪn/",
+    "pos": "noun",
+    "meaningVi": "thủ tục nhận phòng, làm thủ tục lên máy bay",
+    "exampleEn": "Check-in starts at noon.",
+    "exampleVi": "Thủ tục nhận phòng bắt đầu lúc giữa trưa.",
+    "level": "A2",
+    "topics": [
+      "du-lich"
+    ]
+  },
+  {
+    "id": "map",
+    "word": "map",
+    "emoji": "🗺️",
+    "ipa": "/mæp/",
+    "pos": "noun",
+    "meaningVi": "bản đồ",
+    "exampleEn": "Let me show you on the map.",
+    "exampleVi": "Để tôi chỉ cho bạn trên bản đồ.",
+    "level": "A2",
+    "topics": [
+      "du-lich"
+    ]
+  },
+  {
+    "id": "tourist",
+    "word": "tourist",
+    "ipa": "/ˈtʊrɪst/",
+    "pos": "noun",
+    "meaningVi": "khách du lịch",
+    "exampleEn": "The tourist took many photos.",
+    "exampleVi": "Du khách đã chụp rất nhiều ảnh.",
+    "level": "A2",
+    "topics": [
+      "du-lich"
+    ]
+  },
+  {
+    "id": "beach",
+    "word": "beach",
+    "emoji": "🏖️",
+    "ipa": "/biːtʃ/",
+    "pos": "noun",
+    "meaningVi": "bãi biển",
+    "exampleEn": "We walk on the beach every evening.",
+    "exampleVi": "Tối nào chúng tôi cũng đi dạo trên bãi biển.",
+    "level": "A2",
+    "topics": [
+      "du-lich"
+    ]
+  },
+  {
+    "id": "museum",
+    "word": "museum",
+    "emoji": "🏛️",
+    "ipa": "/mjuːˈziːəm/",
+    "pos": "noun",
+    "meaningVi": "bảo tàng",
+    "exampleEn": "The museum opens at nine.",
+    "exampleVi": "Bảo tàng mở cửa lúc chín giờ.",
+    "level": "A2",
+    "topics": [
+      "du-lich"
+    ]
+  },
+  {
+    "id": "souvenir",
+    "word": "souvenir",
+    "emoji": "🎁",
+    "ipa": "/ˌsuːvəˈnɪr/",
+    "pos": "noun",
+    "meaningVi": "quà lưu niệm",
+    "exampleEn": "I bought a souvenir for my mother.",
+    "exampleVi": "Tôi đã mua một món quà lưu niệm cho mẹ.",
+    "level": "A2",
+    "topics": [
+      "du-lich"
+    ]
+  },
+  {
+    "id": "taxi",
+    "word": "taxi",
+    "emoji": "🚕",
+    "ipa": "/ˈtæksi/",
+    "pos": "noun",
+    "meaningVi": "xe taxi",
+    "exampleEn": "Let us take a taxi to the hotel.",
+    "exampleVi": "Chúng ta bắt taxi về khách sạn nhé.",
+    "level": "A2",
+    "topics": [
+      "du-lich"
+    ]
+  },
+  {
+    "id": "flight",
+    "word": "flight",
+    "emoji": "🛫",
+    "ipa": "/flaɪt/",
+    "pos": "noun",
+    "meaningVi": "chuyến bay",
+    "exampleEn": "My flight leaves at six.",
+    "exampleVi": "Chuyến bay của tôi cất cánh lúc sáu giờ.",
+    "level": "A2",
+    "topics": [
+      "du-lich"
+    ]
+  },
+  {
+    "id": "delay",
+    "word": "delay",
+    "emoji": "⏳",
+    "ipa": "/dɪˈleɪ/",
+    "pos": "noun",
+    "meaningVi": "sự chậm trễ, sự hoãn",
+    "exampleEn": "There is a long delay at the airport.",
+    "exampleVi": "Có một sự chậm trễ kéo dài ở sân bay.",
+    "level": "A2",
+    "topics": [
+      "du-lich"
+    ]
+  },
+  {
+    "id": "destination",
+    "word": "destination",
+    "ipa": "/ˌdestɪˈneɪʃən/",
+    "pos": "noun",
+    "meaningVi": "điểm đến",
+    "exampleEn": "Bali is a popular destination.",
+    "exampleVi": "Bali là một điểm đến nổi tiếng.",
+    "level": "A2",
+    "topics": [
+      "du-lich"
+    ]
+  },
+  {
+    "id": "journey",
+    "word": "journey",
+    "ipa": "/ˈdʒɝːni/",
+    "pos": "noun",
+    "meaningVi": "chuyến đi, hành trình",
+    "exampleEn": "The journey took five hours.",
+    "exampleVi": "Chuyến đi kéo dài năm tiếng.",
+    "level": "A2",
+    "topics": [
+      "du-lich"
+    ]
+  },
+  {
+    "id": "book",
+    "word": "book",
+    "ipa": "/bʊk/",
+    "pos": "verb",
+    "meaningVi": "đặt trước (phòng, vé)",
+    "exampleEn": "I want to book a room.",
+    "exampleVi": "Tôi muốn đặt một phòng.",
+    "level": "A2",
+    "topics": [
+      "du-lich"
+    ]
+  },
+  {
+    "id": "arrive",
+    "word": "arrive",
+    "ipa": "/əˈraɪv/",
+    "pos": "verb",
+    "meaningVi": "đến nơi",
+    "exampleEn": "We arrive in Hanoi at noon.",
+    "exampleVi": "Chúng tôi đến Hà Nội vào buổi trưa.",
+    "level": "A2",
+    "topics": [
+      "du-lich"
+    ]
+  },
+  {
+    "id": "depart",
+    "word": "depart",
+    "ipa": "/dɪˈpɑːrt/",
+    "pos": "verb",
+    "meaningVi": "khởi hành, rời đi",
+    "exampleEn": "The train will depart at eight.",
+    "exampleVi": "Tàu sẽ khởi hành lúc tám giờ.",
+    "level": "A2",
+    "topics": [
+      "du-lich"
+    ]
+  },
+  {
+    "id": "cancel",
+    "word": "cancel",
+    "ipa": "/ˈkænsəl/",
+    "pos": "verb",
+    "meaningVi": "hủy",
+    "exampleEn": "I need to cancel my booking.",
+    "exampleVi": "Tôi cần hủy đặt chỗ của mình.",
+    "level": "A2",
+    "topics": [
+      "du-lich"
+    ]
+  },
+  {
+    "id": "explore",
+    "word": "explore",
+    "emoji": "🧭",
+    "ipa": "/ɪkˈsplɔːr/",
+    "pos": "verb",
+    "meaningVi": "khám phá",
+    "exampleEn": "We want to explore the old town.",
+    "exampleVi": "Chúng tôi muốn khám phá khu phố cổ.",
+    "level": "A2",
+    "topics": [
+      "du-lich"
+    ]
+  },
+  {
+    "id": "sightseeing",
+    "word": "sightseeing",
+    "emoji": "📸",
+    "ipa": "/ˈsaɪtˌsiːɪŋ/",
+    "pos": "noun",
+    "meaningVi": "việc tham quan, ngắm cảnh",
+    "exampleEn": "We went sightseeing in Hue.",
+    "exampleVi": "Chúng tôi đã đi tham quan ở Huế.",
+    "level": "A2",
+    "topics": [
+      "du-lich"
+    ]
+  },
+  {
+    "id": "currency",
+    "word": "currency",
+    "emoji": "💱",
+    "ipa": "/ˈkɝːənsi/",
+    "pos": "noun",
+    "meaningVi": "tiền tệ, đơn vị tiền",
+    "exampleEn": "What currency do they use?",
+    "exampleVi": "Họ dùng loại tiền tệ nào?",
+    "level": "A2",
+    "topics": [
+      "du-lich"
+    ]
+  },
+  {
+    "id": "customs",
+    "word": "customs",
+    "ipa": "/ˈkʌstəmz/",
+    "pos": "noun",
+    "meaningVi": "hải quan",
+    "exampleEn": "We passed through customs quickly.",
+    "exampleVi": "Chúng tôi qua cửa hải quan rất nhanh.",
+    "level": "A2",
+    "topics": [
+      "du-lich"
+    ]
+  },
+  {
+    "id": "colleague",
+    "word": "colleague",
+    "ipa": "/ˈkɑːliːɡ/",
+    "pos": "noun",
+    "meaningVi": "đồng nghiệp",
+    "exampleEn": "My colleague helped me with the report.",
+    "exampleVi": "Đồng nghiệp đã giúp tôi làm bản báo cáo.",
+    "level": "B1",
+    "topics": [
+      "cong-viec"
+    ]
+  },
+  {
+    "id": "manager",
+    "word": "manager",
+    "ipa": "/ˈmænɪdʒɚ/",
+    "pos": "noun",
+    "meaningVi": "quản lý, trưởng bộ phận",
+    "exampleEn": "The manager called a meeting.",
+    "exampleVi": "Quản lý đã triệu tập một cuộc họp.",
+    "level": "B1",
+    "topics": [
+      "cong-viec"
+    ]
+  },
+  {
+    "id": "meeting",
+    "word": "meeting",
+    "ipa": "/ˈmiːt̬ɪŋ/",
+    "pos": "noun",
+    "meaningVi": "cuộc họp",
+    "exampleEn": "The meeting starts at ten.",
+    "exampleVi": "Cuộc họp bắt đầu lúc mười giờ.",
+    "level": "B1",
+    "topics": [
+      "cong-viec"
+    ]
+  },
+  {
+    "id": "deadline",
+    "word": "deadline",
+    "emoji": "⏰",
+    "ipa": "/ˈdedlaɪn/",
+    "pos": "noun",
+    "meaningVi": "hạn chót",
+    "exampleEn": "The deadline is next Friday.",
+    "exampleVi": "Hạn chót là thứ Sáu tuần sau.",
+    "level": "B1",
+    "topics": [
+      "cong-viec"
+    ]
+  },
+  {
+    "id": "schedule",
+    "word": "schedule",
+    "emoji": "🗓️",
+    "ipa": "/ˈskedʒuːl/",
+    "pos": "noun",
+    "meaningVi": "lịch trình, thời gian biểu",
+    "exampleEn": "My schedule is full this week.",
+    "exampleVi": "Lịch trình của tôi tuần này kín cả.",
+    "level": "B1",
+    "topics": [
+      "cong-viec"
+    ]
+  },
+  {
+    "id": "report",
+    "word": "report",
+    "emoji": "📄",
+    "ipa": "/rɪˈpɔːrt/",
+    "pos": "noun",
+    "meaningVi": "báo cáo",
+    "exampleEn": "I must finish the report today.",
+    "exampleVi": "Hôm nay tôi phải hoàn thành bản báo cáo.",
+    "level": "B1",
+    "topics": [
+      "cong-viec"
+    ]
+  },
+  {
+    "id": "presentation",
+    "word": "presentation",
+    "emoji": "📊",
+    "ipa": "/ˌprezənˈteɪʃən/",
+    "pos": "noun",
+    "meaningVi": "bài thuyết trình",
+    "exampleEn": "She gave a clear presentation.",
+    "exampleVi": "Cô ấy đã có một bài thuyết trình rất rõ ràng.",
+    "level": "B1",
+    "topics": [
+      "cong-viec"
+    ]
+  },
+  {
+    "id": "attach",
+    "word": "attach",
+    "emoji": "📎",
+    "ipa": "/əˈtætʃ/",
+    "pos": "verb",
+    "meaningVi": "đính kèm",
+    "exampleEn": "Please attach the file to your email.",
+    "exampleVi": "Vui lòng đính kèm tệp vào email của bạn.",
+    "level": "B1",
+    "topics": [
+      "cong-viec"
+    ]
+  },
+  {
+    "id": "email",
+    "word": "email",
+    "emoji": "📧",
+    "ipa": "/ˈiːmeɪl/",
+    "pos": "noun",
+    "meaningVi": "thư điện tử, email",
+    "exampleEn": "I will send you an email.",
+    "exampleVi": "Tôi sẽ gửi cho bạn một email.",
+    "level": "B1",
+    "topics": [
+      "cong-viec"
+    ]
+  },
+  {
+    "id": "appointment",
+    "word": "appointment",
+    "ipa": "/əˈpɔɪntmənt/",
+    "pos": "noun",
+    "meaningVi": "cuộc hẹn",
+    "exampleEn": "I have an appointment at three.",
+    "exampleVi": "Tôi có một cuộc hẹn lúc ba giờ.",
+    "level": "B1",
+    "topics": [
+      "cong-viec"
+    ]
+  },
+  {
+    "id": "salary",
+    "word": "salary",
+    "emoji": "💰",
+    "ipa": "/ˈsælɚi/",
+    "pos": "noun",
+    "meaningVi": "tiền lương",
+    "exampleEn": "His salary is paid monthly.",
+    "exampleVi": "Lương của anh ấy được trả hằng tháng.",
+    "level": "B1",
+    "topics": [
+      "cong-viec"
+    ]
+  },
+  {
+    "id": "promotion",
+    "word": "promotion",
+    "ipa": "/prəˈmoʊʃən/",
+    "pos": "noun",
+    "meaningVi": "sự thăng chức",
+    "exampleEn": "She got a promotion last year.",
+    "exampleVi": "Năm ngoái cô ấy được thăng chức.",
+    "level": "B1",
+    "topics": [
+      "cong-viec"
+    ]
+  },
+  {
+    "id": "resign",
+    "word": "resign",
+    "ipa": "/rɪˈzaɪn/",
+    "pos": "verb",
+    "meaningVi": "từ chức, xin nghỉ việc",
+    "exampleEn": "He decided to resign next month.",
+    "exampleVi": "Anh ấy quyết định nghỉ việc vào tháng sau.",
+    "level": "B1",
+    "topics": [
+      "cong-viec"
+    ]
+  },
+  {
+    "id": "assignment",
+    "word": "assignment",
+    "ipa": "/əˈsaɪnmənt/",
+    "pos": "noun",
+    "meaningVi": "nhiệm vụ được giao",
+    "exampleEn": "This assignment is due on Monday.",
+    "exampleVi": "Nhiệm vụ này phải nộp vào thứ Hai.",
+    "level": "B1",
+    "topics": [
+      "cong-viec"
+    ]
+  },
+  {
+    "id": "department",
+    "word": "department",
+    "ipa": "/dɪˈpɑːrtmənt/",
+    "pos": "noun",
+    "meaningVi": "phòng ban, bộ phận",
+    "exampleEn": "She works in the sales department.",
+    "exampleVi": "Cô ấy làm việc ở phòng kinh doanh.",
+    "level": "B1",
+    "topics": [
+      "cong-viec"
+    ]
+  },
+  {
+    "id": "supervisor",
+    "word": "supervisor",
+    "ipa": "/ˈsuːpɚvaɪzɚ/",
+    "pos": "noun",
+    "meaningVi": "người giám sát, quản lý trực tiếp",
+    "exampleEn": "My supervisor gave me useful advice.",
+    "exampleVi": "Người quản lý trực tiếp đã cho tôi lời khuyên hữu ích.",
+    "level": "B1",
+    "topics": [
+      "cong-viec"
+    ]
+  },
+  {
+    "id": "feedback",
+    "word": "feedback",
+    "ipa": "/ˈfiːdbæk/",
+    "pos": "noun",
+    "meaningVi": "phản hồi, góp ý",
+    "exampleEn": "Thank you for your feedback.",
+    "exampleVi": "Cảm ơn bạn đã góp ý.",
+    "level": "B1",
+    "topics": [
+      "cong-viec"
+    ]
+  },
+  {
+    "id": "overtime",
+    "word": "overtime",
+    "ipa": "/ˈoʊvɚtaɪm/",
+    "pos": "noun",
+    "meaningVi": "giờ làm thêm",
+    "exampleEn": "I worked overtime last night.",
+    "exampleVi": "Tối qua tôi đã làm thêm giờ.",
+    "level": "B1",
+    "topics": [
+      "cong-viec"
+    ]
+  },
+  {
+    "id": "workload",
+    "word": "workload",
+    "ipa": "/ˈwɝːkloʊd/",
+    "pos": "noun",
+    "meaningVi": "khối lượng công việc",
+    "exampleEn": "Her workload is too heavy.",
+    "exampleVi": "Khối lượng công việc của cô ấy quá nặng.",
+    "level": "B1",
+    "topics": [
+      "cong-viec"
+    ]
+  },
+  {
+    "id": "task",
+    "word": "task",
+    "emoji": "✅",
+    "ipa": "/tæsk/",
+    "pos": "noun",
+    "meaningVi": "công việc cụ thể, việc cần làm",
+    "exampleEn": "Each task has a clear goal.",
+    "exampleVi": "Mỗi việc đều có mục tiêu rõ ràng.",
+    "level": "B1",
+    "topics": [
+      "cong-viec"
+    ]
+  },
+  {
+    "id": "priority",
+    "word": "priority",
+    "ipa": "/praɪˈɔːrət̬i/",
+    "pos": "noun",
+    "meaningVi": "việc ưu tiên, sự ưu tiên",
+    "exampleEn": "Safety is our first priority.",
+    "exampleVi": "An toàn là ưu tiên hàng đầu của chúng tôi.",
+    "level": "B1",
+    "topics": [
+      "cong-viec"
+    ]
+  },
+  {
+    "id": "collaborate",
+    "word": "collaborate",
+    "ipa": "/kəˈlæbəreɪt/",
+    "pos": "verb",
+    "meaningVi": "cộng tác, hợp tác",
+    "exampleEn": "We collaborate with the design team.",
+    "exampleVi": "Chúng tôi hợp tác với nhóm thiết kế.",
+    "level": "B1",
+    "topics": [
+      "cong-viec"
+    ]
+  },
+  {
+    "id": "organize",
+    "word": "organize",
+    "emoji": "🗂️",
+    "ipa": "/ˈɔːrɡənaɪz/",
+    "pos": "verb",
+    "meaningVi": "sắp xếp, tổ chức",
+    "exampleEn": "I need to organize my desk.",
+    "exampleVi": "Tôi cần sắp xếp lại bàn làm việc.",
+    "level": "B1",
+    "topics": [
+      "cong-viec"
+    ]
+  },
+  {
+    "id": "employee",
+    "word": "employee",
+    "ipa": "/ɪmˈplɔɪiː/",
+    "pos": "noun",
+    "meaningVi": "nhân viên",
+    "exampleEn": "Each employee gets a laptop.",
+    "exampleVi": "Mỗi nhân viên được cấp một máy tính xách tay.",
+    "level": "B1",
+    "topics": [
+      "cong-viec"
+    ]
+  },
+  {
+    "id": "printer",
+    "word": "printer",
+    "emoji": "🖨️",
+    "ipa": "/ˈprɪnt̬ɚ/",
+    "pos": "noun",
+    "meaningVi": "máy in",
+    "exampleEn": "The printer is out of paper.",
+    "exampleVi": "Máy in hết giấy rồi.",
+    "level": "B1",
+    "topics": [
+      "cong-viec"
+    ]
+  },
+  {
+    "id": "invoice",
+    "word": "invoice",
+    "emoji": "🧾",
+    "ipa": "/ˈɪnvɔɪs/",
+    "pos": "noun",
+    "meaningVi": "hóa đơn",
+    "exampleEn": "Please send the invoice by Friday.",
+    "exampleVi": "Vui lòng gửi hóa đơn trước thứ Sáu.",
+    "level": "B1",
+    "topics": [
+      "toeic"
+    ]
+  },
+  {
+    "id": "budget",
+    "word": "budget",
+    "ipa": "/ˈbʌdʒɪt/",
+    "pos": "noun",
+    "meaningVi": "ngân sách",
+    "exampleEn": "We must stay within the budget.",
+    "exampleVi": "Chúng ta phải giữ trong phạm vi ngân sách.",
+    "level": "B1",
+    "topics": [
+      "toeic"
+    ]
+  },
+  {
+    "id": "client",
+    "word": "client",
+    "ipa": "/ˈklaɪənt/",
+    "pos": "noun",
+    "meaningVi": "khách hàng (của dịch vụ)",
+    "exampleEn": "The client approved our proposal.",
+    "exampleVi": "Khách hàng đã chấp thuận đề xuất của chúng tôi.",
+    "level": "B1",
+    "topics": [
+      "toeic"
+    ]
+  },
+  {
+    "id": "contract",
+    "word": "contract",
+    "emoji": "📝",
+    "ipa": "/ˈkɑːntrækt/",
+    "pos": "noun",
+    "meaningVi": "hợp đồng",
+    "exampleEn": "Both sides signed the contract.",
+    "exampleVi": "Cả hai bên đã ký hợp đồng.",
+    "level": "B1",
+    "topics": [
+      "toeic"
+    ]
+  },
+  {
+    "id": "negotiate",
+    "word": "negotiate",
+    "ipa": "/nəˈɡoʊʃieɪt/",
+    "pos": "verb",
+    "meaningVi": "đàm phán, thương lượng",
+    "exampleEn": "They will negotiate the price tomorrow.",
+    "exampleVi": "Ngày mai họ sẽ thương lượng về giá.",
+    "level": "B1",
+    "topics": [
+      "toeic"
+    ]
+  },
+  {
+    "id": "revenue",
+    "word": "revenue",
+    "ipa": "/ˈrevənuː/",
+    "pos": "noun",
+    "meaningVi": "doanh thu",
+    "exampleEn": "Annual revenue rose by ten percent.",
+    "exampleVi": "Doanh thu hằng năm tăng mười phần trăm.",
+    "level": "B1",
+    "topics": [
+      "toeic"
+    ]
+  },
+  {
+    "id": "profit",
+    "word": "profit",
+    "ipa": "/ˈprɑːfɪt/",
+    "pos": "noun",
+    "meaningVi": "lợi nhuận",
+    "exampleEn": "The company made a profit this year.",
+    "exampleVi": "Năm nay công ty có lợi nhuận.",
+    "level": "B1",
+    "topics": [
+      "toeic"
+    ]
+  },
+  {
+    "id": "shipment",
+    "word": "shipment",
+    "emoji": "📦",
+    "ipa": "/ˈʃɪpmənt/",
+    "pos": "noun",
+    "meaningVi": "lô hàng, chuyến hàng",
+    "exampleEn": "The shipment arrived two days late.",
+    "exampleVi": "Lô hàng đến muộn hai ngày.",
+    "level": "B1",
+    "topics": [
+      "toeic"
+    ]
+  },
+  {
+    "id": "warehouse",
+    "word": "warehouse",
+    "ipa": "/ˈwerhaʊs/",
+    "pos": "noun",
+    "meaningVi": "nhà kho",
+    "exampleEn": "Goods are stored in the warehouse.",
+    "exampleVi": "Hàng hóa được lưu trữ trong nhà kho.",
+    "level": "B1",
+    "topics": [
+      "toeic"
+    ]
+  },
+  {
+    "id": "supplier",
+    "word": "supplier",
+    "ipa": "/səˈplaɪɚ/",
+    "pos": "noun",
+    "meaningVi": "nhà cung cấp",
+    "exampleEn": "We changed our supplier last month.",
+    "exampleVi": "Tháng trước chúng tôi đã đổi nhà cung cấp.",
+    "level": "B1",
+    "topics": [
+      "toeic"
+    ]
+  },
+  {
+    "id": "merger",
+    "word": "merger",
+    "ipa": "/ˈmɝːdʒɚ/",
+    "pos": "noun",
+    "meaningVi": "vụ sáp nhập",
+    "exampleEn": "The merger created a larger firm.",
+    "exampleVi": "Vụ sáp nhập đã tạo ra một công ty lớn hơn.",
+    "level": "B1",
+    "topics": [
+      "toeic"
+    ]
+  },
+  {
+    "id": "acquire",
+    "word": "acquire",
+    "ipa": "/əˈkwaɪr/",
+    "pos": "verb",
+    "meaningVi": "mua lại, giành được",
+    "exampleEn": "The company plans to acquire a startup.",
+    "exampleVi": "Công ty dự định mua lại một công ty khởi nghiệp.",
+    "level": "B1",
+    "topics": [
+      "toeic"
+    ]
+  },
+  {
+    "id": "expand",
+    "word": "expand",
+    "ipa": "/ɪkˈspænd/",
+    "pos": "verb",
+    "meaningVi": "mở rộng",
+    "exampleEn": "They want to expand into Asia.",
+    "exampleVi": "Họ muốn mở rộng sang châu Á.",
+    "level": "B1",
+    "topics": [
+      "toeic"
+    ]
+  },
+  {
+    "id": "inventory",
+    "word": "inventory",
+    "ipa": "/ˈɪnvəntɔːri/",
+    "pos": "noun",
+    "meaningVi": "hàng tồn kho, bản kiểm kê",
+    "exampleEn": "We check the inventory every week.",
+    "exampleVi": "Chúng tôi kiểm tra hàng tồn kho mỗi tuần.",
+    "level": "B1",
+    "topics": [
+      "toeic"
+    ]
+  },
+  {
+    "id": "purchase",
+    "word": "purchase",
+    "ipa": "/ˈpɝːtʃəs/",
+    "pos": "verb",
+    "meaningVi": "mua, mua sắm",
+    "exampleEn": "Customers can purchase tickets online.",
+    "exampleVi": "Khách hàng có thể mua vé trực tuyến.",
+    "level": "B1",
+    "topics": [
+      "toeic"
+    ]
+  },
+  {
+    "id": "estimate",
+    "word": "estimate",
+    "ipa": "/ˈestəmət/",
+    "pos": "noun",
+    "meaningVi": "bản ước tính, bản báo giá",
+    "exampleEn": "Can you give me an estimate?",
+    "exampleVi": "Bạn có thể báo giá cho tôi không?",
+    "level": "B1",
+    "topics": [
+      "toeic"
+    ]
+  },
+  {
+    "id": "refund",
+    "word": "refund",
+    "emoji": "💸",
+    "ipa": "/ˈriːfʌnd/",
+    "pos": "noun",
+    "meaningVi": "khoản hoàn tiền",
+    "exampleEn": "You can get a full refund.",
+    "exampleVi": "Bạn có thể được hoàn lại toàn bộ tiền.",
+    "level": "B1",
+    "topics": [
+      "toeic"
+    ]
+  },
+  {
+    "id": "warranty",
+    "word": "warranty",
+    "ipa": "/ˈwɔːrənt̬i/",
+    "pos": "noun",
+    "meaningVi": "bảo hành",
+    "exampleEn": "The laptop has a two-year warranty.",
+    "exampleVi": "Chiếc máy tính xách tay được bảo hành hai năm.",
+    "level": "B1",
+    "topics": [
+      "toeic"
+    ]
+  },
+  {
+    "id": "reimburse",
+    "word": "reimburse",
+    "ipa": "/ˌriːɪmˈbɝːs/",
+    "pos": "verb",
+    "meaningVi": "hoàn trả (chi phí)",
+    "exampleEn": "The firm will reimburse your travel costs.",
+    "exampleVi": "Công ty sẽ hoàn lại chi phí đi lại của bạn.",
+    "level": "B1",
+    "topics": [
+      "toeic"
+    ]
+  },
+  {
+    "id": "shareholder",
+    "word": "shareholder",
+    "ipa": "/ˈʃerhoʊldɚ/",
+    "pos": "noun",
+    "meaningVi": "cổ đông",
+    "exampleEn": "Every shareholder received a copy.",
+    "exampleVi": "Mỗi cổ đông đều nhận được một bản sao.",
+    "level": "B1",
+    "topics": [
+      "toeic"
+    ]
+  },
+  {
+    "id": "quarterly",
+    "word": "quarterly",
+    "ipa": "/ˈkwɔːrt̬ɚli/",
+    "pos": "adj",
+    "meaningVi": "hằng quý",
+    "exampleEn": "We publish a quarterly report.",
+    "exampleVi": "Chúng tôi công bố báo cáo hằng quý.",
+    "level": "B1",
+    "topics": [
+      "toeic"
+    ]
+  },
+  {
+    "id": "launch",
+    "word": "launch",
+    "emoji": "🚀",
+    "ipa": "/lɑːntʃ/",
+    "pos": "verb",
+    "meaningVi": "ra mắt, tung ra",
+    "exampleEn": "The firm will launch a new phone.",
+    "exampleVi": "Công ty sẽ ra mắt một mẫu điện thoại mới.",
+    "level": "B1",
+    "topics": [
+      "toeic"
+    ]
+  },
+  {
+    "id": "deliver",
+    "word": "deliver",
+    "emoji": "🚚",
+    "ipa": "/dɪˈlɪvɚ/",
+    "pos": "verb",
+    "meaningVi": "giao (hàng)",
+    "exampleEn": "We deliver within two days.",
+    "exampleVi": "Chúng tôi giao hàng trong vòng hai ngày.",
+    "level": "B1",
+    "topics": [
+      "toeic"
+    ]
+  },
+  {
+    "id": "commission",
+    "word": "commission",
+    "ipa": "/kəˈmɪʃən/",
+    "pos": "noun",
+    "meaningVi": "tiền hoa hồng",
+    "exampleEn": "Sales staff earn a commission.",
+    "exampleVi": "Nhân viên bán hàng được hưởng hoa hồng.",
+    "level": "B1",
+    "topics": [
+      "toeic"
+    ]
+  },
+  {
+    "id": "competitor",
+    "word": "competitor",
+    "ipa": "/kəmˈpet̬ɪt̬ɚ/",
+    "pos": "noun",
+    "meaningVi": "đối thủ cạnh tranh",
+    "exampleEn": "Our main competitor cut its prices.",
+    "exampleVi": "Đối thủ chính của chúng tôi đã giảm giá.",
+    "level": "B1",
+    "topics": [
+      "toeic"
+    ]
+  },
+  {
+    "id": "resilient",
+    "word": "resilient",
+    "emoji": "💪",
+    "ipa": "/rɪˈzɪliənt/",
+    "pos": "adj",
+    "meaningVi": "kiên cường, mau phục hồi",
+    "exampleEn": "Resilient ecosystems recover quickly after storms.",
+    "exampleVi": "Các hệ sinh thái có khả năng phục hồi nhanh sau bão.",
+    "level": "B2",
+    "topics": [
+      "ielts"
+    ]
+  },
+  {
+    "id": "sustainable",
+    "word": "sustainable",
+    "emoji": "🌱",
+    "ipa": "/səˈsteɪnəbəl/",
+    "pos": "adj",
+    "meaningVi": "bền vững",
+    "exampleEn": "We need sustainable sources of energy.",
+    "exampleVi": "Chúng ta cần những nguồn năng lượng bền vững.",
+    "level": "B2",
+    "topics": [
+      "ielts"
+    ]
+  },
+  {
+    "id": "pollution",
+    "word": "pollution",
+    "emoji": "🏭",
+    "ipa": "/pəˈluːʃən/",
+    "pos": "noun",
+    "meaningVi": "sự ô nhiễm",
+    "exampleEn": "Air pollution is a serious problem in cities.",
+    "exampleVi": "Ô nhiễm không khí là vấn đề nghiêm trọng ở các thành phố.",
+    "level": "B2",
+    "topics": [
+      "ielts"
+    ]
+  },
+  {
+    "id": "emissions",
+    "word": "emissions",
+    "ipa": "/iˈmɪʃənz/",
+    "pos": "noun",
+    "meaningVi": "khí thải, lượng phát thải",
+    "exampleEn": "Cars produce harmful emissions.",
+    "exampleVi": "Xe cộ thải ra khí độc hại.",
+    "level": "B2",
+    "topics": [
+      "ielts"
+    ]
+  },
+  {
+    "id": "deforestation",
+    "word": "deforestation",
+    "ipa": "/diːˌfɔːrɪˈsteɪʃən/",
+    "pos": "noun",
+    "meaningVi": "nạn phá rừng",
+    "exampleEn": "Deforestation destroys the homes of many animals.",
+    "exampleVi": "Nạn phá rừng hủy hoại nơi ở của nhiều loài vật.",
+    "level": "B2",
+    "topics": [
+      "ielts"
+    ]
+  },
+  {
+    "id": "biodiversity",
+    "word": "biodiversity",
+    "emoji": "🦋",
+    "ipa": "/ˌbaɪoʊdɪˈvɝːsət̬i/",
+    "pos": "noun",
+    "meaningVi": "đa dạng sinh học",
+    "exampleEn": "Rainforests have great biodiversity.",
+    "exampleVi": "Rừng nhiệt đới có độ đa dạng sinh học rất cao.",
+    "level": "B2",
+    "topics": [
+      "ielts"
+    ]
+  },
+  {
+    "id": "renewable",
+    "word": "renewable",
+    "emoji": "☀️",
+    "ipa": "/rɪˈnuːəbəl/",
+    "pos": "adj",
+    "meaningVi": "có thể tái tạo",
+    "exampleEn": "Solar power is a renewable energy source.",
+    "exampleVi": "Năng lượng mặt trời là nguồn năng lượng tái tạo.",
+    "level": "B2",
+    "topics": [
+      "ielts"
+    ]
+  },
+  {
+    "id": "conservation",
+    "word": "conservation",
+    "ipa": "/ˌkɑːnsɚˈveɪʃən/",
+    "pos": "noun",
+    "meaningVi": "sự bảo tồn",
+    "exampleEn": "Wildlife conservation needs more funding.",
+    "exampleVi": "Công tác bảo tồn động vật hoang dã cần thêm kinh phí.",
+    "level": "B2",
+    "topics": [
+      "ielts"
+    ]
+  },
+  {
+    "id": "climate",
+    "word": "climate",
+    "emoji": "🌡️",
+    "ipa": "/ˈklaɪmət/",
+    "pos": "noun",
+    "meaningVi": "khí hậu",
+    "exampleEn": "The climate is getting warmer.",
+    "exampleVi": "Khí hậu đang ngày càng ấm lên.",
+    "level": "B2",
+    "topics": [
+      "ielts"
+    ]
+  },
+  {
+    "id": "drought",
+    "word": "drought",
+    "emoji": "🏜️",
+    "ipa": "/draʊt/",
+    "pos": "noun",
+    "meaningVi": "hạn hán",
+    "exampleEn": "A long drought damaged the crops.",
+    "exampleVi": "Đợt hạn hán kéo dài đã làm hỏng mùa màng.",
+    "level": "B2",
+    "topics": [
+      "ielts"
+    ]
+  },
+  {
+    "id": "habitat",
+    "word": "habitat",
+    "ipa": "/ˈhæbɪtæt/",
+    "pos": "noun",
+    "meaningVi": "môi trường sống",
+    "exampleEn": "Pandas are losing their natural habitat.",
+    "exampleVi": "Gấu trúc đang mất dần môi trường sống tự nhiên.",
+    "level": "B2",
+    "topics": [
+      "ielts"
+    ]
+  },
+  {
+    "id": "endangered",
+    "word": "endangered",
+    "emoji": "🐅",
+    "ipa": "/ɪnˈdeɪndʒɚd/",
+    "pos": "adj",
+    "meaningVi": "có nguy cơ tuyệt chủng",
+    "exampleEn": "The tiger is an endangered species.",
+    "exampleVi": "Hổ là loài có nguy cơ tuyệt chủng.",
+    "level": "B2",
+    "topics": [
+      "ielts"
+    ]
+  },
+  {
+    "id": "extinction",
+    "word": "extinction",
+    "ipa": "/ɪkˈstɪŋkʃən/",
+    "pos": "noun",
+    "meaningVi": "sự tuyệt chủng",
+    "exampleEn": "Many animals face extinction.",
+    "exampleVi": "Nhiều loài động vật đang đứng trước nguy cơ tuyệt chủng.",
+    "level": "B2",
+    "topics": [
+      "ielts"
+    ]
+  },
+  {
+    "id": "recycle",
+    "word": "recycle",
+    "emoji": "♻️",
+    "ipa": "/ˌriːˈsaɪkəl/",
+    "pos": "verb",
+    "meaningVi": "tái chế",
+    "exampleEn": "We should recycle paper and glass.",
+    "exampleVi": "Chúng ta nên tái chế giấy và thủy tinh.",
+    "level": "B2",
+    "topics": [
+      "ielts"
+    ]
+  },
+  {
+    "id": "fossil-fuels",
+    "word": "fossil fuels",
+    "ipa": "/ˈfɑːsəl ˌfjuːəlz/",
+    "pos": "noun",
+    "meaningVi": "nhiên liệu hóa thạch",
+    "exampleEn": "Burning fossil fuels warms the planet.",
+    "exampleVi": "Đốt nhiên liệu hóa thạch làm Trái Đất nóng lên.",
+    "level": "B2",
+    "topics": [
+      "ielts"
+    ]
+  },
+  {
+    "id": "greenhouse",
+    "word": "greenhouse",
+    "ipa": "/ˈɡriːnhaʊs/",
+    "pos": "noun",
+    "meaningVi": "nhà kính (trong cụm hiệu ứng nhà kính)",
+    "exampleEn": "Carbon dioxide is a major greenhouse gas.",
+    "exampleVi": "Khí cacbonic là một loại khí nhà kính chủ yếu.",
+    "level": "B2",
+    "topics": [
+      "ielts"
+    ]
+  },
+  {
+    "id": "ecosystem",
+    "word": "ecosystem",
+    "ipa": "/ˈiːkoʊˌsɪstəm/",
+    "pos": "noun",
+    "meaningVi": "hệ sinh thái",
+    "exampleEn": "Every ecosystem depends on balance.",
+    "exampleVi": "Mọi hệ sinh thái đều phụ thuộc vào sự cân bằng.",
+    "level": "B2",
+    "topics": [
+      "ielts"
+    ]
+  },
+  {
+    "id": "pollute",
+    "word": "pollute",
+    "ipa": "/pəˈluːt/",
+    "pos": "verb",
+    "meaningVi": "làm ô nhiễm",
+    "exampleEn": "Factories pollute the river.",
+    "exampleVi": "Các nhà máy làm ô nhiễm dòng sông.",
+    "level": "B2",
+    "topics": [
+      "ielts"
+    ]
+  },
+  {
+    "id": "preserve",
+    "word": "preserve",
+    "ipa": "/prɪˈzɝːv/",
+    "pos": "verb",
+    "meaningVi": "bảo tồn, gìn giữ",
+    "exampleEn": "We must preserve our forests.",
+    "exampleVi": "Chúng ta phải gìn giữ những cánh rừng của mình.",
+    "level": "B2",
+    "topics": [
+      "ielts"
+    ]
+  },
+  {
+    "id": "wildlife",
+    "word": "wildlife",
+    "emoji": "🦌",
+    "ipa": "/ˈwaɪldlaɪf/",
+    "pos": "noun",
+    "meaningVi": "động vật hoang dã",
+    "exampleEn": "Oil spills harm marine wildlife.",
+    "exampleVi": "Sự cố tràn dầu gây hại cho động vật hoang dã dưới biển.",
+    "level": "B2",
+    "topics": [
+      "ielts"
+    ]
+  },
+  {
+    "id": "erosion",
+    "word": "erosion",
+    "ipa": "/ɪˈroʊʒən/",
+    "pos": "noun",
+    "meaningVi": "sự xói mòn",
+    "exampleEn": "Soil erosion reduces farm production.",
+    "exampleVi": "Xói mòn đất làm giảm sản lượng nông nghiệp.",
+    "level": "B2",
+    "topics": [
+      "ielts"
+    ]
+  },
+  {
+    "id": "flood",
+    "word": "flood",
+    "emoji": "🌊",
+    "ipa": "/flʌd/",
+    "pos": "noun",
+    "meaningVi": "lũ lụt",
+    "exampleEn": "The flood destroyed hundreds of homes.",
+    "exampleVi": "Trận lũ đã phá hủy hàng trăm ngôi nhà.",
+    "level": "B2",
+    "topics": [
+      "ielts"
+    ]
+  },
+  {
+    "id": "vulnerable",
+    "word": "vulnerable",
+    "ipa": "/ˈvʌlnɚəbəl/",
+    "pos": "adj",
+    "meaningVi": "dễ bị tổn thương",
+    "exampleEn": "Small islands are vulnerable to rising seas.",
+    "exampleVi": "Các đảo nhỏ rất dễ bị tổn thương trước nước biển dâng.",
+    "level": "B2",
+    "topics": [
+      "ielts"
+    ]
+  },
+  {
+    "id": "mitigate",
+    "word": "mitigate",
+    "ipa": "/ˈmɪt̬ɪɡeɪt/",
+    "pos": "verb",
+    "meaningVi": "giảm thiểu, làm dịu bớt",
+    "exampleEn": "Trees help mitigate the effects of heat.",
+    "exampleVi": "Cây xanh giúp giảm thiểu tác động của nắng nóng.",
+    "level": "B2",
+    "topics": [
+      "ielts"
+    ]
+  },
+  {
+    "id": "carbon-footprint",
+    "word": "carbon footprint",
+    "ipa": "/ˈkɑːrbən ˌfʊtprɪnt/",
+    "pos": "noun",
+    "meaningVi": "lượng khí thải carbon cá nhân",
+    "exampleEn": "Cycling to work reduces your carbon footprint.",
+    "exampleVi": "Đạp xe đi làm giúp giảm lượng khí thải carbon của bạn.",
+    "level": "B2",
+    "topics": [
+      "ielts"
+    ]
+  }
+]
