@@ -1,4 +1,4 @@
-import { ChevronRight, Library, Search } from 'lucide-react'
+import { ChevronRight, Library, PenLine, Search } from 'lucide-react'
 import { Link } from 'react-router'
 import { paths } from '../app/paths.ts'
 import PageHeader from '../components/PageHeader.tsx'
@@ -14,6 +14,13 @@ export default function Home() {
             <Link to={paths.decks} className="row">
               <Library size={22} className="row__icon" aria-hidden="true" />
               <span className="row__label">Bộ từ vựng</span>
+              <ChevronRight size={18} className="row__chevron" aria-hidden="true" />
+            </Link>
+          </li>
+          <li>
+            <Link to={paths.myWords} className="row">
+              <PenLine size={22} className="row__icon" aria-hidden="true" />
+              <span className="row__label">Từ của tôi</span>
               <ChevronRight size={18} className="row__chevron" aria-hidden="true" />
             </Link>
           </li>

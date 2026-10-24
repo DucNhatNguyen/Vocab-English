@@ -1,6 +1,6 @@
-import { Search as SearchIcon, X } from 'lucide-react'
+import { Plus, Search as SearchIcon, X } from 'lucide-react'
 import { useEffect, useMemo, useRef } from 'react'
-import { useSearchParams } from 'react-router'
+import { Link, useSearchParams } from 'react-router'
 import { useCustomWords } from '../app/hooks.ts'
 import { paths } from '../app/paths.ts'
 import PageHeader from '../components/PageHeader.tsx'
@@ -24,7 +24,19 @@ export default function Search() {
     () => searchWords(query, [...customWords, ...words]),
     [query, customWords],
   )
-  const hasQuery = normalizeText(query) !== ''
+  const normalizedQuery = normalizeText(query)
+  const hasQuery = normalizedQuery !== ''
+  // Offer to add the typed word unless that exact headword is already listed
+  const canAdd = hasQuery && !results.some((w) => normalizeText(w.word) === normalizedQuery)
+  const addLink = (primary: boolean) => (
+    <Link
+      to={paths.myWordNew(query.trim())}
+      className={primary ? 'btn btn--primary add-word' : 'btn btn--ghost add-word'}
+    >
+      <Plus size={20} aria-hidden="true" />
+      <span>{`Thêm '${query.trim()}' vào Từ của tôi`}</span>
+    </Link>
+  )
 
   function setQuery(value: string) {
     // replace: typing should not fill the history stack
@@ -75,6 +87,7 @@ export default function Search() {
         {hasQuery && results.length === 0 && (
           <div className="empty">
             <p className="empty__title">Không tìm thấy từ nào</p>
+            {addLink(true)}
           </div>
         )}
 
@@ -83,6 +96,7 @@ export default function Search() {
             <p className="muted hint" aria-live="polite">
               {results.length} kết quả
             </p>
+            {canAdd && addLink(false)}
             <ul className="sheet ruled">
               {results.map((word) => (
                 <li key={word.id}>

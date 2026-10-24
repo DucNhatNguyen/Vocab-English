@@ -9,4 +9,9 @@ export const paths = {
   review: '/review',
   notebook: '/notebook',
   settings: '/settings',
+  myWords: '/my-words',
+  /** New custom word; `word` prefills the English field. */
+  myWordNew: (word?: string) =>
+    word ? `/my-words/new?word=${encodeURIComponent(word)}` : '/my-words/new',
+  myWordEdit: (wordId: string) => `/my-words/${encodeURIComponent(wordId)}/edit`,
 } as const

@@ -1,6 +1,6 @@
-import { ChevronRight } from 'lucide-react'
+import { ChevronRight, PenLine } from 'lucide-react'
 import { Link } from 'react-router'
-import { useProgressMap } from '../app/hooks.ts'
+import { useCustomWords, useProgressMap } from '../app/hooks.ts'
 import { paths } from '../app/paths.ts'
 import { useSettings } from '../app/useSettings.ts'
 import PageHeader from '../components/PageHeader.tsx'
@@ -24,12 +24,22 @@ const groups = groupByTopic(decks)
 
 export default function Decks() {
   const progress = useProgressMap()
+  const customWords = useCustomWords()
   const { activeDeckIds } = useSettings()
 
   return (
     <>
       <PageHeader title="Bộ từ vựng" backTo={paths.home} />
       <div className="page">
+        <ul className="sheet ruled">
+          <li>
+            <Link to={paths.myWords} className="row">
+              <PenLine size={22} className="row__icon" aria-hidden="true" />
+              <span className="row__label">Từ của tôi ({customWords.length} từ)</span>
+              <ChevronRight size={18} className="row__chevron" aria-hidden="true" />
+            </Link>
+          </li>
+        </ul>
         {groups.map((group) => (
           <section key={group.topic} className="group">
             <h2 className="group__title">{getTopicLabel(group.topic)}</h2>

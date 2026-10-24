@@ -41,7 +41,7 @@ export default function LessonCards({ words, onDone, onExit }: LessonCardsProps)
           <h2 className="word-detail__word">{word.word}</h2>
           <p className="word-detail__ipa">
             {word.ipa && <span>{word.ipa}</span>}
-            <span className="chip">{getPosLabel(word.pos)}</span>
+            {word.pos && <span className="chip">{getPosLabel(word.pos)}</span>}
           </p>
 
           <SpeakButtons text={word.word} className="word-detail__speak" />

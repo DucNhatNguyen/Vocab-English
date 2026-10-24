@@ -15,4 +15,14 @@ describe('paths', () => {
     expect(paths.word('thank-you')).toBe('/words/thank-you')
     expect(paths.deck('ielts-moi-truong')).toBe('/decks/ielts-moi-truong')
   })
+
+  it('builds the "Từ của tôi" routes with encoded ids and prefill', () => {
+    expect(paths.myWords).toBe('/my-words')
+    expect(paths.myWordNew()).toBe('/my-words/new')
+    expect(paths.myWordNew('ice cream & co')).toBe('/my-words/new?word=ice%20cream%20%26%20co')
+    const url = paths.myWordEdit('custom:1234-abcd')
+    expect(url).toBe('/my-words/custom%3A1234-abcd/edit')
+    const match = matchRoutes([{ path: '/my-words/:wordId/edit' }], url)
+    expect(match?.[0]?.params.wordId).toBe('custom:1234-abcd')
+  })
 })

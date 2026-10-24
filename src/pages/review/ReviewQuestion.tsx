@@ -207,7 +207,7 @@ export default function ReviewQuestion({
           <p className="quiz__prompt">Gõ từ tiếng Anh có nghĩa sau</p>
           <div className="meaning-q">
             <p className="meaning-q__vi">{word.meaningVi}</p>
-            <span className="chip">{getPosLabel(word.pos)}</span>
+            {word.pos && <span className="chip">{getPosLabel(word.pos)}</span>}
           </div>
         </>
       )

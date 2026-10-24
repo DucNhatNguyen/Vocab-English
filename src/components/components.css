@@ -190,3 +190,106 @@
   font-size: 0.9375rem;
   overflow-wrap: anywhere;
 }
+
+/* Form fields */
+
+.field + .field {
+  margin-top: 18px;
+}
+
+.field__label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+
+.field__optional {
+  color: var(--ink-muted);
+  font-weight: 400;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  min-height: 48px;
+  padding: 10px 14px;
+  color: var(--ink);
+  font: inherit;
+  font-size: 1rem; /* 16px: avoids the iOS focus zoom */
+  background: var(--surface);
+  border: 1.5px solid var(--ink-muted);
+  border-radius: var(--radius);
+  appearance: none;
+}
+
+.input::placeholder {
+  color: var(--ink-muted);
+  opacity: 0.8;
+}
+
+.input:focus {
+  border-color: var(--purple);
+  outline: none;
+  box-shadow: 0 0 0 1px var(--purple);
+}
+
+.input[aria-invalid='true'] {
+  border-color: var(--red);
+  box-shadow: 0 0 0 1px var(--red);
+}
+
+.input--area {
+  resize: vertical;
+  line-height: 1.45;
+}
+
+.select {
+  position: relative;
+}
+
+.select .input {
+  padding-right: 44px;
+}
+
+.select__icon {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  color: var(--ink-muted);
+  pointer-events: none;
+}
+
+.field__hint {
+  margin-top: 6px;
+  color: var(--ink-muted);
+  font-size: 0.8125rem;
+}
+
+/* Validation is the red pen's "wrong" mark */
+.field__error {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  margin-top: 6px;
+  color: var(--red);
+  font-size: 0.9375rem;
+  font-weight: 500;
+}
+
+.field__error svg {
+  flex: none;
+  margin-top: 3px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .spin {
+    animation: spin 0.9s linear infinite;
+  }
+}

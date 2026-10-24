@@ -62,6 +62,14 @@ describe('custom words', () => {
     expect(await findCustomWordByHeadword('serendipity')).toBeUndefined()
   })
 
+  it('removes the emoji when it is updated to undefined (edit form clears it)', async () => {
+    const created = await createCustomWord({ ...input, emoji: '🥭' })
+    const updated = await updateCustomWord(created.id, { emoji: undefined })
+    expect(updated?.emoji).toBeUndefined()
+    expect(updated).not.toHaveProperty('emoji')
+    expect((await db.customWords.get(created.id))?.emoji).toBeUndefined()
+  })
+
   it('returns undefined when updating a missing word', async () => {
     expect(await updateCustomWord('custom:missing', { meaningVi: 'x' })).toBeUndefined()
   })

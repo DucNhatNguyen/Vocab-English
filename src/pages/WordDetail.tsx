@@ -1,12 +1,16 @@
-import { Heart } from 'lucide-react'
-import { useParams } from 'react-router'
+import { Heart, Pencil, Trash2 } from 'lucide-react'
+import { useState } from 'react'
+import { Link, useNavigate, useParams } from 'react-router'
 import { useCardProgress, useWord } from '../app/hooks.ts'
 import { paths } from '../app/paths.ts'
+import ConfirmDialog from '../components/ConfirmDialog.tsx'
 import LevelTicks from '../components/LevelTicks.tsx'
 import PageHeader from '../components/PageHeader.tsx'
 import ReviewTick from '../components/ReviewTick.tsx'
 import SpeakButtons from '../components/SpeakButtons.tsx'
+import { deleteCustomWord } from '../db/customWords.ts'
 import { setIgnored, toggleFavorite } from '../db/progress.ts'
+import { isCustomWordId } from '../db/words.ts'
 import { today } from '../lib/date.ts'
 import { reviewStatusLabel } from '../lib/notebook.ts'
 import { getPosLabel } from '../lib/pos.ts'
@@ -17,11 +21,27 @@ export default function WordDetail() {
   const { wordId = '' } = useParams()
   const word = useWord(wordId)
   const progress = useCardProgress(wordId)
+  const navigate = useNavigate()
+  const [confirmDelete, setConfirmDelete] = useState(false)
+  const [deleted, setDeleted] = useState(false)
 
+  async function remove() {
+    setConfirmDelete(false)
+    setDeleted(true) // hides the page so the vanished word does not flash "not found"
+    try {
+      await deleteCustomWord(wordId)
+      void navigate(paths.myWords, { replace: true })
+    } catch {
+      setDeleted(false)
+    }
+  }
+
+  if (deleted) return <PageHeader title="" />
   // Loading: render only the shell so a valid word does not flash "not found"
   if (word === undefined) return <PageHeader title="" backTo={paths.home} />
   if (word === null) return <NotFound message="Không tìm thấy từ" backTo={paths.home} />
 
+  const isCustom = isCustomWordId(word.id)
   const favorite = progress?.favorite ?? false
   const level = progress?.level ?? 0
   const reviewStatus = progress ? reviewStatusLabel(progress, today()) : null
@@ -52,7 +72,8 @@ export default function WordDetail() {
         <h2 className="word-detail__word">{word.word}</h2>
         <p className="word-detail__ipa">
           {word.ipa && <span>{word.ipa}</span>}
-          <span className="chip">{getPosLabel(word.pos)}</span>
+          {word.pos && <span className="chip">{getPosLabel(word.pos)}</span>}
+          {isCustom && <span className="chip chip--mine">Từ của tôi</span>}
         </p>
 
         <SpeakButtons text={word.word} className="word-detail__speak" />
@@ -85,7 +106,30 @@ export default function WordDetail() {
             </div>
           )}
         </section>
+
+        {isCustom && (
+          <div className="word-detail__actions">
+            <Link to={paths.myWordEdit(word.id)} className="btn btn--ghost">
+              <Pencil size={20} aria-hidden="true" />
+              Sửa
+            </Link>
+            <button type="button" className="btn btn--ghost" onClick={() => setConfirmDelete(true)}>
+              <Trash2 size={20} aria-hidden="true" />
+              Xoá
+            </button>
+          </div>
+        )}
       </article>
+
+      <ConfirmDialog
+        open={confirmDelete}
+        title="Xoá từ này?"
+        message="Xoá từ này? Tiến độ học của từ cũng sẽ bị xoá."
+        cancelLabel="Giữ lại"
+        confirmLabel="Xoá"
+        onCancel={() => setConfirmDelete(false)}
+        onConfirm={() => void remove()}
+      />
     </>
   )
 }
