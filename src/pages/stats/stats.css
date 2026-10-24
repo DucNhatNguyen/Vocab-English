@@ -1,0 +1,155 @@
+/* Thống kê: level bar chart, number rows, last-7-days dots. */
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stats .label {
+  margin: 0 4px 6px;
+}
+
+.stats__chart {
+  padding: 20px 12px 12px;
+}
+
+.stats__empty {
+  margin: 8px 4px 0;
+  font-size: 0.9375rem;
+}
+
+/* Chart: one column per level; the bar grows from the shared baseline */
+
+.chart {
+  --plot-height: 132px;
+  display: flex;
+  gap: 8px;
+}
+
+.chart__col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+}
+
+.chart__plot {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  align-self: stretch;
+  height: calc(var(--plot-height) + 28px);
+  border-bottom: 2px solid var(--ink-muted);
+}
+
+.chart__value {
+  margin-bottom: 4px;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  line-height: 24px;
+}
+
+.chart__bar {
+  display: block;
+  width: min(100%, 40px);
+  height: max(6px, calc(var(--h, 0) * var(--plot-height)));
+  background: var(--purple);
+  border-radius: 6px 6px 0 0;
+}
+
+/* No words at this level: nothing but the baseline */
+.chart__bar--zero {
+  height: 0;
+}
+
+.chart__ticks {
+  margin-top: 8px;
+  min-height: 16px;
+}
+
+/* Number rows */
+
+.stat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 56px;
+  padding: 8px 16px;
+}
+
+.stat__main {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.stat__label {
+  font-weight: 500;
+}
+
+.stat__note {
+  color: var(--ink-muted);
+  font-size: 0.8125rem;
+}
+
+.stat__value {
+  flex: none;
+  color: var(--purple);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.stat__value strong {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.stat__unit {
+  color: var(--ink-muted);
+  font-size: 0.9375rem;
+}
+
+/* Last 7 days */
+
+.stats__week {
+  padding: 14px 8px 10px;
+}
+
+.week {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.week__day {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  color: var(--ink-muted);
+  font-size: 0.8125rem;
+}
+
+.week__day--today {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.week__dot {
+  width: 28px;
+  height: 28px;
+  border: 2px solid var(--ink-muted);
+  border-radius: 50%;
+}
+
+.week__dot--on {
+  background: var(--purple);
+  border-color: var(--purple);
+}

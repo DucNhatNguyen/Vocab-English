@@ -1,0 +1,10 @@
+/* Home mockup: toggles which static state is visible and fakes the iPhone safe areas
+   (status bar 47px, home indicator 34px) that headless browsers report as 0. The look comes from
+   the real CSS files linked in mockup.html. */
+
+[data-screen] { display: none; }
+[data-screen].on { display: block; }
+
+.home { padding-top: calc(47px + 20px); }
+.tabbar { padding-bottom: 34px; }
+.app-main { padding-bottom: calc(var(--tabbar-height) + 34px + 16px); }

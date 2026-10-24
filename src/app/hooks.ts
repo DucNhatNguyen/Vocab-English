@@ -4,6 +4,7 @@ import { getWord } from '../data/index.ts'
 import type { Word } from '../data/types.ts'
 import { db } from '../db/db.ts'
 import type { CardProgress, CustomWord } from '../db/types.ts'
+import { compareCustomWordsNewestFirst } from '../lib/customWordOrder.ts'
 import { getWordById, isCustomWordId } from '../db/words.ts'
 
 const NO_PROGRESS: CardProgress[] = []
@@ -25,7 +26,7 @@ export function useCardProgress(wordId: string): CardProgress | null | undefined
 
 /** Live custom words (newest first). Empty until loaded. */
 export function useCustomWords(): CustomWord[] {
-  return useLiveQuery(() => db.customWords.orderBy('createdAt').reverse().toArray(), [], [])
+  return useLiveQuery(async () => (await db.customWords.toArray()).sort(compareCustomWordsNewestFirst), [], [])
 }
 
 /**

@@ -15,8 +15,8 @@ const TABS: readonly Tab[] = [
     to: paths.home,
     label: 'Trang chủ',
     icon: House,
-    // Decks, word details, search and "Từ của tôi" are reached from Home
-    alsoActiveFor: [paths.decks, '/words', paths.search, paths.myWords],
+    // Decks, word details, search, "Từ của tôi" and the statistics are reached from Home
+    alsoActiveFor: [paths.decks, '/words', paths.search, paths.myWords, paths.stats],
   },
   { to: paths.learn, label: 'Học', icon: GraduationCap },
   { to: paths.review, label: 'Ôn tập', icon: BookOpen },

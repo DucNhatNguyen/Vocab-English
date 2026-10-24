@@ -14,10 +14,11 @@ const word = (id: string): Word => ({
   level: 'A1',
   topics: [],
 })
-const custom = (id: string, createdAt: string): CustomWord => ({
+const custom = (id: string, createdAt: string, createdAtMs?: number): CustomWord => ({
   ...word(`custom:${id}`),
   level: 'custom',
   createdAt,
+  ...(createdAtMs === undefined ? {} : { createdAtMs }),
 })
 const prog = (wordId: string, level: CardProgress['level'], favorite = false): CardProgress => ({
   wordId,
@@ -67,9 +68,19 @@ describe('selectLessonWords', () => {
     ])
   })
 
-  it('keeps input order for custom words created on the same day', () => {
-    const customWords = [custom('x', '2026-10-01'), custom('y', '2026-10-01')]
-    expect(select({ customWords, activeDeckIds: [] })).toEqual(['custom:x', 'custom:y'])
+  it('orders custom words created on the same day by creation time, then id', () => {
+    const customWords = [
+      custom('late', '2026-10-01', 2000),
+      custom('early', '2026-10-01', 1000),
+      custom('old-b', '2026-10-01'),
+      custom('old-a', '2026-10-01'),
+    ]
+    expect(select({ customWords, activeDeckIds: [] })).toEqual([
+      'custom:old-a',
+      'custom:old-b',
+      'custom:early',
+      'custom:late',
+    ])
   })
 
   it('stops at the lesson size', () => {

@@ -2,10 +2,10 @@ import { toLocalDateString } from '../lib/date.ts'
 import { db } from './db.ts'
 import type { CustomWord } from './types.ts'
 
-export type CustomWordInput = Omit<CustomWord, 'id' | 'createdAt' | 'level' | 'topics'> &
+export type CustomWordInput = Omit<CustomWord, 'id' | 'createdAt' | 'createdAtMs' | 'level' | 'topics'> &
   Partial<Pick<CustomWord, 'level' | 'topics'>>
 
-export type CustomWordChanges = Partial<Omit<CustomWord, 'id' | 'createdAt'>>
+export type CustomWordChanges = Partial<Omit<CustomWord, 'id' | 'createdAt' | 'createdAtMs'>>
 
 export const CUSTOM_WORD_ID_PREFIX = 'custom:'
 
@@ -17,6 +17,7 @@ export async function createCustomWord(input: CustomWordInput): Promise<CustomWo
     topics: input.topics ?? ['custom'],
     id: `${CUSTOM_WORD_ID_PREFIX}${crypto.randomUUID()}`,
     createdAt: toLocalDateString(),
+    createdAtMs: Date.now(),
   }
   await db.customWords.add(word)
   return word

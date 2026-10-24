@@ -34,7 +34,14 @@ describe('custom words', () => {
     expect(created.id).toMatch(/^custom:[0-9a-f-]{36}$/)
     expect(created.word).toBe('Serendipity')
     expect(created.createdAt).toBe(toLocalDateString())
+    expect(created.createdAtMs).toBeTypeOf('number')
     expect(await db.customWords.get(created.id)).toEqual(created)
+  })
+
+  it('keeps createdAtMs when a word is updated', async () => {
+    const created = await createCustomWord(input)
+    const updated = await updateCustomWord(created.id, { meaningVi: 'x' })
+    expect(updated?.createdAtMs).toBe(created.createdAtMs)
   })
 
   it('generates distinct ids', async () => {

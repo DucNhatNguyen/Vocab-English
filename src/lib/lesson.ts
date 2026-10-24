@@ -1,6 +1,7 @@
 import { getDeckWords as getBuiltInDeckWords } from '../data/index.ts'
 import type { Word } from '../data/types.ts'
 import type { CardProgress, CustomWord } from '../db/types.ts'
+import { compareCustomWordsOldestFirst } from './customWordOrder.ts'
 
 export interface LessonSelectionInput {
   /** Words per lesson (the daily goal). */
@@ -20,8 +21,8 @@ export function isUnlearned(progress: CardProgress | undefined): boolean {
 }
 
 /**
- * Words for the next new-word lesson: unlearned custom words first (oldest `createdAt` first,
- * ties keep input order), then unlearned words of each active deck in the order the ids are
+ * Words for the next new-word lesson: unlearned custom words first (oldest first: `createdAt`,
+ * then `createdAtMs`, then id), then unlearned words of each active deck in the order the ids are
  * listed, each deck in its own order. Unknown decks are skipped, duplicates dropped. May return
  * fewer than `count` words, or none.
  */
@@ -46,8 +47,7 @@ export function selectLessonWords({
     return picked.length >= limit
   }
 
-  // Array.prototype.sort is stable, so equal dates keep their input order.
-  const ownWords = [...customWords].sort((a, b) => a.createdAt.localeCompare(b.createdAt))
+  const ownWords = [...customWords].sort(compareCustomWordsOldestFirst)
   for (const word of ownWords) if (add(word)) return picked
 
   for (const deckId of activeDeckIds) {

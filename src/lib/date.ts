@@ -61,3 +61,16 @@ export function formatDateVi(date: string, todayDate: string = today()): string 
   const year = d.getFullYear() === parseLocalDate(todayDate).getFullYear() ? '' : `/${d.getFullYear()}`
   return `${WEEKDAYS_VI[d.getDay()]}, ${d.getDate()}/${d.getMonth() + 1}${year}`
 }
+
+const WEEKDAYS_SHORT_VI = ['CN', 'T2', 'T3', 'T4', 'T5', 'T6', 'T7']
+
+/** Always the full label, never "hôm nay": "Thứ Bảy, 24/10" (no year). */
+export function formatWeekdayDateVi(date: string): string {
+  const d = parseLocalDate(date)
+  return `${WEEKDAYS_VI[d.getDay()]}, ${d.getDate()}/${d.getMonth() + 1}`
+}
+
+/** Short weekday for charts: "T2" ... "T7", "CN". */
+export function weekdayShortVi(date: string): string {
+  return WEEKDAYS_SHORT_VI[parseLocalDate(date).getDay()]
+}

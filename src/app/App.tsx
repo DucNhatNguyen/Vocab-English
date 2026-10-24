@@ -10,6 +10,7 @@ import NotFound from '../pages/NotFound.tsx'
 import Placeholder from '../pages/Placeholder.tsx'
 import Review from '../pages/Review.tsx'
 import Search from '../pages/Search.tsx'
+import Stats from '../pages/Stats.tsx'
 import WordDetail from '../pages/WordDetail.tsx'
 import AppLayout from './AppLayout.tsx'
 import SettingsEffects from './SettingsEffects.tsx'
@@ -20,6 +21,8 @@ import '../pages/pages.css'
 import '../pages/learn/learn.css'
 import '../pages/review/review.css'
 import '../pages/my-words/my-words.css'
+import '../pages/home/home.css'
+import '../pages/stats/stats.css'
 
 export default function App() {
   return (
@@ -38,6 +41,7 @@ export default function App() {
           <Route path="learn" element={<Learn />} />
           <Route path="review" element={<Review />} />
           <Route path="notebook" element={<Notebook />} />
+          <Route path="stats" element={<Stats />} />
           <Route path="settings" element={<Placeholder title="Cài đặt" />} />
           <Route path="*" element={<NotFound />} />
         </Route>

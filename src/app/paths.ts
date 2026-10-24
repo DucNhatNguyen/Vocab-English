@@ -8,6 +8,7 @@ export const paths = {
   learn: '/learn',
   review: '/review',
   notebook: '/notebook',
+  stats: '/stats',
   settings: '/settings',
   myWords: '/my-words',
   /** New custom word; `word` prefills the English field. */

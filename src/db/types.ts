@@ -16,6 +16,8 @@ export interface CardProgress {
 // built-in ids. CardProgress is shared between both kinds.
 export interface CustomWord extends Word {
   createdAt: string // local date
+  /** `Date.now()` at creation; breaks ties between words added on the same day. Absent on older words. */
+  createdAtMs?: number
 }
 
 export interface StudyLog {

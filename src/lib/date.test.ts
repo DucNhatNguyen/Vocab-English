@@ -3,6 +3,8 @@ import {
   addDays,
   daysBetween,
   formatDateVi,
+  formatWeekdayDateVi,
+  weekdayShortVi,
   parseLocalDate,
   today,
   toLocalDateString,
@@ -178,5 +180,19 @@ describe('formatDateVi', () => {
   it('defaults to the real today', () => {
     expect(formatDateVi(today())).toBe('hôm nay')
     expect(formatDateVi(tomorrow())).toBe('ngày mai')
+  })
+})
+
+describe('formatWeekdayDateVi / weekdayShortVi', () => {
+  it('writes the full weekday label for any date, even today', () => {
+    expect(formatWeekdayDateVi('2026-10-24')).toBe('Thứ Bảy, 24/10')
+    expect(formatWeekdayDateVi('2026-11-01')).toBe('Chủ Nhật, 1/11')
+    expect(formatWeekdayDateVi('2027-01-05')).toBe('Thứ Ba, 5/1')
+  })
+
+  it('abbreviates weekdays', () => {
+    expect(weekdayShortVi('2026-10-24')).toBe('T7')
+    expect(weekdayShortVi('2026-10-25')).toBe('CN')
+    expect(weekdayShortVi('2026-10-26')).toBe('T2')
   })
 })
