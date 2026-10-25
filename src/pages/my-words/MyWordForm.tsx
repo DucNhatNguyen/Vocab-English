@@ -3,6 +3,7 @@ import { useEffect, useId, useRef, useState, type FormEvent, type ReactNode } fr
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router'
 import { useWord } from '../../app/hooks.ts'
 import { paths } from '../../app/paths.ts'
+import IconBadge from '../../components/IconBadge.tsx'
 import PageHeader from '../../components/PageHeader.tsx'
 import { PARTS_OF_SPEECH } from '../../data/types.ts'
 import type { Word } from '../../data/types.ts'
@@ -81,7 +82,7 @@ export default function MyWordForm() {
 
   if (!editing) return <WordForm />
   if (!isCustomWordId(wordId) || existing === null) {
-    return <NotFound message="Không tìm thấy từ" backTo={paths.myWords} />
+    return <NotFound message="Không tìm thấy từ" backTo={paths.selfStudy} />
   }
   // Loading: render only the shell so a valid word does not flash "not found"
   if (existing === undefined) return <PageHeader title="Sửa từ" backTo={paths.word(wordId)} />
@@ -196,7 +197,7 @@ function WordForm({ existing }: { existing?: Word }) {
         void navigate(paths.word(existing.id), { replace: true })
       } else {
         await createCustomWord(data)
-        void navigate(paths.myWords, { replace: true })
+        void navigate(paths.selfStudy, { replace: true })
       }
     } catch {
       setSaveFailed(true)
@@ -215,155 +216,157 @@ function WordForm({ existing }: { existing?: Word }) {
     <>
       <PageHeader
         title={existing ? 'Sửa từ' : 'Thêm từ'}
-        backTo={existing ? paths.word(existing.id) : paths.myWords}
+        backTo={existing ? paths.word(existing.id) : paths.selfStudy}
       />
       <form ref={formRef} className="page word-form" noValidate onSubmit={(e) => void save(e)}>
-        <Field label="Từ tiếng Anh" htmlFor={wordId} error={errors.word}>
-          <input
-            id={wordId}
-            name="word"
-            className="input"
-            type="text"
-            lang="en"
-            autoCapitalize="off"
-            autoCorrect="off"
-            spellCheck={false}
-            autoComplete="off"
-            enterKeyHint="next"
-            value={values.word}
-            aria-invalid={errors.word ? true : undefined}
-            aria-describedby={describedBy(wordId, undefined, errors.word)}
-            onChange={(e) => changeWord(e.target.value)}
-            onBlur={blurWord}
-          />
-        </Field>
+        <div className="glass word-form__card">
+          <Field label="Từ tiếng Anh" htmlFor={wordId} error={errors.word}>
+            <input
+              id={wordId}
+              name="word"
+              className="input"
+              type="text"
+              lang="en"
+              autoCapitalize="off"
+              autoCorrect="off"
+              spellCheck={false}
+              autoComplete="off"
+              enterKeyHint="next"
+              value={values.word}
+              aria-invalid={errors.word ? true : undefined}
+              aria-describedby={describedBy(wordId, undefined, errors.word)}
+              onChange={(e) => changeWord(e.target.value)}
+              onBlur={blurWord}
+            />
+          </Field>
 
-        <div className="suggest">
-          <button
-            type="button"
-            className="btn btn--ghost suggest__btn"
-            disabled={loading || values.word.trim() === ''}
-            onClick={() => void runSuggest(values.word)}
+          <div className="suggest">
+            <button
+              type="button"
+              className="btn btn--ghost suggest__btn"
+              disabled={loading || values.word.trim() === ''}
+              onClick={() => void runSuggest(values.word)}
+            >
+              {loading ? (
+                <LoaderCircle size={20} className="spin" aria-hidden="true" />
+              ) : (
+                <Lightbulb size={20} aria-hidden="true" />
+              )}
+              Gợi ý
+            </button>
+            <p className="suggest__note muted" role="status">
+              {suggest.status === 'loading' && 'Đang tìm gợi ý…'}
+              {suggest.status === 'done' && suggestionMessage(suggest.result)}
+            </p>
+          </div>
+
+          <Field label="Phiên âm IPA" htmlFor={fieldId('ipa')} optional>
+            <input
+              id={fieldId('ipa')}
+              className="input"
+              type="text"
+              autoCapitalize="off"
+              autoCorrect="off"
+              spellCheck={false}
+              autoComplete="off"
+              placeholder="/ˈmæŋɡoʊ/"
+              value={values.ipa}
+              onChange={(e) => set('ipa', e.target.value)}
+            />
+          </Field>
+
+          <Field label="Từ loại" htmlFor={fieldId('pos')} optional>
+            <div className="select">
+              <select
+                id={fieldId('pos')}
+                className="input"
+                value={values.pos}
+                onChange={(e) => set('pos', e.target.value)}
+              >
+                <option value="">Chưa chọn</option>
+                {PARTS_OF_SPEECH.map((code) => (
+                  <option key={code} value={code}>
+                    {getPosLabel(code)} ({code})
+                  </option>
+                ))}
+                {/* A stored value outside the list (older data) stays selectable */}
+                {values.pos && !(PARTS_OF_SPEECH as readonly string[]).includes(values.pos) && (
+                  <option value={values.pos}>{values.pos}</option>
+                )}
+              </select>
+              <ChevronDown size={20} className="select__icon" aria-hidden="true" />
+            </div>
+          </Field>
+
+          <Field label="Nghĩa tiếng Việt" htmlFor={meaningId} error={errors.meaningVi}>
+            <input
+              id={meaningId}
+              name="meaningVi"
+              className="input"
+              type="text"
+              lang="vi"
+              autoCapitalize="off"
+              autoComplete="off"
+              enterKeyHint="next"
+              value={values.meaningVi}
+              aria-invalid={errors.meaningVi ? true : undefined}
+              aria-describedby={describedBy(meaningId, undefined, errors.meaningVi)}
+              onChange={(e) => set('meaningVi', e.target.value)}
+            />
+          </Field>
+
+          <Field label="Câu ví dụ tiếng Anh" htmlFor={fieldId('exampleEn')} optional hint={exampleHint}>
+            <textarea
+              id={fieldId('exampleEn')}
+              className="input input--area"
+              rows={2}
+              lang="en"
+              autoCapitalize="sentences"
+              autoComplete="off"
+              aria-describedby={describedBy(fieldId('exampleEn'), exampleHint)}
+              value={values.exampleEn}
+              onChange={(e) => set('exampleEn', e.target.value)}
+            />
+          </Field>
+
+          <Field label="Câu ví dụ tiếng Việt" htmlFor={fieldId('exampleVi')} optional>
+            <textarea
+              id={fieldId('exampleVi')}
+              className="input input--area"
+              rows={2}
+              lang="vi"
+              autoCapitalize="sentences"
+              autoComplete="off"
+              value={values.exampleVi}
+              onChange={(e) => set('exampleVi', e.target.value)}
+            />
+          </Field>
+
+          <Field
+            label="Emoji minh hoạ"
+            htmlFor={emojiId}
+            optional
+            hint="Một biểu tượng, ví dụ 🥭"
+            error={errors.emoji}
           >
-            {loading ? (
-              <LoaderCircle size={20} className="spin" aria-hidden="true" />
-            ) : (
-              <Lightbulb size={20} aria-hidden="true" />
-            )}
-            Gợi ý
-          </button>
-          <p className="suggest__note muted" role="status">
-            {suggest.status === 'loading' && 'Đang tìm gợi ý…'}
-            {suggest.status === 'done' && suggestionMessage(suggest.result)}
-          </p>
+            <input
+              id={emojiId}
+              name="emoji"
+              className="input input--emoji"
+              type="text"
+              autoComplete="off"
+              value={values.emoji}
+              aria-invalid={errors.emoji ? true : undefined}
+              aria-describedby={describedBy(emojiId, 'hint', errors.emoji)}
+              onChange={(e) => set('emoji', e.target.value)}
+            />
+          </Field>
         </div>
 
-        <Field label="Phiên âm IPA" htmlFor={fieldId('ipa')} optional>
-          <input
-            id={fieldId('ipa')}
-            className="input"
-            type="text"
-            autoCapitalize="off"
-            autoCorrect="off"
-            spellCheck={false}
-            autoComplete="off"
-            placeholder="/ˈmæŋɡoʊ/"
-            value={values.ipa}
-            onChange={(e) => set('ipa', e.target.value)}
-          />
-        </Field>
-
-        <Field label="Từ loại" htmlFor={fieldId('pos')} optional>
-          <div className="select">
-            <select
-              id={fieldId('pos')}
-              className="input"
-              value={values.pos}
-              onChange={(e) => set('pos', e.target.value)}
-            >
-              <option value="">Chưa chọn</option>
-              {PARTS_OF_SPEECH.map((code) => (
-                <option key={code} value={code}>
-                  {getPosLabel(code)} ({code})
-                </option>
-              ))}
-              {/* A stored value outside the list (older data) stays selectable */}
-              {values.pos && !(PARTS_OF_SPEECH as readonly string[]).includes(values.pos) && (
-                <option value={values.pos}>{values.pos}</option>
-              )}
-            </select>
-            <ChevronDown size={20} className="select__icon" aria-hidden="true" />
-          </div>
-        </Field>
-
-        <Field label="Nghĩa tiếng Việt" htmlFor={meaningId} error={errors.meaningVi}>
-          <input
-            id={meaningId}
-            name="meaningVi"
-            className="input"
-            type="text"
-            lang="vi"
-            autoCapitalize="off"
-            autoComplete="off"
-            enterKeyHint="next"
-            value={values.meaningVi}
-            aria-invalid={errors.meaningVi ? true : undefined}
-            aria-describedby={describedBy(meaningId, undefined, errors.meaningVi)}
-            onChange={(e) => set('meaningVi', e.target.value)}
-          />
-        </Field>
-
-        <Field label="Câu ví dụ tiếng Anh" htmlFor={fieldId('exampleEn')} optional hint={exampleHint}>
-          <textarea
-            id={fieldId('exampleEn')}
-            className="input input--area"
-            rows={2}
-            lang="en"
-            autoCapitalize="sentences"
-            autoComplete="off"
-            aria-describedby={describedBy(fieldId('exampleEn'), exampleHint)}
-            value={values.exampleEn}
-            onChange={(e) => set('exampleEn', e.target.value)}
-          />
-        </Field>
-
-        <Field label="Câu ví dụ tiếng Việt" htmlFor={fieldId('exampleVi')} optional>
-          <textarea
-            id={fieldId('exampleVi')}
-            className="input input--area"
-            rows={2}
-            lang="vi"
-            autoCapitalize="sentences"
-            autoComplete="off"
-            value={values.exampleVi}
-            onChange={(e) => set('exampleVi', e.target.value)}
-          />
-        </Field>
-
-        <Field
-          label="Emoji minh hoạ"
-          htmlFor={emojiId}
-          optional
-          hint="Một biểu tượng, ví dụ 🥭"
-          error={errors.emoji}
-        >
-          <input
-            id={emojiId}
-            name="emoji"
-            className="input input--emoji"
-            type="text"
-            autoComplete="off"
-            value={values.emoji}
-            aria-invalid={errors.emoji ? true : undefined}
-            aria-describedby={describedBy(emojiId, 'hint', errors.emoji)}
-            onChange={(e) => set('emoji', e.target.value)}
-          />
-        </Field>
-
         {duplicate && (
-          <div ref={duplicateRef} className="callout" role="alert">
+          <div ref={duplicateRef} className="callout glass" role="alert">
             <p className="callout__text">
-              <TriangleAlert size={20} aria-hidden="true" />
+              <IconBadge icon={TriangleAlert} hue="orange" size="sm" />
               <span>{`'${duplicate.word}' đã có trong Từ của tôi`}</span>
             </p>
             <Link to={paths.word(duplicate.id)} className="btn btn--ghost">

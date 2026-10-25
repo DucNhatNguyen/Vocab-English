@@ -11,6 +11,8 @@ export interface LessonSelectionInput {
   /** Deck ids to draw from, in priority order. */
   activeDeckIds: readonly string[]
   progress: ReadonlyMap<string, CardProgress>
+  /** `decks`: the daily lesson (active decks only). `mine`: Tự học (own words only). */
+  source: 'decks' | 'mine'
   /** Words of a deck in deck order; unknown deck -> []. Injectable for tests. */
   getDeckWords?: (deckId: string) => readonly Word[]
 }
@@ -21,16 +23,18 @@ export function isUnlearned(progress: CardProgress | undefined): boolean {
 }
 
 /**
- * Words for the next new-word lesson: unlearned custom words first (oldest first: `createdAt`,
- * then `createdAtMs`, then id), then unlearned words of each active deck in the order the ids are
- * listed, each deck in its own order. Unknown decks are skipped, duplicates dropped. May return
- * fewer than `count` words, or none.
+ * Words for the next new-word lesson of a source.
+ * - `mine`: unlearned custom words, oldest first (`createdAt`, then `createdAtMs`, then id).
+ * - `decks`: unlearned words of each active deck in the order the ids are listed, each deck in its
+ *   own order; unknown decks skipped, duplicates dropped.
+ * May return fewer than `count` words, or none.
  */
 export function selectLessonWords({
   count,
   customWords,
   activeDeckIds,
   progress,
+  source,
   getDeckWords = getBuiltInDeckWords,
 }: LessonSelectionInput): Word[] {
   const limit = Math.floor(count)
@@ -47,8 +51,10 @@ export function selectLessonWords({
     return picked.length >= limit
   }
 
-  const ownWords = [...customWords].sort(compareCustomWordsOldestFirst)
-  for (const word of ownWords) if (add(word)) return picked
+  if (source === 'mine') {
+    for (const word of [...customWords].sort(compareCustomWordsOldestFirst)) if (add(word)) break
+    return picked
+  }
 
   for (const deckId of activeDeckIds) {
     for (const word of getDeckWords(deckId)) if (add(word)) return picked

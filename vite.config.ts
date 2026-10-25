@@ -5,7 +5,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 const { version } = JSON.parse(readFileSync(new URL('./package.json', import.meta.url), 'utf8')) as { version: string }
 
-const PAPER = '#FBF7EE'
+const BG = '#F7F8FF'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -32,8 +32,8 @@ export default defineConfig({
         display: 'standalone',
         start_url: '/',
         scope: '/',
-        theme_color: PAPER,
-        background_color: PAPER,
+        theme_color: BG,
+        background_color: BG,
         icons: [
           { src: '/icons/pwa-192x192.png', sizes: '192x192', type: 'image/png' },
           { src: '/icons/pwa-512x512.png', sizes: '512x512', type: 'image/png' },

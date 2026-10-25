@@ -17,7 +17,7 @@ describe('paths', () => {
   })
 
   it('builds the "Từ của tôi" routes with encoded ids and prefill', () => {
-    expect(paths.myWords).toBe('/my-words')
+    expect(paths.myWords).toBe('/tu-hoc')
     expect(paths.myWordNew()).toBe('/my-words/new')
     expect(paths.myWordNew('ice cream & co')).toBe('/my-words/new?word=ice%20cream%20%26%20co')
     const url = paths.myWordEdit('custom:1234-abcd')

@@ -34,7 +34,7 @@ export default function DeckDetail() {
         </p>
         <button
           type="button"
-          className={active ? 'btn btn--ghost deck-toggle' : 'btn btn--primary deck-toggle'}
+          className={active ? 'btn btn--success deck-toggle' : 'btn btn--primary deck-toggle'}
           aria-pressed={active}
           disabled={loading}
           onClick={() => void toggleActiveDeck(deck.id)}

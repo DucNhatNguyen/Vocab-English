@@ -1,51 +1,48 @@
-import { BookOpen, GraduationCap, House, NotebookPen, Settings, type LucideIcon } from 'lucide-react'
+import { ClipboardList, GraduationCap, PencilLine, type LucideIcon } from 'lucide-react'
+import { m } from 'motion/react'
 import { Link, useLocation } from 'react-router'
 import { paths } from './paths.ts'
+import { activeTab, type TabId } from './tabs.ts'
 
 interface Tab {
+  id: TabId
   to: string
   label: string
   icon: LucideIcon
-  /** Path prefixes (besides `to`) that keep this tab highlighted. */
-  alsoActiveFor?: readonly string[]
 }
 
 const TABS: readonly Tab[] = [
-  {
-    to: paths.home,
-    label: 'Trang chủ',
-    icon: House,
-    // Decks, word details, search, "Từ của tôi" and the statistics are reached from Home
-    alsoActiveFor: [paths.decks, '/words', paths.search, paths.myWords, paths.stats],
-  },
-  { to: paths.learn, label: 'Học', icon: GraduationCap },
-  { to: paths.review, label: 'Ôn tập', icon: BookOpen },
-  { to: paths.notebook, label: 'Sổ tay', icon: NotebookPen },
-  { to: paths.settings, label: 'Cài đặt', icon: Settings },
+  { id: 'study', to: paths.home, label: 'Học', icon: GraduationCap },
+  { id: 'self', to: paths.selfStudy, label: 'Tự học', icon: PencilLine },
+  { id: 'exercises', to: paths.exercises, label: 'Bài tập', icon: ClipboardList },
 ]
 
-function isActive(tab: Tab, pathname: string): boolean {
-  if (tab.to === paths.home && pathname === paths.home) return true
-  if (tab.to !== paths.home && (pathname === tab.to || pathname.startsWith(`${tab.to}/`))) {
-    return true
-  }
-  return (tab.alsoActiveFor ?? []).some((p) => pathname === p || pathname.startsWith(`${p}/`))
-}
+/** The active tile glides between tabs (shared layout) instead of jumping. */
+const TILE_SPRING = { type: 'spring', stiffness: 500, damping: 40 } as const
 
 export default function TabBar() {
-  const { pathname } = useLocation()
+  const { pathname, search } = useLocation()
+  const current = activeTab(pathname, search)
   return (
     <nav className="tabbar" aria-label="Điều hướng chính">
       {TABS.map((tab) => {
-        const active = isActive(tab, pathname)
+        const active = tab.id === current
         return (
           <Link
-            key={tab.to}
+            key={tab.id}
             to={tab.to}
             className="tabbar__item"
             aria-current={active ? 'page' : undefined}
           >
-            <tab.icon size={22} strokeWidth={active ? 2.5 : 2} aria-hidden="true" />
+            {active && (
+              <m.span
+                layoutId="tabbar-tile"
+                className="tabbar__tile"
+                transition={TILE_SPRING}
+                aria-hidden="true"
+              />
+            )}
+            <tab.icon size={22} strokeWidth={active ? 2.25 : 2} aria-hidden="true" />
             <span>{tab.label}</span>
           </Link>
         )

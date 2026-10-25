@@ -50,10 +50,13 @@ Không cần backend/database server cho MVP. (Tuỳ chọn sau này: Supabase �
 - Danh sách bộ từ theo **chủ đề** (giao tiếp, du lịch, công việc, IELTS, TOEIC…) và **cấp độ** (A1–C2).
 - Mỗi từ: emoji minh hoạ (tuỳ chọn), từ, phiên âm IPA, từ loại, nghĩa tiếng Việt, câu ví dụ (EN + VI).
 - Nút phát âm thường và nút **phát âm chậm** 🐌 (Web Speech API).
-- Tìm kiếm từ (Anh → Việt, Việt → Anh), **không phân biệt dấu** ("kien cuong" tìm ra "kiên cường"). Tìm cả trong "Từ của tôi".
+- Tìm kiếm từ (Anh → Việt, Việt → Anh), **không phân biệt dấu** ("kien cuong" tìm ra "kiên cường"). Tìm cả trong các từ tự nhập (tab Tự học).
 
-**Từ của tôi (người dùng tự nhập từ muốn học)**
-- Bộ từ riêng "Từ của tôi", lưu trong IndexedDB, học và ôn 5 cấp giống hệt từ có sẵn.
+**Tự học (người dùng tự nhập từ muốn học)**
+- Tab riêng **Tự học** (`/tu-hoc`): các từ tự nhập ("Từ của tôi", id `custom:*`) lưu trong IndexedDB, học và ôn 5 cấp giống hệt từ có sẵn.
+- Từ tự nhập được học trong các lượt riêng ("Học ngay", `/learn?nguon=tu-hoc`), mỗi lượt tối đa N từ (N = mục tiêu mỗi ngày), **không giới hạn số lượt trong ngày** (xong lượt có nút "Học tiếp N từ"). Chúng không còn trộn vào bài học hằng ngày và không cộng vào "Hôm nay: x/N từ mới".
+- Từ tự nhập tới hạn xuất hiện trong lượt ôn chung ở tab Học, và cả trong lượt riêng "Ôn từ của tôi" (`/review?nguon=tu-hoc`, chỉ gồm từ tự nhập). Học hay ôn ở Tự học đều tính cho chuỗi ngày học và thống kê.
+- Màn Tự học: thẻ kính với số từ chưa học, số từ tới hạn ôn, nút "Học ngay" và "Ôn từ của tôi"; nút "Thêm từ"; danh sách từ của tôi có ô tìm trong danh sách.
 - Form thêm từ: gõ từ tiếng Anh → app tự gợi ý:
   1. Nếu từ có trong kho sẵn → điền đủ mọi trường.
   2. Nếu không → gọi Free Dictionary API lấy IPA, từ loại, câu ví dụ tiếng Anh (cần mạng; offline thì bỏ qua bước này).
@@ -63,14 +66,14 @@ Không cần backend/database server cho MVP. (Tuỳ chọn sau này: Supabase �
 - Có thể thêm nhanh từ màn hình Tìm kiếm khi không tìm thấy từ ("Thêm '<từ>' vào Từ của tôi").
 
 **Học từ mới (bài học)**
-- Mỗi bài gồm N từ mới, N = mục tiêu mỗi ngày (5 / 10 / 20, người dùng chọn). Ưu tiên các từ chưa học trong "Từ của tôi", sau đó lấy lần lượt từ các bộ từ đang chọn (`activeDeckIds`).
+- Mỗi bài gồm N từ mới, N = mục tiêu mỗi ngày (5 / 10 / 20, người dùng chọn). Lấy lần lượt từ các bộ từ đang chọn (`activeDeckIds`); không lấy từ tự nhập (chúng học ở tab Tự học).
 - Bước 1 – Xem thẻ: lần lượt từng từ với emoji, từ, IPA, từ loại, nghĩa, ví dụ EN + VI; tự phát âm khi mở thẻ; nút phát âm thường / chậm.
 - Bước 2 – Kiểm tra nhanh: sau khi xem hết, mỗi từ 1 câu chọn nghĩa đúng. Sai thì hỏi lại ở cuối lượt cho đến khi đúng. Bước này không ảnh hưởng cấp độ.
 - Kết thúc: các từ vào **cấp 1**, hạn ôn = ngày mai. Hiện màn hình tổng kết.
 
 **Ôn tập "Thời điểm vàng" (5 cấp độ nhớ)** — chức năng quan trọng nhất
 - Mỗi từ đã học có cấp 1–5; thuật toán xem mục 5.
-- Trang chủ hiện số từ đến hạn hôm nay + nút "Ôn tập ngay". Nếu không có từ nào, hiện "Lượt ôn tiếp theo: <ngày>, X từ".
+- Trang chủ (tab Học) hiện số từ đến hạn hôm nay (gồm cả từ tự nhập) + nút "Ôn tập ngay". Nếu không có từ nào, hiện "Lượt ôn tiếp theo: <ngày>, X từ".
 - Một lượt ôn: các từ đến hạn (`dueDate <= hôm nay`, không bị bỏ tick), xáo trộn, tối đa 20 từ; còn thì làm lượt tiếp.
 - Mỗi từ 1 câu hỏi, app **tự chấm**. Dạng câu hỏi chọn ngẫu nhiên theo cấp:
   1. Nhìn từ tiếng Anh → chọn nghĩa đúng (4 lựa chọn).
@@ -111,7 +114,8 @@ Không cần backend/database server cho MVP. (Tuỳ chọn sau này: Supabase �
 - Gamification: khu vườn kiểu Mochi Garden (mỗi ngày đạt mục tiêu trồng thêm 1 cây), huy hiệu, linh vật.
 - Từ điển tra từ ngoài kho (nghĩa tiếng Việt) và lưu vào Sổ tay để ôn.
 - Hình minh hoạ thật thay cho emoji.
-- Nhiều bộ từ tự tạo (ngoài "Từ của tôi"), nhập hàng loạt từ file CSV.
+- **Bài tập (chưa triển khai):** tab thứ ba của thanh điều hướng, hiện màn "Sắp ra mắt". Dự kiến: người dùng nhập tài liệu của mình (bài đọc, đề, ghi chú) và làm bài tập từ đó.
+- Nhiều bộ từ tự tạo (ngoài từ tự nhập ở Tự học), nhập hàng loạt từ file CSV.
 - Bài kiểm tra đầu vào xác định trình độ.
 - Đồng bộ đa thiết bị (Supabase).
 
@@ -332,7 +336,9 @@ src/
     Learn.tsx          # bài học từ mới: xem thẻ + kiểm tra nhanh
     Review.tsx         # ôn tập "Thời điểm vàng"
     Notebook.tsx       # sổ tay từ vựng theo cấp
-    MyWords.tsx        # "Từ của tôi": danh sách + form thêm/sửa từ
+    SelfStudy.tsx      # tab Tự học: thẻ Học ngay / Ôn từ của tôi + danh sách từ tự nhập
+    Exercises.tsx      # tab Bài tập (chưa triển khai: "Sắp ra mắt")
+    my-words/          # form thêm/sửa từ tự nhập, danh sách từ
     Decks.tsx          # danh sách bộ từ
     WordDetail.tsx
     Search.tsx
@@ -358,22 +364,24 @@ public/
 
 ## 8. Yêu cầu giao diện
 - Thiết kế **mobile-first**, tối ưu cho iPhone; tôn trọng safe area (notch, home indicator) bằng `env(safe-area-inset-*)`.
-- Thanh điều hướng dưới: Trang chủ / Học / Ôn tập / Sổ tay / Cài đặt. Thống kê mở từ Trang chủ.
+- Thanh điều hướng dưới có 3 mục: **Học** (Trang chủ) / **Tự học** / **Bài tập**. Tìm kiếm và Cài đặt là hai nút icon ở góc trên Trang chủ; Sổ tay, Thống kê, Bộ từ vựng là lối tắt trên Trang chủ. Chi tiết từ sáng tab Tự học nếu là từ tự nhập, ngược lại sáng tab Học.
 - Nút bấm lớn, dễ chạm bằng một tay.
 - Hỗ trợ chế độ tối.
 - Manifest: `display: "standalone"`, có `apple-touch-icon`, `theme_color`, `name` / `short_name`: **"Từ Ngày"**.
 
-### 8.1. Định hướng thiết kế: "Vở ô ly"
+### 8.1. Định hướng thiết kế: "Kính lỏng" (liquid glass)
 
-- **Ý tưởng:** học từ như viết vào cuốn vở ô ly thời đi học. Mực tím để viết, bút đỏ để chấm bài. Tránh kiểu app học ngôn ngữ chung chung (khối màu bão hoà, linh vật, thẻ icon–tiêu đề–mô tả lặp lại).
-- **Màu (chế độ sáng):** nền giấy kem, đường kẻ ô ly mờ (chỉ ở nền, độ mờ thấp), **mực tím** là màu chính (nút, tiêu đề, từ vựng), **bút đỏ** chỉ dùng cho chấm điểm (đúng/sai, dấu tích cấp độ), chữ thân màu mực đậm.
-- **Màu (chế độ tối):** **bảng đen** – nền xanh đen, chữ trắng phấn, tím phấn và đỏ phấn tương ứng. Mọi cặp chữ/nền đạt tương phản ≥ 4.5:1 (chữ lớn ≥ 3:1).
-- **Chữ:** *Be Vietnam Pro* cho giao diện và nội dung (hỗ trợ tiếng Việt đầy đủ). Một font viết tay có hỗ trợ tiếng Việt (ví dụ *Patrick Hand*) chỉ dùng cho nét "bút đỏ" (lời chấm, đáp án sửa). Tự host font qua `@fontsource` để chạy offline.
-- **Icon:** một bộ icon thống nhất (`lucide-react`), không dùng emoji làm icon giao diện. Emoji chỉ dùng làm hình minh hoạ cho từ vựng.
-- **Cấp độ:** hiển thị bằng 1–5 dấu tích bút đỏ (✓ … ✓✓✓✓✓), dùng nhất quán ở Trang chủ ("Sổ điểm"), Sổ tay, Thống kê.
-- **Khoảnh khắc đặc trưng:** khi trả lời đúng, nét tích đỏ được "vẽ" ra (animation stroke) kèm âm thanh. Khi sai, bút đỏ gạch đáp án sai và viết đáp án đúng bên cạnh bằng chữ viết tay. Tôn trọng `prefers-reduced-motion`.
-- **Trang chủ:** dòng ngày + streak, khối "Đến giờ ôn rồi! – X từ đang chờ" với nút mực tím đặc, dòng bài mới, "Sổ điểm" 5 cấp.
-- **Rủi ro cần tránh:** lạm dụng chất giấy thành hoài cổ/nặng nề. Thẻ và vùng nội dung giữ sạch, phẳng; giấy và ô ly chỉ là nền.
+- **Ý tưởng:** giao diện sáng, nhẹ như kính mờ nổi trên nền pastel; nút bấm to, "mập" kiểu MochiVocab để học vui và dễ chạm. Tránh kiểu app học ngôn ngữ chung chung (linh vật, thẻ icon–tiêu đề–mô tả lặp lại) và tránh làm kính nặng nề, khó đọc.
+- **Màu (chế độ sáng):** nền gần trắng `#f7f8ff` với lưới màu pastel mờ (tím lavender, hồng, xanh trời, bạc hà) vẽ trên một lớp cố định. Thẻ và thanh là **kính mờ** (nền trắng trong suốt, `backdrop-filter` blur + bão hoà, viền sáng, bóng nhẹ). **Xanh chàm** `#2558e6` là màu nhấn (số lớn, tiêu đề, từ vựng), **tím** `#6a4cf0` làm cặp với xanh trong dải gradient (thanh tiến độ, biểu đồ, ô tab đang chọn). Xanh lá cho đáp án đúng. Chữ thân màu mực đậm `#1d2340`.
+- **Màu (chế độ tối):** **kính đêm** – nền xanh đen `#0d1024` với lưới màu tím, hồng, xanh dịu; thẻ là kính trắng mờ 8%, chữ gần trắng, màu nhấn sáng hơn (xanh `#8fb4ff`, tím `#b39dff`). Mọi cặp chữ/nền, kể cả chữ trên kính ở vùng lưới màu đậm nhất và chữ trên huy hiệu, đạt tương phản ≥ 4.5:1 (chữ lớn ≥ 3:1).
+- **Nút bấm "mập":** nút chính (`primary`, xanh), `success` (xanh lá, nút "Tiếp" sau câu trả lời đúng), `danger` (đỏ, xác nhận xoá/thoát) là khối màu đặc có "gờ" tối hơn cùng tông ở cạnh dưới (`box-shadow` 4px), nhấn xuống thì gờ biến mất và nút lún 4px; `ghost` là nút trắng viền nhạt. Chiều cao ≥ 52px, vùng chạm ≥ 44px. Chip, ô lựa chọn và nút tròn dùng cùng ngôn ngữ nhưng gờ mỏng hơn; blur chỉ đặt trên vùng lớn (thẻ, thanh, hộp thoại), không đặt trên từng dòng hay chip.
+- **Huy hiệu icon:** icon luôn nằm trong ô vuông bo tròn pastel (xanh, tím, hồng, cam, xanh lá) với icon `lucide-react` đậm màu cùng tông; dùng cho dòng cài đặt, lối tắt, trạng thái rỗng, màn tổng kết. Không dùng emoji làm icon giao diện; emoji chỉ làm hình minh hoạ cho từ vựng.
+- **Thanh tab nổi:** thanh trắng bo tròn lớn, cách mép dưới, bóng đổ mềm; tab đang chọn là ô gradient pastel (lavender → xanh trời) với icon và nhãn màu xanh đậm. Ảnh tham chiếu: `docs/mockups/glass/reference-tabbar.png`. Nội dung cuối mỗi trang phải chừa chỗ cho thanh này.
+- **Chữ:** *Be Vietnam Pro* cho giao diện và nội dung (hỗ trợ tiếng Việt đầy đủ), số dùng chữ số đều nét (`tabular-nums`). Font viết tay có hỗ trợ tiếng Việt (*Patrick Hand*) chỉ dùng cho nét "bút đỏ" khi chấm bài (lời chấm, đáp án sửa). Tự host font qua `@fontsource` để chạy offline.
+- **Bút đỏ chỉ để chấm:** bút đỏ chỉ còn dùng cho dấu tích cấp độ (1–5 dấu ✓ ở "Sổ điểm", Sổ tay, Thống kê) và khoảnh khắc chấm bài. Đúng là màu xanh lá; sai là gạch đỏ kèm đáp án viết tay.
+- **Khoảnh khắc đặc trưng:** khi trả lời đúng, nét tích xanh lá được "vẽ" ra (animation stroke) kèm âm thanh. Khi sai, bút đỏ gạch đáp án sai và viết đáp án đúng bên cạnh bằng chữ viết tay. Tôn trọng `prefers-reduced-motion`.
+- **Trang chủ:** dòng ngày + viên streak (ngọn lửa cam), thẻ kính "Đến giờ ôn rồi! – X từ đang chờ" với số xanh lớn và nút chính, thẻ bài mới có huy hiệu tím và thanh tiến độ gradient, "Sổ điểm" 5 cấp, ba lối tắt (Sổ tay / Thống kê / Bộ từ vựng) dạng ô có huy hiệu; góc trên phải có viên streak và hai nút tròn Tìm kiếm, Cài đặt (≥ 44px).
+- **Rủi ro cần tránh:** kính chồng kính làm chữ khó đọc và máy chậm. Mỗi vùng lớn chỉ một lớp blur; luôn có nền đặc dự phòng khi không hỗ trợ `backdrop-filter`.
 - **Quy trình:** trước khi code từng màn hình chính (Trang chủ, Học, Ôn tập), dựng ảnh mẫu ở kích thước iPhone (390×844, có safe area). Sau đó code khớp ảnh, chụp lại bản chạy thật để so sánh và sửa.
 
 ---
@@ -399,7 +407,8 @@ public/
 4. Màn hình Bộ từ, Chi tiết từ, Tìm kiếm, Phát âm (thường / chậm).
 5. Bài học từ mới (xem thẻ + kiểm tra nhanh).
 6. Ôn tập "Thời điểm vàng" với 5 dạng câu hỏi + Sổ tay từ vựng.
-6b. "Từ của tôi": form thêm/sửa từ, gợi ý tự động, đưa vào luồng học.
+6b. Tự học ("Từ của tôi"): form thêm/sửa từ, gợi ý tự động, lượt học và ôn riêng.
+6c. Thanh điều hướng 3 mục (Học / Tự học / Bài tập), tab Bài tập "Sắp ra mắt".
 7. Thống kê (biểu đồ cấp độ) + streak.
 8. Cài đặt + sao lưu/khôi phục JSON.
 9. Trang hướng dẫn cài lên iPhone + banner phát hiện chưa cài.
@@ -410,6 +419,6 @@ public/
 - Cài được lên iPhone qua Safari, mở toàn màn hình, có icon.
 - Dùng được khi mất mạng (trừ thông báo).
 - Học từ mới, ôn tập 5 cấp bằng quiz, Sổ tay hoạt động và lưu tiến độ sau khi đóng app.
-- Tự thêm từ vào "Từ của tôi" (có gợi ý khi có mạng, nhập tay khi offline) và học/ôn được các từ đó.
+- Tự thêm từ ở tab Tự học (có gợi ý khi có mạng, nhập tay khi offline) và học/ôn được các từ đó.
 - Xuất/nhập dữ liệu JSON hoạt động.
 - Bật nhắc học → nhận được thông báo đúng khung giờ, bấm vào mở đúng màn hình.

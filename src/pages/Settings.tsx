@@ -1,8 +1,24 @@
-import { ChevronRight, Library, Smartphone, Volume2 } from 'lucide-react'
+import {
+  ChevronRight,
+  Gauge,
+  Info,
+  Library,
+  Mic,
+  Moon,
+  Music,
+  Palette,
+  Smartphone,
+  Sun,
+  Sunrise,
+  Target,
+  Volume2,
+  type LucideIcon,
+} from 'lucide-react'
 import { useId, useState, type ReactNode } from 'react'
 import { Link } from 'react-router'
 import { paths } from '../app/paths.ts'
 import { useSettingsState } from '../app/useSettings.ts'
+import IconBadge, { type BadgeHue } from '../components/IconBadge.tsx'
 import PageHeader from '../components/PageHeader.tsx'
 import Segmented, { type SegmentedOption } from '../components/Segmented.tsx'
 import Switch from '../components/Switch.tsx'
@@ -31,10 +47,16 @@ const THEME_OPTIONS: SegmentedOption<SettingsData['theme']>[] = [
   { value: 'dark', label: 'Tối' },
 ]
 
-const REMINDERS: Array<{ key: keyof SettingsData['reminders']; label: string; time: string }> = [
-  { key: 'morning', label: 'Sáng', time: '7:30' },
-  { key: 'noon', label: 'Trưa', time: '12:15' },
-  { key: 'evening', label: 'Tối', time: '21:00' },
+const REMINDERS: Array<{
+  key: keyof SettingsData['reminders']
+  label: string
+  time: string
+  icon: LucideIcon
+  hue: BadgeHue
+}> = [
+  { key: 'morning', label: 'Sáng', time: '7:30', icon: Sunrise, hue: 'orange' },
+  { key: 'noon', label: 'Trưa', time: '12:15', icon: Sun, hue: 'blue' },
+  { key: 'evening', label: 'Tối', time: '21:00', icon: Moon, hue: 'violet' },
 ]
 
 const SAMPLE_WORD = 'vocabulary'
@@ -45,7 +67,7 @@ function formatRate(rate: number): string {
   return `${rate.toFixed(1).replace('.', ',')}×`
 }
 
-/** A named group of settings: small caps heading + one flat sheet. */
+/** A named group of settings: small caps heading + one glass sheet. */
 function Section({ title, children }: { title: string; children: ReactNode }) {
   const id = useId()
   return (
@@ -61,11 +83,15 @@ function Section({ title, children }: { title: string; children: ReactNode }) {
 /** Label + segmented control as one list row. */
 function SegmentedSetting<T extends string | number>({
   label,
+  icon,
+  hue,
   options,
   value,
   onChange,
 }: {
   label: string
+  icon: LucideIcon
+  hue: BadgeHue
   options: readonly SegmentedOption<T>[]
   value: T
   onChange: (value: T) => void
@@ -73,8 +99,11 @@ function SegmentedSetting<T extends string | number>({
   const labelId = useId()
   return (
     <li className="setting">
-      <div className="setting__label" id={labelId}>
-        {label}
+      <div className="setting__head">
+        <IconBadge icon={icon} hue={hue} size="sm" />
+        <div className="setting__label" id={labelId}>
+          {label}
+        </div>
       </div>
       <Segmented labelledBy={labelId} options={options} value={value} onChange={onChange} />
     </li>
@@ -97,6 +126,7 @@ function SpeechRateSetting({ value }: { value: number }) {
   return (
     <li className="setting">
       <div className="setting__head">
+        <IconBadge icon={Gauge} hue="orange" size="sm" />
         <label className="setting__label" htmlFor={id}>
           Tốc độ đọc
         </label>
@@ -158,13 +188,15 @@ export default function Settings() {
           <ul className="sheet ruled">
             <SegmentedSetting
               label="Mục tiêu mỗi ngày"
+              icon={Target}
+              hue="blue"
               options={GOAL_OPTIONS}
               value={settings.dailyGoal}
               onChange={(dailyGoal) => void updateSettings({ dailyGoal })}
             />
             <li>
               <Link to={paths.decks} className="row">
-                <Library size={22} className="row__icon" aria-hidden="true" />
+                <IconBadge icon={Library} hue="violet" size="sm" />
                 <span className="row__label">Chọn bộ từ đang học</span>
                 <span className="row__value">{activeDecks} bộ</span>
                 <ChevronRight size={18} className="row__chevron" aria-hidden="true" />
@@ -177,6 +209,8 @@ export default function Settings() {
           <ul className="sheet ruled">
             <SegmentedSetting
               label="Giọng đọc"
+              icon={Mic}
+              hue="pink"
               options={VOICE_OPTIONS}
               value={settings.voice}
               onChange={(voice) => void updateSettings({ voice })}
@@ -199,12 +233,15 @@ export default function Settings() {
             <li>
               <Switch
                 label="Hiệu ứng âm thanh đúng/sai"
+                leading={<IconBadge icon={Music} hue="green" size="sm" />}
                 checked={settings.soundEffects}
                 onChange={onSoundEffects}
               />
             </li>
             <SegmentedSetting
               label="Giao diện"
+              icon={Palette}
+              hue="violet"
               options={THEME_OPTIONS}
               value={settings.theme}
               onChange={(theme) => void updateSettings({ theme })}
@@ -214,10 +251,11 @@ export default function Settings() {
 
         <Section title="Nhắc học">
           <ul className="sheet ruled">
-            {REMINDERS.map(({ key, label, time }) => (
+            {REMINDERS.map(({ key, label, time, icon, hue }) => (
               <li key={key}>
                 <Switch
                   label={label}
+                  leading={<IconBadge icon={icon} hue={hue} size="sm" />}
                   description={time}
                   checked={settings.reminders[key]}
                   onChange={(checked) =>
@@ -237,12 +275,13 @@ export default function Settings() {
         <Section title="Thông tin">
           <ul className="sheet ruled">
             <li className="row">
+              <IconBadge icon={Info} hue="blue" size="sm" />
               <span className="row__label">Từ Ngày</span>
               <span className="row__value">Phiên bản {__APP_VERSION__}</span>
             </li>
             <li>
               <Link to={paths.install} className="row">
-                <Smartphone size={22} className="row__icon" aria-hidden="true" />
+                <IconBadge icon={Smartphone} hue="pink" size="sm" />
                 <span className="row__label">Cài app lên iPhone</span>
                 <ChevronRight size={18} className="row__chevron" aria-hidden="true" />
               </Link>

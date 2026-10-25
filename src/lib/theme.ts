@@ -4,8 +4,8 @@ export type ThemeSetting = Settings['theme']
 
 const THEME_CACHE_KEY = 'tu-ngay-theme'
 
-/** Must match --paper in src/index.css (light / dark). */
-export const THEME_COLORS = { light: '#fbf7ee', dark: '#16202b' } as const
+/** Must match --bg in src/index.css (light / dark). */
+export const THEME_COLORS = { light: '#f7f8ff', dark: '#0d1024' } as const
 
 export function resolveTheme(theme: ThemeSetting, systemPrefersDark: boolean): 'light' | 'dark' {
   if (theme === 'system') return systemPrefersDark ? 'dark' : 'light'

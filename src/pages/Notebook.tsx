@@ -1,8 +1,9 @@
-import { Heart, Search as SearchIcon, X } from 'lucide-react'
+import { Heart, NotebookPen, Search as SearchIcon, SearchX, X } from 'lucide-react'
 import { useLiveQuery } from 'dexie-react-hooks'
 import { useEffect, useMemo, useRef } from 'react'
 import { Link, useSearchParams } from 'react-router'
 import { paths } from '../app/paths.ts'
+import IconBadge from '../components/IconBadge.tsx'
 import LevelTicks from '../components/LevelTicks.tsx'
 import PageHeader from '../components/PageHeader.tsx'
 import ReviewTick from '../components/ReviewTick.tsx'
@@ -135,6 +136,7 @@ export default function Notebook() {
         {view.items.length === 0 &&
           (notebookEmpty ? (
             <div className="empty">
+              <IconBadge icon={NotebookPen} hue="violet" size="lg" />
               <p className="empty__title">Sổ tay còn trống</p>
               <p className="muted">Học vài từ mới, chúng sẽ được ghi vào đây.</p>
               <Link to={paths.learn} className="btn btn--primary">
@@ -143,6 +145,7 @@ export default function Notebook() {
             </div>
           ) : (
             <div className="empty">
+              <IconBadge icon={SearchX} hue="pink" size="lg" />
               <p className="empty__title">Không có từ nào phù hợp</p>
             </div>
           ))}
@@ -186,7 +189,7 @@ function NotebookRow({ entry, todayDate }: { entry: NotebookEntry; todayDate: st
       />
       <button
         type="button"
-        className="icon-btn"
+        className={progress.favorite ? 'icon-btn icon-btn--on' : 'icon-btn'}
         aria-label={progress.favorite ? 'Bỏ yêu thích' : 'Thêm vào yêu thích'}
         onClick={() => void toggleFavorite(word.id)}
       >

@@ -5,16 +5,14 @@
 
 .lesson-start__hero {
   padding: 24px 20px;
-  background: var(--surface);
-  border: 1px solid var(--rule);
-  border-radius: var(--radius);
+  border-radius: var(--radius-lg);
 }
 
 .lesson-start__count {
   display: flex;
   align-items: baseline;
   gap: 10px;
-  color: var(--purple);
+  color: var(--accent);
 }
 
 .lesson-start__num {
@@ -43,18 +41,30 @@
 
 .steps li {
   display: flex;
+  align-items: center;
   gap: 12px;
   padding: 12px 14px;
 }
 
+/* Step number in a small pastel badge: blue, then violet */
 .steps li::before {
   content: counter(step);
   counter-increment: step;
+  display: grid;
   flex: none;
-  width: 24px;
-  color: var(--purple);
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  color: var(--badge-blue-fg);
   font-weight: 700;
-  text-align: center;
+  font-variant-numeric: tabular-nums;
+  background: var(--badge-blue-bg);
+  border-radius: 10px;
+}
+
+.steps li:nth-child(2)::before {
+  color: var(--badge-violet-fg);
+  background: var(--badge-violet-bg);
 }
 
 .steps strong {
@@ -70,7 +80,7 @@
 .lesson-start__go {
   width: 100%;
   min-height: 56px;
-  margin-top: 20px;
+  margin-top: 24px;
   font-size: 1.0625rem;
 }
 
@@ -81,9 +91,7 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 20px 20px 24px;
-  background: var(--surface);
-  border: 1px solid var(--rule);
-  border-radius: var(--radius);
+  border-radius: var(--radius-lg);
 }
 
 .flashcard .word-detail__emoji {
@@ -107,7 +115,7 @@
 .quiz__word {
   flex: 1;
   min-width: 0;
-  color: var(--purple);
+  color: var(--accent);
   font-size: 2.25rem;
   font-weight: 700;
   line-height: 1.2;
@@ -122,23 +130,30 @@
 /* Summary */
 
 .summary__hero {
-  padding: 4px 4px 0;
+  padding: 20px;
+  border-radius: var(--radius-lg);
+}
+
+.summary__hero > .icon-badge {
+  margin-bottom: 12px;
 }
 
 .summary__count {
   display: flex;
   align-items: baseline;
   gap: 10px;
-  color: var(--purple);
+  color: var(--accent);
 }
 
 .summary__num {
   font-size: 3.5rem;
   font-weight: 700;
   line-height: 1;
+  font-variant-numeric: tabular-nums;
 }
 
 .summary__unit {
+  color: var(--ink-muted);
   font-size: 1.125rem;
   font-weight: 600;
 }
@@ -146,20 +161,15 @@
 .summary__next {
   display: flex;
   align-items: center;
-  gap: 8px;
-  margin-top: 10px;
-}
-
-.summary__next svg {
-  flex: none;
-  color: var(--purple);
+  gap: 10px;
+  margin-top: 14px;
 }
 
 .summary__actions {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin: 20px 0 8px;
+  gap: 14px;
+  margin: 24px 0 12px;
 }
 
 .summary__actions .btn {

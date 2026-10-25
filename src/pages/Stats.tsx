@@ -1,13 +1,15 @@
 import { useLiveQuery } from 'dexie-react-hooks'
+import { Award, BookOpen, Flame, GraduationCap, ListChecks, Percent, type LucideIcon } from 'lucide-react'
 import type { CSSProperties } from 'react'
 import { paths } from '../app/paths.ts'
+import IconBadge, { type BadgeHue } from '../components/IconBadge.tsx'
 import LevelTicks from '../components/LevelTicks.tsx'
 import PageHeader from '../components/PageHeader.tsx'
 import { loadStats } from '../db/stats.ts'
 import { formatDateVi, weekdayShortVi } from '../lib/date.ts'
 import { formatAccuracy, type LevelCounts, type Stats as StatsData } from '../lib/stats.ts'
 
-/** Words per memory level as bars: ink-purple bars, red-pen ticks as the axis labels. */
+/** Words per memory level as bars: blue to violet gradient bars, red-pen ticks as the axis labels. */
 function LevelChart({ levels }: { levels: LevelCounts }) {
   const max = Math.max(...levels, 1)
   const summary = levels.map((count, i) => `cấp ${i + 1}: ${count} từ`).join(', ')
@@ -30,15 +32,18 @@ function LevelChart({ levels }: { levels: LevelCounts }) {
 }
 
 interface StatRowProps {
+  icon: LucideIcon
+  hue: BadgeHue
   label: string
   value: string
   unit?: string
   note?: string
 }
 
-function StatRow({ label, value, unit, note }: StatRowProps) {
+function StatRow({ icon, hue, label, value, unit, note }: StatRowProps) {
   return (
     <li className="stat">
+      <IconBadge icon={icon} hue={hue} size="sm" />
       <span className="stat__main">
         <span className="stat__label">{label}</span>
         {note && <span className="stat__note">{note}</span>}
@@ -51,7 +56,7 @@ function StatRow({ label, value, unit, note }: StatRowProps) {
   )
 }
 
-/** Last 7 days: a purple dot for every day with a lesson or a review. */
+/** Last 7 days: a gradient dot for every day with a lesson or a review. */
 function Week({ days, today }: { days: StatsData['recent']; today: string }) {
   return (
     <ol className="week">
@@ -101,19 +106,25 @@ function StatsBody({ stats, today }: { stats: StatsData; today: string }) {
         <h2 className="label">Tổng quan</h2>
         <ul className="sheet ruled">
           <StatRow
+            icon={BookOpen}
+            hue="blue"
             label="Đã học"
             value={String(stats.learned)}
             unit="từ"
             note={stats.ignored > 0 ? `${stats.ignored} từ đang bỏ tick, không ôn` : undefined}
           />
-          <StatRow label="Đã thuộc (cấp 5)" value={String(stats.mastered)} unit="từ" />
+          <StatRow icon={Award} hue="green" label="Đã thuộc (cấp 5)" value={String(stats.mastered)} unit="từ" />
           <StatRow
+            icon={Flame}
+            hue="orange"
             label="Chuỗi ngày học"
             value={String(streak.current)}
             unit="ngày"
             note={`Dài nhất: ${streak.longest} ngày`}
           />
           <StatRow
+            icon={Percent}
+            hue="violet"
             label="Trả lời đúng"
             value={formatAccuracy(stats.accuracy)}
             note={
@@ -129,11 +140,13 @@ function StatsBody({ stats, today }: { stats: StatsData; today: string }) {
         <h2 className="label">Hôm nay</h2>
         <ul className="sheet ruled">
           <StatRow
+            icon={GraduationCap}
+            hue="blue"
             label="Từ mới"
             value={`${stats.today.newLearned}/${stats.today.goal}`}
             unit="từ"
           />
-          <StatRow label="Đã ôn" value={String(stats.today.reviewed)} unit="từ" />
+          <StatRow icon={ListChecks} hue="pink" label="Đã ôn" value={String(stats.today.reviewed)} unit="từ" />
         </ul>
       </section>
 

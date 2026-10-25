@@ -3,6 +3,7 @@ import { Link } from 'react-router'
 import { useCustomWords, useProgressMap } from '../app/hooks.ts'
 import { paths } from '../app/paths.ts'
 import { useSettings } from '../app/useSettings.ts'
+import IconBadge from '../components/IconBadge.tsx'
 import PageHeader from '../components/PageHeader.tsx'
 import { decks } from '../data/index.ts'
 import type { Deck } from '../data/index.ts'
@@ -33,8 +34,8 @@ export default function Decks() {
       <div className="page">
         <ul className="sheet ruled">
           <li>
-            <Link to={paths.myWords} className="row">
-              <PenLine size={22} className="row__icon" aria-hidden="true" />
+            <Link to={paths.selfStudy} className="row">
+              <IconBadge icon={PenLine} hue="orange" size="sm" />
               <span className="row__label">Từ của tôi ({customWords.length} từ)</span>
               <ChevronRight size={18} className="row__chevron" aria-hidden="true" />
             </Link>

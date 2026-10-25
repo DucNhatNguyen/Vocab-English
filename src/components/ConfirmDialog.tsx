@@ -8,6 +8,8 @@ interface ConfirmDialogProps {
   cancelLabel: string
   /** Button that goes ahead with the action. */
   confirmLabel: string
+  /** The action loses or replaces data: the confirm button is red. */
+  danger?: boolean
   onCancel: () => void
   onConfirm: () => void
 }
@@ -19,6 +21,7 @@ export default function ConfirmDialog({
   message,
   cancelLabel,
   confirmLabel,
+  danger = false,
   onCancel,
   onConfirm,
 }: ConfirmDialogProps) {
@@ -55,7 +58,11 @@ export default function ConfirmDialog({
         <button type="button" className="btn btn--primary" onClick={onCancel}>
           {cancelLabel}
         </button>
-        <button type="button" className="btn btn--ghost" onClick={onConfirm}>
+        <button
+          type="button"
+          className={danger ? 'btn btn--danger' : 'btn btn--ghost'}
+          onClick={onConfirm}
+        >
           {confirmLabel}
         </button>
       </div>

@@ -3,7 +3,7 @@ import { afterAll, beforeEach, describe, expect, it } from 'vitest'
 import { createCustomWord } from './customWords.ts'
 import { db } from './db.ts'
 import { updateSettings } from './settings.ts'
-import { loadHomeData, loadStats } from './stats.ts'
+import { loadHomeData, loadSelfStudyData, loadStats } from './stats.ts'
 import type { CardProgress, StudyLog } from './types.ts'
 
 beforeEach(async () => {
@@ -106,5 +106,30 @@ describe('loadHomeData', () => {
     const data = await loadHomeData(TODAY)
     expect(data).toMatchObject({ lessonCount: 0, hasActiveDecks: true })
     expect(data.overview.dueCount).toBe(0)
+  })
+})
+
+describe('loadHomeData newToday', () => {
+  it('counts only deck words first learned today', async () => {
+    await db.progress.bulkPut([
+      card('hello', 1, { dueDate: '2026-10-25', learnedAt: TODAY }),
+      card('custom:x', 1, { dueDate: '2026-10-25', learnedAt: TODAY }),
+      card('please', 1, { dueDate: '2026-10-24', learnedAt: '2026-10-23' }),
+    ])
+    expect((await loadHomeData(TODAY)).newToday).toBe(1)
+  })
+})
+
+describe('loadSelfStudyData', () => {
+  it('counts own words: total, unlearned, due today', async () => {
+    const a = await createCustomWord({ word: 'alpha', ipa: '', pos: 'noun', meaningVi: 'a', exampleEn: '', exampleVi: '' })
+    const b = await createCustomWord({ word: 'beta', ipa: '', pos: 'noun', meaningVi: 'b', exampleEn: '', exampleVi: '' })
+    await createCustomWord({ word: 'gamma', ipa: '', pos: 'noun', meaningVi: 'c', exampleEn: '', exampleVi: '' })
+    await db.progress.bulkPut([
+      card(a.id, 1, { dueDate: TODAY }),
+      card(b.id, 2, { dueDate: '2026-10-30' }),
+      card('hello', 1, { dueDate: TODAY }), // built-in: not counted
+    ])
+    expect(await loadSelfStudyData(TODAY)).toEqual({ totalCount: 3, unlearnedCount: 1, dueCount: 1 })
   })
 })

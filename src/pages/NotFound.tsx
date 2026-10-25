@@ -1,5 +1,7 @@
+import { CircleHelp } from 'lucide-react'
 import { Link } from 'react-router'
 import { paths } from '../app/paths.ts'
+import IconBadge from '../components/IconBadge.tsx'
 import PageHeader from '../components/PageHeader.tsx'
 
 interface NotFoundProps {
@@ -13,6 +15,7 @@ export default function NotFound({ message = 'Không tìm thấy trang', backTo 
     <>
       <PageHeader title="Không tìm thấy" backTo={backTo} />
       <div className="page empty">
+        <IconBadge icon={CircleHelp} hue="violet" size="lg" />
         <p className="empty__title">{message}</p>
         <Link to={paths.home} className="btn btn--primary">
           Về trang chủ

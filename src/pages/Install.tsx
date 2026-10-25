@@ -3,6 +3,7 @@ import { useState, type ReactNode } from 'react'
 import { Link } from 'react-router'
 import { useCanPromptInstall, useInstallEnvironment } from '../app/useInstall.ts'
 import { paths } from '../app/paths.ts'
+import IconBadge from '../components/IconBadge.tsx'
 import PageHeader from '../components/PageHeader.tsx'
 import {
   formatIosVersion,
@@ -29,7 +30,7 @@ const IOS_BROWSER_NAMES: Record<IosBrowser, string> = {
 function Notice({ icon: Icon, children }: { icon: LucideIcon; children: ReactNode }) {
   return (
     <p className="install-notice">
-      <Icon size={20} aria-hidden="true" />
+      <IconBadge icon={Icon} hue="orange" size="sm" />
       <span>{children}</span>
     </p>
   )
@@ -38,9 +39,9 @@ function Notice({ icon: Icon, children }: { icon: LucideIcon; children: ReactNod
 /** Already installed: say so and point at what to do next. */
 function InstalledCard() {
   return (
-    <section className="install-card install-card--done" aria-labelledby="install-done">
+    <section className="glass install-card install-card--done" aria-labelledby="install-done">
       <h2 className="install-card__title" id="install-done">
-        <CircleCheck size={24} aria-hidden="true" />
+        <IconBadge icon={CircleCheck} hue="green" size="sm" />
         Bạn đã cài Từ Ngày
       </h2>
       <p>
@@ -58,7 +59,7 @@ function InstalledCard() {
 function InAppCard({ env }: { env: InstallEnvironment }) {
   const browser = env.platform === 'ios' ? 'Safari' : 'Chrome'
   return (
-    <section className="install-card" aria-labelledby="install-inapp">
+    <section className="glass install-card" aria-labelledby="install-inapp">
       <h2 className="install-card__title" id="install-inapp">
         Mở bằng {browser} trước
       </h2>
@@ -106,7 +107,7 @@ function IosSteps({ env, shownOnOtherDevice }: { env: InstallEnvironment; shownO
       </h2>
 
       {shownOnOtherDevice && (
-        <div className="install-card">
+        <div className="glass install-card">
           <p>
             Hãy mở liên kết này trên iPhone bằng <strong>Safari</strong>, rồi làm theo 3 bước dưới đây. Bạn có thể sao
             chép liên kết để gửi sang iPhone:
@@ -167,7 +168,7 @@ function OtherInstall({ canPrompt, android }: { canPrompt: boolean; android: boo
 
   if (canPrompt) {
     return (
-      <section className="install-card" aria-labelledby="install-other">
+      <section className="glass install-card" aria-labelledby="install-other">
         <h2 className="install-card__title" id="install-other">
           Cài Từ Ngày như một app
         </h2>
@@ -181,7 +182,7 @@ function OtherInstall({ canPrompt, android }: { canPrompt: boolean; android: boo
   }
 
   return (
-    <section className="install-card" aria-labelledby="install-other">
+    <section className="glass install-card" aria-labelledby="install-other">
       <h2 className="install-card__title" id="install-other">
         Cài Từ Ngày như một app
       </h2>
@@ -223,15 +224,15 @@ function WhyInstall({ env }: { env: InstallEnvironment }) {
       </h2>
       <ul className="sheet ruled">
         <li className="install-why__item">
-          <WifiOff size={22} aria-hidden="true" />
+          <IconBadge icon={WifiOff} hue="blue" size="sm" />
           <span>Học được cả khi không có mạng.</span>
         </li>
         <li className="install-why__item">
-          <Maximize size={22} aria-hidden="true" />
+          <IconBadge icon={Maximize} hue="violet" size="sm" />
           <span>Mở toàn màn hình, có biểu tượng riêng như một app thật.</span>
         </li>
         <li className="install-why__item">
-          <BellRing size={22} aria-hidden="true" />
+          <IconBadge icon={BellRing} hue="pink" size="sm" />
           <span>
             Nhắc học chỉ hoạt động sau khi cài lên màn hình chính, và cần iOS 16.4 trở lên.
           </span>

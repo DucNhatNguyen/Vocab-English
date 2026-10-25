@@ -1,6 +1,7 @@
 import { Download, Smartphone, X } from 'lucide-react'
 import { useState } from 'react'
 import { Link } from 'react-router'
+import IconBadge from '../../components/IconBadge.tsx'
 import { useCanPromptInstall, useInstallEnvironment } from '../../app/useInstall.ts'
 import { paths } from '../../app/paths.ts'
 import {
@@ -36,8 +37,8 @@ export default function InstallBanner() {
   }
 
   return (
-    <section className="install-banner" aria-label="Gợi ý cài app">
-      <Smartphone className="install-banner__icon" size={22} aria-hidden="true" />
+    <section className="install-banner glass" aria-label="Gợi ý cài app">
+      <IconBadge icon={Smartphone} hue="blue" className="install-banner__icon" />
       <p className="install-banner__text">{text}</p>
       <button type="button" className="icon-btn install-banner__close" aria-label="Ẩn gợi ý cài app" onClick={dismiss}>
         <X size={20} aria-hidden="true" />

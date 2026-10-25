@@ -1,4 +1,4 @@
-/* Cài đặt: grouped sheets of settings rows. Switch and Segmented live in components.css. */
+/* Cài đặt: grouped glass sheets of settings rows. Switch and Segmented live in components.css. */
 
 .settings__section + .settings__section {
   margin-top: 24px;
@@ -7,7 +7,7 @@
 .setting {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
   padding: 14px;
 }
 
@@ -15,16 +15,21 @@
   font-weight: 500;
 }
 
+/* Small badge + label (+ value on the right) above a control */
 .setting__head {
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  align-items: center;
   gap: 12px;
 }
 
+.setting__head .setting__label {
+  flex: 1;
+  min-width: 0;
+}
+
 .setting__value {
-  color: var(--purple);
-  font-weight: 600;
+  color: var(--accent);
+  font-weight: 700;
   font-variant-numeric: tabular-nums;
 }
 
@@ -43,16 +48,10 @@
 
 .setting--status {
   flex-direction: row;
-  align-items: flex-start;
-  gap: 10px;
+  align-items: center;
+  gap: 12px;
   color: var(--ink-muted);
   font-size: 0.875rem;
-}
-
-.setting__status-icon {
-  flex: none;
-  margin-top: 2px;
-  color: var(--purple);
 }
 
 .row__value {
@@ -68,7 +67,7 @@
   width: 100%;
   height: 44px;
   margin: -6px 0;
-  accent-color: var(--purple);
+  accent-color: var(--accent);
   background: transparent;
   cursor: pointer;
 }
@@ -94,16 +93,16 @@
 .notice > svg {
   flex: none;
   margin-top: 3px;
-  color: var(--purple);
+  color: var(--success);
 }
 
 .notice--error {
-  color: var(--red);
+  color: var(--mark);
   font-weight: 500;
 }
 
 .notice--error > svg {
-  color: var(--red);
+  color: var(--mark);
 }
 
 .notice__list {

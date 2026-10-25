@@ -25,7 +25,7 @@ export function AnswerVerdict({
   aside,
 }: AnswerVerdictProps) {
   return (
-    <div className="quiz__verdict" role="status">
+    <div className={answered && correct ? 'quiz__verdict quiz__verdict--right' : 'quiz__verdict'} role="status">
       {answered && (
         <>
           <span className="quiz__verdict-line">
@@ -46,11 +46,13 @@ interface NextFooterProps {
   /** Shown once the question is answered; until then the bar stays empty. */
   show: boolean
   label?: string
+  /** Verdict of the answer: a correct one turns "Tiếp" green. */
+  correct?: boolean
   onNext: () => void
 }
 
 /** Fixed bottom bar with the "Tiếp" button; takes focus when it appears. */
-export function NextFooter({ show, label = 'Tiếp', onNext }: NextFooterProps) {
+export function NextFooter({ show, label = 'Tiếp', correct = false, onNext }: NextFooterProps) {
   const ref = useRef<HTMLButtonElement>(null)
 
   // The answered control is disabled or gone, so hand focus to "Tiếp"
@@ -61,7 +63,12 @@ export function NextFooter({ show, label = 'Tiếp', onNext }: NextFooterProps) 
   return (
     <SessionFooter>
       {show && (
-        <button ref={ref} type="button" className="btn btn--primary" onClick={onNext}>
+        <button
+          ref={ref}
+          type="button"
+          className={correct ? 'btn btn--success' : 'btn btn--primary'}
+          onClick={onNext}
+        >
           {label}
           <ArrowRight size={20} aria-hidden="true" />
         </button>

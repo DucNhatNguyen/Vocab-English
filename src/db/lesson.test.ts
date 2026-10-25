@@ -147,9 +147,9 @@ describe('completeLesson', () => {
 })
 
 describe('loadLessonWords', () => {
-  it('returns up to dailyGoal words: own words first, then the active decks', async () => {
+  it('decks (default): up to dailyGoal deck words, never own words', async () => {
     await updateSettings({ dailyGoal: 5, activeDeckIds: ['giao-tiep-hang-ngay'] })
-    const mine = await createCustomWord({
+    await createCustomWord({
       word: 'serendipity',
       ipa: '',
       pos: 'noun',
@@ -160,8 +160,21 @@ describe('loadLessonWords', () => {
 
     const lesson = await loadLessonWords()
     expect(lesson).toHaveLength(5)
-    expect(lesson[0].id).toBe(mine.id)
-    expect(lesson[1].id).toBe('hello')
+    expect(lesson[0].id).toBe('hello')
+    expect(lesson.some((w) => w.id.startsWith('custom:'))).toBe(false)
+  })
+
+  it('mine: only own unlearned words, up to dailyGoal, even with no active deck', async () => {
+    await updateSettings({ dailyGoal: 5, activeDeckIds: [] })
+    const mine = await createCustomWord({
+      word: 'serendipity',
+      ipa: '',
+      pos: 'noun',
+      meaningVi: 'sự tình cờ may mắn',
+      exampleEn: '',
+      exampleVi: '',
+    })
+    expect((await loadLessonWords('mine')).map((w) => w.id)).toEqual([mine.id])
   })
 
   it('skips learned words, keeps favorites, and follows changes in settings', async () => {

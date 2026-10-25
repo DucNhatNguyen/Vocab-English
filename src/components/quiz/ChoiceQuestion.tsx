@@ -96,7 +96,7 @@ export default function ChoiceQuestion({
       />
       {answered && reveal}
 
-      <NextFooter show={answered} label={nextLabel} onNext={onNext} />
+      <NextFooter show={answered} label={nextLabel} correct={correct} onNext={onNext} />
     </>
   )
 }

@@ -1,0 +1,34 @@
+/* Tự học: glass action card, then "Thêm từ" and the user's word list. */
+
+.self-study__hero {
+  display: grid;
+  gap: 14px;
+  margin-top: 16px;
+  padding: 20px;
+}
+
+.self-study__stats {
+  display: grid;
+  gap: 10px;
+}
+
+.self-study__stat {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.self-study__stat strong {
+  color: var(--accent);
+  font-size: 1.25rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.self-study__add {
+  width: 100%;
+  margin-top: 16px;
+}
+
+.self-study__label {
+  margin: 24px 4px 8px;
+}

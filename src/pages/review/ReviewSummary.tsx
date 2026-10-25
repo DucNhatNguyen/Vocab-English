@@ -1,6 +1,7 @@
-import { CalendarClock, Check, Play, RotateCcw, TrendingUp } from 'lucide-react'
+import { CalendarClock, Check, Play, RotateCcw, Trophy, TrendingUp } from 'lucide-react'
 import { Link } from 'react-router'
 import { paths } from '../../app/paths.ts'
+import IconBadge from '../../components/IconBadge.tsx'
 import LevelTicks from '../../components/LevelTicks.tsx'
 import PageHeader from '../../components/PageHeader.tsx'
 import WordRow from '../../components/WordRow.tsx'
@@ -26,6 +27,8 @@ interface ReviewSummaryProps {
   /** Next review day when nothing is due any more (live from the database). */
   next: NextReview | null
   today: string
+  /** Tự học: the exit goes back to the Tự học tab. */
+  mine: boolean
   onMore: () => void
 }
 
@@ -54,6 +57,7 @@ export default function ReviewSummary({
   nextRoundSize,
   next,
   today,
+  mine,
   onMore,
 }: ReviewSummaryProps) {
   const up = items.filter((i) => i.correct && i.to > i.from)
@@ -65,28 +69,29 @@ export default function ReviewSummary({
     <>
       <PageHeader title="Hoàn thành lượt ôn" />
       <div className="page">
-        <section className="summary__hero">
+        <section className="summary__hero glass">
+          <IconBadge icon={Trophy} hue="orange" size="lg" />
           <p className="summary__count">
             <span className="summary__num">{items.length}</span>
             <span className="summary__unit">từ đã ôn</span>
           </p>
           <div className="summary__stats">
-            <p className="stat stat--up">
-              <TrendingUp size={20} aria-hidden="true" />
+            <p className="result-stat">
+              <IconBadge icon={TrendingUp} hue="green" size="sm" />
               <span>
                 <strong>{up.length}</strong> lên cấp
               </span>
             </p>
             {kept.length > 0 && (
-              <p className="stat stat--up">
-                <Check size={20} aria-hidden="true" />
+              <p className="result-stat">
+                <IconBadge icon={Check} hue="blue" size="sm" />
                 <span>
                   <strong>{kept.length}</strong> giữ cấp {MAX_LEVEL}
                 </span>
               </p>
             )}
-            <p className="stat stat--reset">
-              <RotateCcw size={20} aria-hidden="true" />
+            <p className="result-stat">
+              <IconBadge icon={RotateCcw} hue="pink" size="sm" />
               <span>
                 <strong>{reset.length}</strong> về cấp 1
               </span>
@@ -101,8 +106,11 @@ export default function ReviewSummary({
               Ôn tiếp ({nextRoundSize} từ)
             </button>
           )}
-          <Link to={paths.home} className={remaining > 0 ? 'btn btn--ghost' : 'btn btn--primary'}>
-            Về trang chủ
+          <Link
+            to={mine ? paths.selfStudy : paths.home}
+            className={remaining > 0 ? 'btn btn--ghost' : 'btn btn--primary'}
+          >
+            {mine ? 'Về Tự học' : 'Về trang chủ'}
           </Link>
         </div>
         {remaining > 0 ? (
@@ -110,7 +118,7 @@ export default function ReviewSummary({
         ) : (
           next && (
             <p className="hint muted summary__next-review">
-              <CalendarClock size={18} aria-hidden="true" />
+              <IconBadge icon={CalendarClock} hue="blue" size="sm" />
               <span>
                 Lượt ôn tiếp theo: {formatDateVi(next.date, today)}, {next.count} từ
               </span>

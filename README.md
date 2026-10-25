@@ -1,6 +1,6 @@
 # Từ Ngày
 
-PWA học từ vựng tiếng Anh cho iPhone: học từ mới, ôn tập theo 5 cấp độ nhớ ("Thời điểm vàng"), sổ tay, "Từ của tôi" (tự thêm từ), thống kê và streak.
+PWA học từ vựng tiếng Anh cho iPhone: học từ mới, ôn tập theo 5 cấp độ nhớ ("Thời điểm vàng"), sổ tay, tab Tự học (tự thêm từ và học riêng), tab Bài tập (sắp ra mắt), thống kê và streak.
 
 - **Offline-first**: bộ từ đóng gói sẵn trong app, service worker cache toàn bộ; dùng được khi mất mạng (trừ thông báo đẩy và gợi ý từ khi tự thêm từ).
 - **Dữ liệu nằm trên máy**: tiến độ học, lịch ôn và cài đặt lưu trong IndexedDB của trình duyệt (Dexie). Không có backend, không tài khoản.
@@ -152,5 +152,5 @@ Mã làm việc với OneSignal nằm trong `src/lib/notifications.ts`; phần p
 ## Hạn chế đã biết
 
 - Chưa thử trên iPhone thật: phát âm (Web Speech), âm thanh hiệu ứng, bàn phím, sao lưu qua share sheet và push thật. Nên thử theo mục "Thử trên iPhone" trước khi giao cho người học.
-- Thanh tab sáng tab Trang chủ khi đang ở `/words/*` (chi tiết từ), vì màn này không có tab riêng.
+- Thanh tab có 3 mục (Học, Tự học, Bài tập). Chi tiết từ (`/words/*`) sáng tab Tự học với từ tự nhập, ngược lại sáng tab Học.
 - Gợi ý khi tự thêm từ dùng Free Dictionary API nên cần mạng; offline vẫn nhập tay được.

@@ -11,7 +11,15 @@ export const paths = {
   stats: '/stats',
   settings: '/settings',
   install: '/install',
-  myWords: '/my-words',
+  /** Tự học tab (formerly Từ của tôi). */
+  myWords: '/tu-hoc',
+  /** Tự học tab: the user's own words, learned and reviewed on their own. */
+  selfStudy: '/tu-hoc',
+  /** Bài tập tab (coming soon). */
+  exercises: '/bai-tap',
+  /** Learn / review only the user's own words. */
+  learnMine: '/learn?nguon=tu-hoc',
+  reviewMine: '/review?nguon=tu-hoc',
   /** New custom word; `word` prefills the English field. */
   myWordNew: (word?: string) =>
     word ? `/my-words/new?word=${encodeURIComponent(word)}` : '/my-words/new',

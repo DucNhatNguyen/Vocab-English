@@ -17,22 +17,23 @@
   gap: 8px;
   min-height: calc(52px + env(safe-area-inset-top));
   padding: env(safe-area-inset-top) 16px 0 4px;
-  background: var(--paper);
-  border-bottom: 1px solid var(--rule);
+  background: var(--topbar-bg);
+  border-bottom: 1px solid var(--divider);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
 }
 
 .session__progress {
   flex: 1;
   height: 8px;
   overflow: hidden;
-  background: var(--sunk);
-  border: 1px solid var(--rule);
+  background: var(--tint);
   border-radius: 999px;
 }
 
 .session__progress-fill {
   height: 100%;
-  background: var(--purple);
+  background: linear-gradient(90deg, var(--btn-primary), var(--accent-2));
   border-radius: 999px;
 }
 
@@ -56,8 +57,8 @@
   width: 100%;
   max-width: 640px;
   margin: 0 auto;
-  /* clear of the fixed bottom bar (12 + 52 + 12) plus the home indicator */
-  padding: 16px 16px calc(88px + env(safe-area-inset-bottom));
+  /* clear of the fixed bottom bar (12 + 52 + 4 lip + 12) plus the home indicator */
+  padding: 16px 16px calc(92px + env(safe-area-inset-bottom));
 }
 
 .session__bar {
@@ -67,8 +68,10 @@
   left: 0;
   z-index: 20;
   padding: 0 env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
-  background: var(--surface);
-  border-top: 1px solid var(--rule);
+  background: var(--topbar-bg);
+  border-top: 1px solid var(--divider);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
 }
 
 .session__bar-inner {
@@ -93,19 +96,24 @@
 
 .dialog {
   width: min(320px, calc(100vw - 48px));
-  padding: 20px;
+  padding: 22px;
   color: var(--ink);
-  background: var(--surface);
-  border: 1px solid var(--rule);
-  border-radius: var(--radius);
+  background: var(--glass-strong);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--glass-highlight), 0 24px 60px rgba(31, 38, 100, 0.28);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
 }
 
 .dialog::backdrop {
-  background: rgba(16, 12, 24, 0.55);
+  background: var(--scrim);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
 }
 
 .dialog__title {
-  color: var(--purple);
+  color: var(--accent);
   font-size: 1.125rem;
   font-weight: 700;
 }
@@ -144,17 +152,31 @@
   padding: 12px 52px 12px 16px;
   line-height: 1.4;
   text-align: left;
-  background: var(--surface);
-  border: 1.5px solid var(--ink-muted);
-  border-radius: var(--radius);
+  background: var(--btn-ghost-bg);
+  border: 2px solid var(--btn-ghost-border);
+  border-radius: 16px;
+  box-shadow: 0 4px 0 var(--btn-ghost-lip);
 }
 
 .choice:not(:disabled):active {
-  background: var(--sunk);
+  box-shadow: 0 0 0 var(--btn-ghost-lip);
+  filter: brightness(0.94);
 }
 
 .choice:disabled {
   cursor: default;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .choice {
+    transition:
+      transform 80ms ease-out,
+      box-shadow 80ms ease-out;
+  }
+
+  .choice:not(:disabled):active {
+    transform: translateY(4px);
+  }
 }
 
 .choice__text {
@@ -162,21 +184,22 @@
   overflow-wrap: anywhere;
 }
 
-/* The right answer once feedback shows */
+/* The right answer once feedback shows: green border and lip */
 .choice--right {
-  border-color: var(--purple);
-  border-width: 2px;
+  background: linear-gradient(var(--success-soft), var(--success-soft)), var(--glass-solid);
+  border-color: var(--success);
+  box-shadow: 0 4px 0 var(--success);
 }
 
 .choice--dim {
   color: var(--ink-muted);
-  border-color: var(--rule);
+  box-shadow: none;
 }
 
-/* Red pen: tick for a correct pick, strike + handwritten answer for a wrong one */
+/* Red pen: green tick for a correct pick, red strike + handwritten answer for a wrong one */
 
 .red-tick {
-  color: var(--red);
+  color: var(--success);
   overflow: visible;
 }
 
@@ -199,14 +222,14 @@
   position: absolute;
   height: 10px;
   margin-top: -5px;
-  color: var(--red);
+  color: var(--mark);
   overflow: visible;
   pointer-events: none;
 }
 
 .choice-note {
   padding: 0 4px 0 16px;
-  color: var(--red);
+  color: var(--mark);
   font-family: var(--font-hand);
   font-size: 1.375rem;
   line-height: 1.3;
@@ -218,7 +241,7 @@
   display: flex;
   flex-direction: column;
   gap: 2px;
-  color: var(--red);
+  color: var(--mark);
   font-family: var(--font-hand);
   font-size: 1.375rem;
   line-height: 1.3;
@@ -226,6 +249,10 @@
 
 .quiz__verdict:not(:empty) {
   margin-top: 16px;
+}
+
+.quiz__verdict--right {
+  color: var(--success);
 }
 
 .quiz__hint {
@@ -271,9 +298,9 @@
   min-height: 56px;
   padding: 0 16px;
   font-size: 1.25rem; /* >= 16px: avoids the iOS focus zoom */
-  background: var(--surface);
-  border: 1.5px solid var(--ink-muted);
-  border-radius: var(--radius);
+  background: var(--field-bg);
+  border: 1.5px solid var(--field-border);
+  border-radius: 16px;
   appearance: none;
 }
 
@@ -283,9 +310,9 @@
 }
 
 .typed__input:focus {
-  border-color: var(--purple);
-  box-shadow: 0 0 0 1px var(--purple);
-  outline: none;
+  border-color: var(--accent);
+  outline: 2px solid var(--focus);
+  outline-offset: 1px;
 }
 
 .typed__actions {
@@ -332,4 +359,15 @@
 .choice--static {
   display: flex;
   align-items: center;
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .session__top,
+  .session__bar {
+    background: var(--glass-solid);
+  }
+
+  .dialog {
+    background: var(--glass-solid);
+  }
 }

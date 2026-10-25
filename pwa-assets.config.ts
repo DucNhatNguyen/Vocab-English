@@ -1,6 +1,6 @@
 import { defineConfig } from '@vite-pwa/assets-generator/config'
 
-const background = '#FBF7EE'
+const background = '#f7f8ff'
 
 // The source SVG is full-bleed with all artwork inside the maskable safe zone,
 // so no extra padding is needed for any of the outputs.

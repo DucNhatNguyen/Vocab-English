@@ -6,7 +6,7 @@
   gap: 20px;
 }
 
-/* Cards: flat surface blocks */
+/* Cards: glass blocks */
 
 .install-card {
   display: flex;
@@ -14,23 +14,20 @@
   align-items: flex-start;
   gap: 10px;
   padding: 16px;
-  background: var(--surface);
-  border: 1px solid var(--rule);
-  border-radius: var(--radius);
+  border-radius: var(--radius-lg);
 }
 
 .install-card__title {
   display: flex;
   align-items: center;
-  gap: 8px;
-  color: var(--purple);
+  gap: 10px;
   font-size: 1.125rem;
   font-weight: 700;
   line-height: 1.3;
 }
 
 .install-card--done {
-  border-color: var(--purple);
+  border-color: var(--success);
 }
 
 .install-card__list {
@@ -65,17 +62,11 @@
 
 .install-notice {
   display: flex;
-  align-items: flex-start;
-  gap: 10px;
+  align-items: center;
+  gap: 12px;
   margin: 0 0 12px;
   padding: 0 4px;
   font-size: 0.9375rem;
-}
-
-.install-notice > svg {
-  flex: none;
-  margin-top: 2px;
-  color: var(--purple);
 }
 
 /* Copy link */
@@ -101,7 +92,6 @@
 
 .install-guide__title {
   margin-bottom: 12px;
-  color: var(--purple);
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.3;
@@ -131,13 +121,14 @@
   display: grid;
   flex: none;
   place-items: center;
-  width: 30px;
-  height: 30px;
-  color: var(--purple);
+  width: 32px;
+  height: 32px;
+  color: var(--on-accent);
   font-weight: 700;
   font-variant-numeric: tabular-nums;
-  border: 2px solid var(--purple);
+  background: var(--btn-primary);
   border-radius: 50%;
+  box-shadow: 0 3px 0 var(--btn-primary-lip);
 }
 
 .step__title {
@@ -170,36 +161,36 @@
   width: 100%;
   height: auto;
   overflow: hidden;
-  background: var(--sunk);
-  border: 1px solid var(--rule);
-  border-radius: 8px;
+  background: var(--tint);
+  border: 1px solid var(--divider);
+  border-radius: 12px;
   font-family: var(--font-ui);
 }
 
 .ill__page,
 .ill__sheet {
-  fill: var(--surface);
-  stroke: var(--rule);
+  fill: var(--glass);
+  stroke: var(--divider);
   stroke-width: 1;
 }
 
 .ill__chrome {
-  fill: var(--paper);
+  fill: var(--bg);
 }
 
 .ill__rule {
-  stroke: var(--rule);
+  stroke: var(--divider);
   stroke-width: 1;
 }
 
 .ill__field {
-  fill: var(--sunk);
-  stroke: var(--rule);
+  fill: var(--tint);
+  stroke: var(--divider);
   stroke-width: 1;
 }
 
 .ill__skeleton {
-  fill: var(--rule);
+  fill: var(--divider);
 }
 
 .ill__icon {
@@ -207,25 +198,25 @@
 }
 
 .ill__ring {
-  fill: var(--purple);
+  fill: var(--accent);
   fill-opacity: 0.12;
-  stroke: var(--purple);
+  stroke: var(--accent);
   stroke-width: 2.5;
 }
 
 .ill__mark {
-  fill: var(--purple);
+  fill: var(--accent);
   fill-opacity: 0.12;
-  stroke: var(--purple);
+  stroke: var(--accent);
   stroke-width: 2.5;
 }
 
 .ill__appicon {
-  fill: var(--purple);
+  fill: var(--btn-primary);
 }
 
 .ill__icontext {
-  fill: var(--on-purple);
+  fill: var(--on-accent);
   font-size: 13px;
   font-weight: 700;
 }
@@ -235,7 +226,7 @@
 }
 
 .ill__label {
-  fill: var(--purple);
+  fill: var(--accent);
   font-size: 13px;
   font-weight: 700;
 }
@@ -251,7 +242,7 @@
 }
 
 .ill__text--accent {
-  fill: var(--purple);
+  fill: var(--accent);
 }
 
 .ill__text--bold {
@@ -271,15 +262,9 @@
 
 .install-why__item {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 12px;
   padding: 12px 14px;
-}
-
-.install-why__item > svg {
-  flex: none;
-  margin-top: 1px;
-  color: var(--purple);
 }
 
 .install-why .install-notice {

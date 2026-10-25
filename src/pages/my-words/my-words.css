@@ -5,7 +5,7 @@
 }
 
 .my-words__search {
-  margin-top: 12px;
+  margin-top: 16px;
 }
 
 .my-words__unlearned {
@@ -25,6 +25,12 @@
 
 .word-form {
   padding-bottom: 24px;
+}
+
+/* All fields live in one glass card */
+.word-form__card {
+  padding: 18px 16px 20px;
+  border-radius: var(--radius-lg);
 }
 
 .suggest {
@@ -61,24 +67,14 @@
   gap: 12px;
   margin-top: 20px;
   padding: 14px;
-  background: var(--surface);
-  border: 1px solid var(--rule);
-  border-left: 4px solid var(--purple);
-  border-radius: var(--radius);
 }
 
 .callout__text {
   display: flex;
-  align-items: flex-start;
-  gap: 8px;
+  align-items: center;
+  gap: 10px;
   font-weight: 600;
   overflow-wrap: anywhere;
-}
-
-.callout__text svg {
-  flex: none;
-  margin-top: 2px;
-  color: var(--purple);
 }
 
 .word-form .field__error[role='alert'] {
@@ -87,7 +83,9 @@
 
 .word-form__save {
   width: 100%;
+  min-height: 56px;
   margin-top: 24px;
+  font-size: 1.0625rem;
 }
 
 /* Word detail actions for own words */
@@ -95,7 +93,7 @@
 .word-detail__actions {
   display: flex;
   gap: 12px;
-  margin-top: 32px;
+  margin-top: 24px;
 }
 
 .word-detail__actions > .btn {

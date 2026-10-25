@@ -2,6 +2,7 @@ import { useLiveQuery } from 'dexie-react-hooks'
 import { Check, Download, ShieldAlert, ShieldCheck, TriangleAlert, Upload } from 'lucide-react'
 import { useEffect, useRef, useState } from 'react'
 import ConfirmDialog from '../../components/ConfirmDialog.tsx'
+import IconBadge from '../../components/IconBadge.tsx'
 import { exportBackup, restoreBackup } from '../../db/backup.ts'
 import {
   backupFileName,
@@ -106,7 +107,7 @@ export default function BackupSection() {
         <li className="setting setting--buttons">
           <button
             type="button"
-            className="btn btn--ghost"
+            className="btn btn--primary"
             disabled={busy || !prepared}
             onClick={() => void onExport()}
           >
@@ -140,12 +141,12 @@ export default function BackupSection() {
           <li className="setting setting--status">
             {persisted ? (
               <>
-                <ShieldCheck size={20} className="setting__status-icon" aria-hidden="true" />
+                <IconBadge icon={ShieldCheck} hue="green" size="sm" />
                 <span>Dữ liệu được bảo vệ khỏi bị xoá tự động.</span>
               </>
             ) : (
               <>
-                <ShieldAlert size={20} className="setting__status-icon" aria-hidden="true" />
+                <IconBadge icon={ShieldAlert} hue="orange" size="sm" />
                 <span>
                   Trình duyệt có thể xoá dữ liệu nếu lâu không mở app. Hãy sao lưu thường xuyên.
                 </span>
@@ -186,6 +187,7 @@ export default function BackupSection() {
         message={`File này có ${pending ? describeBackupData(pending) : ''}. Khôi phục sẽ thay thế toàn bộ dữ liệu hiện tại trên máy này. Tiếp tục?`}
         cancelLabel="Giữ dữ liệu hiện tại"
         confirmLabel="Khôi phục"
+        danger
         onCancel={() => setPending(null)}
         onConfirm={() => void onConfirmRestore()}
       />

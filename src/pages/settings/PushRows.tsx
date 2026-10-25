@@ -2,15 +2,24 @@ import { Bell, BellOff, BellRing, Smartphone, TriangleAlert, type LucideIcon } f
 import type { ReactNode } from 'react'
 import { Link } from 'react-router'
 import { paths } from '../../app/paths.ts'
+import IconBadge, { type BadgeHue } from '../../components/IconBadge.tsx'
 import { useInstallEnvironment } from '../../app/useInstall.ts'
 import { usePushState } from '../../app/usePush.ts'
 import { formatIosVersion, type InstallEnvironment } from '../../lib/install.ts'
 import { disablePush, enablePush, isPushConfigured, pushView, type PushView } from '../../lib/notifications.ts'
 
-function StatusRow({ icon: Icon, children }: { icon: LucideIcon; children: ReactNode }) {
+function StatusRow({
+  icon,
+  hue = 'blue',
+  children,
+}: {
+  icon: LucideIcon
+  hue?: BadgeHue
+  children: ReactNode
+}) {
   return (
     <li className="setting setting--status">
-      <Icon size={20} className="setting__status-icon" aria-hidden="true" />
+      <IconBadge icon={icon} hue={hue} size="sm" />
       <span>{children}</span>
     </li>
   )
@@ -35,7 +44,7 @@ export default function PushRows({ anyReminder }: { anyReminder: boolean }) {
   switch (view) {
     case 'not-configured':
       return (
-        <StatusRow icon={BellOff}>
+        <StatusRow icon={BellOff} hue="orange">
           Thông báo nhắc học chưa được bật ở bản này. Các lựa chọn Sáng, Trưa, Tối ở trên vẫn được lưu trên máy.
         </StatusRow>
       )
@@ -55,7 +64,7 @@ export default function PushRows({ anyReminder }: { anyReminder: boolean }) {
       )
     case 'ios-unsupported':
       return (
-        <StatusRow icon={BellOff}>
+        <StatusRow icon={BellOff} hue="orange">
           iPhone cần iOS 16.4 trở lên để nhận thông báo
           {env.iosVersion ? ` (máy bạn đang dùng iOS ${formatIosVersion(env.iosVersion)})` : ''}. Hãy cập nhật iOS
           rồi quay lại đây.
@@ -63,18 +72,18 @@ export default function PushRows({ anyReminder }: { anyReminder: boolean }) {
       )
     case 'no-push':
       return (
-        <StatusRow icon={BellOff}>
+        <StatusRow icon={BellOff} hue="orange">
           Trình duyệt này chưa hỗ trợ thông báo. Hãy mở Từ Ngày bằng Chrome, Edge hoặc Safari bản mới.
         </StatusRow>
       )
     case 'blocked':
-      return <StatusRow icon={BellOff}>{blockedHelp(env)}</StatusRow>
+      return <StatusRow icon={BellOff} hue="orange">{blockedHelp(env)}</StatusRow>
     case 'checking':
       return <StatusRow icon={Bell}>Đang kiểm tra thông báo…</StatusRow>
     case 'error':
       return (
         <>
-          <StatusRow icon={TriangleAlert}>
+          <StatusRow icon={TriangleAlert} hue="orange">
             Chưa kết nối được dịch vụ thông báo. Hãy kiểm tra mạng rồi thử lại.
           </StatusRow>
           <li className="setting">
@@ -103,7 +112,7 @@ export default function PushRows({ anyReminder }: { anyReminder: boolean }) {
     case 'on':
       return (
         <>
-          <StatusRow icon={BellRing}>
+          <StatusRow icon={BellRing} hue="green">
             Nhắc học đang bật.{' '}
             {anyReminder
               ? 'Bạn sẽ nhận thông báo vào các buổi đã chọn ở trên.'

@@ -1,8 +1,9 @@
-import { Plus, Search as SearchIcon, X } from 'lucide-react'
+import { Plus, Search as SearchIcon, SearchX, X } from 'lucide-react'
 import { useEffect, useMemo, useRef } from 'react'
 import { Link, useSearchParams } from 'react-router'
 import { useCustomWords } from '../app/hooks.ts'
 import { paths } from '../app/paths.ts'
+import IconBadge from '../components/IconBadge.tsx'
 import PageHeader from '../components/PageHeader.tsx'
 import WordRow from '../components/WordRow.tsx'
 import { words } from '../data/index.ts'
@@ -86,6 +87,7 @@ export default function Search() {
 
         {hasQuery && results.length === 0 && (
           <div className="empty">
+            <IconBadge icon={SearchX} hue="pink" size="lg" />
             <p className="empty__title">Không tìm thấy từ nào</p>
             {addLink(true)}
           </div>

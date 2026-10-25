@@ -1,4 +1,4 @@
-/* Thống kê: level bar chart, number rows, last-7-days dots. */
+/* Thống kê: level bar chart, number rows with badges, last-7-days dots. */
 
 .stats {
   display: flex;
@@ -42,7 +42,7 @@
   align-items: center;
   align-self: stretch;
   height: calc(var(--plot-height) + 28px);
-  border-bottom: 2px solid var(--ink-muted);
+  border-bottom: 2px solid var(--field-border);
 }
 
 .chart__value {
@@ -57,8 +57,8 @@
   display: block;
   width: min(100%, 40px);
   height: max(6px, calc(var(--h, 0) * var(--plot-height)));
-  background: var(--purple);
-  border-radius: 6px 6px 0 0;
+  background: linear-gradient(180deg, var(--accent-2), var(--btn-primary));
+  border-radius: 8px 8px 0 0;
 }
 
 /* No words at this level: nothing but the baseline */
@@ -76,14 +76,14 @@
 .stat {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 12px;
-  min-height: 56px;
-  padding: 8px 16px;
+  min-height: 60px;
+  padding: 8px 16px 8px 14px;
 }
 
 .stat__main {
   display: flex;
+  flex: 1;
   flex-direction: column;
   min-width: 0;
 }
@@ -99,12 +99,12 @@
 
 .stat__value {
   flex: none;
-  color: var(--purple);
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
 
 .stat__value strong {
+  color: var(--accent);
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -145,11 +145,12 @@
 .week__dot {
   width: 28px;
   height: 28px;
-  border: 2px solid var(--ink-muted);
+  border: 2px solid var(--field-border);
   border-radius: 50%;
 }
 
 .week__dot--on {
-  background: var(--purple);
-  border-color: var(--purple);
+  background: linear-gradient(135deg, var(--btn-primary), var(--accent-2));
+  border-color: transparent;
+  box-shadow: 0 3px 0 var(--btn-primary-lip);
 }

@@ -45,7 +45,7 @@ interface WordRevealProps {
 /** Word card under the verdict: the word, its IPA, optionally the meaning, and replay buttons. */
 function WordReveal({ word, showMeaning, ref }: WordRevealProps) {
   return (
-    <div ref={ref} className="reveal">
+    <div ref={ref} className="reveal glass">
       <div className="reveal__head">
         <div className="reveal__main">
           <p className="reveal__word">
@@ -70,7 +70,7 @@ interface ClozeProps {
 /** Fill-in-the-blank sentence; once answered the blanks show the word as written in it. */
 function Cloze({ blank, hint, answered }: ClozeProps) {
   return (
-    <div className="cloze">
+    <div className="cloze glass">
       <p className="cloze__en">
         {blank.parts.map((part, i) => (
           <Fragment key={i}>
@@ -96,7 +96,7 @@ function Cloze({ blank, hint, answered }: ClozeProps) {
 
 function ListenCard({ word, prompt }: { word: Word; prompt: string }) {
   return (
-    <div className="listen">
+    <div className="listen glass">
       <p className="listen__prompt">{prompt}</p>
       <SpeakButtons text={word.word} />
     </div>
@@ -205,7 +205,7 @@ export default function ReviewQuestion({
       stem = (
         <>
           <p className="quiz__prompt">Gõ từ tiếng Anh có nghĩa sau</p>
-          <div className="meaning-q">
+          <div className="meaning-q glass">
             <p className="meaning-q__vi">{word.meaningVi}</p>
             {word.pos && <span className="chip">{getPosLabel(word.pos)}</span>}
           </div>

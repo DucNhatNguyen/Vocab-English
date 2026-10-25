@@ -1,8 +1,10 @@
 import { useLiveQuery } from 'dexie-react-hooks'
 import { useMemo, useRef, useState } from 'react'
-import { useNavigate } from 'react-router'
+import { TriangleAlert } from 'lucide-react'
+import { useLocation, useNavigate } from 'react-router'
 import { paths } from '../app/paths.ts'
 import { useHideTabBar } from '../app/tabBarVisibility.ts'
+import IconBadge from '../components/IconBadge.tsx'
 import PageHeader from '../components/PageHeader.tsx'
 import type { Word } from '../data/types.ts'
 import { loadReviewData, recordReviewAnswer, type ReviewOutcome } from '../db/review.ts'
@@ -16,6 +18,7 @@ import {
   selectReviewRound,
 } from '../lib/review.ts'
 import { isSpeechSupported, speak } from '../lib/speech.ts'
+import { filterCardsBySource, isSelfStudySearch } from '../lib/studySource.ts'
 import ReviewRound from './review/ReviewRound.tsx'
 import ReviewStart from './review/ReviewStart.tsx'
 import ReviewSummary, { type SummaryItem } from './review/ReviewSummary.tsx'
@@ -35,33 +38,42 @@ type Phase =
 /** "Ôn tập Thời điểm vàng": start screen -> rounds of up to 20 questions -> summary. */
 export default function Review() {
   const navigate = useNavigate()
+  const { search } = useLocation()
+  // ?nguon=tu-hoc: review only the user's own words (Tự học); otherwise everything is due
+  const mine = isSelfStudySearch(search)
+  const source = mine ? 'mine' : 'all'
   // Live: answers move cards out of the due list, so this is also the data of the next round
   const data = useLiveQuery(() => loadReviewData())
+  // Words and distractor pool in `data` stay complete, so distractors can come from every word
+  const learned = useMemo(
+    () => (data ? filterCardsBySource(data.learned, source) : undefined),
+    [data, source],
+  )
   const [phase, setPhase] = useState<Phase>({ name: 'start' })
   // Words answered in this visit; a round never asks them again, even if the live data lags
   const reviewed = useRef(new Set<string>())
 
   const overview = useMemo(
-    () => (data ? getReviewOverview(data.learned, data.today) : undefined),
-    [data],
+    () => (data && learned ? getReviewOverview(learned, data.today) : undefined),
+    [data, learned],
   )
 
   // Next review day shown on the summary: live data with this round's answers applied
   const nextReview = useMemo(() => {
-    if (phase.name !== 'summary' || !data) return null
+    if (phase.name !== 'summary' || !data || !learned) return null
     const answered = new Map(phase.outcomes.map((o) => [o.after.wordId, o.after]))
     return getNextReview(
-      data.learned.map((p) => answered.get(p.wordId) ?? p),
+      learned.map((p) => answered.get(p.wordId) ?? p),
       data.today,
     )
-  }, [phase, data])
+  }, [phase, data, learned])
 
   // A failed save shows the tab bar again, so the user is never trapped
   useHideTabBar(phase.name === 'round' || (phase.name === 'saving' && !phase.failed))
 
   function startNextRound() {
-    if (!data) return
-    const cards = data.learned.filter((p) => !reviewed.current.has(p.wordId))
+    if (!data || !learned) return
+    const cards = learned.filter((p) => !reviewed.current.has(p.wordId))
     const { round, remaining } = selectReviewRound(cards, data.today)
 
     const words = new Map<string, Word>()
@@ -130,12 +142,17 @@ export default function Review() {
     settle(again, remaining)
   }
 
-  const leave = () => void navigate(paths.home)
+  const leave = () => void navigate(mine ? paths.selfStudy : paths.home)
 
   switch (phase.name) {
     case 'start':
       return (
-        <ReviewStart overview={overview} today={data?.today ?? localToday()} onStart={startNextRound} />
+        <ReviewStart
+          overview={overview}
+          today={data?.today ?? localToday()}
+          mine={mine}
+          onStart={startNextRound}
+        />
       )
     case 'round':
       return (
@@ -153,6 +170,7 @@ export default function Review() {
           <div className="page empty">
             {phase.failed ? (
               <>
+                <IconBadge icon={TriangleAlert} hue="orange" size="lg" />
                 <p className="empty__title">Không lưu được kết quả lượt ôn. Hãy thử lại.</p>
                 <button
                   type="button"
@@ -176,6 +194,7 @@ export default function Review() {
           nextRoundSize={Math.min(phase.remaining, REVIEW_ROUND_SIZE)}
           next={nextReview}
           today={data?.today ?? localToday()}
+          mine={mine}
           onMore={startNextRound}
         />
       )

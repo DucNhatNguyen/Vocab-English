@@ -1,17 +1,20 @@
 import { useLiveQuery } from 'dexie-react-hooks'
 import {
   CalendarClock,
-  ChevronRight,
+  CheckCheck,
+  ChartColumn,
   Flame,
   GraduationCap,
   Library,
-  PenLine,
+  NotebookPen,
   Play,
   Search,
+  Settings,
 } from 'lucide-react'
 import type { CSSProperties } from 'react'
 import { Link } from 'react-router'
 import { paths } from '../app/paths.ts'
+import IconBadge from '../components/IconBadge.tsx'
 import LevelTicks from '../components/LevelTicks.tsx'
 import { loadHomeData, type HomeData } from '../db/stats.ts'
 import { formatDateVi, formatWeekdayDateVi, today as localToday } from '../lib/date.ts'
@@ -23,7 +26,7 @@ function Streak({ streak }: { streak: StreakInfo }) {
   const cls = streak.todayDone ? 'streak streak--done' : streak.current > 0 ? 'streak streak--alive' : 'streak'
   return (
     <p className={cls}>
-      <Flame size={22} aria-hidden="true" />
+      <Flame size={22} strokeWidth={2.25} aria-hidden="true" />
       <span className="visually-hidden">Chuỗi ngày học liên tiếp:</span>
       <span className="streak__num">{streak.current}</span>
       <span className="streak__unit">ngày</span>
@@ -45,7 +48,7 @@ function ReviewBlock({ data }: { data: HomeData }) {
 
   if (stats.learned === 0) {
     return lessonCount > 0 ? (
-      <section className="home-review">
+      <section className="home-review glass">
         <h2 className="home-review__title">Bắt đầu học nào!</h2>
         <p className="home-review__text">
           Bài đầu tiên có {lessonCount} từ. Học xong, các từ vào lượt ôn từ ngày mai.
@@ -56,7 +59,7 @@ function ReviewBlock({ data }: { data: HomeData }) {
         </Link>
       </section>
     ) : (
-      <section className="home-review">
+      <section className="home-review glass">
         <h2 className="home-review__title">Chọn bộ từ để học</h2>
         <p className="home-review__text">Hiện chưa có từ nào để học. Hãy chọn một bộ từ vựng.</p>
         <Link to={paths.decks} className="btn btn--primary home-review__go">
@@ -69,7 +72,7 @@ function ReviewBlock({ data }: { data: HomeData }) {
 
   if (overview.dueCount > 0) {
     return (
-      <section className="home-review">
+      <section className="home-review glass">
         <h2 className="home-review__title">Đến giờ ôn rồi!</h2>
         <p className="home-review__count">
           <span className="home-review__num">{overview.dueCount}</span>
@@ -84,11 +87,11 @@ function ReviewBlock({ data }: { data: HomeData }) {
   }
 
   return (
-    <section className="home-review">
+    <section className="home-review glass">
       <h2 className="home-review__title">Chưa có từ cần ôn</h2>
       {overview.next ? (
         <p className="home-review__next">
-          <CalendarClock size={20} aria-hidden="true" />
+          <IconBadge icon={CalendarClock} hue="green" size="sm" />
           <span>
             Lượt ôn tiếp theo:{' '}
             <strong>
@@ -108,7 +111,9 @@ function ReviewBlock({ data }: { data: HomeData }) {
 /** "Bài mới: N từ" with today's goal progress; a pointer to the decks when nothing is left. */
 function LessonLine({ data }: { data: HomeData }) {
   const { lessonCount, hasActiveDecks, stats } = data
-  const { newLearned, goal } = stats.today
+  // Deck words only: Tự học words are not part of the daily goal
+  const newLearned = data.newToday
+  const { goal } = stats.today
   const progress = (
     <p className="home-lesson__sub">
       Hôm nay: {newLearned}/{goal} từ mới
@@ -120,7 +125,8 @@ function LessonLine({ data }: { data: HomeData }) {
 
   if (lessonCount === 0) {
     return (
-      <section className="home-lesson">
+      <section className="home-lesson glass">
+        <IconBadge icon={hasActiveDecks ? CheckCheck : Library} hue={hasActiveDecks ? 'green' : 'blue'} />
         <div className="home-lesson__main">
           <p className="home-lesson__title">
             {hasActiveDecks ? 'Bạn đã học hết các bộ đang chọn' : 'Chưa chọn bộ từ nào để học'}
@@ -136,7 +142,8 @@ function LessonLine({ data }: { data: HomeData }) {
 
   const fraction = goal > 0 ? Math.min(1, newLearned / goal) : 0
   return (
-    <section className="home-lesson">
+    <section className="home-lesson glass">
+      <IconBadge icon={GraduationCap} hue="violet" />
       <div className="home-lesson__main">
         <p className="home-lesson__title">
           Bài mới: <strong>{lessonCount} từ</strong>
@@ -188,23 +195,19 @@ function Scores({ levels }: { levels: readonly number[] }) {
               </li>
             ))}
           </ul>
-          <span className="home-scores__more">
-            <span>Xem thống kê</span>
-            <ChevronRight size={18} aria-hidden="true" />
-          </span>
         </Link>
         <nav className="home-links" aria-label="Lối tắt">
+          <Link to={paths.notebook}>
+            <IconBadge icon={NotebookPen} hue="blue" />
+            Sổ tay
+          </Link>
+          <Link to={paths.stats}>
+            <IconBadge icon={ChartColumn} hue="pink" />
+            Thống kê
+          </Link>
           <Link to={paths.decks}>
-            <Library size={18} aria-hidden="true" />
+            <IconBadge icon={Library} hue="orange" />
             Bộ từ vựng
-          </Link>
-          <Link to={paths.search}>
-            <Search size={18} aria-hidden="true" />
-            Tìm kiếm
-          </Link>
-          <Link to={paths.myWords}>
-            <PenLine size={18} aria-hidden="true" />
-            Từ của tôi
           </Link>
         </nav>
       </div>
@@ -223,7 +226,15 @@ export default function Home() {
     <div className="home">
       <header className="home-head">
         <h1 className="home-head__date">{formatWeekdayDateVi(today)}</h1>
-        {data && <Streak streak={data.stats.streak} />}
+        <div className="home-head__actions">
+          {data && <Streak streak={data.stats.streak} />}
+          <Link to={paths.search} className="icon-btn icon-btn--soft" aria-label="Tìm kiếm">
+            <Search size={20} aria-hidden="true" />
+          </Link>
+          <Link to={paths.settings} className="icon-btn icon-btn--soft" aria-label="Cài đặt">
+            <Settings size={20} aria-hidden="true" />
+          </Link>
+        </div>
       </header>
       {note && <p className="home-note">{note}</p>}
       <InstallBanner />

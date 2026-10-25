@@ -41,6 +41,7 @@ const select = (over: Partial<Parameters<typeof selectLessonWords>[0]> = {}) =>
     customWords: [],
     activeDeckIds: ['a', 'b'],
     progress: new Map(),
+    source: 'decks',
     getDeckWords,
     ...over,
   }).map((w) => w.id)
@@ -55,17 +56,20 @@ describe('isUnlearned', () => {
 })
 
 describe('selectLessonWords', () => {
-  it('puts custom words first, oldest first, then decks in active order', () => {
-    const customWords = [custom('new', '2026-10-20'), custom('old', '2026-10-01')]
-    expect(select({ customWords })).toEqual([
-      'custom:old',
-      'custom:new',
-      'a1',
-      'a2',
-      'a3',
-      'b1',
-      'b2',
-    ])
+  it('decks: only deck words, in active order, never own words', () => {
+    const customWords = [custom('x', '2026-10-02'), custom('y', '2026-10-01')]
+    expect(select({ customWords })).toEqual(['a1', 'a2', 'a3', 'b1', 'b2'])
+  })
+
+  it('mine: only own words, oldest first, never deck words', () => {
+    const customWords = [custom('x', '2026-10-02'), custom('y', '2026-10-01')]
+    expect(select({ source: 'mine', customWords })).toEqual(['custom:y', 'custom:x'])
+  })
+
+  it('mine: respects the count and skips learned own words', () => {
+    const customWords = [custom('x', '2026-10-01'), custom('y', '2026-10-02'), custom('z', '2026-10-03')]
+    const progress = new Map([['custom:x', prog('custom:x', 1)]])
+    expect(select({ source: 'mine', customWords, progress, count: 1 })).toEqual(['custom:y'])
   })
 
   it('orders custom words created on the same day by creation time, then id', () => {
@@ -75,7 +79,7 @@ describe('selectLessonWords', () => {
       custom('old-b', '2026-10-01'),
       custom('old-a', '2026-10-01'),
     ]
-    expect(select({ customWords, activeDeckIds: [] })).toEqual([
+    expect(select({ source: 'mine', customWords })).toEqual([
       'custom:old-a',
       'custom:old-b',
       'custom:early',
@@ -86,10 +90,10 @@ describe('selectLessonWords', () => {
   it('stops at the lesson size', () => {
     expect(select({ count: 2 })).toEqual(['a1', 'a2'])
     expect(select({ count: 4, customWords: [custom('c', '2026-10-01')] })).toEqual([
-      'custom:c',
       'a1',
       'a2',
       'a3',
+      'b1',
     ])
   })
 
@@ -103,12 +107,8 @@ describe('selectLessonWords', () => {
       [prog('a1', 3), prog('a2', 0, true), prog('custom:k', 1)].map((p) => [p.wordId, p]),
     )
     const customWords = [custom('k', '2026-10-01'), custom('m', '2026-10-02')]
-    expect(select({ progress, customWords, count: 4 })).toEqual([
-      'custom:m',
-      'a2',
-      'a3',
-      'b1',
-    ])
+    expect(select({ progress, customWords, count: 4 })).toEqual(['a2', 'a3', 'b1', 'b2'])
+    expect(select({ progress, customWords, source: 'mine' })).toEqual(['custom:m'])
   })
 
   it('skips unknown deck ids and dedupes words shared by decks', () => {
@@ -145,6 +145,7 @@ describe('selectLessonWords', () => {
       customWords: [],
       activeDeckIds: ['giao-tiep-hang-ngay'],
       progress: new Map(),
+      source: 'decks',
     })
     expect(result).toHaveLength(5)
     expect(result[0].id).toBe('hello')

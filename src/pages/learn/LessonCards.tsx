@@ -32,7 +32,7 @@ export default function LessonCards({ words, onDone, onExit }: LessonCardsProps)
   return (
     <SessionShell done={index + 1} total={words.length} onExit={onExit}>
       <SessionBody>
-        <article className="flashcard" aria-live="polite">
+        <article className="flashcard glass" aria-live="polite">
           {word.emoji && (
             <div className="word-detail__emoji" aria-hidden="true">
               {word.emoji}

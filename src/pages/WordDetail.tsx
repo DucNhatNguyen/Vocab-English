@@ -30,7 +30,7 @@ export default function WordDetail() {
     setDeleted(true) // hides the page so the vanished word does not flash "not found"
     try {
       await deleteCustomWord(wordId)
-      void navigate(paths.myWords, { replace: true })
+      void navigate(paths.selfStudy, { replace: true })
     } catch {
       setDeleted(false)
     }
@@ -38,10 +38,11 @@ export default function WordDetail() {
 
   if (deleted) return <PageHeader title="" />
   // Loading: render only the shell so a valid word does not flash "not found"
-  if (word === undefined) return <PageHeader title="" backTo={paths.home} />
-  if (word === null) return <NotFound message="Không tìm thấy từ" backTo={paths.home} />
+  const isCustom = isCustomWordId(wordId)
+  const backTo = isCustom ? paths.selfStudy : paths.home
+  if (word === undefined) return <PageHeader title="" backTo={backTo} />
+  if (word === null) return <NotFound message="Không tìm thấy từ" backTo={backTo} />
 
-  const isCustom = isCustomWordId(word.id)
   const favorite = progress?.favorite ?? false
   const level = progress?.level ?? 0
   const reviewStatus = progress ? reviewStatusLabel(progress, today()) : null
@@ -50,7 +51,7 @@ export default function WordDetail() {
     <>
       <PageHeader
         title="Chi tiết từ"
-        backTo={paths.home}
+        backTo={backTo}
         actions={
           <button
             type="button"
@@ -63,49 +64,52 @@ export default function WordDetail() {
           </button>
         }
       />
-      <article className="page word-detail">
-        {word.emoji && (
-          <div className="word-detail__emoji" aria-hidden="true">
-            {word.emoji}
-          </div>
-        )}
-        <h2 className="word-detail__word">{word.word}</h2>
-        <p className="word-detail__ipa">
-          {word.ipa && <span>{word.ipa}</span>}
-          {word.pos && <span className="chip">{getPosLabel(word.pos)}</span>}
-          {isCustom && <span className="chip chip--mine">Từ của tôi</span>}
-        </p>
-
-        <SpeakButtons text={word.word} className="word-detail__speak" />
-
-        <section className="word-detail__section">
-          <h3 className="label">Nghĩa</h3>
-          <p className="word-detail__meaning">{word.meaningVi}</p>
-        </section>
-
-        {(word.exampleEn || word.exampleVi) && (
-          <section className="word-detail__section">
-            <h3 className="label">Ví dụ</h3>
-            <div className="example">
-              {word.exampleEn && <p className="example__en">{word.exampleEn}</p>}
-              {word.exampleVi && <p className="example__vi">{word.exampleVi}</p>}
-            </div>
-          </section>
-        )}
-
-        <section className="word-detail__section">
-          <h3 className="label">Cấp độ nhớ</h3>
-          {level >= 1 ? <LevelTicks level={level} size={22} /> : <p className="muted">Chưa học</p>}
-          {progress && level >= 1 && (
-            <div className="word-detail__review">
-              <ReviewTick
-                ticked={!progress.ignored}
-                onToggle={() => void setIgnored(word.id, !progress.ignored)}
-              />
-              <span className="muted">{reviewStatus}</span>
+      <div className="page word-detail">
+        <article className="flashcard glass">
+          {word.emoji && (
+            <div className="word-detail__emoji" aria-hidden="true">
+              {word.emoji}
             </div>
           )}
-        </section>
+          <h2 className="word-detail__word">{word.word}</h2>
+          <p className="word-detail__ipa">
+            {word.ipa && <span>{word.ipa}</span>}
+            {word.pos && <span className="chip">{getPosLabel(word.pos)}</span>}
+            {isCustom && <span className="chip chip--mine">Từ của tôi</span>}
+          </p>
+
+          <SpeakButtons text={word.word} className="word-detail__speak" />
+
+          <section className="word-detail__section">
+            <h3 className="label">Nghĩa</h3>
+            <p className="word-detail__meaning">{word.meaningVi}</p>
+          </section>
+
+          {(word.exampleEn || word.exampleVi) && (
+            <section className="word-detail__section">
+              <h3 className="label">Ví dụ</h3>
+              <div className="example">
+                {word.exampleEn && <p className="example__en">{word.exampleEn}</p>}
+                {word.exampleVi && <p className="example__vi">{word.exampleVi}</p>}
+              </div>
+            </section>
+          )}
+
+          <section className="word-detail__section">
+            <h3 className="label">Cấp độ nhớ</h3>
+            {level >= 1 ? <LevelTicks level={level} size={22} /> : <p className="muted">Chưa học</p>}
+            {progress && level >= 1 && (
+              <div className="word-detail__review">
+                <ReviewTick
+                  ticked={!progress.ignored}
+                  onToggle={() => void setIgnored(word.id, !progress.ignored)}
+                />
+                <span className="muted">{reviewStatus}</span>
+              </div>
+            )}
+          </section>
+
+        </article>
 
         {isCustom && (
           <div className="word-detail__actions">
@@ -119,7 +123,7 @@ export default function WordDetail() {
             </button>
           </div>
         )}
-      </article>
+      </div>
 
       <ConfirmDialog
         open={confirmDelete}
@@ -127,6 +131,7 @@ export default function WordDetail() {
         message="Xoá từ này? Tiến độ học của từ cũng sẽ bị xoá."
         cancelLabel="Giữ lại"
         confirmLabel="Xoá"
+        danger
         onCancel={() => setConfirmDelete(false)}
         onConfirm={() => void remove()}
       />

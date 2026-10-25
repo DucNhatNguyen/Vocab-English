@@ -61,6 +61,7 @@ export default function SessionShell({
         message={exitMessage}
         cancelLabel="Ở lại"
         confirmLabel="Thoát"
+        danger
         onCancel={() => setConfirming(false)}
         onConfirm={() => {
           setConfirming(false)

@@ -1,62 +1,234 @@
-/* Design tokens: "Vở ô ly" (light, default) and "bảng đen" (dark). See spec 8.1.
-   Dark tokens are declared twice on purpose: once for the system preference (unless the user
-   forced light) and once for the forced `data-theme="dark"`. Keep both blocks in sync. */
+/* Design tokens: "liquid glass" (light, default) and night (dark).
+   Content floats on frosted glass over a soft pastel mesh. Dark tokens are declared twice on
+   purpose: once for the system preference (unless the user forced light) and once for the forced
+   `data-theme="dark"`. Keep both blocks in sync. */
 
 :root {
   color-scheme: light;
 
-  --paper: #fbf7ee; /* page background */
-  --surface: #fffdf7; /* cards, lists, bars: clean and flat */
-  --sunk: #f1ebdc; /* pressed / subtle fill */
-  --ink: #2b2438; /* body text */
-  --ink-muted: #665d75; /* secondary text */
-  --purple: #4b2a8c; /* primary ink: buttons, headings, words */
-  --on-purple: #ffffff;
-  --red: #be2630; /* red pen: grading and level ticks only */
-  --rule: #e3dccb; /* hairlines between list rows */
-  --grid: rgba(88, 101, 168, 0.09); /* graph-paper lines, page background only */
-  --focus: #4b2a8c;
+  /* Page: near-white base with a soft pastel mesh (painted by body::before) */
+  --bg: #f7f8ff;
+  --mesh-a: #e6d8ff; /* lavender */
+  --mesh-b: #ffd9ee; /* pink */
+  --mesh-c: #cdeaff; /* sky */
+  --mesh-d: #d4f8e9; /* mint */
+
+  /* Text and accent */
+  --ink: #1d2340; /* body text */
+  --ink-muted: #5a6183; /* secondary text */
+  --accent: #2558e6; /* accent text, links, headings, icons */
+  --accent-2: #6a4cf0; /* violet highlight */
+  --accent-soft: rgba(37, 88, 230, 0.1); /* tinted fill: selected chip, soft emphasis */
+  --accent-line: rgba(37, 88, 230, 0.3); /* hairline in accent */
+  --accent-ring: rgba(37, 88, 230, 0.28);
+  --on-accent: #ffffff; /* text on --btn-primary fills */
+  --focus: #2558e6;
+  --mark: #c8283f; /* wrong answers, level ticks, validation */
+  --mark-soft: rgba(200, 40, 63, 0.1);
+  --success: #0f7a45; /* correct answers */
+  --success-soft: rgba(15, 122, 69, 0.1);
+
+  /* Glass surfaces */
+  --glass: rgba(255, 255, 255, 0.6);
+  --glass-strong: rgba(255, 255, 255, 0.82); /* dialogs */
+  --glass-solid: rgba(255, 255, 255, 0.94); /* fallback without backdrop-filter */
+  --glass-border: rgba(255, 255, 255, 0.7);
+  --glass-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  --glass-shadow: 0 10px 30px rgba(64, 72, 140, 0.12);
+  --glass-blur: blur(20px) saturate(170%);
+  --topbar-bg: rgba(247, 248, 255, 0.6);
+  --scrim: rgba(29, 35, 64, 0.32);
+
+  /* Lines, fills, fields */
+  --divider: rgba(29, 35, 64, 0.09);
+  --tint: rgba(29, 35, 64, 0.06); /* pressed / subtle fill */
+  --field-bg: rgba(255, 255, 255, 0.72);
+  --field-border: #7f86a8;
+
+  /* Chunky buttons: solid fill + darker solid lip of the same hue */
+  --btn-primary: #2b64f2;
+  --btn-primary-lip: #1a44bd;
+  --btn-success: #0d8444;
+  --btn-success-lip: #095f30;
+  --btn-danger: #d02f4b;
+  --btn-danger-lip: #9b1c34;
+  --btn-ghost-bg: rgba(255, 255, 255, 0.78);
+  --btn-ghost-border: #e1e3f8;
+  --btn-ghost-lip: #cbcde8;
+
+  /* Icon badges: soft pastel tint + the hue's saturated colour */
+  --badge-blue-bg: #dce9ff;
+  --badge-blue-fg: #1f5bd6;
+  --badge-violet-bg: #e6defe;
+  --badge-violet-fg: #6a3fe0;
+  --badge-pink-bg: #ffdfee;
+  --badge-pink-fg: #c92a6a;
+  --badge-orange-bg: #ffe8d1;
+  --badge-orange-fg: #b84c06;
+  --badge-green-bg: #d6f5e4;
+  --badge-green-fg: #0f7a45;
+
+  /* Floating tab bar */
+  --tabbar-bg: rgba(255, 255, 255, 0.94);
+  --tabbar-border: rgba(255, 255, 255, 0.9);
+  --tabbar-shadow: 0 18px 44px rgba(31, 38, 100, 0.22), 0 3px 10px rgba(31, 38, 100, 0.08);
+  --tab-tile:
+    radial-gradient(circle at 0% 100%, rgba(170, 198, 255, 0.75), transparent 62%),
+    linear-gradient(115deg, #dcdcff 0%, #ecd9fd 40%, #d2eefb 100%);
+  --tab-icon: #2f78e8;
+  --tab-label: #1b3fa8;
 
   --font-ui: 'Be Vietnam Pro', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-  --font-hand: 'Patrick Hand', 'Be Vietnam Pro', cursive;
+  --font-hand: 'Patrick Hand', 'Be Vietnam Pro', cursive; /* red-pen grading moments only */
 
-  --tabbar-height: 56px;
-  --grid-size: 24px;
-  --radius: 10px;
+  --radius-sm: 12px;
+  --radius-field: 14px;
+  --radius-md: 20px;
+  --radius-lg: 28px;
+  --tabbar-height: 78px; /* the floating bar: 8 + 62 + 8 */
+  --tabbar-offset: 10px; /* gap between the bar and the screen bottom */
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) {
     color-scheme: dark;
 
-    --paper: #16202b;
-    --surface: #1d2935;
-    --sunk: #101922;
-    --ink: #eceff1;
-    --ink-muted: #a9b5c1;
-    --purple: #bba8f4;
-    --on-purple: #16202b;
-    --red: #ff9090;
-    --rule: #2e3c4a;
-    --grid: rgba(255, 255, 255, 0.045);
-    --focus: #bba8f4;
+    --bg: #0d1024;
+    --mesh-a: rgba(112, 78, 255, 0.34);
+    --mesh-b: rgba(255, 90, 170, 0.2);
+    --mesh-c: rgba(58, 130, 255, 0.28);
+    --mesh-d: rgba(40, 200, 150, 0.12);
+
+    --ink: #eef0ff;
+    --ink-muted: #b0b6d8;
+    --accent: #8fb4ff;
+    --accent-2: #b39dff;
+    --accent-soft: rgba(143, 180, 255, 0.16);
+    --accent-line: rgba(143, 180, 255, 0.4);
+    --accent-ring: rgba(143, 180, 255, 0.4);
+    --on-accent: #ffffff;
+    --focus: #8fb4ff;
+    --mark: #ff93a8;
+    --mark-soft: rgba(255, 147, 168, 0.14);
+    --success: #5fe3a1;
+    --success-soft: rgba(95, 227, 161, 0.14);
+
+    --glass: rgba(255, 255, 255, 0.08);
+    --glass-strong: rgba(30, 34, 70, 0.86);
+    --glass-solid: #1a1e3a;
+    --glass-border: rgba(255, 255, 255, 0.14);
+    --glass-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.12);
+    --glass-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    --topbar-bg: rgba(13, 16, 36, 0.6);
+    --scrim: rgba(4, 6, 18, 0.6);
+
+    --divider: rgba(255, 255, 255, 0.1);
+    --tint: rgba(255, 255, 255, 0.08);
+    --field-bg: rgba(255, 255, 255, 0.07);
+    --field-border: #8f96c4;
+
+    --btn-primary-lip: #162f86;
+    --btn-success-lip: #064a25;
+    --btn-danger-lip: #7c1429;
+    --btn-ghost-bg: rgba(36, 40, 84, 0.8);
+    --btn-ghost-border: rgba(255, 255, 255, 0.18);
+    --btn-ghost-lip: #060813;
+
+    --badge-blue-bg: rgba(80, 130, 255, 0.2);
+    --badge-blue-fg: #8fb4ff;
+    --badge-violet-bg: rgba(140, 110, 255, 0.2);
+    --badge-violet-fg: #b9a4ff;
+    --badge-pink-bg: rgba(255, 110, 170, 0.2);
+    --badge-pink-fg: #ff9bc4;
+    --badge-orange-bg: rgba(255, 150, 60, 0.2);
+    --badge-orange-fg: #ffb36b;
+    --badge-green-bg: rgba(60, 220, 140, 0.18);
+    --badge-green-fg: #5fe3a1;
+
+    --tabbar-bg: rgba(24, 28, 58, 0.88);
+    --tabbar-border: rgba(255, 255, 255, 0.12);
+    --tabbar-shadow: 0 18px 44px rgba(0, 0, 0, 0.5), 0 3px 10px rgba(0, 0, 0, 0.3);
+    --tab-tile:
+      radial-gradient(circle at 0% 100%, rgba(80, 130, 255, 0.4), transparent 62%),
+      linear-gradient(
+        115deg,
+        rgba(120, 112, 255, 0.4) 0%,
+        rgba(206, 120, 255, 0.3) 45%,
+        rgba(80, 200, 255, 0.34) 100%
+      );
+    --tab-icon: #9cc0ff;
+    --tab-label: #e3eaff;
   }
 }
 
 :root[data-theme='dark'] {
   color-scheme: dark;
 
-  --paper: #16202b;
-  --surface: #1d2935;
-  --sunk: #101922;
-  --ink: #eceff1;
-  --ink-muted: #a9b5c1;
-  --purple: #bba8f4;
-  --on-purple: #16202b;
-  --red: #ff9090;
-  --rule: #2e3c4a;
-  --grid: rgba(255, 255, 255, 0.045);
-  --focus: #bba8f4;
+  --bg: #0d1024;
+  --mesh-a: rgba(112, 78, 255, 0.34);
+  --mesh-b: rgba(255, 90, 170, 0.2);
+  --mesh-c: rgba(58, 130, 255, 0.28);
+  --mesh-d: rgba(40, 200, 150, 0.12);
+
+  --ink: #eef0ff;
+  --ink-muted: #b0b6d8;
+  --accent: #8fb4ff;
+  --accent-2: #b39dff;
+  --accent-soft: rgba(143, 180, 255, 0.16);
+  --accent-line: rgba(143, 180, 255, 0.4);
+  --accent-ring: rgba(143, 180, 255, 0.4);
+  --on-accent: #ffffff;
+  --focus: #8fb4ff;
+  --mark: #ff93a8;
+  --mark-soft: rgba(255, 147, 168, 0.14);
+  --success: #5fe3a1;
+  --success-soft: rgba(95, 227, 161, 0.14);
+
+  --glass: rgba(255, 255, 255, 0.08);
+  --glass-strong: rgba(30, 34, 70, 0.86);
+  --glass-solid: #1a1e3a;
+  --glass-border: rgba(255, 255, 255, 0.14);
+  --glass-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  --glass-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --topbar-bg: rgba(13, 16, 36, 0.6);
+  --scrim: rgba(4, 6, 18, 0.6);
+
+  --divider: rgba(255, 255, 255, 0.1);
+  --tint: rgba(255, 255, 255, 0.08);
+  --field-bg: rgba(255, 255, 255, 0.07);
+  --field-border: #8f96c4;
+
+  --btn-primary-lip: #162f86;
+  --btn-success-lip: #064a25;
+  --btn-danger-lip: #7c1429;
+  --btn-ghost-bg: rgba(36, 40, 84, 0.8);
+  --btn-ghost-border: rgba(255, 255, 255, 0.18);
+  --btn-ghost-lip: #060813;
+
+  --badge-blue-bg: rgba(80, 130, 255, 0.2);
+  --badge-blue-fg: #8fb4ff;
+  --badge-violet-bg: rgba(140, 110, 255, 0.2);
+  --badge-violet-fg: #b9a4ff;
+  --badge-pink-bg: rgba(255, 110, 170, 0.2);
+  --badge-pink-fg: #ff9bc4;
+  --badge-orange-bg: rgba(255, 150, 60, 0.2);
+  --badge-orange-fg: #ffb36b;
+  --badge-green-bg: rgba(60, 220, 140, 0.18);
+  --badge-green-fg: #5fe3a1;
+
+  --tabbar-bg: rgba(24, 28, 58, 0.88);
+  --tabbar-border: rgba(255, 255, 255, 0.12);
+  --tabbar-shadow: 0 18px 44px rgba(0, 0, 0, 0.5), 0 3px 10px rgba(0, 0, 0, 0.3);
+  --tab-tile:
+    radial-gradient(circle at 0% 100%, rgba(80, 130, 255, 0.4), transparent 62%),
+    linear-gradient(
+      115deg,
+      rgba(120, 112, 255, 0.4) 0%,
+      rgba(206, 120, 255, 0.3) 45%,
+      rgba(80, 200, 255, 0.34) 100%
+    );
+  --tab-icon: #9cc0ff;
+  --tab-label: #e3eaff;
 }
 
 * {
@@ -66,7 +238,7 @@
 
 html {
   -webkit-text-size-adjust: 100%;
-  background: var(--paper);
+  background: var(--bg);
 }
 
 html,
@@ -77,18 +249,26 @@ body,
 
 body {
   margin: 0;
-  background-color: var(--paper);
-  /* Graph paper: faint lines in the page background only. */
-  background-image:
-    linear-gradient(var(--grid) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
-  background-size: var(--grid-size) var(--grid-size);
   color: var(--ink);
   font-family: var(--font-ui);
   font-size: 16px;
   line-height: 1.5;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+}
+
+/* Pastel mesh on its own fixed layer: no repaint on scroll, never stretches with the page */
+body::before {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(60% 42% at 8% 6%, var(--mesh-a), transparent 72%),
+    radial-gradient(55% 38% at 100% 22%, var(--mesh-b), transparent 72%),
+    radial-gradient(65% 42% at 85% 100%, var(--mesh-c), transparent 72%),
+    radial-gradient(55% 38% at 0% 86%, var(--mesh-d), transparent 72%), var(--bg);
+  content: '';
+  pointer-events: none;
 }
 
 h1,

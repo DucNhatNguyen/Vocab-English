@@ -1,6 +1,7 @@
-import { Play, Plus } from 'lucide-react'
+import { CheckCheck, Play, Plus } from 'lucide-react'
 import { Link } from 'react-router'
 import { paths } from '../../app/paths.ts'
+import IconBadge from '../../components/IconBadge.tsx'
 import PageHeader from '../../components/PageHeader.tsx'
 import type { Word } from '../../data/types.ts'
 import { isCustomWordId } from '../../db/words.ts'
@@ -9,6 +10,7 @@ import { isCustomWordId } from '../../db/words.ts'
 export function NothingLeft() {
   return (
     <div className="empty">
+      <IconBadge icon={CheckCheck} hue="green" size="lg" />
       <p className="empty__title">Bạn đã học hết từ trong các bộ đang chọn</p>
       <Link to={paths.decks} className="btn btn--primary">
         <Plus size={20} aria-hidden="true" />
@@ -18,10 +20,26 @@ export function NothingLeft() {
   )
 }
 
+/** Tự học variant: the user has no unlearned own words left. */
+export function NothingLeftMine() {
+  return (
+    <div className="empty">
+      <IconBadge icon={CheckCheck} hue="green" size="lg" />
+      <p className="empty__title">Bạn đã học hết từ của mình</p>
+      <Link to={paths.myWordNew()} className="btn btn--primary">
+        <Plus size={20} aria-hidden="true" />
+        Thêm từ mới
+      </Link>
+    </div>
+  )
+}
+
 interface LessonStartProps {
   /** Words of the next lesson; undefined while loading. */
   words: readonly Word[] | undefined
   dailyGoal: number
+  /** Tự học: only the user's own words. */
+  mine: boolean
   onStart: () => void
 }
 
@@ -33,24 +51,32 @@ function describeSources(words: readonly Word[]): string {
   return parts.join(', ')
 }
 
-export default function LessonStart({ words, dailyGoal, onStart }: LessonStartProps) {
+export default function LessonStart({ words, dailyGoal, mine, onStart }: LessonStartProps) {
   return (
     <>
-      <PageHeader title="Học từ mới" />
+      <PageHeader title={mine ? 'Học từ của bạn' : 'Học từ mới'} />
       <div className="page">
         {words === undefined ? null : words.length === 0 ? (
-          <NothingLeft />
+          mine ? (
+            <NothingLeftMine />
+          ) : (
+            <NothingLeft />
+          )
         ) : (
           <>
-            <section className="lesson-start__hero">
+            <section className="lesson-start__hero glass">
               <p className="lesson-start__count">
                 <span className="lesson-start__num">{words.length}</span>
                 <span className="lesson-start__unit">từ mới</span>
               </p>
-              <p className="lesson-start__sub">{describeSources(words)}</p>
+              <p className="lesson-start__sub">
+                {mine ? 'Từ bạn tự nhập, cũ trước mới sau.' : describeSources(words)}
+              </p>
               {words.length < dailyGoal && (
                 <p className="lesson-start__sub">
-                  Chỉ còn {words.length} từ chưa học (mục tiêu mỗi ngày: {dailyGoal} từ).
+                  {mine
+                    ? `Chỉ còn ${words.length} từ của bạn chưa học.`
+                    : `Chỉ còn ${words.length} từ chưa học (mục tiêu mỗi ngày: ${dailyGoal} từ).`}
                 </p>
               )}
             </section>

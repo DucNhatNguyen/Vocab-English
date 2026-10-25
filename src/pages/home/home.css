@@ -1,11 +1,11 @@
-/* Trang chủ: date + streak, review block, new-lesson line, "Sổ điểm", quiet links.
-   Flat, clean blocks on the graph-paper background (spec 8.1). */
+/* Trang chủ: date + streak, review card, new-lesson card, "Sổ điểm" with quick-link tiles.
+   Big containers are glass (blur lives on the card, never on rows). Spec 8.1. */
 
 .home {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: calc(env(safe-area-inset-top) + 16px) 16px 8px;
+  padding: calc(env(safe-area-inset-top) + 20px) 16px 8px;
 }
 
 /* Date + streak */
@@ -17,15 +17,23 @@
   gap: 12px;
 }
 
+.home-head__actions {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 8px;
+}
+
 .home-head__date {
   min-width: 0;
-  color: var(--purple);
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.25;
 }
 
 .streak {
+  --flame: #e0590d;
+
   display: inline-flex;
   flex: none;
   align-items: center;
@@ -33,9 +41,10 @@
   min-height: 44px;
   padding: 0 14px 0 12px;
   color: var(--ink-muted);
-  background: var(--surface);
-  border: 1px solid var(--rule);
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
   border-radius: 999px;
+  box-shadow: var(--glass-highlight), 0 4px 14px rgba(64, 72, 140, 0.1);
 }
 
 .streak__num {
@@ -47,40 +56,44 @@
 }
 
 .streak__unit {
+  color: var(--ink-muted);
   font-size: 0.875rem;
 }
 
-/* Done today: the flame is filled in purple ink */
+/* Alive: orange outline flame. Done today: the flame is filled in. */
+.streak--alive,
 .streak--done {
-  color: var(--purple);
-  border-color: var(--purple);
+  color: var(--flame);
 }
 
 .streak--done svg {
   fill: currentColor;
 }
 
-.streak--alive {
-  color: var(--purple);
+:root[data-theme='dark'] .streak {
+  --flame: #ffb36b;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .streak {
+    --flame: #ffb36b;
+  }
 }
 
 .home-note {
-  margin: -12px 0 0;
+  margin: -8px 4px 0;
   color: var(--ink-muted);
   font-size: 0.9375rem;
 }
 
-/* Review block */
+/* Review card */
 
 .home-review {
-  padding: 18px 20px 18px;
-  background: var(--surface);
-  border: 1px solid var(--rule);
-  border-radius: var(--radius);
+  padding: 20px;
+  border-radius: var(--radius-lg);
 }
 
 .home-review__title {
-  color: var(--purple);
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.3;
@@ -91,7 +104,7 @@
   align-items: baseline;
   gap: 10px;
   margin-top: 6px;
-  color: var(--purple);
+  color: var(--accent);
 }
 
 .home-review__num {
@@ -102,6 +115,7 @@
 }
 
 .home-review__unit {
+  color: var(--ink-muted);
   font-size: 1.125rem;
   font-weight: 600;
 }
@@ -113,36 +127,30 @@
 
 .home-review__next {
   display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  margin-top: 10px;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
 }
 
 .home-review__next strong {
   white-space: nowrap; /* date and count wrap together */
 }
 
-.home-review__next svg {
-  flex: none;
-  margin-top: 3px;
-  color: var(--purple);
-}
-
 .home-review__go {
   width: 100%;
-  min-height: 52px;
-  margin-top: 14px;
+  min-height: 56px;
+  margin-top: 16px;
   font-size: 1.0625rem;
 }
 
-/* New-lesson line */
+/* New-lesson card: violet badge, text, button, then the goal meter */
 
 .home-lesson {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 4px 12px;
-  padding: 0 4px;
+  gap: 8px 12px;
+  padding: 16px;
 }
 
 .home-lesson__main {
@@ -156,11 +164,10 @@
 }
 
 .home-lesson__title strong {
-  color: var(--purple);
+  color: var(--accent);
 }
 
 .home-lesson__sub {
-  margin-top: 2px;
   color: var(--ink-muted);
   font-size: 0.9375rem;
   font-variant-numeric: tabular-nums;
@@ -173,18 +180,17 @@
 
 .meter {
   flex: 0 0 100%;
-  height: 8px;
+  height: 10px;
   margin-top: 6px;
   overflow: hidden;
-  background: var(--sunk);
-  border: 1px solid var(--rule);
+  background: var(--tint);
   border-radius: 999px;
 }
 
 .meter__fill {
   width: calc(var(--p, 0) * 100%);
   height: 100%;
-  background: var(--purple);
+  background: linear-gradient(90deg, var(--btn-primary), var(--accent-2));
   border-radius: 999px;
 }
 
@@ -194,22 +200,11 @@
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  margin: 0 4px 6px;
+  margin: 0 4px 8px;
 }
 
 .home-scores__head .label {
   margin: 0;
-}
-
-.home-scores__more {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 48px;
-  padding: 0 12px 0 14px;
-  color: var(--purple);
-  font-weight: 600;
-  border-top: 1px solid var(--rule);
 }
 
 .home-scores__link {
@@ -217,15 +212,19 @@
 }
 
 .home-scores__link:active {
-  background: var(--sunk);
+  background: var(--tint);
+}
+
+.scores {
+  padding-top: 6px;
 }
 
 .scores li {
   display: flex;
   align-items: center;
   gap: 12px;
-  min-height: 38px;
-  padding: 4px 14px;
+  min-height: 40px;
+  padding: 4px 16px;
 }
 
 .scores .ticks {
@@ -235,9 +234,9 @@
 /* Share of learned words at this level */
 .scores__bar {
   flex: 1;
-  height: 6px;
+  height: 8px;
   overflow: hidden;
-  background: var(--sunk);
+  background: var(--tint);
   border-radius: 999px;
 }
 
@@ -245,7 +244,7 @@
   display: block;
   width: calc(var(--p, 0) * 100%);
   height: 100%;
-  background: var(--purple);
+  background: linear-gradient(90deg, var(--btn-primary), var(--accent-2));
   border-radius: 999px;
 }
 
@@ -259,56 +258,49 @@
   font-weight: 700;
 }
 
-/* Quiet links */
+/* Quick links: three tiles, badge above the label */
 
 .home-links {
   display: flex;
-  border-top: 1px solid var(--rule);
+  border-top: 1px solid var(--divider);
 }
 
 .home-links a {
   flex: 1;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 6px;
-  min-height: 48px;
-  padding: 0 4px;
-  color: var(--ink-muted);
+  gap: 8px;
+  padding: 14px 4px;
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: 600;
   white-space: nowrap;
 }
 
+.home-links a + a {
+  border-left: 1px solid var(--divider);
+}
+
 .home-links a:active {
-  background: var(--sunk);
+  background: var(--tint);
 }
 
-.home-links svg {
-  flex: none;
-  color: var(--purple);
-}
-
-/* Install banner: quiet, flat; text and close on top, action below */
+/* Install banner: glass card, badge + text + close on top, action below */
 
 .install-banner {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: start;
-  gap: 4px 10px;
-  padding: 12px 4px 12px 14px;
-  background: var(--surface);
-  border: 1px solid var(--rule);
-  border-radius: var(--radius);
+  gap: 4px 12px;
+  padding: 12px 4px 14px 14px;
 }
 
 .install-banner__icon {
-  margin-top: 10px; /* centres on the first text line, like the 44px close button */
-  color: var(--purple);
+  margin-top: 2px; /* centres on the first text line, like the 44px close button */
 }
 
 .install-banner__text {
-  padding-top: 8px;
+  padding-top: 11px;
   font-size: 0.9375rem;
   line-height: 1.45;
 }

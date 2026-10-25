@@ -1,4 +1,4 @@
-/* App shell: top bar, scrolling content, bottom tab bar. */
+/* App shell: glass top bar, scrolling content, floating bottom tab bar. */
 
 .app {
   min-height: 100dvh;
@@ -9,8 +9,10 @@
 .app-main {
   max-width: 640px;
   margin: 0 auto;
-  /* keep the last row clear of the fixed tab bar */
-  padding-bottom: calc(var(--tabbar-height) + env(safe-area-inset-bottom) + 16px);
+  /* keep the last row clear of the floating tab bar and its offset */
+  padding-bottom: calc(
+    var(--tabbar-height) + var(--tabbar-offset) + env(safe-area-inset-bottom) + 20px
+  );
 }
 
 /* Full-screen flows hide the tab bar and bring their own bottom bar */
@@ -19,7 +21,14 @@
   padding-bottom: 0;
 }
 
-/* Top bar */
+/* `clip` (not `hidden`) keeps the sideways page slide from adding horizontal scroll without
+   making this a scroll container, so the sticky bars inside keep working. The page wrapper's
+   transform settles at `none`, so position: fixed bars stay anchored to the screen. */
+.app-main {
+  overflow-x: clip;
+}
+
+/* Top bar: a frosted strip that content scrolls under */
 
 .topbar {
   position: sticky;
@@ -30,8 +39,10 @@
   gap: 4px;
   min-height: calc(52px + env(safe-area-inset-top));
   padding: env(safe-area-inset-top) 8px 0 12px;
-  background: var(--paper);
-  border-bottom: 1px solid var(--rule);
+  background: var(--topbar-bg);
+  border-bottom: 1px solid var(--divider);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
 }
 
 .topbar:has(.icon-btn:first-child) {
@@ -43,7 +54,7 @@
   min-width: 0;
   padding-inline: 8px;
   overflow: hidden;
-  color: var(--purple);
+  color: var(--accent);
   font-size: 1.125rem;
   font-weight: 700;
   line-height: 1.3;
@@ -55,42 +66,97 @@
   padding-left: 4px;
 }
 
-/* Bottom tab bar */
+/* Floating bottom tab bar: a rounded white bar, the active tab is a pastel gradient tile */
 
 .tabbar {
   position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  right: max(12px, env(safe-area-inset-right));
+  bottom: calc(env(safe-area-inset-bottom) + var(--tabbar-offset));
+  left: max(12px, env(safe-area-inset-left));
   z-index: 20;
   display: flex;
-  padding: 0 env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
-  background: var(--surface);
-  border-top: 1px solid var(--rule);
+  gap: 2px;
+  max-width: 640px;
+  margin-inline: auto;
+  padding: 8px;
+  background: var(--tabbar-bg);
+  border: 1px solid var(--tabbar-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--tabbar-shadow);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
 }
 
 .tabbar__item {
-  flex: 1;
+  position: relative;
+  isolation: isolate;
+  flex: 1 1 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2px;
-  min-width: 44px;
-  min-height: var(--tabbar-height);
+  gap: 4px;
+  min-width: 0;
+  min-height: 62px;
+  padding: 6px 1px;
   color: var(--ink-muted);
-  font-size: 0.75rem;
+  font-size: 0.6875rem;
   line-height: 1.2;
-  /* ruler mark above the active tab */
-  box-shadow: inset 0 3px 0 transparent;
+  border-radius: var(--radius-md);
+}
+
+.tabbar__item > span {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .tabbar__item:active {
-  background: var(--sunk);
+  background: var(--tint);
 }
 
 .tabbar__item[aria-current='page'] {
-  color: var(--purple);
+  color: var(--tab-label);
   font-weight: 600;
-  box-shadow: inset 0 3px 0 var(--purple);
+}
+
+/* The active tile: a shared-layout element that slides to the newly active tab */
+.tabbar__tile {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--tab-tile);
+  border-radius: var(--radius-md);
+}
+
+.tabbar__item[aria-current='page'] svg {
+  color: var(--tab-icon);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .tabbar__item {
+    transition:
+      transform 120ms ease-out,
+      background-color 120ms ease-out,
+      color 180ms ease-out;
+  }
+
+  .tabbar__item svg {
+    transition: color 180ms ease-out;
+  }
+
+  .tabbar__item:active {
+    transform: scale(0.96);
+  }
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .topbar {
+    background: var(--glass-solid);
+  }
+
+  .tabbar {
+    background: var(--glass-solid);
+  }
 }
