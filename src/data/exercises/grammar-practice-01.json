@@ -1,0 +1,316 @@
+{
+  "id": "grammar-practice-01",
+  "title": "Grammar Practice 1",
+  "kind": "grammar",
+  "sourcePages": [66, 67],
+  "answerSource": "ai",
+  "sections": [
+    {
+      "id": "gp01",
+      "title": "Ngữ pháp · Practice 1",
+      "instruction": "Chọn từ hoặc cụm từ phù hợp nhất để hoàn thành mỗi câu.",
+      "questions": [
+        {
+          "type": "choice",
+          "id": "gp01-q1",
+          "number": 1,
+          "prompt": "I had better go to the bank now ___ I won't have any money left for the weekend.",
+          "options": ["and", "but", "so", "or"],
+          "answer": 3,
+          "explanation": "“or” = nếu không thì (otherwise). “had better go now, or I won't have any money” = nên đi ngay, nếu không thì cuối tuần sẽ hết tiền.",
+          "optionNotes": [
+            "and = và; nối hai việc cùng chiều, không diễn tả hậu quả nếu không làm.",
+            "but = nhưng; hai vế không đối lập.",
+            "so = nên; ghép vào thành “đi ngân hàng nên không còn tiền”, sai logic.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp01-q2",
+          "number": 2,
+          "prompt": "A spectator is someone ___ a game or an event.",
+          "options": ["watching", "watched", "watches", "watch"],
+          "answer": 0,
+          "explanation": "Mệnh đề quan hệ rút gọn chủ động: “someone watching a game” (= someone who watches a game) = người xem một trận đấu hay sự kiện.",
+          "optionNotes": [
+            "",
+            "“watched” mang nghĩa bị động (được xem), sai với “someone”.",
+            "“watches” làm câu có hai động từ chính, thiếu đại từ quan hệ “who”.",
+            "“watch” cũng không có “who” và không chia theo chủ ngữ số ít."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp01-q3",
+          "number": 3,
+          "prompt": "The zoo animals escaped ___ someone left the cage open.",
+          "options": ["because", "while", "and", "but"],
+          "answer": 0,
+          "explanation": "because = vì. Động vật trốn thoát vì có người để mở cửa chuồng (nguyên nhân – kết quả).",
+          "optionNotes": [
+            "",
+            "while = trong khi; chỉ hai việc xảy ra đồng thời, không nêu nguyên nhân.",
+            "and = và; không thể hiện quan hệ nguyên nhân.",
+            "but = nhưng; hai vế không đối lập."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp01-q4",
+          "number": 4,
+          "prompt": "A few animals sometimes fool their enemies ___ to be dead.",
+          "options": ["appear", "to appear", "by appearing", "to be appearing"],
+          "answer": 2,
+          "explanation": "“by + V-ing” chỉ cách thức: “fool their enemies by appearing to be dead” = đánh lừa kẻ thù bằng cách trông như đã chết.",
+          "optionNotes": [
+            "Động từ nguyên mẫu không có “to” hay giới từ đi trước thì không nối được với “fool their enemies”.",
+            "“to appear” chỉ mục đích (để trông như…), không phải cách thức đánh lừa ở đây.",
+            "",
+            "“to be appearing” là dạng tiếp diễn không tự nhiên và không có giới từ “by”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp01-q5",
+          "number": 5,
+          "prompt": "Some of the people ___ to the party can't come.",
+          "options": ["inviting", "invited", "who invited", "were invited"],
+          "answer": 1,
+          "explanation": "Mệnh đề quan hệ rút gọn bị động: “the people invited to the party” (= who were invited). Động từ chính của câu là “can't come”.",
+          "optionNotes": [
+            "“inviting” mang nghĩa chủ động (đi mời người khác), sai nghĩa.",
+            "",
+            "“who invited” mang nghĩa chủ động: những người đi mời, không phải được mời.",
+            "“were invited” làm câu có hai động từ chính, thiếu đại từ quan hệ “who”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp01-q6",
+          "number": 6,
+          "prompt": "___ is one of the few substances that expand upon freezing.",
+          "options": ["It is water", "Water", "That water", "Though water"],
+          "answer": 1,
+          "explanation": "Câu đã có động từ chính “is”, nên chỗ trống chỉ cần chủ ngữ: “Water is one of the few substances…” = Nước là một trong số ít chất nở ra khi đóng băng.",
+          "optionNotes": [
+            "“It is water” có thêm một động từ “is”, thành hai động từ chính liền nhau.",
+            "",
+            "“That water” mở đầu một mệnh đề danh từ, cần thêm động từ riêng nên câu bị thiếu vế chính.",
+            "“Though water” mở đầu mệnh đề nhượng bộ, cần một mệnh đề chính đi kèm nên câu bị thiếu."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp01-q7",
+          "number": 7,
+          "prompt": "___ want to take a train trip across western Canada, but my traveling companion wants to fly to Mexico City for our vacation.",
+          "options": ["Although I", "Even if I", "I", "Nevertheless I"],
+          "answer": 2,
+          "explanation": "Câu đã có “but” nối hai mệnh đề đối lập: “I want to…, but my companion wants to…”. Chỗ trống chỉ cần chủ ngữ “I”.",
+          "optionNotes": [
+            "“Although” và “but” không dùng cùng nhau trong một câu.",
+            "“Even if” + “but” cũng bị thừa liên từ, và “even if” mang nghĩa giả định không hợp nghĩa.",
+            "",
+            "“Nevertheless” cũng là từ nối đối lập, thừa khi đã có “but”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp01-q8",
+          "number": 8,
+          "prompt": "Although most citizens desire extensive services from their government, ___ is willing to pay higher taxes.",
+          "options": ["but nobody", "nobody", "however, nobody", "so nobody"],
+          "answer": 1,
+          "explanation": "Câu đã có “Although” ở vế đầu, nên vế sau chỉ cần chủ ngữ + động từ: “nobody is willing…”. “Although” không đi cùng “but/however”.",
+          "optionNotes": [
+            "“Although … but” là lỗi dùng hai liên từ đối lập trong cùng một câu.",
+            "",
+            "“however” cũng là từ nối đối lập, thừa khi đã có “Although”.",
+            "“so” = nên, chỉ kết quả; trái với ý đối lập của “Although”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp01-q9",
+          "number": 9,
+          "prompt": "She hadn't seen her brother for thirty years ___ they recognized each other instantly.",
+          "options": ["so", "yet", "despite", "also"],
+          "answer": 1,
+          "explanation": "“yet” (liên từ) = nhưng, vậy mà: ba mươi năm không gặp mà họ vẫn nhận ra nhau ngay (đối lập bất ngờ).",
+          "optionNotes": [
+            "so = nên; việc nhận ra nhau không phải là kết quả của việc lâu không gặp.",
+            "",
+            "despite = mặc dù; là giới từ, phải đi với danh từ/V-ing, không nối hai mệnh đề.",
+            "also = cũng; không phải liên từ và không diễn tả đối lập."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp01-q10",
+          "number": 10,
+          "prompt": "___ the bad weather, the football match went ahead.",
+          "options": ["In spite of", "Even though", "However", "Although"],
+          "answer": 0,
+          "explanation": "Sau chỗ trống là cụm danh từ “the bad weather”, nên dùng giới từ “In spite of” = mặc dù.",
+          "optionNotes": [
+            "",
+            "Even though là liên từ, phải đi với một mệnh đề (có chủ ngữ + động từ).",
+            "However là trạng từ nối câu, không đứng trước danh từ.",
+            "Although là liên từ, phải đi với một mệnh đề."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp01-q11",
+          "number": 11,
+          "prompt": "They promised to write ___ we never heard from them again.",
+          "options": ["except", "but", "although", "because"],
+          "answer": 1,
+          "explanation": "“but” = nhưng: họ hứa viết thư, nhưng chúng tôi không bao giờ nhận được tin nữa (đối lập giữa lời hứa và thực tế).",
+          "optionNotes": [
+            "except = ngoại trừ; không nối hai mệnh đề đối lập theo nghĩa này.",
+            "",
+            "although = mặc dù; đặt ở giữa câu thành “hứa viết thư mặc dù chúng tôi không nhận được tin”, sai logic.",
+            "because = vì; việc không nhận được tin không phải là nguyên nhân của lời hứa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp01-q12",
+          "number": 12,
+          "prompt": "A competitor is someone ___ part in a competition.",
+          "options": ["taking", "taken", "takes", "took"],
+          "answer": 0,
+          "explanation": "Mệnh đề quan hệ rút gọn chủ động: “someone taking part in a competition” (= who takes part). “take part in” = tham gia.",
+          "optionNotes": [
+            "",
+            "“taken” mang nghĩa bị động, sai với “take part in”.",
+            "“takes” làm câu có hai động từ chính, thiếu đại từ quan hệ “who”.",
+            "“took” cũng thiếu “who” và sai thì với định nghĩa chung."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp01-q13",
+          "number": 13,
+          "prompt": "I was walking down the street ___ I saw the accident.",
+          "options": ["while", "then", "when", "before"],
+          "answer": 2,
+          "explanation": "Quá khứ tiếp diễn + when + quá khứ đơn: một hành động ngắn xảy ra chen vào hành động đang diễn ra. “I was walking … when I saw the accident.”",
+          "optionNotes": [
+            "while thường đi với vế tiếp diễn, không đi trước hành động ngắn “saw”.",
+            "“then” không phải liên từ; cần dấu phẩy hoặc “and” trước nó.",
+            "",
+            "before = trước khi; không diễn tả việc chen vào lúc đang đi."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp01-q14",
+          "number": 14,
+          "prompt": "We're planning to go camping ___ the summer vacation.",
+          "options": ["during", "while", "when", "since"],
+          "answer": 0,
+          "explanation": "Sau chỗ trống là cụm danh từ “the summer vacation”, nên dùng giới từ “during” = trong suốt.",
+          "optionNotes": [
+            "",
+            "while là liên từ, phải đi với mệnh đề.",
+            "when là liên từ, phải đi với mệnh đề.",
+            "since = từ khi; không hợp nghĩa với kế hoạch tương lai."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp01-q15",
+          "number": 15,
+          "prompt": "Endive can be used ___ as a salad green or as a cooking vegetable.",
+          "options": ["such", "both", "either", "neither"],
+          "answer": 2,
+          "explanation": "Cấu trúc “either … or …” = hoặc … hoặc …: “either as a salad green or as a cooking vegetable”.",
+          "optionNotes": [
+            "“such” không tạo cặp với “or”.",
+            "“both” phải đi với “and”: “both … and …”.",
+            "",
+            "“neither” phải đi với “nor” và mang nghĩa phủ định."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp01-q16",
+          "number": 16,
+          "prompt": "Unlike moderate antislavery advocates, abolitionists ___ an immediate end to slavery.",
+          "options": ["demanded", "they demand", "that they demanded", "in that they demand"],
+          "answer": 0,
+          "explanation": "Chủ ngữ là “abolitionists” nên chỗ trống cần động từ chính, và một động từ chính “demanded” là đủ: “abolitionists demanded an immediate end…”.",
+          "optionNotes": [
+            "",
+            "“they demand” lặp lại chủ ngữ, tạo thành hai chủ ngữ.",
+            "“that they demanded” mở đầu một mệnh đề phụ, khiến câu không có động từ chính.",
+            "“in that they demand” cũng mở mệnh đề phụ, câu thiếu động từ chính."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp01-q17",
+          "number": 17,
+          "prompt": "The agreement was signed at last, ___ both sides had grown weary of the dispute.",
+          "options": ["if", "for", "in case", "and"],
+          "answer": 1,
+          "explanation": "“for” (liên từ, trang trọng) = vì, bởi vì, giải thích lý do: hiệp định được ký vì cả hai bên đã mệt mỏi với cuộc tranh chấp.",
+          "optionNotes": [
+            "if = nếu; không phải điều kiện.",
+            "",
+            "in case = phòng khi; không hợp nghĩa.",
+            "and = và; không diễn tả quan hệ nguyên nhân."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp01-q18",
+          "number": 18,
+          "prompt": "___ no conclusive evidence exists, many experts believe that the wheel was invented only once and then diffused to the rest of the world.",
+          "options": ["Even", "But", "Although", "So"],
+          "answer": 2,
+          "explanation": "Although + mệnh đề = mặc dù. “Although no conclusive evidence exists, many experts believe…” (đối lập giữa việc thiếu bằng chứng và niềm tin của các chuyên gia).",
+          "optionNotes": [
+            "“Even” không đứng một mình trước mệnh đề; cần “even though/if”.",
+            "“But” không đứng đầu câu để mở một mệnh đề phụ có hai vế như vậy.",
+            "",
+            "“So” = vì vậy; chỉ kết quả, không hợp logic."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp01-q19",
+          "number": 19,
+          "prompt": "___ bacteria in foods are killed, as they are during baking or stewing, decay is slowed down.",
+          "options": ["What", "The", "If", "Many"],
+          "answer": 2,
+          "explanation": "If + mệnh đề, mệnh đề chính: “If bacteria in foods are killed … decay is slowed down.” Câu điều kiện loại 0 diễn tả quy luật chung.",
+          "optionNotes": [
+            "“What” mở đầu mệnh đề danh từ, khiến câu không có mệnh đề chính.",
+            "“The bacteria … are killed” thành một mệnh đề độc lập, thiếu liên từ nối với mệnh đề sau.",
+            "",
+            "“Many bacteria … are killed” cũng là mệnh đề độc lập, thiếu liên từ nối."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp01-q20",
+          "number": 20,
+          "prompt": "With age, the mineral content of human bones decreases, ___ them more fragile.",
+          "options": ["making", "and make", "makes", "which it makes"],
+          "answer": 0,
+          "explanation": "Mệnh đề phân từ chỉ kết quả: sau mệnh đề chính, dùng V-ing để nói kết quả của cả hành động: “decreases, making them more fragile”.",
+          "optionNotes": [
+            "",
+            "“and make” thiếu chủ ngữ và chia sai (cần “and makes”).",
+            "“makes” làm câu có hai động từ chính liền nhau, thiếu chủ ngữ hoặc liên từ.",
+            "“which it makes” thừa chủ ngữ “it”, sai cấu trúc quan hệ."
+          ]
+        }
+      ]
+    }
+  ]
+}

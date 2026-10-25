@@ -1,0 +1,1020 @@
+{
+  "id": "practice-test-08",
+  "title": "Practice Test 8",
+  "kind": "practice-test",
+  "sourcePages": [
+    49,
+    55
+  ],
+  "answerSource": "ai",
+  "omitted": [
+    "Paper 3: Listening (câu 51–70, tài liệu không kèm audio)",
+    "Paper 4: Speaking"
+  ],
+  "sections": [
+    {
+      "id": "pt08-p1a",
+      "title": "Paper 1 · Part A: Từ vựng",
+      "instruction": "Chọn từ hoặc cụm từ phù hợp nhất để hoàn thành mỗi câu.",
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt08-q1",
+          "number": 1,
+          "prompt": "The car's too expensive for me. I can't ___ it.",
+          "options": [
+            "spend",
+            "allow",
+            "afford",
+            "cost"
+          ],
+          "answer": 2,
+          "explanation": "“can’t afford something” = không đủ tiền mua / không đủ khả năng chi trả. Xe quá đắt nên người nói không đủ tiền mua.",
+          "optionNotes": [
+            "spend = tiêu (tiền); cần chủ ngữ chỉ người tiêu và tân ngữ là số tiền, không nói “spend it” cho chiếc xe.",
+            "allow = cho phép; sai nghĩa.",
+            "",
+            "cost = có giá là; chủ ngữ phải là món đồ (“It costs…”), không dùng “I can’t cost it”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q2",
+          "number": 2,
+          "prompt": "If a baby bird stays ___ for two or three weeks after leaving the nest, it has a fair chance of becoming an adult.",
+          "options": [
+            "living",
+            "lively",
+            "alive",
+            "live"
+          ],
+          "answer": 2,
+          "explanation": "“stay alive” = vẫn còn sống, sống sót. “alive” là tính từ đứng sau động từ nối “stay”.",
+          "optionNotes": [
+            "living thường đứng trước danh từ (“living things”) hoặc dùng như danh từ; không đi với “stay” để chỉ sống sót.",
+            "lively = sôi nổi, hoạt bát; sai nghĩa.",
+            "",
+            "“live” (/laɪv/, tính từ) = trực tiếp, sống động, thường đứng trước danh từ (“live music”); không dùng sau “stay” với nghĩa còn sống."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q3",
+          "number": 3,
+          "prompt": "His heart ___ so fast that he could hardly breathe.",
+          "options": [
+            "beat",
+            "hit",
+            "knocked",
+            "struck"
+          ],
+          "answer": 0,
+          "explanation": "“heart beats” = tim đập. Tim đập quá nhanh nên khó thở.",
+          "optionNotes": [
+            "",
+            "hit = đánh, va vào; không dùng cho nhịp tim.",
+            "knock = gõ (cửa); không nói “heart knocked”.",
+            "strike = đánh, đập mạnh vào vật; không dùng cho tim đập."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q4",
+          "number": 4,
+          "prompt": "While some bacteria are beneficial others are ___ in that they cause disease.",
+          "options": [
+            "harmful",
+            "cruel",
+            "vital",
+            "painful"
+          ],
+          "answer": 0,
+          "explanation": "harmful = có hại. Vế trước nói vi khuẩn có lợi (“beneficial”), vế sau đối lập: có hại vì gây bệnh (“cause disease”).",
+          "optionNotes": [
+            "",
+            "cruel = độc ác, tàn nhẫn (người/hành vi); không dùng cho vi khuẩn.",
+            "vital = cực kỳ quan trọng; trái nghĩa với ý “gây bệnh”.",
+            "painful = gây đau đớn; không đúng nghĩa “có hại” nói chung."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q5",
+          "number": 5,
+          "prompt": "Some people believe that it is possible to ___ someone's character by measuring the shape of their head.",
+          "options": [
+            "build",
+            "form",
+            "trust",
+            "judge"
+          ],
+          "answer": 3,
+          "explanation": "“judge someone’s character” = đánh giá tính cách của ai. Một số người tin có thể đánh giá tính cách qua hình dạng đầu.",
+          "optionNotes": [
+            "build = xây dựng; “build character” là rèn luyện tính cách của chính mình, không phải đo đầu để biết tính cách người khác.",
+            "form = hình thành, tạo ra; không hợp với việc đo đầu để biết tính cách.",
+            "trust = tin tưởng; không hợp nghĩa với “measuring”.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q6",
+          "number": 6,
+          "prompt": "The writer changed the movie's ___ five times.",
+          "options": [
+            "article",
+            "material",
+            "script",
+            "novel"
+          ],
+          "answer": 2,
+          "explanation": "script = kịch bản phim. Nhà văn (nhà biên kịch) sửa kịch bản phim năm lần.",
+          "optionNotes": [
+            "article = bài báo; không phải thứ thuộc về một bộ phim.",
+            "material = chất liệu, tư liệu; quá chung, không nói được “movie’s material” bị sửa năm lần.",
+            "",
+            "novel = tiểu thuyết; phim có thể chuyển thể từ tiểu thuyết nhưng người viết sửa “script” chứ không sửa “movie’s novel”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q7",
+          "number": 7,
+          "prompt": "Despite the film's mixed reviews, the ___ was praised and the movie was a box office success worldwide.",
+          "options": [
+            "act",
+            "action",
+            "activity",
+            "acting"
+          ],
+          "answer": 3,
+          "explanation": "acting = diễn xuất. Dù phim bị đánh giá lẫn lộn, phần diễn xuất vẫn được khen.",
+          "optionNotes": [
+            "act = hành động, màn trình diễn ngắn; đứng sau “the” và được khen như vậy không tự nhiên.",
+            "action = hành động, cảnh hành động; không chỉ phần diễn xuất của diễn viên.",
+            "activity = hoạt động; không liên quan đến phim ảnh.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q8",
+          "number": 8,
+          "prompt": "She ___ her husband's job for his ill health.",
+          "options": [
+            "accused",
+            "claimed",
+            "caused",
+            "blamed"
+          ],
+          "answer": 3,
+          "explanation": "“blame something for something” = đổ lỗi cho cái gì về việc gì. Cô ấy đổ lỗi công việc của chồng gây ra bệnh tật của anh ấy.",
+          "optionNotes": [
+            "accuse đi với “accuse somebody of something”, không đi với giới từ “for” và tân ngữ chỉ vật như vậy.",
+            "claim = cho rằng, tuyên bố; không đi với “for”.",
+            "cause = gây ra; sau “cause” không có giới từ “for” như vậy.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q9",
+          "number": 9,
+          "prompt": "She is so upset at her husband's death that I don't think she will ever ___ from the shock.",
+          "options": [
+            "renew",
+            "regain",
+            "recover",
+            "refresh"
+          ],
+          "answer": 2,
+          "explanation": "“recover from something” = hồi phục sau cú sốc, bệnh tật. Giới từ “from” đi sau chỗ trống là gợi ý quan trọng.",
+          "optionNotes": [
+            "renew = làm mới, gia hạn; không đi với “from”.",
+            "regain = lấy lại (sức khỏe, niềm tin); là ngoại động từ, không đi với “from”.",
+            "",
+            "refresh = làm tươi mới; không đi với “from the shock”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q10",
+          "number": 10,
+          "prompt": "___ people always want to learn more about the history of the places they visit.",
+          "options": [
+            "Nervous",
+            "Anxious",
+            "Elegant",
+            "Curious"
+          ],
+          "answer": 3,
+          "explanation": "curious = tò mò, ham tìm hiểu. Người tò mò luôn muốn biết thêm về lịch sử nơi mình đến.",
+          "optionNotes": [
+            "nervous = lo lắng, căng thẳng; không gắn với việc muốn tìm hiểu.",
+            "anxious = lo âu; không hợp nghĩa.",
+            "elegant = thanh lịch; không liên quan đến ham học hỏi.",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt08-p1b-1",
+      "title": "Paper 1 · Part B: Đọc hiểu (đoạn 1)",
+      "instruction": "Đọc đoạn văn và chọn đáp án đúng nhất cho mỗi câu hỏi.",
+      "passage": {
+        "text": "Different colours can affect us in many different ways; that's according to Verity Allen. In her new series 'Colour me Healthy', Verity looks at the ways that colours can influence how hard we work and the choices we make. They can even change our emotions and even influence how healthy we are.\n\n'Have you ever noticed how people always use the same colours for the same things?' says Verity. 'Our toothpaste is always white or blue or maybe red. It's never green. Why not? For some reason we think that blue and white is clean, while we think of green products as being a bit disgusting. It's the same for businesses. We respect a company which writes its name in blue or black, but we don't respect one that uses pink or orange. People who design new products can use these ideas to influence what we buy.'\n\nDuring this four-part series, Verity studies eight different colours, two colours in each programme. She meets people who work in all aspects of the colour industry, from people who design food packets, to people who name the colours of lipsticks. Some of the people she meets clearly have very little scientific knowledge to support their ideas, such as the American 'Colour Doctor' who believes that serious diseases can be cured by the use of coloured lights. However, she also interviews real scientists who are studying the effects of green and red lights on mice, with some surprising results.\n\nOverall, it's an interesting show, and anyone who watches it will probably find out something new. But because Verity is goes out of her way to be polite to everyone she meets on the series, it's up to the viewers to make their own decisions about how much they should believe."
+      },
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt08-q11",
+          "number": 11,
+          "prompt": "What is the writer doing in this text?",
+          "options": [
+            "Giving information about how colours influence us.",
+            "Reporting what happens in a new television series.",
+            "Giving information about a television presenter.",
+            "Giving his opinion of a recent television show."
+          ],
+          "answer": 3,
+          "explanation": "Tác giả nhận xét chương trình: “it’s an interesting show”, chê một số khách mời “clearly have very little scientific knowledge”, và khuyên người xem tự quyết định tin đến đâu. Đây là bài bình luận (review) về một chương trình truyền hình.",
+          "optionNotes": [
+            "Thông tin về màu sắc chỉ là nội dung của chương trình; tác giả đang đánh giá chương trình chứ không giảng về màu sắc.",
+            "Bài không thuật lại diễn biến từng tập mà đưa ra nhận xét chung.",
+            "Verity chỉ là người dẫn chương trình được nhắc tới, không phải đối tượng chính của bài.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q12",
+          "number": 12,
+          "prompt": "Which of the following shows the probable content of the four shows?",
+          "options": [
+            "Part 1 - Health; Part 2 - Products and Industry; Part 3 - Emotions; Part 4 - Decisions.",
+            "Part 1 - Blue and Black; Part 2 - Red and Orange; Part 3 - White and Grey; Part 4 - Green and Yellow.",
+            "Part 1 - Meeting Designers; Part 2 - Meeting People who Name Colours; Part 3 - Meeting Doctors; Part 4 - Meeting Scientists.",
+            "Part 1 - Cleaning Products; Part 2 - Make-up; Part 3 - Clothes; Part 4 - Food."
+          ],
+          "answer": 0,
+          "explanation": "Đoạn đầu cho biết loạt chương trình xem màu sắc ảnh hưởng thế nào đến sức khỏe (“how healthy we are”), cảm xúc (“our emotions”), lựa chọn của ta (“the choices we make”), và cách ngành công nghiệp dùng màu cho sản phẩm, doanh nghiệp. Phương án A gom đúng các chủ đề này.",
+          "optionNotes": [
+            "",
+            "Bài chỉ nhắc xanh, trắng, đỏ, xanh lá, hồng, cam, đen; không có xám hay vàng và không chia theo cặp màu như vậy.",
+            "Đây là những người Verity gặp trong cả loạt phim, không phải nội dung chia theo từng tập.",
+            "Bài chỉ nhắc ví dụ như bao bì thực phẩm và son môi, không chia theo các nhóm sản phẩm này."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q13",
+          "number": 13,
+          "prompt": "According to Verity, why is a knowledge of colour important?",
+          "options": [
+            "It can help you to choose the best products.",
+            "It can give you new ideas.",
+            "It can help you to change people's minds.",
+            "It can help you to sell products."
+          ],
+          "answer": 3,
+          "explanation": "Verity nói: “People who design new products can use these ideas to influence what we buy.” Hiểu biết về màu sắc giúp người thiết kế ảnh hưởng đến việc mua hàng, tức là giúp bán được sản phẩm.",
+          "optionNotes": [
+            "Màu sắc được dùng để ảnh hưởng người mua, không phải để người mua chọn được sản phẩm tốt nhất.",
+            "Bài không nêu “ý tưởng mới” là lý do hiểu biết về màu quan trọng.",
+            "“Thay đổi suy nghĩ của người khác” quá rộng; Verity nói cụ thể là ảnh hưởng đến việc mua (“what we buy”).",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q14",
+          "number": 14,
+          "prompt": "Who does the writer respect least?",
+          "options": [
+            "Verity Allen.",
+            "The people who name lipsticks.",
+            "The 'Colour Doctor.'",
+            "The scientists who work with mice."
+          ],
+          "answer": 2,
+          "explanation": "Tác giả cho rằng “Colour Doctor” “clearly [has] very little scientific knowledge”, vì ông tin bệnh nặng chữa được bằng đèn màu. Đây là người bị đánh giá thấp nhất.",
+          "optionNotes": [
+            "Tác giả nhận xét Verity lịch sự với mọi người, không chê cô ấy thiếu kiến thức.",
+            "Bài chỉ nhắc họ là người đặt tên màu son, không chê gì.",
+            "",
+            "Họ là “real scientists” (nhà khoa học thật), được tác giả đối lập với Colour Doctor."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q15",
+          "number": 15,
+          "prompt": "Which of the following would make a good title for the text?",
+          "options": [
+            "Enjoy it, but don't believe everything.",
+            "Another great show from Verity Allen! Five Stars!",
+            "Don't miss this if you work in Business!",
+            "Watch this programme! It will make you healthy!"
+          ],
+          "answer": 0,
+          "explanation": "Tác giả thấy chương trình “interesting” nhưng nhắc người xem tự quyết định mình nên tin bao nhiêu. Tiêu đề A (“thưởng thức nhưng đừng tin hết”) tóm đúng thái độ này.",
+          "optionNotes": [
+            "",
+            "Tác giả không khen hết lời (năm sao); còn có phần dè dặt về độ tin cậy.",
+            "Chương trình dành cho mọi người xem, không chỉ người làm kinh doanh.",
+            "Chương trình nói về ảnh hưởng của màu sắc, không hứa làm người xem khỏe mạnh."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt08-p1b-2",
+      "title": "Paper 1 · Part B: Đọc hiểu (đoạn 2)",
+      "instruction": "Đọc đoạn văn và chọn đáp án đúng nhất cho mỗi câu hỏi.",
+      "passage": {
+        "text": "Everybody likes to feel that she or he is special. Sadly, many of us grow up believing that we're not special at all. We wish that we could be more attractive or better at sports. We wish we had more money or nicer clothes. Like the Tin Man, the Scarecrow, or the Cowardly Lion from The Wizard of Oz, we think we're not good enough just as we are. In the film, The Tin Man wishes he had a heart. The Scarecrow wishes that he had a brain, and the Lion wants courage. Eventually, each of them realizes that he already has what he wants. Nearly all parents want us to be the best we can be. They occasionally attempt to encourage us to do better by comparing us to others. They mean well, but the message we usually get is that we're not good enough. We start to believe that the only way we can be special is by being better than somebody else, but we are frequently disappointed.\n\nThere will always be somebody out there that is better than we are at something. There are a lot of people around who may not be as intelligent as we are but who are better at sports. Or they may not be as handsome, but they have more money. It is unthinkable for us to be better than everybody else all the time. Like the Tin Man, the Scarecrow, and the Cowardly Lion, we all need what we believe will make us better people. What we don't understand is that often we already have inside us the very things that we look for. Our parents often forget to tell us that we are special, that we are good enough just as we are. Perhaps no one told them when they were growing up, or maybe they just forgot. Either way, it's up to us to remind them sometimes that each of us, in our own way, is special. What we are... is enough."
+      },
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt08-q16",
+          "number": 16,
+          "prompt": "What is the writer's main aim in writing the text?",
+          "options": [
+            "To talk about your family problems.",
+            "To explain the importance of being yourself.",
+            "To describe how intelligent we are.",
+            "To suggest how people can change their way of life."
+          ],
+          "answer": 1,
+          "explanation": "Cả bài nhấn mạnh mỗi người đã đủ tốt như chính mình (“good enough just as we are”, “What we are... is enough”), không cần so sánh với người khác. Mục đích là nói về tầm quan trọng của việc là chính mình.",
+          "optionNotes": [
+            "Cha mẹ chỉ được nhắc như một ví dụ, bài không kể về vấn đề gia đình.",
+            "",
+            "Bài không mô tả mức độ thông minh của con người.",
+            "Bài không khuyên đổi cách sống; thông điệp là chấp nhận bản thân."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q17",
+          "number": 17,
+          "prompt": "This essay was most likely written by",
+          "options": [
+            "a young person.",
+            "a coach.",
+            "a teacher.",
+            "a parent."
+          ],
+          "answer": 0,
+          "explanation": "Tác giả dùng “our parents” và nói “it’s up to us to remind them”, tức là đứng ở vị trí con cái, người trẻ, đang được cha mẹ nuôi dạy.",
+          "optionNotes": [
+            "",
+            "Bài không có dấu hiệu nào về huấn luyện viên.",
+            "Bài không nói gì về việc giảng dạy hay học sinh.",
+            "Tác giả gọi cha mẹ là “our parents” và bảo con cái nhắc cha mẹ, nên không phải là phụ huynh."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q18",
+          "number": 18,
+          "prompt": "What does the writer say about our parents?",
+          "options": [
+            "They always tell us that we are good enough.",
+            "They never forget to tell us that we are special.",
+            "They encourage us by saying we are better than other people.",
+            "They may not have been told that they were special when they were growing up."
+          ],
+          "answer": 3,
+          "explanation": "Câu “Perhaps no one told them when they were growing up” cho biết cha mẹ có thể chưa từng được nói rằng họ đặc biệt khi còn nhỏ.",
+          "optionNotes": [
+            "Bài nói ngược lại: cha mẹ “often forget to tell us” rằng ta đủ tốt.",
+            "Bài nói cha mẹ “often forget”, không phải “never forget”.",
+            "Cha mẹ khích lệ bằng cách so sánh ta với người khác (“comparing us to others”), không phải bảo ta giỏi hơn người khác.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q19",
+          "number": 19,
+          "prompt": "The author of this essay believes that",
+          "options": [
+            "we are all good enough just the way we are.",
+            "the richer you are, the better you are.",
+            "intelligent people are more special than others.",
+            "not everyone can be special."
+          ],
+          "answer": 0,
+          "explanation": "Tác giả nhắc cha mẹ rằng “we are good enough just as we are” và kết bài “What we are... is enough”.",
+          "optionNotes": [
+            "",
+            "Bài chỉ nói có người giàu hơn ta; không cho rằng giàu hơn thì tốt hơn.",
+            "Bài không xếp người thông minh đặc biệt hơn người khác.",
+            "Bài khẳng định “each of us, in our own way, is special”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q20",
+          "number": 20,
+          "prompt": "A message from the text is that",
+          "options": [
+            "you should always compare yourself to others to become better.",
+            "what we look for may be already inside us.",
+            "to be special one should be very good at many things at the same time.",
+            "you should not listen to what your parents tell you to do."
+          ],
+          "answer": 1,
+          "explanation": "Bài nói: “often we already have inside us the very things that we look for” (thường những điều ta tìm kiếm đã có sẵn trong ta), giống nhân vật Tin Man, Scarecrow, Lion.",
+          "optionNotes": [
+            "Bài cho rằng so sánh với người khác là điều khiến ta thấy mình chưa đủ tốt.",
+            "",
+            "Bài nói “It is unthinkable for us to be better than everybody else all the time”, không đòi hỏi giỏi mọi thứ.",
+            "Bài không bảo đừng nghe cha mẹ; chỉ nhắc nhở cha mẹ rằng ta đặc biệt."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt08-p2a",
+      "title": "Paper 2 · Part A: Hoàn thành câu",
+      "instruction": "Chọn từ hoặc cụm từ phù hợp nhất để hoàn thành mỗi câu.",
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt08-q21",
+          "number": 21,
+          "prompt": "Upon returning from work, ___.",
+          "options": [
+            "John found a letter in the mailbox",
+            "a letter was found in the mailbox",
+            "a letter was in the mailbox",
+            "the mailbox had a letter in it"
+          ],
+          "answer": 0,
+          "explanation": "Cụm “Upon returning from work” (= when he returned) là mệnh đề rút gọn, nên chủ ngữ của mệnh đề chính phải là người đi làm về: “John found a letter…”.",
+          "optionNotes": [
+            "",
+            "Chủ ngữ “a letter” không thể là người “returning from work”.",
+            "Chủ ngữ “a letter” không thể là người “returning from work”.",
+            "Chủ ngữ “the mailbox” không thể là người “returning from work”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q22",
+          "number": 22,
+          "prompt": "- Must I take a taxi?\n- No, you ___. You can walk from here.",
+          "options": [
+            "must not",
+            "don't need",
+            "don't have to",
+            "had better not to"
+          ],
+          "answer": 2,
+          "explanation": "“don’t have to” = không cần, không bắt buộc, dùng để trả lời “Must I…?” khi không cần thiết.",
+          "optionNotes": [
+            "must not = cấm, không được; sai ý vì có thể đi bộ nên không cần chứ không bị cấm.",
+            "“don’t need” phải đi với “to” (don’t need to take); thiếu “to” nên sai.",
+            "",
+            "“had better not” + V nguyên mẫu không “to”; “had better not to” sai cấu trúc."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q23",
+          "number": 23,
+          "prompt": "In fact, the twins have been making headlines in regional newspapers since they were born - because one is white and ___ black.",
+          "options": [
+            "another",
+            "other",
+            "the other",
+            "the others"
+          ],
+          "answer": 2,
+          "explanation": "Chỉ có hai người (cặp sinh đôi): “one… the other” = một người… người còn lại.",
+          "optionNotes": [
+            "another = một người/vật khác (trong số từ ba trở lên) và không đứng trước tính từ như vậy.",
+            "other cần có danh từ theo sau hoặc “the/an” đứng trước; đứng một mình không đúng.",
+            "",
+            "the others = những người còn lại (số nhiều, từ ba người trở lên)."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q24",
+          "number": 24,
+          "prompt": "- \"Why didn't she punish her child?\"\n- \"He promised ___ it again.\"",
+          "options": [
+            "not to do",
+            "never doing",
+            "that he doesn't do",
+            "to not do"
+          ],
+          "answer": 0,
+          "explanation": "“promise + to V”; dạng phủ định là “promise not to V”. “He promised not to do it again” = Nó hứa sẽ không làm lại.",
+          "optionNotes": [
+            "",
+            "“promise” không đi với V-ing.",
+            "Câu tường thuật ở quá khứ (“promised”) cần lùi thì: “that he wouldn’t do”, không dùng “doesn’t”.",
+            "Dạng “to not do” không phải cách dùng chuẩn; phủ định của to-V là “not to V”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q25",
+          "number": 25,
+          "prompt": "___ on the radio, I noticed immediately that it was not working properly.",
+          "options": [
+            "To turn",
+            "Turning",
+            "Turn",
+            "Having turned"
+          ],
+          "answer": 1,
+          "explanation": "Mệnh đề rút gọn chủ động bằng V-ing: “Turning on the radio, I noticed…” = Khi bật radio lên, tôi nhận ra ngay… Hai hành động gần như đồng thời (“immediately”).",
+          "optionNotes": [
+            "“To turn” diễn tả mục đích, làm câu thành “Để bật radio, tôi nhận ra…”, sai nghĩa.",
+            "",
+            "“Turn” là dạng mệnh lệnh, không dùng để rút gọn mệnh đề.",
+            "“Having turned” nhấn việc bật xong rồi mới nhận ra; đúng ngữ pháp nhưng với “immediately” (nhận ra ngay lúc bật), “Turning” tự nhiên hơn."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q26",
+          "number": 26,
+          "prompt": "A bridge must be strong enough to support its own weight as well as the weight of the people and vehicles ___ use it.",
+          "options": [
+            "which",
+            "who",
+            "that",
+            "when"
+          ],
+          "answer": 2,
+          "explanation": "Đại từ quan hệ thay cho cả người lẫn vật (“people and vehicles”) chỉ dùng “that”.",
+          "optionNotes": [
+            "“which” chỉ dùng cho vật, không bao gồm người.",
+            "“who” chỉ dùng cho người, không bao gồm xe cộ.",
+            "",
+            "“when” là trạng từ quan hệ chỉ thời gian."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q27",
+          "number": 27,
+          "prompt": "The girl you ___ yesterday is waiting for you downstairs.",
+          "options": [
+            "told",
+            "told me about",
+            "told me",
+            "told me about her"
+          ],
+          "answer": 1,
+          "explanation": "Đây là mệnh đề quan hệ lược bỏ “whom/that”: “The girl (that) you told me about yesterday”. Giới từ “about” vẫn ở lại cuối mệnh đề.",
+          "optionNotes": [
+            "“told” thiếu tân ngữ chỉ người nghe và giới từ “about”.",
+            "",
+            "“told me” không có “about” nên không nói rõ được là nói về cô gái; đại từ quan hệ là tân ngữ của “about”.",
+            "Thừa “her”, vì “the girl” đã làm tân ngữ của “about” trong mệnh đề quan hệ."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q28",
+          "number": 28,
+          "prompt": "I shall never forget ___ to see the Moscow State circus.",
+          "options": [
+            "to take",
+            "taking",
+            "to be taken",
+            "being taken"
+          ],
+          "answer": 3,
+          "explanation": "“forget + V-ing” = quên một việc đã xảy ra; ở đây là bị động (được đưa đi xem xiếc): “forget being taken to see…” = không bao giờ quên chuyện được đưa đi xem xiếc.",
+          "optionNotes": [
+            "“forget to V” = quên làm gì (chưa làm); sai nghĩa, và chủ động cũng sai.",
+            "“taking” là chủ động; người nói là người được đưa đi chứ không phải đưa người khác đi.",
+            "“forget to be taken” = quên việc được đưa đi trong tương lai; sai nghĩa.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q29",
+          "number": 29,
+          "prompt": "- \"Can you steady this ladder for me?\"\n- \"Get down now! The ladder ___.\"",
+          "options": [
+            "will collapse",
+            "will be collapsed",
+            "is going to collapse",
+            "collapses"
+          ],
+          "answer": 2,
+          "explanation": "“be going to” dùng để dự đoán điều sắp xảy ra dựa trên dấu hiệu ở hiện tại (cái thang đang lung lay): “The ladder is going to collapse.”",
+          "optionNotes": [
+            "“will collapse” là dự đoán chủ quan; ở đây có dấu hiệu rõ ràng ngay lúc nói nên “be going to” phù hợp hơn.",
+            "“collapse” là nội động từ, không dùng bị động.",
+            "",
+            "Hiện tại đơn không diễn tả việc sắp xảy ra ngay trước mắt."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q30",
+          "number": 30,
+          "prompt": "We were all ___ when we saw the accident.",
+          "options": [
+            "terrified",
+            "terrible",
+            "terrific",
+            "terrifying"
+          ],
+          "answer": 0,
+          "explanation": "Tính từ đuôi -ed mô tả cảm xúc của con người: “We were terrified” = chúng tôi đều kinh hoàng.",
+          "optionNotes": [
+            "",
+            "terrible = tồi tệ; mô tả sự việc, không mô tả cảm xúc của người.",
+            "terrific = tuyệt vời; sai nghĩa.",
+            "terrifying = đáng sợ; mô tả điều gây sợ (the accident), không mô tả “we”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q31",
+          "number": 31,
+          "prompt": "Give us a call when you ___ to Boston.",
+          "options": [
+            "get",
+            "will get",
+            "are getting",
+            "will be getting"
+          ],
+          "answer": 0,
+          "explanation": "Trong mệnh đề thời gian (when, as soon as…) dùng hiện tại đơn thay cho tương lai: “when you get to Boston”.",
+          "optionNotes": [
+            "",
+            "Không dùng “will” sau “when” trong mệnh đề thời gian.",
+            "Hiện tại tiếp diễn không dùng cho mệnh đề thời gian nói về tương lai ở đây.",
+            "Không dùng “will” sau “when” trong mệnh đề thời gian."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q32",
+          "number": 32,
+          "prompt": "Of the three of us I seem to have the ___ money.",
+          "options": [
+            "little",
+            "less",
+            "least",
+            "lesser"
+          ],
+          "answer": 2,
+          "explanation": "“Of the three of us” là so sánh nhất (từ ba người), nên dùng “the least + danh từ không đếm được”: the least money = ít tiền nhất.",
+          "optionNotes": [
+            "“the little money” không phải dạng so sánh nhất.",
+            "“less” là so sánh hơn (giữa hai đối tượng), không đi với “the” ở đây.",
+            "",
+            "“lesser” = nhỏ hơn, kém quan trọng hơn; không dùng với “money” theo nghĩa số lượng."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q33",
+          "number": 33,
+          "prompt": "The bicycle my father ___ was returned to him last night.",
+          "options": [
+            "lost",
+            "was lost",
+            "was losing",
+            "has been lost"
+          ],
+          "answer": 0,
+          "explanation": "Mệnh đề quan hệ lược bỏ “that”: “The bicycle (that) my father lost” = chiếc xe đạp bố tôi làm mất. Chủ ngữ “my father” là người làm mất, nên dùng chủ động quá khứ.",
+          "optionNotes": [
+            "",
+            "“my father was lost” = bố bị lạc; sai nghĩa.",
+            "Quá khứ tiếp diễn không hợp: việc làm mất là một sự kiện đã xong.",
+            "“has been lost” là bị động, không có chủ ngữ “my father” làm tác nhân."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q34",
+          "number": 34,
+          "prompt": "He burst into a high- pitched laugh ___ he'd said something funny.",
+          "options": [
+            "though",
+            "although",
+            "even though",
+            "as though"
+          ],
+          "answer": 3,
+          "explanation": "“as though / as if” = như thể: “He burst into a laugh as though he’d said something funny” = cười phá lên như thể vừa nói điều gì đó buồn cười.",
+          "optionNotes": [
+            "“though” = mặc dù; ghép vào thì hai vế mâu thuẫn, sai nghĩa.",
+            "“although” = mặc dù; sai nghĩa.",
+            "“even though” = mặc dù; sai nghĩa.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q35",
+          "number": 35,
+          "prompt": "We're good friends. We ___ each other for a long time.",
+          "options": [
+            "have known",
+            "have been knowing",
+            "know",
+            "knew"
+          ],
+          "answer": 0,
+          "explanation": "“know” là động từ chỉ trạng thái, không dùng thì tiếp diễn. Với “for a long time” (kéo dài đến nay) dùng hiện tại hoàn thành: “have known”.",
+          "optionNotes": [
+            "",
+            "“know” không chia ở thì tiếp diễn.",
+            "Hiện tại đơn không hợp với “for a long time” (khoảng thời gian kéo dài đến nay).",
+            "Quá khứ đơn chỉ việc đã chấm dứt; nhưng họ vẫn đang là bạn tốt."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt08-p2c",
+      "title": "Paper 2 · Part C: Điền từ vào đoạn văn",
+      "instruction": "Chọn từ phù hợp nhất cho mỗi chỗ trống được đánh số trong đoạn văn.",
+      "passage": {
+        "text": "In Western countries, people usually celebrate New Year at midnight {{36}} January 1st. People {{37}} go to parties, dress in formal clothes - like tuxedos and evening gowns, and drink champagne at midnight. {{38}} the first minutes of the new year, people cheer and {{39}} each other happiness for the year ahead. But some cultures prefer to {{40}} the new year by waking up early to watch the sunrise. They {{41}} the new year with the first light of the sunrise.\n\nIt is also a common Western custom to make a New Year's promise called a resolution. New Year's resolutions usually include promises {{42}} something new or change a bad habit in the new year.\n\nMany cultures also do special things to get rid of bad luck at the beginning of a new year. For example, in Ecuador, families {{43}} a big doll from old clothes. The doll is filled with old newspapers and firecrackers. {{44}} midnight, these dolls are burned to show the bad things from the past year are gone. The new year can start afresh. Other common {{45}} to keep away bad luck in a new year include throwing things into rivers or the ocean, or saying special things on the first day of the new year."
+      },
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt08-q36",
+          "number": 36,
+          "options": [
+            "in",
+            "on",
+            "by",
+            "at"
+          ],
+          "answer": 1,
+          "explanation": "“on + ngày”: “on January 1st” = vào ngày 1 tháng 1.",
+          "optionNotes": [
+            "“in” dùng cho tháng, năm, mùa (in January); trước cả ngày cụ thể dùng “on”.",
+            "",
+            "“by” = trước hoặc muộn nhất là; không hợp nghĩa.",
+            "“at” dùng cho giờ giấc (at midnight); không dùng trước một ngày."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q37",
+          "number": 37,
+          "options": [
+            "need to",
+            "must",
+            "should",
+            "may"
+          ],
+          "answer": 3,
+          "explanation": "Đoạn văn mô tả tập quán chứ không ra lệnh: “People may go to parties…” = mọi người có thể đi dự tiệc… (có người làm vậy).",
+          "optionNotes": [
+            "“need to” = cần phải; đoạn văn không nói về sự cần thiết.",
+            "“must” = bắt buộc; đón năm mới không phải điều bắt buộc.",
+            "“should” = nên; đoạn văn chỉ mô tả, không đưa lời khuyên.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q38",
+          "number": 38,
+          "options": [
+            "During",
+            "For",
+            "At",
+            "Since"
+          ],
+          "answer": 0,
+          "explanation": "“during + khoảng thời gian” = trong suốt: “During the first minutes of the new year” = trong những phút đầu của năm mới.",
+          "optionNotes": [
+            "",
+            "“for” đi với độ dài thời gian cụ thể (for ten minutes), không đi với “the first minutes”.",
+            "“at” đi với một thời điểm (at midnight), không đi với khoảng thời gian.",
+            "“since” = từ khi; không hợp nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q39",
+          "number": 39,
+          "options": [
+            "wish",
+            "hope",
+            "greet",
+            "welcome"
+          ],
+          "answer": 0,
+          "explanation": "“wish somebody something” = chúc ai điều gì: “wish each other happiness” = chúc nhau hạnh phúc.",
+          "optionNotes": [
+            "",
+            "“hope” đi với mệnh đề (hope that…), không có cấu trúc “hope somebody something”.",
+            "greet = chào hỏi; không đi với “happiness” theo cách này.",
+            "welcome = chào đón; không đi với “happiness” theo cách này."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q40",
+          "number": 40,
+          "options": [
+            "require",
+            "celebrate",
+            "discover",
+            "memorise"
+          ],
+          "answer": 1,
+          "explanation": "“celebrate the new year” = đón mừng năm mới, hợp với “People usually celebrate New Year…” ở đầu bài.",
+          "optionNotes": [
+            "require = yêu cầu; không hợp nghĩa.",
+            "",
+            "discover = khám phá; không hợp nghĩa.",
+            "memorise = ghi nhớ; không hợp nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q41",
+          "number": 41,
+          "options": [
+            "adopt",
+            "receive",
+            "welcome",
+            "enjoy"
+          ],
+          "answer": 2,
+          "explanation": "“welcome the new year with the first light of the sunrise” = đón năm mới bằng những tia nắng đầu tiên của bình minh.",
+          "optionNotes": [
+            "adopt = nhận nuôi, áp dụng; không hợp với “the new year”.",
+            "receive = nhận; không nói “receive the new year”.",
+            "",
+            "enjoy = tận hưởng; không hợp với “with the first light” theo nghĩa đón chào."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q42",
+          "number": 42,
+          "options": [
+            "by trying",
+            "for trying",
+            "trying",
+            "to try"
+          ],
+          "answer": 3,
+          "explanation": "“promise to + V” = hứa làm gì; “promises to try something new” = lời hứa sẽ thử điều gì mới.",
+          "optionNotes": [
+            "Giới từ “by” không đi với danh từ “promises” theo cách này.",
+            "Giới từ “for” không đi với danh từ “promises” theo cách này.",
+            "V-ing không đi sau “promise/promises” (promise + to V).",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q43",
+          "number": 43,
+          "options": [
+            "put",
+            "build",
+            "do",
+            "make"
+          ],
+          "answer": 3,
+          "explanation": "“make something from something” = làm ra cái gì từ nguyên liệu gì: “make a big doll from old clothes”.",
+          "optionNotes": [
+            "put = đặt; không hợp với “a big doll from old clothes”.",
+            "build = xây dựng (nhà, cầu); ít dùng cho búp bê làm từ quần áo cũ.",
+            "do = làm (việc); không đi với tân ngữ là một vật tạo ra.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q44",
+          "number": 44,
+          "options": [
+            "In",
+            "At",
+            "Since",
+            "For"
+          ],
+          "answer": 1,
+          "explanation": "“at midnight” = vào lúc nửa đêm (cụm cố định với giờ giấc).",
+          "optionNotes": [
+            "“in midnight” không dùng; phải là “at midnight”.",
+            "",
+            "“since” = từ khi; không hợp nghĩa.",
+            "“for” đi với độ dài thời gian; không đi với “midnight”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt08-q45",
+          "number": 45,
+          "options": [
+            "traditions",
+            "habits",
+            "methods",
+            "measures"
+          ],
+          "answer": 0,
+          "explanation": "Cả đoạn nói về phong tục của nhiều nền văn hóa, nên “traditions” (truyền thống, tập quán): “Other common traditions to keep away bad luck include…” = những tập quán phổ biến khác để xua đuổi vận xui gồm…",
+          "optionNotes": [
+            "",
+            "habits = thói quen cá nhân; không phải tập quán của một nền văn hóa.",
+            "methods = phương pháp; ít hợp với bối cảnh phong tục tập quán hơn “traditions”.",
+            "measures = biện pháp (thường là biện pháp chính thức, như “safety measures”)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt08-p2d",
+      "title": "Paper 2 · Part D: Viết lại câu",
+      "instruction": "Hoàn thành câu thứ hai sao cho nghĩa không đổi so với câu gốc.",
+      "questions": [
+        {
+          "type": "rewrite",
+          "id": "pt08-q46",
+          "number": 46,
+          "original": "The questions are so easy that everyone can answer them.",
+          "prefix": "They're such",
+          "answers": [
+            "easy questions that everyone can answer them.",
+            "easy questions that everyone can answer."
+          ],
+          "explanation": "so + tính từ + that… → such + (a/an) + tính từ + danh từ + that…. “so easy” chuyển thành “such easy questions” (danh từ số nhiều nên không có “a/an”)."
+        },
+        {
+          "type": "rewrite",
+          "id": "pt08-q47",
+          "number": 47,
+          "original": "My assistant works better when he does not have enough time.",
+          "prefix": "The less",
+          "answers": [
+            "time my assistant has, the better he works.",
+            "time he has, the better my assistant works."
+          ],
+          "explanation": "So sánh kép “The + so sánh hơn…, the + so sánh hơn…”. “does not have enough time” → “the less time … has”; “works better” → “the better … works”."
+        },
+        {
+          "type": "rewrite",
+          "id": "pt08-q48",
+          "number": 48,
+          "original": "We started learning English 4 years ago.",
+          "prefix": "We have",
+          "answers": [
+            "been learning English for 4 years.",
+            "learned English for 4 years.",
+            "learnt English for 4 years.",
+            "been learning English for four years."
+          ],
+          "explanation": "Hiện tại hoàn thành (tiếp diễn): “started … 4 years ago” → “have (been) learning … for 4 years”. Mốc “ago” đổi thành khoảng thời gian với “for”."
+        },
+        {
+          "type": "rewrite",
+          "id": "pt08-q49",
+          "number": 49,
+          "original": "Women drive more carefully than men do.",
+          "prefix": "Men do not",
+          "answers": [
+            "drive as carefully as women do.",
+            "drive as carefully as women.",
+            "drive so carefully as women do."
+          ],
+          "explanation": "So sánh hơn → so sánh không bằng, đảo hai đối tượng: “Women drive more carefully than men” = “Men do not drive as carefully as women”."
+        },
+        {
+          "type": "rewrite",
+          "id": "pt08-q50",
+          "number": 50,
+          "original": "She wanted to know if I had studied English for a long time.",
+          "prefix": "She asked me",
+          "answers": [
+            "if I had studied English for a long time.",
+            "whether I had studied English for a long time."
+          ],
+          "explanation": "Câu hỏi Yes/No tường thuật: “asked me + if/whether + mệnh đề”, giữ trật tự câu khẳng định và thì quá khứ hoàn thành như câu gốc."
+        }
+      ]
+    }
+  ]
+}

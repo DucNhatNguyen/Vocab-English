@@ -1,0 +1,799 @@
+{
+  "id": "grammar-practice-02",
+  "title": "Grammar Practice 2",
+  "kind": "grammar",
+  "sourcePages": [
+    67,
+    69
+  ],
+  "answerSource": "ai",
+  "sections": [
+    {
+      "id": "gp02",
+      "title": "Ngữ pháp · Practice 2",
+      "instruction": "Chọn từ hoặc cụm từ phù hợp nhất để hoàn thành mỗi câu.",
+      "questions": [
+        {
+          "type": "choice",
+          "id": "gp02-q1",
+          "number": 1,
+          "prompt": "Nantucket ___ a little island miles off Cape Cod, Massachusetts.",
+          "options": [
+            "which is",
+            "where",
+            "is",
+            "it is"
+          ],
+          "answer": 2,
+          "explanation": "Câu cần một động từ chính cho chủ ngữ “Nantucket”: “Nantucket is a little island…”.",
+          "optionNotes": [
+            "“which is” mở ra mệnh đề quan hệ nên câu thiếu động từ chính.",
+            "“where” là từ nối, không tạo được động từ chính cho câu.",
+            "",
+            "“it is” thừa chủ ngữ vì “Nantucket” đã là chủ ngữ."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp02-q2",
+          "number": 2,
+          "prompt": "Although topology is the youngest branch of geometry, ___ is considered the most sophisticated.",
+          "options": [
+            "but it",
+            "so it",
+            "it",
+            "however it"
+          ],
+          "answer": 2,
+          "explanation": "Sau mệnh đề với “Although” cần một mệnh đề chính hoàn chỉnh: chủ ngữ “it” + động từ “is considered”. Không dùng thêm liên từ vì “Although” đã nối hai vế.",
+          "optionNotes": [
+            "“but” thừa: không dùng “Although… but…” trong cùng một câu.",
+            "“so” thừa: không dùng “Although… so…” trong cùng một câu.",
+            "",
+            "“however” là trạng từ, không dùng để nối mệnh đề; ngoài ra “Although” đã có rồi."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp02-q3",
+          "number": 3,
+          "prompt": "___ two major art museums, the Fogg and the Sadler.",
+          "options": [
+            "Harvard University has",
+            "At Harvard University",
+            "Harvard University, with its",
+            "There at Harvard University"
+          ],
+          "answer": 0,
+          "explanation": "Câu cần chủ ngữ và động từ chính: “Harvard University has two major art museums…”.",
+          "optionNotes": [
+            "",
+            "“At Harvard University” chỉ là cụm giới từ, câu thiếu chủ ngữ và động từ.",
+            "“Harvard University, with its…” chỉ là cụm danh từ kèm giới từ, không có động từ chính.",
+            "“There at Harvard University” không có động từ nên không thành câu."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp02-q4",
+          "number": 4,
+          "prompt": "Many gases, including the nitrogen and oxygen in air, ___ color or odor.",
+          "options": [
+            "have no",
+            "which have no",
+            "not having",
+            "they do not have"
+          ],
+          "answer": 0,
+          "explanation": "Chủ ngữ “Many gases” (cụm “including…” chỉ là phần xen) cần động từ chính: “have no color or odor”.",
+          "optionNotes": [
+            "",
+            "“which have no” tạo thành mệnh đề quan hệ nên câu vẫn thiếu động từ chính.",
+            "“not having” là dạng V-ing, không phải động từ chính.",
+            "“they do not have” thừa chủ ngữ và không có liên từ nối mệnh đề."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp02-q5",
+          "number": 5,
+          "prompt": "Most crustaceans live in the sea, ___ some live in fresh water and a few have ventured onto land.",
+          "options": [
+            "both",
+            "also",
+            "but",
+            "however"
+          ],
+          "answer": 2,
+          "explanation": "Hai mệnh đề đối lập nối với nhau bằng dấu phẩy thì cần liên từ “but” (nhưng): phần lớn sống ở biển, nhưng một số sống ở nước ngọt.",
+          "optionNotes": [
+            "“both” phải đi với “and” (both A and B), không nối hai mệnh đề.",
+            "“also” = cũng; là trạng từ, không nối được hai mệnh đề và không thể hiện sự đối lập.",
+            "",
+            "“however” là trạng từ nối; sau dấu phẩy phải dùng “; however,” hoặc tách câu, nên không dùng được ở đây."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp02-q6",
+          "number": 6,
+          "prompt": "The trail led over sandhills ___ thin grasses and thorny bushes grew.",
+          "options": [
+            "where there were",
+            "where",
+            "that were",
+            "that"
+          ],
+          "answer": 1,
+          "explanation": "“where” thay cho “in/on which” (chỉ nơi chốn): “sandhills where thin grasses and thorny bushes grew”. Mệnh đề đã có chủ ngữ và động từ “grasses… grew”.",
+          "optionNotes": [
+            "“where there were” thừa “there were” vì “grew” đã là động từ của mệnh đề.",
+            "",
+            "“that were” thêm một động từ nữa, làm câu thừa động từ.",
+            "“that” làm đại từ quan hệ chỉ vật cần thay thế cho chủ ngữ hoặc tân ngữ, nhưng ở đây vế sau đã đủ chủ ngữ và nghĩa chỉ nơi chốn."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp02-q7",
+          "number": 7,
+          "prompt": "The pupils ___ that school received a good education.",
+          "options": [
+            "attend",
+            "attending",
+            "to attend",
+            "attended"
+          ],
+          "answer": 1,
+          "explanation": "Rút gọn mệnh đề quan hệ chủ động: “The pupils who attend that school” → “The pupils attending that school”. Động từ chính của câu là “received”.",
+          "optionNotes": [
+            "“attend” là động từ chia, câu sẽ có hai động từ chính liền nhau.",
+            "",
+            "“to attend” mang nghĩa mục đích hoặc tương lai, không hợp nghĩa.",
+            "“attended” sẽ là mệnh đề rút gọn bị động (được tham dự), sai nghĩa; học sinh là người đi học."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp02-q8",
+          "number": 8,
+          "prompt": "I couldn't use the pay phone ___ I didn't have any coins with me.",
+          "options": [
+            "yet",
+            "for",
+            "despite",
+            "even though"
+          ],
+          "answer": 1,
+          "explanation": "“for” dùng làm liên từ với nghĩa “vì, bởi vì” (= because): không dùng được điện thoại công cộng vì không mang theo tiền xu.",
+          "optionNotes": [
+            "“yet” = nhưng; không chỉ nguyên nhân.",
+            "",
+            "“despite” là giới từ, không đi với một mệnh đề đầy đủ, và nghĩa nhượng bộ không hợp.",
+            "“even though” = mặc dù; sai nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp02-q9",
+          "number": 9,
+          "prompt": "- \"What did they find out about the intruder?\"\n- \"The man ___ going through the files is one of our competitors.\"",
+          "options": [
+            "seen",
+            "seeing",
+            "was seen",
+            "to see"
+          ],
+          "answer": 0,
+          "explanation": "Rút gọn mệnh đề quan hệ bị động: “The man who was seen going through the files” → “The man seen going through the files” (người đàn ông bị trông thấy đang lục hồ sơ). Động từ chính của câu là “is”.",
+          "optionNotes": [
+            "",
+            "“seeing” mang nghĩa chủ động (người đàn ông đang nhìn thấy), sai nghĩa.",
+            "“was seen” là động từ chia, câu sẽ có hai động từ chính (was seen… is).",
+            "“to see” mang nghĩa mục đích, không hợp nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp02-q10",
+          "number": 10,
+          "prompt": "Compressed air ___ the power to drive pneumatic tools.",
+          "options": [
+            "by providing",
+            "provides",
+            "that provides",
+            "the provision of"
+          ],
+          "answer": 1,
+          "explanation": "Câu cần động từ chính chia ở thì hiện tại đơn cho chủ ngữ số ít “Compressed air”: “provides”.",
+          "optionNotes": [
+            "“by providing” là cụm giới từ, không phải động từ chính.",
+            "",
+            "“that provides” tạo mệnh đề quan hệ, câu vẫn thiếu động từ chính.",
+            "“the provision of” là cụm danh từ, không phải động từ."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp02-q11",
+          "number": 11,
+          "prompt": "___ by cosmic rays.",
+          "options": [
+            "The Earth is constantly bombarded",
+            "Bombarded constantly, the Earth",
+            "Bombarding the Earth constantly",
+            "The Earth's constant bombardment"
+          ],
+          "answer": 0,
+          "explanation": "Cần một câu hoàn chỉnh ở dạng bị động: “The Earth is constantly bombarded by cosmic rays” (Trái Đất liên tục bị tia vũ trụ bắn phá). Cụm “by cosmic rays” là tác nhân.",
+          "optionNotes": [
+            "",
+            "“Bombarded constantly, the Earth” là cụm phân từ cộng chủ ngữ mà không có động từ chính.",
+            "“Bombarding the Earth constantly” là cụm V-ing, không phải câu hoàn chỉnh và sai nghĩa.",
+            "“The Earth's constant bombardment” là cụm danh từ, không có động từ."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp02-q12",
+          "number": 12,
+          "prompt": "The Olympic Games, ___ in 776 B.C., did not include women participants until 1912.",
+          "options": [
+            "first played",
+            "were first played",
+            "which first played",
+            "they were first played"
+          ],
+          "answer": 0,
+          "explanation": "Rút gọn mệnh đề quan hệ bị động: “which were first played in 776 B.C.” → “first played in 776 B.C.”. Động từ chính của câu là “did not include”.",
+          "optionNotes": [
+            "",
+            "“were first played” là động từ chia, câu có hai động từ chính và thiếu liên từ hoặc đại từ quan hệ.",
+            "“which first played” là chủ động (các kỳ Thế vận hội chơi), sai nghĩa.",
+            "“they were first played” là một mệnh đề riêng không có từ nối."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp02-q13",
+          "number": 13,
+          "prompt": "___ they are tropical birds, parrots can live in temperate or even cold climates.",
+          "options": [
+            "Despite",
+            "Even though",
+            "Nevertheless",
+            "Even"
+          ],
+          "answer": 1,
+          "explanation": "Cần liên từ nhượng bộ đứng trước một mệnh đề đầy đủ (they are tropical birds): “Even though” = mặc dù.",
+          "optionNotes": [
+            "“Despite” là giới từ, phải đi với danh từ hoặc V-ing, không đi với mệnh đề.",
+            "",
+            "“Nevertheless” là trạng từ nối, không đứng đầu để nối mệnh đề phụ.",
+            "“Even” đứng một mình không phải liên từ (cần “Even though/if”)."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp02-q14",
+          "number": 14,
+          "prompt": "___ toward shore, its shape is changed by its collision with the shallow sea bottom.",
+          "options": [
+            "During a wave rolls",
+            "As a wave rolls",
+            "A wave rolls",
+            "A wave's rolling"
+          ],
+          "answer": 1,
+          "explanation": "Cần liên từ thời gian “As” + mệnh đề (a wave rolls) = khi sóng cuộn vào bờ, hình dạng của nó thay đổi.",
+          "optionNotes": [
+            "“During” là giới từ, không đi với mệnh đề.",
+            "",
+            "Thiếu liên từ nên hai mệnh đề bị nối sai (comma splice).",
+            "“A wave's rolling” là cụm danh từ, không phải mệnh đề phụ; câu sẽ thiếu động từ cho vế đầu."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp02-q15",
+          "number": 15,
+          "prompt": "Natural silk is still highly prized ___ similar artificial fabrics.",
+          "options": [
+            "although is available",
+            "despite there are available",
+            "in spite of the availability of",
+            "even though an availability of"
+          ],
+          "answer": 2,
+          "explanation": "Sau chỗ trống là một danh từ (similar artificial fabrics) nên cần giới từ nhượng bộ + danh từ: “in spite of the availability of…” = mặc dù có sẵn các loại vải nhân tạo tương tự.",
+          "optionNotes": [
+            "“although” + “is available” thiếu chủ ngữ và sai cấu trúc.",
+            "“despite” là giới từ, không đi với mệnh đề “there are available”.",
+            "",
+            "“even though” cần một mệnh đề, “an availability of” không phải mệnh đề."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp02-q16",
+          "number": 16,
+          "prompt": "Cattles ranches are found almost ___ in Utah.",
+          "options": [
+            "wherever",
+            "everywhere",
+            "overall",
+            "somewhere"
+          ],
+          "answer": 1,
+          "explanation": "“almost everywhere” = hầu như khắp nơi: các trang trại gia súc có mặt hầu như ở khắp Utah.",
+          "optionNotes": [
+            "“wherever” là liên từ, cần mệnh đề theo sau.",
+            "",
+            "“overall” = nhìn chung, không chỉ địa điểm.",
+            "“almost somewhere” không đi cùng nhau và sai nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp02-q17",
+          "number": 17,
+          "prompt": "___ most people think of freezing as a relatively modern method of food preservation, it is actually one of the oldest.",
+          "options": [
+            "Even if",
+            "As though",
+            "However",
+            "Although"
+          ],
+          "answer": 3,
+          "explanation": "“Although” + mệnh đề = mặc dù: phần lớn mọi người nghĩ đông lạnh là phương pháp hiện đại, nhưng thực ra nó là một trong những phương pháp lâu đời nhất.",
+          "optionNotes": [
+            "“Even if” = ngay cả nếu (giả định); ở đây là sự thật hiển nhiên.",
+            "“As though” = như thể là; sai nghĩa.",
+            "“However” là trạng từ nối, không dùng để nối mệnh đề phụ.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp02-q18",
+          "number": 18,
+          "prompt": "American actress and director Margaret Webster ___ for her production of Shakespearean plays.",
+          "options": [
+            "who became famous",
+            "famous as she became",
+            "becoming famous",
+            "became famous"
+          ],
+          "answer": 3,
+          "explanation": "Câu cần động từ chính ở thì quá khứ đơn cho chủ ngữ “Margaret Webster”: “became famous”.",
+          "optionNotes": [
+            "“who became famous” là mệnh đề quan hệ, câu vẫn thiếu động từ chính.",
+            "“famous as she became” sai trật tự và không có động từ chính cho chủ ngữ.",
+            "“becoming famous” là V-ing, không phải động từ chính.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp02-q19",
+          "number": 19,
+          "prompt": "Tulips, ___ into Holland in 1954, were quickly and highly valued and soon became the object of wild financial speculation in Europe.",
+          "options": [
+            "which introduced",
+            "that they were introduced",
+            "which introduced them",
+            "introduced"
+          ],
+          "answer": 3,
+          "explanation": "Rút gọn mệnh đề quan hệ bị động: “which were introduced into Holland” → “introduced into Holland” (hoa tulip được đưa vào Hà Lan). Động từ chính là “were… valued”.",
+          "optionNotes": [
+            "“which introduced” là chủ động, sai nghĩa (hoa không tự đưa vào).",
+            "“that they were introduced” thừa chủ ngữ “they”, và không dùng “that” sau dấu phẩy.",
+            "“which introduced them” là chủ động và thừa tân ngữ.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp02-q20",
+          "number": 20,
+          "prompt": "Stevenson is an architect ___ designs have won international praise.",
+          "options": [
+            "who",
+            "whom",
+            "of whom",
+            "whose"
+          ],
+          "answer": 3,
+          "explanation": "“whose” chỉ sở hữu, đứng trước danh từ: “an architect whose designs…” = kiến trúc sư có những thiết kế…",
+          "optionNotes": [
+            "“who” là chủ ngữ, nhưng “designs” cần một đại từ chỉ sở hữu đứng trước.",
+            "“whom” là tân ngữ, không hợp với vị trí này.",
+            "“of whom” không đi trực tiếp trước chủ ngữ “designs” trong cấu trúc này.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp02-q21",
+          "number": 21,
+          "prompt": "Our feeling for beauty is inspired by the harmonious arrangement of order and disorder as ___ occurs in nature.",
+          "options": [
+            "it is",
+            "there",
+            "there is",
+            "it"
+          ],
+          "answer": 3,
+          "explanation": "“as it occurs in nature” = như nó xảy ra trong tự nhiên: “as” là liên từ chỉ cách thức, cần chủ ngữ “it” cho động từ “occurs”.",
+          "optionNotes": [
+            "“it is occurs” thừa “is”, hai động từ liền nhau.",
+            "“there occurs” không dùng được trong ngữ cảnh này (there + động từ phải có “is/are”).",
+            "“there is occurs” thừa động từ.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp02-q22",
+          "number": 22,
+          "prompt": "Today ___ the single largest organized industry in India.",
+          "options": [
+            "the cotton textile industry is",
+            "it is the cotton textile industry",
+            "the cotton textile industry",
+            "there is the cotton textile industry"
+          ],
+          "answer": 0,
+          "explanation": "Cần mệnh đề đầy đủ: chủ ngữ “the cotton textile industry” + động từ “is” + bổ ngữ “the single largest organized industry in India”.",
+          "optionNotes": [
+            "",
+            "“it is” thừa chủ ngữ vì đã có “the cotton textile industry”.",
+            "Thiếu động từ “is” nên không thành câu.",
+            "“there is” + danh từ xác định (the…) không đúng cấu trúc."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp02-q23",
+          "number": 23,
+          "prompt": "North Carolina ___ because of its production of tar, turpentine, and pitch.",
+          "options": [
+            "called the Tar Heel State",
+            "it is called the Tar Heel State",
+            "which the Tar Heel State is called",
+            "is called the Tar Heel State"
+          ],
+          "answer": 3,
+          "explanation": "Câu cần động từ chính cho chủ ngữ “North Carolina”: “is called the Tar Heel State” (được gọi là Bang Tar Heel).",
+          "optionNotes": [
+            "“called” chỉ là phân từ, không phải động từ chính (câu thiếu động từ).",
+            "“it is called” thừa chủ ngữ “it”.",
+            "“which the Tar Heel State is called” tạo mệnh đề quan hệ sai và không có động từ chính.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp02-q24",
+          "number": 24,
+          "prompt": "Marco Polo, ___ traveled to the Orient with his father and uncle, wrote a book about his travels.",
+          "options": [
+            "he",
+            "who",
+            "that",
+            "whom"
+          ],
+          "answer": 1,
+          "explanation": "Mệnh đề quan hệ không xác định (có dấu phẩy) cho người, làm chủ ngữ của “traveled”: dùng “who”.",
+          "optionNotes": [
+            "“he” là đại từ nhân xưng, không nối được mệnh đề.",
+            "",
+            "“that” không dùng trong mệnh đề quan hệ không xác định (sau dấu phẩy).",
+            "“whom” là tân ngữ, nhưng ở đây cần chủ ngữ của “traveled”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp02-q25",
+          "number": 25,
+          "prompt": "Early settlers in America believed that an over-supply of blood ___ some diseases.",
+          "options": [
+            "cause",
+            "it caused",
+            "caused",
+            "causing"
+          ],
+          "answer": 2,
+          "explanation": "Mệnh đề sau “believed that” cần động từ chia ở quá khứ cho chủ ngữ “an over-supply of blood”: “caused”.",
+          "optionNotes": [
+            "“cause” không chia theo chủ ngữ số ít và sai thì quá khứ so với “believed”.",
+            "“it caused” thừa chủ ngữ “it”.",
+            "",
+            "“causing” là V-ing, không phải động từ chính."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp02-q26",
+          "number": 26,
+          "prompt": "___, which had been brought to Europe from China in the 15th Century, helped seamen to navigate.",
+          "options": [
+            "The compass",
+            "It is the compass",
+            "With the compass",
+            "That the compass"
+          ],
+          "answer": 0,
+          "explanation": "Cần chủ ngữ cho động từ “helped”; mệnh đề “which had been brought…” bổ nghĩa cho danh từ: “The compass, which…, helped seamen…”.",
+          "optionNotes": [
+            "",
+            "“It is the compass” thêm động từ “is” nên có hai động từ chính, thiếu liên từ.",
+            "“With the compass” là cụm giới từ, không làm chủ ngữ cho “helped”.",
+            "“That the compass” tạo mệnh đề danh từ nhưng thiếu động từ."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp02-q27",
+          "number": 27,
+          "prompt": "The people ___ the kidnapping have demanded a million dollars in small bills.",
+          "options": [
+            "responsible for",
+            "that responsible for",
+            "are responsible for",
+            "who responsible for"
+          ],
+          "answer": 0,
+          "explanation": "Cụm tính từ “responsible for the kidnapping” bổ nghĩa cho “The people” (rút gọn của “who are responsible for”). Động từ chính của câu là “have demanded”.",
+          "optionNotes": [
+            "",
+            "“that responsible for” thiếu động từ “are” sau “that”.",
+            "“are responsible for” là động từ chia, tạo ra hai động từ chính liền nhau.",
+            "“who responsible for” thiếu động từ “are” sau “who”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp02-q28",
+          "number": 28,
+          "prompt": "Sea foods ___ higher in sodium than fish from fresh water.",
+          "options": [
+            "are",
+            "which are",
+            "that are",
+            "they are"
+          ],
+          "answer": 0,
+          "explanation": "Câu cần động từ chính cho chủ ngữ số nhiều “Sea foods”: “are higher in sodium than…”.",
+          "optionNotes": [
+            "",
+            "“which are” tạo mệnh đề quan hệ nên câu thiếu động từ chính.",
+            "“that are” tạo mệnh đề quan hệ nên câu thiếu động từ chính.",
+            "“they are” thừa chủ ngữ."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp02-q29",
+          "number": 29,
+          "prompt": "The elevators may not be working, ___ you must use the stairs.",
+          "options": [
+            "in which",
+            "that",
+            "in which case",
+            "in that case"
+          ],
+          "answer": 2,
+          "explanation": "“in which case” = trong trường hợp đó (đại từ quan hệ nối hai vế): thang máy có thể hỏng, nếu vậy thì phải đi cầu thang bộ.",
+          "optionNotes": [
+            "“in which” thiếu danh từ “case” nên không hợp nghĩa.",
+            "“that” không dùng sau dấu phẩy để nối hai mệnh đề độc lập.",
+            "",
+            "“in that case” là cụm trạng từ, không có chức năng nối hai mệnh đề bằng dấu phẩy."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp02-q30",
+          "number": 30,
+          "prompt": "Have you ever lived in a country ___ you couldn't speak the language?",
+          "options": [
+            "that",
+            "where",
+            "which",
+            "in where"
+          ],
+          "answer": 1,
+          "explanation": "“where” thay cho “in which” để chỉ nơi chốn (a country); sau “where” là một mệnh đề đầy đủ “you couldn't speak the language”.",
+          "optionNotes": [
+            "“that” cần làm chủ ngữ hoặc tân ngữ trong mệnh đề, nhưng mệnh đề sau đã đủ thành phần.",
+            "",
+            "“which” cần làm chủ ngữ hoặc tân ngữ, mà mệnh đề đã đủ thành phần.",
+            "“in where” thừa giới từ “in”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp02-q31",
+          "number": 31,
+          "prompt": "Crop rotation ___ of preserving soil fertility.",
+          "options": [
+            "it is one method",
+            "one method",
+            "a method is one",
+            "is one method"
+          ],
+          "answer": 3,
+          "explanation": "Câu cần động từ chính cho chủ ngữ “Crop rotation”: “is one method of preserving soil fertility”.",
+          "optionNotes": [
+            "“it is” thừa chủ ngữ.",
+            "Thiếu động từ chính.",
+            "“a method is one” có thêm chủ ngữ và sai cấu trúc.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp02-q32",
+          "number": 32,
+          "prompt": "Sweating increases ___ vigorous exercise or hot weather.",
+          "options": [
+            "during",
+            "when",
+            "at the time",
+            "for"
+          ],
+          "answer": 0,
+          "explanation": "“during” là giới từ chỉ thời gian đi với danh từ: “during vigorous exercise or hot weather” = trong khi tập luyện mạnh hoặc thời tiết nóng.",
+          "optionNotes": [
+            "",
+            "“when” cần một mệnh đề (chủ ngữ + động từ), mà ở đây chỉ có danh từ.",
+            "“at the time” không đứng trực tiếp trước danh từ như vậy.",
+            "“for” không hợp nghĩa (chỉ mục đích hoặc khoảng thời gian cụ thể)."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp02-q33",
+          "number": 33,
+          "prompt": "There is no doubt that Beethoven belongs to the constructive type of composers, for we have the notebooks ___ he put the themes down.",
+          "options": [
+            "that",
+            "in that",
+            "which",
+            "in which"
+          ],
+          "answer": 3,
+          "explanation": "“in which” = trong đó: “the notebooks in which he put the themes down” (những cuốn sổ mà trong đó ông ghi các chủ đề âm nhạc). Giới từ “in” cần thiết vì “put down” không có tân ngữ giới từ.",
+          "optionNotes": [
+            "“that” làm đại từ quan hệ cần thay cho tân ngữ hoặc chủ ngữ, nhưng “he put the themes down” đã đủ tân ngữ.",
+            "“in that” = bởi vì; sai nghĩa.",
+            "“which” không có giới từ “in” nên không chỉ nơi chốn ghi chép.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp02-q34",
+          "number": 34,
+          "prompt": "The manager, ___ his factory's products were poor in quality, decided to give his workers further training.",
+          "options": [
+            "knowing",
+            "known",
+            "to know",
+            "knew"
+          ],
+          "answer": 0,
+          "explanation": "Cụm phân từ chủ động “knowing (that)…” diễn đạt lý do: vì biết sản phẩm kém chất lượng nên người quản lý quyết định đào tạo thêm. Động từ chính là “decided”.",
+          "optionNotes": [
+            "",
+            "“known” là bị động, sai nghĩa (người quản lý không bị biết).",
+            "“to know” mang nghĩa mục đích hoặc tương lai, không hợp nghĩa.",
+            "“knew” là động từ chia, câu sẽ có hai động từ chính, thiếu liên từ."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp02-q35",
+          "number": 35,
+          "prompt": "___ the twenty-five years of their marriage, the couple never argued.",
+          "options": [
+            "Since",
+            "Until",
+            "During",
+            "While"
+          ],
+          "answer": 2,
+          "explanation": "“During” + danh từ chỉ khoảng thời gian: “During the twenty-five years of their marriage”.",
+          "optionNotes": [
+            "“Since” chỉ mốc bắt đầu, không dùng với khoảng thời gian như thế này.",
+            "“Until” = cho đến khi; sai nghĩa.",
+            "",
+            "“While” cần một mệnh đề (chủ ngữ + động từ), không đi với cụm danh từ."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp02-q36",
+          "number": 36,
+          "prompt": "___ there was no electricity, I was able to read because I had a candle.",
+          "options": [
+            "Unless",
+            "Even though",
+            "Even",
+            "Only if"
+          ],
+          "answer": 1,
+          "explanation": "“Even though” = mặc dù: mặc dù không có điện, tôi vẫn đọc được vì có nến (tương phản).",
+          "optionNotes": [
+            "“Unless” = trừ khi; sai nghĩa.",
+            "",
+            "“Even” đứng một mình không phải liên từ (cần “Even though/if”).",
+            "“Only if” = chỉ khi; sai nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp02-q38",
+          "number": 38,
+          "prompt": "Jack insisted that he didn't need any help ___ I helped him anyway.",
+          "options": [
+            "and",
+            "besides",
+            "so",
+            "but"
+          ],
+          "answer": 3,
+          "explanation": "“but” = nhưng, nối hai ý tương phản: Jack khăng khăng không cần giúp, nhưng tôi vẫn giúp anh ấy (anyway = dù sao).",
+          "optionNotes": [
+            "“and” chỉ nối thêm, không diễn tả sự tương phản.",
+            "“besides” = ngoài ra, sai nghĩa.",
+            "“so” chỉ kết quả; vế sau không phải kết quả của việc không cần giúp.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp02-q39",
+          "number": 39,
+          "prompt": "Despite ___ very rich, Lan is often generous to the poor.",
+          "options": [
+            "she is not",
+            "not being",
+            "not to be",
+            "being"
+          ],
+          "answer": 1,
+          "explanation": "“Despite” là giới từ, phải đi với danh từ hoặc V-ing, và nghĩa nhượng bộ hợp lý nhất là “dù không giàu lắm, Lan vẫn hay rộng lượng với người nghèo”: “Despite not being very rich”.",
+          "optionNotes": [
+            "“she is not” là mệnh đề; “Despite” không đi với mệnh đề.",
+            "",
+            "“not to be” là to-V, không đi sau giới từ.",
+            "“being very rich” là ngữ pháp đúng, nhưng nghĩa nhượng bộ gượng (giàu mà rộng lượng thì không có gì trái ngược)."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp02-q40",
+          "number": 40,
+          "prompt": "Computers differ from human brains ___ computers can't think.",
+          "options": [
+            "in which",
+            "in that",
+            "because that",
+            "for that"
+          ],
+          "answer": 1,
+          "explanation": "“in that” = ở chỗ, ở điểm là: “differ from human brains in that computers can't think” (khác ở chỗ máy tính không thể suy nghĩ).",
+          "optionNotes": [
+            "“in which” cần danh từ đứng trước làm tiền ngữ, không hợp nghĩa ở đây.",
+            "",
+            "“because that” không phải liên từ hợp lệ.",
+            "“for that” không dùng để nối mệnh đề theo nghĩa này."
+          ]
+        }
+      ]
+    }
+  ]
+}

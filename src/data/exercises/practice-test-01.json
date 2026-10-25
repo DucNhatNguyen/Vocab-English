@@ -1,0 +1,830 @@
+{
+  "id": "practice-test-01",
+  "title": "Practice Test 1",
+  "kind": "practice-test",
+  "sourcePages": [2, 8],
+  "answerSource": "ai",
+  "omitted": ["Paper 3: Listening (câu 51–70, tài liệu không kèm audio)", "Paper 4: Speaking"],
+  "sections": [
+    {
+      "id": "pt01-p1a",
+      "title": "Paper 1 · Part A: Từ vựng",
+      "instruction": "Chọn từ hoặc cụm từ phù hợp nhất để hoàn thành mỗi câu.",
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt01-q1",
+          "number": 1,
+          "prompt": "We ___ the preparation for the party between us, so it wasn't too much work.",
+          "options": ["sorted", "divided", "chose", "shared"],
+          "answer": 1,
+          "explanation": "“divide something between us” = chia việc gì cho nhau làm. Vì chia việc nên mỗi người làm không nhiều (“it wasn't too much work”).",
+          "optionNotes": [
+            "sort = sắp xếp, phân loại; không mang nghĩa chia phần việc.",
+            "",
+            "choose = chọn; không hợp với “between us” và ý chia việc.",
+            "share thường đi với “share something with somebody”; đề kiểm tra cụm quen thuộc “divide something between”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q2",
+          "number": 2,
+          "prompt": "Many people wondered how he'd managed to ___ so much success at such a young age.",
+          "options": ["commit", "achieve", "assume", "reward"],
+          "answer": 1,
+          "explanation": "Cụm cố định “achieve success” = đạt được thành công.",
+          "optionNotes": [
+            "commit = phạm (lỗi, tội) hoặc cam kết; không đi với “success”.",
+            "",
+            "assume = cho rằng, đảm nhận; không đi với “success”.",
+            "reward = thưởng cho ai; không dùng với “success” làm tân ngữ."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q3",
+          "number": 3,
+          "prompt": "Everyone who runs a food business needs to manage food safety ___ to make sure that the food they serve or sell is safe to eat.",
+          "options": ["properly", "seriously", "honestly", "closely"],
+          "answer": 0,
+          "explanation": "“manage something properly” = quản lý đúng cách, bài bản, nhằm đảm bảo thực phẩm an toàn.",
+          "optionNotes": [
+            "",
+            "seriously = nghiêm túc; hay đi với “take something seriously”, không tự nhiên với “manage”.",
+            "honestly = trung thực; không hợp nghĩa quản lý an toàn thực phẩm.",
+            "closely = sát sao; hay đi với “monitor/watch closely” hơn là “manage”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q4",
+          "number": 4,
+          "prompt": "The babysitter tried to ___ the children by telling them some jokes.",
+          "options": ["scare", "amuse", "inspire", "thrill"],
+          "answer": 1,
+          "explanation": "amuse = làm cho ai vui, buồn cười. Kể chuyện cười (“telling them some jokes”) là để làm bọn trẻ vui.",
+          "optionNotes": [
+            "scare = làm sợ hãi; trái nghĩa với việc kể chuyện cười.",
+            "",
+            "inspire = truyền cảm hứng; không phải mục đích của chuyện cười.",
+            "thrill = làm phấn khích tột độ (thường do điều kịch tính); quá mạnh so với chuyện cười."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q5",
+          "number": 5,
+          "prompt": "I'm a bit ___ about the arrangements for tonight - what time are we meeting?",
+          "options": ["confused", "difficult", "troublesome", "mistaken"],
+          "answer": 0,
+          "explanation": "“be confused about something” = bối rối, chưa rõ về việc gì. Người nói hỏi lại giờ gặp vì chưa rõ kế hoạch.",
+          "optionNotes": [
+            "",
+            "difficult = khó; tả sự việc chứ không tả cảm giác của người nói.",
+            "troublesome = gây phiền toái; tả sự việc, không hợp với “I'm”.",
+            "mistaken = nhầm lẫn (đã hiểu sai); người nói chỉ chưa rõ chứ không khẳng định mình hiểu sai."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q6",
+          "number": 6,
+          "prompt": "You have no right to ___ other people because of what they look like or what they believe.",
+          "options": ["judge", "consider", "regard", "recognize"],
+          "answer": 0,
+          "explanation": "judge somebody = phán xét, đánh giá ai. Phán xét người khác qua vẻ ngoài hay niềm tin của họ là điều không nên.",
+          "optionNotes": [
+            "",
+            "consider = cân nhắc, xem xét; không mang nghĩa phán xét.",
+            "regard thường cần “as”: “regard somebody as…”, câu này thiếu phần đó.",
+            "recognize = nhận ra; không hợp nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q7",
+          "number": 7,
+          "prompt": "The ___ at the front desk asked me to have a seat until someone was free to see me.",
+          "options": ["guide", "usher", "receptionist", "attendant"],
+          "answer": 2,
+          "explanation": "receptionist = nhân viên lễ tân, người ngồi ở quầy lễ tân (“front desk”) đón khách.",
+          "optionNotes": [
+            "guide = hướng dẫn viên; không ngồi ở quầy lễ tân.",
+            "usher = người dẫn chỗ ngồi (rạp hát, lễ cưới).",
+            "",
+            "attendant = nhân viên phục vụ nói chung (tiếp viên, người trông bãi xe…); không gắn với “front desk”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q8",
+          "number": 8,
+          "prompt": "You are late again, please try to be ___ in the future.",
+          "options": ["accurate", "punctual", "efficient", "reliable"],
+          "answer": 1,
+          "explanation": "punctual = đúng giờ. Người nghe lại đến muộn nên được nhắc lần sau phải đúng giờ.",
+          "optionNotes": [
+            "accurate = chính xác (số liệu, thông tin); không nói về giờ giấc.",
+            "",
+            "efficient = hiệu quả; không liên quan việc đến muộn.",
+            "reliable = đáng tin cậy; nghĩa rộng, không trực tiếp nói về đúng giờ."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q9",
+          "number": 9,
+          "prompt": "I know Bob stole the money, but I can't ___ it because I didn't actually see him.",
+          "options": ["witness", "expose", "prove", "reveal"],
+          "answer": 2,
+          "explanation": "prove = chứng minh. Biết là Bob lấy tiền nhưng không tận mắt thấy nên không chứng minh được.",
+          "optionNotes": [
+            "witness = chứng kiến; câu đã nói rõ là không thấy (“didn't actually see him”).",
+            "expose = vạch trần; không gắn với lý do thiếu bằng chứng.",
+            "",
+            "reveal = tiết lộ; không hợp với lý do “didn't see him”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q10",
+          "number": 10,
+          "prompt": "Of course, Nick's ___ not to have been chosen for the school team.",
+          "options": ["nervous", "disappointed", "impatient", "embarrassed"],
+          "answer": 1,
+          "explanation": "“be disappointed (not) to do something” = thất vọng vì (không) được… Không được chọn vào đội thì thất vọng là tự nhiên (“Of course”).",
+          "optionNotes": [
+            "nervous = lo lắng; dùng trước sự việc sắp xảy ra, không phải kết quả đã có.",
+            "",
+            "impatient = sốt ruột; không hợp với việc đã không được chọn.",
+            "embarrassed = xấu hổ; ít tự nhiên hơn cảm giác thất vọng trong tình huống này."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt01-p1b-1",
+      "title": "Paper 1 · Part B: Đọc hiểu (đoạn 1)",
+      "instruction": "Đọc đoạn văn và chọn đáp án đúng nhất cho mỗi câu hỏi.",
+      "passage": {
+        "title": "The Origin of Jeans",
+        "text": "In 1853, the California gold rush was in full swing and everyday items were in short supply. Levi Strauss, a 24-year-old German immigrant, left New York for San Francisco with a small supply of dry goods with the intention of opening a branch of his brother's New York dry goods business. Shortly after his arrival, a prospector wanted to know what Mr. Strauss was selling. When Strauss told him he had rough canvas cloth used for tents and wagon covers, the prospector said, \"You should have brought trousers!\", because he couldn't find a pair of trousers strong enough to last.\n\nLevi Strauss had the canvas made into work trousers. Miners liked the trousers, but complained that the fabric was not very comfortable and tended to chafe. Levi Strauss substituted the canvas with a twilled cotton cloth from France called \"serge de Nimes.\" The fabric later became known as denim and the trousers were nicknamed blue jeans. Then Levi Strauss and Nevada tailor David Jacobs co-patented the process of putting small metal rivets in places such as the sides of the pockets that needed extra strength. On May 20, 1873, they received U.S. Patent No. 139,121. This date is now considered the official birthday of \"blue jeans.\"\n\nBut why were they called blue jeans? Denim is unique in its singular connection with one colour. It is made from thread that is traditionally dyed with blue pigment obtained from indigo dye. Indigo was linked with practical fabrics and work clothing. The durability of indigo as a colour and its darkness of tone made it a good choice when frequent washing was not possible."
+      },
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt01-q11",
+          "number": 11,
+          "prompt": "What is the purpose of this text?",
+          "options": ["To sell a product.", "To solve a problem.", "To argue a point.", "To inform."],
+          "answer": 3,
+          "explanation": "Bài kể lại nguồn gốc quần jeans bằng các mốc thời gian và sự kiện, mục đích là cung cấp thông tin.",
+          "optionNotes": [
+            "Bài không quảng cáo hay kêu gọi mua sản phẩm.",
+            "Bài không đưa ra vấn đề cần người đọc giải quyết.",
+            "Bài không tranh luận hay bảo vệ một quan điểm.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q12",
+          "number": 12,
+          "prompt": "What was Levi Strauss's intended job when he first came to San Francisco?",
+          "options": [
+            "He was a clothes designer.",
+            "He was a prospector.",
+            "He was selling textile and clothing.",
+            "He was selling tools for gold mining."
+          ],
+          "answer": 2,
+          "explanation": "Ông đến San Francisco “with the intention of opening a branch of his brother's New York dry goods business”. “Dry goods” là hàng vải vóc, quần áo.",
+          "optionNotes": [
+            "Lúc đầu ông chỉ định buôn bán; việc làm quần là ý tưởng nảy ra sau đó.",
+            "Người đi đào vàng (prospector) là khách hàng của ông, không phải ông.",
+            "",
+            "Bài không nhắc tới dụng cụ đào vàng."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q13",
+          "number": 13,
+          "prompt": "What problem did the prospector have?",
+          "options": [
+            "There were no trousers in California.",
+            "They did not like Levi's product.",
+            "Their clothes were not stylish.",
+            "Their clothes wore out quickly."
+          ],
+          "answer": 3,
+          "explanation": "Người đào vàng “couldn't find a pair of trousers strong enough to last”, tức quần áo của họ nhanh hỏng.",
+          "optionNotes": [
+            "Bài nói không có quần đủ bền, không phải không có quần.",
+            "Thợ mỏ thích quần của Levi (“Miners liked the trousers”).",
+            "Bài không nói gì về thời trang.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q14",
+          "number": 14,
+          "prompt": "Where did the word 'denim' come from?",
+          "options": [
+            "The name of a French fabric.",
+            "The indigo colour.",
+            "David Jacobs, the tailor, thought of it.",
+            "Levi Strauss invented it."
+          ],
+          "answer": 0,
+          "explanation": "Vải “serge de Nimes” từ Pháp “later became known as denim”, nên từ “denim” bắt nguồn từ tên một loại vải Pháp.",
+          "optionNotes": [
+            "",
+            "Màu chàm giải thích chữ “blue”, không phải chữ “denim”.",
+            "David Jacobs chỉ cùng đăng ký sáng chế đinh tán.",
+            "Levi Strauss không đặt ra từ này."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q15",
+          "number": 15,
+          "prompt": "Which of the following best describes indigo dye?",
+          "options": [
+            "A long-lasting, practical colour that did not show dirt.",
+            "A colour used on all kinds of fabric to make it stronger.",
+            "A very rare and desirable colour that was difficult to create.",
+            "An affordable dark colour that was only used by poor people."
+          ],
+          "answer": 0,
+          "explanation": "Bài nói màu chàm bền (“durability”), gắn với đồ thực dụng (“practical fabrics”), và màu tối nên hợp khi không giặt thường xuyên được, tức là khó thấy bẩn.",
+          "optionNotes": [
+            "",
+            "Màu chàm không làm vải bền hơn, và không dùng cho “mọi loại vải”.",
+            "Bài không nói màu chàm hiếm hay khó tạo.",
+            "Bài không nhắc tới giá rẻ hay người nghèo."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt01-p1b-2",
+      "title": "Paper 1 · Part B: Đọc hiểu (đoạn 2)",
+      "instruction": "Đọc đoạn văn và chọn đáp án đúng nhất cho mỗi câu hỏi.",
+      "passage": {
+        "title": "The Furby Fad",
+        "text": "The Furby, a five-inch-tall doll with bulging eyes and a round mouth, which had a great resemblance to the character from the movie \"Gremlins\", was a cute enough toy. But how did it become so very popular for a short time, causing a Furby fad?\n\nPart of the interest in the toy was because it displayed life-like qualities. It was interactive. In particular, it needed nurturing. The toy responded to light, sound and touch and had the ability to learn to speak English. Conversely, it could teach its owner how to speak Furbish, which was a mixture of several language sounds.\n\nHowever, most of its popularity was due to media exposure. The Furby was first demonstrated at the 1998 Toy Fair in New York City. The toy was subsequently mentioned in Time magazine and USA Today and on a number of early morning television shows. The Toy Fair took place in February, but the manufacturer, Tiger Electronics, had planned to release it in October. But because of the media exposure, toy stores began placing large orders for the toy as more and more parents began inquiring about its availability. By the time the toy was released in October, Tiger had already sold out the initial lot of 1.3 million units.\n\nThe Furby fad seemed to have been fuelled by the inability of parents to find the toy. When it was not available, everyone needed one. Yet, as soon as they became plentiful, interest in them evaporated."
+      },
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt01-q16",
+          "number": 16,
+          "prompt": "What is the writer doing in this text?",
+          "options": [
+            "Trying to show how toys are made.",
+            "Presenting the history of a movie character.",
+            "Trying to explain the success of a product.",
+            "Trying to protect shoppers."
+          ],
+          "answer": 2,
+          "explanation": "Câu hỏi mở bài “how did it become so very popular…?” cho thấy tác giả đang giải thích vì sao sản phẩm Furby thành công.",
+          "optionNotes": [
+            "Bài không mô tả cách sản xuất đồ chơi.",
+            "Nhân vật phim Gremlins chỉ được nhắc để so sánh ngoại hình.",
+            "",
+            "Bài không đưa lời khuyên hay cảnh báo cho người mua."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q17",
+          "number": 17,
+          "prompt": "What did people particularly like about the Furby?",
+          "options": [
+            "It resembled a movie character.",
+            "It could speak English.",
+            "It was extremely cute.",
+            "It seemed alive."
+          ],
+          "answer": 3,
+          "explanation": "“Part of the interest in the toy was because it displayed life-like qualities”: người ta thích Furby vì nó giống như có sự sống.",
+          "optionNotes": [
+            "Giống nhân vật phim chỉ là chi tiết mô tả, không phải lý do được yêu thích.",
+            "Biết nói tiếng Anh chỉ là một ví dụ của đặc điểm “life-like”, không phải ý chính.",
+            "Bài chỉ nói “cute enough”, tức là khá dễ thương, không phải “extremely cute”.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q18",
+          "number": 18,
+          "prompt": "\"media exposure\" most probably refers to the fact that",
+          "options": [
+            "the toy was endorsed by reporters.",
+            "the toy could be ordered via newspapers or television.",
+            "the toy was sold online.",
+            "people knew about the toy from the news or television."
+          ],
+          "answer": 3,
+          "explanation": "Ngay sau đó bài nói Furby được nhắc trên tạp chí Time, báo USA Today và các chương trình truyền hình. Đó là “media exposure”: công chúng biết đến sản phẩm qua báo đài.",
+          "optionNotes": [
+            "Được nhắc tới không có nghĩa là phóng viên quảng cáo hay bảo chứng cho sản phẩm.",
+            "Bài không nói có thể đặt mua qua báo hay TV.",
+            "Bài không nhắc tới bán hàng online.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q19",
+          "number": 19,
+          "prompt": "Why does the writer think Furby became a fad?",
+          "options": [
+            "It was a new idea.",
+            "It was not widely available on release.",
+            "It was well advertised.",
+            "It was affordable."
+          ],
+          "answer": 1,
+          "explanation": "“The Furby fad seemed to have been fuelled by the inability of parents to find the toy”: cơn sốt Furby đến từ việc khó mua được nó khi mới ra mắt.",
+          "optionNotes": [
+            "Bài không nói Furby là ý tưởng mới.",
+            "",
+            "Báo đài nhắc tới Furby là “media exposure”, không phải quảng cáo. Bài cho rằng nguyên nhân trực tiếp của cơn sốt là sự khan hàng.",
+            "Bài không nhắc tới giá."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q20",
+          "number": 20,
+          "prompt": "Which best describes the Furby toy?",
+          "options": [
+            "A cute, innovative toy that was extremely popular for a short time.",
+            "A strange-looking toy that was a huge hit with children despite the doubts of parents.",
+            "A toy that achieved unexplained and surprising popularity.",
+            "A modern toy that interacts with children and deserves more popularity that it was."
+          ],
+          "answer": 0,
+          "explanation": "Furby dễ thương (“cute enough”), có nhiều tính năng mới lạ (tương tác, học nói), và chỉ nổi tiếng trong thời gian ngắn (“popular for a short time”, “interest… evaporated”).",
+          "optionNotes": [
+            "",
+            "Chính phụ huynh là người đổ xô đi tìm mua, không hề nghi ngờ món đồ chơi.",
+            "Bài đã giải thích lý do Furby nổi tiếng, nên không thể gọi là “unexplained”.",
+            "Bài không cho rằng Furby xứng đáng được yêu thích hơn."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt01-p2a",
+      "title": "Paper 2 · Part A: Hoàn thành câu",
+      "instruction": "Chọn từ hoặc cụm từ phù hợp nhất để hoàn thành mỗi câu.",
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt01-q21",
+          "number": 21,
+          "prompt": "Darwin had just stopped to look at his map ___ he noticed a huge bear coming his way.",
+          "options": ["when", "until", "because", "although"],
+          "answer": 0,
+          "explanation": "Cấu trúc “had just done… when…” = vừa mới làm gì thì một việc khác xảy ra.",
+          "optionNotes": [
+            "",
+            "until = cho đến khi; không hợp với “had just stopped”.",
+            "because = vì; việc thấy con gấu không phải lý do dừng lại xem bản đồ.",
+            "although = mặc dù; hai vế không đối lập nhau."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q22",
+          "number": 22,
+          "prompt": "You shouldn't go scuba diving ___ you've been properly trained.",
+          "options": ["provided", "supposing", "unless", "in case"],
+          "answer": 2,
+          "explanation": "unless = trừ khi (if… not): không nên lặn biển trừ khi đã được huấn luyện bài bản.",
+          "optionNotes": [
+            "provided = miễn là; ghép vào thành “không nên lặn nếu đã được huấn luyện”, sai logic.",
+            "supposing = giả sử; không hợp với lời khuyên.",
+            "",
+            "in case = phòng khi; không hợp nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q23",
+          "number": 23,
+          "prompt": "We got our car ___ a week ago.",
+          "options": ["wash", "to wash", "washing", "washed"],
+          "answer": 3,
+          "explanation": "Thể nhờ bảo: “get something + V3/V-ed” = nhờ người khác làm gì cho mình. “got our car washed” = đem xe đi rửa.",
+          "optionNotes": [
+            "“get + vật + V nguyên mẫu” không đúng cấu trúc.",
+            "“get somebody to do something” dùng với tân ngữ chỉ người, không dùng với “our car”.",
+            "“get something doing” = làm cho vật bắt đầu hoạt động; không hợp nghĩa.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q24",
+          "number": 24,
+          "prompt": "- \"What was life like in the camp?\"\n- \"They made us ___ 16 hours a day.\"",
+          "options": ["working", "worked", "to work", "work"],
+          "answer": 3,
+          "explanation": "“make somebody do something” (dạng chủ động): bắt ai làm gì, động từ sau tân ngữ ở dạng nguyên mẫu không “to”.",
+          "optionNotes": [
+            "Không dùng “make + O + V-ing”.",
+            "Không dùng “make + O + V-ed” trong nghĩa bắt ai làm gì.",
+            "“to work” chỉ dùng ở dạng bị động: “We were made to work”.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q25",
+          "number": 25,
+          "prompt": "You really need to be interested in what you are learning, ___ you won't get any results.",
+          "options": ["yet", "for", "or", "and"],
+          "answer": 2,
+          "explanation": "or = nếu không thì (otherwise): phải thật sự hứng thú, nếu không thì sẽ chẳng có kết quả.",
+          "optionNotes": [
+            "yet = nhưng; hai vế không đối lập.",
+            "for = vì; vế sau không phải lý do của vế trước.",
+            "",
+            "and = và; ghép vào thành “hứng thú thì sẽ không có kết quả”, sai logic."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q26",
+          "number": 26,
+          "prompt": "You can use my computer ___ you don't read my e-mail!",
+          "options": ["as much as", "unless", "as long as", "even if"],
+          "answer": 2,
+          "explanation": "as long as = miễn là (điều kiện): được dùng máy tính với điều kiện không đọc email của tôi.",
+          "optionNotes": [
+            "as much as = nhiều như; không diễn tả điều kiện.",
+            "unless = trừ khi; ghép với “don't” thành nghĩa “được dùng nếu đọc email”, sai ý.",
+            "",
+            "even if = ngay cả khi; không phải điều kiện cho phép."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q27",
+          "number": 27,
+          "prompt": "Brand didn't complete the project, ___ did he explain the delay.",
+          "options": ["nor", "not", "not even", "neither"],
+          "answer": 0,
+          "explanation": "Sau một vế phủ định, dùng “nor + trợ động từ + chủ ngữ” (đảo ngữ) = và cũng không. “nor did he explain” = và anh ta cũng không giải thích.",
+          "optionNotes": [
+            "",
+            "“not” không đứng đầu một mệnh đề đảo ngữ như vậy.",
+            "“not even” không dùng kèm đảo ngữ “did he” ở đây.",
+            "“neither” là trạng từ, không nối được hai mệnh đề sau dấu phẩy; cần “and neither did he”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q28",
+          "number": 28,
+          "prompt": "Although they spent a lot of money on the film, ___ wasn't a big success.",
+          "options": ["but it", "it", "however, it", "nevertheless"],
+          "answer": 1,
+          "explanation": "Câu đã có “Although” nên vế sau không dùng thêm từ nối đối lập; chỉ cần chủ ngữ “it”.",
+          "optionNotes": [
+            "Không dùng “although” và “but” trong cùng một câu.",
+            "",
+            "“however” cũng là từ nối đối lập, bị thừa khi đã có “although”.",
+            "Thiếu chủ ngữ, và “nevertheless” cũng bị thừa khi đã có “although”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q29",
+          "number": 29,
+          "prompt": "The doctors know that it is very difficult to save their patient's life, ___ they will try their best.",
+          "options": ["but", "although", "despite", "however"],
+          "answer": 0,
+          "explanation": "but = nhưng: nối hai mệnh đề đối lập (biết là khó, nhưng vẫn cố hết sức).",
+          "optionNotes": [
+            "",
+            "although đặt trước vế nhượng bộ (“khó”); đặt ở đây thành nghĩa ngược.",
+            "despite phải đi với danh từ hoặc V-ing, không đi với mệnh đề.",
+            "however sau dấu phẩy cần dấu chấm phẩy (; however,); không nối trực tiếp như liên từ."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q30",
+          "number": 30,
+          "prompt": "What are you complaining about? It's so easy that ___ a baby can do it.",
+          "options": ["even", "even if", "even though", "even that"],
+          "answer": 0,
+          "explanation": "even (trạng từ) = ngay cả, thậm chí, đứng trước danh từ để nhấn mạnh: “even a baby can do it” = đến em bé cũng làm được.",
+          "optionNotes": [
+            "",
+            "even if = ngay cả khi; phải đi với một mệnh đề điều kiện.",
+            "even though = mặc dù; phải đi với một mệnh đề nhượng bộ.",
+            "“even that” không phải cấu trúc đúng."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q31",
+          "number": 31,
+          "prompt": "The manager, ___ his factory's products were poor in quality, decided to give his workers further training.",
+          "options": ["knowing", "known", "to know", "knew"],
+          "answer": 0,
+          "explanation": "Rút gọn mệnh đề chủ động bằng V-ing: “The manager, knowing (= who knew)…” Ông quản lý biết sản phẩm kém chất lượng nên quyết định đào tạo thêm.",
+          "optionNotes": [
+            "",
+            "“known” mang nghĩa bị động (được biết), không hợp với chủ ngữ “the manager”.",
+            "“to know” không dùng để rút gọn mệnh đề quan hệ trong trường hợp này.",
+            "“knew” làm câu có hai động từ chính, sai ngữ pháp."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q32",
+          "number": 32,
+          "prompt": "Kitty must have missed the bus; ___ she would be in class by now.",
+          "options": ["otherwise", "however", "and", "yet"],
+          "answer": 0,
+          "explanation": "otherwise = nếu không thì: chắc Kitty đã lỡ xe buýt, nếu không thì giờ này cô ấy đã ở trong lớp rồi.",
+          "optionNotes": [
+            "",
+            "however = tuy nhiên; hai vế không đối lập.",
+            "and = và; không diễn tả được giả định ngược lại.",
+            "yet = nhưng; không hợp nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q33",
+          "number": 33,
+          "prompt": "No one will deny that many of the programmes ___ on television are very poor.",
+          "options": ["shown", "showing", "shows", "to show"],
+          "answer": 0,
+          "explanation": "Rút gọn mệnh đề quan hệ bị động bằng V3: “the programmes shown (= which are shown) on television” = các chương trình được chiếu trên TV.",
+          "optionNotes": [
+            "",
+            "“showing” mang nghĩa chủ động; chương trình không tự chiếu.",
+            "“shows” làm câu có hai động từ chính, sai ngữ pháp.",
+            "“to show” mang nghĩa “để chiếu” hoặc “sắp chiếu”; không hợp nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q34",
+          "number": 34,
+          "prompt": "Owls can hunt in total darkness ___ their remarkably keen sense of smell.",
+          "options": ["since", "because of", "in which", "that"],
+          "answer": 1,
+          "explanation": "Theo sau chỗ trống là cụm danh từ (“their… sense of smell”), nên dùng giới từ “because of” = vì, nhờ.",
+          "optionNotes": [
+            "since (= vì) là liên từ, phải đi với mệnh đề.",
+            "",
+            "“in which” dẫn một mệnh đề quan hệ; không hợp cấu trúc.",
+            "“that” cần một mệnh đề theo sau."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q35",
+          "number": 35,
+          "prompt": "The man ___ by the dustbin stopped us and asked us for some money.",
+          "options": ["stands", "stood", "standing", "was standing"],
+          "answer": 2,
+          "explanation": "Rút gọn mệnh đề quan hệ chủ động bằng V-ing: “The man standing (= who was standing) by the dustbin…” Động từ chính của câu là “stopped”.",
+          "optionNotes": [
+            "“stands” làm câu có hai động từ chính, sai ngữ pháp.",
+            "“stood” cũng thành động từ chính thứ hai, sai ngữ pháp.",
+            "",
+            "“was standing” cần đại từ quan hệ “who” đứng trước."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt01-p2b",
+      "title": "Paper 2 · Part B: Điền từ vào đoạn văn",
+      "instruction": "Chọn từ phù hợp nhất cho mỗi chỗ trống được đánh số trong đoạn văn.",
+      "passage": {
+        "title": "The Escalator",
+        "text": "An American, Charles D. Seeberger, invented moving stairs to transport people in the 1890s. He {{36}} this invention an \"escalator\", {{37}} the name from the Latin word \"scala\", {{38}} means \"ladder\". Escalators move people up and down short {{39}}. Lifts do the same, but only move {{40}} small number of people. If an escalator breaks down, it can still be {{41}} as ordinary stairs. An escalator can move {{42}} 8,000 and 9,600 people {{43}} hour, and it does not need a person to operate it.\n\nTowards the end of the nineteenth century, cities were {{44}} more crowded and the first escalators were built at railway stations and in big department stores, {{45}} people could move about more quickly. Today we see escalators everywhere."
+      },
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt01-q36",
+          "number": 36,
+          "options": ["announced", "called", "translated", "explained"],
+          "answer": 1,
+          "explanation": "“call something + tên” = gọi cái gì là… “He called this invention an escalator.”",
+          "optionNotes": [
+            "announce = thông báo; không đi với cấu trúc “announce + vật + tên”.",
+            "",
+            "translate = dịch; không hợp nghĩa đặt tên.",
+            "explain = giải thích; không đi với cấu trúc “explain + vật + tên”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q37",
+          "number": 37,
+          "options": ["fetching", "lending", "taking", "carrying"],
+          "answer": 2,
+          "explanation": "“take the name from…” = lấy tên từ… Dạng V-ing (“taking”) rút gọn mệnh đề cùng chủ ngữ “He”.",
+          "optionNotes": [
+            "fetch = đi lấy, mang về (đồ vật); không dùng với tên gọi.",
+            "lend = cho mượn; sai nghĩa.",
+            "",
+            "carry = mang, vác; không dùng với tên gọi."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q38",
+          "number": 38,
+          "options": ["what", "whose", "who", "which"],
+          "answer": 3,
+          "explanation": "Đại từ quan hệ thay cho vật (“the Latin word scala”) sau dấu phẩy là “which”.",
+          "optionNotes": [
+            "“what” không làm đại từ quan hệ thay cho một danh từ đứng trước.",
+            "“whose” chỉ sở hữu, phải có danh từ theo sau.",
+            "“who” dùng cho người.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q39",
+          "number": 39,
+          "options": ["distances", "directions", "measurements", "lengths"],
+          "answer": 0,
+          "explanation": "“short distances” = những quãng đường ngắn. Thang cuốn đưa người lên xuống những đoạn ngắn.",
+          "optionNotes": [
+            "",
+            "direction = hướng; không đi với “short”.",
+            "measurement = số đo; không hợp nghĩa.",
+            "length = chiều dài; “short lengths” không dùng để chỉ quãng đường di chuyển."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q40",
+          "number": 40,
+          "options": ["the", "a", "some", "any"],
+          "answer": 1,
+          "explanation": "Cụm cố định “a small number of + danh từ số nhiều” = một số ít…",
+          "optionNotes": [
+            "“the small number of” chỉ một số lượng xác định; ở đây đang nói chung.",
+            "",
+            "“some small number of” không tự nhiên.",
+            "“any” dùng chủ yếu trong câu phủ định hoặc nghi vấn."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q41",
+          "number": 41,
+          "options": ["walked", "made", "used", "changed"],
+          "answer": 2,
+          "explanation": "“be used as something” = được dùng như… Khi hỏng, thang cuốn vẫn dùng như cầu thang bộ thường được.",
+          "optionNotes": [
+            "walk là nội động từ; không dùng “be walked as” với nghĩa này.",
+            "“be made as” không phải cấu trúc đúng; cần “be made into”.",
+            "",
+            "“be changed as” không phải cấu trúc đúng; cần “be changed into”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q42",
+          "number": 42,
+          "options": ["from", "between", "to", "above"],
+          "answer": 1,
+          "explanation": "“between A and B” = trong khoảng từ A đến B: “between 8,000 and 9,600 people”.",
+          "optionNotes": [
+            "“from” phải đi với “to” (from… to…), không đi với “and”.",
+            "",
+            "“to” không đứng trước cặp “8,000 and 9,600”.",
+            "“above” = trên; không đi với “and”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q43",
+          "number": 43,
+          "options": ["an", "a", "one", "the"],
+          "answer": 0,
+          "explanation": "“per hour” có thể nói là “an hour” (mỗi giờ). “hour” có âm h câm, bắt đầu bằng nguyên âm /aʊ/, nên dùng “an”.",
+          "optionNotes": [
+            "",
+            "“a” đứng trước phụ âm; “hour” bắt đầu bằng nguyên âm.",
+            "“one hour” nhấn mạnh số lượng (một giờ); câu này cần nghĩa “mỗi giờ”.",
+            "“the hour” không mang nghĩa “mỗi giờ”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q44",
+          "number": 44,
+          "options": ["appearing", "becoming", "continuing", "developing"],
+          "answer": 1,
+          "explanation": "“become + tính từ”: “were becoming more crowded” = ngày càng đông đúc hơn.",
+          "optionNotes": [
+            "“appearing more crowded” = trông có vẻ đông hơn; sai ý.",
+            "",
+            "continue không đi trực tiếp với tính từ.",
+            "develop không đi trực tiếp với tính từ."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt01-q45",
+          "number": 45,
+          "options": ["although", "because", "unless", "so that"],
+          "answer": 3,
+          "explanation": "so that = để mà (chỉ mục đích): thang cuốn được xây để mọi người đi lại nhanh hơn.",
+          "optionNotes": [
+            "although = mặc dù; hai vế không đối lập.",
+            "because = vì; việc đi lại nhanh hơn là mục đích, không phải nguyên nhân.",
+            "unless = trừ khi; sai nghĩa.",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt01-p2c",
+      "title": "Paper 2 · Part C: Viết lại câu",
+      "instruction": "Hoàn thành câu thứ hai sao cho nghĩa không đổi so với câu gốc.",
+      "questions": [
+        {
+          "type": "rewrite",
+          "id": "pt01-q46",
+          "number": 46,
+          "original": "Although the weather was good, we stayed indoors.",
+          "prefix": "Despite",
+          "answers": [
+            "the good weather, we stayed indoors.",
+            "the weather being good, we stayed indoors.",
+            "the fact that the weather was good, we stayed indoors."
+          ],
+          "explanation": "Although + mệnh đề → Despite + danh từ / V-ing / the fact that + mệnh đề. “the weather was good” chuyển thành cụm danh từ “the good weather”."
+        },
+        {
+          "type": "rewrite",
+          "id": "pt01-q47",
+          "number": 47,
+          "original": "In spite of having an English name, he is in fact German.",
+          "prefix": "Although",
+          "answers": [
+            "he has an English name, he is in fact German.",
+            "he has an English name, he is German in fact."
+          ],
+          "explanation": "In spite of + V-ing → Although + mệnh đề. “having an English name” chuyển thành mệnh đề đầy đủ “he has an English name”, giữ thì hiện tại."
+        },
+        {
+          "type": "rewrite",
+          "id": "pt01-q48",
+          "number": 48,
+          "original": "I am not as good at football as he is.",
+          "prefix": "He is",
+          "answers": [
+            "better at football than I am.",
+            "better at football than me.",
+            "better at football than I."
+          ],
+          "explanation": "So sánh không bằng (not as… as) → so sánh hơn với chủ ngữ ngược lại: “good” → “better… than”."
+        },
+        {
+          "type": "rewrite",
+          "id": "pt01-q49",
+          "number": 49,
+          "original": "He isn't old enough to vote.",
+          "prefix": "He is too",
+          "answers": ["young to vote."],
+          "explanation": "not + tính từ + enough to V → too + tính từ trái nghĩa + to V. “not old enough” = “too young”."
+        },
+        {
+          "type": "rewrite",
+          "id": "pt01-q50",
+          "number": 50,
+          "original": "It is impossible to learn a foreign language in a week.",
+          "prefix": "Learning",
+          "answers": ["a foreign language in a week is impossible."],
+          "explanation": "It is + tính từ + to V → V-ing (danh động từ làm chủ ngữ) + is + tính từ."
+        }
+      ]
+    }
+  ]
+}

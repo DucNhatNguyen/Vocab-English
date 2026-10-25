@@ -1,0 +1,1019 @@
+{
+  "id": "practice-test-09",
+  "title": "Practice Test 9",
+  "kind": "practice-test",
+  "sourcePages": [
+    56,
+    60
+  ],
+  "answerSource": "ai",
+  "omitted": [
+    "Paper 4: Speaking (đề này không có Paper 3 Listening)"
+  ],
+  "sections": [
+    {
+      "id": "pt09-p1a",
+      "title": "Paper 1 · Part A: Từ vựng",
+      "instruction": "Chọn từ hoặc cụm từ phù hợp nhất để hoàn thành mỗi câu.",
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt09-q1",
+          "number": 1,
+          "prompt": "During the ___, homeowners were forbidden to water their gardens with a hose.",
+          "options": [
+            "drought",
+            "drizzle",
+            "current",
+            "tornado"
+          ],
+          "answer": 0,
+          "explanation": "drought = hạn hán. Khi hạn hán, thiếu nước nên người dân bị cấm tưới vườn bằng vòi.",
+          "optionNotes": [
+            "",
+            "drizzle = mưa phùn; mưa thì không cần cấm tưới vườn.",
+            "current = dòng chảy, hiện tại; không chỉ một hiện tượng thời tiết gây cấm nước.",
+            "tornado = lốc xoáy; không liên quan đến việc cấm dùng nước."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q2",
+          "number": 2,
+          "prompt": "___ class allows students to acquire knowledge about living things.",
+          "options": [
+            "Geography",
+            "Geology",
+            "Biology",
+            "History"
+          ],
+          "answer": 2,
+          "explanation": "Biology = sinh học, môn học về sinh vật (“living things”).",
+          "optionNotes": [
+            "Geography = địa lý; nói về địa hình, quốc gia, không phải sinh vật.",
+            "Geology = địa chất học; nghiên cứu đất đá.",
+            "",
+            "History = lịch sử; nói về các sự kiện trong quá khứ."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q3",
+          "number": 3,
+          "prompt": "If we don't leave ___, we'll be late for the movie.",
+          "options": [
+            "swiftly",
+            "rapidly",
+            "firstly",
+            "immediately"
+          ],
+          "answer": 3,
+          "explanation": "immediately = ngay lập tức. “If we don’t leave immediately” = nếu chúng ta không đi ngay.",
+          "optionNotes": [
+            "swiftly = nhanh (về tốc độ chuyển động); không dùng để chỉ thời điểm “ngay bây giờ”.",
+            "rapidly = nhanh chóng (tốc độ); không chỉ thời điểm “ngay bây giờ”.",
+            "firstly = thứ nhất; dùng để liệt kê ý.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q4",
+          "number": 4,
+          "prompt": "He concocted a bad tasting drink by ___ milk and apple juice.",
+          "options": [
+            "mixing",
+            "mingling",
+            "pouring",
+            "merging"
+          ],
+          "answer": 0,
+          "explanation": "mix A and B = trộn A với B. Anh ta pha chế ra một thứ đồ uống dở bằng cách trộn sữa với nước táo.",
+          "optionNotes": [
+            "",
+            "mingle = hòa lẫn (thường nói về người trong đám đông hoặc âm thanh, mùi), ít dùng với chất lỏng pha chế.",
+            "pour = rót; “pouring milk and apple juice” không nói được việc pha trộn.",
+            "merge = sáp nhập, hợp nhất (công ty, con đường); không dùng cho pha đồ uống."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q5",
+          "number": 5,
+          "prompt": "I was so ___ in today's physics lesson. I didn't understand anything.",
+          "options": [
+            "curious",
+            "troublesome",
+            "attentive",
+            "confused"
+          ],
+          "answer": 3,
+          "explanation": "confused = bối rối, không hiểu gì. Phù hợp với vế sau “I didn’t understand anything”.",
+          "optionNotes": [
+            "curious = tò mò; không hợp với việc chẳng hiểu gì.",
+            "troublesome = gây rắc rối (tả sự việc/người), không tả cảm giác của người nói.",
+            "attentive = chăm chú; nếu chú ý thì đã hiểu, mâu thuẫn với vế sau.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q6",
+          "number": 6,
+          "prompt": "She was going to ___ for a new job, but in the end she changed her mind.",
+          "options": [
+            "apply",
+            "approve",
+            "approach",
+            "allow"
+          ],
+          "answer": 0,
+          "explanation": "“apply for a job” = nộp đơn xin việc. Cụm cố định với giới từ “for”.",
+          "optionNotes": [
+            "",
+            "approve = chấp thuận; không đi với “for a job”.",
+            "approach = tiếp cận; là ngoại động từ, không đi với “for”.",
+            "allow = cho phép; không đi với “for a job”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q7",
+          "number": 7,
+          "prompt": "The new road currently under ___ will solve the traffic problems in the town.",
+          "options": [
+            "design",
+            "progress",
+            "construction",
+            "work"
+          ],
+          "answer": 2,
+          "explanation": "“under construction” = đang được xây dựng. Cụm cố định.",
+          "optionNotes": [
+            "“under design” không phải cụm cố định (thường nói “in design”).",
+            "“in progress” mới là cụm đúng (đang diễn ra), không phải “under progress”.",
+            "",
+            "“under work” không phải cụm cố định; phải là “at work” hoặc “work in progress”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q8",
+          "number": 8,
+          "prompt": "The coach treats him so unfairly that it's no ___ that he wants to play for another team.",
+          "options": [
+            "matter",
+            "trouble",
+            "wonder",
+            "problem"
+          ],
+          "answer": 2,
+          "explanation": "“it’s no wonder that…” = chẳng có gì lạ khi… HLV đối xử bất công nên cậu ấy muốn sang đội khác là điều dễ hiểu.",
+          "optionNotes": [
+            "“it’s no matter” không phải cấu trúc đúng; nói “it doesn’t matter”.",
+            "“it’s no trouble” = không phiền gì; sai nghĩa.",
+            "",
+            "“it’s no problem” = không vấn đề gì; sai nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q9",
+          "number": 9,
+          "prompt": "Terry has a bad ___ of always arriving late to class.",
+          "options": [
+            "routine",
+            "habit",
+            "activity",
+            "custom"
+          ],
+          "answer": 1,
+          "explanation": "“a bad habit of doing something” = thói quen xấu. Thói quen cá nhân luôn đến lớp muộn.",
+          "optionNotes": [
+            "routine = lịch sinh hoạt hằng ngày, không kèm “bad … of” để chỉ thói xấu.",
+            "",
+            "activity = hoạt động; không hợp nghĩa.",
+            "custom = phong tục của một xã hội; không dùng cho thói quen cá nhân."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q10",
+          "number": 10,
+          "prompt": "Susan Boyle looks very ___, but she has an amazing voice.",
+          "options": [
+            "pretty",
+            "medium",
+            "common",
+            "ordinary"
+          ],
+          "answer": 3,
+          "explanation": "ordinary = bình thường, không nổi bật. “but” báo hiệu sự tương phản: vẻ ngoài bình thường nhưng giọng hát tuyệt vời.",
+          "optionNotes": [
+            "pretty = xinh đẹp; không tạo sự tương phản với “amazing voice”.",
+            "medium = cỡ trung bình (kích cỡ); không dùng để tả ngoại hình người.",
+            "common = phổ biến, có thể mang nghĩa tầm thường (thô); không tự nhiên khi tả ngoại hình.",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt09-p1b-1",
+      "title": "Paper 1 · Part B: Đọc hiểu (đoạn 1)",
+      "instruction": "Đọc đoạn văn và chọn đáp án đúng nhất cho mỗi câu hỏi.",
+      "passage": {
+        "text": "Urban activist Alessandra Orofino's home city of Rio de Janeiro is one of the world's megacities. According to Orofino, people are becoming increasingly disconnected with the cities they live in. Election turnouts in cities around the world are falling. In Rio, for example, voting is required by law. However, in one election, nearly 30 percent of people did not vote, instead they stayed home and chose to pay a fine.\n\nOrofino also believes that cities cause us to be disconnected from one another. As new buildings are built, many public spaces disappear. Without these places, it's difficult for people to socialize, make friends, and form a close and happy community. Orofino believes that getting citizens to work together and be more involved with the running of their cities is hugely important. To this end, Orofino cofounded a group called Meu Rio. Meu Rio is an online network that makes it easier for Rio citizens to have their say about the running of the city. As part of the network, people receive news updates and are able to participate in important decisions about the future of their city.\n\nMeu Rio has been a huge success. More than 200,000 Rio citizens are now part of this online community. Orofino is hopeful that projects like hers will become common in cities around the world, and will start what she calls \"a participation revolution.\""
+      },
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt09-q11",
+          "number": 11,
+          "prompt": "What is the main purpose of the passage?",
+          "options": [
+            "To explain the benefits of living in cities",
+            "To highlight problems of cities and offer a possible solution",
+            "To show what Rio de Janeiro learned from other cities",
+            "To mention why people in cities chose not to vote"
+          ],
+          "answer": 1,
+          "explanation": "Bài nêu các vấn đề của đô thị (người dân xa cách thành phố, ít đi bầu, không gian công cộng biến mất) rồi giới thiệu giải pháp là mạng lưới Meu Rio.",
+          "optionNotes": [
+            "Bài nói về vấn đề của đô thị, không nói về lợi ích của việc sống ở đô thị.",
+            "",
+            "Bài không nói Rio học được gì từ các thành phố khác.",
+            "Việc không đi bầu chỉ là một ví dụ, không phải mục đích chính của cả bài."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q12",
+          "number": 12,
+          "prompt": "When new buildings are constructed in cities, ___.",
+          "options": [
+            "the citizens have the better chance to make online friends.",
+            "the citizens meet and talk to different people easily.",
+            "a close and happy community is created.",
+            "many places for the public are destroyed."
+          ],
+          "answer": 3,
+          "explanation": "Bài nói: “As new buildings are built, many public spaces disappear.” Nhiều không gian công cộng biến mất, tức là bị phá bỏ.",
+          "optionNotes": [
+            "Bài không nói xây nhà mới giúp kết bạn online.",
+            "Ngược lại, thiếu không gian chung nên khó gặp gỡ và giao lưu.",
+            "Bài nói khó hình thành cộng đồng gắn kết (“difficult… form a close and happy community”).",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q13",
+          "number": 13,
+          "prompt": "Why did Orofino start an organization?",
+          "options": [
+            "To help involve Rio citizens in the running of their city",
+            "To help Rio citizens understand the importance of voting",
+            "To help Rio citizens make their own decisions about the future of their city",
+            "To help Rio citizens perform better community service"
+          ],
+          "answer": 0,
+          "explanation": "Bài nói Orofino tin việc “getting citizens… more involved with the running of their cities” là rất quan trọng, “To this end” (vì mục đích đó) bà lập ra Meu Rio. Mục đích là giúp người dân tham gia vào việc điều hành thành phố.",
+          "optionNotes": [
+            "",
+            "Bài không nói Meu Rio dạy người dân về tầm quan trọng của việc bầu cử.",
+            "Tham gia quyết định chỉ là một hoạt động cụ thể trong mạng lưới; mục đích chung của tổ chức là tăng sự tham gia vào việc điều hành thành phố.",
+            "Bài không nhắc tới hoạt động phục vụ cộng đồng (community service)."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q14",
+          "number": 14,
+          "prompt": "The word \"turnouts\" in paragraph 1 is closest in meaning to ___.",
+          "options": [
+            "the numbers of people who go to an event",
+            "the numbers of people who participate in a project",
+            "the rates at which people leave an organization and are replaced by others",
+            "the rates at which people get fired"
+          ],
+          "answer": 0,
+          "explanation": "“election turnouts” = số người đến bỏ phiếu. Ý chung của “turnout” là số người đến tham dự một sự kiện.",
+          "optionNotes": [
+            "",
+            "Bầu cử là một sự kiện, không phải một dự án (project) cần người tham gia.",
+            "“turnover” mới là tỷ lệ nhân viên rời đi và được thay thế; “turnout” thì không.",
+            "Không liên quan đến sa thải; cũng không hợp với “election”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q15",
+          "number": 15,
+          "prompt": "According to the passage, which of the following is NOT correct?",
+          "options": [
+            "People in Rio de Janeiro are required to vote by law.",
+            "Members of Meu Rio receive new updates via the Internet.",
+            "In cities around the world, election turnouts are increasing.",
+            "Meu Rio has more than 200,000 members."
+          ],
+          "answer": 2,
+          "explanation": "Bài nói “Election turnouts in cities around the world are falling” (đang giảm), nên câu “are increasing” là sai.",
+          "optionNotes": [
+            "Đúng: “In Rio… voting is required by law.”",
+            "Đúng: Meu Rio là mạng trực tuyến, thành viên “receive news updates”.",
+            "",
+            "Đúng: “More than 200,000 Rio citizens are now part of this online community.”"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt09-p1b-2",
+      "title": "Paper 1 · Part B: Đọc hiểu (đoạn 2)",
+      "instruction": "Đọc đoạn văn và chọn đáp án đúng nhất cho mỗi câu hỏi.",
+      "passage": {
+        "text": "Do you find it difficult to tell how another person is feeling? Do you feel frustrated when other people don't realize what mood you're in? Technology now has the answer: clothing and jewelry with built-in sensors that show our feelings.\n\nOne idea is a dress that tracks your heart rate and monitors your stress level. Flashing blue lights on the dress start blinking rapidly when you feel stressed and more slowly when you feel relaxed. Designers have also come up with fabrics that change color according to your emotions. Joy, sadness, anger, and stress each have a different color.\n\nAnother idea is an undershirt that can transmit emotional data wirelessly to another person who can be some distance away. This undershirt has a sensor built into its sleeve. It measures your physical state and sends messages to the Internet. Those messages are then sent to another person who is wearing a necklace. The necklace lights up with different colors. This would be great for couples who want to stay in touch with their partners who may be far away, and also for parents who want to know how their children are feeling.\n\nEmotional awareness is an important part of how we build relationships with others. These are just some examples of how designers are coming up with creative and exciting new ideas to combine emotion and technology."
+      },
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt09-q16",
+          "number": 16,
+          "prompt": "What is NOT a function of a dress with built-in sensors?",
+          "options": [
+            "To keep track of your stress level",
+            "To record your heart rate",
+            "To help you feel relaxed",
+            "To help you know your emotions thanks to the change of the colors"
+          ],
+          "answer": 2,
+          "explanation": "Chiếc váy chỉ theo dõi nhịp tim và mức căng thẳng, và hiển thị bằng đèn hoặc đổi màu. Bài không nói nó giúp người mặc thư giãn.",
+          "optionNotes": [
+            "Đúng chức năng: váy “monitors your stress level”.",
+            "Đúng chức năng: váy “tracks your heart rate”.",
+            "",
+            "Đúng chức năng: vải đổi màu theo cảm xúc (“fabrics that change color according to your emotions”)."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q17",
+          "number": 17,
+          "prompt": "Which sentence would be the best ending for paragraph 2?",
+          "options": [
+            "Other people can tell right away whether it's a good idea to talk to you or not.",
+            "This could also be an important tool for nurses and caregivers.",
+            "They are visible reminders to exercise, take medications, or get a better night's sleep.",
+            "That's why we can communicate with people around us more easily."
+          ],
+          "answer": 0,
+          "explanation": "Đoạn 2 nói váy và vải đổi màu/ đèn nháy theo cảm xúc. Câu kết hợp lý là hệ quả: người khác nhìn màu sắc là biết ngay có nên nói chuyện với bạn hay không.",
+          "optionNotes": [
+            "",
+            "Bài không nói về y tá hay người chăm sóc; ý này lệch khỏi đoạn nói về váy cảm xúc.",
+            "Đèn/màu sắc ở đây thể hiện cảm xúc, không phải nhắc tập thể dục hay uống thuốc.",
+            "“That’s why…” kết luận quá chung và không có lý do nào trước đó để dẫn tới ý này."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q18",
+          "number": 18,
+          "prompt": "According to the passage, an undershirt with a sensor would be great for ___.",
+          "options": [
+            "couples who want to get control of their partners",
+            "parents who desire to supervise their children's daily routines",
+            "those who live far from their relatives",
+            "those who want to stay in touch with their lovers being far away"
+          ],
+          "answer": 3,
+          "explanation": "Bài nói áo lót này “would be great for couples who want to stay in touch with their partners who may be far away”. Phương án D diễn đạt lại ý này.",
+          "optionNotes": [
+            "Bài nói giữ liên lạc, không phải kiểm soát người yêu.",
+            "Bài nói cha mẹ muốn biết con cảm thấy thế nào (“how their children are feeling”), không phải giám sát sinh hoạt hằng ngày.",
+            "Bài chỉ nhắc cặp đôi và cha mẹ, không nói chung về người sống xa họ hàng.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q19",
+          "number": 19,
+          "prompt": "Which of the following is the best description to an undershirt with a sensor?",
+          "options": [
+            "Flashing lights indicate when you are feeling stressed",
+            "Sends your data to the Internet, and then to your partner",
+            "Sends data to your phone and presents it in the form of a graph",
+            "Measures our mental state"
+          ],
+          "answer": 1,
+          "explanation": "Bài mô tả: áo “measures your physical state and sends messages to the Internet. Those messages are then sent to another person”, tức là gửi dữ liệu lên Internet rồi tới người kia (đối tác).",
+          "optionNotes": [
+            "Đèn nháy khi căng thẳng là chức năng của chiếc váy, không phải của áo lót.",
+            "",
+            "Bài không nhắc tới điện thoại hay biểu đồ.",
+            "Áo đo trạng thái cơ thể (“physical state”), không phải trạng thái tinh thần."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q20",
+          "number": 20,
+          "prompt": "We need to become aware of emotions since it helps us ___.",
+          "options": [
+            "form better relationships with other people",
+            "come up with new ideas",
+            "combine emotion and technology",
+            "reduce stress"
+          ],
+          "answer": 0,
+          "explanation": "Bài nói: “Emotional awareness is an important part of how we build relationships with others.” Hiểu cảm xúc giúp xây dựng các mối quan hệ tốt hơn.",
+          "optionNotes": [
+            "",
+            "Ý tưởng mới là việc của nhà thiết kế, không phải lợi ích của việc nhận thức cảm xúc.",
+            "Kết hợp cảm xúc và công nghệ là việc của nhà thiết kế, không phải lợi ích của việc nhận thức cảm xúc.",
+            "Bài không nói nhận thức cảm xúc giúp giảm căng thẳng."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt09-p2a",
+      "title": "Paper 2 · Part A: Hoàn thành câu",
+      "instruction": "Chọn từ hoặc cụm từ phù hợp nhất để hoàn thành mỗi câu.",
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt09-q21",
+          "number": 21,
+          "prompt": "\"I only play baseball because my dad wants me to.\"\n\"If you don't enjoy the game, you ___ do it.\"",
+          "options": [
+            "can't",
+            "won't",
+            "wouldn't",
+            "shouldn't"
+          ],
+          "answer": 3,
+          "explanation": "“shouldn’t” dùng để khuyên: nếu không thích trò chơi thì không nên chơi.",
+          "optionNotes": [
+            "can’t = không thể; không có ý nghĩa khuyên và nghĩa không hợp.",
+            "won’t = sẽ không; không phải lời khuyên.",
+            "wouldn’t = sẽ không (giả định); không hợp với lời khuyên trực tiếp.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q22",
+          "number": 22,
+          "prompt": "She didn't run ___ to catch the bus which had just left the bus stop.",
+          "options": [
+            "so fast",
+            "very fast",
+            "too fast",
+            "fast enough"
+          ],
+          "answer": 3,
+          "explanation": "“adj/adv + enough + to V” = đủ… để làm gì. “didn’t run fast enough to catch the bus” = không chạy đủ nhanh để đuổi kịp xe buýt.",
+          "optionNotes": [
+            "“so fast” phải đi với “that…”, không đi với “to V”.",
+            "“very fast” không đi với “to V” theo cách này.",
+            "“too fast to catch” = quá nhanh nên không bắt kịp; sai nghĩa với câu phủ định “didn’t run”.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q23",
+          "number": 23,
+          "prompt": "The vaccine is effective for 1 year, after ___ it loses its potency.",
+          "options": [
+            "that",
+            "when",
+            "what",
+            "which"
+          ],
+          "answer": 3,
+          "explanation": "“giới từ + which” dùng để mở mệnh đề quan hệ: “after which” = sau thời điểm đó. “after which it loses its potency” = sau một năm đó thì mất tác dụng.",
+          "optionNotes": [
+            "“that” không đi ngay sau giới từ trong mệnh đề quan hệ.",
+            "“after when” không phải cấu trúc đúng.",
+            "“what” không làm đại từ quan hệ có tiền ngữ đứng trước.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q24",
+          "number": 24,
+          "prompt": "- \"I'm not interested in doing the tour.\"\n- \"___.\"",
+          "options": [
+            "Neither did I",
+            "So do I",
+            "Neither am I",
+            "So am I"
+          ],
+          "answer": 2,
+          "explanation": "Đồng tình với câu phủ định dùng “Neither/Nor + trợ động từ + S”, trợ động từ phải trùng với câu gốc: “I’m not” → “Neither am I”.",
+          "optionNotes": [
+            "Câu gốc dùng “am” (hiện tại), không dùng “did” (quá khứ).",
+            "“So do I” dùng để đồng tình với câu khẳng định, không phải phủ định.",
+            "",
+            "“So am I” dùng để đồng tình với câu khẳng định; ở đây câu gốc là phủ định."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q25",
+          "number": 25,
+          "prompt": "\"What are we going to do about keeping the accounts for the club?\"\n\"Paul Wintel, ___ is an investment specialist, has volunteered to do it.\"",
+          "options": [
+            "that",
+            "the man",
+            "he",
+            "who"
+          ],
+          "answer": 3,
+          "explanation": "Mệnh đề quan hệ không xác định (có dấu phẩy) bổ nghĩa cho người dùng “who”: “Paul Wintel, who is an investment specialist, …”.",
+          "optionNotes": [
+            "“that” không dùng trong mệnh đề quan hệ không xác định (sau dấu phẩy).",
+            "“the man” làm câu thừa chủ ngữ và không nối mệnh đề.",
+            "“he” là đại từ nhân xưng, không nối được hai mệnh đề.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q26",
+          "number": 26,
+          "prompt": "He is considered to be an outstanding artist but I consider ___ to be quite mediocre.",
+          "options": [
+            "he works",
+            "his work",
+            "him work",
+            "him working"
+          ],
+          "answer": 1,
+          "explanation": "“consider + tân ngữ + to be + adj”: “consider his work to be quite mediocre” = tôi cho rằng tác phẩm của anh ấy khá tầm thường.",
+          "optionNotes": [
+            "“he works” là mệnh đề, không hợp với cấu trúc “consider + O + to be”.",
+            "",
+            "“him work” sai cấu trúc.",
+            "“him working” sai cấu trúc."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q27",
+          "number": 27,
+          "prompt": "I should like to familiarize myself with the ___ teaching methods.",
+          "options": [
+            "late",
+            "last",
+            "latter",
+            "latest"
+          ],
+          "answer": 3,
+          "explanation": "latest = mới nhất. “the latest teaching methods” = các phương pháp giảng dạy mới nhất.",
+          "optionNotes": [
+            "late = muộn, hoặc đã mất; không hợp nghĩa.",
+            "last = cuối cùng, vừa rồi; không mang nghĩa “mới nhất”.",
+            "latter = cái thứ hai trong hai cái đã nêu; không hợp ngữ cảnh.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q28",
+          "number": 28,
+          "prompt": "I ___ join the sports club in the summer but I haven't decided yet.",
+          "options": [
+            "might",
+            "must",
+            "should",
+            "will"
+          ],
+          "answer": 0,
+          "explanation": "“might” = có thể (khả năng không chắc chắn), hợp với vế sau “I haven’t decided yet”.",
+          "optionNotes": [
+            "",
+            "must = phải / chắc chắn; không hợp với việc chưa quyết định.",
+            "should = nên; không nói về khả năng.",
+            "will = sẽ (chắc chắn); mâu thuẫn với “haven’t decided yet”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q29",
+          "number": 29,
+          "prompt": "Peter's still not here. I expect he ___ about the meeting. We should start without him.",
+          "options": [
+            "forgets",
+            "is forgetting",
+            "has forgotten",
+            "was forgetting"
+          ],
+          "answer": 2,
+          "explanation": "Suy đoán về việc đã xảy ra trước hiện tại (anh ấy chưa tới, có lẽ đã quên): hiện tại hoàn thành “has forgotten”.",
+          "optionNotes": [
+            "Hiện tại đơn diễn tả thói quen, không nói về việc quên cuộc họp lần này.",
+            "Hiện tại tiếp diễn không hợp nghĩa “đã quên”.",
+            "",
+            "Quá khứ tiếp diễn không dùng để kết luận về tình trạng hiện tại."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q30",
+          "number": 30,
+          "prompt": "She is traveling to work by train today because her car ___.",
+          "options": [
+            "is serviced",
+            "is being serviced",
+            "has been serviced",
+            "will be serviced"
+          ],
+          "answer": 1,
+          "explanation": "Xe đang được bảo dưỡng ngay lúc này nên hôm nay cô ấy đi tàu: hiện tại tiếp diễn bị động “is being serviced”.",
+          "optionNotes": [
+            "“is serviced” diễn tả việc bảo dưỡng định kỳ, không nói về việc đang xảy ra hôm nay.",
+            "",
+            "“has been serviced” = đã bảo dưỡng xong, lúc đó xe dùng được, không phải đi tàu.",
+            "“will be serviced” là việc ở tương lai, không giải thích việc đi tàu hôm nay."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q31",
+          "number": 31,
+          "prompt": "Isn't it time you ___ down to some serious work before examination?",
+          "options": [
+            "get",
+            "got",
+            "are getting",
+            "will get"
+          ],
+          "answer": 1,
+          "explanation": "“It’s time + S + V (quá khứ đơn)” = đã đến lúc ai phải làm gì (nghĩa hiện tại): “It’s time you got down to some serious work”.",
+          "optionNotes": [
+            "“It’s time you get” không đúng; sau “it’s time + S” dùng quá khứ.",
+            "",
+            "Hiện tại tiếp diễn không dùng sau “it’s time + S”.",
+            "“will get” không dùng sau “it’s time + S”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q32",
+          "number": 32,
+          "prompt": "I fell on the ice, ___ my arm.",
+          "options": [
+            "injured",
+            "injuring",
+            "having injured",
+            "being injured"
+          ],
+          "answer": 1,
+          "explanation": "Rút gọn mệnh đề chủ động bằng V-ing để nói kết quả: “I fell on the ice, injuring my arm” = tôi ngã trên băng và bị thương ở tay.",
+          "optionNotes": [
+            "“injured” (V3) mang nghĩa bị động, đứng trước “my arm” là tân ngữ nên sai.",
+            "",
+            "“having injured” nhấn hành động hoàn tất trước hành động chính; nhưng bị thương là kết quả của việc ngã, không xảy ra trước.",
+            "“being injured” là bị động, không có tân ngữ “my arm” theo sau."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q33",
+          "number": 33,
+          "prompt": "- \"Is there any news about my promotion?\"\n- \"I regret ___ you that we have chosen someone else for the job.\"",
+          "options": [
+            "to tell",
+            "to have told",
+            "telling",
+            "having told"
+          ],
+          "answer": 0,
+          "explanation": "“regret to tell/say/inform” = lấy làm tiếc phải báo (tin xấu), nói ngay lúc đó. “regret + V-ing” là hối tiếc vì việc đã làm.",
+          "optionNotes": [
+            "",
+            "“to have told” = hối tiếc vì đã nói (việc đã xảy ra), nhưng tin đang được thông báo ngay bây giờ.",
+            "“regret telling” = hối hận vì đã nói; sai nghĩa.",
+            "“having told” = hối hận vì đã nói; sai nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q34",
+          "number": 34,
+          "prompt": "In the old days most of our coal ___ by sea.",
+          "options": [
+            "used to transport",
+            "was used to transporting",
+            "used to be transported",
+            "was used to being transported"
+          ],
+          "answer": 2,
+          "explanation": "“used to + V” = đã từng (thói quen trong quá khứ). Than được vận chuyển (bị động), nên “used to be transported”.",
+          "optionNotes": [
+            "“used to transport” là chủ động; than không tự vận chuyển.",
+            "“be used to + V-ing” = quen với việc; sai nghĩa và cấu trúc.",
+            "",
+            "“be used to being + V3” = quen với việc bị…; không đúng nghĩa, than là vật không “quen”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q35",
+          "number": 35,
+          "prompt": "You'll never guess who I ___ into the other day.",
+          "options": [
+            "ran",
+            "has run",
+            "will run",
+            "would run"
+          ],
+          "answer": 0,
+          "explanation": "“run into somebody” = tình cờ gặp ai. “the other day” là mốc quá khứ nên dùng quá khứ đơn “ran”.",
+          "optionNotes": [
+            "",
+            "“the other day” không dùng với hiện tại hoàn thành.",
+            "“will run” là tương lai; “the other day” chỉ quá khứ.",
+            "“would run” không dùng để kể việc đã xảy ra trong quá khứ."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt09-p2c",
+      "title": "Paper 2 · Part C: Điền từ vào đoạn văn",
+      "instruction": "Chọn từ phù hợp nhất cho mỗi chỗ trống được đánh số trong đoạn văn.",
+      "passage": {
+        "text": "A healthy diet is important for children as well as adults. When adults have poor eating {{36}}, their children usually do, too. After all, children eat the same way {{37}} their parents. When parents eat healthy food, the children will think it tastes {{38}}. Then they will {{39}} good eating habits. Doctors advise parents {{40}} their children healthier snacks {{41}} fruit, vegetables, and juice. Everyone wants to live a long, healthy life. We know that {{42}} we eat affects us in different ways. For instance, doctors believe that fruit and vegetables {{43}} actually prevent many different diseases. On the other {{44}}, animal fat can {{45}} disease. We can improve our diet now, and enjoy many years of healthy living."
+      },
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt09-q36",
+          "number": 36,
+          "options": [
+            "customs",
+            "habits",
+            "manners",
+            "means"
+          ],
+          "answer": 1,
+          "explanation": "“eating habits” = thói quen ăn uống. Câu sau còn nhắc lại “good eating habits”.",
+          "optionNotes": [
+            "customs = phong tục của cả xã hội; không dùng cho thói quen ăn uống của từng người.",
+            "",
+            "manners = cách cư xử, phép lịch sự (table manners); không phải chế độ ăn.",
+            "means = phương tiện, cách thức; không hợp nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q37",
+          "number": 37,
+          "options": [
+            "with",
+            "that",
+            "like",
+            "as"
+          ],
+          "answer": 3,
+          "explanation": "“the same way as + S” = giống cách mà… “children eat the same way as their parents” = trẻ ăn giống cách cha mẹ ăn.",
+          "optionNotes": [
+            "“the same way with” không đúng cấu trúc so sánh.",
+            "“that” sẽ cần một mệnh đề đi sau (the same way that their parents do).",
+            "“like” không đi với “the same way” trong văn viết chuẩn; cấu trúc đúng là “the same… as”.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q38",
+          "number": 38,
+          "options": [
+            "good",
+            "well",
+            "better",
+            "best"
+          ],
+          "answer": 0,
+          "explanation": "“taste + tính từ”: “tastes good” = có vị ngon. Sau động từ nối “taste” dùng tính từ, không dùng trạng từ “well”.",
+          "optionNotes": [
+            "",
+            "“well” là trạng từ; sau “taste” (động từ nối) phải dùng tính từ.",
+            "“better” là so sánh hơn, nhưng câu không so sánh với gì.",
+            "“best” là so sánh nhất, không hợp ngữ cảnh."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q39",
+          "number": 39,
+          "options": [
+            "create",
+            "produce",
+            "cause",
+            "develop"
+          ],
+          "answer": 3,
+          "explanation": "“develop good eating habits” = hình thành thói quen ăn uống tốt (cụm quen thuộc).",
+          "optionNotes": [
+            "create = tạo ra; ít dùng với “habits” hơn “develop”.",
+            "produce = sản xuất; không hợp với “habits”.",
+            "cause = gây ra; thường đi với kết quả xấu và không hợp với “good habits”.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q40",
+          "number": 40,
+          "options": [
+            "give",
+            "to give",
+            "giving",
+            "for giving"
+          ],
+          "answer": 1,
+          "explanation": "“advise somebody to V” = khuyên ai làm gì: “advise parents to give their children…”.",
+          "optionNotes": [
+            "“advise somebody + V nguyên mẫu” sai; cần “to”.",
+            "",
+            "“advise somebody + V-ing” sai cấu trúc.",
+            "“advise somebody for giving” sai cấu trúc."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q41",
+          "number": 41,
+          "options": [
+            "so as",
+            "such as",
+            "for example",
+            "for instance"
+          ],
+          "answer": 1,
+          "explanation": "“such as” = chẳng hạn như, đứng ngay trước danh từ để liệt kê ví dụ: “healthier snacks such as fruit, vegetables, and juice”.",
+          "optionNotes": [
+            "“so as” phải đi với “to V” (so as to) hoặc so… as; không dùng để liệt kê.",
+            "",
+            "“for example” cần có dấu phẩy và đứng giữa câu hoặc đầu câu; không đứng ngay trước danh từ như vậy.",
+            "“for instance” cũng cần có dấu phẩy và không dùng trực tiếp trước danh từ như vậy."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q42",
+          "number": 42,
+          "options": [
+            "food",
+            "foods",
+            "the food",
+            "the foods"
+          ],
+          "answer": 2,
+          "explanation": "“the food we eat” = thức ăn mà ta ăn; có mệnh đề quan hệ rút gọn “we eat” xác định danh từ nên cần mạo từ “the”.",
+          "optionNotes": [
+            "“food” đứng một mình không đi với mệnh đề xác định “we eat”; cần “the”.",
+            "“foods” = các loại thực phẩm, nhưng vẫn thiếu mạo từ và động từ “affects” chia số ít.",
+            "",
+            "“the foods” là số nhiều, nhưng động từ “affects” chia số ít."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q43",
+          "number": 43,
+          "options": [
+            "can",
+            "should",
+            "must",
+            "have to"
+          ],
+          "answer": 0,
+          "explanation": "“fruit and vegetables can actually prevent many different diseases” = rau quả có thể thực sự phòng được nhiều bệnh. “can” diễn tả khả năng.",
+          "optionNotes": [
+            "",
+            "“should” = nên; không hợp nghĩa với “prevent diseases”.",
+            "“must” = phải; quá mạnh, và không nói về khả năng.",
+            "“have to” = phải làm gì; không diễn tả khả năng phòng bệnh của rau quả."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q44",
+          "number": 44,
+          "options": [
+            "hand",
+            "face",
+            "way",
+            "case"
+          ],
+          "answer": 0,
+          "explanation": "“on the other hand” = mặt khác. Cụm cố định để nêu ý đối lập.",
+          "optionNotes": [
+            "",
+            "“on the other face” không phải cụm cố định.",
+            "“on the other way” không phải cụm cố định.",
+            "“on the other case” không phải cụm cố định (“in that case”, “in any case” mới đúng)."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt09-q45",
+          "number": 45,
+          "options": [
+            "create",
+            "produce",
+            "cause",
+            "develop"
+          ],
+          "answer": 2,
+          "explanation": "“cause disease” = gây ra bệnh. Câu này đối lập với vế trước (rau quả phòng bệnh): mỡ động vật có thể gây bệnh.",
+          "optionNotes": [
+            "create thường dùng cho việc tạo ra thứ gì mới, không dùng với “disease”.",
+            "produce = sản xuất; không dùng với “disease”.",
+            "",
+            "develop dùng khi người bị bệnh (develop a disease), không dùng với chủ ngữ “animal fat”."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt09-p2d",
+      "title": "Paper 2 · Part D: Viết lại câu",
+      "instruction": "Hoàn thành câu thứ hai sao cho nghĩa không đổi so với câu gốc.",
+      "questions": [
+        {
+          "type": "rewrite",
+          "id": "pt09-q46",
+          "number": 46,
+          "original": "I can't help you if you don't know what is happening to you.",
+          "prefix": "Unless",
+          "answers": [
+            "you know what is happening to you, I can't help you."
+          ],
+          "explanation": "Câu điều kiện loại 1 với “if… not” → “Unless + câu khẳng định”. “if you don’t know” → “Unless you know”. Vế còn lại giữ nguyên, không thêm “not”."
+        },
+        {
+          "type": "rewrite",
+          "id": "pt09-q47",
+          "number": 47,
+          "original": "Zippers were invented by W.L Judson in 1891.",
+          "prefix": "It was not",
+          "answers": [
+            "until 1891 that zippers were invented by W.L Judson.",
+            "until 1891 that W.L Judson invented zippers.",
+            "until 1891 that zippers were invented by W.L. Judson.",
+            "until 1891 that W.L. Judson invented zippers."
+          ],
+          "explanation": "Cấu trúc “It was not until + mốc thời gian + that + mệnh đề” = mãi đến… thì mới… Câu gốc nói zipper được phát minh năm 1891 nên chuyển thành “It was not until 1891 that zippers were invented…”."
+        },
+        {
+          "type": "rewrite",
+          "id": "pt09-q48",
+          "number": 48,
+          "original": "\"Don't talk while I am explaining the lesson\", the teacher said to his students.",
+          "prefix": "The teacher told",
+          "answers": [
+            "his students not to talk while he was explaining the lesson.",
+            "his students not to talk while he explained the lesson.",
+            "the students not to talk while he was explaining the lesson."
+          ],
+          "explanation": "Câu mệnh lệnh phủ định tường thuật: told + O + not to V. “I am explaining” lùi thì thành “he was explaining”, đại từ “I” đổi thành “he”."
+        },
+        {
+          "type": "rewrite",
+          "id": "pt09-q49",
+          "number": 49,
+          "original": "Jennifer plays tennis better than Miranda.",
+          "prefix": "Miranda doesn't",
+          "answers": [
+            "play tennis as well as Jennifer.",
+            "play tennis as well as Jennifer does."
+          ],
+          "explanation": "So sánh hơn → so sánh không bằng, đảo đối tượng: “better than” → “not as well as”. Trợ động từ “doesn’t” có sẵn nên động từ về nguyên mẫu “play”."
+        },
+        {
+          "type": "rewrite",
+          "id": "pt09-q50",
+          "number": 50,
+          "original": "\"Can I borrow your laptop for a moment, Betty?\" asked Paul.",
+          "prefix": "Paul asked",
+          "answers": [
+            "Betty if he could borrow her laptop for a moment.",
+            "Betty whether he could borrow her laptop for a moment.",
+            "if he could borrow Betty's laptop for a moment."
+          ],
+          "explanation": "Câu hỏi Yes/No tường thuật: asked + (O) + if/whether + mệnh đề. “Can” lùi thành “could”; “I” → “he”; “your” → “her”; bỏ dấu hỏi và đảo ngữ."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,842 @@
+{
+  "id": "practice-test-05",
+  "title": "Practice Test 5",
+  "kind": "practice-test",
+  "sourcePages": [29, 35],
+  "answerSource": "ai",
+  "omitted": ["Paper 3: Listening (câu 51–70, tài liệu không kèm audio)", "Paper 4: Speaking"],
+  "sections": [
+    {
+      "id": "pt05-p1a",
+      "title": "Paper 1 · Part A: Từ vựng",
+      "instruction": "Chọn từ hoặc cụm từ phù hợp nhất để hoàn thành mỗi câu.",
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt05-q1",
+          "number": 1,
+          "prompt": "He was so interested in the TV programme that he didn't ___ his wife come home.",
+          "options": ["recognize", "remark", "notice", "realise"],
+          "answer": 2,
+          "explanation": "“notice somebody do something” = để ý thấy ai làm gì. Anh mải xem TV nên không để ý vợ về nhà.",
+          "optionNotes": [
+            "recognize = nhận ra (người, vật đã biết từ trước); không hợp nghĩa “để ý thấy”.",
+            "remark = nhận xét, phát biểu; không dùng với tân ngữ + động từ nguyên mẫu.",
+            "",
+            "realise = nhận ra, hiểu ra (một sự thật); thường đi với mệnh đề that, không đi với “somebody + V”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q2",
+          "number": 2,
+          "prompt": "My husband has recently gotten ___ after many years of hard work and amazing results.",
+          "options": ["raised", "advanced", "heightened", "promoted"],
+          "answer": 3,
+          "explanation": "“get promoted” = được thăng chức. Làm việc chăm chỉ nhiều năm với kết quả tốt thì được thăng chức.",
+          "optionNotes": [
+            "raise = nâng lên, tăng (lương); “get raised” không có nghĩa thăng chức.",
+            "advance là nội động từ (tiến bộ); không dùng “get advanced” với nghĩa này.",
+            "heighten = làm tăng (cảm xúc, nhận thức); không nói về chức vụ.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q3",
+          "number": 3,
+          "prompt": "This job ___ working very long hours in unfavorable conditions.",
+          "options": ["involves", "consists", "includes", "contains"],
+          "answer": 0,
+          "explanation": "involve + V-ing = đòi hỏi, kéo theo việc gì. “This job involves working very long hours” = công việc này đòi hỏi làm việc nhiều giờ.",
+          "optionNotes": [
+            "",
+            "consist phải đi với “of” (consist of); không đi trực tiếp với V-ing.",
+            "include = bao gồm một thành phần trong nhiều thứ; không nhấn mạnh việc công việc đòi hỏi điều gì như involve.",
+            "contain = chứa đựng (vật chứa); không dùng cho yêu cầu của công việc."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q4",
+          "number": 4,
+          "prompt": "My house is very ___ for getting to work as it is only a few minutes from the station.",
+          "options": ["useful", "proper", "favourable", "convenient"],
+          "answer": 3,
+          "explanation": "“be convenient for something” = thuận tiện cho việc gì. Nhà cách ga vài phút nên đi làm rất thuận tiện.",
+          "optionNotes": [
+            "useful = hữu ích (đồ vật, thông tin); không dùng để tả vị trí.",
+            "proper = đúng đắn, thích hợp; không nói về sự thuận tiện.",
+            "favourable = thuận lợi (điều kiện, đánh giá); không tự nhiên khi nói về vị trí nhà.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q5",
+          "number": 5,
+          "prompt": "Her clients ___ on her because she is honest, dependable, and hard-working.",
+          "options": ["base", "impress", "rely", "agree"],
+          "answer": 2,
+          "explanation": "“rely on somebody” = tin cậy, dựa vào ai. Cô trung thực, đáng tin cậy nên khách hàng tin tưởng.",
+          "optionNotes": [
+            "base on phải ở dạng bị động (be based on); chủ động “base on her” không có nghĩa này.",
+            "impress là ngoại động từ, không đi với giới từ “on”.",
+            "",
+            "agree đi với “with/on”, nghĩa là đồng ý; không hợp nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q6",
+          "number": 6,
+          "prompt": "It's ___ for people to get depressed if they're out of work.",
+          "options": ["normal", "simple", "regular", "typical"],
+          "answer": 0,
+          "explanation": "“It's normal for somebody to do something” = việc ai làm gì là bình thường. Thất nghiệp mà chán nản là chuyện bình thường.",
+          "optionNotes": [
+            "",
+            "simple = đơn giản; không hợp nghĩa.",
+            "regular = đều đặn; không dùng cho cấu trúc “It's … for people to…” với nghĩa bình thường.",
+            "typical thường đi với “of” (typical of someone), ít tự nhiên trong cấu trúc này."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q7",
+          "number": 7,
+          "prompt": "They've finally decided to ___ that lovely old house on the hill.",
+          "options": ["reform", "renovate", "recharge", "renew"],
+          "answer": 1,
+          "explanation": "renovate = cải tạo, sửa sang (nhà cũ). Họ quyết định sửa lại ngôi nhà cổ đẹp trên đồi.",
+          "optionNotes": [
+            "reform = cải cách, cải tổ (luật, hệ thống); không dùng cho nhà.",
+            "",
+            "recharge = sạc lại (pin, năng lượng); không hợp nghĩa.",
+            "renew = gia hạn (hợp đồng, giấy phép) hoặc làm mới; không phải từ chuẩn cho việc cải tạo nhà."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q8",
+          "number": 8,
+          "prompt": "Read the fire ___ on the back of your room door and know where the nearest fire emergency exit is located on your hall.",
+          "options": ["requirements", "explanations", "expressions", "instructions"],
+          "answer": 3,
+          "explanation": "“fire instructions” = hướng dẫn phòng cháy chữa cháy, thường dán sau cửa phòng để chỉ lối thoát hiểm.",
+          "optionNotes": [
+            "requirements = yêu cầu, điều kiện bắt buộc; không phải nội dung chỉ dẫn lối thoát.",
+            "explanations = lời giải thích; không dùng cho bảng hướng dẫn.",
+            "expressions = biểu hiện, cách diễn đạt; không hợp nghĩa.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q9",
+          "number": 9,
+          "prompt": "Our teacher speaks English with a Vietnamese ___.",
+          "options": ["accent", "tone", "speech", "voice"],
+          "answer": 0,
+          "explanation": "accent = giọng nói đặc trưng của một vùng hay quốc gia: “with a Vietnamese accent” = với giọng Việt.",
+          "optionNotes": [
+            "",
+            "tone = âm điệu, sắc thái giọng; không chỉ giọng vùng miền.",
+            "speech = bài phát biểu; không hợp nghĩa.",
+            "voice = giọng (âm thanh phát ra của từng người); không chỉ giọng theo quốc gia."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q10",
+          "number": 10,
+          "prompt": "The ___ fell silent when the first actor came onto the stage.",
+          "options": ["viewers", "audience", "observers", "spectators"],
+          "answer": 1,
+          "explanation": "audience = khán giả, người xem biểu diễn (nhà hát, hòa nhạc). Khán giả im lặng khi diễn viên đầu tiên bước lên sân khấu.",
+          "optionNotes": [
+            "viewers = người xem truyền hình.",
+            "",
+            "observers = người quan sát (theo dõi, giám sát).",
+            "spectators = khán giả xem thể thao hoặc sự kiện ngoài trời."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt05-p1b-1",
+      "title": "Paper 1 · Part B: Đọc hiểu (đoạn 1)",
+      "instruction": "Đọc đoạn văn và chọn đáp án đúng nhất cho mỗi câu hỏi.",
+      "passage": {
+        "text": "When musician Colin Baker won five hundred thousand pounds in a competition, it seemed the answer to his dreams. Almost immediately, he bought a house and made his own CD recording of some classical music. He intended to save the rest of his money and retire, even though he was only in his late forties.\n\nThen he saw a violin in a shop. It was of such high quality that even top professional players are rarely able to afford one like it. 'I'd never felt money was important until then,' he explained. 'Even with the money I'd won, I wasn't sure I could afford to buy the violin, so I started to leave the shop. Then I thought I'd just try it, and I fell in love with the beautiful sound it made. I knew it was perfect both for live concerts and for recordings.'\n\nNow all the money has gone. 'My wife can't have the study room I promised her, and I can't retire,' says Colin, 'but it doesn't matter.' His wife says, 'I sometimes wish he was more responsible with money, but I'm still pleased for him. I've always helped him in his career, as he's helped me, by sharing everything. We weren't happy with our jobs, so we didn't really need the money to escape, and although Colin considered retiring, I know he wouldn't be happy doing that - he loves music too much. I think he did the right thing.'"
+      },
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt05-q11",
+          "number": 11,
+          "prompt": "What is the writer trying to do in this text?",
+          "options": [
+            "Advise musicians to enter competitions.",
+            "Explain why someone spent a lot of money.",
+            "Describe how someone upset his wife.",
+            "Persuade people to spend money wisely."
+          ],
+          "answer": 1,
+          "explanation": "Bài kể Colin thắng tiền, rồi dốc hết cho cây vĩ cầm, và để chính ông cùng vợ giải thích lý do (“I fell in love with the beautiful sound it made”). Mục đích là giải thích vì sao ông tiêu hết một khoản tiền lớn.",
+          "optionNotes": [
+            "Bài không khuyên nhạc sĩ tham gia các cuộc thi.",
+            "",
+            "Bài không nhằm kể chuyện ông làm vợ buồn; vợ còn ủng hộ ông.",
+            "Bài không khuyên cách chi tiêu khôn ngoan, và Colin cũng không bị chê trách."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q12",
+          "number": 12,
+          "prompt": "What can a reader learn from the text?",
+          "options": [
+            "How one man dream ended unhappily.",
+            "How much was paid for a special violin.",
+            "How one couple support each other.",
+            "How much money musicians need for their music."
+          ],
+          "answer": 2,
+          "explanation": "Người vợ nói “I've always helped him in his career, as he's helped me, by sharing everything”: cặp vợ chồng luôn hỗ trợ lẫn nhau.",
+          "optionNotes": [
+            "Ước mơ của Colin không kết thúc buồn: ông nói “it doesn't matter” và vợ cũng nghĩ ông làm đúng.",
+            "Bài không nêu giá của cây vĩ cầm.",
+            "",
+            "Bài không nói nhạc sĩ cần bao nhiêu tiền cho âm nhạc."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q13",
+          "number": 13,
+          "prompt": "What does Colin's wife say about what he did?",
+          "options": [
+            "She wishes he had used the money differently.",
+            "She feels she didn't really benefit from the money.",
+            "She is sorry she could not have her study room.",
+            "She accepts the decision that he made."
+          ],
+          "answer": 3,
+          "explanation": "Vợ nói “I'm still pleased for him” và “I think he did the right thing”: bà chấp nhận quyết định của chồng.",
+          "optionNotes": [
+            "Bà chỉ “sometimes wish he was more responsible with money”, nhưng vẫn kết luận ông làm đúng, nên không mong ông dùng tiền khác.",
+            "Bài không nói bà cảm thấy không được lợi gì từ số tiền.",
+            "Chính Colin nói vợ không có phòng làm việc; bà không bày tỏ sự tiếc nuối đó.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q14",
+          "number": 14,
+          "prompt": "When Colin first found the violin, he thought",
+          "options": [
+            "he might not have enough money to buy it.",
+            "he should not spend all of his money on it.",
+            "he was not a good enough player to own it.",
+            "he could not leave the shop without it."
+          ],
+          "answer": 0,
+          "explanation": "“Even with the money I'd won, I wasn't sure I could afford to buy the violin” = ông không chắc mình đủ tiền mua.",
+          "optionNotes": [
+            "",
+            "Bài không nói ông nghĩ mình không nên tiêu hết tiền; ông còn bảo trước đó chưa từng coi trọng tiền.",
+            "Bài không nhắc đến việc ông tự thấy mình chưa đủ giỏi.",
+            "Ông bắt đầu rời khỏi cửa hàng, rồi mới nghĩ thử đàn; không phải ông không thể rời đi."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q15",
+          "number": 15,
+          "prompt": "What did a local newspaper say about Colin's story?",
+          "options": [
+            "A well-known record company has asked a local musician to record a CD after winning a competition ...",
+            "A local musician today announced he would spend every penny of the money he'd won in a competition ...",
+            "A concert audience heard a local musician give a brilliant performance last night on the violin he'd won in a competition ...",
+            "A local musician has decided to continue his career in music in spite of winning some money in a competition ..."
+          ],
+          "answer": 3,
+          "explanation": "Colin từng định nghỉ hưu sau khi trúng tiền, nhưng cuối cùng tiêu hết vào cây đàn nên vẫn phải tiếp tục sự nghiệp âm nhạc. Câu D tóm đúng tin này: dù trúng một khoản tiền, ông vẫn tiếp tục làm nhạc.",
+          "optionNotes": [
+            "Bài không nói hãng thu âm nào mời ông; ông tự thu CD của mình.",
+            "Ông không “announce” kế hoạch sẽ tiêu hết tiền; việc đó đã xảy ra rồi (“all the money has gone”).",
+            "Cây đàn là ông mua, không phải giải thưởng ông giành được, và bài không nhắc buổi hòa nhạc nào.",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt05-p1b-2",
+      "title": "Paper 1 · Part B: Đọc hiểu (đoạn 2)",
+      "instruction": "Đọc đoạn văn và chọn đáp án đúng nhất cho mỗi câu hỏi.",
+      "passage": {
+        "text": "It's just before 7 a.m. and I'm at an outdoor swimming pool in London, where the temperature of the water is only 11 degrees above freezing! Amazingly, there are already eight people swimming.\n\nI had intended to discover, by taking a swim myself, why anyone would want to swim in such cold water. However, in the end, I decided to ask people instead. Peter Smith has been a swimmer here for three years, coming every morning before work. 'It's wonderful on a cold winter morning,' he says. 'I thought it would make me healthier and I haven't been ill once I started.'\n\nAll the swimmers here say the same thing. They all feel fitter. However, not everyone agrees with them. Some doctors say it helps fight illness, while others say it could be dangerous, especially for your heart.\n\nI asked Peter what they did on the days when the pool was frozen. 'That's easy,' he said. 'There's a place in the middle where the ice is thin and easy to break. You have to avoid the sides where the ice is thicker. I did try to swim there once just to see what it was like, but I found that it was impossible to break through the ice.'\n\nI would like to be able to say that I too dived happily into the water and swam a couple of hundred metres. But the truth is, fearing the worst, I walked very carefully into the pool, stood there almost in shock and then got out again after 50 seconds before I became a block of ice."
+      },
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt05-q16",
+          "number": 16,
+          "prompt": "What is the writer's main aim in writing the text?",
+          "options": [
+            "Explain why some people like swimming in the cold.",
+            "Prove an idea he has had about keeping fit.",
+            "Warn people not to go swimming in cold water.",
+            "Advise people on ways to stay healthy."
+          ],
+          "answer": 0,
+          "explanation": "Tác giả muốn tìm hiểu “why anyone would want to swim in such cold water” và đi hỏi những người bơi để biết lý do. Mục đích chính là giải thích vì sao có người thích bơi trong nước lạnh.",
+          "optionNotes": [
+            "",
+            "Tác giả không có ý tưởng nào cần chứng minh; ông chỉ tìm hiểu.",
+            "Bài có nhắc ý kiến “có thể nguy hiểm” nhưng không nhằm cảnh báo người đọc.",
+            "Bài không đưa lời khuyên về cách giữ sức khỏe."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q17",
+          "number": 17,
+          "prompt": "What can a reader find out from this text?",
+          "options": [
+            "Where to go swimming in London.",
+            "What happened to the writer at the pool.",
+            "How to keep warm in cold water.",
+            "How often the writer goes swimming."
+          ],
+          "answer": 1,
+          "explanation": "Đoạn cuối kể tác giả bước thận trọng xuống hồ, đứng gần như sốc rồi lên khỏi nước sau 50 giây: người đọc biết chuyện gì đã xảy ra với ông ở hồ bơi.",
+          "optionNotes": [
+            "Bài chỉ nói “an outdoor swimming pool in London”, không nêu tên hay địa chỉ.",
+            "",
+            "Bài không hướng dẫn cách giữ ấm trong nước lạnh.",
+            "Người đi bơi mỗi sáng là Peter; bài không nói tác giả bơi thường xuyên không."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q18",
+          "number": 18,
+          "prompt": "What does Peter say about his morning swim?",
+          "options": [
+            "It has helped him recover from a recent illness.",
+            "He enjoys it when the pool is covered in ice.",
+            "It is the reason why he keeps well all year.",
+            "He thinks it makes him work better."
+          ],
+          "answer": 2,
+          "explanation": "Peter nói: “I thought it would make me healthier and I haven't been ill once I started”. Ông tin việc bơi buổi sáng là lý do ông luôn khỏe, không ốm kể từ khi bắt đầu.",
+          "optionNotes": [
+            "Peter không nói ông từng ốm gần đây rồi bơi để hồi phục.",
+            "Khi hồ đóng băng, ông chỉ tìm chỗ băng mỏng để bơi; không nói ông thích.",
+            "",
+            "Bài không nhắc ảnh hưởng của việc bơi đến công việc."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q19",
+          "number": 19,
+          "prompt": "It can be inferred from the text that",
+          "options": [
+            "all the swimmers at the pool enjoy the benefits from swimming in the cold water.",
+            "the writer will never be able to swim in such cold water.",
+            "the writer is not convinced of the health benefits of swimming in cold water.",
+            "doctors will not advise patients to swim in cold water."
+          ],
+          "answer": 0,
+          "explanation": "“All the swimmers here say the same thing. They all feel fitter.” = tất cả người bơi ở đây đều cảm thấy khỏe hơn, tức là đều hưởng lợi ích từ việc bơi nước lạnh.",
+          "optionNotes": [
+            "",
+            "Bài không khẳng định ông sẽ không bao giờ bơi được; ông chỉ rời hồ sau 50 giây lần này.",
+            "Tác giả không nêu ý kiến riêng về lợi ích sức khỏe; ông chỉ ghi lại ý kiến của người khác.",
+            "Bài nói “some doctors say it helps fight illness”, nên không phải bác sĩ nào cũng khuyên không nên."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q20",
+          "number": 20,
+          "prompt": "What did the writer feel about swimming at the pool?",
+          "options": [
+            "It was as cold as he expected.",
+            "He did not like the ice.",
+            "It made him feel healthier.",
+            "He enjoyed swimming up and down."
+          ],
+          "answer": 0,
+          "explanation": "Tác giả “fearing the worst” rồi bước xuống rất thận trọng, đứng gần như sốc và vội lên sau 50 giây: nước lạnh đúng như ông lo sợ.",
+          "optionNotes": [
+            "",
+            "Bài không nói ông phải bơi trong băng hay không thích băng; chuyện băng là lời kể của Peter.",
+            "Ông chỉ ở dưới nước 50 giây, bài không nói ông thấy khỏe hơn.",
+            "Ông không bơi lại lại mà chỉ đứng rồi lên bờ."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt05-p2a",
+      "title": "Paper 2 · Part A: Hoàn thành câu",
+      "instruction": "Chọn từ hoặc cụm từ phù hợp nhất để hoàn thành mỗi câu.",
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt05-q21",
+          "number": 21,
+          "prompt": "Don has ___ that I actually got lost on the way to the bathroom.",
+          "options": ["so a big house", "so the big house", "such a big house", "such the big house"],
+          "answer": 2,
+          "explanation": "such + a/an + tính từ + danh từ + that… = quá… đến nỗi… “such a big house that I got lost”.",
+          "optionNotes": [
+            "so không đi với “a + tính từ + danh từ” theo thứ tự này (phải là “so big a house” hoặc “such a big house”).",
+            "so không đi trực tiếp với “the big house”.",
+            "",
+            "such + the + tính từ + danh từ không phải cấu trúc đúng."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q22",
+          "number": 22,
+          "prompt": "I'd study to become a doctor if only ___ go back to college.",
+          "options": ["I would", "I could", "I might", "I should"],
+          "answer": 1,
+          "explanation": "“if only + quá khứ đơn / could + V” diễn tả điều ước trái với hiện tại: “if only I could go back to college” = giá mà tôi có thể quay lại đại học.",
+          "optionNotes": [
+            "“if only I would” dùng để trách ai đó không chịu làm gì, không phải nói về khả năng của chính mình.",
+            "",
+            "“I might” = có thể sẽ; không diễn tả điều ước.",
+            "“I should” = nên; không hợp với “if only”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q23",
+          "number": 23,
+          "prompt": "Does John know any other foreign languages ___ French?",
+          "options": ["except", "outside", "despite", "besides"],
+          "answer": 3,
+          "explanation": "besides = ngoài ra còn, ngoài… ra (thêm vào). “any other foreign languages besides French” = có ngôn ngữ nào khác ngoài tiếng Pháp (tiếng Pháp đã biết).",
+          "optionNotes": [
+            "except = ngoại trừ; không hợp với “any other”, vì ý là “thêm vào” chứ không loại ra.",
+            "outside = bên ngoài; không dùng với nghĩa này.",
+            "despite = mặc dù; sai nghĩa.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q24",
+          "number": 24,
+          "prompt": "After looking for him all day, Jeremy finally found his dog ___ in a cave.",
+          "options": ["hide", "to hide", "hidden", "to be hidden"],
+          "answer": 2,
+          "explanation": "find + tân ngữ + V3 (bị động) = thấy cái gì ở trạng thái bị… : “found his dog hidden in a cave” = thấy con chó đang bị giấu/nằm ẩn trong hang.",
+          "optionNotes": [
+            "hide dạng nguyên mẫu không đi sau “find + tân ngữ” với nghĩa này.",
+            "“find somebody to hide” không đúng cấu trúc và sai nghĩa.",
+            "",
+            "“to be hidden” không đi sau “found + tân ngữ”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q25",
+          "number": 25,
+          "prompt": "___ has not handed in their report must do so by Friday at the latest.",
+          "options": ["Anyone", "Anyone who", "Who", "Whomever"],
+          "answer": 1,
+          "explanation": "“Anyone who has not handed in…” = ai chưa nộp thì phải nộp muộn nhất là thứ Sáu. Cần “who” để nối “anyone” với mệnh đề quan hệ.",
+          "optionNotes": [
+            "“Anyone has not…” thiếu từ nối, câu có hai động từ chính.",
+            "",
+            "“Who” đứng đầu sẽ tạo câu hỏi, và thiếu từ chỉ người nộp báo cáo.",
+            "“Whomever” là dạng tân ngữ; chỗ trống cần dạng làm chủ ngữ (whoever)."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q26",
+          "number": 26,
+          "prompt": "When Lily came home at 5 p.m. yesterday, her mother ___ dinner in the kitchen.",
+          "options": ["cooked", "was cooking", "cooks", "has cooked"],
+          "answer": 1,
+          "explanation": "Hành động đang diễn ra tại một thời điểm xác định trong quá khứ (5 giờ chiều hôm qua) dùng quá khứ tiếp diễn: “was cooking”.",
+          "optionNotes": [
+            "Quá khứ đơn nói việc đã hoàn tất, không diễn tả việc đang nấu lúc Lily về.",
+            "",
+            "Hiện tại đơn không hợp với mốc thời gian “yesterday”.",
+            "Hiện tại hoàn thành không đi với mốc quá khứ “yesterday”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q27",
+          "number": 27,
+          "prompt": "I told the police officer that in my opinion ___ of the two drivers was responsible.",
+          "options": ["no", "none", "not one", "neither"],
+          "answer": 3,
+          "explanation": "neither of the two + danh từ số nhiều + động từ số ít = không ai trong hai người. Câu có “the two drivers” nên dùng “neither”.",
+          "optionNotes": [
+            "“no of” không phải cấu trúc đúng; “no” phải đứng trước danh từ.",
+            "none dùng cho từ ba trở lên; ở đây chỉ có hai tài xế.",
+            "“not one of the two” vụng và không phải cách nói chuẩn ở vị trí này.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q28",
+          "number": 28,
+          "prompt": "___ you are married or single, you will receive a warm welcome.",
+          "options": ["Even if", "Although", "However", "Whether"],
+          "answer": 3,
+          "explanation": "“Whether… or…” = dù… hay…, nêu hai khả năng: dù đã kết hôn hay độc thân đều được chào đón nồng nhiệt.",
+          "optionNotes": [
+            "even if = ngay cả khi; không đi với cặp lựa chọn “… or …”.",
+            "although = mặc dù; không đi với cặp lựa chọn “… or …”.",
+            "however (dù thế nào) cần đi với tính từ/trạng từ hoặc mệnh đề khác, không hợp ở đây.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q29",
+          "number": 29,
+          "prompt": "Wear a helmet when riding a motorbike. Helmets are used ___ our heads.",
+          "options": ["to protect", "protect", "to protecting", "protected"],
+          "answer": 0,
+          "explanation": "“be used to + V” = được dùng để làm gì (mục đích). “Helmets are used to protect our heads” = mũ bảo hiểm dùng để bảo vệ đầu.",
+          "optionNotes": [
+            "",
+            "“are used protect” thiếu “to”.",
+            "“be used to + V-ing” = quen với; sai nghĩa và sai cấu trúc ở đây (động từ “are used” + “to protecting”).",
+            "“are used protected” sai ngữ pháp."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q30",
+          "number": 30,
+          "prompt": "\"Who's the man with the red tie?\"\n\"He's the person ___ owns the shop next door.\"",
+          "options": ["of whom mother", "whose mother", "whose the mother", "who has his mother"],
+          "answer": 1,
+          "explanation": "Đại từ quan hệ sở hữu whose + danh từ: “the person whose mother owns the shop next door” = người mà mẹ của người đó sở hữu cửa hàng bên cạnh.",
+          "optionNotes": [
+            "“of whom mother” sai trật tự; phải là “whose mother”.",
+            "",
+            "“whose” không đi cùng mạo từ “the”.",
+            "“who has his mother owns” có hai động từ không có từ nối, sai ngữ pháp."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q31",
+          "number": 31,
+          "prompt": "This pencil is no good. Please give me ___.",
+          "options": ["one", "other one", "another one", "one another"],
+          "answer": 2,
+          "explanation": "another one = một cái khác. Cây bút chì này không dùng được nên xin cây khác.",
+          "optionNotes": [
+            "“one” = một cái nói chung, có thể hiểu là chính cái này, không rõ là cái khác.",
+            "“other one” thiếu từ hạn định; phải là “the other one” hoặc “another one”.",
+            "",
+            "“one another” = lẫn nhau; sai nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q32",
+          "number": 32,
+          "prompt": "We have fitted a burglar alarm to the house ___ somebody tries to break in.",
+          "options": ["unless", "if", "as long as", "in case"],
+          "answer": 3,
+          "explanation": "in case = phòng khi: lắp chuông báo trộm vào nhà phòng khi có ai cố đột nhập.",
+          "optionNotes": [
+            "unless = trừ khi; sai nghĩa.",
+            "if = nếu; việc lắp chuông xảy ra trước, không phải sau khi trộm vào.",
+            "as long as = miễn là; sai nghĩa.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q33",
+          "number": 33,
+          "prompt": "- Alice, why didn't you come yesterday?\n- I ___, but I had an unexpected visitor.",
+          "options": ["had", "would", "was going to", "did"],
+          "answer": 2,
+          "explanation": "“was going to (come)” = đã định (đến) nhưng không thực hiện được, vì có việc phát sinh (“but I had an unexpected visitor”).",
+          "optionNotes": [
+            "“I had” không đủ nghĩa và thiếu động từ chính.",
+            "“I would” không dùng để nói dự định đã không thành trong quá khứ.",
+            "",
+            "“I did” có nghĩa là bạn đã đến, trái với câu hỏi và vế sau."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q34",
+          "number": 34,
+          "prompt": "Students ___ copy their work from the Internet. It's illegal!",
+          "options": ["must not", "don't have to", "may not", "need not"],
+          "answer": 0,
+          "explanation": "must not = cấm, không được phép. Sao chép bài từ Internet là bất hợp pháp nên bị cấm.",
+          "optionNotes": [
+            "",
+            "don't have to = không cần phải (không bắt buộc), không phải là cấm.",
+            "may not = có thể không / không được phép (nhẹ); không mạnh bằng lệnh cấm “must not” trong ngữ cảnh bất hợp pháp.",
+            "need not = không cần; không phải là cấm."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q35",
+          "number": 35,
+          "prompt": "We'd better ___ on the road. A car may hit us.",
+          "options": ["not to play", "to not play", "not play", "play not"],
+          "answer": 2,
+          "explanation": "had better (not) + V nguyên mẫu không “to”: “We'd better not play on the road” = tốt hơn là đừng chơi trên đường.",
+          "optionNotes": [
+            "Sau “had better” không dùng “to”.",
+            "Sau “had better” không dùng “to”.",
+            "",
+            "Phủ định phải đặt “not” trước động từ, không đặt sau."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt05-p2b",
+      "title": "Paper 2 · Part B: Điền từ vào đoạn văn",
+      "instruction": "Chọn từ phù hợp nhất cho mỗi chỗ trống được đánh số trong đoạn văn.",
+      "passage": {
+        "title": "New Opportunities with an Open University Degree",
+        "text": "Like any other university, the Open University can give you a degree. However, you don't have to {{36}} working to study. It can also open up a whole variety {{37}} interests.\n\nIf you have {{38}} studied before, you will enjoy the special, new pleasure of {{39}} your knowledge. You will make friend of {{40}} kinds. You may also {{41}} that your qualification provides new career opportunities.\n\nYou don't actually {{42}} to the Open University for lectures, but study at home, using television, radio and computer software. You can {{43}} one class a month if you wish at an Open University centre. Of course, there are exams to take, as in {{44}} university.\n\nIf you {{45}} like to know more, all you have to do is complete the form below. It could be the start of a wonderful new period in your life."
+      },
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt05-q36",
+          "number": 36,
+          "options": ["stop", "end", "break", "leave"],
+          "answer": 0,
+          "explanation": "“stop + V-ing” = ngừng làm gì: “you don't have to stop working to study” = bạn không cần nghỉ việc để đi học.",
+          "optionNotes": [
+            "",
+            "end không đi với V-ing theo nghĩa này (end up V-ing mới hợp lệ).",
+            "break + V-ing không có nghĩa ngừng làm việc.",
+            "leave + V-ing không có nghĩa ngừng làm việc; phải nói “leave work”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q37",
+          "number": 37,
+          "options": ["from", "of", "in", "for"],
+          "answer": 1,
+          "explanation": "“a variety of + danh từ” = nhiều loại…: “a whole variety of interests” = đủ loại sở thích.",
+          "optionNotes": [
+            "“variety from” không phải cụm cố định.",
+            "",
+            "“variety in” không đi với nghĩa “nhiều loại”.",
+            "“variety for” không phải cụm cố định."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q38",
+          "number": 38,
+          "options": ["ever", "never", "often", "always"],
+          "answer": 1,
+          "explanation": "“If you have never studied before” = nếu trước đây bạn chưa từng học. Vế sau nói “special, new pleasure” (niềm vui mới) nên khớp với người chưa từng học.",
+          "optionNotes": [
+            "“If you have ever studied” = nếu bạn từng học; mâu thuẫn với “new pleasure”.",
+            "",
+            "“often studied” = thường học; không hợp với “new pleasure”.",
+            "“always studied” = luôn học; không hợp với “new pleasure”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q39",
+          "number": 39,
+          "options": ["growing", "changing", "adding", "increasing"],
+          "answer": 3,
+          "explanation": "“increase your knowledge” = làm tăng kiến thức. Dạng V-ing đứng sau giới từ “of”.",
+          "optionNotes": [
+            "grow dùng với “knowledge” ở dạng nội động từ (kiến thức tăng lên), không có tân ngữ.",
+            "changing your knowledge = thay đổi kiến thức; sai nghĩa.",
+            "add phải đi với “to” (adding to your knowledge).",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q40",
+          "number": 40,
+          "options": ["all", "each", "both", "every"],
+          "answer": 0,
+          "explanation": "“friends of all kinds” = bạn bè đủ loại. “all kinds” đi với danh từ số nhiều.",
+          "optionNotes": [
+            "",
+            "each đi với danh từ số ít (each kind), nhưng ở đây là “kinds”.",
+            "both = cả hai; không nói tới nhiều loại.",
+            "every đi với danh từ số ít (every kind), nhưng ở đây là “kinds”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q41",
+          "number": 41,
+          "options": ["suggest", "find", "wish", "want"],
+          "answer": 1,
+          "explanation": "“find that + mệnh đề” = nhận thấy rằng: “You may also find that your qualification provides new career opportunities”.",
+          "optionNotes": [
+            "suggest = gợi ý; chủ ngữ “you” không thể gợi ý rằng bằng cấp mang lại cơ hội.",
+            "",
+            "wish + mệnh đề thường dùng với điều ước không có thật, không hợp với “provides”.",
+            "want không đi với mệnh đề “that”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q42",
+          "number": 42,
+          "options": ["join", "enter", "arrive", "go"],
+          "answer": 3,
+          "explanation": "“go to + nơi” = đến nơi nào. “You don't actually go to the Open University for lectures” = bạn không thực sự phải đến trường để nghe giảng.",
+          "optionNotes": [
+            "join là ngoại động từ, không đi với “to”.",
+            "enter là ngoại động từ, không đi với “to”.",
+            "arrive phải đi với “at/in”.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q43",
+          "number": 43,
+          "options": ["give", "attend", "learn", "study"],
+          "answer": 1,
+          "explanation": "“attend a class” = tham dự một buổi học. “You can attend one class a month” = mỗi tháng bạn có thể đến học một buổi.",
+          "optionNotes": [
+            "give a class = dạy một lớp; sai chủ thể, vì đây là người học.",
+            "",
+            "learn không đi với “a class” theo nghĩa tham dự.",
+            "study không đi với “a class” theo nghĩa tham dự."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q44",
+          "number": 44,
+          "options": ["any", "some", "many", "most"],
+          "answer": 0,
+          "explanation": "“as in any university” = như ở bất kỳ trường đại học nào. any + danh từ số ít = bất kỳ.",
+          "optionNotes": [
+            "",
+            "some university không mang nghĩa “như mọi trường đại học”.",
+            "many cần danh từ số nhiều.",
+            "most cần danh từ số nhiều hoặc không đếm được."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt05-q45",
+          "number": 45,
+          "options": ["did", "will", "would", "can"],
+          "answer": 2,
+          "explanation": "“If you would like to know more” = nếu bạn muốn biết thêm: cách nói lịch sự, trang trọng. “would like” = muốn.",
+          "optionNotes": [
+            "“did like” là quá khứ, không hợp mệnh đề If ở hiện tại.",
+            "“will like” không dùng trong mệnh đề If theo nghĩa này.",
+            "",
+            "“can like” không đúng cấu trúc."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt05-p2c",
+      "title": "Paper 2 · Part C: Viết lại câu",
+      "instruction": "Hoàn thành câu thứ hai sao cho nghĩa không đổi so với câu gốc.",
+      "questions": [
+        {
+          "type": "rewrite",
+          "id": "pt05-q46",
+          "number": 46,
+          "original": "As he grows older, he becomes wiser.",
+          "prefix": "The",
+          "answers": [
+            "older he grows, the wiser he becomes.",
+            "older he gets, the wiser he becomes.",
+            "older he becomes, the wiser he becomes."
+          ],
+          "explanation": "So sánh kép: As + S + V + so sánh hơn, S + V + so sánh hơn → The + so sánh hơn + S + V, the + so sánh hơn + S + V. “The older he grows, the wiser he becomes.”"
+        },
+        {
+          "type": "rewrite",
+          "id": "pt05-q47",
+          "number": 47,
+          "original": "Helen is too short to reach the book on the shelf.",
+          "prefix": "Helen is not",
+          "answers": [
+            "tall enough to reach the book on the shelf.",
+            "high enough to reach the book on the shelf."
+          ],
+          "explanation": "too + tính từ + to V → not + tính từ trái nghĩa + enough + to V. “too short” = “not tall enough”."
+        },
+        {
+          "type": "rewrite",
+          "id": "pt05-q48",
+          "number": 48,
+          "original": "De Gea was too slow to save the shot by Neymar.",
+          "prefix": "De Gea was not",
+          "answers": [
+            "fast enough to save the shot by Neymar.",
+            "quick enough to save the shot by Neymar.",
+            "quick enough to save Neymar's shot."
+          ],
+          "explanation": "too + tính từ + to V → not + tính từ trái nghĩa + enough + to V. “too slow” = “not fast/quick enough”."
+        },
+        {
+          "type": "rewrite",
+          "id": "pt05-q49",
+          "number": 49,
+          "original": "If he doesn't start work right away, he'll never finish it.",
+          "prefix": "Unless",
+          "answers": [
+            "he starts work right away, he'll never finish it.",
+            "he starts work right away, he will never finish it.",
+            "he starts working right away, he'll never finish it."
+          ],
+          "explanation": "Unless = If … not. Vì “unless” đã mang nghĩa phủ định nên động từ trong mệnh đề unless để ở dạng khẳng định: “he starts” (không phải “doesn't start”)."
+        },
+        {
+          "type": "rewrite",
+          "id": "pt05-q50",
+          "number": 50,
+          "original": "Despite his old age, he's very active.",
+          "prefix": "Although",
+          "answers": [
+            "he is old, he is very active.",
+            "he is old, he's very active.",
+            "he's old, he's very active.",
+            "he is very old, he is very active."
+          ],
+          "explanation": "Despite + cụm danh từ → Although + mệnh đề (S + V). “his old age” chuyển thành mệnh đề “he is old”."
+        }
+      ]
+    }
+  ]
+}

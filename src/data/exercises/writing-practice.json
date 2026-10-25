@@ -1,0 +1,1733 @@
+{
+  "id": "writing-practice",
+  "title": "Writing Practice",
+  "kind": "writing",
+  "sourcePages": [
+    72,
+    80
+  ],
+  "answerSource": "ai",
+  "sections": [
+    {
+      "id": "wp01",
+      "title": "Practice 1: Although / Despite / In spite of",
+      "instruction": "Viết lại câu sao cho nghĩa không đổi, bắt đầu bằng phần cho sẵn.",
+      "examples": [
+        "Despite his old age, he runs every morning. → Although he is old, he runs every morning."
+      ],
+      "questions": [
+        {
+          "type": "rewrite",
+          "id": "wp01-q1",
+          "number": 1,
+          "original": "Although we tried very hard, we failed.",
+          "prefix": "In spite",
+          "answers": [
+            "of trying very hard, we failed.",
+            "of our trying very hard, we failed.",
+            "of the fact that we tried very hard, we failed.",
+            "of our great effort, we failed."
+          ],
+          "explanation": "Although + mệnh đề → In spite of + V-ing / danh từ / the fact that + mệnh đề. Cùng chủ ngữ “we” nên dùng “trying very hard”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp01-q2",
+          "number": 2,
+          "original": "Although he was very tired, he kept on working.",
+          "prefix": "Despite",
+          "answers": [
+            "being very tired, he kept on working.",
+            "his being very tired, he kept on working.",
+            "his great tiredness, he kept on working.",
+            "the fact that he was very tired, he kept on working."
+          ],
+          "explanation": "Although + mệnh đề → Despite + V-ing / danh từ / the fact that + mệnh đề. “was very tired” → “being very tired” (hoặc danh từ “tiredness”)."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp01-q3",
+          "number": 3,
+          "original": "Despite having several broken bones, John was able to compete in the race.",
+          "prefix": "John was able to compete in the race even",
+          "suffix": "several broken bones.",
+          "answers": [
+            "though he had",
+            "though he'd had"
+          ],
+          "explanation": "Despite + V-ing → even though + mệnh đề. “having several broken bones” → “he had several broken bones” (thì quá khứ như câu gốc)."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp01-q4",
+          "number": 4,
+          "original": "Although it rained heavily, my father went to work.",
+          "prefix": "Despite the",
+          "answers": [
+            "heavy rain, my father went to work.",
+            "heavy rainfall, my father went to work.",
+            "fact that it rained heavily, my father went to work."
+          ],
+          "explanation": "Although + mệnh đề → Despite + danh từ. “it rained heavily” → “the heavy rain” (trạng từ → tính từ, động từ → danh từ)."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp01-q5",
+          "number": 5,
+          "original": "In spite of admiring Shakespeare's comedies, I cannot agree that they are any superior to his tragedies.",
+          "prefix": "Although I",
+          "suffix": ", I cannot agree that they are any superior to his tragedies.",
+          "answers": [
+            "admire Shakespeare's comedies",
+            "do admire Shakespeare's comedies",
+            "admire the comedies of Shakespeare"
+          ],
+          "explanation": "In spite of + V-ing → Although + mệnh đề. “admiring” → “I admire” (chủ ngữ “I” đã có sẵn ở phần cho trước)."
+        }
+      ]
+    },
+    {
+      "id": "wp02",
+      "title": "Practice 2: It + be + adj + to V / V-ing + be + adj",
+      "instruction": "Viết lại câu sao cho nghĩa không đổi, bắt đầu bằng phần cho sẵn.",
+      "examples": [
+        "He thinks speaking English is difficult. → He thinks it is difficult to speak English."
+      ],
+      "questions": [
+        {
+          "type": "rewrite",
+          "id": "wp02-q1",
+          "number": 1,
+          "original": "It's important to be there on time.",
+          "prefix": "To be",
+          "answers": [
+            "there on time is important.",
+            "there on time is very important."
+          ],
+          "explanation": "It + be + adj + to V → To V + be + adj. Đưa động từ nguyên mẫu lên làm chủ ngữ."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp02-q2",
+          "number": 2,
+          "original": "It's difficult to understand what she's talking about.",
+          "prefix": "To understand",
+          "answers": [
+            "what she's talking about is difficult.",
+            "what she is talking about is difficult."
+          ],
+          "explanation": "It + be + adj + to V → To V + be + adj. Mệnh đề “what she’s talking about” đi theo động từ “understand”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp02-q3",
+          "number": 3,
+          "original": "It is very relaxing to spend a day in the country.",
+          "prefix": "To spend",
+          "answers": [
+            "a day in the country is very relaxing.",
+            "a day in the country is relaxing."
+          ],
+          "explanation": "It + be + adj + to V → To V + be + adj. Cụm “to spend a day in the country” làm chủ ngữ."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp02-q4",
+          "number": 4,
+          "original": "It must be hard to live on your salary.",
+          "prefix": "Living",
+          "answers": [
+            "on your salary must be hard.",
+            "on your salary must be difficult."
+          ],
+          "explanation": "It + be + adj + to V → V-ing + be + adj. Danh động từ “living” làm chủ ngữ, giữ “must be”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp02-q5",
+          "number": 5,
+          "original": "Sitting here with you is so nice.",
+          "prefix": "It",
+          "answers": [
+            "is so nice to sit here with you.",
+            "is so nice to be sitting here with you.",
+            "is very nice to sit here with you."
+          ],
+          "explanation": "V-ing + be + adj → It + be + adj + to V. Dùng “it” làm chủ ngữ giả, đưa “to sit…” ra sau tính từ."
+        }
+      ]
+    },
+    {
+      "id": "wp03",
+      "title": "Practice 3: Adj + enough to / So… that / Such… that",
+      "instruction": "Viết lại câu sao cho nghĩa không đổi, bắt đầu bằng phần cho sẵn.",
+      "examples": [
+        "It was such a cold day that we stayed indoors. → The day was so cold that we stayed indoors."
+      ],
+      "questions": [
+        {
+          "type": "rewrite",
+          "id": "wp03-q1",
+          "number": 1,
+          "original": "He is rich enough to buy whatever he wants",
+          "prefix": "He is so",
+          "answers": [
+            "rich that he can buy whatever he wants.",
+            "rich that he can buy anything he wants.",
+            "rich he can buy whatever he wants."
+          ],
+          "explanation": "adj + enough to V → so + adj + that + mệnh đề. “enough to buy” → “that he can buy”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp03-q2",
+          "number": 2,
+          "original": "Richard was so tall he could change light bulbs in some rooms without having to stand on a chair.",
+          "prefix": "Richard was",
+          "suffix": "without having to stand on a chair.",
+          "answers": [
+            "tall enough to change light bulbs in some rooms"
+          ],
+          "explanation": "so + adj + that + mệnh đề → adj + enough to V. Bỏ “so” và “he could”, thêm “enough to change”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp03-q3",
+          "number": 3,
+          "original": "It was such a boring film that we left before the end.",
+          "prefix": "The film was so",
+          "answers": [
+            "boring that we left before the end.",
+            "boring we left before the end."
+          ],
+          "explanation": "such + a + adj + noun + that → noun + be + so + adj + that. “such a boring film” → “The film was so boring”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp03-q4",
+          "number": 4,
+          "original": "The question was so difficult that no one could answer it.",
+          "prefix": "It was such",
+          "answers": [
+            "a difficult question that no one could answer it.",
+            "a difficult question that nobody could answer it.",
+            "a difficult question no one could answer."
+          ],
+          "explanation": "so + adj + that → such + a/an + adj + noun + that. “The question was so difficult” → “It was such a difficult question”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp03-q5",
+          "number": 5,
+          "original": "She isn't very intelligent so she can't do that exercise.",
+          "prefix": "She isn't intelligent",
+          "answers": [
+            "enough to do that exercise.",
+            "enough to be able to do that exercise."
+          ],
+          "explanation": "(not) adj + so + can’t V → not + adj + enough to V. “isn’t very intelligent so she can’t…” → “isn’t intelligent enough to do…”."
+        }
+      ]
+    },
+    {
+      "id": "wp04",
+      "title": "Practice 4: Comparison",
+      "instruction": "Viết lại câu sao cho nghĩa không đổi, bắt đầu bằng phần cho sẵn.",
+      "examples": [
+        "Mai is the most beautiful girl in her school. → Nobody is as beautiful as Mai in her school."
+      ],
+      "questions": [
+        {
+          "type": "rewrite",
+          "id": "wp04-q1",
+          "number": 1,
+          "original": "My brother is shorter than all the other boys in his class.",
+          "prefix": "My brother is the",
+          "suffix": "in his class.",
+          "answers": [
+            "shortest boy",
+            "shortest one",
+            "shortest"
+          ],
+          "explanation": "So sánh hơn với “all the other” → so sánh nhất: shorter than all the other boys = the shortest boy in the class."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp04-q2",
+          "number": 2,
+          "original": "They don't speak English as fluently as we do.",
+          "prefix": "We speak",
+          "answers": [
+            "English more fluently than they do.",
+            "English more fluently than them.",
+            "English more fluently than they speak it."
+          ],
+          "explanation": "not as + adv + as → so sánh hơn với chủ ngữ đảo lại: “They don’t speak… as fluently as we” = “We speak… more fluently than they do”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp04-q3",
+          "number": 3,
+          "original": "He doesn't run as fast as his brother.",
+          "prefix": "His brother",
+          "answers": [
+            "runs faster than he does.",
+            "runs faster than him.",
+            "runs faster than he runs."
+          ],
+          "explanation": "not as + adv + as → so sánh hơn với chủ ngữ đảo lại: “He doesn’t run as fast as his brother” = “His brother runs faster than he does”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp04-q4",
+          "number": 4,
+          "original": "The film I saw last week was better than this one.",
+          "prefix": "This film is",
+          "answers": [
+            "worse than the film I saw last week.",
+            "worse than the one I saw last week.",
+            "worse than the film that I saw last week.",
+            "worse than the one that I saw last week."
+          ],
+          "explanation": "Đảo hai vế so sánh và dùng tính từ trái nghĩa: better than this one → this film is worse than the film I saw last week."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp04-q5",
+          "number": 5,
+          "original": "The ring I bought was more expensive than the others in the shop.",
+          "prefix": "I bought",
+          "suffix": "ring in the shop.",
+          "answers": [
+            "the most expensive"
+          ],
+          "explanation": "So sánh hơn với “the others” → so sánh nhất: more expensive than the others = the most expensive."
+        }
+      ]
+    },
+    {
+      "id": "wp05",
+      "title": "Practice 5: Ago / Since / For",
+      "instruction": "Viết lại câu sao cho nghĩa không đổi, bắt đầu bằng phần cho sẵn.",
+      "examples": [
+        "Naomi began studying Korean 5 years ago. → Naomi has been studying (has studied) Korean for 5 years.",
+        "The last time I played football was in 2010. → I haven't played football since 2010."
+      ],
+      "questions": [
+        {
+          "type": "rewrite",
+          "id": "wp05-q1",
+          "number": 1,
+          "original": "She last saw him when she was ten.",
+          "prefix": "She hasn't",
+          "answers": [
+            "seen him since she was ten.",
+            "seen him since she was 10."
+          ],
+          "explanation": "The last time + quá khứ → hasn’t/haven’t + V3 + since + mốc thời gian. Mốc “when she was ten” → “since she was ten”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp05-q2",
+          "number": 2,
+          "original": "Tom began to study English a year ago.",
+          "prefix": "Tom has",
+          "answers": [
+            "studied English for a year.",
+            "been studying English for a year.",
+            "studied English for one year.",
+            "been studying English for one year."
+          ],
+          "explanation": "S + began + V-ing/to V + khoảng thời gian + ago → S + has/have + V3 (been V-ing) + for + khoảng thời gian."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp05-q3",
+          "number": 3,
+          "original": "They haven't written email for two months.",
+          "prefix": "They last",
+          "answers": [
+            "wrote an email two months ago.",
+            "wrote an e-mail two months ago.",
+            "wrote email two months ago.",
+            "wrote emails two months ago."
+          ],
+          "explanation": "haven’t V3 + for + khoảng thời gian → S + last + V2 + khoảng thời gian + ago."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp05-q4",
+          "number": 4,
+          "original": "The last time we were here was in 1980.",
+          "prefix": "We haven't",
+          "answers": [
+            "been here since 1980."
+          ],
+          "explanation": "The last time + was in + năm → haven’t + V3 + since + năm. “were here” → “been here”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp05-q5",
+          "number": 5,
+          "original": "The last time Jack went swimming was in 2012.",
+          "prefix": "Jack hasn't",
+          "answers": [
+            "been swimming since 2012.",
+            "gone swimming since 2012.",
+            "swum since 2012."
+          ],
+          "explanation": "The last time + quá khứ đơn → hasn’t + V3 + since + mốc thời gian. “went swimming” → “gone/been swimming”."
+        }
+      ]
+    },
+    {
+      "id": "wp06",
+      "title": "Practice 6: Should / Ought to — Had better",
+      "instruction": "Viết lại câu sao cho nghĩa không đổi, bắt đầu bằng phần cho sẵn.",
+      "examples": [
+        "'I have an interview tomorrow, so I ought to leave soon,' Michael said. → 'I have an interview tomorrow, so I had better leave soon,' Michael said."
+      ],
+      "questions": [
+        {
+          "type": "rewrite",
+          "id": "wp06-q1",
+          "number": 1,
+          "original": "If you're not well, you ought to ask Ann to go instead.",
+          "prefix": "You'd",
+          "answers": [
+            "better ask Ann to go instead if you're not well.",
+            "better ask Ann to go instead if you are not well.",
+            "better ask Ann to go instead if you aren't well."
+          ],
+          "explanation": "ought to / should + V → had better + V (viết tắt “’d better”). Mệnh đề “If…” đưa xuống cuối câu vì phần cho sẵn bắt đầu bằng “You’d”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp06-q2",
+          "number": 2,
+          "original": "It's cold outside, so you should wear a warm coat.",
+          "prefix": "It's cold",
+          "answers": [
+            "outside, so you'd better wear a warm coat.",
+            "outside so you'd better wear a warm coat.",
+            "outside, so you had better wear a warm coat."
+          ],
+          "explanation": "should + V → had better + V. Phần cho sẵn gồm “It’s cold” và “you’d”; học viên điền “outside, so” ở giữa và “better wear a warm coat” ở cuối."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp06-q3",
+          "number": 3,
+          "original": "As you are feeling ill, you shouldn't go to work.",
+          "prefix": "As you",
+          "answers": [
+            "are feeling ill, you'd better not go to work.",
+            "are feeling ill, you had better not go to work.",
+            "feel ill, you'd better not go to work."
+          ],
+          "explanation": "shouldn’t + V → had better not + V. Phủ định của “had better” là “had better not” (không phải “hadn’t better”)."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp06-q4",
+          "number": 4,
+          "original": "Kids, you should leave now, or you will miss the school bus.",
+          "prefix": "Kids, you'd",
+          "answers": [
+            "better leave now, or you will miss the school bus.",
+            "better leave now, or you'll miss the school bus.",
+            "better leave now or you will miss the school bus.",
+            "better leave now or you'll miss the school bus."
+          ],
+          "explanation": "should + V → had better + V (’d better + V). Phần còn lại của câu giữ nguyên."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp06-q5",
+          "number": 5,
+          "original": "You will need a high school education for any good job, so you shouldn't quit high school.",
+          "prefix": "Since you",
+          "answers": [
+            "will need a high school education for any good job, you'd better not quit high school.",
+            "will need a high school education for any good job, you had better not quit high school.",
+            "need a high school education for any good job, you'd better not quit high school."
+          ],
+          "explanation": "“so” (kết quả) → “Since” (nguyên nhân) ở đầu câu; shouldn’t + V → had better not + V."
+        }
+      ]
+    },
+    {
+      "id": "wp07",
+      "title": "Practice 7: If I were you — You’d better — Advise you to V",
+      "instruction": "Viết lại câu sao cho nghĩa không đổi, bắt đầu bằng phần cho sẵn.",
+      "examples": [
+        "If I were you, I would go and speak to your boss. → I advise you to go and speak to your boss."
+      ],
+      "questions": [
+        {
+          "type": "rewrite",
+          "id": "wp07-q1",
+          "number": 1,
+          "original": "I advise you to go now or you'll be late.",
+          "prefix": "You'd",
+          "answers": [
+            "better go now or you'll be late.",
+            "better go now or you will be late.",
+            "better go now, or you'll be late.",
+            "better go now, or you will be late."
+          ],
+          "explanation": "advise you to V → You’d better V. Mệnh đề “or you’ll be late” giữ nguyên."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp07-q2",
+          "number": 2,
+          "original": "I advise you not to go to work today",
+          "prefix": "You'd",
+          "answers": [
+            "better not go to work today."
+          ],
+          "explanation": "advise you not to V → You’d better not V (phủ định của “had better” là “had better not”)."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp07-q3",
+          "number": 3,
+          "original": "You had better begin by introducing yourself.",
+          "prefix": "I advise",
+          "answers": [
+            "you to begin by introducing yourself."
+          ],
+          "explanation": "You had better V → I advise you to V. Sau “advise somebody” là to-infinitive."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp07-q4",
+          "number": 4,
+          "original": "If I were you, I would forget about buying a new house.",
+          "prefix": "I advise",
+          "answers": [
+            "you to forget about buying a new house."
+          ],
+          "explanation": "If I were you, I would V → I advise you to V. Lời khuyên dạng câu điều kiện chuyển sang “advise you to V”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp07-q5",
+          "number": 5,
+          "original": "You'd better take a complete rest",
+          "prefix": "I advise",
+          "answers": [
+            "you to take a complete rest.",
+            "you to have a complete rest."
+          ],
+          "explanation": "You’d better V → I advise you to V. Sau “advise somebody” là to-infinitive."
+        }
+      ]
+    },
+    {
+      "id": "wp08",
+      "title": "Practice 8: So… that / Such… that / Enough / Too… to",
+      "instruction": "Viết lại câu sao cho nghĩa không đổi, bắt đầu bằng phần cho sẵn.",
+      "examples": [
+        "This song is simple enough for all of us to sing. → This song is so simple that all of us can sing it.",
+        "This song is simple enough for all of us to sing. → It is such a simple song that all of us can sing it.",
+        "It was such hot tea that I couldn't drink it. → The tea was so hot that I couldn't drink it.",
+        "It was such hot tea that I couldn't drink it. → The tea was too hot for me to drink."
+      ],
+      "questions": [
+        {
+          "type": "rewrite",
+          "id": "wp08-q1",
+          "number": 1,
+          "original": "The water was so cold that the children could not swim in it.",
+          "prefix": "The water was too",
+          "answers": [
+            "cold for the children to swim in."
+          ],
+          "explanation": "so + adj + that + S + can’t V → too + adj + (for sb) + to V. Bỏ đại từ “it” ở cuối vì “water” đã là tân ngữ của “in”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp08-q2",
+          "number": 2,
+          "original": "They didn't arrive early enough to see the 1st half of the match.",
+          "prefix": "They arrived too",
+          "answers": [
+            "late to see the 1st half of the match.",
+            "late to see the first half of the match."
+          ],
+          "explanation": "not + adj + enough to V → too + adj trái nghĩa + to V. “not early enough” = “too late”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp08-q3",
+          "number": 3,
+          "original": "He was so tired that he couldn't stay awake until the end of the film.",
+          "prefix": "He was too",
+          "answers": [
+            "tired to stay awake until the end of the film."
+          ],
+          "explanation": "so + adj + that + S + can’t V → too + adj + to V. Cùng chủ ngữ “he” nên không cần “for sb”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp08-q4",
+          "number": 4,
+          "original": "The runner was so exhausted that he couldn't complete the last lap of the race.",
+          "prefix": "The runner was too",
+          "answers": [
+            "exhausted to complete the last lap of the race."
+          ],
+          "explanation": "so + adj + that + S + can’t V → too + adj + to V. Cùng chủ ngữ nên bỏ “for sb”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp08-q5",
+          "number": 5,
+          "original": "Peter is too young to see the horror film.",
+          "prefix": "Peter is not",
+          "answers": [
+            "old enough to see the horror film."
+          ],
+          "explanation": "too + adj + to V → not + adj trái nghĩa + enough to V. “too young” = “not old enough”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp08-q6",
+          "number": 6,
+          "original": "The problem is too difficult for her to solve.",
+          "prefix": "It is such",
+          "answers": [
+            "a difficult problem that she can't solve it.",
+            "a difficult problem that she cannot solve it.",
+            "a difficult problem that she couldn't solve it."
+          ],
+          "explanation": "too + adj + (for sb) to V → such + a/an + adj + noun + that + S + can’t V. Thêm đại từ “it” làm tân ngữ trong mệnh đề that."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp08-q7",
+          "number": 7,
+          "original": "He speaks too fast to be understood.",
+          "prefix": "He speaks so",
+          "answers": [
+            "fast that he can't be understood.",
+            "fast that nobody can understand him.",
+            "fast that no one can understand him.",
+            "fast that he cannot be understood."
+          ],
+          "explanation": "too + adv + to V → so + adv + that + mệnh đề phủ định. Giữ bị động hoặc đổi sang chủ động với “nobody”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp08-q8",
+          "number": 8,
+          "original": "The house isn't big enough for us to live in.",
+          "prefix": "The house is too",
+          "answers": [
+            "small for us to live in."
+          ],
+          "explanation": "not + adj + enough (for sb) to V → too + adj trái nghĩa + (for sb) to V. “not big enough” = “too small”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp08-q9",
+          "number": 9,
+          "original": "The meat was so rotten that it had to be thrown away.",
+          "prefix": "It was",
+          "answers": [
+            "such rotten meat that it had to be thrown away."
+          ],
+          "explanation": "so + adj + that → such + adj + noun (không đếm được, không có a/an) + that. “The meat was so rotten” → “It was such rotten meat”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp08-q10",
+          "number": 10,
+          "original": "She is such a good tennis player that she wins all her matches.",
+          "prefix": "She plays tennis so",
+          "answers": [
+            "well that she wins all her matches.",
+            "well that she wins every match."
+          ],
+          "explanation": "such + a + adj + noun + that → V + so + adv + that. “a good tennis player” → “plays tennis so well”."
+        }
+      ]
+    },
+    {
+      "id": "wp09",
+      "title": "Practice 9: If-clauses",
+      "instruction": "Viết lại câu sao cho nghĩa không đổi, bắt đầu bằng phần cho sẵn.",
+      "examples": [
+        "She isn't tall; that's why she can't reach that shelf. → If she were taller, she could reach that shelf.",
+        "I have to get home before nine. Otherwise my father will be angry with me. → My father will be angry with me if I don't get home before nine.",
+        "I didn't understand what he was saying because I hadn't read his book. → If I had read his book I would have understood what he was saying."
+      ],
+      "questions": [
+        {
+          "type": "rewrite",
+          "id": "wp09-q1",
+          "number": 1,
+          "original": "My brother didn't buy that car because he didn't have enough money.",
+          "prefix": "If my brother",
+          "answers": [
+            "had had enough money, he would have bought that car.",
+            "had had enough money, he'd have bought that car."
+          ],
+          "explanation": "Điều kiện loại 3 (trái với quá khứ): If + had V3, S + would have V3. “didn’t have” → “had had”, “didn’t buy” → “would have bought”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp09-q2",
+          "number": 2,
+          "original": "People don't understand him because he doesn't speak clearly.",
+          "prefix": "If he spoke",
+          "answers": [
+            "clearly, people would understand him.",
+            "clearly, people would understand what he says."
+          ],
+          "explanation": "Điều kiện loại 2 (trái với hiện tại): If + V2, S + would V. Khẳng định ↔ phủ định so với câu gốc."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp09-q3",
+          "number": 3,
+          "original": "He smokes too much; perhaps that's why he can't get rid of his cough.",
+          "prefix": "If he",
+          "answers": [
+            "didn't smoke so much, he could get rid of his cough.",
+            "didn't smoke so much, he might get rid of his cough.",
+            "didn't smoke so much, he would be able to get rid of his cough.",
+            "didn't smoke too much, he could get rid of his cough.",
+            "didn't smoke too much, he might get rid of his cough.",
+            "smoked less, he could get rid of his cough.",
+            "smoked less, he might get rid of his cough."
+          ],
+          "explanation": "Điều kiện loại 2: If + V2 (phủ định), S + could/might/would V. “perhaps” gợi ý dùng “might/could”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp09-q4",
+          "number": 4,
+          "original": "I live near my office, so I don't spend much time travelling to work.",
+          "prefix": "If I",
+          "answers": [
+            "didn't live near my office, I would spend a lot of time travelling to work.",
+            "didn't live near my office, I would spend much time travelling to work.",
+            "did not live near my office, I would spend a lot of time travelling to work.",
+            "didn't live near my office, I'd spend a lot of time travelling to work.",
+            "lived far from my office, I would spend a lot of time travelling to work."
+          ],
+          "explanation": "Điều kiện loại 2: If + V2, S + would V. Đổi khẳng định ↔ phủ định: “live near” → “didn’t live near”, “don’t spend much” → “would spend a lot of”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp09-q5",
+          "number": 5,
+          "original": "You didn't tell me we had run out of bread, so I didn't buy any.",
+          "prefix": "If you had",
+          "answers": [
+            "told me we had run out of bread, I would have bought some.",
+            "told me we had run out of bread, I'd have bought some.",
+            "told me we had run out of bread, I would have bought any."
+          ],
+          "explanation": "Điều kiện loại 3: If + had V3, S + would have V3. Phủ định → khẳng định: “any” → “some”."
+        }
+      ]
+    },
+    {
+      "id": "wp10",
+      "title": "Practice 10: If — Unless",
+      "instruction": "Viết lại câu sao cho nghĩa không đổi, bắt đầu bằng phần cho sẵn.",
+      "examples": [
+        "Unless he phones her immediately, he won't get any information. → If he doesn't phone her immediately, he won't get any information."
+      ],
+      "questions": [
+        {
+          "type": "rewrite",
+          "id": "wp10-q1",
+          "number": 1,
+          "original": "If you don't go on a diet you won't lose weight.",
+          "prefix": "Unless you go",
+          "answers": [
+            "on a diet, you won't lose weight.",
+            "on a diet you won't lose weight.",
+            "on a diet, you will not lose weight."
+          ],
+          "explanation": "If… not → Unless + mệnh đề khẳng định. “don’t go” → “go”; “unless” đã mang nghĩa phủ định nên không dùng “not”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp10-q2",
+          "number": 2,
+          "original": "If there isn't anything in the fridge, I'll go to the shops.",
+          "prefix": "Unless there's",
+          "answers": [
+            "something in the fridge, I'll go to the shops.",
+            "something in the fridge, I will go to the shops.",
+            "anything in the fridge, I'll go to the shops."
+          ],
+          "explanation": "If… not → Unless + mệnh đề khẳng định. “isn’t anything” → “is something”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp10-q3",
+          "number": 3,
+          "original": "If you keep adding salt, you'll spoil the dinner.",
+          "prefix": "Unless you stop",
+          "answers": [
+            "adding salt, you'll spoil the dinner.",
+            "adding salt, you will spoil the dinner.",
+            "adding salt you'll spoil the dinner."
+          ],
+          "explanation": "If + keep V-ing (tiếp tục) = Unless + stop V-ing. “keep adding” ≈ “don’t stop adding”, nên dùng “Unless you stop adding…”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp10-q4",
+          "number": 4,
+          "original": "Unless it rains soon, a lot of our crops will be lost.",
+          "prefix": "If it",
+          "suffix": ", a lot of our crops will be lost.",
+          "answers": [
+            "doesn't rain soon",
+            "does not rain soon"
+          ],
+          "explanation": "Unless + khẳng định → If… not. “Unless it rains” → “If it doesn’t rain”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp10-q5",
+          "number": 5,
+          "original": "If you don't leave immediately, I will call a policeman.",
+          "prefix": "Unless",
+          "answers": [
+            "you leave immediately, I will call a policeman.",
+            "you leave immediately, I'll call a policeman.",
+            "you leave immediately I will call a policeman."
+          ],
+          "explanation": "If… not → Unless + mệnh đề khẳng định. “don’t leave” → “leave”."
+        }
+      ]
+    },
+    {
+      "id": "wp11",
+      "title": "Practice 11: Wish + noun clauses",
+      "instruction": "Viết lại câu sao cho nghĩa không đổi, bắt đầu bằng phần cho sẵn.",
+      "examples": [
+        "Diana didn't apply for the job in the library and regrets it now. → Diana wishes she had applied for the job in the library."
+      ],
+      "questions": [
+        {
+          "type": "rewrite",
+          "id": "wp11-q1",
+          "number": 1,
+          "original": "I'm sorry we can't find a taxi.",
+          "prefix": "I wish",
+          "answers": [
+            "we could find a taxi.",
+            "we were able to find a taxi."
+          ],
+          "explanation": "Điều ước ở hiện tại: wish + S + V2/could V. “can’t find” → “could find”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp11-q2",
+          "number": 2,
+          "original": "I didn't know that she was ill.",
+          "prefix": "I wish",
+          "answers": [
+            "I had known that she was ill.",
+            "I had known she was ill.",
+            "I'd known that she was ill.",
+            "I'd known she was ill."
+          ],
+          "explanation": "Điều ước trái với quá khứ: wish + S + had V3. “didn’t know” → “had known”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp11-q3",
+          "number": 3,
+          "original": "He is sorry that he hasn't done his homework.",
+          "prefix": "He wishes he",
+          "answers": [
+            "had done his homework.",
+            "had done his homework already."
+          ],
+          "explanation": "Tiếc nuối về việc chưa làm: wish + S + had V3. “hasn’t done” → “had done”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp11-q4",
+          "number": 4,
+          "original": "It rained a lot when we were in England.",
+          "prefix": "I wish",
+          "answers": [
+            "it hadn't rained so much when we were in England.",
+            "it hadn't rained a lot when we were in England.",
+            "it hadn't rained so much while we were in England.",
+            "it had not rained so much when we were in England."
+          ],
+          "explanation": "Điều ước trái với quá khứ: wish + S + had V3; khẳng định → phủ định: “rained a lot” → “hadn’t rained so much”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp11-q5",
+          "number": 5,
+          "original": "What a pity I don't know the answer to this question.",
+          "prefix": "I wish",
+          "answers": [
+            "I knew the answer to this question."
+          ],
+          "explanation": "Điều ước ở hiện tại: wish + S + V2. “don’t know” → “knew”."
+        }
+      ]
+    },
+    {
+      "id": "wp12",
+      "title": "Practice 12: Active — Passive",
+      "instruction": "Viết lại câu sao cho nghĩa không đổi, bắt đầu bằng phần cho sẵn.",
+      "examples": [
+        "Someone carried my luggage to the train station. → My luggage was carried to the train station."
+      ],
+      "questions": [
+        {
+          "type": "rewrite",
+          "id": "wp12-q1",
+          "number": 1,
+          "original": "We clean the garage every day.",
+          "prefix": "The garage",
+          "answers": [
+            "is cleaned every day.",
+            "is cleaned by us every day."
+          ],
+          "explanation": "Bị động thì hiện tại đơn: S + am/is/are + V3. “We clean the garage” → “The garage is cleaned”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp12-q2",
+          "number": 2,
+          "original": "The police arrested two hundred people.",
+          "prefix": "Two hundred people",
+          "answers": [
+            "were arrested by the police.",
+            "were arrested."
+          ],
+          "explanation": "Bị động thì quá khứ đơn: S + was/were + V3 (+ by agent). Chủ ngữ số nhiều nên dùng “were”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp12-q3",
+          "number": 3,
+          "original": "They have cancelled the meeting.",
+          "prefix": "The meeting",
+          "answers": [
+            "has been cancelled.",
+            "has been canceled.",
+            "has been cancelled by them."
+          ],
+          "explanation": "Bị động thì hiện tại hoàn thành: S + has/have been + V3. “They” chung chung nên có thể bỏ."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp12-q4",
+          "number": 4,
+          "original": "The secretary has just finished the report.",
+          "prefix": "The report",
+          "answers": [
+            "has just been finished by the secretary.",
+            "has just been finished."
+          ],
+          "explanation": "Bị động thì hiện tại hoàn thành: S + has been + V3; trạng từ “just” đứng giữa “has” và “been”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp12-q5",
+          "number": 5,
+          "original": "The journalists were given an interesting interview by the Prime Minister.",
+          "prefix": "The Prime Minister",
+          "answers": [
+            "gave the journalists an interesting interview.",
+            "gave an interesting interview to the journalists."
+          ],
+          "explanation": "Bị động → chủ động: chuyển “by the Prime Minister” lên làm chủ ngữ, “were given” → “gave” (quá khứ đơn)."
+        }
+      ]
+    },
+    {
+      "id": "wp13",
+      "title": "Practice 13: Causative",
+      "instruction": "Viết lại câu sao cho nghĩa không đổi, bắt đầu bằng phần cho sẵn.",
+      "examples": [
+        "She has the hairdresser do her hair every month. → She has her hair done every month."
+      ],
+      "questions": [
+        {
+          "type": "rewrite",
+          "id": "wp13-q1",
+          "number": 1,
+          "original": "We ask someone to check the accounts every month.",
+          "prefix": "We have the",
+          "answers": [
+            "accounts checked every month."
+          ],
+          "explanation": "Bị động nhờ vả: have + tân ngữ + V3. “ask someone to check the accounts” → “have the accounts checked”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp13-q2",
+          "number": 2,
+          "original": "I had someone dry-clean my coat a week ago.",
+          "prefix": "I had",
+          "answers": [
+            "my coat dry-cleaned a week ago.",
+            "my coat dry cleaned a week ago."
+          ],
+          "explanation": "Causative bị động: had + tân ngữ + V3. “someone dry-clean my coat” → “my coat dry-cleaned”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp13-q3",
+          "number": 3,
+          "original": "An engineer repaired my computer a week ago.",
+          "prefix": "I got an",
+          "answers": [
+            "engineer to repair my computer a week ago.",
+            "engineer to fix my computer a week ago."
+          ],
+          "explanation": "Causative chủ động: get + người + to V + vật. “An engineer repaired” → “I got an engineer to repair”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp13-q4",
+          "number": 4,
+          "original": "I'm going to have the barber cut my hair tomorrow.",
+          "prefix": "I'm going to",
+          "answers": [
+            "have my hair cut tomorrow.",
+            "get my hair cut tomorrow."
+          ],
+          "explanation": "have + người + V → have + vật + V3 (bỏ người thực hiện): “have the barber cut my hair” → “have my hair cut”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp13-q5",
+          "number": 5,
+          "original": "We'll probably have someone paint our house next month.",
+          "prefix": "We'll probably get our",
+          "answers": [
+            "house painted next month."
+          ],
+          "explanation": "have someone V → get/have + vật + V3. “paint our house” → “get our house painted”."
+        }
+      ]
+    },
+    {
+      "id": "wp14",
+      "title": "Practice 14: Because / As / Since — Because of / Due to",
+      "instruction": "Viết lại câu sao cho nghĩa không đổi, bắt đầu bằng phần cho sẵn.",
+      "examples": [
+        "Because she behaves well, everybody loves her. → Because of her good behavior, everybody loves her."
+      ],
+      "questions": [
+        {
+          "type": "rewrite",
+          "id": "wp14-q1",
+          "number": 1,
+          "original": "As he has behaved badly, he must be punished.",
+          "prefix": "Due to his",
+          "answers": [
+            "bad behavior, he must be punished.",
+            "bad behaviour, he must be punished.",
+            "bad behaviour he must be punished.",
+            "having behaved badly, he must be punished."
+          ],
+          "explanation": "As + mệnh đề → Due to + danh từ. “behaved badly” → “bad behavior” (trạng từ → tính từ, động từ → danh từ)."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp14-q2",
+          "number": 2,
+          "original": "Because the weather is hot, we are going swimming.",
+          "prefix": "Because of",
+          "answers": [
+            "the hot weather, we are going swimming.",
+            "the hot weather we are going swimming.",
+            "the weather being hot, we are going swimming."
+          ],
+          "explanation": "Because + mệnh đề → Because of + danh từ. “the weather is hot” → “the hot weather”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp14-q3",
+          "number": 3,
+          "original": "I can't do the work because I'm ill.",
+          "prefix": "Because of",
+          "answers": [
+            "my illness, I can't do the work.",
+            "being ill, I can't do the work.",
+            "my being ill, I can't do the work.",
+            "my illness I can't do the work."
+          ],
+          "explanation": "Because + mệnh đề → Because of + danh từ/V-ing; đảo mệnh đề lên đầu. “I’m ill” → “my illness” / “being ill”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp14-q4",
+          "number": 4,
+          "original": "The car crashed because the driver was careless.",
+          "prefix": "Because of the",
+          "answers": [
+            "driver's carelessness, the car crashed.",
+            "driver's carelessness the car crashed.",
+            "carelessness of the driver, the car crashed.",
+            "driver being careless, the car crashed.",
+            "driver's being careless, the car crashed."
+          ],
+          "explanation": "Because + mệnh đề → Because of + danh từ. “the driver was careless” → “the driver’s carelessness” (tính từ → danh từ)."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp14-q5",
+          "number": 5,
+          "original": "Because of her poor performance, she was eliminated.",
+          "prefix": "She was eliminated because",
+          "answers": [
+            "she performed poorly.",
+            "she performed badly.",
+            "her performance was poor.",
+            "she didn't perform well.",
+            "she did not perform well."
+          ],
+          "explanation": "Because of + danh từ → Because + mệnh đề. “her poor performance” → “she performed poorly”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp14-q6",
+          "number": 6,
+          "original": "He had to drop out at sixteen because of his father's sudden death.",
+          "prefix": "Because his father",
+          "answers": [
+            "died suddenly, he had to drop out at sixteen.",
+            "died unexpectedly, he had to drop out at sixteen.",
+            "suddenly died, he had to drop out at sixteen.",
+            "died suddenly he had to drop out at sixteen."
+          ],
+          "explanation": "Because of + danh từ → Because + mệnh đề. “his father’s sudden death” → “his father died suddenly”."
+        }
+      ]
+    },
+    {
+      "id": "wp15",
+      "title": "Practice 15: It takes (sb) + time + to V",
+      "instruction": "Viết lại câu sao cho nghĩa không đổi, bắt đầu bằng phần cho sẵn.",
+      "examples": [
+        "I spent three weeks reading War and Peace. → It took me three weeks to read War and Peace.",
+        "It took her a long time to decide what to eat. → She spent a long time deciding what to eat."
+      ],
+      "questions": [
+        {
+          "type": "rewrite",
+          "id": "wp15-q1",
+          "number": 1,
+          "original": "I walked to school in 15 minutes.",
+          "prefix": "It took",
+          "answers": [
+            "me 15 minutes to walk to school.",
+            "me fifteen minutes to walk to school.",
+            "me 15 minutes to get to school."
+          ],
+          "explanation": "S + V + in + thời gian → It takes/took + sb + thời gian + to V. Dùng “took” vì câu gốc ở quá khứ."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp15-q2",
+          "number": 2,
+          "original": "The flight to Hanoi lasts an hour and a half.",
+          "prefix": "It takes",
+          "answers": [
+            "an hour and a half to fly to Hanoi.",
+            "an hour and a half to get to Hanoi by plane.",
+            "an hour and a half to fly there.",
+            "an hour and a half to get to Hanoi by air."
+          ],
+          "explanation": "lasts + thời gian → It takes + thời gian + to V. “The flight to Hanoi” → “to fly to Hanoi”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp15-q3",
+          "number": 3,
+          "original": "It took them 5 months to build the house.",
+          "prefix": "They",
+          "answers": [
+            "spent 5 months building the house.",
+            "spent five months building the house.",
+            "spent 5 months on building the house."
+          ],
+          "explanation": "It took sb + thời gian + to V → S + spent + thời gian + V-ing."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp15-q4",
+          "number": 4,
+          "original": "I can get to school in 20 minutes.",
+          "prefix": "It takes",
+          "answers": [
+            "me 20 minutes to get to school.",
+            "me twenty minutes to get to school.",
+            "me 20 minutes to go to school."
+          ],
+          "explanation": "S + V + in + thời gian → It takes + sb + thời gian + to V. Giữ thì hiện tại “takes”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp15-q5",
+          "number": 5,
+          "original": "When Mary wanted a new car, she had to save up for a year.",
+          "prefix": "It took",
+          "answers": [
+            "Mary a year to save up for a new car.",
+            "Mary a year to save up enough for a new car.",
+            "a year for Mary to save up for a new car."
+          ],
+          "explanation": "had to + V + for + thời gian → It took + sb + thời gian + to V."
+        }
+      ]
+    },
+    {
+      "id": "wp16",
+      "title": "Practice 16: It is… since + clause",
+      "instruction": "Viết lại câu sao cho nghĩa không đổi, bắt đầu bằng phần cho sẵn.",
+      "examples": [
+        "I haven't seen her for three weeks. → It's three weeks since I (last) saw her."
+      ],
+      "questions": [
+        {
+          "type": "rewrite",
+          "id": "wp16-q1",
+          "number": 1,
+          "original": "John hasn't had his car repaired for over six months.",
+          "prefix": "It is",
+          "answers": [
+            "over six months since John last had his car repaired.",
+            "over six months since John had his car repaired.",
+            "more than six months since John last had his car repaired.",
+            "more than six months since John had his car repaired."
+          ],
+          "explanation": "S + hasn’t + V3 + for + thời gian → It is + thời gian + since + S + (last) + V2. “hasn’t had” → “last had”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp16-q2",
+          "number": 2,
+          "original": "I haven't had a holiday for two years.",
+          "prefix": "It is",
+          "answers": [
+            "two years since I last had a holiday.",
+            "two years since I had a holiday."
+          ],
+          "explanation": "S + haven’t + V3 + for + thời gian → It is + thời gian + since + S + (last) + V2."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp16-q3",
+          "number": 3,
+          "original": "They haven't visited us for ages.",
+          "prefix": "It is",
+          "answers": [
+            "ages since they last visited us.",
+            "ages since they visited us."
+          ],
+          "explanation": "S + haven’t + V3 + for + thời gian → It is + thời gian + since + S + (last) + V2."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp16-q4",
+          "number": 4,
+          "original": "We have known each other for 6 months.",
+          "prefix": "It is",
+          "answers": [
+            "6 months since we first met.",
+            "six months since we first met.",
+            "6 months since we met.",
+            "six months since we met.",
+            "6 months since we got to know each other.",
+            "six months since we got to know each other."
+          ],
+          "explanation": "have known… for + thời gian → It is + thời gian + since + S + first met. Điểm bắt đầu quen nhau là lúc “first met”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp16-q5",
+          "number": 5,
+          "original": "Nam hasn't been to Nha Trang for 2 years.",
+          "prefix": "It is",
+          "answers": [
+            "2 years since Nam last went to Nha Trang.",
+            "two years since Nam last went to Nha Trang.",
+            "2 years since Nam last visited Nha Trang.",
+            "two years since Nam last visited Nha Trang.",
+            "2 years since Nam last was in Nha Trang.",
+            "two years since Nam last was in Nha Trang.",
+            "2 years since Nam went to Nha Trang.",
+            "two years since Nam went to Nha Trang."
+          ],
+          "explanation": "S + hasn’t + V3 + for + thời gian → It is + thời gian + since + S + last + V2. “hasn’t been to” → “last went to / visited”."
+        }
+      ]
+    },
+    {
+      "id": "wp17",
+      "title": "Practice 17: The more… the more…",
+      "instruction": "Viết lại câu sao cho nghĩa không đổi, bắt đầu bằng phần cho sẵn.",
+      "examples": [
+        "As it is hotter, I feel more miserable. → The hotter it is, the more miserable I feel."
+      ],
+      "questions": [
+        {
+          "type": "rewrite",
+          "id": "wp17-q1",
+          "number": 1,
+          "original": "You leave sooner. You will arrive at your destination earlier.",
+          "prefix": "The sooner",
+          "answers": [
+            "you leave, the earlier you will arrive at your destination.",
+            "you leave, the earlier you'll arrive at your destination.",
+            "you leave the earlier you will arrive at your destination."
+          ],
+          "explanation": "So sánh kép: The + so sánh hơn + S + V, the + so sánh hơn + S + V. Hai câu được nối thành một."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp17-q2",
+          "number": 2,
+          "original": "As T.V programmes become more popular, they seem to get worse.",
+          "prefix": "The more",
+          "answers": [
+            "popular T.V programmes become, the worse they seem to get.",
+            "popular TV programmes become, the worse they seem to get.",
+            "popular T.V programmes become the worse they seem to get.",
+            "popular TV programmes become, the worse they seem."
+          ],
+          "explanation": "As + so sánh hơn → The + so sánh hơn + S + V, the + so sánh hơn + S + V. “more popular” đi liền sau “the more”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp17-q3",
+          "number": 3,
+          "original": "If we sit near to the stage, we can see clearly.",
+          "prefix": "The nearer to",
+          "answers": [
+            "the stage we sit, the more clearly we can see.",
+            "the stage we sit, the clearer we can see.",
+            "the stage we sit the more clearly we can see."
+          ],
+          "explanation": "If + điều kiện → The + so sánh hơn…, the + so sánh hơn…. “near” → “the nearer”, “clearly” → “the more clearly”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp17-q4",
+          "number": 4,
+          "original": "That worker works better when he does not have enough time.",
+          "prefix": "The less",
+          "answers": [
+            "time that worker has, the better he works.",
+            "time that worker has, the better he'll work.",
+            "time that worker has the better he works."
+          ],
+          "explanation": "Không đủ thời gian ≈ ít thời gian hơn → The less + danh từ + S + V, the + so sánh hơn + S + V."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp17-q5",
+          "number": 5,
+          "original": "As he grows older, he becomes increasingly cheerful.",
+          "prefix": "The older",
+          "answers": [
+            "he grows, the more cheerful he becomes.",
+            "he gets, the more cheerful he becomes.",
+            "he grows the more cheerful he becomes.",
+            "he grows, the more cheerful he gets."
+          ],
+          "explanation": "As + so sánh hơn → The + so sánh hơn + S + V, the + so sánh hơn + S + V. “increasingly cheerful” → “the more cheerful”."
+        }
+      ]
+    },
+    {
+      "id": "wp18",
+      "title": "Practice 18: Suggest + noun clause",
+      "instruction": "Viết lại câu sao cho nghĩa không đổi, bắt đầu bằng phần cho sẵn.",
+      "examples": [
+        "Why don't you buy them the picture as a wedding present, Sarah? → Robin suggested that Sarah (should) buy the picture as a wedding present."
+      ],
+      "questions": [
+        {
+          "type": "rewrite",
+          "id": "wp18-q1",
+          "number": 1,
+          "original": "“Why don't you apply for the job, Ann?” said Sue.",
+          "prefix": "Sue suggested",
+          "answers": [
+            "that Ann should apply for the job.",
+            "that Ann apply for the job.",
+            "Ann should apply for the job.",
+            "Ann apply for the job."
+          ],
+          "explanation": "Suggest + that + S + (should) + V nguyên mẫu: câu hỏi “Why don’t you…?” là lời gợi ý, chuyển thành “suggested (that) + chủ ngữ + (should) + V”. “you” đổi theo người được gợi ý."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp18-q2",
+          "number": 2,
+          "original": "“Why don't you put an advertisement in the local paper?” they said to me.",
+          "prefix": "They suggested",
+          "answers": [
+            "that I should put an advertisement in the local paper.",
+            "that I put an advertisement in the local paper.",
+            "I should put an advertisement in the local paper.",
+            "I put an advertisement in the local paper."
+          ],
+          "explanation": "Suggest + that + S + (should) + V nguyên mẫu: câu hỏi “Why don’t you…?” là lời gợi ý, chuyển thành “suggested (that) + chủ ngữ + (should) + V”. “you” đổi theo người được gợi ý."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp18-q3",
+          "number": 3,
+          "original": "“Why don't you go to Paris to study French?” Mary asked Peter.",
+          "prefix": "Mary suggested",
+          "answers": [
+            "that Peter should go to Paris to study French.",
+            "that Peter go to Paris to study French.",
+            "Peter should go to Paris to study French.",
+            "Peter go to Paris to study French."
+          ],
+          "explanation": "Suggest + that + S + (should) + V nguyên mẫu: câu hỏi “Why don’t you…?” là lời gợi ý, chuyển thành “suggested (that) + chủ ngữ + (should) + V”. “you” đổi theo người được gợi ý."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp18-q4",
+          "number": 4,
+          "original": "The doctor said, “Why don't you stop smoking?”",
+          "prefix": "The doctor suggested",
+          "answers": [
+            "that I should stop smoking.",
+            "that I stop smoking.",
+            "that he should stop smoking.",
+            "that he stop smoking.",
+            "that she should stop smoking.",
+            "that she stop smoking.",
+            "that they should stop smoking.",
+            "that they stop smoking.",
+            "I should stop smoking.",
+            "I stop smoking."
+          ],
+          "explanation": "Suggest + that + S + (should) + V nguyên mẫu: câu hỏi “Why don’t you…?” là lời gợi ý, chuyển thành “suggested (that) + chủ ngữ + (should) + V”. “you” đổi theo người được gợi ý. Người nghe không được nêu rõ nên chấp nhận I / he / she / they."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp18-q5",
+          "number": 5,
+          "original": "The teacher said, “Why don't you take the prerequisites before registering for this course?”",
+          "prefix": "The teacher suggested",
+          "answers": [
+            "that we should take the prerequisites before registering for this course.",
+            "that we take the prerequisites before registering for this course.",
+            "that I should take the prerequisites before registering for this course.",
+            "that I take the prerequisites before registering for this course.",
+            "that he should take the prerequisites before registering for this course.",
+            "that he take the prerequisites before registering for this course.",
+            "that she should take the prerequisites before registering for this course.",
+            "that she take the prerequisites before registering for this course.",
+            "that they should take the prerequisites before registering for this course.",
+            "that they take the prerequisites before registering for this course.",
+            "we should take the prerequisites before registering for this course.",
+            "we take the prerequisites before registering for this course."
+          ],
+          "explanation": "Suggest + that + S + (should) + V nguyên mẫu: câu hỏi “Why don’t you…?” là lời gợi ý, chuyển thành “suggested (that) + chủ ngữ + (should) + V”. “you” đổi theo người được gợi ý. Người nghe không được nêu rõ nên chấp nhận we / I / he / she / they."
+        }
+      ]
+    },
+    {
+      "id": "wp19",
+      "title": "Practice 19: Let’s + V — Why don’t we…?",
+      "instruction": "Viết lại câu sao cho nghĩa không đổi, bắt đầu bằng phần cho sẵn.",
+      "questions": [
+        {
+          "type": "rewrite",
+          "id": "wp19-q1",
+          "number": 1,
+          "original": "Let's try that new pizza place.",
+          "prefix": "Why don't",
+          "answers": [
+            "we try that new pizza place?"
+          ],
+          "explanation": "Let’s + V → Why don’t we + V…? Cả hai đều là lời rủ rê, đề nghị cùng làm; kết thúc bằng dấu hỏi."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp19-q2",
+          "number": 2,
+          "original": "Let's share the cost of accommodation.",
+          "prefix": "Why don't",
+          "answers": [
+            "we share the cost of accommodation?"
+          ],
+          "explanation": "Let’s + V → Why don’t we + V…? Cả hai đều là lời rủ rê, đề nghị cùng làm; kết thúc bằng dấu hỏi."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp19-q3",
+          "number": 3,
+          "original": "Let's get together next Sunday.",
+          "prefix": "Why don't",
+          "answers": [
+            "we get together next Sunday?"
+          ],
+          "explanation": "Let’s + V → Why don’t we + V…? Cả hai đều là lời rủ rê, đề nghị cùng làm; kết thúc bằng dấu hỏi."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp19-q4",
+          "number": 4,
+          "original": "Let's plan to meet when we both have free time.",
+          "prefix": "Why don't",
+          "answers": [
+            "we plan to meet when we both have free time?"
+          ],
+          "explanation": "Let’s + V → Why don’t we + V…? Cả hai đều là lời rủ rê, đề nghị cùng làm; kết thúc bằng dấu hỏi."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp19-q5",
+          "number": 5,
+          "original": "Let's stay in this evening.",
+          "prefix": "Why don't",
+          "answers": [
+            "we stay in this evening?",
+            "we stay in tonight?"
+          ],
+          "explanation": "Let’s + V → Why don’t we + V…? Cả hai đều là lời rủ rê, đề nghị cùng làm; kết thúc bằng dấu hỏi."
+        }
+      ]
+    },
+    {
+      "id": "wp20a",
+      "title": "Practice 20A: Direct speech — Indirect speech (Yes/No questions)",
+      "instruction": "Viết lại câu sao cho nghĩa không đổi, bắt đầu bằng phần cho sẵn.",
+      "questions": [
+        {
+          "type": "rewrite",
+          "id": "wp20a-q1",
+          "number": 1,
+          "original": "She said, “Are you hungry, Tom?”",
+          "prefix": "She asked",
+          "answers": [
+            "Tom if he was hungry.",
+            "Tom whether he was hungry."
+          ],
+          "explanation": "Câu hỏi Yes/No trực tiếp → ask/wonder + if/whether + mệnh đề khẳng định (không đảo ngữ, lùi thì, đổi đại từ). “Are you hungry” → “if he was hungry”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp20a-q2",
+          "number": 2,
+          "original": "Tom said, “Can you remember where you put the dictionary, Mary?”",
+          "prefix": "Tom asked",
+          "answers": [
+            "Mary if she could remember where she had put the dictionary.",
+            "Mary whether she could remember where she had put the dictionary.",
+            "Mary if she could remember where she put the dictionary.",
+            "Mary whether she could remember where she put the dictionary."
+          ],
+          "explanation": "Câu hỏi Yes/No trực tiếp → ask/wonder + if/whether + mệnh đề khẳng định (không đảo ngữ, lùi thì, đổi đại từ). “can” → “could”, “you put” → “she had put”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp20a-q3",
+          "number": 3,
+          "original": "My brother said to her, “Did you see George at the football match?”",
+          "prefix": "My brother asked",
+          "answers": [
+            "her if she had seen George at the football match.",
+            "her whether she had seen George at the football match.",
+            "her if she saw George at the football match.",
+            "her whether she saw George at the football match."
+          ],
+          "explanation": "Câu hỏi Yes/No trực tiếp → ask/wonder + if/whether + mệnh đề khẳng định (không đảo ngữ, lùi thì, đổi đại từ). “did you see” → “she had seen” (lùi thì quá khứ đơn → quá khứ hoàn thành)."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp20a-q4",
+          "number": 4,
+          "original": "She said, “Didn't they all do the exercise correctly?”",
+          "prefix": "She wondered",
+          "answers": [
+            "whether they hadn't all done the exercise correctly.",
+            "if they hadn't all done the exercise correctly.",
+            "whether they had not all done the exercise correctly.",
+            "if they had not all done the exercise correctly.",
+            "whether they had all done the exercise correctly.",
+            "if they had all done the exercise correctly."
+          ],
+          "explanation": "Câu hỏi Yes/No phủ định → wonder + if/whether + mệnh đề; “didn’t they all do” → “they hadn’t all done” (lùi thì, bỏ đảo ngữ)."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp20a-q5",
+          "number": 5,
+          "original": "She said to me, “Will you go with me?”",
+          "prefix": "She asked",
+          "answers": [
+            "me if I would go with her.",
+            "me whether I would go with her."
+          ],
+          "explanation": "Câu hỏi Yes/No trực tiếp → ask/wonder + if/whether + mệnh đề khẳng định (không đảo ngữ, lùi thì, đổi đại từ). “will” → “would”, “you” → “I”, “me” → “her”."
+        }
+      ]
+    },
+    {
+      "id": "wp20b",
+      "title": "Practice 20B: Direct speech — Indirect speech (Wh- questions)",
+      "instruction": "Viết lại câu sao cho nghĩa không đổi, bắt đầu bằng phần cho sẵn.",
+      "questions": [
+        {
+          "type": "rewrite",
+          "id": "wp20b-q1",
+          "number": 1,
+          "original": "“Where did you buy your shoes, Sally?” asked Gail.",
+          "prefix": "Gail asked",
+          "answers": [
+            "Sally where she had bought her shoes.",
+            "Sally where she bought her shoes."
+          ],
+          "explanation": "Câu hỏi Wh- trực tiếp → asked + từ để hỏi + mệnh đề khẳng định (không đảo ngữ, lùi thì, đổi đại từ). “did you buy” → “she had bought”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp20b-q2",
+          "number": 2,
+          "original": "“Why don't you close the door, John?” said Mrs. Clark.",
+          "prefix": "Mrs. Clark asked",
+          "answers": [
+            "John why he didn't close the door.",
+            "John why he did not close the door.",
+            "John why he hadn't closed the door.",
+            "John why he had not closed the door."
+          ],
+          "explanation": "Câu hỏi Wh- trực tiếp → asked + từ để hỏi + mệnh đề khẳng định (không đảo ngữ, lùi thì, đổi đại từ). “don’t you close” → “he didn’t close”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp20b-q3",
+          "number": 3,
+          "original": "Tom asked me “What is her name?”",
+          "prefix": "Tom asked",
+          "answers": [
+            "me what her name was.",
+            "me what her name is."
+          ],
+          "explanation": "Câu hỏi Wh- trực tiếp → asked + từ để hỏi + mệnh đề khẳng định (không đảo ngữ, lùi thì, đổi đại từ). “is” → “was”, trật tự chủ ngữ + động từ: “her name was”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp20b-q4",
+          "number": 4,
+          "original": "He said, “Why do they go to Paris so often?”",
+          "prefix": "He asked",
+          "answers": [
+            "why they went to Paris so often.",
+            "why they go to Paris so often."
+          ],
+          "explanation": "Câu hỏi Wh- trực tiếp → asked + từ để hỏi + mệnh đề khẳng định (không đảo ngữ, lùi thì, đổi đại từ). “do they go” → “they went”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp20b-q5",
+          "number": 5,
+          "original": "I said to my brother, “How much did you pay for these overripe tomatoes?”",
+          "prefix": "I asked",
+          "answers": [
+            "my brother how much he had paid for those overripe tomatoes.",
+            "my brother how much he paid for those overripe tomatoes."
+          ],
+          "explanation": "Câu hỏi Wh- trực tiếp → asked + từ để hỏi + mệnh đề khẳng định (không đảo ngữ, lùi thì, đổi đại từ). “you” → “he”, “these” → “those”, “did pay” → “had paid”."
+        }
+      ]
+    },
+    {
+      "id": "wp20c",
+      "title": "Practice 20C: Direct speech — Indirect speech (commands & requests)",
+      "instruction": "Viết lại câu sao cho nghĩa không đổi, bắt đầu bằng phần cho sẵn.",
+      "questions": [
+        {
+          "type": "rewrite",
+          "id": "wp20c-q1",
+          "number": 1,
+          "original": "He said to the stewardess, “Please bring me some hot drink.”",
+          "prefix": "He requested",
+          "answers": [
+            "the stewardess to bring him some hot drink.",
+            "the stewardess to bring him a hot drink."
+          ],
+          "explanation": "Lời yêu cầu lịch sự (có “please”) → requested + sb + to V. “me” → “him”, bỏ “please”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp20c-q2",
+          "number": 2,
+          "original": "“Don't swim too far out”, she warned him.",
+          "prefix": "She warned",
+          "answers": [
+            "him not to swim too far out."
+          ],
+          "explanation": "Lời cảnh báo phủ định → warned + sb + not to V. “Don’t swim” → “not to swim”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp20c-q3",
+          "number": 3,
+          "original": "The officer gave the order: “Fire!”",
+          "prefix": "The officer ordered",
+          "answers": [
+            "them to fire.",
+            "his men to fire.",
+            "the soldiers to fire.",
+            "the men to fire.",
+            "them to open fire.",
+            "his men to open fire.",
+            "the soldiers to open fire."
+          ],
+          "explanation": "Mệnh lệnh → ordered + sb + to V. “Fire!” → “to fire”; người nhận lệnh không nêu rõ nên chấp nhận them / his men / the soldiers."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp20c-q4",
+          "number": 4,
+          "original": "The teacher said to his student, “Don't be late tomorrow.”",
+          "prefix": "The teacher told",
+          "answers": [
+            "his student not to be late the next day.",
+            "his student not to be late the following day.",
+            "his student not to be late tomorrow.",
+            "the student not to be late the next day.",
+            "the student not to be late the following day."
+          ],
+          "explanation": "Lời dặn phủ định → told + sb + not to V. “tomorrow” → “the next day / the following day”."
+        },
+        {
+          "type": "rewrite",
+          "id": "wp20c-q5",
+          "number": 5,
+          "original": "The officer said to the soldier, “Present arms!”",
+          "prefix": "The officer ordered",
+          "answers": [
+            "the soldier to present arms.",
+            "the soldier to present his arms."
+          ],
+          "explanation": "Mệnh lệnh → ordered + sb + to V. “Present arms!” → “to present arms”."
+        }
+      ]
+    }
+  ]
+}

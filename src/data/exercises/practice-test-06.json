@@ -1,0 +1,847 @@
+{
+  "id": "practice-test-06",
+  "title": "Practice Test 6",
+  "kind": "practice-test",
+  "sourcePages": [36, 42],
+  "answerSource": "ai",
+  "omitted": ["Paper 3: Listening (câu 51–70, tài liệu không kèm audio)", "Paper 4: Speaking"],
+  "sections": [
+    {
+      "id": "pt06-p1a",
+      "title": "Paper 1 · Part A: Từ vựng",
+      "instruction": "Chọn từ hoặc cụm từ phù hợp nhất để hoàn thành mỗi câu.",
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt06-q1",
+          "number": 1,
+          "prompt": "Unexpectedly the lights ___ out and we were left in darkness.",
+          "options": ["turned", "put", "went", "cut"],
+          "answer": 2,
+          "explanation": "“go out” = (đèn, lửa) tắt, mất điện. “The lights went out” = đèn đột ngột tắt, nên cả nhóm bị bỏ lại trong bóng tối.",
+          "optionNotes": [
+            "“turn out” có nghĩa là hóa ra, hoặc “turn out the lights” (tắt đèn) với chủ ngữ là người; đèn tự tắt thì không dùng “turned out”.",
+            "“put out” là cụm ngoại động từ (put out a fire / the lights), cần người làm chủ ngữ.",
+            "",
+            "“cut out” thường dùng cho động cơ ngừng chạy hoặc cắt ra; không dùng cho đèn tắt."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q2",
+          "number": 2,
+          "prompt": "The shop will ___ you the full cost of your purchase if you don't like our goods.",
+          "options": ["return", "pay back", "refund", "cover"],
+          "answer": 2,
+          "explanation": "refund somebody something = hoàn tiền lại cho ai. “refund you the full cost” = hoàn lại toàn bộ số tiền bạn đã trả.",
+          "optionNotes": [
+            "return = trả lại (món hàng); không đi với cấu trúc “return you the cost”.",
+            "“pay back” là cụm động từ, tân ngữ đại từ phải đứng giữa: “pay you back the cost” không khớp vị trí “you” ngay sau chỗ trống.",
+            "",
+            "cover = che phủ, chi trả; không mang nghĩa hoàn tiền cho khách."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q3",
+          "number": 3,
+          "prompt": "His life's ___ was to become an independent and successful businessman.",
+          "options": ["expectancy", "ambition", "prediction", "demand"],
+          "answer": 1,
+          "explanation": "“life's ambition” = hoài bão, ước mơ lớn nhất đời. Câu nói mục tiêu là trở thành doanh nhân thành đạt.",
+          "optionNotes": [
+            "expectancy chỉ có trong “life expectancy” (tuổi thọ trung bình).",
+            "",
+            "prediction = lời dự đoán; không phải điều một người mong muốn đạt được.",
+            "demand = yêu cầu, nhu cầu; không hợp nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q4",
+          "number": 4,
+          "prompt": "I hope the baby didn't ___ you during the night.",
+          "options": ["distract", "disturb", "intrude", "bully"],
+          "answer": 1,
+          "explanation": "disturb somebody = làm phiền, quấy rầy (nhất là làm ai mất giấc ngủ). Em bé khóc ban đêm có thể “disturb” người khác.",
+          "optionNotes": [
+            "distract = làm xao nhãng khỏi việc đang tập trung; không nói về giấc ngủ ban đêm.",
+            "",
+            "intrude là nội động từ, đi với “on/upon” (intrude on somebody), không có tân ngữ trực tiếp.",
+            "bully = bắt nạt; không hợp với em bé."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q5",
+          "number": 5,
+          "prompt": "It is good for elderly people to be ___ involved in community service.",
+          "options": ["honestly", "patiently", "eagerly", "actively"],
+          "answer": 3,
+          "explanation": "Cụm cố định “be actively involved in something” = tích cực tham gia vào việc gì.",
+          "optionNotes": [
+            "honestly = thành thật; không đi với “involved in”.",
+            "patiently = kiên nhẫn; không tự nhiên với “involved”.",
+            "eagerly = háo hức; thường đi với “wait eagerly”, không phải “be eagerly involved”.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q6",
+          "number": 6,
+          "prompt": "I wish you wouldn't ___ me when I'm speaking. Please let me finish before you answer.",
+          "options": ["hinder", "interrupt", "prevent", "interfere"],
+          "answer": 1,
+          "explanation": "interrupt somebody = ngắt lời ai. Vế sau “let me finish before you answer” cho thấy người nói bị cắt ngang khi đang nói.",
+          "optionNotes": [
+            "hinder = cản trở một quá trình hay tiến độ; không dùng cho việc ngắt lời.",
+            "",
+            "prevent somebody from doing = ngăn ai làm gì; thiếu “from + V-ing”.",
+            "interfere cần giới từ “with/in” (interfere with something), không dùng trực tiếp với “me”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q7",
+          "number": 7,
+          "prompt": "A woman can never have a happy married life without ___ her husband.",
+          "options": ["demanding", "acquiring", "trusting", "determining"],
+          "answer": 2,
+          "explanation": "trust somebody = tin tưởng ai. Hôn nhân hạnh phúc không thể thiếu việc tin chồng.",
+          "optionNotes": [
+            "demand = đòi hỏi; không hợp nghĩa “hạnh phúc hôn nhân”.",
+            "acquire = đạt được, có được (kỹ năng, tài sản); không dùng cho một người.",
+            "",
+            "determine = xác định, quyết định; không hợp nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q8",
+          "number": 8,
+          "prompt": "The contract between the two companies will ___ at the end of the year.",
+          "options": ["complete", "overcharge", "expire", "finish"],
+          "answer": 2,
+          "explanation": "expire = (hợp đồng, giấy phép, hạn dùng) hết hạn. “The contract will expire” = hợp đồng hết hạn vào cuối năm.",
+          "optionNotes": [
+            "complete là ngoại động từ (hoàn thành việc gì), không dùng không có tân ngữ với nghĩa hết hạn.",
+            "overcharge = tính giá quá cao; không hợp nghĩa.",
+            "",
+            "finish nói về việc kết thúc một hoạt động; với hợp đồng hết hạn thì dùng “expire”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q9",
+          "number": 9,
+          "prompt": "I was a bit ___ of his haircut so I'm heading to my hairdresser's right now!",
+          "options": ["jealous", "scared", "guilty", "ashamed"],
+          "answer": 0,
+          "explanation": "“be jealous of something” = ghen tị với cái gì. Thấy kiểu tóc của người khác đẹp nên ghen tị và đi cắt tóc ngay (“so I'm heading to my hairdresser's”).",
+          "optionNotes": [
+            "",
+            "scared of = sợ; không hợp với việc đi cắt tóc ngay sau đó.",
+            "guilty of dùng cho tội lỗi, việc làm sai; kiểu tóc của người khác không liên quan.",
+            "ashamed of = xấu hổ; người ta xấu hổ vì chính mình, còn đây là tóc của người khác (“his haircut”)."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q10",
+          "number": 10,
+          "prompt": "It's no use trying to persuade him that he's wrong. He's too ___ to change his mind.",
+          "options": ["stubborn", "incredible", "decisive", "definite"],
+          "answer": 0,
+          "explanation": "stubborn = bướng bỉnh, cứng đầu. “too stubborn to change his mind” = quá cứng đầu để thay đổi ý kiến, khớp với “no use trying to persuade”.",
+          "optionNotes": [
+            "",
+            "incredible = khó tin, tuyệt vời; không tả tính cách.",
+            "decisive = quyết đoán; không nhất thiết là không chịu đổi ý.",
+            "definite = rõ ràng, chắc chắn (về sự việc); không tả tính cách một người."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt06-p1b-1",
+      "title": "Paper 1 · Part B: Đọc hiểu (đoạn 1)",
+      "instruction": "Đọc đoạn văn và chọn đáp án đúng nhất cho mỗi câu hỏi.",
+      "passage": {
+        "text": "I'm a big fan of films featuring the spy James Bond. I've got most of them on DVD. We've recently bought Quantum of Solace, in which Daniel Craig plays the part of Bond. I don't know why the films got that name – but it's a great movie anyway.\n\nAll the actors who've played James Bond have been great, but Daniel Craig, who's made lots of other films, plays the part better than any of them. Even though he doesn't talk very much, I think he's the most perfect actor for the role. He even does a few of the more dangerous things in the film himself, instead of getting someone else to do them. I did wonder sometimes whether he'd be clever enough to defeat bad people – but I'm not going to tell you the ending! The actress who stars with Craig gives a fantastic performance too – I love all the glamorous clothes she wore!\n\nThe director probably had a hard job making this Bond film as full of action as earlier ones. But the excitement starts right at the beginning here, with a car chase along a mountain road, and plenty of other thrilling scenes, too – Bond leaping off tall buildings and so on. Unfortunately I found the story difficult to follow in places, and it also seemed to be over very quickly – it lasted under two hours. I also felt there weren't as many jokes as in the old Bond films. And where was all the ridiculous Bond equipment – the underwater car or exploding watch that everyone laughed at? This is a more serious, darker Bond film, but I still enjoyed it."
+      },
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt06-q11",
+          "number": 11,
+          "prompt": "What is the writer trying to do in this essay?",
+          "options": [
+            "Explain what first attracted her to Bond films.",
+            "Tell readers about the Bond DVDs she owns.",
+            "Give a balanced view of a Bond film she has seen.",
+            "Describe how Daniel Craig got the part of James Bond."
+          ],
+          "answer": 2,
+          "explanation": "Bài là một bài nhận xét về phim mới: tác giả khen diễn xuất, cảnh hành động (“great”, “fantastic”, “thrilling”) nhưng cũng chê cốt truyện khó theo dõi, phim ngắn, ít hài hước (“Unfortunately…”). Đó là cái nhìn cân bằng (balanced view).",
+          "optionNotes": [
+            "Bài không kể điều gì lần đầu cuốn hút cô ấy vào phim Bond.",
+            "DVD chỉ được nhắc thoáng qua ở câu đầu (“I've got most of them on DVD”).",
+            "",
+            "Bài không nói Craig nhận vai bằng cách nào."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q12",
+          "number": 12,
+          "prompt": "What can a reader find out from this essay?",
+          "options": [
+            "Whether Quantum of Solace is her favourite Bond film.",
+            "What other films Daniel Craig has made.",
+            "Which other actors have played James Bond.",
+            "Whether she thinks Daniel Craig is the best James Bond."
+          ],
+          "answer": 3,
+          "explanation": "Tác giả viết Craig “plays the part better than any of them” và “the most perfect actor for the role”, tức cô cho rằng anh là James Bond hay nhất.",
+          "optionNotes": [
+            "Bài không nói đây có phải phim Bond yêu thích nhất của cô hay không.",
+            "Bài chỉ nói Craig “made lots of other films”, không nêu tên phim nào.",
+            "Bài chỉ nói chung “all the actors who've played James Bond”, không kể tên ai.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q13",
+          "number": 13,
+          "prompt": "What does the writer tell us about Craig in the new Bond film?",
+          "options": [
+            "He performs some of the action scenes.",
+            "He wears some stylish clothes.",
+            "He is given a lot of lines to say.",
+            "He looks strong and fit enough to fight the criminals."
+          ],
+          "answer": 0,
+          "explanation": "“He even does a few of the more dangerous things in the film himself, instead of getting someone else to do them” = anh tự đóng một số cảnh hành động nguy hiểm.",
+          "optionNotes": [
+            "",
+            "Người mặc quần áo lộng lẫy là nữ diễn viên (“the clothes she wore”), không phải Craig.",
+            "Trái lại, bài nói “he doesn't talk very much”.",
+            "Bài không mô tả vóc dáng; tác giả còn băn khoăn anh có đủ thông minh để đánh bại kẻ xấu hay không."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q14",
+          "number": 14,
+          "prompt": "What is one problem with the film, according to Jessica?",
+          "options": [
+            "It seems a bit too long.",
+            "It's sometimes hard to understand what's happening.",
+            "It has too much silly technology in it.",
+            "It has jokes that aren't very funny."
+          ],
+          "answer": 1,
+          "explanation": "“I found the story difficult to follow in places” = có chỗ cốt truyện khó theo dõi, tức là khó hiểu chuyện gì đang diễn ra.",
+          "optionNotes": [
+            "Ngược lại, phim “seemed to be over very quickly”, chỉ dài chưa tới hai giờ.",
+            "",
+            "Tác giả tiếc vì phim thiếu các thiết bị “ridiculous” (“where was all the ridiculous Bond equipment”), tức không phải có quá nhiều.",
+            "Tác giả chê phim có ít chuyện cười hơn (“there weren't as many jokes”), không nói chuyện cười dở."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q15",
+          "number": 15,
+          "prompt": "Which of these might appear in a magazine review of the new Bond film?",
+          "options": [
+            "'It's full of excitement, with Bond jumping across rooftops, so don't be disappointed by the slow start.'",
+            "'The director wanted to move away from the last Bond film and include a bit less action.'",
+            "'I'm not sure the title tells you much ... but be prepared to watch a rather different kind of Bond movie.'",
+            "'Daniel Craig performed well as James Bond, but the main female star was disappointing.'"
+          ],
+          "answer": 2,
+          "explanation": "Tác giả nói “I don't know why the films got that name” (tên phim chẳng nói lên điều gì) và “This is a more serious, darker Bond film” (một phim Bond khác trước). Câu C tóm đúng hai ý này.",
+          "optionNotes": [
+            "Phim có “the excitement starts right at the beginning”, tức mở đầu đã gay cấn, không có phần mở đầu chậm.",
+            "Bài nói đạo diễn phải làm phim “as full of action as earlier ones”, không giảm hành động.",
+            "",
+            "Tác giả khen nữ diễn viên chính “gives a fantastic performance”, không thất vọng về cô."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt06-p1b-2",
+      "title": "Paper 1 · Part B: Đọc hiểu (đoạn 2)",
+      "instruction": "Đọc đoạn văn và chọn đáp án đúng nhất cho mỗi câu hỏi.",
+      "passage": {
+        "title": "Cycling in the countryside",
+        "text": "Have you ever been cycling? This spring my older brother left the busy city and spent a long weekend cycling in the countryside. Our average speed was only around 14 kph, but that didn't matter. We hadn't come to break any speed records, or to get fit and healthy. All we wanted was some fresh air and a break from schoolwork. My bike only once went more than 30kph, and that was when I raced my brother down the only hill on our route.\n\nWe really enjoyed cycling along flat, traffic-free country paths. There was plenty of spring sunshine, but it was quite cold, especially in the mornings. We didn't mind, though – and we soon warmed up as we rode along. Our only problem was when my brakes started making a terrible noise. But I didn't mind as it gave us an excuse to visit a café while a helpful bike mechanic had a look at it.\n\nThat was one of the best things about our route: every few kilometres there was a village where we could find everything we needed. All the local people were really friendly, too. However, most places we stopped at served chips with all the meals, which soon got fairly boring.\n\nOne night we were woken at 4 a.m. by a group of rugby fans singing loudly in the hotel corridor. We were tired and bad-tempered when we set off the next morning and very really got lost, but soon felt more cheerful when the sun came out. That's what I like about cycling – it's simple and it's fun. If you're looking for a short break that's active and cheap, then cycling is a great choice."
+      },
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt06-q16",
+          "number": 16,
+          "prompt": "What is the writer doing in the text?",
+          "options": [
+            "Describing the different places he saw while cycling.",
+            "Comparing cycling to other forms of exercise.",
+            "Pointing out the differences between cycling in the city and cycling in the countryside.",
+            "Recommending cycling as a good type of holiday."
+          ],
+          "answer": 3,
+          "explanation": "Câu kết: “If you're looking for a short break that's active and cheap, then cycling is a great choice.” Tác giả kể chuyến đi để giới thiệu đạp xe là một kiểu nghỉ ngắn lý tưởng.",
+          "optionNotes": [
+            "Bài chỉ nhắc chung các làng, quán cà phê, không tả những nơi khác nhau mà anh đã thấy.",
+            "Bài không so sánh đạp xe với môn thể thao nào khác.",
+            "Bài không so sánh đạp xe ở thành phố và ở nông thôn.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q17",
+          "number": 17,
+          "prompt": "What do we find about the writer's bike?",
+          "options": [
+            "It wasn't as good as his brother's.",
+            "It was too old to go fast.",
+            "It needed attention at one point.",
+            "It had trouble going uphill."
+          ],
+          "answer": 2,
+          "explanation": "“my brakes started making a terrible noise… a helpful bike mechanic had a look at it”: phanh xe kêu to nên phải nhờ thợ xem, tức xe cần được sửa chữa một lần.",
+          "optionNotes": [
+            "Bài không so sánh xe của hai anh em.",
+            "Bài không nói xe cũ; tốc độ thấp vì họ không cần chạy nhanh.",
+            "",
+            "Bài không nhắc xe khó lên dốc; chỉ nói trên tuyến đường chỉ có một ngọn đồi."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q18",
+          "number": 18,
+          "prompt": "The writer was pleased because",
+          "options": [
+            "he and his brother had chosen a good route.",
+            "he felt much healthier than before he began his trip.",
+            "he met other people who was keen on cycling.",
+            "he went away at the best time of year for cycling."
+          ],
+          "answer": 0,
+          "explanation": "Tác giả hài lòng vì tuyến đường: đường quê bằng phẳng không xe cộ, và “That was one of the best things about our route: every few kilometres there was a village where we could find everything we needed”.",
+          "optionNotes": [
+            "",
+            "Họ không đi để rèn luyện sức khỏe (“We hadn't come… to get fit and healthy”).",
+            "Bài không nói họ gặp người khác cũng thích đạp xe; nhóm người hâm mộ bóng bầu dục chỉ làm họ mất ngủ.",
+            "Trời xuân nhiều nắng nhưng khá lạnh; bài không nói đó là thời điểm tốt nhất để đạp xe."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q19",
+          "number": 19,
+          "prompt": "What did the writer dislike about his trip?",
+          "options": ["breaking down", "the food", "the weather", "getting lost"],
+          "answer": 1,
+          "explanation": "“most places we stopped at served chips with all the meals, which soon got fairly boring”: điều anh không thích là đồ ăn, quán nào cũng phục vụ khoai tây chiên nên nhanh chán.",
+          "optionNotes": [
+            "Xe chỉ bị kêu phanh; anh còn thấy vui vì có cớ ghé quán cà phê (“I didn't mind”).",
+            "",
+            "Trời hơi lạnh nhưng “We didn't mind, though”.",
+            "Họ bị lạc nhưng chẳng mấy chốc vui trở lại khi mặt trời lên (“soon felt more cheerful”)."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q20",
+          "number": 20,
+          "prompt": "What might the writer say in a postcard to a friend?",
+          "options": [
+            "'I'm having a great holiday, spending lots of time in friendly cafes and enjoying being by myself for once.'",
+            "'I'm having really fit cycling so fast up and down the hills in this part of the countryside.'",
+            "'I'm pleased to be away from cars and lorries for a change. Having a good time, despite some problems.'",
+            "'I'm enjoying cycling with my brother this weekend, and staying at a very quiet hotel in this countryside.'"
+          ],
+          "answer": 2,
+          "explanation": "Câu C khớp bài: đạp xe trên “traffic-free country paths” (không có xe cộ) và vẫn vui “despite some problems” (phanh kêu, mất ngủ vì ồn, bị lạc, đồ ăn chán).",
+          "optionNotes": [
+            "Anh đi cùng anh trai nên không “by myself”; anh cũng không dành nhiều thời gian trong quán cà phê.",
+            "Tốc độ trung bình chỉ khoảng 14 kph và chỉ có một ngọn đồi, nên không thể đạp “so fast up and down the hills”.",
+            "",
+            "Khách sạn không yên tĩnh: họ bị đánh thức lúc 4 giờ sáng vì tiếng hát ồn ào."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt06-p2a",
+      "title": "Paper 2 · Part A: Hoàn thành câu",
+      "instruction": "Chọn từ hoặc cụm từ phù hợp nhất để hoàn thành mỗi câu.",
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt06-q21",
+          "number": 21,
+          "prompt": "- \"Do you know this neighborhood well?\"\n- \"Yes. In fact, that's the house in ___ I spent my childhood.\"",
+          "options": ["that", "which", "what", "where"],
+          "answer": 1,
+          "explanation": "Giới từ “in” đứng trước đại từ quan hệ thì phải dùng “which” (chỉ vật): “the house in which I spent my childhood” = ngôi nhà mà tôi đã sống thuở nhỏ.",
+          "optionNotes": [
+            "“that” không đứng ngay sau giới từ.",
+            "",
+            "“what” không làm đại từ quan hệ thay cho danh từ đứng trước (“the house”).",
+            "“where” đã mang nghĩa “in which”, đi sau “in” sẽ thừa giới từ."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q22",
+          "number": 22,
+          "prompt": "During the years he composed, Charles Ives was isolated from the music world; ___ his major works was publicly performed.",
+          "options": ["not", "not of", "none", "none of"],
+          "answer": 3,
+          "explanation": "“none of + danh từ số nhiều” = không tác phẩm nào trong số… Sau “none of his major works” động từ có thể chia số ít (“was”): không tác phẩm lớn nào của ông được biểu diễn công khai.",
+          "optionNotes": [
+            "“not” không đứng trước chủ ngữ như vậy.",
+            "“not of” không phải cấu trúc đúng.",
+            "“none” cần “of” khi theo sau là “his major works”.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q23",
+          "number": 23,
+          "prompt": "Laura wished she ___ downstairs now and tell her mother what she had done, but she knew she would not.",
+          "options": ["would go", "would have gone", "could have gone", "could go"],
+          "answer": 3,
+          "explanation": "“wish + quá khứ đơn / could + V” diễn tả điều ước trái với hiện tại (có “now”): “she wished she could go downstairs now” = ước gì cô ấy có thể xuống nhà ngay bây giờ.",
+          "optionNotes": [
+            "“wish… would” dùng cho thói quen người khác khiến mình khó chịu, không dùng khi chủ ngữ là chính người ước.",
+            "“would have gone” dùng cho điều ước trái với quá khứ, mà câu có “now”.",
+            "“could have gone” cũng là điều ước trái với quá khứ.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q24",
+          "number": 24,
+          "prompt": "Mail off your paperwork or get someone ___ it for you.",
+          "options": ["file", "to file", "filing", "filed"],
+          "answer": 1,
+          "explanation": "“get somebody to do something” = nhờ ai làm gì: “get someone to file it for you”.",
+          "optionNotes": [
+            "“get somebody + V nguyên mẫu” không đúng; “get” cần “to”.",
+            "",
+            "“get somebody doing” có nghĩa khác (làm cho ai bắt đầu làm gì), không hợp ở đây.",
+            "“get something filed” dùng với tân ngữ là vật, còn “someone” là người nên phải dùng “to file”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q25",
+          "number": 25,
+          "prompt": "Having passed all his exams with top scores, ___.",
+          "options": [
+            "Carol was admitted to several colleges",
+            "several colleges have admitted Carol",
+            "several colleges admitted Carol",
+            "Carol admitted to several colleges"
+          ],
+          "answer": 0,
+          "explanation": "Mệnh đề rút gọn “Having passed…” phải cùng chủ ngữ với mệnh đề chính: người đã đậu kỳ thi là Carol, và Carol được (bị động) nhận vào các trường: “Carol was admitted to several colleges”.",
+          "optionNotes": [
+            "",
+            "Chủ ngữ là “several colleges” nên “Having passed” sai chủ ngữ (trường đại học đâu có thi đậu).",
+            "Sai chủ ngữ như câu B.",
+            "Thiếu động từ chính, “admitted” ở đây chỉ là phân từ."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q26",
+          "number": 26,
+          "prompt": "The man sitting next to us on the plane was nervous because he ___ before.",
+          "options": ["hasn't flown", "didn't fly", "hadn't flown", "wasn't flying"],
+          "answer": 2,
+          "explanation": "Việc chưa bao giờ đi máy bay xảy ra trước thời điểm “was nervous” (quá khứ), nên dùng quá khứ hoàn thành: “because he hadn't flown before”.",
+          "optionNotes": [
+            "Hiện tại hoàn thành không hợp với mốc thời gian trong quá khứ (“was nervous”).",
+            "Quá khứ đơn không nhấn mạnh việc xảy ra trước đó, và “before” cần thì hoàn thành.",
+            "",
+            "Quá khứ tiếp diễn không hợp nghĩa “chưa từng bay trước đây”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q27",
+          "number": 27,
+          "prompt": "That awful drilling noise, ___ from our neighbor's house across the street, woke us up.",
+          "options": ["come", "comes", "came", "coming"],
+          "answer": 3,
+          "explanation": "Rút gọn mệnh đề quan hệ chủ động bằng V-ing: “the noise, coming from our neighbor's house” (= which was coming from…). Động từ chính của câu là “woke”.",
+          "optionNotes": [
+            "“come” làm câu có thêm động từ chính, sai ngữ pháp.",
+            "“comes” cũng là động từ chính thứ hai, sai ngữ pháp.",
+            "“came” cũng thành động từ chính thứ hai.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q28",
+          "number": 28,
+          "prompt": "- \"How many pages ___ so far?\"\n- \"Sixteen.\"",
+          "options": ["do you study", "did you study", "have you studied", "had you studied"],
+          "answer": 2,
+          "explanation": "“so far” (cho đến lúc này) đi với hiện tại hoàn thành: “How many pages have you studied so far?”",
+          "optionNotes": [
+            "Hiện tại đơn dùng cho thói quen, không hợp với “so far”.",
+            "Quá khứ đơn không đi với “so far”.",
+            "",
+            "Quá khứ hoàn thành cần một mốc quá khứ khác, ở đây không có."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q29",
+          "number": 29,
+          "prompt": "- \"Do you like football?\"\n- \"No, I have ___ interest in it.\"",
+          "options": ["little", "a few", "a little", "few"],
+          "answer": 0,
+          "explanation": "“interest” là danh từ không đếm được. “little” (không có nghĩa phủ định mạnh) = rất ít, gần như không, hợp với câu trả lời “No”.",
+          "optionNotes": [
+            "",
+            "“a few” dùng cho danh từ đếm được số nhiều.",
+            "“a little” = có một chút (nghĩa tích cực), không hợp với câu trả lời “No”.",
+            "“few” dùng cho danh từ đếm được số nhiều."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q30",
+          "number": 30,
+          "prompt": "It's a beautiful photo. I'm going to ___.",
+          "options": ["get it enlarging", "have it enlarging", "have it enlarged", "set it enlarged"],
+          "answer": 2,
+          "explanation": "Thể nhờ bảo: “have + vật + V3/V-ed” = nhờ người khác làm gì cho mình. “have it enlarged” = đem ảnh đi phóng to.",
+          "optionNotes": [
+            "“get + vật + V-ing” có nghĩa là làm cho vật hoạt động, không hợp nghĩa.",
+            "“have + vật + V-ing” không đúng cấu trúc nhờ bảo.",
+            "",
+            "“set it enlarged” không phải cấu trúc đúng."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q31",
+          "number": 31,
+          "prompt": "I couldn't use the pay phone, ___ I didn't have any coins with me.",
+          "options": ["yet", "despite", "for", "even though"],
+          "answer": 2,
+          "explanation": "“for” (liên từ, sau dấu phẩy) = vì, bởi vì. Không dùng được điện thoại công cộng vì không mang theo tiền xu.",
+          "optionNotes": [
+            "yet = nhưng; hai vế không đối lập.",
+            "despite là giới từ, không đi với mệnh đề đầy đủ.",
+            "",
+            "even though = mặc dù; sai quan hệ nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q32",
+          "number": 32,
+          "prompt": "___ these plants regularly or they will die.",
+          "options": ["Water", "If you water", "Unless you water", "Because you water"],
+          "answer": 0,
+          "explanation": "Câu mệnh lệnh + “or” (nếu không thì): “Water these plants regularly or they will die” = hãy tưới cây đều đặn, nếu không chúng sẽ chết.",
+          "optionNotes": [
+            "",
+            "“If you water…” rồi “or they will die” là cấu trúc thừa, vì “or” đã có nghĩa điều kiện phủ định.",
+            "“Unless you water… or…” bị thừa hai từ điều kiện/phủ định.",
+            "“Because” không hợp nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q33",
+          "number": 33,
+          "prompt": "Our parents join hands to give us ___ nice house and ___ happy home.",
+          "options": ["a / the", "a / a", "Ø / Ø", "the / a"],
+          "answer": 1,
+          "explanation": "Cả “nice house” và “happy home” đều là danh từ đếm được số ít, nhắc đến lần đầu và chưa xác định, nên đều dùng “a”.",
+          "optionNotes": [
+            "“the happy home” chỉ một ngôi nhà đã xác định, nhưng ở đây chưa nhắc tới trước đó.",
+            "",
+            "Danh từ đếm được số ít không thể đứng một mình không có mạo từ.",
+            "“the nice house” chỉ vật đã xác định, nhưng ở đây chưa nhắc tới trước đó."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q34",
+          "number": 34,
+          "prompt": "I wish I ___ work today. I'm so tired.",
+          "options": ["mustn't", "needn't", "don't have to", "didn't have to"],
+          "answer": 3,
+          "explanation": "“wish + quá khứ đơn” diễn tả điều ước trái với hiện tại. “I wish I didn't have to work today” = ước gì hôm nay mình không phải đi làm.",
+          "optionNotes": [
+            "Sau “wish” phải lùi thì (quá khứ); “mustn't” là hiện tại và mang nghĩa cấm.",
+            "“needn't” không lùi thì sau “wish”.",
+            "Hiện tại đơn không dùng sau “wish” để diễn tả điều ước ở hiện tại.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q35",
+          "number": 35,
+          "prompt": "Just think! This time tomorrow we ___ on a beach in Nha Trang.",
+          "options": ["will be", "are lying", "will be lying", "will have lain"],
+          "answer": 2,
+          "explanation": "“This time tomorrow” là dấu hiệu của tương lai tiếp diễn: việc đang diễn ra tại một thời điểm xác định trong tương lai, “will be lying”.",
+          "optionNotes": [
+            "Tương lai đơn chỉ nêu sự việc sẽ xảy ra, không nhấn mạnh hành động “đang diễn ra” vào thời điểm “this time tomorrow” như “will be lying”.",
+            "Hiện tại tiếp diễn dùng cho kế hoạch gần, không hợp với mốc “this time tomorrow”.",
+            "",
+            "Tương lai hoàn thành nói về việc hoàn tất trước một mốc, không hợp ở đây."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt06-p2b",
+      "title": "Paper 2 · Part B: Điền từ vào đoạn văn",
+      "instruction": "Chọn từ hoặc cụm từ phù hợp nhất cho mỗi chỗ trống được đánh số trong đoạn văn.",
+      "passage": {
+        "text": "Despite the wealth of information campaigns telling people about global warming and its causes, most people have yet to realize {{36}}. Coming climate changes could alter as much as {{37}} of plant and animal habitats by the end of the 22nd century. These changes could in {{38}} cause widespread extinctions among plant and animal {{39}} around the globe.\n\nCoastal and island habitats are perhaps in the greatest danger {{40}} they face the combined threats of warming oceans and rising sea {{41}}. As habitats change, many animals will come {{42}} intense pressure to find more suitable homes for themselves. Mass migration of at least some animals are certainly to be expected, but the fact remains that many animals will simply not be able to move fast enough.\n\nSuch dire predictions {{43}} sound alarming, but they are based on the rather moderate estimate {{44}} the amount of carbon dioxide in the atmosphere will double by 2100. Many scientists believe, however, that this figure is actually very conservative, and they claim that a tripling is far more {{45}}. If they are correct, the effects on nature will be even more dramatic."
+      },
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt06-q36",
+          "number": 36,
+          "options": [
+            "how the problem is severe",
+            "how severe is the problem",
+            "how severe the problem is",
+            "the problem is how severe"
+          ],
+          "answer": 2,
+          "explanation": "Mệnh đề danh từ làm tân ngữ của “realize” phải giữ trật tự câu khẳng định: “how + tính từ + chủ ngữ + động từ” = “how severe the problem is”.",
+          "optionNotes": [
+            "Sai trật tự: “how” phải đi liền với tính từ “severe”.",
+            "Đảo ngữ kiểu câu hỏi (“is the problem”) không dùng trong mệnh đề danh từ.",
+            "",
+            "Sai trật tự từ: thiếu “how severe” ở đầu mệnh đề."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q37",
+          "number": 37,
+          "options": ["one-thirds", "one-third", "one-three", "the third"],
+          "answer": 1,
+          "explanation": "Phân số: một phần ba = “one-third” (tử số là số đếm, mẫu số là số thứ tự). “as much as one-third of plant and animal habitats” = nhiều tới một phần ba nơi sinh sống của động thực vật.",
+          "optionNotes": [
+            "“one-thirds” sai: tử số là 1 thì mẫu số không thêm “s”.",
+            "",
+            "“one-three” không phải cách đọc phân số.",
+            "“the third” chỉ thứ tự thứ ba, không chỉ một phần ba."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q38",
+          "number": 38,
+          "options": ["turn", "result", "order", "line"],
+          "answer": 0,
+          "explanation": "Cụm cố định “in turn” = đến lượt nó, tiếp theo đó: những thay đổi này đến lượt chúng có thể gây ra sự tuyệt chủng hàng loạt.",
+          "optionNotes": [
+            "",
+            "“in result” sai; đúng là “as a result” hoặc “result in”.",
+            "“in order” phải đi với “to” (in order to) hoặc có nghĩa khác.",
+            "“in line” = xếp hàng, phù hợp với; không hợp nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q39",
+          "number": 39,
+          "options": ["types", "genres", "categories", "species"],
+          "answer": 3,
+          "explanation": "“plant and animal species” = các loài động thực vật; “species” đi với sự tuyệt chủng (extinction) trong sinh học.",
+          "optionNotes": [
+            "types = các loại nói chung, không phải thuật ngữ phân loại sinh học.",
+            "genres = thể loại (phim, nhạc, văn học).",
+            "categories = hạng mục, nhóm phân loại chung.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q40",
+          "number": 40,
+          "options": ["although", "since", "providing", "therefore"],
+          "answer": 1,
+          "explanation": "“since” (liên từ) = bởi vì: các môi trường ven biển và hải đảo gặp nguy hiểm lớn nhất vì chúng phải đối mặt với nhiều mối đe dọa cùng lúc.",
+          "optionNotes": [
+            "although = mặc dù; vế sau là lý do, không phải sự nhượng bộ.",
+            "",
+            "providing (that) = miễn là; không hợp nghĩa nguyên nhân.",
+            "therefore = vì vậy; là trạng từ liên kết, không nối mệnh đề lý do ở đây."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q41",
+          "number": 41,
+          "options": ["heights", "altitudes", "levels", "tides"],
+          "answer": 2,
+          "explanation": "Cụm cố định “rising sea levels” = mực nước biển dâng.",
+          "optionNotes": [
+            "“sea heights” không phải cách nói thông dụng.",
+            "altitude = độ cao so với mực nước biển, không nói về mực nước dâng.",
+            "",
+            "tides = thủy triều, không phải hiện tượng dâng lên do ấm lên toàn cầu."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q42",
+          "number": 42,
+          "options": ["from", "under", "across", "by"],
+          "answer": 1,
+          "explanation": "Cụm cố định “come under pressure” = chịu áp lực. “come under intense pressure to find more suitable homes” = chịu áp lực lớn phải tìm nơi ở phù hợp hơn.",
+          "optionNotes": [
+            "“come from pressure” sai nghĩa; không phải cụm cố định.",
+            "",
+            "“come across” = tình cờ gặp, không đi với “pressure”.",
+            "“come by” = ghé thăm, kiếm được; không hợp nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q43",
+          "number": 43,
+          "options": ["may", "must", "can", "ought to"],
+          "answer": 0,
+          "explanation": "“may sound alarming, but they are based on…” = có thể nghe có vẻ đáng sợ, nhưng chúng dựa trên… Cấu trúc nhượng bộ “may… but…”.",
+          "optionNotes": [
+            "",
+            "“must sound” = chắc hẳn nghe có vẻ; mang nghĩa suy đoán chắc chắn, không hợp với cấu trúc nhượng bộ.",
+            "“can” nói về khả năng; “may” hợp hơn cho nhượng bộ.",
+            "“ought to” = nên, không hợp nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q44",
+          "number": 44,
+          "options": ["which", "what", "that", "why"],
+          "answer": 2,
+          "explanation": "“the estimate that the amount of carbon dioxide… will double” = ước tính rằng lượng CO2 sẽ tăng gấp đôi. “that” mở đầu mệnh đề bổ nghĩa cho danh từ “estimate”.",
+          "optionNotes": [
+            "“which” sẽ cần đóng vai trò chủ ngữ hoặc tân ngữ trong mệnh đề quan hệ, mà ở đây mệnh đề đã có đủ chủ ngữ.",
+            "“what” không bổ nghĩa cho danh từ đứng trước.",
+            "",
+            "“why” chỉ lý do, không hợp nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt06-q45",
+          "number": 45,
+          "options": ["truthful", "proper", "exact", "realistic"],
+          "answer": 3,
+          "explanation": "“a tripling is far more realistic” = việc tăng gấp ba thì thực tế hơn nhiều. Các nhà khoa học cho rằng con số “gấp đôi” là quá thấp (“conservative”).",
+          "optionNotes": [
+            "truthful = thành thật (người nói); không dùng cho một dự báo.",
+            "proper = đúng đắn, phù hợp chuẩn mực; không hợp nghĩa.",
+            "exact = chính xác tuyệt đối; dự báo không thể “exact”.",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt06-p2c",
+      "title": "Paper 2 · Part C: Viết lại câu",
+      "instruction": "Hoàn thành câu thứ hai sao cho nghĩa không đổi so với câu gốc.",
+      "questions": [
+        {
+          "type": "rewrite",
+          "id": "pt06-q46",
+          "number": 46,
+          "original": "The film was so funny that I burst out laughing.",
+          "prefix": "It was such",
+          "answers": [
+            "a funny film that I burst out laughing.",
+            "a funny film that I burst into laughter."
+          ],
+          "explanation": "so + tính từ + that → such + a/an + tính từ + danh từ + that. “The film was so funny” chuyển thành “It was such a funny film”."
+        },
+        {
+          "type": "rewrite",
+          "id": "pt06-q47",
+          "number": 47,
+          "original": "We must hurry or we won't catch the train.",
+          "prefix": "Unless",
+          "answers": ["we hurry, we won't catch the train.", "we hurry we won't catch the train."],
+          "explanation": "Câu điều kiện loại 1: “or” (nếu không thì) = “if… not” = “unless”. Unless + mệnh đề khẳng định (không dùng thêm “not”) + mệnh đề chính: “Unless we hurry, we won't catch the train.”"
+        },
+        {
+          "type": "rewrite",
+          "id": "pt06-q48",
+          "number": 48,
+          "original": "Peter advised me to sell the shares immediately.",
+          "prefix": "Peter suggested",
+          "answers": [
+            "that I (should) sell the shares immediately.",
+            "that I should sell the shares immediately.",
+            "that I sell the shares immediately.",
+            "my selling the shares immediately.",
+            "selling the shares immediately."
+          ],
+          "explanation": "advise somebody to do something → suggest (that) somebody (should) do something. Sau “suggest” dùng “that + chủ ngữ + (should) + V nguyên mẫu” hoặc V-ing; không dùng “suggest somebody to do”."
+        },
+        {
+          "type": "rewrite",
+          "id": "pt06-q49",
+          "number": 49,
+          "original": "\"Did you write a note for Anna?\" I asked my mother.",
+          "prefix": "I asked my mother",
+          "suffix": "a note for Anna.",
+          "answers": [
+            "if she had written",
+            "whether she had written",
+            "if she wrote",
+            "whether she wrote"
+          ],
+          "explanation": "Câu hỏi Yes/No trong lời nói gián tiếp: ask + tân ngữ + if/whether + chủ ngữ + động từ, lùi một thì (quá khứ đơn → quá khứ hoàn thành), đổi “you” thành “she”, không đảo ngữ."
+        },
+        {
+          "type": "rewrite",
+          "id": "pt06-q50",
+          "number": 50,
+          "original": "I have never known a better tennis player than Roger Federer.",
+          "prefix": "Roger Federer is",
+          "answers": [
+            "the best tennis player I have ever known.",
+            "the best tennis player that I have ever known.",
+            "the best tennis player I've ever known.",
+            "the best tennis player I have known."
+          ],
+          "explanation": "Chưa từng biết ai hơn (so sánh hơn + never) = người giỏi nhất (so sánh nhất) ever: “the best + danh từ + (that) I have ever known”, dùng thì hiện tại hoàn thành."
+        }
+      ]
+    }
+  ]
+}

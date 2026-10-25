@@ -114,7 +114,7 @@ Không cần backend/database server cho MVP. (Tuỳ chọn sau này: Supabase �
 - Gamification: khu vườn kiểu Mochi Garden (mỗi ngày đạt mục tiêu trồng thêm 1 cây), huy hiệu, linh vật.
 - Từ điển tra từ ngoài kho (nghĩa tiếng Việt) và lưu vào Sổ tay để ôn.
 - Hình minh hoạ thật thay cho emoji.
-- **Bài tập (chưa triển khai):** tab thứ ba của thanh điều hướng, hiện màn "Sắp ra mắt". Dự kiến: người dùng nhập tài liệu của mình (bài đọc, đề, ghi chú) và làm bài tập từ đó.
+- **Bài tập:** tab thứ ba của thanh điều hướng. Đặc tả ở mục 3.4. Việc người dùng tự nhập tài liệu ngay trong app để sinh bài tập vẫn để sau.
 - Nhiều bộ từ tự tạo (ngoài từ tự nhập ở Tự học), nhập hàng loạt từ file CSV.
 - Bài kiểm tra đầu vào xác định trình độ.
 - Đồng bộ đa thiết bị (Supabase).
@@ -124,6 +124,79 @@ Không cần backend/database server cho MVP. (Tuỳ chọn sau này: Supabase �
 - AI giải thích cách dùng từ, chấm câu người dùng tự đặt.
 - Từ đồng nghĩa / trái nghĩa, collocation, word family.
 - Chuyển sang app iOS native (Capacitor hoặc viết lại bằng Expo) khi có tài khoản Apple Developer.
+
+### 3.4. Bài tập (luyện đề từ tài liệu ôn tập)
+
+**Nguồn nội dung**
+- Tài liệu gốc: "Tài liệu ôn tập môn Tiếng Anh – chương trình thi đầu vào trình độ thạc sĩ" (ĐH KHTN, 8/2026). File PDF scan 80 trang, có sẵn lớp chữ OCR.
+- Nội dung được chuyển **lúc phát triển** thành JSON đóng gói trong app (`src/data/exercises/`). App không đọc PDF lúc chạy, không cần server.
+- Đã chuyển 14 bộ, tổng 710 câu (544 trắc nghiệm, 166 viết lại câu):
+
+| Bộ | File | Nội dung |
+|---|---|---|
+| 10 đề Practice Test | `practice-test-01.json` … `-10.json` | Mỗi đề 50 câu: từ vựng (10), 2 bài đọc hiểu (5 + 5), hoàn thành câu (15), điền từ vào đoạn văn – cloze (10), viết lại câu (5) |
+| 3 bài Grammar Practice | `grammar-practice-01.json` … `-03.json` | Trắc nghiệm ngữ pháp kiểu TOEFL: 20, 39, 35 câu |
+| Writing Practice | `writing-practice.json` | 22 chủ điểm viết lại câu (Although/Despite, câu điều kiện, bị động, câu tường thuật…), có ví dụ mẫu; 116 câu |
+
+- **Bỏ qua:** phần Nghe (Paper 3, câu 51–70 của Test 1–8) vì tài liệu không kèm audio, và phần Nói (Paper 4). Mỗi đề ghi rõ phần bị bỏ trong trường `omitted`.
+- **Đáp án do AI giải.** Tài liệu gốc không có đáp án, nên `answerSource: "ai"`. Mọi câu trắc nghiệm có lời giải thích tiếng Việt, kèm một dòng giải thích cho từng đáp án sai. Câu viết lại có cấu trúc được kiểm tra và danh sách nhiều đáp án được chấp nhận.
+- Lỗi chính tả của bản gốc được giữ nguyên, trừ lỗi OCR (chữ dính, sai ký tự). Grammar Practice 2 không có câu 37 ngay trong bản gốc.
+
+**Màn hình và luồng**
+- **Tab Bài tập (`/bai-tap`):** ba nhóm "Đề luyện tập", "Ngữ pháp", "Viết lại câu".
+  - Mỗi bộ là một thẻ gồm: tên, số câu, trạng thái (*Chưa làm* / *Đang làm dở* / *Điểm cao nhất x/y*).
+  - Có lối tắt "Làm lại câu sai" khi còn câu sai chưa làm lại đúng.
+- **Chi tiết bộ (`/bai-tap/:setId`):**
+  - Danh sách các phần (tên, số câu, điểm lần gần nhất).
+  - Nút chính "Làm cả đề"; mỗi phần có nút "Làm phần này".
+  - Ghi chú nhỏ: "Đáp án và giải thích do AI soạn, có thể chưa chính xác", cùng các phần bị bỏ qua.
+- **Làm bài (`/bai-tap/:setId/lam`, tham số `?phan=<sectionId>` khi làm một phần):**
+  - Mỗi màn một câu, dùng khung phiên học sẵn có (thanh tiến độ, nút thoát có xác nhận).
+  - Câu trả lời được **chấm ngay** sau khi nộp: hiện đúng/sai theo ngôn ngữ "bút đỏ" (mục 8.1), lời giải thích, và ghi chú của đáp án người dùng đã chọn nếu chọn sai.
+- **Tiến độ dở dang** được lưu sau mỗi câu. Mở lại bộ đang làm dở sẽ hỏi "Làm tiếp" hay "Làm lại từ đầu".
+- **Tổng kết:**
+  - Điểm theo từng phần và tổng điểm.
+  - Danh sách câu sai; bấm vào để xem lại câu, đáp án và giải thích.
+  - Nút "Làm lại câu sai" và "Về danh sách".
+
+**Giao diện theo dạng câu hỏi**
+- **Trắc nghiệm** (`choice`; dùng cho từ vựng, hoàn thành câu, ngữ pháp): dùng lại `ChoiceQuestion`. Chỗ trống `___` trong `prompt` hiện thành gạch chân. Lượt hội thoại tách nhau bằng `\n`.
+- **Đọc hiểu** (phần có `passage` và câu hỏi có `prompt`):
+  - Bài đọc nằm trong thẻ kính có thể thu gọn hoặc mở rộng ở phía trên câu hỏi, cuộn độc lập với câu hỏi.
+  - Khi chuyển sang câu tiếp theo của cùng bài đọc, thẻ bài đọc giữ nguyên vị trí cuộn.
+- **Điền từ vào đoạn văn** (câu `choice` không có `prompt`):
+  - Đoạn văn hiện các ô `{{N}}` thành ô trống đánh số.
+  - Ô của câu đang làm được tô sáng và tự cuộn vào giữa tầm nhìn; ô đã trả lời hiện từ đã chọn, đúng màu xanh lá, sai gạch đỏ.
+  - Bốn lựa chọn hiện bên dưới đoạn văn.
+- **Viết lại câu** (`rewrite`):
+  - Hiện câu gốc; bên dưới là `prefix` (chữ cố định), ô nhập nhiều dòng, và `suffix` nếu có. Khi ghép câu, `suffix` có thể bắt đầu bằng dấu phẩy, nên không chèn khoảng trắng trước dấu câu.
+  - Nút "Kiểm tra". Phần ví dụ mẫu (`examples`) của Writing Practice hiện ở đầu phần, gập lại được.
+  - **Chấm:** chuẩn hoá cả câu trả lời và từng đáp án trong `answers`, khớp với bất kỳ đáp án nào là đúng. Các bước chuẩn hoá:
+    - chuyển về chữ thường, gộp khoảng trắng;
+    - đổi nháy cong thành nháy thẳng;
+    - bỏ dấu câu cuối câu;
+    - bỏ khoảng trắng trước dấu câu;
+    - mở rộng các dạng viết tắt rõ nghĩa (`n't`, `'m`, `'re`, `'ve`, `'ll`, `can't`, `won't`). Không mở rộng `'s` và `'d` vì nhiều nghĩa.
+  - Nếu không khớp: hiện đáp án mẫu (`answers[0]`) bằng chữ viết tay, kèm nút **"Mình viết đúng"** để người dùng tự chấm. Lý do là một câu viết lại thường có nhiều cách viết đúng. Câu tự chấm được tính là đúng và đánh dấu `selfMarked`.
+
+**Phạm vi và liên kết với phần khác**
+- Bài tập **không** dùng SRS 5 cấp, không cộng vào mục tiêu từ mới hằng ngày và không tính vào streak ở bản đầu.
+- Lịch sử làm bài nằm trong bản sao lưu/khôi phục JSON (mục 3.1).
+- Dùng được offline: các bộ bài tập được tải lười (mỗi bộ một chunk JS) và được service worker cache sẵn cùng các file JS khác.
+
+**Giải thích bằng AI**
+- **Lớp 1 (đã có):** lời giải thích viết sẵn trong JSON. Miễn phí, offline, hiện ngay.
+- **Lớp 2 (để sau, tuỳ chọn):** nút "Hỏi AI" dưới lời giải thích, chủ yếu cho câu viết lại bị chấm sai.
+  - App gọi Cloudflare Pages Function `POST /api/explain`, gửi kèm câu hỏi, đáp án, câu trả lời của người dùng và lời giải thích sẵn có.
+  - Function gọi Gemini API gói miễn phí; API key nằm trong biến môi trường `GEMINI_API_KEY`, không lộ ra phía app.
+  - Giới hạn số lượt hỏi mỗi người mỗi ngày, và cache câu trả lời theo cặp (câu hỏi, câu trả lời đã chuẩn hoá).
+  - Khi offline hoặc hết hạn mức, chỉ hiện lời giải thích sẵn có, không báo lỗi.
+  - Lưu ý: dữ liệu gửi qua gói miễn phí có thể được Google dùng để cải thiện mô hình. Không gửi thông tin cá nhân.
+
+**Quy trình thêm tài liệu mới (lúc phát triển)**
+1. Trích chữ theo từng trang (`pdftotext -layout`) và render ảnh trang (`pdftoppm -r 100`). Bản OCR hay xáo cột đáp án, nên mọi câu phải được đối chiếu với ảnh.
+2. Chuyển từng đề sang JSON theo `src/data/exercises/types.ts`, dùng `practice-test-01.json` làm mẫu. Giải đề, viết giải thích tiếng Việt, đặt `answerSource: "ai"`. Câu không đọc được thì gom lại để người dùng chép tay.
+3. Chạy `npx vitest run src/data/exercises` (`exercises.test.ts` kiểm tra cấu trúc mọi file JSON) và cập nhật danh mục (mục 4.3).
 
 ---
 
@@ -196,6 +269,98 @@ interface Settings {
   activeDeckIds: string[];
 }
 ```
+
+### 4.3. Dữ liệu bài tập
+
+**Dữ liệu tĩnh** (`src/data/exercises/`, kiểu đầy đủ trong `types.ts`):
+
+```ts
+interface ExerciseSet {
+  id: string;                  // "practice-test-01" = tên file
+  title: string;               // "Practice Test 1"
+  kind: "practice-test" | "grammar" | "writing";
+  sourcePages: [number, number];   // trang trong PDF gốc, để soát lỗi
+  answerSource: "ai" | "key";  // "ai": đáp án do AI giải
+  omitted?: string[];          // phần bị bỏ (Nghe, Nói)
+  sections: ExerciseSection[];
+}
+
+interface ExerciseSection {
+  id: string;                  // "pt01-p2b"
+  title: string;               // "Paper 2 · Part B: Điền từ vào đoạn văn"
+  instruction: string;         // tiếng Việt
+  examples?: string[];         // ví dụ mẫu (Writing Practice)
+  passage?: { title?: string; text: string };  // đoạn cách nhau "\n\n"; ô cloze là "{{36}}"
+  questions: (ChoiceQuestion | RewriteQuestion)[];
+}
+
+interface ChoiceQuestion {
+  type: "choice";
+  id: string;                  // "pt01-q36", duy nhất trong toàn bộ dữ liệu
+  number: number;              // số câu in trong đề
+  prompt?: string;             // "___" là chỗ trống; không có ở câu cloze
+  options: string[];
+  answer: number;              // chỉ số trong options
+  explanation: string;
+  optionNotes: string[];       // mỗi đáp án một dòng, "" ở đáp án đúng
+}
+
+interface RewriteQuestion {
+  type: "rewrite";
+  id: string;
+  number: number;
+  original: string;            // câu gốc
+  prefix: string;              // phần đầu cho sẵn: "Despite"
+  suffix?: string;             // phần cuối cho sẵn (nếu đề có)
+  answers: string[];           // phần cần điền giữa prefix và suffix; [0] là đáp án mẫu
+  explanation: string;
+}
+```
+
+- `src/data/exercises/index.ts` export danh mục nhẹ (id, title, kind, số câu, số phần) và hàm `loadExerciseSet(id)` dùng `import.meta.glob('./*.json')` (không `eager`). Như vậy mỗi bộ thành một chunk riêng, và bộ dữ liệu khoảng 630 KB không nằm trong bundle chính.
+- Danh mục phải khớp với các file JSON; `exercises.test.ts` kiểm tra điều này. Test đọc thư mục bằng `node:fs` chứ không dùng `import.meta.glob`, vì vitest cache kết quả glob và sẽ bỏ sót file mới.
+
+**Dữ liệu người dùng** (Dexie, tăng version schema):
+
+```ts
+// Một lượt làm cả đề hoặc một phần. Lượt "Làm lại câu sai" không tạo bản ghi này.
+interface ExerciseAttempt {
+  id?: number;                 // auto-increment
+  setId: string;
+  sectionId?: string;          // có khi làm một phần; không có = cả đề
+  startedAt: string;           // ISO timestamp
+  updatedAt: string;           // lần trả lời gần nhất
+  finishedAt?: string;         // không có = đang làm dở
+  answers: Record<string, ExerciseAnswer>;   // key = question id
+}
+
+interface ExerciseAnswer {
+  value: number | string;      // chỉ số đáp án (choice) hoặc chữ đã nhập (rewrite)
+  correct: boolean;
+  selfMarked?: boolean;        // người dùng bấm "Mình viết đúng"
+}
+
+// Kết quả mới nhất của từng câu, ghi đè sau mỗi lần trả lời (kể cả khi làm lại câu sai).
+interface ExerciseResult extends ExerciseAnswer {
+  questionId: string;          // primary key
+  setId: string;
+  answeredAt: string;          // ISO timestamp
+}
+```
+
+- Index: `exerciseAttempts: '++id, setId, updatedAt'`, `exerciseResults: 'questionId, setId'`.
+- Mỗi phạm vi (một bộ + một phần, hoặc cả bộ) có tối đa một lượt dở dang. Bắt đầu lại cùng phạm vi đó thì hỏi "Làm tiếp" hay "Làm lại từ đầu"; chọn làm lại thì xoá lượt dở.
+- **Cách tính:**
+  - *Điểm cao nhất* của bộ: số câu đúng lớn nhất trong các lượt làm cả đề đã xong.
+  - *Điểm lần gần nhất* của một phần: số câu đúng của phần đó trong `exerciseResults`.
+  - *Câu sai*: các bản ghi `exerciseResults` có `correct: false`. Dữ liệu dưới 1.000 câu nên lọc trong bộ nhớ.
+  - *Đang làm dở* trên tab Bài tập: lượt chưa xong có `updatedAt` mới nhất.
+- Trạng thái mỗi bộ trên tab Bài tập, theo thứ tự ưu tiên:
+  1. Đang có lượt dở dang: "x/y · đang làm".
+  2. Đã có lượt cả đề hoàn thành: "x/y · cao nhất".
+  3. Đã làm vài phần: "Đã làm x/y câu".
+  4. Còn lại: "Chưa làm".
+- Bản sao lưu JSON (`lib/backup.ts`) thêm hai bảng `exerciseAttempts` và `exerciseResults`, và tăng `formatVersion`. Bản sao lưu cũ thiếu hai bảng này vẫn khôi phục được (coi như rỗng). Bỏ qua bản ghi có `setId` không còn tồn tại.
 
 ---
 
@@ -337,7 +502,8 @@ src/
     Review.tsx         # ôn tập "Thời điểm vàng"
     Notebook.tsx       # sổ tay từ vựng theo cấp
     SelfStudy.tsx      # tab Tự học: thẻ Học ngay / Ôn từ của tôi + danh sách từ tự nhập
-    Exercises.tsx      # tab Bài tập (chưa triển khai: "Sắp ra mắt")
+    Exercises.tsx      # tab Bài tập: danh sách bộ đề (mục 3.4)
+    exercises/         # chi tiết bộ, màn làm bài, tổng kết, các dạng câu (đọc hiểu, cloze, viết lại câu)
     my-words/          # form thêm/sửa từ tự nhập, danh sách từ
     Decks.tsx          # danh sách bộ từ
     WordDetail.tsx
@@ -348,6 +514,7 @@ src/
   components/
     quiz/              # 5 dạng câu hỏi
   data/                # JSON bộ từ
+    exercises/         # JSON bài tập + types.ts + exercises.test.ts
   db/                  # Dexie schema
   lib/
     date.ts            # ngày theo giờ địa phương
@@ -414,6 +581,15 @@ public/
 9. Trang hướng dẫn cài lên iPhone + banner phát hiện chưa cài.
 10. Tích hợp OneSignal: gộp service worker, nút bật nhắc học, đồng bộ tag, xử lý deep link `?tu=`.
 11. Viết README hướng dẫn chạy local, deploy Cloudflare Pages và cấu hình OneSignal.
+12. Bài tập (mục 3.4). Dữ liệu 14 bộ đã có sẵn; còn lại:
+    - a. Danh mục và tải lười (`data/exercises/index.ts`), bảng Dexie `exerciseAttempts`, sao lưu/khôi phục.
+    - b. Hàm chấm câu viết lại (chuẩn hoá và so khớp) kèm unit test.
+    - c. Tab Bài tập và màn chi tiết bộ.
+    - d. Màn làm bài: trắc nghiệm, đọc hiểu, cloze, viết lại câu; lưu tiến độ dở dang.
+    - e. Màn tổng kết và "Làm lại câu sai".
+    - f. (Tuỳ chọn, sau) Nút "Hỏi AI" qua Cloudflare Pages Function và Gemini.
+
+    Trước khi code bước c–e, dựng ảnh mẫu ở kích thước iPhone theo quy trình ở mục 8.1.
 
 ## 11. Tiêu chí hoàn thành MVP
 - Cài được lên iPhone qua Safari, mở toàn màn hình, có icon.
@@ -422,3 +598,9 @@ public/
 - Tự thêm từ ở tab Tự học (có gợi ý khi có mạng, nhập tay khi offline) và học/ôn được các từ đó.
 - Xuất/nhập dữ liệu JSON hoạt động.
 - Bật nhắc học → nhận được thông báo đúng khung giờ, bấm vào mở đúng màn hình.
+
+**Tiêu chí hoàn thành Bài tập (mục 3.4):**
+- Làm được cả 14 bộ, cả đề hoặc từng phần, khi mất mạng.
+- Mỗi câu được chấm ngay và có giải thích; câu viết lại chấp nhận các cách viết tương đương và cho phép tự chấm.
+- Thoát giữa chừng rồi mở lại thì làm tiếp được; điểm cao nhất và "câu sai" hiện đúng sau khi đóng app.
+- Lịch sử làm bài có trong bản sao lưu JSON và khôi phục được.

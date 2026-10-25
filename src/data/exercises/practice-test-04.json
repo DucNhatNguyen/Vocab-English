@@ -1,0 +1,853 @@
+{
+  "id": "practice-test-04",
+  "title": "Practice Test 4",
+  "kind": "practice-test",
+  "sourcePages": [22, 29],
+  "answerSource": "ai",
+  "omitted": ["Paper 3: Listening (câu 51–70, tài liệu không kèm audio)", "Paper 4: Speaking"],
+  "sections": [
+    {
+      "id": "pt04-p1a",
+      "title": "Paper 1 · Part A: Từ vựng",
+      "instruction": "Chọn từ hoặc cụm từ phù hợp nhất để hoàn thành mỗi câu.",
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt04-q1",
+          "number": 1,
+          "prompt": "The young model was ___ by an agent who found her working in a grocery store.",
+          "options": ["invented", "discovered", "noticed", "explored"],
+          "answer": 1,
+          "explanation": "discover = phát hiện ra (tài năng, người có triển vọng). Cô người mẫu trẻ được người đại diện “phát hiện” khi thấy cô làm việc ở cửa hàng tạp hóa.",
+          "optionNotes": [
+            "invent = phát minh (đồ vật, phương pháp); không dùng với người.",
+            "",
+            "notice = để ý thấy; chỉ nói đã nhìn thấy, không mang nghĩa phát hiện tài năng để đưa vào nghề.",
+            "explore = khám phá (vùng đất, ý tưởng); không dùng với người."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q2",
+          "number": 2,
+          "prompt": "Jane and her family moved to a small town two years ago when they decided it was too ___ for them to live in New York.",
+          "options": ["expensive", "valuable", "spacious", "contrary"],
+          "answer": 0,
+          "explanation": "Họ chuyển về thị trấn nhỏ vì sống ở New York quá đắt đỏ: “too expensive for them to live in…”.",
+          "optionNotes": [
+            "",
+            "valuable = có giá trị, quý giá (đồ vật); không dùng để nói chi phí sinh sống.",
+            "spacious = rộng rãi; đây là ưu điểm, không phải lý do để bỏ đi.",
+            "contrary = trái ngược; không hợp nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q3",
+          "number": 3,
+          "prompt": "The ___ look on the child's face aroused sympathy in every passer-by.",
+          "options": ["pitiful", "cheerful", "angry", "smart"],
+          "answer": 0,
+          "explanation": "pitiful = đáng thương. Vẻ mặt đáng thương của đứa trẻ khiến người qua đường động lòng thương (“aroused sympathy”).",
+          "optionNotes": [
+            "",
+            "cheerful = vui vẻ; vẻ mặt vui không gợi lòng thương cảm.",
+            "angry = giận dữ; sẽ gợi sự sợ hoặc khó chịu hơn là thương cảm.",
+            "smart = thông minh, bảnh bao; không gợi thương cảm."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q4",
+          "number": 4,
+          "prompt": "I asked him to ___ me a few minutes so that we could go over the problems.",
+          "options": ["spend", "save", "spare", "share"],
+          "answer": 2,
+          "explanation": "“spare somebody something” = dành cho ai (thời gian, tiền…). “spare me a few minutes” = dành cho tôi vài phút.",
+          "optionNotes": [
+            "spend = dùng, tiêu (thời gian) vào việc gì; không có cấu trúc “spend somebody time”.",
+            "save = tiết kiệm; “save me a few minutes” nghĩa là giúp tôi đỡ mất vài phút, không phải dành thời gian cho tôi.",
+            "",
+            "share = chia sẻ; không hợp nghĩa “dành thời gian cho ai”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q5",
+          "number": 5,
+          "prompt": "The young girl happily cuddled her new baby sister in her arms, and sang ___ to her.",
+          "options": ["lightly", "softly", "slightly", "lowly"],
+          "answer": 1,
+          "explanation": "sing softly = hát nhẹ nhàng, khe khẽ, hợp với cảnh ôm em bé.",
+          "optionNotes": [
+            "lightly = nhẹ (chạm, bước đi); không dùng cho cách hát.",
+            "",
+            "slightly = hơi, một chút; chỉ mức độ, không chỉ cách hát.",
+            "lowly = thấp kém, hèn mọn; không nói về âm thanh."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q6",
+          "number": 6,
+          "prompt": "Most women make themselves beautiful to feel good about themselves and be more ___ to men.",
+          "options": ["attractive", "satisfactory", "original", "valuable"],
+          "answer": 0,
+          "explanation": "“be attractive to somebody” = hấp dẫn, thu hút ai. Làm đẹp để hấp dẫn hơn với đàn ông.",
+          "optionNotes": [
+            "",
+            "satisfactory = đạt yêu cầu; không dùng để nói về sức hấp dẫn.",
+            "original = độc đáo, nguyên bản; không hợp nghĩa.",
+            "valuable = có giá trị (vật chất); không dùng để nói về sức hấp dẫn."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q7",
+          "number": 7,
+          "prompt": "Although her proposal for the new ad campaign was a good one, it was ___ because it was similar to one already used.",
+          "options": ["turned down", "turned on", "turned off", "turned back"],
+          "answer": 0,
+          "explanation": "turn down = từ chối, bác bỏ. Đề xuất tuy hay nhưng bị bác vì giống một đề xuất đã dùng.",
+          "optionNotes": [
+            "",
+            "turn on = bật (thiết bị).",
+            "turn off = tắt (thiết bị).",
+            "turn back = quay lại; không dùng cho việc từ chối đề xuất."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q8",
+          "number": 8,
+          "prompt": "You have to realize that not all your clients can reach you online because they don't have ___ to a computer.",
+          "options": ["address", "access", "admittance", "approach"],
+          "answer": 1,
+          "explanation": "“have access to something” = có thể sử dụng, tiếp cận được cái gì. Khách hàng không có máy tính để dùng nên không liên lạc online được.",
+          "optionNotes": [
+            "address = địa chỉ; không đi với “to a computer”.",
+            "",
+            "admittance = sự cho phép vào (một nơi như tòa nhà, hội trường); không dùng cho máy tính.",
+            "approach = cách tiếp cận (vấn đề); không đi với “have … to a computer”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q9",
+          "number": 9,
+          "prompt": "Some people seem to be born lucky - they meet their perfect partners, ___ their ambitions, and live happy lives.",
+          "options": ["obtain", "satisfy", "achieve", "respond"],
+          "answer": 2,
+          "explanation": "“achieve one’s ambitions” = đạt được hoài bão. Cụm này đứng song song với “meet…” và “live…”.",
+          "optionNotes": [
+            "obtain = có được, thu được (đồ vật, thông tin, giấy phép); không đi tự nhiên với “ambitions”.",
+            "satisfy = làm hài lòng, thỏa mãn (nhu cầu, yêu cầu); với hoài bão thì dùng achieve.",
+            "",
+            "respond = phản hồi; là nội động từ, cần “to” và không đi với “ambitions”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q10",
+          "number": 10,
+          "prompt": "Don't just throw that bottle away - you should ___ it.",
+          "options": ["reform", "reproduce", "recreate", "recycle"],
+          "answer": 3,
+          "explanation": "recycle = tái chế. Đừng vứt chai đi mà nên đem tái chế.",
+          "optionNotes": [
+            "reform = cải cách, cải tổ (luật, hệ thống).",
+            "reproduce = sao chép, tái tạo, sinh sản; không có nghĩa tái chế.",
+            "recreate = tạo lại (một cảnh, một không khí); không có nghĩa tái chế.",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt04-p1b-1",
+      "title": "Paper 1 · Part B: Đọc hiểu (đoạn 1)",
+      "instruction": "Đọc đoạn văn và chọn đáp án đúng nhất cho mỗi câu hỏi.",
+      "passage": {
+        "title": "Jazz",
+        "text": "I play the trumpet in my school jazz band. Last month we held a jazz competition with bands from local high schools - and our band won!\n\nEach band had their own costumes, ranging from black school uniforms like my band wore, to brightly-coloured T-shirts. We didn't look much like adult professional bands, but all of us were used to performing in competitions, so the quality of playing was amazing, especially considering everyone was so young. Players from each band even created new tunes right there on stage. It was exciting to watch - but even better when my band played on stage!\n\nWe have a great jazz band at my school, but not everyone who wants to play in it gets accepted - only about half, in fact. But anyone who's keen to play goes to jazz practice before school, and we often spend time together after school, listening to jazz and learning its language. There are also trips to jazz summer camps across the country - I've been to a couple and learnt a lot.\n\nAdults are often surprised that young people are getting interested in jazz. My music teacher thinks it's because pop music isn't challenging enough for people like me who are serious about music. But I find it exciting because it's both new and old at the same time - you can create your own music, but you also feel you're part of its history, as you're playing on stage in the same way as great jazz performers before you.\n\nMy school is really lucky because we have great teachers, and parents who've supported us all the way. Without them, we'd never get anywhere with our music."
+      },
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt04-q11",
+          "number": 11,
+          "prompt": "What is the writer trying to do in this text?",
+          "options": [
+            "Encourage people to try to listen to more jazz.",
+            "Explain how jazz is becoming popular with young people.",
+            "Advertise young people's jazz in his area.",
+            "Give advice on how to create great jazz music."
+          ],
+          "answer": 1,
+          "explanation": "Người viết kể về cuộc thi, buổi tập, trại hè và giải thích vì sao người trẻ (như cậu) ngày càng hứng thú với nhạc jazz (“Adults are often surprised that young people are getting interested in jazz…”). Mục đích chung là cho thấy jazz đang được giới trẻ yêu thích.",
+          "optionNotes": [
+            "Bài không kêu gọi người đọc nghe thêm nhạc jazz.",
+            "",
+            "Bài không quảng cáo hay mời người đọc đến xem biểu diễn.",
+            "Bài không hướng dẫn cách sáng tác nhạc jazz."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q12",
+          "number": 12,
+          "prompt": "The writer says the bands in his school's jazz competition",
+          "options": [
+            "played music they'd written themselves before they came.",
+            "had little experience of playing in public.",
+            "played at a high level despite their age.",
+            "were dressed to look like professional jazz bands."
+          ],
+          "answer": 2,
+          "explanation": "“the quality of playing was amazing, especially considering everyone was so young” = chất lượng chơi nhạc rất cao dù các bạn còn trẻ.",
+          "optionNotes": [
+            "Bài nói các bạn sáng tác giai điệu mới ngay trên sân khấu (“created new tunes right there on stage”), không phải viết sẵn từ trước.",
+            "Bài nói “all of us were used to performing in competitions”, tức là đã có kinh nghiệm biểu diễn.",
+            "",
+            "Bài nói “We didn't look much like adult professional bands”, tức là không giống ban nhạc chuyên nghiệp."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q13",
+          "number": 13,
+          "prompt": "Most people at the writer's school who are interested in jazz",
+          "options": [
+            "attend early jazz sessions at school.",
+            "join the school jazz bands.",
+            "learn about jazz in after-school classes.",
+            "go to jazz summer camps at the school."
+          ],
+          "answer": 0,
+          "explanation": "“anyone who's keen to play goes to jazz practice before school” = ai thích chơi jazz đều đến buổi tập trước giờ học.",
+          "optionNotes": [
+            "",
+            "Chỉ khoảng một nửa số người muốn tham gia được nhận vào ban nhạc (“only about half, in fact”).",
+            "Sau giờ học các bạn chỉ dành thời gian nghe nhạc và học “ngôn ngữ” của jazz, bài không nói có lớp học.",
+            "Trại hè jazz tổ chức ở nhiều nơi trong nước (“across the country”), không phải ở trường."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q14",
+          "number": 14,
+          "prompt": "Why does the writer enjoy playing jazz so much?",
+          "options": [
+            "He finds it easier to learn than other forms of music.",
+            "He thinks it is more serious than pop music.",
+            "He likes the chance to perform with others on stage.",
+            "He feels in touch with jazz players of the past."
+          ],
+          "answer": 3,
+          "explanation": "Cậu thấy jazz hấp dẫn vì “you also feel you're part of its history, as you're playing on stage in the same way as great jazz performers before you”: cảm giác gắn kết với các nghệ sĩ jazz thời trước.",
+          "optionNotes": [
+            "Bài không nói jazz dễ học hơn.",
+            "Đó là ý kiến của thầy dạy nhạc về lý do người trẻ thích jazz, không phải lý do riêng của người viết.",
+            "Cậu thích biểu diễn, nhưng bài không nêu đó là lý do chính khiến cậu yêu jazz.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q15",
+          "number": 15,
+          "prompt": "Which of the following would the author write to a friend?",
+          "options": [
+            "'The competition was great, but I think I preferred being in the audience to playing - I was nervous!'",
+            "'My mum and dad always do all they can to help with my trumpet playing - I couldn't do this successfully without their help.'",
+            "'One band wore really colourful clothes, but we chose dark costumes. Maybe that's one reason why they won instead of us.'",
+            "'One music teacher left a while ago and no one's replaced him yet. We just haven't got anyone good to help us now.'"
+          ],
+          "answer": 1,
+          "explanation": "Đoạn cuối nói cha mẹ và thầy cô đã luôn ủng hộ: “parents who've supported us all the way. Without them, we'd never get anywhere with our music”. Câu B diễn đạt đúng ý này.",
+          "optionNotes": [
+            "Trái với bài: cậu nói xem thì hay nhưng chơi trên sân khấu còn hay hơn (“even better when my band played on stage”).",
+            "",
+            "Trái với bài: ban nhạc của cậu đã thắng cuộc thi (“our band won!”).",
+            "Trái với bài: cậu nói trường có những giáo viên rất tốt (“we have great teachers”)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt04-p1b-2",
+      "title": "Paper 1 · Part B: Đọc hiểu (đoạn 2)",
+      "instruction": "Đọc đoạn văn và chọn đáp án đúng nhất cho mỗi câu hỏi.",
+      "passage": {
+        "text": "It is well-known that the building development company Cityspace wants to knock down the existing seafront sports club in Layton and replace it with a leisure centre that will consist of a multi-screen cinema, restaurants and an entertainment centre. But a local action group has promised to fight the £30 million redevelopment of the sports club, which has provided family facilities for over 25 years.\n\nThe action group was set up three weeks after the project was announced. Members of the group argue that the new centre will be too big and will totally change the way the town looks. They also dislike the removal of sports facilities from the centre and the change to less healthy activities such as video games and films. Apart from the size of the project, they say that the 550 parking spaces provided will be too few and parking will be more difficult as a result.\n\nLocal hotel owners have welcomed the project, but the action group says that in general it will only have a bad effect on the neighbourhood. According to one group member it will result in up to 4,000 being around Layton seafront late at night. 'A lot of old people and families live nearby,' he explained. A meeting is being held tonight to discuss the plan."
+      },
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt04-q16",
+          "number": 16,
+          "prompt": "What is the writer trying to do in the article?",
+          "options": [
+            "Show why the new leisure centre is needed.",
+            "Give her own opinion about the new leisure centre.",
+            "Describe the arguments against the new leisure centre.",
+            "Suggest where the new leisure centre should be built."
+          ],
+          "answer": 2,
+          "explanation": "Phần lớn bài trình bày các lý lẽ phản đối của nhóm hành động: quá lớn, thay đổi diện mạo thị trấn, ít chỗ đậu xe, hoạt động kém lành mạnh…",
+          "optionNotes": [
+            "Bài không giải thích vì sao cần có trung tâm giải trí mới.",
+            "Tác giả đưa thông tin và ý kiến của người khác, không nêu quan điểm riêng.",
+            "",
+            "Bài không đề xuất địa điểm khác."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q17",
+          "number": 17,
+          "prompt": "What will the reader discover from the article?",
+          "options": [
+            "How long it will take to complete the new leisure centre.",
+            "How many members the action group has.",
+            "How much it will cost to join the new leisure centre.",
+            "How long the sports club has been in Layton."
+          ],
+          "answer": 3,
+          "explanation": "Câu đầu nói câu lạc bộ thể thao “has provided family facilities for over 25 years”, nên người đọc biết nó đã hoạt động ở Layton hơn 25 năm.",
+          "optionNotes": [
+            "Bài không nói bao lâu thì xây xong.",
+            "Bài chỉ nói nhóm được lập sau khi dự án được công bố ba tuần, không nêu số thành viên.",
+            "Bài nêu tổng chi phí tái phát triển (£30 million), không nói phí tham gia trung tâm.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q18",
+          "number": 18,
+          "prompt": "What does the action group think about the new leisure centre?",
+          "options": [
+            "It will not be right for the area.",
+            "It will cost too much to build.",
+            "It will not attract enough people.",
+            "It will provide too little entertainment."
+          ],
+          "answer": 0,
+          "explanation": "Nhóm cho rằng trung tâm quá lớn, làm thay đổi diện mạo thị trấn và “in general it will only have a bad effect on the neighbourhood”: không phù hợp với khu vực.",
+          "optionNotes": [
+            "",
+            "Nhóm không phàn nàn về chi phí xây dựng.",
+            "Ngược lại, họ lo sẽ có tới 4,000 người ở khu bờ biển vào đêm khuya.",
+            "Nhóm chê các hoạt động kém lành mạnh, không chê là ít giải trí."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q19",
+          "number": 19,
+          "prompt": "Which of the following is NOT one of the action group's arguments against the new leisure centre project?",
+          "options": [
+            "Its size affects the town's looks.",
+            "Its activities will be less healthy than those provided by the existing sports facilities.",
+            "It will make parking more of a problem.",
+            "Its video games and films will have negative impacts on children of families living nearby."
+          ],
+          "answer": 3,
+          "explanation": "Câu hỏi tìm ý KHÔNG được nhóm nêu. Bài nói họ không thích trò chơi điện tử và phim vì kém lành mạnh, nhưng không hề nói chúng ảnh hưởng xấu tới trẻ em của các gia đình sống gần đó.",
+          "optionNotes": [
+            "Có trong bài: “the new centre will be too big and will totally change the way the town looks”.",
+            "Có trong bài: “the change to less healthy activities such as video games and films”.",
+            "Có trong bài: “parking will be more difficult as a result”.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q20",
+          "number": 20,
+          "prompt": "Which group of people is keen on having the new leisure centre?",
+          "options": [
+            "People who do a lot of sports.",
+            "People working in the tourist industry.",
+            "People who come into Layton by car.",
+            "People living near the seafront."
+          ],
+          "answer": 1,
+          "explanation": "“Local hotel owners have welcomed the project”: chủ khách sạn thuộc ngành du lịch nên là nhóm ủng hộ dự án.",
+          "optionNotes": [
+            "Dự án bỏ các cơ sở thể thao nên người chơi thể thao không phải nhóm ủng hộ.",
+            "",
+            "Bài nói chỗ đậu xe sẽ khó khăn hơn, nên đây không phải nhóm ủng hộ.",
+            "Cư dân gần bờ biển (người già, các gia đình) nằm trong nhóm lo ngại, không ủng hộ."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt04-p2a",
+      "title": "Paper 2 · Part A: Hoàn thành câu",
+      "instruction": "Chọn từ hoặc cụm từ phù hợp nhất để hoàn thành mỗi câu.",
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt04-q21",
+          "number": 21,
+          "prompt": "___ he wins the lottery jackpot, he won't have enough money to pay off his debt.",
+          "options": ["Even if", "As long as", "Provided that", "In case"],
+          "answer": 0,
+          "explanation": "Even if = ngay cả khi (giả định): ngay cả khi trúng giải độc đắc, anh ta cũng không đủ tiền trả nợ. Vế sau mang nghĩa nhượng bộ, trái với kỳ vọng.",
+          "optionNotes": [
+            "",
+            "as long as = miễn là; ghép vào thành “miễn là anh ta trúng số thì sẽ không đủ tiền”, sai logic.",
+            "provided that = với điều kiện là; sai logic tương tự as long as.",
+            "in case = phòng khi; không hợp nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q22",
+          "number": 22,
+          "prompt": "The new suspension bridge ___ by the end of last month.",
+          "options": ["has been designed", "had been designed", "was designed", "was being designed"],
+          "answer": 1,
+          "explanation": "“by + mốc thời gian trong quá khứ” (by the end of last month) đi với quá khứ hoàn thành: việc thiết kế đã xong trước mốc đó. Dạng bị động: had been + V3.",
+          "optionNotes": [
+            "Hiện tại hoàn thành không đi với mốc quá khứ “last month”.",
+            "",
+            "Quá khứ đơn chỉ nói việc xảy ra tại một thời điểm; với “by + mốc quá khứ” cần quá khứ hoàn thành.",
+            "Quá khứ tiếp diễn bị động nói việc đang được làm tại một thời điểm, không hợp với “by the end of”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q23",
+          "number": 23,
+          "prompt": "- What did you say about the campaign?\n- So you ___ to me.",
+          "options": ["won't listen", "weren't listening", "didn't listen", "haven't listened"],
+          "answer": 1,
+          "explanation": "Người kia hỏi lại “What did you say?” nên người nói nhận ra họ đã không chú ý lúc mình nói: “So you weren't listening to me” = Vậy là bạn đã không nghe tôi. Dùng quá khứ tiếp diễn cho hành động đang diễn ra tại thời điểm trong quá khứ (lúc tôi đang nói).",
+          "optionNotes": [
+            "“won't listen” là tương lai/thói quen từ chối nghe; không hợp bối cảnh đã nói rồi.",
+            "",
+            "“didn't listen” nghĩa là cố tình không nghe lời khuyên; ít hợp với ý “lúc tôi nói bạn không để ý”.",
+            "Hiện tại hoàn thành không hợp, vì việc nói đã xảy ra ở quá khứ cụ thể."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q24",
+          "number": 24,
+          "prompt": "We had taken more supplies than usual with us ___ the weather turned bad.",
+          "options": ["supposing", "if", "in case", "in that"],
+          "answer": 2,
+          "explanation": "in case = phòng khi, chỉ mục đích đề phòng: mang nhiều đồ tiếp tế hơn thường lệ phòng khi thời tiết xấu đi.",
+          "optionNotes": [
+            "supposing = giả sử; thường đứng đầu câu và không diễn tả mục đích đề phòng.",
+            "if = nếu; không diễn tả việc chuẩn bị trước để đề phòng.",
+            "",
+            "in that = ở chỗ là, bởi vì; không hợp nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q25",
+          "number": 25,
+          "prompt": "The closer we are to our trip to Boston, ___ my students become.",
+          "options": ["the more excited", "the more exciting", "the more excitedly", "the more excitingly"],
+          "answer": 0,
+          "explanation": "So sánh kép: The + so sánh hơn, the + so sánh hơn. Sau “become” cần tính từ chỉ cảm xúc của học sinh: “excited” (phấn khích).",
+          "optionNotes": [
+            "",
+            "exciting = gây phấn khích; mô tả sự vật, không mô tả cảm xúc của học sinh.",
+            "excitedly là trạng từ; sau “become” cần tính từ.",
+            "excitingly là trạng từ; sau “become” cần tính từ."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q26",
+          "number": 26,
+          "prompt": "The teacher with ___ we studied last year no longer teaches in our school.",
+          "options": ["who", "whom", "him", "that"],
+          "answer": 1,
+          "explanation": "Đại từ quan hệ chỉ người đứng ngay sau giới từ phải là “whom”: “the teacher with whom we studied”.",
+          "optionNotes": [
+            "who không đứng sau giới từ.",
+            "",
+            "“him” là đại từ nhân xưng, không dùng làm đại từ quan hệ.",
+            "that không đứng sau giới từ."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q27",
+          "number": 27,
+          "prompt": "He looks so much ___ his boss that it's easy to mistake the two of them.",
+          "options": ["like", "alike", "likely", "unlike"],
+          "answer": 0,
+          "explanation": "“look like somebody” = trông giống ai. “so much like his boss” = rất giống sếp của anh ấy.",
+          "optionNotes": [
+            "",
+            "alike là tính từ/trạng từ đứng một mình (“look alike”), không đi với tân ngữ “his boss”.",
+            "likely = có khả năng; không hợp nghĩa.",
+            "unlike = không giống; trái nghĩa với vế sau “easy to mistake the two”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q28",
+          "number": 28,
+          "prompt": "Nobody ___ any more to say, the meeting was closed.",
+          "options": ["having", "have", "had", "has"],
+          "answer": 0,
+          "explanation": "Mệnh đề tuyệt đối (absolute clause) có chủ ngữ riêng: “Nobody having any more to say” = Vì không ai còn gì để nói nữa, nên cuộc họp kết thúc.",
+          "optionNotes": [
+            "",
+            "“have” là động từ nguyên mẫu, không tạo được mệnh đề hợp ngữ pháp ở đây.",
+            "“had” sẽ tạo hai mệnh đề độc lập nối chỉ bằng dấu phẩy, sai ngữ pháp.",
+            "“has” sẽ tạo hai mệnh đề độc lập nối chỉ bằng dấu phẩy, và không hợp thì."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q29",
+          "number": 29,
+          "prompt": "- \"Whose books are these?\"\n- \"I don't know who ___ to.\"",
+          "options": ["do they belong", "are they belonging", "they belong", "they are belonging"],
+          "answer": 2,
+          "explanation": "Câu hỏi gián tiếp sau “I don't know” giữ trật tự câu khẳng định (chủ ngữ + động từ): “who they belong to”. “belong” là động từ chỉ trạng thái, không dùng thì tiếp diễn.",
+          "optionNotes": [
+            "Đảo trợ động từ lên trước chủ ngữ là trật tự câu hỏi trực tiếp, sai trong câu hỏi gián tiếp.",
+            "Vừa đảo ngữ sai, vừa dùng tiếp diễn với động từ chỉ trạng thái.",
+            "",
+            "“belong” không dùng thì tiếp diễn."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q30",
+          "number": 30,
+          "prompt": "___ finds the treasure is entitled to twenty-five percent of it.",
+          "options": ["Who", "Anyone", "Whoever", "Those who"],
+          "answer": 2,
+          "explanation": "Whoever = bất cứ ai. Từ này vừa là chủ ngữ của “finds the treasure” vừa tạo cả mệnh đề danh từ làm chủ ngữ cho “is entitled”.",
+          "optionNotes": [
+            "“Who” không dùng để mở một mệnh đề danh từ mang nghĩa “bất cứ ai” như vậy.",
+            "“Anyone finds” thiếu đại từ quan hệ “who” nên có hai động từ không có từ nối.",
+            "",
+            "“Those who” đi với động từ số nhiều; “finds” là số ít nên sai hòa hợp."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q31",
+          "number": 31,
+          "prompt": "The director refused to accept ___ of the two new proposals made by the contractors.",
+          "options": ["either", "none", "not any", "neither"],
+          "answer": 0,
+          "explanation": "“either of the two…” = một trong hai (khi đi với động từ phủ định “refused” thì nghĩa là không chấp nhận cái nào trong hai).",
+          "optionNotes": [
+            "",
+            "none dùng cho từ ba trở lên; ở đây chỉ có hai đề xuất.",
+            "“not any” cũng tạo phủ định kép với “refused”.",
+            "“neither” cộng với “refused” tạo phủ định kép, sai nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q32",
+          "number": 32,
+          "prompt": "They stayed in ___ hotel in London during their visit.",
+          "options": [
+            "a small old interesting Victorian",
+            "a small interesting Victorian old",
+            "a Victorian small old interesting",
+            "an interesting small old Victorian"
+          ],
+          "answer": 3,
+          "explanation": "Trật tự tính từ: ý kiến (interesting) – kích cỡ (small) – tuổi (old) – nguồn gốc/phong cách (Victorian) + danh từ. “interesting” bắt đầu bằng nguyên âm nên dùng mạo từ “an”.",
+          "optionNotes": [
+            "Sai trật tự: tính từ ý kiến (interesting) phải đứng trước kích cỡ và tuổi.",
+            "Sai trật tự: “old” (tuổi) phải đứng trước “Victorian” (nguồn gốc).",
+            "Sai trật tự: “Victorian” phải đứng sát danh từ, ngay sau “old”.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q33",
+          "number": 33,
+          "prompt": "- How many eggs have we got?\n- ___. I'll go and buy some from the shop if you like.",
+          "options": ["No one", "None", "Nothing", "No"],
+          "answer": 1,
+          "explanation": "None = không quả nào, dùng thay cho danh từ đếm được đã nhắc (“eggs”) để trả lời “How many…?”.",
+          "optionNotes": [
+            "No one chỉ người, không chỉ trứng.",
+            "",
+            "Nothing = không có gì; không dùng để trả lời câu hỏi số lượng “How many…”.",
+            "“No” phải đứng trước danh từ (no eggs), không đứng một mình làm câu trả lời số lượng."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q34",
+          "number": 34,
+          "prompt": "He ___ very bright to have been accepted at such a good university as Havard.",
+          "options": ["might be", "must be", "can be", "could be"],
+          "answer": 1,
+          "explanation": "must be = chắc hẳn là (suy đoán gần như chắc chắn dựa trên bằng chứng): được nhận vào trường tốt thì chắc hẳn rất thông minh.",
+          "optionNotes": [
+            "might be = có lẽ; mức chắc chắn thấp, không hợp với suy luận từ bằng chứng rõ ràng.",
+            "",
+            "can be không dùng để suy đoán chắc chắn về một người cụ thể.",
+            "could be = có thể; mức chắc chắn thấp hơn “must be”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q35",
+          "number": 35,
+          "prompt": "Of the two applicants, one is experienced and ___.",
+          "options": ["another isn't", "the other isn't", "others aren't", "the others aren't"],
+          "answer": 1,
+          "explanation": "Khi chỉ có hai người: “one… the other…”. “the other” chỉ người còn lại đã xác định, số ít nên đi với “isn't”.",
+          "optionNotes": [
+            "another = một người khác (trong nhóm từ ba người trở lên); không dùng khi chỉ có hai.",
+            "",
+            "others là số nhiều, trong khi chỉ còn một người.",
+            "the others là số nhiều, trong khi chỉ còn một người."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt04-p2b",
+      "title": "Paper 2 · Part B: Điền từ vào đoạn văn",
+      "instruction": "Chọn từ phù hợp nhất cho mỗi chỗ trống được đánh số trong đoạn văn.",
+      "passage": {
+        "text": "Everyone in our school loves sports. Every morning when we {{36}} up, we do morning exercises. After the second class we do exercise again. We only have P.E classes twice {{37}} week, but we do physical training at five every afternoon. {{38}} sport is basketball. The boys enjoy playing it and many of the girls like it, too. {{39}} popular sport is football and in every class there are a lot of football {{40}}. Volleyball is often played when the weather is {{41}}. We have school teams in basketball, football and volleyball. Our teams often have friendship matches with teams from other schools. {{42}} there is a match, many of us go to watch it and cheer our side on. Besides ball {{43}}, some of us like track-and-field events, and we often {{44}} running, jumping and throwing. Every term we have tests in these events and once a year, we {{45}} a sports meeting.\n\nSports help us to keep healthy and happy."
+      },
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt04-q36",
+          "number": 36,
+          "options": ["make", "get", "put", "take"],
+          "answer": 1,
+          "explanation": "“get up” = thức dậy, rời khỏi giường: “Every morning when we get up…”.",
+          "optionNotes": [
+            "make up = bịa ra, trang điểm, làm lành; không có nghĩa thức dậy.",
+            "",
+            "put up = dựng lên, cho ở nhờ; không có nghĩa thức dậy.",
+            "take up = bắt đầu (một thói quen, môn học); không có nghĩa thức dậy."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q37",
+          "number": 37,
+          "options": ["one", "each", "a", "the"],
+          "answer": 2,
+          "explanation": "“twice a week” = hai lần một tuần: cụm cố định chỉ tần suất.",
+          "optionNotes": [
+            "“twice one week” không phải cách nói chỉ tần suất.",
+            "“twice each week” cũng nói được nhưng ít phổ biến; chuẩn nhất là “twice a week”.",
+            "",
+            "“twice the week” không mang nghĩa “mỗi tuần”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q38",
+          "number": 38,
+          "options": ["More popular", "The more popular", "Most popular", "The most popular"],
+          "answer": 3,
+          "explanation": "So sánh nhất có “the”: “The most popular sport is basketball” = môn phổ biến nhất là bóng rổ. Đoạn sau mới nói “Another popular sport” (môn khác).",
+          "optionNotes": [
+            "So sánh hơn cần có “than” hoặc đối tượng so sánh rõ ràng.",
+            "“the more popular” là dạng so sánh kép, không hợp ở đây.",
+            "So sánh nhất phải có mạo từ “the”.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q39",
+          "number": 39,
+          "options": ["Another", "Other", "The other", "Others"],
+          "answer": 0,
+          "explanation": "“Another + danh từ số ít” = một… khác. “Another popular sport is football” = một môn phổ biến khác là bóng đá.",
+          "optionNotes": [
+            "",
+            "“Other” đi với danh từ số nhiều; “sport” là số ít.",
+            "“The other” chỉ cái còn lại duy nhất; ở đây không chỉ có hai môn.",
+            "“Others” là đại từ số nhiều, không đứng trước danh từ “sport”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q40",
+          "number": 40,
+          "options": ["fields", "places", "games", "fans"],
+          "answer": 3,
+          "explanation": "“football fans” = người hâm mộ bóng đá. Câu nói trong lớp nào cũng có nhiều người mê bóng đá.",
+          "optionNotes": [
+            "football fields = sân bóng; không nói về “mỗi lớp có nhiều sân bóng”.",
+            "places = nơi chốn; không hợp nghĩa.",
+            "football games = trận bóng; không hợp với “in every class there are a lot of…”.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q41",
+          "number": 41,
+          "options": ["fine", "shiny", "dry", "sunny"],
+          "answer": 0,
+          "explanation": "“the weather is fine” = thời tiết đẹp: cách nói quen thuộc. Bóng chuyền (chơi ngoài trời) thường được chơi khi trời đẹp.",
+          "optionNotes": [
+            "",
+            "shiny = sáng bóng (bề mặt); không dùng để tả thời tiết.",
+            "dry = khô ráo; không đầy đủ nghĩa “thời tiết đẹp” như “fine”.",
+            "sunny = có nắng; cũng chấp nhận được, nhưng “fine” là cách nói chung và tự nhiên hơn."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q42",
+          "number": 42,
+          "options": ["During", "Since", "When", "Though"],
+          "answer": 2,
+          "explanation": "“When there is a match…” = Khi có trận đấu, nhiều bạn đi xem. When là liên từ chỉ thời gian đi với mệnh đề.",
+          "optionNotes": [
+            "During là giới từ, phải đi với danh từ (during a match), không đi với mệnh đề.",
+            "Since = từ khi / vì; không hợp nghĩa ở đây.",
+            "",
+            "Though = mặc dù; hai vế không đối lập."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q43",
+          "number": 43,
+          "options": ["plays", "games", "matches", "fights"],
+          "answer": 1,
+          "explanation": "“ball games” = các môn thể thao dùng bóng. “Besides ball games, some of us like track-and-field events” = ngoài các môn bóng, một số bạn thích điền kinh.",
+          "optionNotes": [
+            "plays = vở kịch; không hợp nghĩa.",
+            "",
+            "“ball matches” không phải cụm tự nhiên; match là một trận đấu cụ thể.",
+            "fights = cuộc ẩu đả; không hợp nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q44",
+          "number": 44,
+          "options": ["try", "play", "train", "practice"],
+          "answer": 3,
+          "explanation": "“practise + V-ing” = luyện tập việc gì. “often practise running, jumping and throwing” = thường xuyên luyện chạy, nhảy, ném. (Bản in dùng dạng “practice”.)",
+          "optionNotes": [
+            "try + V-ing = thử làm; không có nghĩa luyện tập thường xuyên.",
+            "play + V-ing không đúng; play đi với tên môn thể thao.",
+            "train không đi trực tiếp với V-ing; phải là “train in/at”.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt04-q45",
+          "number": 45,
+          "options": ["hold", "make", "show", "choose"],
+          "answer": 0,
+          "explanation": "“hold a sports meeting” = tổ chức một đại hội thể thao. “hold” đi với các sự kiện như meeting, party, competition.",
+          "optionNotes": [
+            "",
+            "make a sports meeting không phải cụm cố định.",
+            "show = trình diễn, cho xem; không hợp với “a sports meeting”.",
+            "choose = chọn; không hợp nghĩa."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt04-p2c",
+      "title": "Paper 2 · Part C: Viết lại câu",
+      "instruction": "Hoàn thành câu thứ hai sao cho nghĩa không đổi so với câu gốc.",
+      "questions": [
+        {
+          "type": "rewrite",
+          "id": "pt04-q46",
+          "number": 46,
+          "original": "It was two years ago when I last saw him.",
+          "prefix": "I haven't",
+          "answers": [
+            "seen him for two years.",
+            "seen him since two years ago.",
+            "seen him in two years."
+          ],
+          "explanation": "It was + khoảng thời gian + ago when + S + last + V2 → S + haven't/hasn't + V3 + for + khoảng thời gian. “I last saw him two years ago” = “I haven't seen him for two years”."
+        },
+        {
+          "type": "rewrite",
+          "id": "pt04-q47",
+          "number": 47,
+          "original": "That watch was the most expensive one in the shop.",
+          "prefix": "No other",
+          "answers": [
+            "watch in the shop was as expensive as that one.",
+            "watch in the shop was more expensive than that one.",
+            "watch in the shop was as expensive as that.",
+            "watch in the shop was more expensive than that.",
+            "watch in the shop was as expensive as it."
+          ],
+          "explanation": "So sánh nhất → “No other + danh từ + was as + tính từ + as…” hoặc “No other + danh từ + was + so sánh hơn + than…”. Chiếc đồng hồ đắt nhất nghĩa là không chiếc nào khác trong cửa hàng đắt bằng hay đắt hơn nó."
+        },
+        {
+          "type": "rewrite",
+          "id": "pt04-q48",
+          "number": 48,
+          "original": "\"Do you like my new house?\" I asked him.",
+          "prefix": "I asked him",
+          "answers": [
+            "if he liked my new house.",
+            "whether he liked my new house.",
+            "if he liked my new house or not.",
+            "whether or not he liked my new house."
+          ],
+          "explanation": "Câu tường thuật của câu hỏi Yes/No: dùng if/whether + mệnh đề theo trật tự khẳng định, lùi thì (like → liked), đổi “you” → “he” và “my” giữ nguyên vì người nói là “I”. Bỏ dấu ngoặc kép và dấu hỏi."
+        },
+        {
+          "type": "rewrite",
+          "id": "pt04-q49",
+          "number": 49,
+          "original": "This is too hard a question for her to answer.",
+          "prefix": "The question is so",
+          "answers": [
+            "hard that she can't answer it.",
+            "hard that she cannot answer it.",
+            "difficult that she can't answer it.",
+            "difficult that she cannot answer it.",
+            "hard that she is unable to answer it."
+          ],
+          "explanation": "too + tính từ + a + danh từ + (for sb) to V → so + tính từ + that + S + can't/couldn't + V. Chú ý có tân ngữ “it” ở cuối vì “question” là tân ngữ của “answer”."
+        },
+        {
+          "type": "rewrite",
+          "id": "pt04-q50",
+          "number": 50,
+          "original": "Lan is overweight because she eats so many chips.",
+          "prefix": "If",
+          "answers": [
+            "Lan didn't eat so many chips, she wouldn't be overweight.",
+            "Lan did not eat so many chips, she would not be overweight.",
+            "Lan didn't eat so many chips, she wouldn't be so overweight.",
+            "Lan ate fewer chips, she wouldn't be overweight."
+          ],
+          "explanation": "Câu điều kiện loại 2 (trái với hiện tại): If + S + V2 (phủ định), S + would + (not) + V. Nguyên nhân khẳng định (eats so many chips) → phủ định ở mệnh đề If; kết quả khẳng định (is overweight) → phủ định ở mệnh đề chính."
+        }
+      ]
+    }
+  ]
+}

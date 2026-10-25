@@ -1,0 +1,719 @@
+{
+  "id": "grammar-practice-03",
+  "title": "Grammar Practice 3",
+  "kind": "grammar",
+  "sourcePages": [
+    69,
+    71
+  ],
+  "answerSource": "ai",
+  "sections": [
+    {
+      "id": "gp03",
+      "title": "Ngữ pháp · Practice 3",
+      "instruction": "Chọn từ hoặc cụm từ phù hợp nhất để hoàn thành mỗi câu.",
+      "questions": [
+        {
+          "type": "choice",
+          "id": "gp03-q1",
+          "number": 1,
+          "prompt": "Fish have nostrils ___ are used for smelling, not for breathing.",
+          "options": [
+            "they",
+            "what",
+            "that they",
+            "that"
+          ],
+          "answer": 3,
+          "explanation": "“that” là đại từ quan hệ thay cho “nostrils” (danh từ chỉ vật), làm chủ ngữ của “are used”: “nostrils that are used for smelling”.",
+          "optionNotes": [
+            "“they” là đại từ nhân xưng, không nối được mệnh đề, và làm thừa chủ ngữ.",
+            "“what” không đi sau một danh từ làm tiền ngữ (nostrils).",
+            "“that they” thừa chủ ngữ “they” vì “that” đã là chủ ngữ của “are used”.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp03-q2",
+          "number": 2,
+          "prompt": "___ found in New Zealand were brought there by homesick immigrants.",
+          "options": [
+            "The hedgehogs which",
+            "The hedgehogs",
+            "Where the hedgehogs",
+            "The hedgehogs are"
+          ],
+          "answer": 0,
+          "explanation": "Chủ ngữ của “were brought” là “The hedgehogs which (are) found in New Zealand”: mệnh đề quan hệ bị động cho vật.",
+          "optionNotes": [
+            "",
+            "Thiếu từ nối “which”, nên “found” không bổ nghĩa được cho “hedgehogs” và câu có hai động từ liền nhau.",
+            "“Where” tạo mệnh đề trạng ngữ nên câu thiếu chủ ngữ cho “were brought”.",
+            "“The hedgehogs are found” thêm động từ chính nên “were brought” bị thừa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp03-q3",
+          "number": 3,
+          "prompt": "The Cherokee Indians, ___ west on the Trail of Tears in the late 1830s, were originally from the Appalachian Mountains.",
+          "options": [
+            "forcing",
+            "forced",
+            "had forced",
+            "are forced"
+          ],
+          "answer": 1,
+          "explanation": "Rút gọn mệnh đề quan hệ bị động: “who were forced west” → “forced west…” (những người Cherokee bị buộc phải di chuyển về phía tây). Động từ chính là “were”.",
+          "optionNotes": [
+            "“forcing” là chủ động (họ đi ép người khác), sai nghĩa.",
+            "",
+            "“had forced” là động từ chia, câu sẽ có hai động từ chính và sai nghĩa chủ động.",
+            "“are forced” là động từ chia, sai thì (nói về năm 1830) và thừa động từ."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp03-q4",
+          "number": 4,
+          "prompt": "On the Moon, ___ air because the Moon's gravitational field is too weak to retain an atmosphere.",
+          "options": [
+            "there is no",
+            "where no",
+            "no",
+            "is no"
+          ],
+          "answer": 0,
+          "explanation": "Sau cụm trạng ngữ “On the Moon,” cần một mệnh đề đầy đủ: “there is no air” (không có không khí).",
+          "optionNotes": [
+            "",
+            "“where no” tạo mệnh đề phụ, câu thiếu mệnh đề chính.",
+            "Thiếu chủ ngữ và động từ.",
+            "“is no” thiếu chủ ngữ giả “there”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp03-q5",
+          "number": 5,
+          "prompt": "It was in 1875 ___ joined the staff of the astronomical observatory at Harvard University.",
+          "options": [
+            "that Anna Winlock",
+            "Anna Winlock, who",
+            "as Anna Winlock",
+            "Anna Winlock then"
+          ],
+          "answer": 0,
+          "explanation": "Câu nhấn mạnh (cleft sentence): “It was in 1875 that Anna Winlock joined…”, “that” nối cụm thời gian được nhấn mạnh với mệnh đề.",
+          "optionNotes": [
+            "",
+            "“Anna Winlock, who” thiếu “that” nên cấu trúc “It was… that…” bị phá, “who joined” cũng không có chỗ đứng.",
+            "“as” không dùng trong cấu trúc nhấn mạnh này.",
+            "“Anna Winlock then” thiếu từ nối “that”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp03-q6",
+          "number": 6,
+          "prompt": "___ the seeds of the Kentucky coffee plant are poisonous.",
+          "options": [
+            "Until they have been cooked",
+            "Cooking them",
+            "They have been cooked",
+            "Cooked until"
+          ],
+          "answer": 0,
+          "explanation": "“Until they have been cooked, the seeds… are poisonous” = cho đến khi được nấu chín thì hạt vẫn độc. Mệnh đề phụ với “Until” đứng trước mệnh đề chính.",
+          "optionNotes": [
+            "",
+            "“Cooking them” là V-ing có tân ngữ “them” trùng với “the seeds”, sai logic và không có chủ ngữ rõ ràng.",
+            "Thiếu liên từ nên hai mệnh đề bị ghép sai (comma splice).",
+            "“Cooked until” không có chủ ngữ và thiếu mệnh đề sau “until”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp03-q7",
+          "number": 7,
+          "prompt": "The river ___ banks used to be covered with fruit trees and flowers is now seriously polluted.",
+          "options": [
+            "along which",
+            "where",
+            "of which",
+            "whose"
+          ],
+          "answer": 3,
+          "explanation": "“whose banks” = bờ của nó: “The river whose banks used to be covered…”; “whose” chỉ sở hữu, đứng trước danh từ “banks”.",
+          "optionNotes": [
+            "“along which banks” sai cấu trúc; phải là “along whose banks” hoặc “along which … ”.",
+            "“where” chỉ nơi chốn, không chỉ sở hữu.",
+            "“of which banks” sai trật tự (đúng là “the banks of which” hoặc “whose banks”).",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp03-q8",
+          "number": 8,
+          "prompt": "I'm much fitter now, ___ all the exercise I take.",
+          "options": [
+            "since",
+            "because",
+            "ever since",
+            "because of"
+          ],
+          "answer": 3,
+          "explanation": "“because of” là giới từ + danh từ: “because of all the exercise (that) I take” = nhờ tất cả việc tập luyện.",
+          "optionNotes": [
+            "“since” là liên từ cần một mệnh đề đầy đủ.",
+            "“because” là liên từ, cần một mệnh đề đầy đủ; “all the exercise I take” là cụm danh từ.",
+            "“ever since” chỉ mốc thời gian, sai nghĩa.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp03-q9",
+          "number": 9,
+          "prompt": "Relics ___ accidentally while constructing a new subway line in Mexico City yielded new information about previous civilizations in the area.",
+          "options": [
+            "that workers found them",
+            "which workers they found",
+            "that they were found by workers",
+            "that workers found"
+          ],
+          "answer": 3,
+          "explanation": "Mệnh đề quan hệ có “that” làm tân ngữ: “Relics that workers found accidentally… yielded…”. Không lặp lại tân ngữ vì “that” đã thay cho “relics”.",
+          "optionNotes": [
+            "“found them” thừa tân ngữ “them”.",
+            "“which workers they found” thừa chủ ngữ “they”.",
+            "“that they were found” vừa thừa “they” vừa không nối mạch với “by workers”.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp03-q10",
+          "number": 10,
+          "prompt": "The advanced course in astrophysics will be open only to those graduate students ___ a grade point average of 3.8 or above.",
+          "options": [
+            "have",
+            "having",
+            "they will have",
+            "whom have"
+          ],
+          "answer": 1,
+          "explanation": "Rút gọn mệnh đề quan hệ chủ động: “who have” → “having a grade point average of 3.8 or above”.",
+          "optionNotes": [
+            "“have” thiếu đại từ quan hệ “who” nên không bổ nghĩa được cho “students”.",
+            "",
+            "“they will have” là mệnh đề riêng, thiếu từ nối.",
+            "“whom” là tân ngữ nên không làm chủ ngữ của “have”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp03-q11",
+          "number": 11,
+          "prompt": "Cork, the second largest city in Ireland, is the site of many industries, ___ automobile manufacturing and whiskey distilling.",
+          "options": [
+            "some of them are",
+            "which some are",
+            "some of which are",
+            "of which are some"
+          ],
+          "answer": 2,
+          "explanation": "“some of which are…” = trong số đó có…: “many industries, some of which are automobile manufacturing and whiskey distilling”. Mệnh đề quan hệ có “some of which” làm chủ ngữ.",
+          "optionNotes": [
+            "“some of them are” là mệnh đề độc lập, thiếu từ nối (comma splice).",
+            "“which some are” sai trật tự và nghĩa.",
+            "",
+            "“of which are some” sai trật tự từ."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp03-q12",
+          "number": 12,
+          "prompt": "Ships travelling in the North Atlantic during the winter must be constantly vigilant to avoid icebergs, large masses of ice ___ only one-ninth is visible above water.",
+          "options": [
+            "that",
+            "of that",
+            "which",
+            "of which"
+          ],
+          "answer": 3,
+          "explanation": "“of which” = trong số đó: “large masses of ice, of which only one-ninth is visible above water” (chỉ một phần chín của chúng nhìn thấy trên mặt nước).",
+          "optionNotes": [
+            "“that” không dùng sau dấu phẩy và mệnh đề sau đã có chủ ngữ “only one-ninth”.",
+            "“of that” không dùng như đại từ quan hệ.",
+            "“which” làm đại từ quan hệ cần thay chủ ngữ hoặc tân ngữ, nhưng mệnh đề đã có chủ ngữ “only one-ninth”.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp03-q13",
+          "number": 13,
+          "prompt": "The Mikado, a warm-hearted spoof of a country ___ is one of the best loved works of the English operetta composers Gilbert and Sullivan.",
+          "options": [
+            "which they knew nothing about",
+            "that they knew nothing about it",
+            "about that they knew nothing",
+            "they know nothing about it"
+          ],
+          "answer": 0,
+          "explanation": "“a country which they knew nothing about” = một đất nước mà họ chẳng biết gì. “which” là tân ngữ của giới từ “about” nên không cần thêm “it”.",
+          "optionNotes": [
+            "",
+            "Thừa “it” ở cuối vì “that” đã là tân ngữ của “about”.",
+            "“about that they knew nothing” sai trật tự.",
+            "Thừa “it” và không có đại từ quan hệ nối với danh từ trước."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp03-q14",
+          "number": 14,
+          "prompt": "Pearl Buck, who was the first American woman to win a Nobel prize for literature, ___ for her novel The Good Earth.",
+          "options": [
+            "who is best known",
+            "she is best known",
+            "is best known",
+            "best known"
+          ],
+          "answer": 2,
+          "explanation": "Chủ ngữ “Pearl Buck” (mệnh đề “who was…” chỉ là phần xen) cần động từ chính: “is best known for her novel…” (được biết đến nhiều nhất nhờ tiểu thuyết…).",
+          "optionNotes": [
+            "“who is best known” là mệnh đề quan hệ nên câu vẫn thiếu động từ chính.",
+            "“she is best known” thừa chủ ngữ “she”.",
+            "",
+            "“best known” thiếu động từ “is”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp03-q15",
+          "number": 15,
+          "prompt": "Gigantic, ___ Ronaldo Di Capio and Kit Winslow, is playing at a theater near you.",
+          "options": [
+            "which starring",
+            "that starring",
+            "in which starring",
+            "starring"
+          ],
+          "answer": 3,
+          "explanation": "Cụm phân từ chủ động “starring Ronaldo Di Capio and Kit Winslow” (có … đóng vai chính) bổ nghĩa cho “Gigantic”.",
+          "optionNotes": [
+            "“which starring” sai: sau “which” phải có động từ chia, không dùng V-ing trần.",
+            "“that starring” sai và không dùng “that” sau dấu phẩy.",
+            "“in which starring” sai cấu trúc.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp03-q16",
+          "number": 16,
+          "prompt": "___, which had been brought to Europe from China in the 15th Century, helped seamen to navigate.",
+          "options": [
+            "The compass",
+            "It is the compass",
+            "With the compass",
+            "That the compass"
+          ],
+          "answer": 0,
+          "explanation": "Cần chủ ngữ cho động từ “helped”: “The compass, which had been brought…, helped seamen to navigate”.",
+          "optionNotes": [
+            "",
+            "“It is the compass” thêm động từ “is” nên có hai động từ chính, thiếu liên từ.",
+            "“With the compass” là cụm giới từ, không làm chủ ngữ cho “helped”.",
+            "“That the compass” tạo mệnh đề danh từ nhưng thiếu động từ."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp03-q17",
+          "number": 17,
+          "prompt": "Giselle has fond memories of the day ___ she met her husband.",
+          "options": [
+            "when",
+            "where",
+            "which",
+            "whom"
+          ],
+          "answer": 0,
+          "explanation": "“when” thay cho “on which” (chỉ thời gian), đi sau danh từ chỉ thời gian “the day”: “the day when she met her husband”.",
+          "optionNotes": [
+            "",
+            "“where” chỉ nơi chốn, không hợp với “the day”.",
+            "“which” cần thay cho chủ ngữ hoặc tân ngữ, trong khi mệnh đề đã đủ thành phần.",
+            "“whom” chỉ người, không hợp với “the day”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp03-q18",
+          "number": 18,
+          "prompt": "Researchers may be able to find and monitor San Andreas earthquake fault lines ___ since 1857 or earlier.",
+          "options": [
+            "where have not slipped",
+            "have not slipped",
+            "that have not slipped",
+            "have not been slipped"
+          ],
+          "answer": 2,
+          "explanation": "“that have not slipped” là mệnh đề quan hệ cho “fault lines”, “that” làm chủ ngữ; “slip” là nội động từ nên dùng chủ động, thì hiện tại hoàn thành vì có “since 1857”.",
+          "optionNotes": [
+            "“where” chỉ nơi chốn và không thay thế được chủ ngữ của “have not slipped”.",
+            "Thiếu đại từ quan hệ nên câu có hai động từ liền nhau.",
+            "",
+            "“slip” là nội động từ nên không dùng bị động."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp03-q19",
+          "number": 19,
+          "prompt": "After 116 million dollars had been spent, the Supreme Court stopped construction of the dam because of a little fish, ___.",
+          "options": [
+            "the famous endangered snail darter",
+            "it was the famous endangered snail darter",
+            "that is the famous endangered snail darter",
+            "which the famous endangered snail darter"
+          ],
+          "answer": 0,
+          "explanation": "Cụm đồng vị (appositive) đứng sau dấu phẩy để giải thích “a little fish”: “the famous endangered snail darter”.",
+          "optionNotes": [
+            "",
+            "“it was…” là mệnh đề riêng, thiếu từ nối (comma splice).",
+            "“that is…” không dùng “that” sau dấu phẩy; cần “which is”.",
+            "“which the famous…” thiếu động từ."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp03-q20",
+          "number": 20,
+          "prompt": "The black moths ___ have genetically become more tolerant of pollution.",
+          "options": [
+            "survive in industrial areas",
+            "survived in industrial areas",
+            "survival in industrial areas",
+            "surviving in industrial areas"
+          ],
+          "answer": 3,
+          "explanation": "Rút gọn mệnh đề quan hệ chủ động: “The black moths that survive in industrial areas” → “surviving in industrial areas”. Động từ chính của câu là “have become”.",
+          "optionNotes": [
+            "“survive” là động từ chia, câu sẽ có hai động từ chính liền nhau.",
+            "“survived” là động từ chia quá khứ, câu có hai động từ chính.",
+            "“survival” là danh từ, không bổ nghĩa được như vậy.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp03-q21",
+          "number": 21,
+          "prompt": "The king's burial shoes, ___ except for some decorative strips of gold, were displayed on a clay model.",
+          "options": [
+            "who was disintegrating",
+            "when disintegrating",
+            "which had disintegrated",
+            "that had disintegrated"
+          ],
+          "answer": 2,
+          "explanation": "Mệnh đề quan hệ không xác định (có dấu phẩy) cho vật dùng “which”: “which had disintegrated except for some strips of gold” (đã mục nát, trừ vài dải vàng trang trí).",
+          "optionNotes": [
+            "“who” chỉ người, mà “shoes” là vật.",
+            "“when disintegrating” không hợp nghĩa (không chỉ thời gian).",
+            "",
+            "“that” không dùng trong mệnh đề quan hệ không xác định (sau dấu phẩy)."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp03-q22",
+          "number": 22,
+          "prompt": "The commercial bottle cork is obtained from the cork oak, ___ in the Mediterranean region.",
+          "options": [
+            "who grows",
+            "is growing",
+            "growing",
+            "which grows"
+          ],
+          "answer": 3,
+          "explanation": "Mệnh đề quan hệ không xác định cho vật: “the cork oak, which grows in the Mediterranean region” (loài sồi bần mọc ở vùng Địa Trung Hải).",
+          "optionNotes": [
+            "“who” chỉ người, mà “cork oak” là cây.",
+            "“is growing” thiếu đại từ quan hệ nên câu thừa động từ.",
+            "“growing” cũng hợp ngữ pháp (cụm phân từ), nhưng “which grows” là cấu trúc quan hệ đầy đủ và rõ nghĩa hơn cho đề này.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp03-q23",
+          "number": 23,
+          "prompt": "Earthworms breathe through their skin ___ must be kept moist.",
+          "options": [
+            "and which",
+            "they",
+            "which",
+            "who"
+          ],
+          "answer": 2,
+          "explanation": "“which” thay cho “their skin” (vật), làm chủ ngữ của “must be kept”: “their skin, which must be kept moist”.",
+          "optionNotes": [
+            "“and which” sai vì không có mệnh đề quan hệ song song phía trước để nối.",
+            "“they” là chủ ngữ độc lập, thiếu từ nối.",
+            "",
+            "“who” chỉ người, mà “skin” là vật."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp03-q24",
+          "number": 24,
+          "prompt": "Blindfish, which spend their whole lives in caves, have ___ eyes nor body pigments.",
+          "options": [
+            "not any",
+            "neither",
+            "nor",
+            "without"
+          ],
+          "answer": 1,
+          "explanation": "Cấu trúc “neither… nor…” = không… cũng không…: “have neither eyes nor body pigments”.",
+          "optionNotes": [
+            "“not any… nor” không đúng cặp tương liên.",
+            "",
+            "“nor” cần đi sau “neither”; ở đây cần “neither” ở vị trí trống.",
+            "“without… nor” không đúng cặp tương liên."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp03-q25",
+          "number": 25,
+          "prompt": "Concepts of modern nursing were founded by Florence Nightingale, an English nurse ___ to the care of the sick and the war-wounded.",
+          "options": [
+            "that she dedicated her life",
+            "which life she dedicated",
+            "whose life was dedicated",
+            "whose life she dedicated it"
+          ],
+          "answer": 2,
+          "explanation": "“whose life was dedicated to…” = người mà cuộc đời được cống hiến cho…: “whose” chỉ sở hữu, theo sau là mệnh đề bị động đầy đủ.",
+          "optionNotes": [
+            "“that she dedicated her life” thừa “her life” sau “dedicate” và không có giới từ “to”, hơn nữa “that” không đi sau dấu phẩy.",
+            "“which life” không dùng cho người.",
+            "",
+            "“whose life she dedicated it” thừa tân ngữ “it”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp03-q26",
+          "number": 26,
+          "prompt": "Noise in a room may be reduced by carpeting, draperies, and upholstered furniture, ___ absorb sound.",
+          "options": [
+            "which they all",
+            "of them all",
+            "all of which",
+            "of all which"
+          ],
+          "answer": 2,
+          "explanation": "“all of which absorb sound” = tất cả những thứ đó đều hấp thụ âm thanh: mệnh đề quan hệ với “all of which” làm chủ ngữ của “absorb”.",
+          "optionNotes": [
+            "“which they all” thừa chủ ngữ “they”.",
+            "“of them all” không phải đại từ quan hệ, thiếu từ nối.",
+            "",
+            "“of all which” sai trật tự từ."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp03-q27",
+          "number": 27,
+          "prompt": "Few visitors to Disney World are aware that much of its electrical power comes from the energy ___ by burning its own garbage.",
+          "options": [
+            "is produced",
+            "producing",
+            "which it is produced",
+            "it produces"
+          ],
+          "answer": 3,
+          "explanation": "Mệnh đề quan hệ rút gọn đại từ: “the energy (that) it produces by burning its own garbage” (nguồn năng lượng mà nó tạo ra khi đốt rác).",
+          "optionNotes": [
+            "“is produced” là động từ chia nhưng thiếu đại từ quan hệ nên không bổ nghĩa được cho “the energy”.",
+            "“producing” là chủ động, sai nghĩa (năng lượng không tự tạo ra thứ gì).",
+            "“which it is produced” thừa chủ ngữ “it” nên sai cấu trúc.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp03-q28",
+          "number": 28,
+          "prompt": "Ben, ___ parents live in Paris, now lives in Toronto.",
+          "options": [
+            "of whom",
+            "who",
+            "whom",
+            "whose"
+          ],
+          "answer": 3,
+          "explanation": "“whose” chỉ sở hữu, đứng trước danh từ: “Ben, whose parents live in Paris”.",
+          "optionNotes": [
+            "“of whom” không đứng trực tiếp trước danh từ “parents” trong cấu trúc này.",
+            "“who” là chủ ngữ, nhưng “parents” cần một đại từ chỉ sở hữu đứng trước.",
+            "“whom” là tân ngữ, không hợp với vị trí này.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp03-q29",
+          "number": 29,
+          "prompt": "Dan always left the milk out of the fridge, ___ really annoyed her.",
+          "options": [
+            "that",
+            "what",
+            "which",
+            "where"
+          ],
+          "answer": 2,
+          "explanation": "“which” thay cho cả mệnh đề đứng trước (việc Dan để sữa ngoài tủ lạnh), làm chủ ngữ của “annoyed”.",
+          "optionNotes": [
+            "“that” không dùng sau dấu phẩy để chỉ cả mệnh đề.",
+            "“what” không dùng để nối mệnh đề chỉ cả ý trước.",
+            "",
+            "“where” chỉ nơi chốn, sai nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp03-q30",
+          "number": 30,
+          "prompt": "Glucose does not have to be digested, ___ it can be put directly into the bloodstream.",
+          "options": [
+            "so",
+            "while",
+            "and since",
+            "nor"
+          ],
+          "answer": 0,
+          "explanation": "“so” = vì vậy: glucose không cần tiêu hóa, vì thế nó có thể đưa thẳng vào máu.",
+          "optionNotes": [
+            "",
+            "“while” = trong khi / mặc dù; sai nghĩa.",
+            "“and since” = và bởi vì; nghĩa nhân quả bị đảo ngược.",
+            "“nor” = cũng không; sai nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp03-q31",
+          "number": 31,
+          "prompt": "The many people ___ must be willing to commute a long distance to work.",
+          "options": [
+            "wished to live in rural areas",
+            "wished they lived in rural areas",
+            "those wishing to live in rural areas",
+            "who wish to live in rural areas"
+          ],
+          "answer": 3,
+          "explanation": "Mệnh đề quan hệ chủ động: “The many people who wish to live in rural areas must be willing to commute…”. Động từ chính của câu là “must be”.",
+          "optionNotes": [
+            "“wished” là động từ chia quá khứ, câu có hai động từ chính, thiếu đại từ quan hệ.",
+            "Thiếu từ nối nên “wished they lived” tạo hai mệnh đề độc lập.",
+            "“those” thừa khi đã có “The many people”.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp03-q32",
+          "number": 32,
+          "prompt": "___ with the size of the whole earth, the highest mountain does not seem high.",
+          "options": [
+            "When compared",
+            "While comparing",
+            "To compare",
+            "Comparing"
+          ],
+          "answer": 0,
+          "explanation": "Rút gọn mệnh đề trạng ngữ bị động: “When (it is) compared with…” (khi được so sánh với…). Chủ ngữ “the highest mountain” bị so sánh nên dùng bị động.",
+          "optionNotes": [
+            "",
+            "“While comparing” là chủ động, sai nghĩa (ngọn núi không tự đi so sánh).",
+            "“To compare” mang nghĩa mục đích, chủ ngữ không hợp nghĩa.",
+            "“Comparing” là chủ động, chủ ngữ là ngọn núi nên sai nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp03-q33",
+          "number": 33,
+          "prompt": "The bird's egg is such an efficient structure for protecting the embryo inside ___ difficult for the hatchling to break.",
+          "options": [
+            "that is",
+            "that",
+            "and is",
+            "that it is"
+          ],
+          "answer": 3,
+          "explanation": "Cấu trúc “such + (a/an) + tính từ + danh từ + that + mệnh đề” (quá… đến nỗi…): “that it is difficult for the hatchling to break” cần chủ ngữ “it”.",
+          "optionNotes": [
+            "“that is” thiếu chủ ngữ “it”.",
+            "Thiếu chủ ngữ và động từ cho mệnh đề sau “that”.",
+            "“and is” không đúng cấu trúc “such… that”.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp03-q34",
+          "number": 34,
+          "prompt": "Even if the unemployment rate ___ sharply, the drop may still be temporary.",
+          "options": [
+            "to drop",
+            "dropping",
+            "have dropped",
+            "drops"
+          ],
+          "answer": 3,
+          "explanation": "Mệnh đề điều kiện với “Even if” cần động từ chia ở hiện tại đơn cho chủ ngữ số ít “the unemployment rate”: “drops”.",
+          "optionNotes": [
+            "“to drop” không phải động từ chia.",
+            "“dropping” không phải động từ chia.",
+            "“have dropped” không hợp chủ ngữ số ít (phải là “has dropped”).",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "gp03-q35",
+          "number": 35,
+          "prompt": "Consumers are armed with more information than ever, ___ they have never been more confused.",
+          "options": [
+            "however",
+            "yet",
+            "nevertheless",
+            "in fact"
+          ],
+          "answer": 1,
+          "explanation": "“yet” = nhưng, là liên từ đẳng lập nối hai mệnh đề bằng dấu phẩy, diễn tả sự tương phản: có nhiều thông tin hơn bao giờ hết nhưng lại bối rối hơn bao giờ hết.",
+          "optionNotes": [
+            "“however” là trạng từ nối, không thể nối hai mệnh đề chỉ bằng dấu phẩy (cần dấu chấm hoặc chấm phẩy).",
+            "",
+            "“nevertheless” là trạng từ nối, cần dấu chấm phẩy ở trước, không nối được bằng dấu phẩy.",
+            "“in fact” = thực tế là; không diễn tả tương phản và không nối được hai mệnh đề bằng dấu phẩy."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,851 @@
+{
+  "id": "practice-test-03",
+  "title": "Practice Test 3",
+  "kind": "practice-test",
+  "sourcePages": [15, 22],
+  "answerSource": "ai",
+  "omitted": ["Paper 3: Listening (câu 51–70, tài liệu không kèm audio)", "Paper 4: Speaking"],
+  "sections": [
+    {
+      "id": "pt03-p1a",
+      "title": "Paper 1 · Part A: Từ vựng",
+      "instruction": "Chọn từ hoặc cụm từ phù hợp nhất để hoàn thành mỗi câu.",
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt03-q1",
+          "number": 1,
+          "prompt": "This society was formed to ___ the further education of immigrants from all nations.",
+          "options": ["provoke", "preserve", "present", "promote"],
+          "answer": 3,
+          "explanation": "promote = thúc đẩy, khuyến khích. “promote education” = thúc đẩy việc giáo dục, hợp với mục đích thành lập một hội.",
+          "optionNotes": [
+            "provoke = khiêu khích, gây ra (phản ứng tiêu cực); không hợp với “education”.",
+            "preserve = bảo tồn, giữ nguyên; “further education” là điều cần phát triển thêm, không phải giữ nguyên.",
+            "present = trình bày, tặng; không đi với “the further education of”.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q2",
+          "number": 2,
+          "prompt": "Six people have ___ that they will be attending and ten haven't replied yet.",
+          "options": ["identified", "believed", "confirmed", "assumed"],
+          "answer": 2,
+          "explanation": "confirm that… = xác nhận rằng… Sáu người đã xác nhận sẽ tham dự, còn mười người chưa trả lời (“haven't replied yet”).",
+          "optionNotes": [
+            "identify = nhận ra, xác định; không dùng cho việc xác nhận tham dự.",
+            "believe that… = tin rằng; không phải hành động trả lời lời mời.",
+            "",
+            "assume that… = cho rằng; không phải hành động trả lời lời mời."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q3",
+          "number": 3,
+          "prompt": "Does the price listed in your brochure ___ meals as well as accommodation?",
+          "options": ["cover", "pay", "treat", "spend"],
+          "answer": 0,
+          "explanation": "“cover” (về giá cả) = bao gồm, chi trả cho. “Does the price cover meals as well as accommodation?” = giá này đã bao gồm cả bữa ăn lẫn chỗ ở chưa?",
+          "optionNotes": [
+            "",
+            "pay = trả tiền; chủ ngữ là người, không phải “the price”.",
+            "treat = đối xử, chữa trị, đãi; không hợp nghĩa.",
+            "spend = tiêu tiền; chủ ngữ là người, không phải “the price”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q4",
+          "number": 4,
+          "prompt": "Some people believe that it is possible to ___ someone's character by measuring the shape of their head.",
+          "options": ["build", "form", "trust", "judge"],
+          "answer": 3,
+          "explanation": "judge = đánh giá, đoán định. Người ta tin có thể đánh giá tính cách một người qua việc đo hình dạng đầu.",
+          "optionNotes": [
+            "build a character = xây dựng tính cách; không phải “đo hình đầu để biết”.",
+            "form a character = hình thành tính cách; đo đầu không làm hình thành tính cách.",
+            "trust = tin tưởng; không hợp nghĩa.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q5",
+          "number": 5,
+          "prompt": "I'm writing to express my ___ gratitude for all your help.",
+          "options": ["truthful", "actual", "sincere", "honest"],
+          "answer": 2,
+          "explanation": "Cụm cố định “sincere gratitude / thanks” = lòng biết ơn chân thành, hay dùng trong thư.",
+          "optionNotes": [
+            "truthful = nói thật, không nói dối; không đi với “gratitude”.",
+            "actual = thực tế, có thật; không dùng để nhấn mạnh sự chân thành.",
+            "",
+            "honest thường dùng cho người hoặc lời nói (an honest answer); không đi với “gratitude”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q6",
+          "number": 6,
+          "prompt": "The actress gave her most ___ performance when she played the part of Lady Mac Beth.",
+          "options": ["attentive", "impressive", "relative", "positive"],
+          "answer": 1,
+          "explanation": "impressive = gây ấn tượng mạnh. “gave her most impressive performance” = có màn trình diễn ấn tượng nhất trong vai Lady Macbeth.",
+          "optionNotes": [
+            "attentive = chú ý, ân cần; tả người nghe, không tả buổi diễn.",
+            "",
+            "relative = có liên quan, tương đối; không hợp nghĩa.",
+            "positive = tích cực, chắc chắn; không dùng để khen một màn trình diễn như vậy."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q7",
+          "number": 7,
+          "prompt": "It's a good idea to ___ junk food - if you are trying to control your weight.",
+          "options": ["block", "prevent", "deny", "avoid"],
+          "answer": 3,
+          "explanation": "avoid = tránh. Muốn kiểm soát cân nặng thì nên tránh đồ ăn vặt, đồ ăn nhiều dầu mỡ (junk food).",
+          "optionNotes": [
+            "block = chặn, cản trở; không dùng với “junk food”.",
+            "prevent = ngăn không cho xảy ra; phải có tân ngữ là sự việc, không đi với “junk food”.",
+            "deny = phủ nhận, từ chối cho; không hợp nghĩa.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q8",
+          "number": 8,
+          "prompt": "It's ___ for people to get depressed if they're out of work.",
+          "options": ["normal", "average", "regular", "typical"],
+          "answer": 0,
+          "explanation": "“It's normal for somebody to do something” = việc ai làm gì là bình thường. Người thất nghiệp bị trầm cảm là chuyện bình thường.",
+          "optionNotes": [
+            "",
+            "average = trung bình (về mức độ, số lượng); không dùng cấu trúc “It's average for…”.",
+            "regular = đều đặn, thường xuyên; không hợp nghĩa “bình thường, dễ hiểu”.",
+            "typical đi với “of”: “It's typical of somebody to…” (đúng kiểu của ai), không đi với “for people to” trong nghĩa này."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q9",
+          "number": 9,
+          "prompt": "Please don't ___ what I've just told you to anyone else.",
+          "options": ["refuse", "record", "resign", "repeat"],
+          "answer": 3,
+          "explanation": "repeat = lặp lại, kể lại cho người khác. “Don't repeat what I've told you to anyone” = đừng kể lại điều tôi vừa nói cho ai khác.",
+          "optionNotes": [
+            "refuse = từ chối; không đi với “what I've just told you to anyone else”.",
+            "record = ghi lại; không hợp nghĩa “nói lại cho người khác”.",
+            "resign = từ chức; không hợp nghĩa.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q10",
+          "number": 10,
+          "prompt": "The ___ examined the car engine thoroughly but could find nothing wrong with it.",
+          "options": ["carpenter", "mechanic", "plumber", "tailor"],
+          "answer": 1,
+          "explanation": "mechanic = thợ máy, thợ sửa xe. Người kiểm tra động cơ ô tô kỹ lưỡng là thợ máy.",
+          "optionNotes": [
+            "carpenter = thợ mộc.",
+            "",
+            "plumber = thợ sửa ống nước.",
+            "tailor = thợ may."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt03-p1b-1",
+      "title": "Paper 1 · Part B: Đọc hiểu (đoạn 1)",
+      "instruction": "Đọc đoạn văn và chọn đáp án đúng nhất cho mỗi câu hỏi.",
+      "passage": {
+        "text": "There can be something brutal about emerging pale and tired from an overnight flight into the bright African sun. However, when you are met by a smiling, tanned pilot who whisks you through Customs and on to the runway to a waiting plane, life suddenly seems a whole lot better. When you are on a short break, every hour matters so we were short-cutting the queues at Customs and heading to the bush in time for breakfast.\n\nThe flight north from Nairobi lasts less than an hour but is a fascinating safari in itself. It took us out of the city and low over the patchwork fields and dark red roads of the Kenyan agricultural heartland until we reached Mount Kenya. Here suddenly the view changes. The pilot swooped breathtakingly low over the trees pointing out elephants, giraffes, gazelles and even rhinos as they scattered beneath us. The tiny shadow of the plane followed us across the dry rugged land. We circled high above our final destination, Loisaba Lodge, before landing neatly on the dirt airstrip.\n\nLoisaba Wilderness is a 150sq km, privately managed wildlife conservancy. It is larger than many of Kenya's game parks and a haven for more than 250 species of bird and 50 species of mammal - elephants, buffaloes. The wildlife here, unlike in the game parks, is still wild, and so, far more exciting to see than bored lions sprawled in front of a crowd of tourists in jeeps. The lodge perches high on a ridge. From each of the seven rooms, guests can walk out on to their private terrace to marvel at the wildly dramatic view - 61,000 acres of acacia savannah and rocky outcrops lie beneath you.\n\nA thousand feet straight down the escarpment is a watering hole constantly drawing in animals for a drink; shimmering in the far distance swathed in cloud sit the darkly forested foothills of Mount Kenya. It's a view to knock you out, to savour, to return to again and again."
+      },
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt03-q11",
+          "number": 11,
+          "prompt": "Why has the writer written this piece?",
+          "options": [
+            "To give information about transportation to savannah in Kenya.",
+            "To inform readers about a short break in Africa.",
+            "To introduce wildlife in Africa.",
+            "To raise awareness of animal conservation."
+          ],
+          "answer": 1,
+          "explanation": "Bài là bài viết du lịch kể về chuyến nghỉ ngắn (“When you are on a short break…”): chuyến bay đến Loisaba, nhà nghỉ và cảnh vật ở đó, nhằm giới thiệu cho người đọc kỳ nghỉ ngắn ở châu Phi.",
+          "optionNotes": [
+            "Chuyến bay chỉ là một phần của bài, không phải mục đích chính.",
+            "",
+            "Động vật hoang dã chỉ là một phần trải nghiệm, bài không chỉ giới thiệu về động vật châu Phi.",
+            "Bài không kêu gọi bảo tồn động vật."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q12",
+          "number": 12,
+          "prompt": "Why was the writer so pleased to be met by the pilot?",
+          "options": [
+            "Because he didn't expect the pilot to be so friendly.",
+            "Because the pilot helped him to shorten the time to be spent at the Customs.",
+            "Because without the pilot, he would have no one to fly him to his destination.",
+            "Because he was anxious to be in time for breakfast."
+          ],
+          "answer": 1,
+          "explanation": "Phi công “whisks you through Customs”, nên nhóm tác giả “short-cutting the queues at Customs”: được đi tắt qua hải quan, tiết kiệm thời gian trong kỳ nghỉ ngắn nên “life suddenly seems a whole lot better”.",
+          "optionNotes": [
+            "Bài không nói tác giả bất ngờ vì sự thân thiện của phi công.",
+            "",
+            "Bài không nói chỉ mình phi công này mới đưa họ đi được.",
+            "Đến kịp bữa sáng là kết quả của việc tiết kiệm thời gian, không phải lý do vui khi được đón."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q13",
+          "number": 13,
+          "prompt": "What does the writer say about the flight from Nairobi?",
+          "options": [
+            "There was not much to see from the plane.",
+            "The pilot flew in a dangerous way.",
+            "They were followed by a smaller plane.",
+            "It offered many impressive views."
+          ],
+          "answer": 3,
+          "explanation": "Tác giả gọi chuyến bay là “a fascinating safari in itself”, bay qua cánh đồng, núi Kenya và thấy voi, hươu cao cổ, linh dương, tê giác từ trên cao, tức có nhiều cảnh ấn tượng.",
+          "optionNotes": [
+            "Ngược lại: tác giả thấy rất nhiều thứ (đồng ruộng, núi, thú hoang).",
+            "“swooped breathtakingly low” chỉ là bay thấp để ngắm thú, bài không nói nguy hiểm.",
+            "“The tiny shadow of the plane” là bóng chiếc máy bay của họ, không phải máy bay khác bay theo.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q14",
+          "number": 14,
+          "prompt": "Who does the writer suggest about Loisaba?",
+          "options": [
+            "It is also a game park.",
+            "It is not spoiled by tourists.",
+            "It is a national conservancy.",
+            "Tourists drove there to see lions."
+          ],
+          "answer": 1,
+          "explanation": "Loisaba “unlike in the game parks” vẫn hoang dã, hấp dẫn hơn cảnh “bored lions sprawled in front of a crowd of tourists in jeeps” ở các công viên thú. Tức Loisaba không bị du khách làm mất vẻ tự nhiên.",
+          "optionNotes": [
+            "Bài đối lập Loisaba với các “game parks”, nên nó không phải là một game park.",
+            "",
+            "Loisaba là khu bảo tồn do tư nhân quản lý (“privately managed”), không phải của quốc gia.",
+            "Cảnh du khách ngồi xe jeep xem sư tử là của các game park, không phải Loisaba."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q15",
+          "number": 15,
+          "prompt": "The sentence \"The wildlife here, ......, in jeeps\" is meant to",
+          "options": [
+            "show that Loisaba is wilder than many game parks.",
+            "emphasize that Loisaba does not have lions like in the game parks.",
+            "tell us that wild animals do not attack people.",
+            "Loisaba is not exciting to see because there aren't many tourists."
+          ],
+          "answer": 0,
+          "explanation": "Câu so sánh: thú ở Loisaba “is still wild, and so far more exciting to see” so với sư tử chán nản ở game park. Mục đích là cho thấy Loisaba hoang dã hơn nhiều game park.",
+          "optionNotes": [
+            "",
+            "Câu chỉ nói sư tử ở game park bị thuần, không nói Loisaba không có sư tử.",
+            "Bài không đề cập đến việc thú hoang có tấn công người hay không.",
+            "Ngược lại, bài nói thú ở Loisaba “far more exciting to see”."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt03-p1b-2",
+      "title": "Paper 1 · Part B: Đọc hiểu (đoạn 2)",
+      "instruction": "Đọc đoạn văn và chọn đáp án đúng nhất cho mỗi câu hỏi.",
+      "passage": {
+        "title": "Mandy Jones - Holiday Company Manager",
+        "text": "I did a business administration degree at Bristol University and then worked for a credit card company for eight years. During this time, I was assistant marketing manager. I gained a lot of useful experience doing this job, but in 1997, I decided that I needed a change. I moved to Thomson Holidays where I have worked as a manager ever since. My main job is to think up new and interesting ideas for holidays.\n\nWhen I'm working from my office in the UK, I arrive at 9 a.m. First I answer my e-mails, then plan the day. My role is to investigate new projects for Thomson Holidays in our Mediterranean resorts. I am responsible for thinking up ideas, developing them and evaluating their success.\n\nWe have lots of meeting in the office which involve the marketing department, holiday reps and people that we bring from outside such as entertainment organisers. The aim is to develop an exciting idea into a realistic and workable project.\n\nOnce a month I spend a few days overseas checking possible resorts, meeting with reps to develop their roles and working out how events should be sold to the customer. I work with resort supervisors, use their local knowledge of bars and clubs for venues, talk through new ideas and find out how existing ones are working. I also meet holidaymakers.\n\nI have to be very open-minded because ideas come from anywhere. I love my job because I get to travel and I am working on projects that really excite me."
+      },
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt03-q16",
+          "number": 16,
+          "prompt": "What is the writer's main aim in writing the text?",
+          "options": [
+            "To introduce her company Thomson Holidays.",
+            "To describe how resorts are managed.",
+            "To explain what her jobs involve.",
+            "To suggest that it is important to stay open-minded to new ideas."
+          ],
+          "answer": 2,
+          "explanation": "Bài mô tả quá trình học tập, hai công việc và công việc hằng ngày của cô (đến văn phòng, họp, đi các khu nghỉ dưỡng). Mục đích chính là giải thích công việc của cô gồm những gì.",
+          "optionNotes": [
+            "Công ty chỉ được nhắc như nơi cô làm việc, bài không nhằm giới thiệu công ty.",
+            "Bài nói về công việc của cô, không phải cách quản lý các khu nghỉ dưỡng.",
+            "",
+            "“open-minded” chỉ là một ý nhỏ ở câu cuối, không phải mục đích cả bài."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q17",
+          "number": 17,
+          "prompt": "What do we learn about the writer in the first paragraph?",
+          "options": [
+            "She learned a lot from her first job.",
+            "She didn't stay long in her first job.",
+            "Her degree is more suitable for the second job than the first job.",
+            "It took her a while to be promoted to manager in Thomson Holidays."
+          ],
+          "answer": 0,
+          "explanation": "“I gained a lot of useful experience doing this job” = cô học hỏi được nhiều từ công việc đầu tiên.",
+          "optionNotes": [
+            "",
+            "Cô làm ở công ty thẻ tín dụng tám năm, không phải thời gian ngắn.",
+            "Bài không so sánh mức độ phù hợp của bằng cấp với hai công việc.",
+            "Bài chỉ nói cô làm quản lý ở Thomson Holidays từ khi chuyển đến (“have worked as a manager ever since”), không nói phải chờ lâu."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q18",
+          "number": 18,
+          "prompt": "What can be said about her job with the second employer?",
+          "options": [
+            "She works overseas more than in the UK.",
+            "She is responsible for trying new ideas.",
+            "Her department alone thinks up ideas and develops them into projects.",
+            "She needs other departments to tell her whether her ideas work or not."
+          ],
+          "answer": 1,
+          "explanation": "“My role is to investigate new projects… I am responsible for thinking up ideas, developing them and evaluating their success”: cô chịu trách nhiệm nghĩ ra và thử nghiệm các ý tưởng mới.",
+          "optionNotes": [
+            "Cô chỉ đi nước ngoài khoảng vài ngày mỗi tháng (“Once a month… a few days”).",
+            "",
+            "Các cuộc họp còn có bộ phận marketing, đại diện và người bên ngoài, nên không phải chỉ một phòng ban.",
+            "Chính cô tự đánh giá thành công (“evaluating their success”)."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q19",
+          "number": 19,
+          "prompt": "Who does she NOT meet at resorts?",
+          "options": [
+            "Reps.",
+            "Supervisors.",
+            "Bar and club owners.",
+            "Those who spend their holidays there."
+          ],
+          "answer": 2,
+          "explanation": "Câu hỏi NOT. Ở khu nghỉ dưỡng cô gặp đại diện (“meeting with reps”), giám sát khu nghỉ dưỡng (“resort supervisors”) và khách du lịch (“holidaymakers”). Cô chỉ dùng hiểu biết của họ về quán bar, câu lạc bộ, không nói gặp chủ các quán đó.",
+          "optionNotes": [
+            "Có gặp: “meeting with reps to develop their roles”.",
+            "Có gặp: “I work with resort supervisors”.",
+            "",
+            "Có gặp: “I also meet holidaymakers” (người đi nghỉ)."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q20",
+          "number": 20,
+          "prompt": "Which of the following is the best description of the writer?",
+          "options": [
+            "A working woman who very much enjoys what she does for a living.",
+            "A travel agent who focuses on selling events to clients.",
+            "An employee who enjoys travel and frequents bars and clubs.",
+            "A manager who is very strict with her subordinates and check on them all the time."
+          ],
+          "answer": 0,
+          "explanation": "Câu cuối: “I love my job because I get to travel and I am working on projects that really excite me.” Cô là người phụ nữ rất yêu công việc của mình.",
+          "optionNotes": [
+            "",
+            "Cô nghĩ ra và phát triển ý tưởng, không phải đại lý bán sự kiện cho khách.",
+            "Cô thích đi lại, nhưng không nói cô thường xuyên tới quán bar, câu lạc bộ để vui chơi.",
+            "Bài không nói cô nghiêm khắc hay kiểm soát nhân viên."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt03-p2a",
+      "title": "Paper 2 · Part A: Hoàn thành câu",
+      "instruction": "Chọn từ hoặc cụm từ phù hợp nhất để hoàn thành mỗi câu.",
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt03-q21",
+          "number": 21,
+          "prompt": "___ of my parents speaks Japanese but both of them can speak French fluently.",
+          "options": ["Neither", "None", "No", "Not one"],
+          "answer": 0,
+          "explanation": "“Neither of + hai đối tượng” = không ai trong hai người. Câu nói về hai người (“both of them”), nên dùng “Neither of my parents”.",
+          "optionNotes": [
+            "",
+            "“None of” dùng cho từ ba đối tượng trở lên.",
+            "“No” phải đi trực tiếp với danh từ (no parent), không đi với “of my parents”.",
+            "“Not one of” nhấn mạnh “không một ai” trong nhiều người, không dùng cho cặp hai người."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q22",
+          "number": 22,
+          "prompt": "Of all the questions, the last one is the ___ troublesome.",
+          "options": ["least", "little", "lesser", "less"],
+          "answer": 0,
+          "explanation": "So sánh nhất (so với tất cả các câu hỏi): “the least + tính từ” = ít … nhất. “the least troublesome” = ít rắc rối nhất.",
+          "optionNotes": [
+            "",
+            "“little” là tính từ/phó từ nguyên dạng, không dùng sau “the” để so sánh nhất.",
+            "“lesser” không đi trước tính từ để tạo so sánh nhất.",
+            "“less” là so sánh hơn (hai đối tượng); đây là so sánh nhất trong nhiều câu hỏi, cần “the least”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q23",
+          "number": 23,
+          "prompt": "I live in Nha Trang, ___ is one of the most beautiful cities of Vietnam.",
+          "options": ["that", "which", "where", "it"],
+          "answer": 1,
+          "explanation": "Mệnh đề quan hệ không xác định (sau dấu phẩy) thay cho danh từ chỉ nơi chốn làm chủ ngữ: “Nha Trang, which is one of…”.",
+          "optionNotes": [
+            "“that” không dùng trong mệnh đề quan hệ không xác định (sau dấu phẩy).",
+            "",
+            "“where” = in which; ở đây mệnh đề thiếu chủ ngữ nên cần “which”.",
+            "“it” không nối được hai mệnh đề sau dấu phẩy."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q24",
+          "number": 24,
+          "prompt": "The pop group ABC, ___ manager has just resigned, is currently touring the USA.",
+          "options": ["which", "that", "where", "whose"],
+          "answer": 3,
+          "explanation": "“whose + danh từ” chỉ sở hữu: “whose manager” = người quản lý của nhóm ABC.",
+          "optionNotes": [
+            "“which manager” không chỉ quan hệ sở hữu.",
+            "“that” không đi với danh từ phía sau và không dùng sau dấu phẩy.",
+            "“where” chỉ nơi chốn, không hợp nghĩa.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q25",
+          "number": 25,
+          "prompt": "With all the good things we get from rainforests, it's ___ to find that we are destroying our rainforests.",
+          "options": ["surprise", "surprised", "surprisingly", "surprising"],
+          "answer": 3,
+          "explanation": "“It's + tính từ + to V”. Dùng tính từ V-ing “surprising” (gây ngạc nhiên) để miêu tả sự việc.",
+          "optionNotes": [
+            "“surprise” là danh từ/động từ, không dùng sau “it's” để làm tính từ.",
+            "“surprised” miêu tả cảm giác của người, còn ở đây miêu tả sự việc.",
+            "“surprisingly” là trạng từ, không đứng sau “it's” làm vị ngữ.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q26",
+          "number": 26,
+          "prompt": "It was ___ hot day that we decided to leave work early.",
+          "options": ["so a", "such", "a so", "such a"],
+          "answer": 3,
+          "explanation": "Cấu trúc “such + a/an + tính từ + danh từ đếm được số ít + that…”: “such a hot day that…”.",
+          "optionNotes": [
+            "“so a” sai; “so” đi với tính từ không có mạo từ: “so hot a day”.",
+            "Thiếu mạo từ “a” sau “such” khi danh từ là số ít đếm được.",
+            "“a so” không phải cấu trúc đúng.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q27",
+          "number": 27,
+          "prompt": "I ___ lots of interesting people in the last two years and I am never bored.",
+          "options": ["met", "have met", "was meeting", "had met"],
+          "answer": 1,
+          "explanation": "“in the last two years” (khoảng thời gian kéo dài đến hiện tại) đi với hiện tại hoàn thành: “I have met lots of interesting people”.",
+          "optionNotes": [
+            "Quá khứ đơn dùng với mốc thời gian đã kết thúc; ở đây khoảng thời gian kéo đến nay.",
+            "",
+            "Quá khứ tiếp diễn không hợp với “in the last two years”.",
+            "Quá khứ hoàn thành dùng cho việc xảy ra trước một mốc quá khứ khác, câu này không có."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q28",
+          "number": 28,
+          "prompt": "I know he doesn't want to go the meeting - but he shall go, ___ he likes it or not.",
+          "options": ["although", "even though", "whether", "if"],
+          "answer": 2,
+          "explanation": "“whether … or not” = dù … hay không. “whether he likes it or not” = dù anh ấy thích hay không.",
+          "optionNotes": [
+            "“although” không đi với “or not”.",
+            "“even though” không đi với “or not”.",
+            "",
+            "“if … or not” không tạo nghĩa nhượng bộ “dù thích hay không”; cần “whether … or not”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q29",
+          "number": 29,
+          "prompt": "Look at those black clouds. It ___.",
+          "options": ["has been raining", "is going to rain", "will rain", "is raining"],
+          "answer": 1,
+          "explanation": "“be going to” dùng để dự đoán dựa trên bằng chứng hiện tại. Nhìn mây đen (“Look at those black clouds”) thì dự đoán “It is going to rain”.",
+          "optionNotes": [
+            "Hiện tại hoàn thành tiếp diễn nói về mưa đã rơi, không phải dự đoán sắp mưa.",
+            "",
+            "“will” dùng cho dự đoán theo ý kiến, không dựa trên bằng chứng nhìn thấy.",
+            "Hiện tại tiếp diễn nói mưa đang rơi, không hợp với việc nhìn mây để dự đoán."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q30",
+          "number": 30,
+          "prompt": "George ___ for the company for just six months when it went bankrupt.",
+          "options": ["has been worked", "has worked", "had been working", "was working"],
+          "answer": 2,
+          "explanation": "Quá khứ hoàn thành tiếp diễn: nhấn mạnh việc làm kéo dài sáu tháng trước một mốc quá khứ (“when it went bankrupt”): “had been working … for just six months”.",
+          "optionNotes": [
+            "“has been worked” sai dạng bị động và sai thì.",
+            "Hiện tại hoàn thành không hợp với mốc quá khứ “went bankrupt”.",
+            "",
+            "Quá khứ tiếp diễn không diễn tả thời gian làm việc kéo dài đến trước mốc quá khứ."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q31",
+          "number": 31,
+          "prompt": "- \"I wish you would just forget about it.\"\n- \"I can't. I want to know ___ she said about us.\"",
+          "options": ["that", "which", "what", "it"],
+          "answer": 2,
+          "explanation": "“what” đóng vai trò tân ngữ của “said” trong mệnh đề danh từ: “know what she said about us” = muốn biết cô ấy đã nói gì về chúng ta.",
+          "optionNotes": [
+            "“that” không làm tân ngữ của “said” trong mệnh đề này.",
+            "“which” cần có danh từ đứng trước hoặc giới hạn lựa chọn.",
+            "",
+            "“it” không nối được thành mệnh đề danh từ."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q32",
+          "number": 32,
+          "prompt": "___ who were invited turned up at the party.",
+          "options": [
+            "Not many people",
+            "Not many of people",
+            "Not the many people",
+            "Not many of the people"
+          ],
+          "answer": 3,
+          "explanation": "“many of + the + danh từ” = nhiều người trong số những người xác định. “Not many of the people who were invited” = không nhiều người trong số những người được mời.",
+          "optionNotes": [
+            "Chủ ngữ “Not many people who were invited” thiếu “the” và không xác định rõ nhóm người được mời.",
+            "Sau “many of” phải có “the/these/my…”, không dùng “of people” trần.",
+            "“Not the many people” không phải cấu trúc đúng.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q33",
+          "number": 33,
+          "prompt": "- \"Are these gloves necessary?\"\n- \"Yes. You ___ use this chemical without gloves. It will burn your skin.\"",
+          "options": ["must not", "don't have to", "could not", "need not"],
+          "answer": 0,
+          "explanation": "“must not” = cấm, tuyệt đối không được. Hóa chất làm bỏng da nên không được dùng khi không đeo găng tay.",
+          "optionNotes": [
+            "",
+            "“don't have to” = không cần phải (không bắt buộc), nghĩa ngược với lời cấm.",
+            "“could not” = không thể/đã không thể; không diễn tả lời cấm hiện tại.",
+            "“need not” = không cần phải; cũng chỉ là không bắt buộc, không phải cấm."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q34",
+          "number": 34,
+          "prompt": "Although ___ can speak the language very well, many are comfortable reading English at some level, and almost everyone has a basic vocabulary.",
+          "options": ["a few", "few", "a little", "little"],
+          "answer": 1,
+          "explanation": "“few + danh từ/đại từ đếm được số nhiều” mang nghĩa phủ định (rất ít người). “Although few can speak… very well, many are comfortable reading…” tạo sự tương phản hợp lý với vế sau.",
+          "optionNotes": [
+            "“a few” = một vài (mang nghĩa khẳng định), không tạo sự tương phản với “many are comfortable…” sau “Although”.",
+            "",
+            "“a little” dùng với danh từ không đếm được.",
+            "“little” dùng với danh từ không đếm được."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q35",
+          "number": 35,
+          "prompt": "Everybody at the party was pleased with the ___.",
+          "options": [
+            "vegetable soup delicious hot",
+            "hot delicious vegetable soup",
+            "delicious hot vegetable soup",
+            "delicious vegetable hot soup"
+          ],
+          "answer": 2,
+          "explanation": "Thứ tự tính từ: ý kiến/nhận xét (delicious) → nhiệt độ/trạng thái (hot) → chất liệu/loại (vegetable) → danh từ (soup). Vậy là “delicious hot vegetable soup”.",
+          "optionNotes": [
+            "Sai thứ tự: “vegetable” là loại, phải đứng sát danh từ “soup”.",
+            "Sai thứ tự: tính từ chỉ ý kiến (delicious) phải đứng trước tính từ chỉ nhiệt độ (hot).",
+            "",
+            "Sai thứ tự: “vegetable” phải đứng ngay trước “soup”, sau “hot”."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt03-p2b",
+      "title": "Paper 2 · Part B: Điền từ vào đoạn văn",
+      "instruction": "Chọn từ phù hợp nhất cho mỗi chỗ trống được đánh số trong đoạn văn.",
+      "passage": {
+        "text": "Computers are helpful in many ways. First, they are fast. They can work with information {{36}} more quickly than persons. Second, computers can work with {{37}} information at the same time. Third, they can {{38}} information for a long time. They do not forget things the common people do. Also, computers are almost always correct. They are not {{39}}, of course, but they usually do not {{40}} mistakes.\n\nThese days, {{41}} is important to know about computers. There are a number of things to learn. Some companies have classes {{42}} work. Also, most universities offer day and night courses in computer science. {{43}} way to learn is from a book, or from a friend. After {{44}} hours of practice, you can work with computers. You {{45}} not be an expert, but you can have fun."
+      },
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt03-q36",
+          "number": 36,
+          "options": ["even", "quite", "very", "so"],
+          "answer": 0,
+          "explanation": "“even + so sánh hơn” = còn … hơn nữa: “even more quickly than persons” = nhanh hơn cả con người.",
+          "optionNotes": [
+            "",
+            "“quite” không đứng trước “more quickly” để nhấn mạnh so sánh hơn.",
+            "“very” không đi với so sánh hơn (very more quickly là sai); phải dùng “much/even/far”.",
+            "“so” không đứng trước “more quickly”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q37",
+          "number": 37,
+          "options": ["many", "a lot of", "a number of", "much of"],
+          "answer": 1,
+          "explanation": "“information” là danh từ không đếm được, nên dùng “a lot of” (đi được với cả đếm được và không đếm được): “work with a lot of information at the same time”.",
+          "optionNotes": [
+            "“many” chỉ đi với danh từ đếm được số nhiều.",
+            "",
+            "“a number of” chỉ đi với danh từ đếm được số nhiều.",
+            "“much of” phải có xác định từ phía sau (much of the information); không đi trực tiếp với “information”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q38",
+          "number": 38,
+          "options": ["stay", "remain", "hold", "keep"],
+          "answer": 3,
+          "explanation": "“keep information” = lưu giữ thông tin. Câu sau nói “They do not forget things…”, tức máy tính lưu giữ thông tin rất lâu.",
+          "optionNotes": [
+            "stay là nội động từ, không có tân ngữ “information”.",
+            "remain là nội động từ, không có tân ngữ “information”.",
+            "hold = giữ, chứa; ít tự nhiên hơn “keep” khi nói lưu giữ thông tin trong thời gian dài.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q39",
+          "number": 39,
+          "options": ["perfect", "excellent", "intelligent", "complete"],
+          "answer": 0,
+          "explanation": "“They are not perfect, of course, but they usually do not make mistakes” = chúng không hoàn hảo, nhưng thường không mắc lỗi.",
+          "optionNotes": [
+            "",
+            "“not excellent” = không xuất sắc; không đối lập tự nhiên với “do not make mistakes”.",
+            "“not intelligent” không hợp ngữ cảnh nói về việc mắc lỗi.",
+            "“complete” = đầy đủ, trọn vẹn; không hợp nghĩa khi nói về lỗi."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q40",
+          "number": 40,
+          "options": ["do", "take", "make", "have"],
+          "answer": 2,
+          "explanation": "Cụm cố định “make mistakes” = mắc lỗi.",
+          "optionNotes": [
+            "Không dùng “do mistakes”.",
+            "Không dùng “take mistakes”.",
+            "",
+            "Không dùng “have mistakes” (với nghĩa mắc lỗi)."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q41",
+          "number": 41,
+          "options": ["this", "that", "they", "it"],
+          "answer": 3,
+          "explanation": "“It is important to know…” = chủ ngữ giả “it” đi với tính từ và “to V”: “These days, it is important to know about computers”.",
+          "optionNotes": [
+            "“this” chỉ một vật cụ thể, không làm chủ ngữ giả.",
+            "“that” không dùng làm chủ ngữ giả với “to V”.",
+            "“they” là số nhiều, không có danh từ phù hợp để thay thế.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q42",
+          "number": 42,
+          "options": ["at", "in", "for", "with"],
+          "answer": 0,
+          "explanation": "“classes at work” = các lớp học ngay tại nơi làm việc: “Some companies have classes at work”.",
+          "optionNotes": [
+            "",
+            "“in work” có nghĩa là đang có việc làm, không phải “tại nơi làm việc”.",
+            "“classes for work” = các lớp học dành cho công việc, không phải học ngay ở nơi làm việc, và không hợp với nghĩa công ty tổ chức lớp.",
+            "“with work” không hợp nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q43",
+          "number": 43,
+          "options": ["Another", "Other", "Others", "The other"],
+          "answer": 0,
+          "explanation": "“Another + danh từ số ít” = một … khác: “Another way to learn is from a book, or from a friend”.",
+          "optionNotes": [
+            "",
+            "“Other” đi với danh từ số nhiều (other ways); “way” là số ít.",
+            "“Others” là đại từ, không đi trước danh từ “way”.",
+            "“The other” chỉ phần còn lại trong hai; ở đây đang kể thêm một cách học nữa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q44",
+          "number": 44,
+          "options": ["little", "a little", "few", "a few"],
+          "answer": 3,
+          "explanation": "“a few + danh từ đếm được số nhiều” = một vài: “After a few hours of practice, you can work with computers” = chỉ sau vài giờ luyện tập là dùng được máy tính (ý tích cực).",
+          "optionNotes": [
+            "“little” dùng với danh từ không đếm được.",
+            "“a little” dùng với danh từ không đếm được; “hours” là đếm được.",
+            "“few” mang nghĩa phủ định (rất ít, hầu như không đủ), trái với ý “you can work with computers”.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt03-q45",
+          "number": 45,
+          "options": ["can", "may", "must", "should"],
+          "answer": 1,
+          "explanation": "“may not be” = có thể không là (khả năng): “You may not be an expert, but you can have fun” = bạn có thể chưa phải chuyên gia nhưng vẫn vui.",
+          "optionNotes": [
+            "“can not be an expert” = không thể là chuyên gia; quá mạnh so với ý “có thể chưa”.",
+            "",
+            "“must not” = cấm; sai nghĩa.",
+            "“should not be an expert” = không nên là chuyên gia; sai nghĩa."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt03-p2c",
+      "title": "Paper 2 · Part C: Viết lại câu",
+      "instruction": "Hoàn thành câu thứ hai sao cho nghĩa không đổi so với câu gốc.",
+      "questions": [
+        {
+          "type": "rewrite",
+          "id": "pt03-q46",
+          "number": 46,
+          "original": "It is two years since we decorated the room.",
+          "prefix": "We haven't",
+          "answers": [
+            "decorated the room for two years.",
+            "decorated the room in two years."
+          ],
+          "explanation": "It is + khoảng thời gian + since + quá khứ đơn → S + haven't + V3 + for + khoảng thời gian. “We haven't decorated the room for two years.”"
+        },
+        {
+          "type": "rewrite",
+          "id": "pt03-q47",
+          "number": 47,
+          "original": "You can't visit New York unless you get a visa.",
+          "prefix": "If you",
+          "answers": [
+            "don't get a visa, you can't visit New York.",
+            "do not get a visa, you cannot visit New York.",
+            "don't have a visa, you can't visit New York.",
+            "do not have a visa, you cannot visit New York."
+          ],
+          "explanation": "unless = if … not. Câu điều kiện loại 1: “unless you get” = “if you don't get”, và vế chính vẫn giữ “can't visit”."
+        },
+        {
+          "type": "rewrite",
+          "id": "pt03-q48",
+          "number": 48,
+          "original": "My brother doesn't know how to dance.",
+          "prefix": "I wish",
+          "answers": [
+            "my brother knew how to dance.",
+            "my brother could dance.",
+            "my brother were able to dance."
+          ],
+          "explanation": "Điều ước ở hiện tại: wish + S + V quá khứ. Câu gốc phủ định (doesn't know) nên câu ước ở dạng khẳng định: “my brother knew how to dance” hoặc “could dance”."
+        },
+        {
+          "type": "rewrite",
+          "id": "pt03-q49",
+          "number": 49,
+          "original": "The news was so wonderful that we decided to have a celebration.",
+          "prefix": "It was",
+          "answers": [
+            "such wonderful news that we decided to have a celebration.",
+            "such a wonderful piece of news that we decided to have a celebration."
+          ],
+          "explanation": "so + tính từ + that → such + (a) + tính từ + danh từ + that. “news” là danh từ không đếm được nên không có “a”: “such wonderful news that…”."
+        },
+        {
+          "type": "rewrite",
+          "id": "pt03-q50",
+          "number": 50,
+          "original": "Tourists keep coming here despite the terrible weather.",
+          "prefix": "Although",
+          "answers": [
+            "the weather is terrible, tourists keep coming here.",
+            "the weather is terrible, tourists still keep coming here.",
+            "the weather is terrible, tourists keep coming here anyway."
+          ],
+          "explanation": "Despite + cụm danh từ → Although + mệnh đề. “the terrible weather” chuyển thành mệnh đề “the weather is terrible”, giữ thì hiện tại như câu gốc."
+        }
+      ]
+    }
+  ]
+}

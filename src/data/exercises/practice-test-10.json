@@ -1,0 +1,853 @@
+{
+  "id": "practice-test-10",
+  "title": "Practice Test 10",
+  "kind": "practice-test",
+  "sourcePages": [60, 65],
+  "answerSource": "ai",
+  "omitted": ["Paper 4: Speaking"],
+  "sections": [
+    {
+      "id": "pt10-p1a",
+      "title": "Paper 1 · Part A: Từ vựng",
+      "instruction": "Chọn từ hoặc cụm từ phù hợp nhất để hoàn thành mỗi câu.",
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt10-q1",
+          "number": 1,
+          "prompt": "The government hopes to ___ its plans for introducing cable TV.",
+          "options": ["turn out", "carry out", "bring up", "keep on"],
+          "answer": 1,
+          "explanation": "“carry out a plan” = thực hiện, tiến hành một kế hoạch. Chính phủ hy vọng thực hiện kế hoạch đưa truyền hình cáp vào.",
+          "optionNotes": [
+            "turn out = hóa ra là, hoặc sản xuất; không đi với “plans” theo nghĩa thực hiện.",
+            "",
+            "bring up = nuôi dạy, nêu ra (vấn đề); không có nghĩa thực hiện kế hoạch.",
+            "keep on = tiếp tục (làm gì); đi với V-ing, không đi với danh từ “plans” và không hợp nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q2",
+          "number": 2,
+          "prompt": "The businessman called the airline to ___ his flight to Tokyo this morning.",
+          "options": ["approve", "guarantee", "confirm", "insure"],
+          "answer": 2,
+          "explanation": "“confirm a flight” = xác nhận chuyến bay. Gọi cho hãng hàng không để xác nhận lại việc đặt chỗ là việc rất quen thuộc.",
+          "optionNotes": [
+            "approve = chấp thuận (một đề xuất, kế hoạch); không dùng cho chuyến bay của chính mình.",
+            "guarantee = bảo đảm (chất lượng, kết quả); không hợp nghĩa với “flight”.",
+            "",
+            "insure = mua bảo hiểm; không phải việc làm khi gọi cho hãng bay."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q3",
+          "number": 3,
+          "prompt": "They had hoped to ___ $1000 for charity, but they fell short of that amount.",
+          "options": ["cause", "gain", "seek", "raise"],
+          "answer": 3,
+          "explanation": "“raise money for charity” = quyên góp tiền cho từ thiện. “fell short of that amount” = không đạt đủ số tiền đó.",
+          "optionNotes": [
+            "cause = gây ra; không đi với “money” theo nghĩa quyên góp.",
+            "gain = thu được, đạt được (lợi ích, kinh nghiệm); không dùng cho việc quyên góp tiền từ thiện.",
+            "seek = tìm kiếm; không đi với một khoản tiền cụ thể cần quyên góp.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q4",
+          "number": 4,
+          "prompt": "Note to new students: all ___ must be paid no later than one week before the commencement of the course.",
+          "options": ["fares", "fees", "charges", "costs"],
+          "answer": 1,
+          "explanation": "“fees” = các khoản phí (học phí, lệ phí) trả cho một khóa học hay dịch vụ chuyên môn. Thông báo cho sinh viên mới nói về việc đóng phí trước khi khóa học bắt đầu.",
+          "optionNotes": [
+            "fare = tiền vé đi lại (xe buýt, tàu, máy bay); không dùng cho khóa học.",
+            "",
+            "charge = khoản tiền tính cho một dịch vụ cụ thể (service charge); không tự nhiên bằng “fees” với việc học.",
+            "cost = chi phí nói chung; không dùng như khoản phải nộp trước cho nhà trường."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q5",
+          "number": 5,
+          "prompt": "More than 300 travelers were ___ to make it back to Los Angeles International Airport after the tropical storm turned hotels upside down.",
+          "options": ["relieved", "released", "removed", "repressed"],
+          "answer": 0,
+          "explanation": "“be relieved to do something” = nhẹ nhõm vì làm được gì. Sau cơn bão, hơn 300 du khách nhẹ nhõm khi quay lại được sân bay.",
+          "optionNotes": [
+            "",
+            "release = thả, phóng thích, phát hành; không diễn tả cảm giác của du khách.",
+            "remove = dời đi, loại bỏ; không đi với “to make it back”.",
+            "repress = kìm nén, đàn áp; không hợp nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q6",
+          "number": 6,
+          "prompt": "The Post Office has changed its name and ___ off thousands of workers.",
+          "options": ["let", "set", "laid", "put"],
+          "answer": 2,
+          "explanation": "“lay off somebody” = cho nghỉ việc, sa thải (vì cắt giảm nhân sự). Dạng quá khứ phân từ “laid” khớp với thì hiện tại hoàn thành “has ... laid off”.",
+          "optionNotes": [
+            "let off = tha, cho xuống xe; không có nghĩa sa thải hàng loạt.",
+            "set off = khởi hành, làm nổ; không hợp nghĩa.",
+            "",
+            "put off = hoãn lại; không đi với “workers” theo nghĩa cho nghỉ việc."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q7",
+          "number": 7,
+          "prompt": "Doctors often ___ drugs that induce sleep.",
+          "options": ["prescribe", "subscribe", "inscribe", "describe"],
+          "answer": 0,
+          "explanation": "“prescribe drugs” = kê đơn thuốc. Đây là việc của bác sĩ.",
+          "optionNotes": [
+            "",
+            "subscribe = đặt mua dài hạn (báo, dịch vụ), thường đi với “to”; không dùng với “drugs”.",
+            "inscribe = khắc, ghi (chữ lên vật); không hợp nghĩa.",
+            "describe = mô tả; không phải việc bác sĩ làm với thuốc ngủ ở đây."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q8",
+          "number": 8,
+          "prompt": "Thomas was feeling sleepy because he ___ up late doing his homework.",
+          "options": ["put", "showed", "turned", "stayed"],
+          "answer": 3,
+          "explanation": "“stay up late” = thức khuya. Vì thức khuya làm bài tập nên Thomas buồn ngủ.",
+          "optionNotes": [
+            "“put up” = dựng lên, cho ở nhờ; không có nghĩa thức khuya.",
+            "“show up” = xuất hiện; không hợp nghĩa.",
+            "“turn up” = xuất hiện, vặn to; không có nghĩa thức khuya.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q9",
+          "number": 9,
+          "prompt": "Young children often ___ what they see others doing.",
+          "options": ["regard", "indicate", "imitate", "relate"],
+          "answer": 2,
+          "explanation": "imitate = bắt chước. Trẻ nhỏ thường bắt chước những gì chúng thấy người khác làm.",
+          "optionNotes": [
+            "regard = xem như, coi là; thường đi với “as”.",
+            "indicate = chỉ ra, cho thấy; không phải hành động của trẻ nhỏ.",
+            "",
+            "relate = kể lại, liên hệ; không có nghĩa bắt chước."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q10",
+          "number": 10,
+          "prompt": "This canned soup ___ a lot of salt.",
+          "options": ["remains", "contains", "holds", "involves"],
+          "answer": 1,
+          "explanation": "contain = chứa, có chứa (thành phần). Súp đóng hộp có chứa nhiều muối.",
+          "optionNotes": [
+            "remain = vẫn còn, ở lại; không đi trực tiếp với tân ngữ là thành phần.",
+            "",
+            "hold = giữ, chứa được (sức chứa của vật đựng); không dùng để nói thành phần của món ăn.",
+            "involve = bao gồm, liên quan đến (một quá trình); không dùng cho thành phần món ăn."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt10-p1b-1",
+      "title": "Paper 1 · Part B: Đọc hiểu (đoạn 1)",
+      "instruction": "Đọc đoạn văn và chọn đáp án đúng nhất cho mỗi câu hỏi.",
+      "passage": {
+        "title": "The Zoo Keeper",
+        "text": "My name's Mark Porter. I've been interested in the natural world since I was very young. I used to keep insects and I spent a lot of time drawing them.\n\nAfter I finished school, I went to work in a pet shop - that was great fun but I knew I had to go to college if I wanted a better job. So I went to university to study Biology and then got a job in Florida working at a sea-life centre, looking after the dolphins.\n\nWhile I was working there, I saw an advertisement for my current job - a keeper for the fish department at a zoo in California - and applied. Although it was for the same money, I was pleased when they immediately offered me the job because there are lots of different activities I'm involved in here. As part of my job, I get to do research and I manage an education centre where I tell people of all ages about what they can do to protect fish and animals.\n\nPeople think that my job is exciting because I go diving as part of my research work on sharks. However, I work long hours, and I worry if I have to call a medical specialist to come and look after a sick fish. Conditions at work can be uncomfortable too, as a lot of the fish I look after bite so I have to be careful. Then there are the visitors. Some are OK but some try to touch the fish or put sweet wrappers in the water - that makes me angry. However, my job is very rewarding and I hope that you'll think about working with animals, too."
+      },
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt10-q11",
+          "number": 11,
+          "prompt": "What is the writer trying to do in the text?",
+          "options": [
+            "Explain how people can protect animals.",
+            "Give an account of one day in his life.",
+            "Describe some of the people he works with.",
+            "Encourage people to have a career with wild life."
+          ],
+          "answer": 3,
+          "explanation": "Mark kể về công việc của mình rồi kết bài bằng câu “my job is very rewarding and I hope that you'll think about working with animals, too”. Mục đích của bài là khuyến khích người đọc chọn nghề làm việc với động vật.",
+          "optionNotes": [
+            "Việc bảo vệ động vật chỉ được nhắc thoáng qua trong phần giới thiệu trung tâm giáo dục, không phải mục đích chính.",
+            "Bài kể về cả quá trình học tập và công việc, không phải một ngày cụ thể.",
+            "Bài chỉ nhắc đến khách tham quan, không mô tả đồng nghiệp.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q12",
+          "number": 12,
+          "prompt": "What can a reader find out from the text?",
+          "options": [
+            "What qualifications you need to go to university.",
+            "How many hours a day Mark has to work.",
+            "How long Mark has been keen on animals.",
+            "Where you can find the best sea-life centres."
+          ],
+          "answer": 2,
+          "explanation": "Câu đầu: “I've been interested in the natural world since I was very young” cho biết Mark quan tâm đến thiên nhiên và động vật từ khi còn rất nhỏ.",
+          "optionNotes": [
+            "Bài không nói cần bằng cấp gì để vào đại học.",
+            "Bài chỉ nói “I work long hours”, không nêu số giờ cụ thể mỗi ngày.",
+            "",
+            "Bài không so sánh hay giới thiệu các trung tâm sinh vật biển tốt nhất."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q13",
+          "number": 13,
+          "prompt": "What does Mark say about his current job?",
+          "options": [
+            "It allows him to do a variety of things.",
+            "It was quite difficult to get.",
+            "It is better paid than his last job.",
+            "It gives him time off work to go diving."
+          ],
+          "answer": 0,
+          "explanation": "Mark nói ông hài lòng vì “there are lots of different activities I'm involved in here” (nghiên cứu, quản lý trung tâm giáo dục...), tức là công việc cho phép ông làm nhiều việc khác nhau.",
+          "optionNotes": [
+            "",
+            "Họ “immediately offered me the job”, tức là ông được nhận ngay, không khó.",
+            "“it was for the same money”: lương bằng công việc trước.",
+            "Ông đi lặn là một phần của công việc nghiên cứu, không phải thời gian nghỉ."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q14",
+          "number": 14,
+          "prompt": "How does Mark feel about visitors to the zoo?",
+          "options": [
+            "Nervous that a fish might hurt them.",
+            "Annoyed when they don't behave well.",
+            "Upset when they take the fish out of the water.",
+            "Sad when they don't ask questions."
+          ],
+          "answer": 1,
+          "explanation": "“some try to touch the fish or put sweet wrappers in the water - that makes me angry”: Mark bực mình khi khách cư xử không đúng.",
+          "optionNotes": [
+            "Chuyện cá cắn chỉ khiến Mark phải cẩn thận, ông không lo cho khách.",
+            "",
+            "Bài nói khách chạm vào cá và bỏ giấy kẹo xuống nước, không nói họ bắt cá lên khỏi nước.",
+            "Bài không nhắc đến việc khách không đặt câu hỏi."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q15",
+          "number": 15,
+          "prompt": "What might Mark write in his diary today?",
+          "options": [
+            "'Today, I performed an operation on a sick fish which had eaten a sweet wrapper.'",
+            "'I spent all day in the research laboratory again today doing boring experiments.",
+            "'I gave a talk to a group of schoolchildren about looking after animals.'",
+            "'Today I watched my boss go swimming with sharks – I wish I was allowed to do that too!'"
+          ],
+          "answer": 2,
+          "explanation": "Mark quản lý một trung tâm giáo dục, nơi ông nói chuyện với người ở mọi lứa tuổi về cách bảo vệ cá và động vật. Việc nói chuyện với một nhóm học sinh về chăm sóc động vật rất khớp với công việc ông mô tả.",
+          "optionNotes": [
+            "Mark là người giữ cá, không phải bác sĩ; khi cá bệnh ông phải gọi chuyên gia y tế đến.",
+            "Ông nói công việc nghiên cứu là thú vị, không hề “boring”.",
+            "",
+            "Chính Mark đi lặn cùng cá mập trong nghiên cứu, ông không cần ghen tị với sếp."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt10-p1b-2",
+      "title": "Paper 1 · Part B: Đọc hiểu (đoạn 2)",
+      "instruction": "Đọc đoạn văn và chọn đáp án đúng nhất cho mỗi câu hỏi.",
+      "passage": {
+        "title": "Activity centre in the countryside",
+        "text": "A month ago I had no idea that on Sunday afternoon in July I'd be 50 metres above the ground and enjoying it. Now I looked down at the river far below me, and realised why people love rock climbing.\n\nMy friend Will and I had arrived at the Activity Centre on Saturday evening. The accommodation wasn't great, but we had everything we needed: beds, blankets and some food plus we were pleased to be out of the city and in the fresh air.\n\nOn Sunday morning we met the other ten members of our groups. James had come along with two friends, Harry and George, while sisters Maria and Sara had come with Isabella. We had come for many different places so none of us knew the area.\n\nWe knew we were going to spend some time outdoors, but none of us was sure exactly how. Half of us spent the morning caving while the others went rock-climbing and then we changed at lunchtime. Will and I went to the caves first. Climbing out was harder than going in, but after a good deal of pushing, we went out at last - covered in mud, but pleased and excited by what we'd done."
+      },
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt10-q16",
+          "number": 16,
+          "prompt": "What is the writer trying to do in the text?",
+          "options": [
+            "Advertise the Activity Centre.",
+            "Describe some people she met.",
+            "Explain how to do some outdoor sports.",
+            "Say how she spent some free time."
+          ],
+          "answer": 3,
+          "explanation": "Bài kể lại một cuối tuần tác giả đến Activity Centre: đến nơi, gặp nhóm, đi hang động và leo núi. Đó là kể cách cô dành thời gian rảnh.",
+          "optionNotes": [
+            "Bài là lời kể cá nhân và còn chê chỗ ở (“The accommodation wasn't great”), không phải quảng cáo.",
+            "Việc gặp những người khác chỉ là chi tiết phụ, không phải mục đích chính.",
+            "Bài không hướng dẫn kỹ thuật chơi môn thể thao nào.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q17",
+          "number": 17,
+          "prompt": "What can the reader learn from the text?",
+          "options": [
+            "When to depend on other people at the Centre.",
+            "How to apply for a place at the Centre.",
+            "What sorts of activities you can experience at the Centre.",
+            "Which time of the year is best to attend the Centre."
+          ],
+          "answer": 2,
+          "explanation": "Bài nhắc đến việc đi hang (caving) và leo núi (rock-climbing) ở trung tâm, nên người đọc biết được các loại hoạt động có thể trải nghiệm.",
+          "optionNotes": [
+            "Bài không đưa lời khuyên nào về việc dựa vào người khác.",
+            "Bài không nói về cách đăng ký.",
+            "",
+            "Bài chỉ nhắc đến tháng 7 như thời điểm tác giả đi, không so sánh mùa nào tốt nhất."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q18",
+          "number": 18,
+          "prompt": "How do you think the writer might describe the weekend?",
+          "options": ["Interesting.", "Relaxing.", "Frightening.", "Unpleasant."],
+          "answer": 0,
+          "explanation": "Tác giả nói mình “enjoying it” khi leo núi và “pleased and excited by what we'd done” sau khi đi hang. Đó là một cuối tuần thú vị.",
+          "optionNotes": [
+            "",
+            "Các hoạt động như leo núi, chui hang, “pushing” khá mệt, không phải thư giãn.",
+            "Tác giả thấy thích và phấn khích, không sợ hãi.",
+            "Dù chỗ ở không tốt, cả cuối tuần vẫn là trải nghiệm vui nên không thể là “unpleasant”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q19",
+          "number": 19,
+          "prompt": "What do we learn about the group?",
+          "options": [
+            "Some of them had been there before.",
+            "They had already chosen their preferred activities.",
+            "Some of them already know each other.",
+            "They came from the same city."
+          ],
+          "answer": 2,
+          "explanation": "“James had come along with two friends, Harry and George, while sisters Maria and Sara had come with Isabella”: có những người đã quen nhau và đi cùng nhau.",
+          "optionNotes": [
+            "Họ không quen khu vực này (“none of us knew the area”) nên không có ai từng đến.",
+            "Bài nói “none of us was sure exactly how” (không ai biết chính xác sẽ làm gì), nên chưa ai chọn hoạt động.",
+            "",
+            "Họ đến từ nhiều nơi khác nhau, chứ không cùng một thành phố."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q20",
+          "number": 20,
+          "prompt": "Which of the following advertisements describe the Activity Centre?",
+          "options": [
+            "ACTIVITY CENTRE. Set in beautiful countryside. Make up your own timetable – choose from a variety of activities (horse-riding, fishing, hill-walking, sailing, mountain biking)",
+            "ACTIVITY CENTRE. Set in beautiful countryside. Accommodation provided. Work with a group – we show you a range of outdoor activities that you didn't realise you could do!",
+            "ACTIVITY CENTRE. Set in beautiful countryside. Enjoy the luxury of our accommodation – each room has its own bathroom. Work with a group, or have individual teaching.",
+            "ACTIVITY CENTRE. Set in beautiful countryside. You can spend the day doing outdoor activities and we will find you accommodation with a local family."
+          ],
+          "answer": 1,
+          "explanation": "Trung tâm có chỗ ở (“accommodation”), nhóm tham gia cùng nhau và làm những hoạt động ngoài trời mà họ chưa từng nghĩ mình làm được (leo núi, chui hang). Chỉ quảng cáo B khớp các chi tiết này.",
+          "optionNotes": [
+            "Họ không tự lập thời khóa biểu: “none of us was sure exactly how” và nhóm chia nhau đi caving và leo núi; các hoạt động được liệt kê cũng không có trong bài.",
+            "",
+            "Chỗ ở “wasn't great” nên không thể là “luxury”, và họ học theo nhóm chứ không học riêng.",
+            "Họ ở ngay tại trung tâm (giường, chăn, thức ăn), không ở nhà dân địa phương."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt10-p2a",
+      "title": "Paper 2 · Part A: Hoàn thành câu",
+      "instruction": "Chọn từ hoặc cụm từ phù hợp nhất để hoàn thành mỗi câu.",
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt10-q21",
+          "number": 21,
+          "prompt": "The bell ___ the end of the class rang, ___ our heated discussion.",
+          "options": [
+            "indicated, interrupting",
+            "indicated, interrupted",
+            "indicating, interrupting",
+            "indicating, interrupted"
+          ],
+          "answer": 2,
+          "explanation": "Động từ chính của câu là “rang”. Chỗ trống thứ nhất là mệnh đề quan hệ rút gọn chủ động “indicating the end of the class” (= which indicated…). Chỗ trống thứ hai là mệnh đề phân từ chỉ kết quả, chủ ngữ là cả hành động “the bell rang”: “interrupting our heated discussion” (chủ động, có tân ngữ).",
+          "optionNotes": [
+            "“indicated” sẽ thành động từ chính thứ hai, thiếu liên từ.",
+            "“indicated” là động từ chính thứ hai; “interrupted” mang nghĩa bị động nên không có tân ngữ “our heated discussion”.",
+            "",
+            "“interrupted” mang nghĩa bị động, sai vì phía sau còn tân ngữ “our heated discussion”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q22",
+          "number": 22,
+          "prompt": "You ___ have brought your camera. They all had theirs with them.",
+          "options": ["couldn't", "needn't", "wouldn't", "mustn't"],
+          "answer": 1,
+          "explanation": "“needn't have + V3” = lẽ ra không cần làm gì (nhưng đã làm). Bạn đã mang máy ảnh, nhưng việc đó là thừa vì ai cũng có sẵn máy của mình.",
+          "optionNotes": [
+            "“couldn't have + V3” = chắc chắn không thể đã làm; sai nghĩa vì bạn đã mang máy ảnh.",
+            "",
+            "“wouldn't have + V3” dùng trong câu điều kiện loại 3, không hợp nghĩa ở đây.",
+            "“mustn't have + V3” không phải cấu trúc đúng; suy đoán phủ định ở quá khứ dùng “can't have”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q23",
+          "number": 23,
+          "prompt": "Without electricity, human life ___ quite different today.",
+          "options": ["would be", "will be", "would have been", "is"],
+          "answer": 0,
+          "explanation": "“Without + danh từ” thay cho mệnh đề if: “Without electricity” = “If there were no electricity”. Giả định không có thật ở hiện tại (có “today”) → would + V.",
+          "optionNotes": [
+            "",
+            "“will be” dùng cho điều kiện loại 1 (có thể xảy ra), nhưng điện thì đã tồn tại rồi.",
+            "“would have been” dùng cho giả định trái với quá khứ; câu này nói về hiện tại (“today”).",
+            "“is” khẳng định sự thật, không diễn tả được giả định “nếu không có điện”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q24",
+          "number": 24,
+          "prompt": "It's known by everyone that ___ horse is ___ useful animal.",
+          "options": ["a/an", "the/the", "0/ a", "a/ a"],
+          "answer": 3,
+          "explanation": "“a horse” dùng khái quát chỉ cả loài ngựa; “a useful animal” dùng mạo từ “a” vì “useful” bắt đầu bằng âm /j/ (phụ âm), không phải nguyên âm. Câu: “A horse is a useful animal.”",
+          "optionNotes": [
+            "“an useful” sai, vì “useful” đọc là /ˈjuːsfl/ (âm đầu là phụ âm) nên phải dùng “a”.",
+            "“the horse is the useful animal” = con ngựa là con vật hữu ích (duy nhất), sai nghĩa khái quát.",
+            "“horse” là danh từ đếm được số ít nên không thể bỏ mạo từ.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q25",
+          "number": 25,
+          "prompt": "___ your name. Could you tell me again?",
+          "options": ["I am forgetting", "I've been forgetting", "I've forgotten", "I was forgetting"],
+          "answer": 2,
+          "explanation": "Hiện tại hoàn thành “I've forgotten” = tôi đã quên (và bây giờ vẫn chưa nhớ ra), nên mới nhờ người ta nhắc lại tên.",
+          "optionNotes": [
+            "“forget” là động từ trạng thái, thường không dùng thì tiếp diễn để nói về việc quên một lần.",
+            "Hiện tại hoàn thành tiếp diễn chỉ hành động kéo dài; không hợp nghĩa quên một lần.",
+            "",
+            "Quá khứ tiếp diễn không nối với hiện tại (bây giờ vẫn chưa nhớ tên)."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q26",
+          "number": 26,
+          "prompt": "I'm looking for a ___ for my bedside table.",
+          "options": [
+            "cheap white Taiwanese clock radio",
+            "white cheap Taiwanese clock radio",
+            "Taiwanese cheap white clock radio",
+            "Taiwanese white cheap clock radio"
+          ],
+          "answer": 0,
+          "explanation": "Thứ tự tính từ: ý kiến/đánh giá (cheap) → màu sắc (white) → xuất xứ (Taiwanese) → danh từ ghép (clock radio). Vậy: “cheap white Taiwanese clock radio”.",
+          "optionNotes": [
+            "",
+            "Sai thứ tự: “cheap” (đánh giá) phải đứng trước “white” (màu).",
+            "Sai thứ tự: xuất xứ (Taiwanese) phải đứng sau đánh giá và màu sắc.",
+            "Sai thứ tự: xuất xứ phải đứng gần danh từ nhất, sau màu sắc và đánh giá."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q27",
+          "number": 27,
+          "prompt": "Human beings of various races are as likely to reproduce in one environment as in",
+          "options": ["another", "other", "the other", "the others"],
+          "answer": 0,
+          "explanation": "“one environment ... another” = (trong) môi trường này ... (trong) môi trường khác. “another” là đại từ số ít, thay cho “another environment”.",
+          "optionNotes": [
+            "",
+            "“other” không đứng một mình làm đại từ số ít; cần “another” hoặc “other + danh từ số nhiều”.",
+            "“the other” chỉ cái còn lại duy nhất trong hai; ở đây có thể có nhiều môi trường.",
+            "“the others” là số nhiều, không khớp với “one environment”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q28",
+          "number": 28,
+          "prompt": "___ but I can read it as well.",
+          "options": [
+            "I can not only speak Chinese",
+            "I not only can speak Chinese",
+            "Not only I can speak Chinese",
+            "Not only can I speak Chinese"
+          ],
+          "answer": 3,
+          "explanation": "“Not only” đứng đầu câu thì đảo ngữ: Not only + trợ động từ + chủ ngữ + V... → “Not only can I speak Chinese but I can read it as well.”",
+          "optionNotes": [
+            "Không song song: “not only … but” phải nối hai thành phần cùng loại, nhưng vế sau lại lặp “I can read”. Đề muốn dùng đảo ngữ với “Not only” ở đầu câu.",
+            "“not only can” không đứng sau chủ ngữ; sai trật tự.",
+            "Thiếu đảo ngữ: sau “Not only” phải là “can I”.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q29",
+          "number": 29,
+          "prompt": "There were just ___ people waiting, and I took out my wallet to find the receipt for my case.",
+          "options": ["few", "a few", "very few", "so few"],
+          "answer": 1,
+          "explanation": "“just a few + danh từ số nhiều” = chỉ có một vài. Nghĩa tích cực (có vài người), nên tác giả vẫn lấy ví ra tìm biên lai.",
+          "optionNotes": [
+            "“few” (không có “a”) mang nghĩa gần như không có; ít dùng với “just”.",
+            "",
+            "“very few” mang nghĩa phủ định (rất ít, gần như không ai).",
+            "“so few” cần mệnh đề với “that” hoặc ngữ cảnh nhấn mạnh; không hợp ở đây."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q30",
+          "number": 30,
+          "prompt": "The woman ___ doesn't know he's a lady-killer.",
+          "options": [
+            "Pete's in love with",
+            "Pete's in love with who",
+            "Pete's in love with whom",
+            "Pete's in love with her"
+          ],
+          "answer": 0,
+          "explanation": "Mệnh đề quan hệ rút gọn: “The woman (whom) Pete's in love with”. Đại từ quan hệ làm tân ngữ có thể được lược bỏ, giới từ “with” đứng cuối mệnh đề.",
+          "optionNotes": [
+            "",
+            "Thêm “who” thành hai mệnh đề quan hệ chồng lên cùng một danh từ, sai cấu trúc.",
+            "“with whom” đặt ở cuối mệnh đề sai trật tự (giới từ đi trước “whom” chỉ khi đứng đầu mệnh đề: “with whom Pete's in love”).",
+            "“her” lặp lại tân ngữ và làm câu thiếu chủ ngữ cho “doesn't know”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q31",
+          "number": 31,
+          "prompt": "Without all this unnecessary packaging, food ___ cheaper.",
+          "options": ["is", "were", "will be", "would be"],
+          "answer": 3,
+          "explanation": "“Without + danh từ” thay cho mệnh đề if giả định: “If there were no unnecessary packaging, food would be cheaper.” Giả định trái với hiện tại → would + V.",
+          "optionNotes": [
+            "“is” khẳng định sự thật, không diễn tả giả định.",
+            "“were” không phải dạng động từ chính ở mệnh đề kết quả; cần “would be”.",
+            "“will be” dùng cho điều kiện loại 1 (có thể xảy ra); ở đây là giả định không có thật.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q32",
+          "number": 32,
+          "prompt": "Judith won't leave until she ___ the whole film by the famous director.",
+          "options": ["watches", "has watched", "watched", "had watched"],
+          "answer": 1,
+          "explanation": "Mệnh đề thời gian chỉ tương lai (until...) dùng hiện tại thay cho tương lai. Vì hành động “xem hết cả bộ phim” phải hoàn tất trước khi cô ấy rời đi, nên dùng hiện tại hoàn thành “has watched”.",
+          "optionNotes": [
+            "Hiện tại đơn không nhấn mạnh việc đã xem xong toàn bộ phim, cô ấy mới rời đi.",
+            "",
+            "Quá khứ đơn không dùng trong mệnh đề thời gian tương lai.",
+            "Quá khứ hoàn thành dùng cho quá khứ; câu này nói về tương lai (“won't leave”)."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q33",
+          "number": 33,
+          "prompt": "George always carries a dictionary ___ he finds a word he does not know.",
+          "options": ["if", "supposing", "in case", "whether"],
+          "answer": 2,
+          "explanation": "“in case + mệnh đề” = phòng khi, đề phòng trường hợp. George luôn mang từ điển để phòng khi gặp từ lạ.",
+          "optionNotes": [
+            "“if” = nếu; “mang từ điển nếu gặp từ lạ” không đúng nghĩa dự phòng, vì ông phải mang theo trước.",
+            "“supposing” = giả sử; thường đứng đầu câu, không hợp nghĩa.",
+            "",
+            "“whether” = liệu rằng; không nối được mệnh đề chỉ mục đích dự phòng."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q34",
+          "number": 34,
+          "prompt": "Our decision is that the school remains ___.",
+          "options": ["close", "closing", "closed", "closely"],
+          "answer": 2,
+          "explanation": "“remain + tính từ/quá khứ phân từ” = vẫn ở trạng thái nào đó. “remains closed” = vẫn đóng cửa.",
+          "optionNotes": [
+            "“close” là động từ hoặc tính từ nghĩa “gần”; “remains close” = ở gần, sai nghĩa.",
+            "“remains closing” = vẫn đang đóng dần; không hợp nghĩa trạng thái.",
+            "",
+            "“closely” là trạng từ (chặt chẽ, sát sao); không đứng sau “remain”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q35",
+          "number": 35,
+          "prompt": "If I give you the information, I risk ___ my job!",
+          "options": ["losing", "to lose", "having lost", "to have lost"],
+          "answer": 0,
+          "explanation": "“risk + V-ing” = liều, có nguy cơ làm/gặp điều gì: “risk losing my job” = có nguy cơ mất việc.",
+          "optionNotes": [
+            "",
+            "“risk” không đi với to V.",
+            "“having lost” chỉ việc đã mất trước một mốc khác; ở đây mất việc là hệ quả trong tương lai.",
+            "“risk” không đi với to V, và dạng hoàn thành cũng không hợp nghĩa."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt10-p2b",
+      "title": "Paper 2 · Part B: Điền từ vào đoạn văn",
+      "instruction": "Chọn từ phù hợp nhất cho mỗi chỗ trống được đánh số trong đoạn văn.",
+      "passage": {
+        "text": "Women nowadays have more {{36}} than those in the past. For example, our great-grandmothers were not allowed to go to school or to work to earn their own living. {{37}}, they had to depend on their husbands financially. Modern women, on the contrary, can get good education, have their own careers, and {{38}} their interests. They can even take good positions in politics if they are {{39}} at it. However, women living in our modern society have their {{40}}, too. Today's women work harder than their great-grandmothers so that they can gain the {{41}} between working life and family life. Many people {{42}} that by 2032, most senior positions at work will be {{43}} by women. Then, it is possible that women will have more strenuous life because, {{44}} in a very modern society, the women can't {{45}} their role in the family."
+      },
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt10-q36",
+          "number": 36,
+          "options": ["advances", "advantages", "benefits", "conveniences"],
+          "answer": 1,
+          "explanation": "“have more advantages than those in the past” = có nhiều lợi thế/thuận lợi hơn so với phụ nữ ngày xưa. Câu sau nêu ví dụ: bà cố bị cấm đi học, đi làm.",
+          "optionNotes": [
+            "advances = sự tiến bộ, bước tiến; phụ nữ không “có” advances.",
+            "",
+            "benefits = lợi ích nhận được (từ một việc cụ thể); không hợp bằng “advantages” khi so sánh hoàn cảnh giữa hai thời kỳ.",
+            "conveniences = tiện nghi; không nói về quyền học tập và làm việc."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q37",
+          "number": 37,
+          "options": ["In effect", "However", "As a result", "Although"],
+          "answer": 2,
+          "explanation": "Phụ nữ trước kia không được đi học, đi làm, kết quả là họ phải phụ thuộc tài chính vào chồng. “As a result,” = vì thế, kết quả là.",
+          "optionNotes": [
+            "In effect = trên thực tế; không diễn tả quan hệ nhân quả rõ ràng.",
+            "However = tuy nhiên; hai câu không đối lập.",
+            "",
+            "Although là liên từ, không đứng đầu câu kèm dấu phẩy theo kiểu này."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q38",
+          "number": 38,
+          "options": ["pursue", "support", "promote", "stimulate"],
+          "answer": 0,
+          "explanation": "“pursue one's interests” = theo đuổi sở thích, đam mê. Phụ nữ hiện đại có thể học hành, có sự nghiệp và theo đuổi những điều mình thích.",
+          "optionNotes": [
+            "",
+            "support = ủng hộ, hỗ trợ; “support their interests” không tự nhiên bằng “pursue”.",
+            "promote = thúc đẩy, thăng chức; không đi với “interests” theo nghĩa này.",
+            "stimulate = kích thích, khơi dậy; thường là điều gì đó kích thích sở thích của người khác."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q39",
+          "number": 39,
+          "options": ["powerful", "competent", "ambitious", "attentive"],
+          "answer": 1,
+          "explanation": "“be competent at something” = giỏi, có năng lực ở việc gì. Phụ nữ có thể giữ vị trí tốt trong chính trị nếu họ đủ năng lực.",
+          "optionNotes": [
+            "powerful = quyền lực, mạnh mẽ; không đi với “at it”.",
+            "",
+            "ambitious = tham vọng; đi với “about” hoặc “to V”, không đi với “at”.",
+            "attentive = chu đáo, chăm chú; đi với “to”, không phải “at”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q40",
+          "number": 40,
+          "options": ["obstacles", "disputes", "issues", "problems"],
+          "answer": 3,
+          "explanation": "“have their problems, too” = cũng có những vấn đề, khó khăn riêng của họ. Chữ “However” báo trước ý đối lập với những thuận lợi ở trên.",
+          "optionNotes": [
+            "obstacles = trở ngại; thường là rào cản cụ thể cần vượt qua, ít đi với “have their ... too”.",
+            "disputes = tranh chấp; không hợp nghĩa.",
+            "issues = vấn đề (chủ đề); “have their issues” mang sắc thái thân mật và kém tự nhiên hơn.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q41",
+          "number": 41,
+          "options": ["equality", "stability", "balance", "steadiness"],
+          "answer": 2,
+          "explanation": "“gain a balance between working life and family life” = đạt được sự cân bằng giữa công việc và gia đình. Cụm cố định “balance between A and B”.",
+          "optionNotes": [
+            "equality = sự bình đẳng; không nói về cân bằng giữa hai mặt của cuộc sống.",
+            "stability = sự ổn định; không đi với “between A and B”.",
+            "",
+            "steadiness = sự vững vàng; không đi với “between A and B”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q42",
+          "number": 42,
+          "options": ["predict", "suggest", "announce", "recommend"],
+          "answer": 0,
+          "explanation": "“predict that + mệnh đề” = dự đoán rằng. Câu nói về tương lai (“by 2032 ... will be”), nên nhiều người dự đoán.",
+          "optionNotes": [
+            "",
+            "suggest = gợi ý, đề nghị; không dùng để nói về một dự đoán.",
+            "announce = thông báo (một sự việc đã quyết định); không phải ý kiến của “many people”.",
+            "recommend = khuyên; không hợp nghĩa dự đoán."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q43",
+          "number": 43,
+          "options": ["done", "caught", "taken", "kept"],
+          "answer": 2,
+          "explanation": "“positions will be taken by women” = các vị trí sẽ do phụ nữ đảm nhiệm. “take a position” = nhận một vị trí; dạng bị động “be taken by”.",
+          "optionNotes": [
+            "done by = được làm bởi; dùng cho công việc, không dùng cho “positions”.",
+            "caught by = bị bắt bởi; không hợp nghĩa.",
+            "",
+            "kept by = được giữ bởi; không diễn tả việc đảm nhận vị trí mới."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q44",
+          "number": 44,
+          "options": ["even", "even if", "even though", "even so"],
+          "answer": 2,
+          "explanation": "“even though” = mặc dù (sự thật hiển nhiên), và có thể rút gọn: “even though (they live) in a very modern society”. Ý: dù sống trong xã hội hiện đại, phụ nữ vẫn không thể bỏ bê vai trò gia đình.",
+          "optionNotes": [
+            "“even” đứng một mình không nối mệnh đề; cần “even though/if”.",
+            "“even if” = ngay cả khi (giả định); ở đây là sự thật, phụ nữ đang sống trong xã hội hiện đại.",
+            "",
+            "“even so” là trạng từ, dùng để mở đầu một câu mới, không dùng sau “because,”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt10-q45",
+          "number": 45,
+          "options": ["dismiss", "deny", "reject", "neglect"],
+          "answer": 3,
+          "explanation": "“neglect their role in the family” = bỏ bê vai trò trong gia đình. Dù sống ở xã hội hiện đại, phụ nữ vẫn không thể bỏ bê vai trò ấy, nên họ vất vả hơn.",
+          "optionNotes": [
+            "dismiss = bác bỏ, sa thải; không đi với “role in the family”.",
+            "deny = phủ nhận; không hợp nghĩa.",
+            "reject = từ chối, bác bỏ; không hợp nghĩa bằng “neglect”.",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt10-p2d",
+      "title": "Paper 2 · Part D: Viết lại câu",
+      "instruction": "Hoàn thành câu thứ hai sao cho nghĩa không đổi so với câu gốc.",
+      "questions": [
+        {
+          "type": "rewrite",
+          "id": "pt10-q46",
+          "number": 46,
+          "original": "The keeper feed the lions at 3 p.m. every day.",
+          "prefix": "The lions",
+          "answers": [
+            "are fed by the keeper at 3 p.m. every day.",
+            "are fed at 3 p.m. every day by the keeper."
+          ],
+          "explanation": "Chuyển câu chủ động sang bị động ở thì hiện tại đơn: S + V(s/es) + O → O + am/is/are + V3 + by S. “feed the lions” → “the lions are fed by the keeper”. (Câu gốc in “feed”; ý là “feeds”.)"
+        },
+        {
+          "type": "rewrite",
+          "id": "pt10-q47",
+          "number": 47,
+          "original": "\"Where is the station car park?\" Mrs. Green asked me.",
+          "prefix": "Mrs. Green asked me",
+          "answers": ["where the station car park was."],
+          "explanation": "Câu hỏi gián tiếp (Wh-question): từ để hỏi + chủ ngữ + động từ (không đảo ngữ), lùi thì “is” → “was”, bỏ dấu hỏi chấm."
+        },
+        {
+          "type": "rewrite",
+          "id": "pt10-q48",
+          "number": 48,
+          "original": "He acted so well that the audience was moved to tears.",
+          "prefix": "He acted well",
+          "answers": [
+            "enough to move the audience to tears.",
+            "enough for the audience to be moved to tears."
+          ],
+          "explanation": "so + adj/adv + that + mệnh đề → adj/adv + enough + to V. “acted well enough to move the audience to tears” = diễn đủ hay để làm khán giả rơi nước mắt."
+        },
+        {
+          "type": "rewrite",
+          "id": "pt10-q49",
+          "number": 49,
+          "original": "Boiling an egg is not difficult.",
+          "prefix": "It's",
+          "answers": [
+            "not difficult to boil an egg.",
+            "easy to boil an egg."
+          ],
+          "explanation": "V-ing làm chủ ngữ → It is + tính từ + to V. “Boiling an egg is not difficult” → “It's not difficult to boil an egg.”"
+        },
+        {
+          "type": "rewrite",
+          "id": "pt10-q50",
+          "number": 50,
+          "original": "Students are required to wear uniforms at all times.",
+          "prefix": "The school",
+          "suffix": "at all time.",
+          "answers": [
+            "requires students to wear uniforms",
+            "makes students wear uniforms",
+            "requires that students wear uniforms",
+            "obliges students to wear uniforms"
+          ],
+          "explanation": "Chuyển bị động sang chủ động: “Students are required to wear…” → “The school requires students to wear…”. Chủ thể ngầm hiểu là nhà trường. (Phần cuối in sẵn trong đề là “at all time”.)"
+        }
+      ]
+    }
+  ]
+}

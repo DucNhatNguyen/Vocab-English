@@ -1,0 +1,873 @@
+{
+  "id": "practice-test-02",
+  "title": "Practice Test 2",
+  "kind": "practice-test",
+  "sourcePages": [8, 15],
+  "answerSource": "ai",
+  "omitted": ["Paper 3: Listening (câu 51–70, tài liệu không kèm audio)", "Paper 4: Speaking"],
+  "sections": [
+    {
+      "id": "pt02-p1a",
+      "title": "Paper 1 · Part A: Từ vựng",
+      "instruction": "Chọn từ hoặc cụm từ phù hợp nhất để hoàn thành mỗi câu.",
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt02-q1",
+          "number": 1,
+          "prompt": "John ___ to go to a quiet restaurant rather than a noisy club.",
+          "options": ["supposes", "favors", "prefers", "requires"],
+          "answer": 2,
+          "explanation": "Cấu trúc “prefer to do something rather than do something else” = thích làm gì hơn làm gì khác. John thích nhà hàng yên tĩnh hơn câu lạc bộ ồn ào.",
+          "optionNotes": [
+            "suppose = cho rằng, giả sử; không đi với “to go … rather than”.",
+            "favor = ủng hộ, thiên vị; không dùng với “to + V … rather than”.",
+            "",
+            "require = đòi hỏi, yêu cầu; không diễn tả sở thích."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q2",
+          "number": 2,
+          "prompt": "If something happens on Wednesday and something else happens on Saturday then they are only a few days ___.",
+          "options": ["apart", "ahead", "alive", "along"],
+          "answer": 0,
+          "explanation": "“be a few days apart” = cách nhau vài ngày. Hai sự việc ở thứ Tư và thứ Bảy nên chỉ cách nhau vài ngày.",
+          "optionNotes": [
+            "",
+            "ahead = ở phía trước; không diễn tả khoảng cách giữa hai mốc thời gian.",
+            "alive = còn sống; sai nghĩa.",
+            "along = dọc theo; không dùng sau “a few days”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q3",
+          "number": 3,
+          "prompt": "After completing her studies, she ___ a famous university to further her studies.",
+          "options": ["followed", "pursued", "attended", "admitted"],
+          "answer": 2,
+          "explanation": "attend = theo học, tham dự: “attend a university” = theo học một trường đại học, rất hợp với mục đích “to further her studies”.",
+          "optionNotes": [
+            "follow = đi theo, làm theo; không đi với “a university”.",
+            "pursue = theo đuổi, nhưng đi với “a degree/career/studies”, không đi trực tiếp với tên một trường.",
+            "",
+            "admit = nhận vào; phải ở dạng bị động “was admitted to a university”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q4",
+          "number": 4,
+          "prompt": "American students agree that a husband is ___ to tell his wife where he has been if he comes home late.",
+          "options": ["obsessed", "obliged", "obtained", "observed"],
+          "answer": 1,
+          "explanation": "“be obliged to do something” = có bổn phận, buộc phải làm gì. Nghĩa là người chồng có nghĩa vụ nói cho vợ biết mình đã ở đâu.",
+          "optionNotes": [
+            "obsessed thường đi với “with/by”: “be obsessed with something”, không đi với “to + V”.",
+            "",
+            "obtain = đạt được, có được; không đi với “be … to tell”.",
+            "observe = quan sát, tuân thủ; không đi với “be … to + V” theo nghĩa bổn phận."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q5",
+          "number": 5,
+          "prompt": "Her ___ exam results are entirely due to her inattention in class.",
+          "options": ["disappointing", "concerning", "embarrassing", "amazing"],
+          "answer": 0,
+          "explanation": "disappointing = đáng thất vọng. Kết quả thi tệ là do không chú ý nghe giảng (“inattention in class”).",
+          "optionNotes": [
+            "",
+            "concerning (= liên quan đến / gây lo lắng) không hợp với “exam results” và nguyên nhân là sự lơ là.",
+            "embarrassing = đáng xấu hổ; nhấn vào cảm giác ngượng, không phải kết quả kém do lơ là.",
+            "amazing = đáng kinh ngạc (tích cực); ngược với ý câu."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q6",
+          "number": 6,
+          "prompt": "That's the sixth person I've ___ today, but I haven't seen anyone I want to hire.",
+          "options": ["employed", "selected", "promoted", "interviewed"],
+          "answer": 3,
+          "explanation": "interview = phỏng vấn. Người nói đã phỏng vấn sáu người nhưng chưa ai ưng ý để tuyển (“want to hire”).",
+          "optionNotes": [
+            "employ = thuê, tuyển dụng; nhưng người nói nói rõ chưa tuyển ai.",
+            "select = chọn; vế sau cho biết chưa chọn được ai.",
+            "promote = thăng chức; không hợp với việc tìm người mới.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q7",
+          "number": 7,
+          "prompt": "It does not happen often, but ___ a client chooses not to pay their bill.",
+          "options": ["repeatedly", "continually", "regularly", "occasionally"],
+          "answer": 3,
+          "explanation": "occasionally = thỉnh thoảng. Phù hợp với vế trước “It does not happen often” (không xảy ra thường xuyên).",
+          "optionNotes": [
+            "repeatedly = lặp đi lặp lại; mâu thuẫn với “does not happen often”.",
+            "continually = liên tục; mâu thuẫn với “does not happen often”.",
+            "regularly = đều đặn, thường xuyên; mâu thuẫn với “does not happen often”.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q8",
+          "number": 8,
+          "prompt": "The face can be ___ into six shapes: round, square, oblong, heart, oval, and diamond.",
+          "options": ["divided", "classified", "graded", "arranged"],
+          "answer": 1,
+          "explanation": "“be classified into …” = được phân loại thành các nhóm. Sáu hình dạng liệt kê (tròn, vuông, thuôn dài…) là sáu loại khuôn mặt.",
+          "optionNotes": [
+            "divide = chia nhỏ một vật thành các phần; khuôn mặt không bị chia thành sáu “hình dạng”, mà được xếp vào sáu loại.",
+            "",
+            "grade = xếp hạng theo mức độ tốt/xấu; sáu hình dạng không phải các bậc chất lượng.",
+            "arrange = sắp xếp, bố trí; không dùng để chia loại."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q9",
+          "number": 9,
+          "prompt": "You may receive compensation if your flight has been ___ for several hours (often five hours or more).",
+          "options": ["replaced", "delayed", "reduced", "deleted"],
+          "answer": 1,
+          "explanation": "“a flight is delayed for several hours” = chuyến bay bị hoãn/trễ vài giờ. Hành khách thường được bồi thường khi chuyến bay trễ nhiều giờ.",
+          "optionNotes": [
+            "replace = thay thế; không đi với “for several hours”.",
+            "",
+            "reduce = giảm bớt; không dùng cho thời gian trễ của chuyến bay.",
+            "delete = xóa (dữ liệu); không hợp nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q10",
+          "number": 10,
+          "prompt": "Most women make themselves beautiful to feel good about themselves and be more ___ to men.",
+          "options": ["attractive", "satisfactory", "essential", "modern"],
+          "answer": 0,
+          "explanation": "“be attractive to somebody” = hấp dẫn, thu hút ai. Phụ nữ làm đẹp để tự tin hơn và thu hút đàn ông hơn.",
+          "optionNotes": [
+            "",
+            "satisfactory = đạt yêu cầu, tạm được; không dùng để nói về sức hấp dẫn.",
+            "essential = thiết yếu; không hợp nghĩa.",
+            "modern = hiện đại; không hợp với “beautiful”."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt02-p1b-1",
+      "title": "Paper 1 · Part B: Đọc hiểu (đoạn 1)",
+      "instruction": "Đọc đoạn văn và chọn đáp án đúng nhất cho mỗi câu hỏi.",
+      "passage": {
+        "title": "Alice Bradley",
+        "text": "I guess you could say that acting is in my blood as my mother and father are both actors, my grandfather was a theatre musician and my grandmother was a singer and dancer. I suppose it seemed normal for me to do a little turn for family and friends. I certainly wasn't a shy wallflower.\n\nI went to drama school in London on Saturdays from the age of six. We were taught how to sing and dance as well as act so I was a good all-rounder by my teens.\n\nOnce I'd left school I went to drama school in London full-time to do a degree. I must admit that I had a slight lapse in commitment at that time, for a period of about six months. I joined up with the party crowd and danced the nights away and slept late most mornings. It was only when my personal tutor told me that I was on my final warning that I realised I might be expelled.\n\nAfter the shock of that realisation I got my act together very quickly and ended up graduating with a first.\n\nThe Royal Shakespeare Company gave me my first real role and I acted alongside some great names in the world of the stage. Now of course I am better known for my Hollywood roles and people will probably be amazed to hear that I first walked the board as a Shakespearean actor."
+      },
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt02-q11",
+          "number": 11,
+          "prompt": "What is the writer's main purpose in writing the text?",
+          "options": [
+            "To express her ambition for the future.",
+            "To discuss acting in plays by Shakespeare.",
+            "To talk about her acting career.",
+            "To describe how she lives now."
+          ],
+          "answer": 2,
+          "explanation": "Bài kể lần lượt gia đình diễn viên, trường kịch, thời sinh viên, vai diễn đầu tiên và các vai ở Hollywood, tức là nói về sự nghiệp diễn xuất của cô.",
+          "optionNotes": [
+            "Bài không nói về tham vọng tương lai.",
+            "Shakespeare chỉ được nhắc ở phần vai diễn đầu tiên, không phải chủ đề chính.",
+            "",
+            "Bài kể quá khứ, hầu như không mô tả cuộc sống hiện tại."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q12",
+          "number": 12,
+          "prompt": "What does the writer say about her childhood?",
+          "options": [
+            "Her parents forced her to be an actor.",
+            "She was surrounded by entertainers.",
+            "She was reluctant to perform for her family.",
+            "She was too young to enjoy drama school when her parents first sent her."
+          ],
+          "answer": 1,
+          "explanation": "Cha mẹ đều là diễn viên, ông là nhạc công nhà hát, bà là ca sĩ kiêm vũ công: tức cô lớn lên giữa những người làm nghề biểu diễn (“entertainers”).",
+          "optionNotes": [
+            "Bài không nói cha mẹ ép cô làm diễn viên.",
+            "",
+            "Cô thấy việc biểu diễn cho gia đình là bình thường và “certainly wasn't a shy wallflower” (không hề nhút nhát).",
+            "Bài không nói cô còn quá nhỏ để thích trường kịch; cô học từ sáu tuổi và thành người đa năng."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q13",
+          "number": 13,
+          "prompt": "What happened when the writer was a full-time drama student?",
+          "options": [
+            "She was nearly told to leave the course.",
+            "She had an argument with her personal tutor.",
+            "She concentrated on developing as a serious dancer.",
+            "She worked as a dancer in the evening."
+          ],
+          "answer": 0,
+          "explanation": "Cô sa sút vì đi tiệc tùng, đến khi gia sư cảnh báo lần cuối (“final warning”) thì nhận ra mình “might be expelled” (có thể bị đuổi học), tức suýt bị yêu cầu rời khóa học.",
+          "optionNotes": [
+            "",
+            "Gia sư chỉ cảnh báo cô; bài không nói hai bên cãi nhau.",
+            "Cô chơi bời “danced the nights away” chứ không tập trung rèn luyện vũ đạo.",
+            "“danced the nights away” là đi tiệc nhảy nhót, không phải làm vũ công."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q14",
+          "number": 14,
+          "prompt": "\"I got my act together\" means",
+          "options": [
+            "I rehearsed for an act of a play.",
+            "I tried to memorize the lines of my role in an act.",
+            "I became better organized and changed my behaviour.",
+            "I joined my classmates for acting together."
+          ],
+          "answer": 2,
+          "explanation": "“get your act together” là thành ngữ = chấn chỉnh lại bản thân, sắp xếp lại cho tốt. Sau cú sốc suýt bị đuổi, cô thay đổi hành vi và tốt nghiệp loại giỏi.",
+          "optionNotes": [
+            "Đây là thành ngữ, không phải “diễn tập một màn kịch”.",
+            "Đây là thành ngữ, không phải “học thuộc lời thoại”.",
+            "",
+            "Đây là thành ngữ, không phải “cùng bạn học diễn”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q15",
+          "number": 15,
+          "prompt": "Which of the following is the best description of the writer?",
+          "options": [
+            "The young actor who is developing a career.",
+            "The actor who has followed in her parents' footsteps and made the leap from Shakespeare to Hollywood.",
+            "The reluctant actor who struggled through drama school and became a Hollywood director.",
+            "The rebel actor whose wildlife is affecting her career but who is now trying to mend her way."
+          ],
+          "answer": 1,
+          "explanation": "Cha mẹ cô đều là diễn viên, cô khởi đầu ở Royal Shakespeare Company rồi nổi tiếng ở Hollywood: đúng là người “nối nghiệp cha mẹ” và đi từ Shakespeare đến Hollywood.",
+          "optionNotes": [
+            "Cô đã thành danh ở Hollywood, không còn là diễn viên trẻ đang gây dựng sự nghiệp.",
+            "",
+            "Cô không hề miễn cưỡng, và là diễn viên chứ không phải đạo diễn Hollywood.",
+            "Giai đoạn chơi bời chỉ kéo dài khoảng sáu tháng và đã chấm dứt; cô không còn “nổi loạn”."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt02-p1b-2",
+      "title": "Paper 1 · Part B: Đọc hiểu (đoạn 2)",
+      "instruction": "Đọc đoạn văn và chọn đáp án đúng nhất cho mỗi câu hỏi.",
+      "passage": {
+        "title": "Axel Thorn",
+        "text": "I have had many years as a successful rock star, but will always remember my roots and how I formed my first band.\n\nAt sixteen I was still growing up in a bad part of town. I didn't have any way to express myself; I was frustrated at the terrible state of the neighbourhood and the unfairness that existed. Just a few miles away rich people lived who had everything, while we had nothing, and could only hope for the worst of jobs.\n\nOne night, while I was at a friend's house we found a pair of electric guitars, and started playing. We pretty much taught ourselves the music, and when a couple of other guys joined, who really knew how to play, I knew we had something. With my lyrics, I could express far more emotion and communicate with other people.\n\nSoon after that we set up our band. The songs we write are still very important to us. They're about voicing how we feel about the problems and issues about us, crime, unemployment, exploitation, and the inequality present in the country.\n\nOf course, we are also expressing our own dreams and desires. It can be sensational to be on stage and have twenty thousand people sing the songs that you write, songs that are about people like them, and in the end, they are for people like them.\n\nOur music has been very popular and is worth listening to, as it is the ordinary people who made it such a success. We sing what we feel, so we're sure that if people listen to the music, they'll understand the message too."
+      },
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt02-q16",
+          "number": 16,
+          "prompt": "What is Axel Thorn's main aim in writing the text?",
+          "options": [
+            "To explain the music industry to poor people.",
+            "To describe how and why he took up music.",
+            "To explain why he has been so successful.",
+            "To describe the life of a rock star."
+          ],
+          "answer": 1,
+          "explanation": "Câu mở bài: “will always remember my roots and how I formed my first band”. Cả bài kể anh bắt đầu chơi nhạc thế nào (tìm thấy đàn, lập ban nhạc) và vì sao (để bày tỏ cảm xúc, nói về bất công).",
+          "optionNotes": [
+            "Bài không giải thích về ngành công nghiệp âm nhạc.",
+            "",
+            "Bài nói về sự khởi đầu và thông điệp của âm nhạc, không phân tích lý do thành công.",
+            "Bài không mô tả cuộc sống thường ngày của một ngôi sao nhạc rock."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q17",
+          "number": 17,
+          "prompt": "What could a reader learn about Axel's childhood?",
+          "options": [
+            "His family always treated him terribly.",
+            "He was surrounded by rich people.",
+            "He grew up in a poor area of town.",
+            "His family had the worst jobs in the area."
+          ],
+          "answer": 2,
+          "explanation": "“At sixteen I was still growing up in a bad part of town”: anh lớn lên ở khu nghèo của thành phố, nơi người ta chỉ mong có những công việc tệ nhất.",
+          "optionNotes": [
+            "Bài không nói gia đình đối xử tệ với anh.",
+            "Người giàu sống cách đó vài dặm, không ở cạnh anh.",
+            "",
+            "Bài chỉ nói người trong khu chỉ hy vọng có việc tệ nhất, không nói riêng gia đình anh làm công việc đó."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q18",
+          "number": 18,
+          "prompt": "Which of the following does Axel NOT say about his music?",
+          "options": [
+            "It helps him enrich himself.",
+            "It expresses his feelings about social problems.",
+            "It helps him communicate with other people.",
+            "It is welcomed by ordinary people."
+          ],
+          "answer": 0,
+          "explanation": "Câu hỏi NOT: tìm ý không có trong bài. Bài không nói âm nhạc giúp anh làm giàu. Ba ý còn lại đều có: nói về vấn đề xã hội (crime, unemployment…), giao tiếp với mọi người (“communicate with other people”), được người bình thường đón nhận (“the ordinary people who made it such a success”).",
+          "optionNotes": [
+            "",
+            "Có trong bài: các bài hát nói về tội phạm, thất nghiệp, bất bình đẳng.",
+            "Có trong bài: “I could express far more emotion and communicate with other people”.",
+            "Có trong bài: “it is the ordinary people who made it such a success”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q19",
+          "number": 19,
+          "prompt": "What does Axel say about performing on stage?",
+          "options": [
+            "It was his great dream, as he always loved attention.",
+            "They always perform in front of crowds of twenty thousand or more.",
+            "Most people at the concerts do not understand his music.",
+            "He feels it amazing when the crowd sing his own songs."
+          ],
+          "answer": 3,
+          "explanation": "“It can be sensational to be on stage and have twenty thousand people sing the songs that you write”: anh thấy thật tuyệt vời khi đám đông hát những bài anh sáng tác (“sensational” = “amazing”).",
+          "optionNotes": [
+            "Bài không nói biểu diễn là ước mơ lớn vì anh thích được chú ý.",
+            "Twenty thousand chỉ là ví dụ, bài không nói lúc nào cũng đông như vậy.",
+            "Ngược lại, anh tin người nghe sẽ hiểu thông điệp (“they'll understand the message too”).",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q20",
+          "number": 20,
+          "prompt": "How might Axel describe being in a band?",
+          "options": [
+            "Being in a band is the greatest thing I could ever hope to do. The best part is the money and being famous.",
+            "We are now a hugely successful band all over the world. I want to make more pop and commercial music to make more money.",
+            "Music has always been important to me as a way to comment on social problems and communicate with people.",
+            "The enjoyment I got when I was younger is no longer there, I don't feel so connected with the people as I used to."
+          ],
+          "answer": 2,
+          "explanation": "Cả bài nhấn mạnh âm nhạc là cách để anh nói về các vấn đề xã hội và giao tiếp với mọi người (“voicing how we feel about the problems and issues”).",
+          "optionNotes": [
+            "Anh coi trọng thông điệp, không nói tiền bạc và danh tiếng là điều tuyệt nhất.",
+            "Bài không nói anh muốn làm nhạc thương mại để kiếm thêm tiền.",
+            "",
+            "Bài không nói anh hết hứng thú hay mất kết nối với người nghe; anh vẫn coi các bài hát rất quan trọng."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt02-p2a",
+      "title": "Paper 2 · Part A: Hoàn thành câu",
+      "instruction": "Chọn từ hoặc cụm từ phù hợp nhất để hoàn thành mỗi câu.",
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt02-q21",
+          "number": 21,
+          "prompt": "My sister is so healthy - she ___ smokes nor eats junk food.",
+          "options": ["both", "either", "neither", "not"],
+          "answer": 2,
+          "explanation": "Cặp “neither … nor …” = không … cũng không …: “she neither smokes nor eats junk food”.",
+          "optionNotes": [
+            "“both” đi với “and”, không đi với “nor”.",
+            "“either” đi với “or”, không đi với “nor”.",
+            "",
+            "“not” đứng trước “nor” không tạo thành cặp đúng; cặp đúng là “neither … nor”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q22",
+          "number": 22,
+          "prompt": "- \"How is your book doing?\"\n- \"It has won several awards ___ being unpopular.\"",
+          "options": ["in spite", "despite", "however", "even"],
+          "answer": 1,
+          "explanation": "despite + V-ing / danh từ = mặc dù. “despite being unpopular” = mặc dù không được ưa chuộng.",
+          "optionNotes": [
+            "Phải là “in spite of”; thiếu “of” nên sai.",
+            "",
+            "however là trạng từ nối câu, không đứng trước V-ing như vậy.",
+            "“even” đứng một mình không có nghĩa nhượng bộ; cần “even though” hoặc “even if”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q23",
+          "number": 23,
+          "prompt": "We didn't come ___ to get good seats near the front.",
+          "options": ["so early", "very early", "too early", "early enough"],
+          "answer": 3,
+          "explanation": "“adj/adv + enough + to V” = đủ … để làm gì. “didn't come early enough to get good seats” = đến không đủ sớm để có chỗ ngồi tốt.",
+          "optionNotes": [
+            "“so early” cần đi với “that” (so … that …), không đi với “to V”.",
+            "“very early” không đi với “to V” để chỉ mục đích như thế này.",
+            "“too early to get good seats” nghĩa là đến sớm quá nên không được chỗ, sai ý.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q24",
+          "number": 24,
+          "prompt": "The woman was carrying a ___ bag on her way to the supermarket.",
+          "options": [
+            "black small plastic",
+            "black plastic small",
+            "small black plastic",
+            "plastic small black"
+          ],
+          "answer": 2,
+          "explanation": "Thứ tự tính từ (OSASCOMP): kích cỡ (small) → màu sắc (black) → chất liệu (plastic) → danh từ. Vậy là “a small black plastic bag”.",
+          "optionNotes": [
+            "Sai thứ tự: tính từ kích cỡ phải đứng trước màu sắc.",
+            "Sai thứ tự: chất liệu phải đứng sau cùng, sát danh từ.",
+            "",
+            "Sai thứ tự: chất liệu (plastic) phải đứng sau cùng."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q25",
+          "number": 25,
+          "prompt": "A heart surgeon was at the auto garage ___. He had known the mechanic for a long time.",
+          "options": [
+            "having his car repaired",
+            "having to repair his car",
+            "having his car to be repaired",
+            "having repaired his car"
+          ],
+          "answer": 0,
+          "explanation": "Thể nhờ bảo: “have + vật + V3” = nhờ người khác làm gì cho mình. Bác sĩ đến gara để nhờ thợ sửa xe, dạng V-ing: “having his car repaired”.",
+          "optionNotes": [
+            "",
+            "“having to repair” = phải tự sửa xe; bác sĩ tim không tự sửa mà nhờ thợ.",
+            "Sau “have + vật” dùng V3, không dùng “to be + V3”.",
+            "“having repaired” = đã sửa xong (hoàn thành trước); không hợp với việc đang ở gara."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q26",
+          "number": 26,
+          "prompt": "I wasn't frightened by the film, but my sister was ___.",
+          "options": ["terrible", "terrified", "terrifying", "terrific"],
+          "answer": 1,
+          "explanation": "Tính từ V-ed chỉ cảm giác của người: “terrified” = (cảm thấy) kinh hãi, đối ứng với “frightened” ở vế trước. Cô em gái cảm thấy sợ hãi vì bộ phim.",
+          "optionNotes": [
+            "terrible = tồi tệ; không nói về cảm giác của người.",
+            "",
+            "terrifying (V-ing) = đáng sợ, miêu tả bộ phim chứ không phải cảm giác của cô em.",
+            "terrific = tuyệt vời; sai nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q27",
+          "number": 27,
+          "prompt": "The girl wishes she ___ in Hue for the festival next week.",
+          "options": ["can stay", "is going to stay", "is staying", "could stay"],
+          "answer": 3,
+          "explanation": "Điều ước ở hiện tại / tương lai (wish + quá khứ): “wish + S + could + V” = ước gì có thể làm gì. Cô gái ước có thể ở lại Huế dự lễ hội tuần sau.",
+          "optionNotes": [
+            "Sau “wish” không dùng thì hiện tại; phải lùi về quá khứ (could).",
+            "Sau “wish” không dùng “is going to”.",
+            "Sau “wish” không dùng hiện tại tiếp diễn.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q28",
+          "number": 28,
+          "prompt": "- \"Who is Susan getting married to?\"\n- \"Some guy ___ since her childhood.\"",
+          "options": [
+            "she has known",
+            "has been knowing her",
+            "that have known her",
+            "she has been knowing"
+          ],
+          "answer": 0,
+          "explanation": "Mệnh đề quan hệ có thể lược đại từ khi nó là tân ngữ: “some guy (whom/that) she has known since her childhood”. “since” đi với hiện tại hoàn thành.",
+          "optionNotes": [
+            "",
+            "“know” là động từ chỉ trạng thái, không dùng ở thì tiếp diễn; câu cũng thiếu chủ ngữ rõ ràng.",
+            "“that have known her” sai hòa hợp: chủ ngữ “guy” là số ít nên phải là “has”, không phải “have”.",
+            "“know” là động từ chỉ trạng thái, không dùng ở thì hoàn thành tiếp diễn."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q29",
+          "number": 29,
+          "prompt": "The students didn't have to do any homework as the teacher forgot to give them ___.",
+          "options": ["much", "many", "any", "none"],
+          "answer": 2,
+          "explanation": "Đại từ “any” dùng thay cho “any homework” ở câu phủ định/mang nghĩa phủ định (forgot to give). “forgot to give them any” = quên giao bài nào cả.",
+          "optionNotes": [
+            "“much” đứng một mình ở đây không tự nhiên và sai sắc thái (quên giao nhiều).",
+            "“many” dùng với danh từ đếm được; “homework” là danh từ không đếm được.",
+            "",
+            "“none” tự nó đã mang nghĩa phủ định; “forgot to give them none” gây phủ định kép."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q30",
+          "number": 30,
+          "prompt": "The more you talk about the matter, ___.",
+          "options": [
+            "the situation seems worse",
+            "the worse seems the situation",
+            "the worse the situation seems",
+            "the situation seems the worse"
+          ],
+          "answer": 2,
+          "explanation": "So sánh kép: “The + so sánh hơn + S + V, the + so sánh hơn + S + V”. Vế sau đúng là “the worse the situation seems”.",
+          "optionNotes": [
+            "Thiếu “the” trước so sánh hơn ở vế sau.",
+            "Sai trật tự từ: chủ ngữ phải đứng trước động từ (“the situation seems”).",
+            "",
+            "“the worse” phải đứng đầu vế, trước chủ ngữ."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q31",
+          "number": 31,
+          "prompt": "Your son is too obsessed with computer games. It's time he ___ playing them.",
+          "options": ["gave up", "gives up", "must give up", "should give up"],
+          "answer": 0,
+          "explanation": "Cấu trúc “It's (high) time + S + V quá khứ đơn” = đã đến lúc ai phải làm gì (đáng ra phải làm từ lâu): “It's time he gave up”.",
+          "optionNotes": [
+            "",
+            "Sau “It's time + S” phải dùng quá khứ đơn, không dùng hiện tại đơn.",
+            "Sau “It's time + S” không dùng động từ khuyết thiếu “must”.",
+            "Sau “It's time + S” cấu trúc chuẩn là quá khứ đơn; “should give up” làm câu thừa và không phải dạng được kiểm tra."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q32",
+          "number": 32,
+          "prompt": "___ he was good at physics in lower grade, he was terrible at it in grade 12.",
+          "options": ["While", "Even", "When", "Except that"],
+          "answer": 0,
+          "explanation": "While (= whereas) nối hai vế đối lập: trước đây giỏi vật lý, đến lớp 12 lại rất tệ.",
+          "optionNotes": [
+            "",
+            "“Even” đứng một mình không nối được hai mệnh đề; cần “even though”.",
+            "“When” chỉ thời gian, không diễn tả sự đối lập.",
+            "“Except that” = ngoại trừ việc; không hợp nghĩa đối lập ở đây."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q33",
+          "number": 33,
+          "prompt": "Daisy told me ___, she would leave for London to find a job.",
+          "options": [
+            "that if she were me",
+            "if that she were me",
+            "that if she had been me",
+            "that had she been me"
+          ],
+          "answer": 0,
+          "explanation": "Câu gián tiếp của lời khuyên dùng câu điều kiện loại 2: “Daisy told me that if she were me, she would leave for London…” = nếu cô là tôi thì cô sẽ đi London.",
+          "optionNotes": [
+            "",
+            "Sai trật tự: “that” phải đứng trước “if”.",
+            "“had been” là điều kiện loại 3, phải đi với “would have left”; vế sau lại là “would leave”.",
+            "Đảo ngữ “had she been” là điều kiện loại 3, không hợp với “would leave”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q34",
+          "number": 34,
+          "prompt": "We had a French architect ___ our villa last month",
+          "options": ["designing", "designed", "to design", "design"],
+          "answer": 3,
+          "explanation": "Thể nhờ bảo chủ động: “have + người + V nguyên mẫu” = nhờ ai làm gì. “had a French architect design our villa” = thuê kiến trúc sư người Pháp thiết kế biệt thự.",
+          "optionNotes": [
+            "“have + người + V-ing” nghĩa là để ai đó cứ làm gì, không hợp ngữ cảnh một việc đã xong.",
+            "“have + người + V3” là sai; V3 chỉ dùng sau “have + vật”.",
+            "Sau “have + người” dùng động từ nguyên mẫu không “to”.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q35",
+          "number": 35,
+          "prompt": "He had ___ money that he had to travel everywhere on foot.",
+          "options": ["too little", "such little", "so few", "so little"],
+          "answer": 3,
+          "explanation": "Cấu trúc “so + little/much + danh từ không đếm được + that + mệnh đề” = quá ít … đến nỗi …: “so little money that he had to…”.",
+          "optionNotes": [
+            "“too little” đi với “to V” (too little money to…), không đi với “that”.",
+            "“such little money” không đúng; cần “so little money”.",
+            "“few” dùng với danh từ đếm được; “money” là danh từ không đếm được.",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt02-p2b",
+      "title": "Paper 2 · Part B: Điền từ vào đoạn văn",
+      "instruction": "Chọn từ phù hợp nhất cho mỗi chỗ trống được đánh số trong đoạn văn.",
+      "passage": {
+        "title": "From School to Clown",
+        "text": "Gareth Ellis is the youngest of Alan and Kath's sons. His two older brothers have already left their parents' home. {{36}} he is only twelve, Gareth is sure that he will be a clown. When Gareth was three, his parents {{37}} him to see Zippo's circus and he {{38}} remembers that visit today. All Gareth {{39}} for as birthday presents was to go back to Zippo's, his father {{40}}.\n\nThen, in 1996, Alan {{41}} his job, so together with Kath, they decided to try and find full-time jobs in a circus {{42}} Gareth would have a chance to learn clown skills. {{43}} of them got jobs with the Moscow State Circus. Alan {{44}} a lights operator and Kath was in the box office. After two years there, the director of Zippo's offered them jobs and training for Gareth. One day Gareth hopes to be {{45}} clown in the world."
+      },
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt02-q36",
+          "number": 36,
+          "options": ["Although", "However", "Even", "So"],
+          "answer": 0,
+          "explanation": "Although + mệnh đề = mặc dù: “Although he is only twelve, Gareth is sure…” (dù mới mười hai tuổi nhưng đã chắc chắn).",
+          "optionNotes": [
+            "",
+            "“However” là trạng từ nối câu, đứng đầu câu phải có dấu phẩy sau nó; không nối hai mệnh đề trong cùng một câu.",
+            "“Even” cần đi với “though/if”; đứng một mình không nối mệnh đề.",
+            "“So” = vì vậy; hai vế không phải quan hệ nguyên nhân – kết quả."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q37",
+          "number": 37,
+          "options": ["went", "travelled", "took", "carried"],
+          "answer": 2,
+          "explanation": "“take somebody to do something” = dẫn ai đi làm gì: “his parents took him to see Zippo's circus”.",
+          "optionNotes": [
+            "“go” là nội động từ, không có tân ngữ “him” theo sau.",
+            "“travel” là nội động từ, không có tân ngữ “him” theo sau.",
+            "",
+            "carry = mang, bế, vác; không hợp với việc dẫn con đi xem xiếc."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q38",
+          "number": 38,
+          "options": ["since", "still", "already", "yet"],
+          "answer": 1,
+          "explanation": "“still” (vẫn) đứng trước động từ thường: “he still remembers that visit today” = đến nay cậu vẫn nhớ chuyến đi đó.",
+          "optionNotes": [
+            "“since” là giới từ/liên từ chỉ mốc thời gian, không đứng giữa chủ ngữ và động từ như vậy.",
+            "",
+            "“already” = đã (xảy ra rồi); không hợp với “today”.",
+            "“yet” dùng trong câu phủ định/nghi vấn, thường ở cuối câu."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q39",
+          "number": 39,
+          "options": ["demanded", "requested", "asked", "wanted"],
+          "answer": 2,
+          "explanation": "“ask for something” = đòi, xin cái gì: “All Gareth asked for as birthday presents was to go back to Zippo's” = món quà sinh nhật duy nhất cậu xin là được quay lại rạp Zippo.",
+          "optionNotes": [
+            "“demand for” không dùng theo nghĩa xin quà; demand = đòi hỏi (mạnh).",
+            "request đi với tân ngữ trực tiếp, không dùng “request for … as birthday presents” như vậy.",
+            "",
+            "“want” không đi với giới từ “for” theo nghĩa này (want something, không phải “want for something”)."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q40",
+          "number": 40,
+          "options": ["tells", "speaks", "informs", "says"],
+          "answer": 3,
+          "explanation": "“his father says” = cha cậu nói (chèn thêm lời dẫn ở cuối câu). Dùng thì hiện tại vì ngữ cảnh hiện tại: cha cậu kể lại.",
+          "optionNotes": [
+            "“tell” cần tân ngữ chỉ người (tells me); đứng một mình không đủ.",
+            "“speak” = nói (ngôn ngữ, bài phát biểu); không dùng để dẫn lời kể.",
+            "“inform” cần tân ngữ chỉ người (informs us).",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q41",
+          "number": 41,
+          "options": ["missed", "gave", "lost", "threw"],
+          "answer": 2,
+          "explanation": "“lose one's job” = mất việc. Vì Alan mất việc nên cả nhà quyết định tìm việc toàn thời gian ở một rạp xiếc.",
+          "optionNotes": [
+            "miss = bỏ lỡ, nhớ; không đi với “his job” theo nghĩa mất việc.",
+            "“give up his job” mới là bỏ việc; “gave his job” thiếu “up”.",
+            "",
+            "“throw” đi với “away” (throw away) hoặc “out”, không đi với “his job”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q42",
+          "number": 42,
+          "options": ["when", "where", "which", "that"],
+          "answer": 1,
+          "explanation": "“where” là trạng từ quan hệ chỉ nơi chốn, thay cho “in a circus”: “a circus where Gareth would have a chance to learn clown skills”.",
+          "optionNotes": [
+            "“when” chỉ thời gian, không hợp với danh từ “circus”.",
+            "",
+            "“which” làm chủ ngữ/tân ngữ; sau chỗ trống đã có đủ chủ ngữ “Gareth”, nên cần “where” (= in which).",
+            "“that” cũng cần đóng vai trò chủ ngữ/tân ngữ trong mệnh đề; ở đây mệnh đề đã đủ thành phần."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q43",
+          "number": 43,
+          "options": ["Both", "Some", "Either", "Any"],
+          "answer": 0,
+          "explanation": "“Both of them” = cả hai người (Alan và Kath). Câu trước nói “together with Kath”, câu sau có hai người cụ thể (Alan, Kath) nên “Both of them got jobs”.",
+          "optionNotes": [
+            "",
+            "“Some of them” = một vài người; ngữ cảnh chỉ có hai người và cả hai đều có việc.",
+            "“Either of them” dùng với động từ số ít, và mang nghĩa “một trong hai”.",
+            "“Any of them” thường dùng trong câu phủ định/nghi vấn."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q44",
+          "number": 44,
+          "options": ["worked", "turned", "became", "applied"],
+          "answer": 2,
+          "explanation": "“become + danh từ” = trở thành, làm nghề gì. Sau chỗ trống là “a lights operator” (không có “as”), nên động từ phải nối trực tiếp với danh từ: “Alan became a lights operator” = Alan làm nhân viên điều khiển ánh sáng (ở rạp xiếc Moscow).",
+          "optionNotes": [
+            "“worked” phải đi với “as” (worked as a lights operator); trong đoạn văn không có “as” nên không ghép được.",
+            "“turn” đi với “into” (turn into), không đi trực tiếp với “a lights operator”.",
+            "",
+            "apply = nộp đơn, phải đi với “for” (apply for a job); không nối trực tiếp với danh từ chỉ nghề."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt02-q45",
+          "number": 45,
+          "options": ["better", "the better", "best", "the best"],
+          "answer": 3,
+          "explanation": "So sánh nhất: “the best clown in the world” = chú hề giỏi nhất thế giới. Có “in the world” nên dùng so sánh nhất với “the”.",
+          "optionNotes": [
+            "“better” là so sánh hơn, cần “than”, không đi với “in the world”.",
+            "“the better” chỉ dùng khi so sánh hai đối tượng cụ thể.",
+            "So sánh nhất phải có “the”.",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt02-p2c",
+      "title": "Paper 2 · Part C: Viết lại câu",
+      "instruction": "Hoàn thành câu thứ hai sao cho nghĩa không đổi so với câu gốc.",
+      "questions": [
+        {
+          "type": "rewrite",
+          "id": "pt02-q46",
+          "number": 46,
+          "original": "'Let's go for a walk in the park,' said Andrews.",
+          "prefix": "Andrews suggested that",
+          "answers": [
+            "we go for a walk in the park.",
+            "we should go for a walk in the park.",
+            "they go for a walk in the park.",
+            "they should go for a walk in the park.",
+            "we went for a walk in the park."
+          ],
+          "explanation": "“Let's + V” → suggest (that) + S + (should) + V nguyên mẫu. Đổi “Let's” thành “we”; động từ ở dạng nguyên mẫu (giả định) hoặc có “should”; cũng có thể lùi thì thành “went”."
+        },
+        {
+          "type": "rewrite",
+          "id": "pt02-q47",
+          "number": 47,
+          "original": "A friend of hers repaired her computer yesterday.",
+          "prefix": "She had",
+          "answers": [
+            "her computer repaired by a friend of hers yesterday.",
+            "her computer repaired by a friend yesterday.",
+            "her computer repaired yesterday by a friend of hers.",
+            "her computer repaired yesterday by a friend."
+          ],
+          "explanation": "Thể nhờ bảo bị động: “have + vật + V3 (+ by + người)”. “She had her computer repaired by a friend of hers” = cô nhờ bạn sửa máy tính (thì quá khứ nên dùng “had”)."
+        },
+        {
+          "type": "rewrite",
+          "id": "pt02-q48",
+          "number": 48,
+          "original": "Although the traffic was bad, I arrived on time.",
+          "prefix": "Despite",
+          "answers": [
+            "the bad traffic, I arrived on time.",
+            "the traffic being bad, I arrived on time.",
+            "the fact that the traffic was bad, I arrived on time."
+          ],
+          "explanation": "Although + mệnh đề → Despite + danh từ / V-ing / the fact that + mệnh đề. “the traffic was bad” chuyển thành cụm danh từ “the bad traffic”."
+        },
+        {
+          "type": "rewrite",
+          "id": "pt02-q49",
+          "number": 49,
+          "original": "Someone stole my purse from my handbag.",
+          "prefix": "My purse",
+          "answers": [
+            "was stolen from my handbag.",
+            "was stolen out of my handbag.",
+            "has been stolen from my handbag."
+          ],
+          "explanation": "Câu bị động quá khứ đơn: S + was/were + V3. Tân ngữ “my purse” lên làm chủ ngữ, bỏ chủ thể không xác định “someone”: “was stolen from my handbag”."
+        },
+        {
+          "type": "rewrite",
+          "id": "pt02-q50",
+          "number": 50,
+          "original": "The package was too heavy for Peter to carry.",
+          "prefix": "The package was so",
+          "answers": [
+            "heavy that Peter couldn't carry it.",
+            "heavy that Peter could not carry it.",
+            "heavy that Peter was unable to carry it.",
+            "heavy that Peter was not able to carry it."
+          ],
+          "explanation": "too + tính từ + (for O) + to V → so + tính từ + that + mệnh đề phủ định. Nhớ thêm tân ngữ “it” (the package) sau “carry”."
+        }
+      ]
+    }
+  ]
+}

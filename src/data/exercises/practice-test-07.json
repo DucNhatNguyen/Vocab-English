@@ -1,0 +1,827 @@
+{
+  "id": "practice-test-07",
+  "title": "Practice Test 7",
+  "kind": "practice-test",
+  "sourcePages": [42, 49],
+  "answerSource": "ai",
+  "omitted": ["Paper 3: Listening (câu 51–70, tài liệu không kèm audio)", "Paper 4: Speaking"],
+  "sections": [
+    {
+      "id": "pt07-p1a",
+      "title": "Paper 1 · Part A: Từ vựng",
+      "instruction": "Chọn từ hoặc cụm từ phù hợp nhất để hoàn thành mỗi câu.",
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt07-q1",
+          "number": 1,
+          "prompt": "We had to ___ the room because the wallpaper was in terrible condition.",
+          "options": ["renovate", "renew", "decorate", "update"],
+          "answer": 2,
+          "explanation": "decorate a room = trang trí lại căn phòng (sơn tường, dán giấy tường mới). Giấy dán tường hỏng nên phải “decorate” lại phòng.",
+          "optionNotes": [
+            "renovate = cải tạo, sửa chữa quy mô lớn (cả ngôi nhà, tòa nhà); quá lớn so với chuyện thay giấy dán tường.",
+            "renew = gia hạn, làm mới lại (hộ chiếu, giấy phép); không dùng cho căn phòng.",
+            "",
+            "update = cập nhật (thông tin, phần mềm); không dùng cho việc sơn, dán giấy tường."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q2",
+          "number": 2,
+          "prompt": "The computer helps you to ___ with other computers and with people around the world.",
+          "options": ["persuade", "interact", "relax", "permit"],
+          "answer": 1,
+          "explanation": "interact with somebody/something = tương tác, giao tiếp với. Máy tính giúp bạn tương tác với máy tính khác và với mọi người trên thế giới.",
+          "optionNotes": [
+            "persuade = thuyết phục; đi với “somebody to do something”, không đi với “with”.",
+            "",
+            "relax = thư giãn; không đi với “with other computers”.",
+            "permit = cho phép; là ngoại động từ, không đi với “with”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q3",
+          "number": 3,
+          "prompt": "I'm not going to take the car to a garage because I think I can ___ it myself.",
+          "options": ["replace", "relieve", "require", "repair"],
+          "answer": 3,
+          "explanation": "repair = sửa chữa. Không đem xe ra gara vì tự mình có thể sửa được.",
+          "optionNotes": [
+            "replace = thay thế bằng cái khác; không hợp ý “tự làm thay vì ra gara”.",
+            "relieve = làm dịu (đau, căng thẳng); không dùng với xe.",
+            "require = đòi hỏi, yêu cầu; không hợp nghĩa.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q4",
+          "number": 4,
+          "prompt": "He is one of the most ___ bosses I have ever worked with. He behaves rudely to not only me but also others in the staff.",
+          "options": ["demanding", "impolite", "boring", "challenging"],
+          "answer": 1,
+          "explanation": "impolite = bất lịch sự, thô lỗ. Câu sau giải thích: “He behaves rudely to… others”.",
+          "optionNotes": [
+            "demanding = đòi hỏi cao, khắt khe; không đồng nghĩa với cư xử thô lỗ.",
+            "",
+            "boring = tẻ nhạt; không nói về cách cư xử.",
+            "challenging = đầy thử thách; không nói về thái độ thô lỗ."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q5",
+          "number": 5,
+          "prompt": "We may have to use animals for these experiments, but ___ it won't be necessary.",
+          "options": ["wishfully", "hopefully", "thoughtfully", "willingly"],
+          "answer": 1,
+          "explanation": "hopefully = hy vọng là, mong rằng. “but hopefully it won't be necessary” = nhưng hy vọng điều đó sẽ không cần thiết.",
+          "optionNotes": [
+            "wishfully chỉ có trong “wishfully thinking” (nghĩ theo mong muốn), không dùng như từ nối quan điểm.",
+            "",
+            "thoughtfully = một cách chu đáo, trầm tư; không hợp nghĩa.",
+            "willingly = sẵn lòng; không hợp nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q6",
+          "number": 6,
+          "prompt": "Bob had a very bad cold and couldn't stop ___.",
+          "options": ["yawning", "snoring", "spitting", "sneezing"],
+          "answer": 3,
+          "explanation": "sneeze = hắt hơi, triệu chứng thường gặp của cảm lạnh nặng (“a very bad cold”).",
+          "optionNotes": [
+            "yawn = ngáp; thường do buồn ngủ, không phải do cảm lạnh.",
+            "snore = ngáy; chỉ xảy ra khi ngủ.",
+            "spit = khạc nhổ; không phải triệu chứng điển hình ở đây.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q7",
+          "number": 7,
+          "prompt": "Could you be more specific about what is ___ in this particular job?",
+          "options": ["enclosed", "concentrated", "presented", "involved"],
+          "answer": 3,
+          "explanation": "“what is involved in something” = công việc đó bao gồm, đòi hỏi những gì. Người nói muốn biết cụ thể công việc gồm những gì.",
+          "optionNotes": [
+            "enclosed = được đính kèm (trong thư, phong bì); không hợp nghĩa.",
+            "concentrated = tập trung, cô đặc; không đi với “in this particular job” theo nghĩa này.",
+            "presented = được trình bày; không hợp nghĩa “công việc gồm những gì”.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q8",
+          "number": 8,
+          "prompt": "Learning to ___ quickly is an important part of training for most competitive sports.",
+          "options": ["reduce", "regain", "receive", "react"],
+          "answer": 3,
+          "explanation": "react = phản ứng. Trong thể thao thi đấu, rèn khả năng phản ứng nhanh là phần quan trọng của việc tập luyện.",
+          "optionNotes": [
+            "reduce = giảm bớt; là ngoại động từ, cần tân ngữ.",
+            "regain = lấy lại; cần tân ngữ và không hợp nghĩa.",
+            "receive = nhận; cần tân ngữ và không hợp nghĩa.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q9",
+          "number": 9,
+          "prompt": "It's difficult to ___ the atmosphere of Paris to someone who hasn't been there.",
+          "options": ["point out", "disclose", "convey", "indicate"],
+          "answer": 2,
+          "explanation": "convey something to somebody = truyền đạt, diễn tả cho ai. Khó mà diễn tả bầu không khí Paris cho người chưa từng đến.",
+          "optionNotes": [
+            "point out = chỉ ra một điều cụ thể; không dùng để diễn tả một bầu không khí.",
+            "disclose = tiết lộ (thông tin bí mật); không hợp nghĩa.",
+            "",
+            "indicate = chỉ ra, cho thấy bằng dấu hiệu; không hợp với việc diễn tả cảm giác, bầu không khí."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q10",
+          "number": 10,
+          "prompt": "The tourist industry has ___ a variety of jobs.",
+          "options": ["invented", "developed", "created", "discovered"],
+          "answer": 2,
+          "explanation": "“create jobs” = tạo ra việc làm; cụm cố định. Ngành du lịch tạo ra nhiều loại công việc.",
+          "optionNotes": [
+            "invent = phát minh ra (đồ vật, phương pháp mới); không dùng cho việc làm.",
+            "develop = phát triển; thường nói “develop an industry”, ít đi với “jobs”.",
+            "",
+            "discover = khám phá ra cái đã có sẵn; không hợp nghĩa."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt07-p1b-1",
+      "title": "Paper 1 · Part B: Đọc hiểu (đoạn 1)",
+      "instruction": "Đọc đoạn văn và chọn đáp án đúng nhất cho mỗi câu hỏi.",
+      "passage": {
+        "text": "She liked flowers. At least, he remembered somebody telling him that she liked roses. Unfortunately, at that time of year roses were very hard to find, and anyway, even if he did find them he wouldn't be able to afford them. Not roses and going out to a good restaurant. So he had got some tulips. It wasn't sure if tulips were the right things to bring, and also while he was travelling in the bus several people bumped into him and the flowers were damaged.\n\nHe felt uncomfortable in his borrowed coat, and even though Mike had promised him that it was almost a perfect fit, he felt that the sleeves were too long, and the coat didn't really go with the colour of his trousers. He checked in his pocket again to make sure he had her address. He still was not sure why she had given it to him, or why she had agreed to go out that evening at all. For a few minutes he thought about giving the whole thing up, going home and making some excuse for the following day. But he knew that this chance would not come again, and he would hate himself if he did not take it.\n\nSlowly, he walked through the rain to her street."
+      },
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt07-q11",
+          "number": 11,
+          "prompt": "This text seems to have come from",
+          "options": ["A detective story.", "An autobiography.", "A science fiction story.", "A romantic novel."],
+          "answer": 3,
+          "explanation": "Cậu trai chuẩn bị hoa, mặc áo mượn, lo lắng đi gặp một cô gái sau khi cô ấy đồng ý hẹn hò (“going out to a good restaurant”). Đó là bối cảnh của tiểu thuyết lãng mạn.",
+          "optionNotes": [
+            "Không có án mạng, bí ẩn hay thám tử.",
+            "Câu chuyện kể ở ngôi thứ ba (“he”), không phải tự truyện (“I”).",
+            "Không có yếu tố khoa học viễn tưởng.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q12",
+          "number": 12,
+          "prompt": "The protagonist character can best be described as",
+          "options": ["Not very confident.", "Rather angry and irritable.", "A little bit slow and stupid.", "Very sad."],
+          "answer": 0,
+          "explanation": "Anh ta lo lắng: không chắc tulip có hợp không, khó chịu trong chiếc áo mượn, không chắc vì sao cô ấy nhận lời, suýt bỏ cuộc. Tất cả cho thấy anh thiếu tự tin.",
+          "optionNotes": [
+            "",
+            "Anh bối rối chứ không giận dữ hay cáu kỉnh.",
+            "Không có chi tiết nào cho thấy anh chậm hiểu hay ngốc nghếch.",
+            "Anh lo lắng, hồi hộp chứ không hề buồn bã."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q13",
+          "number": 13,
+          "prompt": "Which of these statements is true about the character?",
+          "options": [
+            "He is going to see his mother.",
+            "He doesn't know the person he is going to see very well.",
+            "He has lost her address.",
+            "He decided to buy her roses, but could not find any."
+          ],
+          "answer": 1,
+          "explanation": "“He still was not sure why she had given it to him, or why she had agreed to go out that evening”, và anh chỉ “remembered somebody telling him that she liked roses”: anh chưa hiểu cô ấy rõ.",
+          "optionNotes": [
+            "Anh đến gặp cô gái trong buổi hẹn tối, không phải mẹ.",
+            "",
+            "Anh vẫn có địa chỉ: “He checked in his pocket again to make sure he had her address”.",
+            "Anh biết hoa hồng khó tìm và đắt nên đã mua tulip (“So he had got some tulips”), không phải “không tìm được”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q14",
+          "number": 14,
+          "prompt": "We can tell from the text",
+          "options": [
+            "that it is winter.",
+            "that the character has a friend called Mike.",
+            "that the character does not have much money.",
+            "that the jacket is very comfortable."
+          ],
+          "answer": 2,
+          "explanation": "“even if he did find them he wouldn't be able to afford them” và việc phải mượn áo khoác cho thấy anh không có nhiều tiền.",
+          "optionNotes": [
+            "Bài chỉ nói “at that time of year roses were very hard to find” và trời mưa; không nói đó là mùa đông.",
+            "Mike chỉ là người hứa với anh rằng áo vừa vặn; bài không nói rõ Mike là bạn của anh, đây chỉ là suy đoán.",
+            "",
+            "Trái lại, anh “felt uncomfortable in his borrowed coat”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q15",
+          "number": 15,
+          "prompt": "What would be a good title for the text?",
+          "options": ["Going to see Mrs. Jones.", "The first date.", "Mike goes to visit his friend.", "Finding the right gift."],
+          "answer": 1,
+          "explanation": "Cả đoạn kể nỗi lo của chàng trai trước buổi hẹn đầu tiên với cô gái (hoa, áo, địa chỉ, nghi ngờ lý do cô nhận lời). Nhan đề hợp nhất là “The first date”.",
+          "optionNotes": [
+            "Bài không nhắc tới bà Jones nào.",
+            "",
+            "Nhân vật chính không phải Mike; Mike chỉ là người cho mượn áo.",
+            "Việc chọn hoa chỉ là một chi tiết, không phải nội dung chính của cả đoạn."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt07-p1b-2",
+      "title": "Paper 1 · Part B: Đọc hiểu (đoạn 2)",
+      "instruction": "Đọc đoạn văn và chọn đáp án đúng nhất cho mỗi câu hỏi.",
+      "passage": {
+        "title": "Underwater research",
+        "text": "Last month I got the chance to take part in an underwater research project in an area of the Gulf of Mexico called the Flower gardens. A team of professional researchers, led by the scientist Dr. Matt Phillips, was trying to learn more about the fish and various creatures that live in this part of the sea. The Flower Gardens are a long way from the shore and we spent three days on the boat.\n\nThe team used a piece of underwater equipment called a Remotely Operated Vehicle (ROV) to collect information. The ROV could measure water depth and temperature and it also had a camera that sent live film back to the boat. The ROV was great fun. It was controlled by a computer on the boat, and I was allowed to operate it a few times.\n\nHowever, the thing I enjoyed most was diving into the water. At first, I was quite frightened – mainly because I couldn't see land in any direction. But as soon as I jumped into the water, I wasn't afraid anymore. It was amazing to see the colourful fish swimming around and I could see all the way to the Flower Gardens, which are almost 30 metres down.\n\nI will never forget the Flower Gardens. The trip was like a holiday but I also learnt new things about science and research projects. The team was very friendly and everyone was happy to explain what they knew about the sea. It was a great opportunity and it has made me think about my goals in life. The experience will definitely help me work harder to become a scientist."
+      },
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt07-q16",
+          "number": 16,
+          "prompt": "What is the writer doing in the text?",
+          "options": [
+            "Describing the part he played in a science project.",
+            "Explaining how to apply for a place on a science trip.",
+            "Giving advice on understanding difficult area of science.",
+            "Persuading others to organise their own science projects."
+          ],
+          "answer": 0,
+          "explanation": "Tác giả kể lại việc mình tham gia dự án nghiên cứu dưới nước: dùng ROV, lặn xuống biển, học hỏi từ nhóm nghiên cứu. Tức là mô tả vai trò của mình trong một dự án khoa học.",
+          "optionNotes": [
+            "",
+            "Bài không hướng dẫn cách đăng ký tham gia chuyến đi.",
+            "Bài không đưa lời khuyên để hiểu các lĩnh vực khoa học khó.",
+            "Bài không kêu gọi người khác tự tổ chức dự án khoa học."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q17",
+          "number": 17,
+          "prompt": "What does the writer say about the ROV?",
+          "options": [
+            "It was difficult to operate.",
+            "It could only go so far underwater.",
+            "It was an expensive piece of equipment.",
+            "It recorded what was happening under water."
+          ],
+          "answer": 3,
+          "explanation": "“it also had a camera that sent live film back to the boat”: ROV có camera truyền hình ảnh trực tiếp về tàu, tức là ghi lại những gì xảy ra dưới nước.",
+          "optionNotes": [
+            "Tác giả nói “The ROV was great fun” và mình được phép điều khiển vài lần; không nói khó điều khiển.",
+            "Bài không nêu giới hạn độ sâu của ROV.",
+            "Bài không nhắc tới giá cả.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q18",
+          "number": 18,
+          "prompt": "What was the writer's attitude towards diving?",
+          "options": [
+            "His main worry was losing sight of the boat.",
+            "He enjoyed it less than other parts of the trip.",
+            "He was quite disappointed by the variety of the fish.",
+            "His feelings changed once he was in the water."
+          ],
+          "answer": 3,
+          "explanation": "“At first, I was quite frightened… But as soon as I jumped into the water, I wasn't afraid anymore”: cảm xúc đổi từ sợ sang hết sợ và thích thú ngay khi xuống nước.",
+          "optionNotes": [
+            "Anh sợ vì “couldn't see land in any direction”, tức không thấy bờ, không phải sợ mất dấu tàu.",
+            "Ngược lại: “the thing I enjoyed most was diving into the water”.",
+            "Anh thấy “amazing” khi nhìn những chú cá nhiều màu sắc.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q19",
+          "number": 19,
+          "prompt": "What effect has the trip had on the writer?",
+          "options": [
+            "It has changed his opinion of science.",
+            "It has improved the way he works in a team.",
+            "It has made him a lot more interested in the sea.",
+            "It has encouraged him to work towards his goal."
+          ],
+          "answer": 3,
+          "explanation": "Câu cuối: “it has made me think about my goals in life. The experience will definitely help me work harder to become a scientist.” Chuyến đi thúc đẩy anh cố gắng đạt mục tiêu trở thành nhà khoa học.",
+          "optionNotes": [
+            "Bài không nói quan điểm của anh về khoa học thay đổi.",
+            "Bài không nói anh làm việc nhóm tốt hơn.",
+            "Bài không nói anh thêm hứng thú với biển; điều anh nhấn mạnh là động lực trở thành nhà khoa học.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q20",
+          "number": 20,
+          "prompt": "What might Miguel write in his diary about the trip?",
+          "options": [
+            "'It was very interesting working with Dr. Phillips and his team but I wish someone else my age had been on the trip.'",
+            "'Going to the Flower Gardens was great fun. I now know much more about science but I realise there's still a lot more to learn.'",
+            "'The trip was like a holiday and I saw some amazing fish. The only thing I disliked was collecting information about the sea.'",
+            "'The Flower Gardens is a beautiful place but scientists are worried that pollution levels there will increase.'"
+          ],
+          "answer": 1,
+          "explanation": "Câu B khớp bài: chuyến đi “great fun” và anh “learnt new things about science and research projects”. Ý “still a lot more to learn” hợp với tinh thần háo hức của anh.",
+          "optionNotes": [
+            "Bài không nhắc đến chuyện mong có bạn cùng tuổi.",
+            "",
+            "Anh thích điều khiển ROV thu thập thông tin (“great fun”) và không nói mình ghét việc đó.",
+            "Bài không nhắc tới ô nhiễm hay lo ngại của các nhà khoa học."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt07-p2a",
+      "title": "Paper 2 · Part A: Hoàn thành câu",
+      "instruction": "Chọn từ hoặc cụm từ phù hợp nhất để hoàn thành mỗi câu.",
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt07-q21",
+          "number": 21,
+          "prompt": "As I passed by her house, I could see people ___ in the front room.",
+          "options": ["dance", "to dance", "dancing", "danced"],
+          "answer": 2,
+          "explanation": "“see + tân ngữ + V-ing” = thấy ai đang làm gì (hành động đang diễn ra, chỉ nhìn một phần). Lúc đi ngang qua, người nói thấy mọi người đang nhảy.",
+          "optionNotes": [
+            "“see + O + V nguyên mẫu” diễn tả đã thấy trọn một hành động; ở đây người nói chỉ đi ngang qua, nên V-ing hợp hơn.",
+            "Sau “see + O” không dùng “to V” ở thể chủ động.",
+            "",
+            "“danced” (V-ed) mang nghĩa bị động, không hợp với “people”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q22",
+          "number": 22,
+          "prompt": "- \"Are there any buses still running at this hour?\"\n- \"___! I'm afraid.\"",
+          "options": ["All", "None", "No one", "A few"],
+          "answer": 1,
+          "explanation": "“None, I'm afraid.” = Tiếc là không chiếc nào. “none” thay cho “no buses” khi trả lời câu hỏi về số lượng.",
+          "optionNotes": [
+            "“All” = tất cả; trái với ý “I'm afraid” (tiếc là).",
+            "",
+            "“No one” chỉ dùng cho người, còn ở đây nói về xe buýt.",
+            "“A few” = một vài; không hợp với “I'm afraid” báo tin xấu."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q23",
+          "number": 23,
+          "prompt": "I don't want ___ of the two kinds. Please show me ___.",
+          "options": ["all / one", "every / another", "neither / another", "either / another"],
+          "answer": 3,
+          "explanation": "Câu phủ định “don't want either of the two kinds” = không muốn loại nào trong hai loại. Sau đó nhờ xem “another” (một loại khác).",
+          "optionNotes": [
+            "“all of the two” sai: “all” dùng cho từ ba trở lên.",
+            "“every of” sai: “every” không đi với “of”.",
+            "“don't want neither” là phủ định kép, sai ngữ pháp.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q24",
+          "number": 24,
+          "prompt": "In my apartment there are two rooms, ___ is used as the living-room.",
+          "options": ["the larger one", "the one large", "the largest of which", "the larger of which"],
+          "answer": 3,
+          "explanation": "“the larger of which” = cái lớn hơn trong số đó. Có hai phòng nên dùng so sánh hơn (larger), và “of which” nối hai mệnh đề sau dấu phẩy.",
+          "optionNotes": [
+            "Thiếu từ nối “of which”, nên hai mệnh đề bị nối bằng dấu phẩy (lỗi comma splice).",
+            "“the one large” sai trật tự từ.",
+            "“the largest” (so sánh nhất) dùng cho từ ba vật trở lên; ở đây chỉ có hai phòng.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q25",
+          "number": 25,
+          "prompt": "After watching ___ TV, she played ___ violin for an hour.",
+          "options": ["Ø / Ø", "the / the", "the / Ø", "Ø / the"],
+          "answer": 3,
+          "explanation": "“watch TV” không dùng mạo từ. Còn “play the + nhạc cụ” dùng “the”: “play the violin”.",
+          "optionNotes": [
+            "“play violin” thiếu “the” trước nhạc cụ.",
+            "“watch the TV” chỉ chiếc TV cụ thể; xem TV nói chung không dùng “the”.",
+            "Ngược lại: “watching the TV” sai và “played violin” thiếu “the”.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q26",
+          "number": 26,
+          "prompt": "By the time David ___ in the car park the supermarket had closed.",
+          "options": ["arrived", "had arrived", "would have arrived", "will have arrived"],
+          "answer": 0,
+          "explanation": "“By the time + quá khứ đơn, + quá khứ hoàn thành”: việc siêu thị đóng cửa (“had closed”) xảy ra trước việc David đến bãi đỗ xe (“arrived”).",
+          "optionNotes": [
+            "",
+            "Mệnh đề “by the time” dùng quá khứ đơn; quá khứ hoàn thành đã dành cho mệnh đề chính “had closed”.",
+            "“would have arrived” là điều kiện loại 3, không hợp ở đây.",
+            "Tương lai hoàn thành không hợp với câu kể chuyện quá khứ."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q27",
+          "number": 27,
+          "prompt": "Our teacher said ___ finishes the test early can go home.",
+          "options": ["who", "whoever", "whom", "whomever"],
+          "answer": 1,
+          "explanation": "“whoever” = bất cứ ai, vừa làm chủ ngữ của “finishes” vừa là chủ ngữ của mệnh đề danh từ (“whoever finishes the test early”) làm chủ ngữ cho “can go home”.",
+          "optionNotes": [
+            "“who” không dẫn mệnh đề danh từ làm chủ ngữ với nghĩa “bất cứ ai”.",
+            "",
+            "“whom” là dạng tân ngữ, trong khi ở đây cần chủ ngữ của “finishes”.",
+            "“whomever” là dạng tân ngữ, cần chủ ngữ ở đây."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q28",
+          "number": 28,
+          "prompt": "I noticed with interest that when I was told to drink alcohol I was reluctant to do so – and ___.",
+          "options": ["so were the others", "so the others were", "the others were so", "were so the others"],
+          "answer": 0,
+          "explanation": "Đồng tình với câu khẳng định: “so + trợ động từ/be + chủ ngữ”. Vế trước dùng “was” nên vế sau là “so were the others” = những người khác cũng vậy.",
+          "optionNotes": [
+            "",
+            "Thiếu đảo ngữ sau “so”.",
+            "Không đúng cấu trúc đồng tình “so + be + S”.",
+            "Sai trật tự: “so” phải đứng trước động từ."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q29",
+          "number": 29,
+          "prompt": "Doctors say ___ smokes the longer one is likely to live.",
+          "options": ["the less one", "the less ones", "the fewer one", "the fewer ones"],
+          "answer": 0,
+          "explanation": "So sánh kép: “the + so sánh hơn… the + so sánh hơn…” “the less one smokes, the longer one is likely to live” = càng hút ít thì càng sống lâu. “smoke” ở đây không có tân ngữ đếm được, nên dùng “less”; “one” là đại từ chỉ người nói chung.",
+          "optionNotes": [
+            "",
+            "“ones” là số nhiều của một danh từ cụ thể; ở đây “one” là đại từ chỉ người nói chung nên không thêm “s”.",
+            "“fewer” dùng cho danh từ đếm được; ở đây động từ “smoke” không đi với đối tượng đếm được.",
+            "Sai vì dùng “fewer” và “ones”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q30",
+          "number": 30,
+          "prompt": "Being a keen tennis player, he decided to investigate ___.",
+          "options": ["further", "far more", "farther", "furthermore"],
+          "answer": 0,
+          "explanation": "“investigate further” = điều tra, tìm hiểu thêm. “further” (trạng từ) = thêm nữa, sâu hơn (nghĩa trừu tượng).",
+          "optionNotes": [
+            "",
+            "“far more” = nhiều hơn nhiều; không dùng bổ nghĩa cho “investigate” như vậy.",
+            "“farther” chủ yếu chỉ khoảng cách vật lý, không dùng cho việc tìm hiểu thêm.",
+            "“furthermore” = hơn nữa; là từ nối đứng đầu câu, không bổ nghĩa cho động từ."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q31",
+          "number": 31,
+          "prompt": "There was a long queue at the customs desk; everyone ___.",
+          "options": ["was searched", "was being searched", "had been searched", "had been being searched"],
+          "answer": 1,
+          "explanation": "Hàng người dài vì lúc đó mọi người đang bị khám xét lần lượt: quá khứ tiếp diễn bị động “was being searched” diễn tả hành động đang diễn ra tại thời điểm trong quá khứ.",
+          "optionNotes": [
+            "Quá khứ đơn bị động chỉ việc đã xong, không giải thích được vì sao hàng lại dài lúc đó.",
+            "",
+            "Quá khứ hoàn thành bị động nói việc đã xong trước một mốc khác, không hợp ở đây.",
+            "“had been being searched” là dạng không tự nhiên, hầu như không dùng."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q32",
+          "number": 32,
+          "prompt": "Although CDs are wonderful, they cannot create the true atmosphere of a ___ performance.",
+          "options": ["live", "lively", "living", "alive"],
+          "answer": 0,
+          "explanation": "“live performance” (phát âm /laɪv/) = buổi biểu diễn trực tiếp, đối lập với đĩa CD ghi sẵn.",
+          "optionNotes": [
+            "",
+            "lively = sôi nổi, sống động (tả người, bữa tiệc, không khí), không có nghĩa “trực tiếp”.",
+            "living = đang sống; không dùng cho buổi biểu diễn.",
+            "alive chỉ đứng sau động từ (be alive), không đứng trước danh từ."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q33",
+          "number": 33,
+          "prompt": "Mr Fox ___ come. He sent me to represent him.",
+          "options": ["couldn't", "mustn't", "couldn't have", "mustn't have"],
+          "answer": 0,
+          "explanation": "“couldn't come” = không thể đến (vì bận hay có việc), nên ông ấy cử tôi đến thay.",
+          "optionNotes": [
+            "",
+            "“mustn't” = cấm, không được phép; không hợp nghĩa.",
+            "“couldn't have come” là suy đoán về điều không thể đã xảy ra; ở đây là sự việc có thật nên không dùng.",
+            "“mustn't have” không phải cấu trúc đúng."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q34",
+          "number": 34,
+          "prompt": "Mike did not receive any present from ___ on his birthday.",
+          "options": ["either his brother or sister", "neither his brother nor sister", "both his brother and sister", "his brother as well as sister"],
+          "answer": 0,
+          "explanation": "Trong câu phủ định (“did not receive”), dùng “either… or…” = không từ người này cũng không từ người kia.",
+          "optionNotes": [
+            "",
+            "“neither… nor” đã mang nghĩa phủ định, nên dùng với “did not” là phủ định kép.",
+            "“both… and” trong câu phủ định có nghĩa khác (không phải cả hai, nhưng có thể một người có).",
+            "“as well as” không hợp với cấu trúc phủ định, và không có “the” trước “sister”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q35",
+          "number": 35,
+          "prompt": "The weather's very cold at this time, ___ is why I don't go out very often.",
+          "options": ["that", "it", "this", "which"],
+          "answer": 3,
+          "explanation": "“which” (đại từ quan hệ) thay cho cả mệnh đề trước: “…cold at this time, which is why…” = điều đó là lý do tôi ít đi ra ngoài.",
+          "optionNotes": [
+            "“that” không dùng sau dấu phẩy trong mệnh đề quan hệ không xác định.",
+            "“it” là đại từ nhân xưng, không nối hai mệnh đề sau dấu phẩy (lỗi comma splice).",
+            "“this” cũng không nối hai mệnh đề sau dấu phẩy.",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt07-p2b",
+      "title": "Paper 2 · Part C: Điền từ vào đoạn văn",
+      "instruction": "Chọn từ phù hợp nhất cho mỗi chỗ trống được đánh số trong đoạn văn.",
+      "passage": {
+        "text": "For many young people sport is a popular part of school life and {{36}} in one of the school teams and playing matches is very important. If {{37}} is in a team it means a lot of extra practice and often spending a Saturday or Sunday away {{38}} home, as many matches are played then. It {{39}} also involve traveling to other towns to play against other school teams and then {{40}} on after the match for a meal or a drink. Sometimes parents, friends or other students will travel with the team to support their own side.\n\nWhen a school team {{41}} a match it is the whole school which feels proud, {{42}} only the players. It can also mean that a school {{43}} well-known for being good at certain sports and pupils from that school may end up playing {{44}} national and international teams so that {{45}} has some really famous names associated with it!"
+      },
+      "questions": [
+        {
+          "type": "choice",
+          "id": "pt07-q36",
+          "number": 36,
+          "options": ["having", "being", "taking", "putting"],
+          "answer": 1,
+          "explanation": "“being in one of the school teams” = việc ở trong một đội của trường; danh động từ làm chủ ngữ cùng với “playing matches”.",
+          "optionNotes": [
+            "“having in one of the school teams” không đúng cấu trúc.",
+            "",
+            "“taking in” có nghĩa khác (tiếp nhận, hiểu), không hợp.",
+            "“putting in” có nghĩa khác (đặt vào, dành ra), không hợp nghĩa “ở trong đội”."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q37",
+          "number": 37,
+          "options": ["someone", "anyone", "everyone", "no one"],
+          "answer": 0,
+          "explanation": "“If someone is in a team…” = nếu một ai đó ở trong đội. “someone” chỉ một người không xác định, hợp với câu điều kiện khẳng định.",
+          "optionNotes": [
+            "",
+            "“anyone” thường dùng trong câu phủ định hoặc nghi vấn; trong câu điều kiện, “someone” hợp hơn vì nói về một người trong đội có thật.",
+            "“everyone” = mọi người; không hợp vì không phải ai cũng ở trong đội.",
+            "“no one” mang nghĩa phủ định, trái nghĩa với vế sau."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q38",
+          "number": 38,
+          "options": ["at", "on", "for", "from"],
+          "answer": 3,
+          "explanation": "“be away from home” = xa nhà. “spending a Saturday or Sunday away from home” = dành ngày thứ Bảy hoặc Chủ nhật xa nhà.",
+          "optionNotes": [
+            "“away at home” sai: “away” trái nghĩa với “at home”.",
+            "“away on home” không phải cụm đúng.",
+            "“away for home” không phải cụm đúng.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q39",
+          "number": 39,
+          "options": ["ought to", "must", "can", "has to"],
+          "answer": 2,
+          "explanation": "“It can also involve…” = có thể còn bao gồm. “can” diễn tả khả năng xảy ra, hợp với bối cảnh nói chung chung.",
+          "optionNotes": [
+            "“ought to also involve” = nên bao gồm; mang nghĩa khuyên bảo, không hợp với mô tả một khả năng.",
+            "must = bắt buộc, chắc chắn; không hợp với một khả năng.",
+            "",
+            "“has to” = bắt buộc; không hợp với mô tả một khả năng, và “has to also involve” không tự nhiên."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q40",
+          "number": 40,
+          "options": ["being", "staying", "leaving", "spending"],
+          "answer": 1,
+          "explanation": "“stay on” = ở lại thêm. “then staying on after the match for a meal or a drink” = sau trận thì ở lại ăn uống.",
+          "optionNotes": [
+            "“being on” không đi với “after the match for a meal”.",
+            "",
+            "“leaving on” không hợp nghĩa (rời đi chứ không ở lại).",
+            "“spending on” = tiêu tiền vào; không hợp nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q41",
+          "number": 41,
+          "options": ["wins", "gains", "beats", "passes"],
+          "answer": 0,
+          "explanation": "“win a match” = thắng một trận đấu. Khi đội trường thắng, cả trường tự hào.",
+          "optionNotes": [
+            "",
+            "gain = đạt được, thu được (kinh nghiệm, cân nặng); không dùng với “a match”.",
+            "beat đi với đối thủ (beat a team), không đi với “a match”.",
+            "pass = vượt qua (kỳ thi) hoặc chuyền bóng; không hợp nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q42",
+          "number": 42,
+          "options": ["no", "neither", "none", "not"],
+          "answer": 3,
+          "explanation": "“not only the players” = không chỉ các cầu thủ. “it is the whole school which feels proud, not only the players”.",
+          "optionNotes": [
+            "“no only” không phải cấu trúc đúng.",
+            "“neither only” không phải cấu trúc đúng.",
+            "“none only” không phải cấu trúc đúng.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q43",
+          "number": 43,
+          "options": ["turns", "sounds", "remains", "becomes"],
+          "answer": 3,
+          "explanation": "“become well-known for…” = trở nên nổi tiếng vì… “a school becomes well-known for being good at certain sports”.",
+          "optionNotes": [
+            "“turn well-known” không dùng; “turn” + tính từ chỉ màu sắc hay thay đổi tính chất (turn red, turn cold).",
+            "sound = nghe có vẻ; không hợp nghĩa.",
+            "remain = vẫn còn, giữ nguyên; không hợp với “có thể dẫn tới danh tiếng mới”.",
+            ""
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q44",
+          "number": 44,
+          "options": ["up", "to", "for", "beside"],
+          "answer": 2,
+          "explanation": "“play for a team” = chơi cho đội nào. “playing for national and international teams” = chơi cho các đội tuyển quốc gia và quốc tế.",
+          "optionNotes": [
+            "“playing up” có nghĩa khác (nghịch ngợm, gây rắc rối), không hợp nghĩa.",
+            "“play to” không dùng với tên đội.",
+            "",
+            "“play beside” = chơi bên cạnh, không hợp nghĩa."
+          ]
+        },
+        {
+          "type": "choice",
+          "id": "pt07-q45",
+          "number": 45,
+          "options": ["school", "one school", "a school", "the school"],
+          "answer": 3,
+          "explanation": "“the school” = ngôi trường đã nhắc tới ở trên, nay quay lại chủ ngữ. “so that the school has some really famous names associated with it”.",
+          "optionNotes": [
+            "Danh từ đếm được số ít không thể đứng một mình, cần mạo từ.",
+            "“one school” nhấn mạnh con số một; không hợp ngữ cảnh nhắc lại.",
+            "“a school” chỉ một trường bất kỳ; ở đây nói về ngôi trường đã nhắc tới.",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt07-p2c",
+      "title": "Paper 2 · Part D: Viết lại câu",
+      "instruction": "Hoàn thành câu thứ hai sao cho nghĩa không đổi so với câu gốc.",
+      "questions": [
+        {
+          "type": "rewrite",
+          "id": "pt07-q46",
+          "number": 46,
+          "original": "Although the man suffered from amnesia, he could speak several languages.",
+          "prefix": "In spite of",
+          "answers": [
+            "suffering from amnesia, the man could speak several languages.",
+            "suffering from amnesia, he could speak several languages.",
+            "his amnesia, the man could speak several languages.",
+            "the fact that he suffered from amnesia, the man could speak several languages."
+          ],
+          "explanation": "Although + mệnh đề → In spite of + V-ing / danh từ / the fact that + mệnh đề. Hai vế cùng chủ ngữ “the man” nên rút gọn “suffered from amnesia” thành “suffering from amnesia”."
+        },
+        {
+          "type": "rewrite",
+          "id": "pt07-q47",
+          "number": 47,
+          "original": "The mechanic repaired my car in two hours.",
+          "prefix": "It took",
+          "answers": [
+            "the mechanic two hours to repair my car.",
+            "two hours for the mechanic to repair my car."
+          ],
+          "explanation": "S + V + O + in + thời gian → It takes/took + (somebody) + thời gian + to V. “It took the mechanic two hours to repair my car.”"
+        },
+        {
+          "type": "rewrite",
+          "id": "pt07-q48",
+          "number": 48,
+          "original": "I don't play table-tennis as well as you do.",
+          "prefix": "You play",
+          "answers": [
+            "table-tennis better than I do.",
+            "table-tennis better than me.",
+            "table-tennis better than I."
+          ],
+          "explanation": "So sánh không bằng (not as… as) → so sánh hơn với chủ ngữ đổi chỗ: “well” → “better… than”. “You play table-tennis better than I do.”"
+        },
+        {
+          "type": "rewrite",
+          "id": "pt07-q49",
+          "number": 49,
+          "original": "The goal was so important that he could never forget it.",
+          "prefix": "It was such",
+          "answers": [
+            "an important goal that he could never forget it.",
+            "an important goal that he could never forget."
+          ],
+          "explanation": "so + tính từ + that → such + a/an + tính từ + danh từ + that. “The goal was so important” chuyển thành “It was such an important goal”. Dùng “an” vì “important” bắt đầu bằng nguyên âm."
+        },
+        {
+          "type": "rewrite",
+          "id": "pt07-q50",
+          "number": 50,
+          "original": "He advised me to give up smoking.",
+          "prefix": "He suggested that",
+          "answers": [
+            "I (should) give up smoking.",
+            "I should give up smoking.",
+            "I give up smoking.",
+            "I gave up smoking."
+          ],
+          "explanation": "advise somebody to do something → suggest that + chủ ngữ + (should) + V nguyên mẫu. Sau “suggest that” dùng giả định cách, nên không chia “gives”."
+        }
+      ]
+    }
+  ]
+}
