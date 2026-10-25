@@ -17,6 +17,9 @@ describe('activeTab', () => {
   })
   it('Bài tập owns its tab', () => {
     expect(activeTab('/bai-tap', '')).toBe('exercises')
+    expect(activeTab('/bai-tap/practice-test-01', '')).toBe('exercises')
+    expect(activeTab('/bai-tap/practice-test-01/lam', '?phan=pt01-p1a')).toBe('exercises')
+    expect(activeTab('/bai-tap/cau-sai', '?bo=practice-test-01')).toBe('exercises')
   })
   it('ignores a trailing slash', () => {
     expect(activeTab('/tu-hoc/', '')).toBe('self')

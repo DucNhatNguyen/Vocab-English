@@ -41,3 +41,28 @@ export interface Settings {
 
 /** How Settings is stored: a single row under a fixed key. */
 export type SettingsRecord = Settings & { key: 'app' }
+
+// One run through a whole exercise set or a single section. "Làm lại câu sai" runs create no
+// attempt. Spec section 4.3.
+export interface ExerciseAttempt {
+  id?: number
+  setId: string
+  sectionId?: string // present for a single-section run; absent = the whole set
+  startedAt: string // ISO timestamp
+  updatedAt: string // ISO timestamp of the latest answer
+  finishedAt?: string // absent = still open
+  answers: Record<string, ExerciseAnswer> // key = question id
+}
+
+export interface ExerciseAnswer {
+  value: number | string // option index (choice) or typed text (rewrite)
+  correct: boolean
+  selfMarked?: boolean // the learner pressed "Mình viết đúng"
+}
+
+/** Latest outcome of one question, overwritten on every answer (retries included). */
+export interface ExerciseResult extends ExerciseAnswer {
+  questionId: string // primary key
+  setId: string
+  answeredAt: string // ISO timestamp
+}

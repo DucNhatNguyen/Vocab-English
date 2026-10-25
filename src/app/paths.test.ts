@@ -25,4 +25,15 @@ describe('paths', () => {
     const match = matchRoutes([{ path: '/my-words/:wordId/edit' }], url)
     expect(match?.[0]?.params.wordId).toBe('custom:1234-abcd')
   })
+
+  it('builds the Bài tập routes', () => {
+    expect(paths.exercises).toBe('/bai-tap')
+    expect(paths.exerciseSet('practice-test-01')).toBe('/bai-tap/practice-test-01')
+    expect(paths.exerciseRun('practice-test-01')).toBe('/bai-tap/practice-test-01/lam')
+    expect(paths.exerciseRun('practice-test-01', 'pt01-p1a')).toBe('/bai-tap/practice-test-01/lam?phan=pt01-p1a')
+    expect(paths.exerciseWrong()).toBe('/bai-tap/cau-sai')
+    expect(paths.exerciseWrong('writing-practice')).toBe('/bai-tap/cau-sai?bo=writing-practice')
+    const match = matchRoutes([{ path: '/bai-tap/:setId/lam' }], paths.exerciseRun('practice-test-01'))
+    expect(match?.[0]?.params.setId).toBe('practice-test-01')
+  })
 })

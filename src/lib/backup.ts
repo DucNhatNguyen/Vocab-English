@@ -1,15 +1,27 @@
-import type { CardProgress, CustomWord, Settings, StudyLog } from '../db/types.ts'
+import { isExerciseSetId } from '../data/exercises/catalog.ts'
+import type {
+  CardProgress,
+  CustomWord,
+  ExerciseAnswer,
+  ExerciseAttempt,
+  ExerciseResult,
+  Settings,
+  StudyLog,
+} from '../db/types.ts'
 import { parseLocalDate, toLocalDateString } from './date.ts'
 
 /** Pure backup format: building, serialising and strictly validating the JSON file. */
 
 export const BACKUP_APP_ID = 'tu-ngay'
-export const BACKUP_FORMAT_VERSION = 1
+/** 2 added `exerciseAttempts` and `exerciseResults`. Version 1 files are still accepted (those tables = empty). */
+export const BACKUP_FORMAT_VERSION = 2
 
 export interface BackupData {
   progress: CardProgress[]
   customWords: CustomWord[]
   studyLogs: StudyLog[]
+  exerciseAttempts: ExerciseAttempt[]
+  exerciseResults: ExerciseResult[]
   settings: Settings
 }
 
@@ -52,10 +64,19 @@ export function backupFileName(date: Date = new Date()): string {
   return `tu-ngay-sao-luu-${toLocalDateString(date)}.json`
 }
 
-/** "X từ đã học, Y từ của tôi, Z ngày học"; callers add their own verb. */
+/**
+ * "X từ đã học, Y từ của tôi, Z ngày học", plus "N câu bài tập" when the file has exercise results;
+ * callers add their own verb.
+ */
 export function describeBackupData(data: BackupData): string {
   const learned = data.progress.filter((p) => p.level >= 1).length
-  return `${learned} từ đã học, ${data.customWords.length} từ của tôi, ${data.studyLogs.length} ngày học`
+  const parts = [
+    `${learned} từ đã học`,
+    `${data.customWords.length} từ của tôi`,
+    `${data.studyLogs.length} ngày học`,
+  ]
+  if (data.exerciseResults.length > 0) parts.push(`${data.exerciseResults.length} câu bài tập đã làm`)
+  return parts.join(', ')
 }
 
 // ---------------------------------------------------------------------------
@@ -134,6 +155,19 @@ function optionalDate(obj: Obj, key: string, where: string, problems: Problems):
 function requiredDate(obj: Obj, key: string, where: string, problems: Problems): string | undefined {
   if (!isLocalDate(obj[key])) {
     problems.add(`${where}: "${key}" thiếu hoặc không phải ngày hợp lệ (YYYY-MM-DD).`)
+    return undefined
+  }
+  return obj[key] as string
+}
+
+/** A full ISO timestamp such as "2026-10-25T08:00:00.000Z". */
+function isTimestamp(value: unknown): value is string {
+  return typeof value === 'string' && value.trim() !== '' && !Number.isNaN(Date.parse(value))
+}
+
+function requiredTimestamp(obj: Obj, key: string, where: string, problems: Problems): string | undefined {
+  if (!isTimestamp(obj[key])) {
+    problems.add(`${where}: "${key}" thiếu hoặc không phải thời điểm hợp lệ.`)
     return undefined
   }
   return obj[key] as string
@@ -289,6 +323,100 @@ function parseStudyLogs(rows: unknown[], problems: Problems): StudyLog[] {
   return out
 }
 
+/** `{ value, correct, selfMarked? }`, shared by the answers of an attempt and by results. */
+function parseAnswer(row: Obj, where: string, problems: Problems): ExerciseAnswer | undefined {
+  const before = problems.total
+  const { value, correct, selfMarked } = row
+  if (typeof value !== 'string' && !(typeof value === 'number' && Number.isFinite(value))) {
+    problems.add(`${where}: "value" phải là số hoặc chuỗi.`)
+  }
+  if (typeof correct !== 'boolean') problems.add(`${where}: "correct" phải là true hoặc false.`)
+  if (selfMarked !== undefined && typeof selfMarked !== 'boolean') {
+    problems.add(`${where}: "selfMarked" phải là true hoặc false.`)
+  }
+  if (problems.total > before) return undefined
+  const answer: ExerciseAnswer = { value: value as number | string, correct: correct as boolean }
+  if (selfMarked === true) answer.selfMarked = true
+  return answer
+}
+
+/** Records of a set that is not in the app (any more) are dropped without complaint. */
+function parseExerciseAttempts(rows: unknown[], problems: Problems): ExerciseAttempt[] {
+  const out: ExerciseAttempt[] = []
+  const ids = new Set<number>()
+  rows.forEach((row, i) => {
+    const where = `Lượt làm bài #${i + 1}`
+    if (!isObj(row)) return problems.add(`${where}: không phải một bản ghi.`)
+    const before = problems.total
+
+    const setId = str(row, 'setId', where, problems, { nonEmpty: true })
+    if (row.sectionId !== undefined && (typeof row.sectionId !== 'string' || row.sectionId.trim() === '')) {
+      problems.add(`${where}: "sectionId" phải là chuỗi không rỗng.`)
+    }
+    const startedAt = requiredTimestamp(row, 'startedAt', where, problems)
+    const updatedAt = requiredTimestamp(row, 'updatedAt', where, problems)
+    if (row.finishedAt !== undefined && !isTimestamp(row.finishedAt)) {
+      problems.add(`${where}: "finishedAt" không phải thời điểm hợp lệ.`)
+    }
+    const id = row.id
+    if (id !== undefined) {
+      if (typeof id !== 'number' || !Number.isInteger(id) || id < 1) {
+        problems.add(`${where}: "id" phải là số nguyên dương.`)
+      } else if (ids.has(id)) {
+        problems.add(`${where}: trùng "id" ${id}.`)
+      } else {
+        ids.add(id)
+      }
+    }
+    const answers: ExerciseAttempt['answers'] = {}
+    if (!isObj(row.answers)) {
+      problems.add(`${where}: "answers" phải là một đối tượng.`)
+    } else {
+      for (const [questionId, raw] of Object.entries(row.answers)) {
+        if (!isObj(raw)) {
+          problems.add(`${where}: câu trả lời cho "${questionId}" không phải một bản ghi.`)
+          continue
+        }
+        const answer = parseAnswer(raw, `${where}, câu "${questionId}"`, problems)
+        if (answer) answers[questionId] = answer
+      }
+    }
+    if (problems.total > before) return
+    if (!isExerciseSetId(setId!)) return
+
+    const attempt: ExerciseAttempt = { setId: setId!, startedAt: startedAt!, updatedAt: updatedAt!, answers }
+    if (typeof id === 'number') attempt.id = id
+    if (typeof row.sectionId === 'string') attempt.sectionId = row.sectionId
+    if (typeof row.finishedAt === 'string') attempt.finishedAt = row.finishedAt
+    out.push(attempt)
+  })
+  return out
+}
+
+function parseExerciseResults(rows: unknown[], problems: Problems): ExerciseResult[] {
+  const out: ExerciseResult[] = []
+  const seen = new Set<string>()
+  rows.forEach((row, i) => {
+    const where = `Kết quả bài tập #${i + 1}`
+    if (!isObj(row)) return problems.add(`${where}: không phải một bản ghi.`)
+    const before = problems.total
+
+    const questionId = str(row, 'questionId', where, problems, { nonEmpty: true })
+    if (questionId !== undefined) {
+      if (seen.has(questionId)) problems.add(`${where}: trùng "questionId" ${questionId}.`)
+      seen.add(questionId)
+    }
+    const setId = str(row, 'setId', where, problems, { nonEmpty: true })
+    const answeredAt = requiredTimestamp(row, 'answeredAt', where, problems)
+    const answer = parseAnswer(row, where, problems)
+    if (problems.total > before) return
+    if (!isExerciseSetId(setId!)) return
+
+    out.push({ ...answer!, questionId: questionId!, setId: setId!, answeredAt: answeredAt! })
+  })
+  return out
+}
+
 function parseSettings(raw: unknown, problems: Problems): Settings | undefined {
   const where = 'Cài đặt'
   if (!isObj(raw)) {
@@ -378,15 +506,26 @@ export function parseBackup(text: string): ParseResult {
   for (const key of ['progress', 'customWords', 'studyLogs'] as const) {
     if (!Array.isArray(data[key])) problems.add(`Thiếu danh sách "${key}" trong dữ liệu.`)
   }
+  // Version 1 files predate the exercise tables: missing means empty. When present it must be a list.
+  for (const key of ['exerciseAttempts', 'exerciseResults'] as const) {
+    if (Array.isArray(data[key])) continue
+    if (data[key] !== undefined || version >= 2) problems.add(`Thiếu danh sách "${key}" trong dữ liệu.`)
+  }
   if (problems.list.length > 0) return { ok: false, errors: problems.list }
 
   const progress = parseProgress(data.progress as unknown[], problems)
   const customWords = parseCustomWords(data.customWords as unknown[], problems)
   const studyLogs = parseStudyLogs(data.studyLogs as unknown[], problems)
+  const exerciseAttempts = parseExerciseAttempts((data.exerciseAttempts as unknown[] | undefined) ?? [], problems)
+  const exerciseResults = parseExerciseResults((data.exerciseResults as unknown[] | undefined) ?? [], problems)
   const settings = parseSettings(data.settings, problems)
 
   if (problems.list.length > 0 || !settings) {
     return { ok: false, errors: problems.list }
   }
-  return { ok: true, data: { progress, customWords, studyLogs, settings }, exportedAt: json.exportedAt }
+  return {
+    ok: true,
+    data: { progress, customWords, studyLogs, exerciseAttempts, exerciseResults, settings },
+    exportedAt: json.exportedAt,
+  }
 }

@@ -15,8 +15,16 @@ export const paths = {
   myWords: '/tu-hoc',
   /** Tự học tab: the user's own words, learned and reviewed on their own. */
   selfStudy: '/tu-hoc',
-  /** Bài tập tab (coming soon). */
+  /** Bài tập tab: the list of exercise sets. */
   exercises: '/bai-tap',
+  /** One exercise set: its sections and scores. */
+  exerciseSet: (setId: string) => `/bai-tap/${encodeURIComponent(setId)}`,
+  /** Run a whole set, or only one section of it. */
+  exerciseRun: (setId: string, sectionId?: string) =>
+    `/bai-tap/${encodeURIComponent(setId)}/lam${sectionId ? `?phan=${encodeURIComponent(sectionId)}` : ''}`,
+  /** Retry the wrong answers of every set, or of one set. */
+  exerciseWrong: (setId?: string) =>
+    setId ? `/bai-tap/cau-sai?bo=${encodeURIComponent(setId)}` : '/bai-tap/cau-sai',
   /** Learn / review only the user's own words. */
   learnMine: '/learn?nguon=tu-hoc',
   reviewMine: '/review?nguon=tu-hoc',

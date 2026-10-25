@@ -1,0 +1,453 @@
+/* Bài tập: a run (questions, passages, rewrite answers) and its summary. Ported from docs/mockups/exercises. */
+
+.ex-kicker {
+  margin: 0 4px 10px;
+  color: var(--ink-muted);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.ex-note--alert {
+  margin: 0 4px 12px;
+  color: var(--mark);
+  font-weight: 600;
+}
+
+.ex-question {
+  margin: 18px 4px 12px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+/* First thing under the kicker (no passage or source card above it) */
+.ex-kicker + .ex-question {
+  margin-top: 4px;
+}
+
+.ex-line {
+  display: block;
+}
+
+.ex-question__num {
+  color: var(--accent);
+}
+
+/* "___" of a prompt */
+.gap {
+  display: inline-block;
+  min-width: 72px;
+  border-bottom: 2px solid var(--ink-muted);
+}
+
+/* ---------- Passages ---------- */
+
+.passage {
+  position: relative;
+  padding: 16px 16px 0;
+}
+
+.passage__title {
+  color: var(--accent);
+  font-size: 1.0625rem;
+  font-weight: 700;
+}
+
+.passage__text {
+  margin-top: 8px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.passage__text p + p {
+  margin-top: 10px;
+}
+
+.passage--clamped .passage__text {
+  max-height: 212px;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(#000 70%, transparent);
+  mask-image: linear-gradient(#000 70%, transparent);
+}
+
+/* Expanded: the passage scrolls on its own, so the question below stays within reach */
+.passage--open .passage__text,
+.cloze .passage__text {
+  scrollbar-width: thin;
+  scrollbar-color: var(--divider) transparent;
+}
+
+.passage--open .passage__text {
+  max-height: min(52dvh, 460px);
+  padding-bottom: 12px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.passage__toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: calc(100% + 32px);
+  min-height: 48px;
+  margin: 4px -16px 0;
+  color: var(--accent);
+  font-weight: 600;
+  background: none;
+  border: 0;
+  border-top: 1px solid var(--divider);
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+}
+
+/* Cloze: a card that scrolls on its own, the current blank in the middle */
+
+.cloze {
+  padding-bottom: 0;
+}
+
+.cloze .passage__text {
+  max-height: 318px;
+  padding-bottom: 14px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-mask-image: linear-gradient(#000 82%, transparent);
+  mask-image: linear-gradient(#000 82%, transparent);
+}
+
+.blank {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 4px;
+  padding: 0 8px;
+  font-weight: 600;
+  white-space: nowrap;
+  border-radius: 8px;
+}
+
+.blank__n {
+  color: var(--ink-muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.blank--empty {
+  min-width: 64px;
+  color: var(--ink-muted);
+  border-bottom: 2px solid var(--field-border);
+  border-radius: 0;
+}
+
+.blank--right {
+  color: var(--success);
+  background: var(--success-soft);
+}
+
+.blank--wrong {
+  background: var(--mark-soft);
+}
+
+.blank__fix {
+  color: var(--mark);
+  font-family: var(--font-hand);
+  font-size: 1.125em;
+  font-weight: 400;
+}
+
+.blank--current {
+  box-shadow: 0 0 0 2px var(--accent);
+}
+
+.blank--current.blank--empty {
+  min-width: 72px;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-bottom: 0;
+  border-radius: 8px;
+}
+
+.choices--grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.choices--grid .choice {
+  padding-right: 16px;
+  text-align: center;
+}
+
+.choices--grid .choice__tick {
+  right: 6px;
+  width: 26px;
+  height: 26px;
+  margin-top: -13px;
+}
+
+/* ---------- Examples of a writing section ---------- */
+
+.examples {
+  margin-bottom: 12px;
+}
+
+.examples__toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 52px;
+  padding: 8px 14px;
+  text-align: left;
+  background: none;
+  border: 0;
+  border-radius: var(--radius-lg);
+}
+
+.examples__title {
+  flex: 1;
+  font-weight: 600;
+}
+
+.examples__toggle > svg {
+  flex: none;
+  color: var(--ink-muted);
+}
+
+.examples__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0 16px 14px;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+.examples__list[hidden] {
+  display: none;
+}
+
+/* ---------- Rewrite ---------- */
+
+.source {
+  padding: 14px 16px;
+}
+
+.source__label {
+  color: var(--ink-muted);
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+.source__text {
+  margin-top: 4px;
+  font-size: 1.0625rem;
+  line-height: 1.5;
+}
+
+.answer-box {
+  display: block;
+  margin-top: 14px;
+  padding: 14px 16px;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  background: var(--btn-ghost-bg);
+  border: 2px solid var(--btn-ghost-border);
+  border-radius: 16px;
+}
+
+.answer-box__prefix,
+.answer-box__suffix {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.answer-box .struck {
+  display: inline;
+}
+
+.answer-box--right {
+  background: linear-gradient(var(--success-soft), var(--success-soft)), var(--glass-solid);
+  border-color: var(--success);
+}
+
+.answer-box__tick {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  margin-left: 6px;
+  vertical-align: -6px;
+}
+
+.answer-box--edit {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.rewrite-form__field {
+  display: block;
+  width: 100%;
+  min-height: 92px;
+  padding: 10px 12px;
+  color: var(--ink);
+  font: inherit;
+  font-size: 1.125rem; /* >= 16px: avoids the iOS focus zoom */
+  line-height: 1.5;
+  background: var(--field-bg);
+  border: 1.5px solid var(--field-border);
+  border-radius: 12px;
+  resize: vertical;
+  appearance: none;
+}
+
+.rewrite-form__field:focus {
+  border-color: var(--accent);
+  outline: 2px solid var(--focus);
+  outline-offset: 1px;
+}
+
+.rewrite-form .btn {
+  width: 100%;
+  min-height: 52px;
+  margin-top: 12px;
+}
+
+.fix {
+  margin-top: 6px;
+  padding: 0 4px 0 16px;
+  color: var(--mark);
+  font-family: var(--font-hand);
+  font-size: 1.375rem;
+  line-height: 1.3;
+  transform: rotate(-1deg);
+  transform-origin: left center;
+}
+
+.fix__prefix {
+  opacity: 0.7;
+}
+
+.session__bar .btn--self {
+  flex: 0 0 auto;
+  padding-inline: 16px;
+}
+
+/* ---------- Explanation ---------- */
+
+.explain {
+  margin-top: 16px;
+  padding: 14px 16px;
+}
+
+.explain__head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.explain__text {
+  margin-top: 8px;
+  line-height: 1.55;
+  white-space: pre-line;
+}
+
+.explain__why {
+  margin-top: 10px;
+  padding-top: 10px;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  border-top: 1px solid var(--divider);
+}
+
+.explain__alt {
+  margin-top: 8px;
+  color: var(--ink-muted);
+  font-size: 0.9375rem;
+}
+
+.explain__alt strong {
+  color: var(--ink);
+}
+
+/* ---------- Resume prompt ---------- */
+
+.ex-continue .btn--ghost {
+  margin-top: 10px;
+}
+
+/* ---------- Summary ---------- */
+
+.ex-page--bar {
+  padding-bottom: calc(100px + env(safe-area-inset-bottom));
+}
+
+.ex-hero .icon-badge + .ex-hero__score {
+  margin-top: 14px;
+}
+
+.sum-row {
+  display: grid;
+  grid-template-columns: 1fr 64px 48px;
+  align-items: center;
+  gap: 12px;
+  min-height: 52px;
+  padding: 8px 16px;
+}
+
+.sum-row__name {
+  min-width: 0;
+  font-size: 0.9375rem;
+  font-weight: 500;
+}
+
+.sum-row__bar {
+  height: 8px;
+  overflow: hidden;
+  background: var(--tint);
+  border-radius: 999px;
+}
+
+.sum-row__bar > span {
+  display: block;
+  width: calc(var(--p, 0) * 100%);
+  height: 100%;
+  background: linear-gradient(90deg, var(--btn-primary), var(--accent-2));
+  border-radius: 999px;
+}
+
+.sum-row__score {
+  color: var(--ink-muted);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.sum-row__score strong {
+  color: var(--ink);
+}
+
+button.ex-row {
+  width: 100%;
+  color: inherit;
+  text-align: left;
+  background: none;
+  border: 0;
+}
+
+.ex-num--wrong {
+  color: var(--mark);
+  background: var(--mark-soft);
+}
+
+.ex-row__name--clip {
+  display: block;
+  overflow: hidden;
+  font-weight: 500;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

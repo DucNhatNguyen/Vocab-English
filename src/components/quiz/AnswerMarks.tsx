@@ -55,7 +55,12 @@ export function StruckText({ children }: { children: string }) {
 
     function measure() {
       if (!el) return
-      const origin = el.getBoundingClientRect()
+      // The strikes are positioned against the element's containing block. For an inline element
+      // that wraps (rewrite answers flow after their prefix) that is anchored at its first line box,
+      // not at the bounding box of every line.
+      const boxes = el.getClientRects()
+      if (boxes.length === 0) return
+      const origin = { left: boxes[0].left, top: boxes[0].top }
       const range = document.createRange()
       // Only the text node: the strike <svg>s inside `el` would otherwise be measured as lines
       const text = el.firstChild

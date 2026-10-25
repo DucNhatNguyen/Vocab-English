@@ -3,6 +3,8 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router'
 import DeckDetail from '../pages/DeckDetail.tsx'
 import Decks from '../pages/Decks.tsx'
 import Exercises from '../pages/Exercises.tsx'
+import ExerciseRun from '../pages/exercises/ExerciseRun.tsx'
+import ExerciseSet from '../pages/exercises/ExerciseSet.tsx'
 import Home from '../pages/Home.tsx'
 import Install from '../pages/Install.tsx'
 import Learn from '../pages/Learn.tsx'
@@ -27,6 +29,8 @@ import '../pages/learn/learn.css'
 import '../pages/review/review.css'
 import '../pages/my-words/my-words.css'
 import '../pages/self-study/self-study.css'
+import '../pages/exercises/exercises.css'
+import '../pages/exercises/run/run.css'
 import '../pages/home/home.css'
 import '../pages/install/install.css'
 import '../pages/stats/stats.css'
@@ -52,6 +56,9 @@ export default function App() {
                 <Route path="search" element={<Search />} />
                 <Route path="tu-hoc" element={<SelfStudy />} />
                 <Route path="bai-tap" element={<Exercises />} />
+                <Route path="bai-tap/cau-sai" element={<ExerciseRun retry />} />
+                <Route path="bai-tap/:setId" element={<ExerciseSet />} />
+                <Route path="bai-tap/:setId/lam" element={<ExerciseRun />} />
                 <Route path="my-words" element={<Navigate to="/tu-hoc" replace />} />
                 <Route path="my-words/new" element={<MyWordForm />} />
                 <Route path="my-words/:wordId/edit" element={<MyWordForm />} />

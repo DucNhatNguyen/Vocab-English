@@ -14,7 +14,7 @@ interface ChoiceQuestionProps {
    * Runs inside the click handler of the chosen option, i.e. inside the user gesture, so it is
    * the place to pronounce the word or play a sound (iOS blocks both outside a gesture).
    */
-  onAnswer: (correct: boolean) => void
+  onAnswer: (correct: boolean, chosenId: string) => void
   /** "Tiếp" pressed after the feedback. */
   onNext: () => void
   nextLabel?: string
@@ -26,6 +26,12 @@ interface ChoiceQuestionProps {
   aside?: ReactNode
   /** Extra content under the verdict once answered, e.g. the word card of a review. */
   reveal?: ReactNode
+  /** Two columns instead of a list (short options, e.g. the words of a cloze). */
+  grid?: boolean
+  /** Starts in the answered state with this option picked (read-only review of an earlier answer). */
+  initialChosenId?: string
+  /** Replaces the "Tiếp" bar, e.g. a "Quay lại" bar of a review. */
+  footer?: ReactNode
 }
 
 /**
@@ -43,8 +49,11 @@ export default function ChoiceQuestion({
   hint,
   aside,
   reveal,
+  grid = false,
+  initialChosenId,
+  footer,
 }: ChoiceQuestionProps) {
-  const [chosenId, setChosenId] = useState<string | null>(null)
+  const [chosenId, setChosenId] = useState<string | null>(initialChosenId ?? null)
   const answered = chosenId !== null
   const correct = chosenId === correctId
   const answerLabel = options.find((o) => o.id === correctId)?.label ?? ''
@@ -52,12 +61,12 @@ export default function ChoiceQuestion({
   function choose(id: string) {
     if (answered) return
     setChosenId(id)
-    onAnswer(id === correctId)
+    onAnswer(id === correctId, id)
   }
 
   return (
     <>
-      <ul className="choices">
+      <ul className={grid ? "choices choices--grid" : "choices"}>
         {options.map((option) => {
           const picked = option.id === chosenId
           const isAnswer = option.id === correctId
@@ -96,7 +105,7 @@ export default function ChoiceQuestion({
       />
       {answered && reveal}
 
-      <NextFooter show={answered} label={nextLabel} correct={correct} onNext={onNext} />
+      {footer ?? <NextFooter show={answered} label={nextLabel} correct={correct} onNext={onNext} />}
     </>
   )
 }

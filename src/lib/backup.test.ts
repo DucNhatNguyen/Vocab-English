@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { DEFAULT_SETTINGS } from '../db/settings.ts'
-import type { CardProgress, CustomWord, StudyLog } from '../db/types.ts'
+import type { CardProgress, CustomWord, ExerciseAttempt, ExerciseResult, StudyLog } from '../db/types.ts'
 import {
   backupFileName,
   buildBackup,
@@ -39,6 +39,36 @@ const customWord: CustomWord = {
 
 const log: StudyLog = { id: 1, date: '2026-10-24', newLearned: 5, reviewed: 3, correct: 7, wrong: 1 }
 
+const attempt: ExerciseAttempt = {
+  id: 3,
+  setId: 'practice-test-01',
+  sectionId: 'pt01-p2c',
+  startedAt: '2026-10-25T08:00:00.000Z',
+  updatedAt: '2026-10-25T08:05:00.000Z',
+  finishedAt: '2026-10-25T08:06:00.000Z',
+  answers: {
+    'pt01-q46': { value: 'a funny film', correct: true, selfMarked: true },
+    'pt01-q47': { value: 2, correct: false },
+  },
+}
+
+const result: ExerciseResult = {
+  questionId: 'pt01-q46',
+  setId: 'practice-test-01',
+  value: 'a funny film',
+  correct: true,
+  selfMarked: true,
+  answeredAt: '2026-10-25T08:05:00.000Z',
+}
+
+const wrongResult: ExerciseResult = {
+  questionId: 'wp01-q1',
+  setId: 'writing-practice',
+  value: 1,
+  correct: false,
+  answeredAt: '2026-10-25T08:07:00.000Z',
+}
+
 function sampleData(): BackupData {
   return {
     progress: [
@@ -47,6 +77,8 @@ function sampleData(): BackupData {
     ],
     customWords: [customWord],
     studyLogs: [log],
+    exerciseAttempts: [structuredClone(attempt)],
+    exerciseResults: [{ ...result }, { ...wrongResult }],
     settings: {
       ...DEFAULT_SETTINGS,
       reminders: { ...DEFAULT_SETTINGS.reminders },
@@ -75,15 +107,18 @@ function expectRejected(file: unknown, message?: RegExp) {
 describe('building', () => {
   it('wraps the data with app id, format version and timestamp', () => {
     const file = buildBackup(sampleData(), new Date('2026-10-24T10:00:00Z'))
-    expect(file).toMatchObject({ app: 'tu-ngay', formatVersion: 1, exportedAt: '2026-10-24T10:00:00.000Z' })
+    expect(file).toMatchObject({ app: 'tu-ngay', formatVersion: 2, exportedAt: '2026-10-24T10:00:00.000Z' })
   })
 
   it('names the file after the local date', () => {
     expect(backupFileName(new Date(2026, 9, 5, 23, 59))).toBe('tu-ngay-sao-luu-2026-10-05.json')
   })
 
-  it('describes the data', () => {
-    expect(describeBackupData(sampleData())).toBe('1 từ đã học, 1 từ của tôi, 1 ngày học')
+  it('describes the data, with the exercise answers when there are some', () => {
+    expect(describeBackupData(sampleData())).toBe('1 từ đã học, 1 từ của tôi, 1 ngày học, 2 câu bài tập đã làm')
+    expect(describeBackupData({ ...sampleData(), exerciseResults: [] })).toBe(
+      '1 từ đã học, 1 từ của tôi, 1 ngày học',
+    )
   })
 })
 
@@ -99,6 +134,8 @@ describe('parseBackup', () => {
     file.data.progress = []
     file.data.customWords = []
     file.data.studyLogs = []
+    file.data.exerciseAttempts = []
+    file.data.exerciseResults = []
     expect(parseBackup(JSON.stringify(file)).ok).toBe(true)
   })
 
@@ -127,7 +164,7 @@ describe('parseBackup', () => {
   })
 
   it('rejects a newer format with a clear message, and invalid versions', () => {
-    expectRejected({ ...sampleFile(), formatVersion: 2 }, /mới hơn/)
+    expectRejected({ ...sampleFile(), formatVersion: 3 }, /mới hơn/)
     expectRejected({ ...sampleFile(), formatVersion: '1' }, /phiên bản/)
     expectRejected({ ...sampleFile(), formatVersion: 0 }, /phiên bản/)
     expectRejected({ ...sampleFile(), formatVersion: 1.5 }, /phiên bản/)
@@ -137,11 +174,46 @@ describe('parseBackup', () => {
     const noData = sampleFile()
     delete noData.data
     expectRejected(noData, /data/)
-    for (const key of ['progress', 'customWords', 'studyLogs']) {
+    for (const key of ['progress', 'customWords', 'studyLogs', 'exerciseAttempts', 'exerciseResults']) {
       const file = sampleFile()
       file.data[key] = {}
       expectRejected(file, new RegExp(key))
+      delete file.data[key]
+      expectRejected(file, new RegExp(key))
     }
+  })
+
+  describe('a version 1 file', () => {
+    function v1File(): Loose {
+      const file = sampleFile()
+      file.formatVersion = 1
+      delete file.data.exerciseAttempts
+      delete file.data.exerciseResults
+      return file
+    }
+
+    it('is accepted, with empty exercise tables', () => {
+      const parsed = parseBackup(JSON.stringify(v1File()))
+      expect(parsed.ok).toBe(true)
+      if (parsed.ok) {
+        expect(parsed.data.exerciseAttempts).toEqual([])
+        expect(parsed.data.exerciseResults).toEqual([])
+        expect(parsed.data.progress).toEqual(sampleData().progress)
+      }
+    })
+
+    it('still rejects exercise tables that are present but not lists', () => {
+      const file = v1File()
+      file.data.exerciseResults = {}
+      expectRejected(file, /exerciseResults/)
+    })
+
+    it('reads exercise tables if a version 1 file happens to have them', () => {
+      const file = v1File()
+      file.data.exerciseResults = [{ ...result }]
+      const parsed = parseBackup(JSON.stringify(file))
+      expect(parsed.ok && parsed.data.exerciseResults).toEqual([result])
+    })
   })
 
   describe('progress', () => {
@@ -242,6 +314,113 @@ describe('parseBackup', () => {
       const file = sampleFile()
       delete file.data.studyLogs[0].id
       expect(parseBackup(JSON.stringify(file)).ok).toBe(true)
+    })
+  })
+
+  describe('exercise attempts', () => {
+    it('round-trips every field, including optional ones and mixed answer values', () => {
+      const parsed = parseBackup(serializeBackup(buildBackup(sampleData())))
+      expect(parsed.ok && parsed.data.exerciseAttempts).toEqual([attempt])
+    })
+
+    it('accepts an open whole-set attempt without id, sectionId or finishedAt', () => {
+      const open = {
+        setId: 'grammar-practice-01',
+        startedAt: '2026-10-25T08:00:00Z',
+        updatedAt: '2026-10-25T08:01:00Z',
+        answers: {},
+      }
+      const file = sampleFile()
+      file.data.exerciseAttempts = [open]
+      const parsed = parseBackup(JSON.stringify(file))
+      expect(parsed.ok && parsed.data.exerciseAttempts).toEqual([open])
+    })
+
+    it('drops unknown fields, and a false selfMarked', () => {
+      const file = sampleFile()
+      file.data.exerciseAttempts[0].mood = 'happy'
+      file.data.exerciseAttempts[0].answers['pt01-q47'].selfMarked = false
+      file.data.exerciseAttempts[0].answers['pt01-q47'].extra = 1
+      const parsed = parseBackup(JSON.stringify(file))
+      expect(parsed.ok).toBe(true)
+      if (parsed.ok) {
+        expect(parsed.data.exerciseAttempts[0]).not.toHaveProperty('mood')
+        expect(parsed.data.exerciseAttempts[0].answers['pt01-q47']).toEqual({ value: 2, correct: false })
+      }
+    })
+
+    it('drops attempts of a set that is not in the catalog, keeping the rest', () => {
+      const file = sampleFile()
+      file.data.exerciseAttempts.push({ ...file.data.exerciseAttempts[0], id: 9, setId: 'practice-test-99' })
+      const parsed = parseBackup(JSON.stringify(file))
+      expect(parsed.ok && parsed.data.exerciseAttempts.map((a) => a.id)).toEqual([3])
+    })
+
+    it.each([
+      ['missing setId', { setId: undefined }],
+      ['empty sectionId', { sectionId: '' }],
+      ['bad startedAt', { startedAt: 'yesterday' }],
+      ['missing updatedAt', { updatedAt: undefined }],
+      ['bad finishedAt', { finishedAt: 5 }],
+      ['zero id', { id: 0 }],
+      ['answers not an object', { answers: [] }],
+      ['answer that is not a record', { answers: { q: 'x' } }],
+      ['answer without correct', { answers: { q: { value: 1 } } }],
+      ['answer with a boolean value', { answers: { q: { value: true, correct: true } } }],
+      ['non-boolean selfMarked', { answers: { q: { value: 1, correct: true, selfMarked: 'yes' } } }],
+    ])('rejects %s', (_name, patch) => {
+      const file = sampleFile()
+      Object.assign(file.data.exerciseAttempts[0], patch)
+      expectRejected(file)
+    })
+
+    it('rejects a malformed attempt even when its set is unknown', () => {
+      const file = sampleFile()
+      Object.assign(file.data.exerciseAttempts[0], { setId: 'gone', startedAt: 'bad' })
+      expectRejected(file, /startedAt/)
+    })
+
+    it('rejects duplicate ids and records that are not objects', () => {
+      const dup = sampleFile()
+      dup.data.exerciseAttempts.push({ ...dup.data.exerciseAttempts[0] })
+      expectRejected(dup, /trùng/)
+      const junk = sampleFile()
+      junk.data.exerciseAttempts.push('x')
+      expectRejected(junk)
+    })
+  })
+
+  describe('exercise results', () => {
+    it('round-trips results, leaving out selfMarked when it is not set', () => {
+      const parsed = parseBackup(serializeBackup(buildBackup(sampleData())))
+      expect(parsed.ok && parsed.data.exerciseResults).toEqual([result, wrongResult])
+    })
+
+    it('drops results of a set that is not in the catalog, keeping the rest', () => {
+      const file = sampleFile()
+      file.data.exerciseResults.push({ ...result, questionId: 'old-q1', setId: 'removed-set' })
+      const parsed = parseBackup(JSON.stringify(file))
+      expect(parsed.ok && parsed.data.exerciseResults.map((r) => r.questionId)).toEqual(['pt01-q46', 'wp01-q1'])
+    })
+
+    it.each([
+      ['missing questionId', { questionId: undefined }],
+      ['empty setId', { setId: '' }],
+      ['bad answeredAt', { answeredAt: 'soon' }],
+      ['missing value', { value: undefined }],
+      ['null value', { value: null }],
+      ['non-boolean correct', { correct: 1 }],
+      ['non-boolean selfMarked', { selfMarked: 'yes' }],
+    ])('rejects %s', (_name, patch) => {
+      const file = sampleFile()
+      Object.assign(file.data.exerciseResults[0], patch)
+      expectRejected(file)
+    })
+
+    it('rejects duplicate question ids', () => {
+      const file = sampleFile()
+      file.data.exerciseResults.push({ ...file.data.exerciseResults[0] })
+      expectRejected(file, /trùng/)
     })
   })
 
