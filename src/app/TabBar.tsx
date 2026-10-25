@@ -1,4 +1,4 @@
-import { ClipboardList, GraduationCap, PencilLine, type LucideIcon } from 'lucide-react'
+import { ClipboardList, PencilLine, type LucideIcon } from 'lucide-react'
 import { m } from 'motion/react'
 import { Link, useLocation } from 'react-router'
 import { paths } from './paths.ts'
@@ -12,8 +12,7 @@ interface Tab {
 }
 
 const TABS: readonly Tab[] = [
-  { id: 'study', to: paths.home, label: 'Học', icon: GraduationCap },
-  { id: 'self', to: paths.selfStudy, label: 'Tự học', icon: PencilLine },
+  { id: 'words', to: paths.home, label: 'Từ của tôi', icon: PencilLine },
   { id: 'exercises', to: paths.exercises, label: 'Bài tập', icon: ClipboardList },
 ]
 
@@ -21,8 +20,8 @@ const TABS: readonly Tab[] = [
 const TILE_SPRING = { type: 'spring', stiffness: 500, damping: 40 } as const
 
 export default function TabBar() {
-  const { pathname, search } = useLocation()
-  const current = activeTab(pathname, search)
+  const { pathname } = useLocation()
+  const current = activeTab(pathname)
   return (
     <nav className="tabbar" aria-label="Điều hướng chính">
       {TABS.map((tab) => {

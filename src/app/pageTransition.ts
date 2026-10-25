@@ -11,7 +11,7 @@ export type TransitionKind = 'tab' | 'push' | 'pop'
 
 export type NavType = 'PUSH' | 'POP' | 'REPLACE'
 
-const TAB_ROOTS: readonly string[] = [paths.home, paths.selfStudy, paths.exercises]
+const TAB_ROOTS: readonly string[] = [paths.home, paths.exercises]
 
 function normalize(pathname: string): string {
   return pathname.length > 1 ? pathname.replace(/\/+$/, '') : pathname

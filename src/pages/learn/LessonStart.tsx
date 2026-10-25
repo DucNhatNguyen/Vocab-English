@@ -4,24 +4,9 @@ import { paths } from '../../app/paths.ts'
 import IconBadge from '../../components/IconBadge.tsx'
 import PageHeader from '../../components/PageHeader.tsx'
 import type { Word } from '../../data/types.ts'
-import { isCustomWordId } from '../../db/words.ts'
 
-/** "Bạn đã học hết ..." with a way to pick more decks. Shared by the start and summary screens. */
+/** "Bạn đã học hết từ của mình" with a way to add more. Shared by the start screen. */
 export function NothingLeft() {
-  return (
-    <div className="empty">
-      <IconBadge icon={CheckCheck} hue="green" size="lg" />
-      <p className="empty__title">Bạn đã học hết từ trong các bộ đang chọn</p>
-      <Link to={paths.decks} className="btn btn--primary">
-        <Plus size={20} aria-hidden="true" />
-        Chọn thêm bộ từ
-      </Link>
-    </div>
-  )
-}
-
-/** Tự học variant: the user has no unlearned own words left. */
-export function NothingLeftMine() {
   return (
     <div className="empty">
       <IconBadge icon={CheckCheck} hue="green" size="lg" />
@@ -38,30 +23,16 @@ interface LessonStartProps {
   /** Words of the next lesson; undefined while loading. */
   words: readonly Word[] | undefined
   dailyGoal: number
-  /** Tự học: only the user's own words. */
-  mine: boolean
   onStart: () => void
 }
 
-function describeSources(words: readonly Word[]): string {
-  const mine = words.filter((w) => isCustomWordId(w.id)).length
-  const parts = []
-  if (mine > 0) parts.push(`${mine} từ của tôi`)
-  if (words.length > mine) parts.push(`${words.length - mine} từ trong các bộ đang chọn`)
-  return parts.join(', ')
-}
-
-export default function LessonStart({ words, dailyGoal, mine, onStart }: LessonStartProps) {
+export default function LessonStart({ words, dailyGoal, onStart }: LessonStartProps) {
   return (
     <>
-      <PageHeader title={mine ? 'Học từ của bạn' : 'Học từ mới'} />
+      <PageHeader title="Học từ mới" />
       <div className="page">
         {words === undefined ? null : words.length === 0 ? (
-          mine ? (
-            <NothingLeftMine />
-          ) : (
-            <NothingLeft />
-          )
+          <NothingLeft />
         ) : (
           <>
             <section className="lesson-start__hero glass">
@@ -69,15 +40,9 @@ export default function LessonStart({ words, dailyGoal, mine, onStart }: LessonS
                 <span className="lesson-start__num">{words.length}</span>
                 <span className="lesson-start__unit">từ mới</span>
               </p>
-              <p className="lesson-start__sub">
-                {mine ? 'Từ bạn tự nhập, cũ trước mới sau.' : describeSources(words)}
-              </p>
+              <p className="lesson-start__sub">Từ bạn tự nhập, cũ trước mới sau.</p>
               {words.length < dailyGoal && (
-                <p className="lesson-start__sub">
-                  {mine
-                    ? `Chỉ còn ${words.length} từ của bạn chưa học.`
-                    : `Chỉ còn ${words.length} từ chưa học (mục tiêu mỗi ngày: ${dailyGoal} từ).`}
-                </p>
+                <p className="lesson-start__sub">Chỉ còn {words.length} từ của bạn chưa học.</p>
               )}
             </section>
 

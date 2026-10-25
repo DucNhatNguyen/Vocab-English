@@ -82,7 +82,7 @@ export default function MyWordForm() {
 
   if (!editing) return <WordForm />
   if (!isCustomWordId(wordId) || existing === null) {
-    return <NotFound message="Không tìm thấy từ" backTo={paths.selfStudy} />
+    return <NotFound message="Không tìm thấy từ" backTo={paths.home} />
   }
   // Loading: render only the shell so a valid word does not flash "not found"
   if (existing === undefined) return <PageHeader title="Sửa từ" backTo={paths.word(wordId)} />
@@ -197,7 +197,7 @@ function WordForm({ existing }: { existing?: Word }) {
         void navigate(paths.word(existing.id), { replace: true })
       } else {
         await createCustomWord(data)
-        void navigate(paths.selfStudy, { replace: true })
+        void navigate(paths.home, { replace: true })
       }
     } catch {
       setSaveFailed(true)
@@ -216,7 +216,7 @@ function WordForm({ existing }: { existing?: Word }) {
     <>
       <PageHeader
         title={existing ? 'Sửa từ' : 'Thêm từ'}
-        backTo={existing ? paths.word(existing.id) : paths.selfStudy}
+        backTo={existing ? paths.word(existing.id) : paths.home}
       />
       <form ref={formRef} className="page word-form" noValidate onSubmit={(e) => void save(e)}>
         <div className="glass word-form__card">

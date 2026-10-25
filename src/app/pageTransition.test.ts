@@ -18,13 +18,13 @@ const custom = (over: Partial<PageMotionCustom> = {}): PageMotionCustom => ({
 
 describe('classifyNavigation', () => {
   it('crossfades between tab roots', () => {
-    expect(classifyNavigation('/', '/tu-hoc', 'PUSH')).toBe('tab')
-    expect(classifyNavigation('/tu-hoc', '/bai-tap', 'PUSH')).toBe('tab')
+    expect(classifyNavigation('/', '/bai-tap', 'PUSH')).toBe('tab')
+    expect(classifyNavigation('/bai-tap', '/', 'PUSH')).toBe('tab')
     expect(classifyNavigation('/bai-tap', '/', 'POP')).toBe('tab')
   })
 
   it('treats a tab-bar tap from a deeper page as a tab change', () => {
-    expect(classifyNavigation('/words/hello', '/tu-hoc', 'PUSH')).toBe('tab')
+    expect(classifyNavigation('/words/hello', '/bai-tap', 'PUSH')).toBe('tab')
     expect(classifyNavigation('/stats', '/', 'REPLACE')).toBe('tab')
   })
 
@@ -36,25 +36,25 @@ describe('classifyNavigation', () => {
   it('pushes when drilling deeper', () => {
     expect(classifyNavigation('/', '/words/hello', 'PUSH')).toBe('push')
     expect(classifyNavigation('/', '/stats', 'PUSH')).toBe('push')
-    expect(classifyNavigation('/decks', '/decks/ielts', 'PUSH')).toBe('push')
+    expect(classifyNavigation('/bai-tap', '/bai-tap/practice-test-01', 'PUSH')).toBe('push')
     expect(classifyNavigation('/notebook', '/words/custom%3Aabc', 'PUSH')).toBe('push')
   })
 
   it('pops when going back from a deeper page', () => {
     expect(classifyNavigation('/words/hello', '/', 'POP')).toBe('pop')
-    expect(classifyNavigation('/decks/ielts', '/decks', 'POP')).toBe('pop')
+    expect(classifyNavigation('/bai-tap/practice-test-01', '/bai-tap', 'POP')).toBe('pop')
     expect(classifyNavigation('/words/a', '/words/b', 'POP')).toBe('pop')
   })
 
   it('pushes on the forward button', () => {
-    expect(classifyNavigation('/decks', '/decks/ielts', 'POP')).toBe('push')
+    expect(classifyNavigation('/bai-tap', '/bai-tap/practice-test-01', 'POP')).toBe('push')
     expect(classifyNavigation('/', '/stats', 'POP')).toBe('push')
   })
 
   it('reads a replace to a shallower page as back, otherwise as push', () => {
-    expect(classifyNavigation('/words/custom%3Aabc', '/my-words', 'REPLACE')).toBe('pop')
     // landing on a tab root after a replace (e.g. deleting an own word) crossfades
-    expect(classifyNavigation('/words/custom%3Aabc', '/tu-hoc', 'REPLACE')).toBe('tab')
+    expect(classifyNavigation('/words/custom%3Aabc', '/', 'REPLACE')).toBe('tab')
+    expect(classifyNavigation('/words/custom%3Aabc', '/stats', 'REPLACE')).toBe('pop')
     expect(classifyNavigation('/my-words/new', '/words/x', 'REPLACE')).toBe('push')
   })
 })
@@ -66,9 +66,9 @@ describe('sectionKey / isTabRoot', () => {
     expect(isTabRoot('/bai-tap/')).toBe(true)
   })
 
-  it('has three tab roots: home, Tự học and Bài tập', () => {
+  it('has two tab roots: home and Bài tập', () => {
     expect(isTabRoot('/')).toBe(true)
-    expect(isTabRoot('/tu-hoc')).toBe(true)
+    expect(isTabRoot('/tu-hoc')).toBe(false)
     expect(isTabRoot('/bai-tap/')).toBe(true)
     expect(isTabRoot('/notebook')).toBe(false)
     expect(isTabRoot('/learn')).toBe(false)

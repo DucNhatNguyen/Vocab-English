@@ -1,9 +1,8 @@
-/* Tự học: glass action card, then "Thêm từ" and the user's word list. */
+/* Own-words home: glass action card with the goal meter; the rest lives in home.css. */
 
 .self-study__hero {
   display: grid;
   gap: 14px;
-  margin-top: 16px;
   padding: 20px;
 }
 
@@ -24,11 +23,18 @@
   font-variant-numeric: tabular-nums;
 }
 
-.self-study__add {
-  width: 100%;
-  margin-top: 16px;
+.self-study__goal {
+  color: var(--ink-muted);
+  font-size: 0.9375rem;
+  font-variant-numeric: tabular-nums;
 }
 
-.self-study__label {
-  margin: 24px 4px 8px;
+.self-study__next {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.self-study__next strong {
+  white-space: nowrap; /* date and count wrap together */
 }

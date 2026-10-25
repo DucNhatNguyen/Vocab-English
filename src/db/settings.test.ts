@@ -1,7 +1,7 @@
 import 'fake-indexeddb/auto'
 import { afterAll, beforeEach, describe, expect, it } from 'vitest'
 import { db } from './db.ts'
-import { DEFAULT_SETTINGS, getSettings, toggleActiveDeck, updateSettings } from './settings.ts'
+import { DEFAULT_SETTINGS, getSettings, updateSettings } from './settings.ts'
 
 beforeEach(async () => {
   await db.delete()
@@ -72,27 +72,5 @@ describe('settings', () => {
     expect(DEFAULT_SETTINGS.activeDeckIds).toEqual(['giao-tiep-hang-ngay'])
     expect(DEFAULT_SETTINGS.reminders.morning).toBe(false)
     expect((await getSettings()).activeDeckIds).toEqual(['giao-tiep-hang-ngay'])
-  })
-
-  describe('toggleActiveDeck', () => {
-    it('appends a deck that is not active yet and reports it active', async () => {
-      expect(await toggleActiveDeck('du-lich')).toBe(true)
-      expect((await getSettings()).activeDeckIds).toEqual(['giao-tiep-hang-ngay', 'du-lich'])
-    })
-
-    it('removes an active deck, also allowing an empty list', async () => {
-      expect(await toggleActiveDeck('giao-tiep-hang-ngay')).toBe(false)
-      expect((await getSettings()).activeDeckIds).toEqual([])
-      expect(await toggleActiveDeck('giao-tiep-hang-ngay')).toBe(true)
-      expect((await getSettings()).activeDeckIds).toEqual(['giao-tiep-hang-ngay'])
-    })
-
-    it('leaves other settings untouched', async () => {
-      await updateSettings({ dailyGoal: 20, soundEffects: false })
-      await toggleActiveDeck('du-lich')
-      const settings = await getSettings()
-      expect(settings.dailyGoal).toBe(20)
-      expect(settings.soundEffects).toBe(false)
-    })
   })
 })

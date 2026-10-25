@@ -13,13 +13,11 @@ interface LessonSummaryProps {
   hasMore: boolean
   /** How many words the next lesson would have. */
   nextCount: number
-  /** Tự học: own words only, so the exits go back to the Tự học tab. */
-  mine: boolean
   onMore: () => void
 }
 
 /** Result of a finished lesson: what was learned, when the first review is, what next. */
-export default function LessonSummary({ words, hasMore, nextCount, mine, onMore }: LessonSummaryProps) {
+export default function LessonSummary({ words, hasMore, nextCount, onMore }: LessonSummaryProps) {
   return (
     <>
       <PageHeader title="Hoàn thành bài học" />
@@ -42,21 +40,18 @@ export default function LessonSummary({ words, hasMore, nextCount, mine, onMore 
           {hasMore && (
             <button type="button" className="btn btn--primary" onClick={onMore}>
               <Plus size={20} aria-hidden="true" />
-              {mine ? `Học tiếp ${nextCount} từ` : 'Học thêm'}
+              Học tiếp {nextCount} từ
             </button>
           )}
-          <Link
-            to={mine ? paths.selfStudy : paths.home}
-            className={hasMore ? 'btn btn--ghost' : 'btn btn--primary'}
-          >
-            {mine ? 'Về Tự học' : 'Về trang chủ'}
+          <Link to={paths.home} className={hasMore ? 'btn btn--ghost' : 'btn btn--primary'}>
+            Về trang chủ
           </Link>
         </div>
         {!hasMore && (
           <p className="hint muted">
-            {mine ? 'Bạn đã học hết từ của mình.' : 'Bạn đã học hết từ trong các bộ đang chọn.'}{' '}
-            <Link to={mine ? paths.myWordNew() : paths.decks} className="text-link">
-              {mine ? 'Thêm từ mới' : 'Chọn thêm bộ từ'}
+            Bạn đã học hết từ của mình.{' '}
+            <Link to={paths.myWordNew()} className="text-link">
+              Thêm từ mới
             </Link>
           </p>
         )}

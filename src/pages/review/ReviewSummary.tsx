@@ -27,8 +27,6 @@ interface ReviewSummaryProps {
   /** Next review day when nothing is due any more (live from the database). */
   next: NextReview | null
   today: string
-  /** Tự học: the exit goes back to the Tự học tab. */
-  mine: boolean
   onMore: () => void
 }
 
@@ -57,7 +55,6 @@ export default function ReviewSummary({
   nextRoundSize,
   next,
   today,
-  mine,
   onMore,
 }: ReviewSummaryProps) {
   const up = items.filter((i) => i.correct && i.to > i.from)
@@ -106,11 +103,8 @@ export default function ReviewSummary({
               Ôn tiếp ({nextRoundSize} từ)
             </button>
           )}
-          <Link
-            to={mine ? paths.selfStudy : paths.home}
-            className={remaining > 0 ? 'btn btn--ghost' : 'btn btn--primary'}
-          >
-            {mine ? 'Về Tự học' : 'Về trang chủ'}
+          <Link to={paths.home} className={remaining > 0 ? 'btn btn--ghost' : 'btn btn--primary'}>
+            Về trang chủ
           </Link>
         </div>
         {remaining > 0 ? (

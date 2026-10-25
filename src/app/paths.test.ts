@@ -13,11 +13,12 @@ describe('paths', () => {
 
   it('leaves plain slugs readable', () => {
     expect(paths.word('thank-you')).toBe('/words/thank-you')
-    expect(paths.deck('ielts-moi-truong')).toBe('/decks/ielts-moi-truong')
   })
 
-  it('builds the "Từ của tôi" routes with encoded ids and prefill', () => {
-    expect(paths.myWords).toBe('/tu-hoc')
+  it('builds the own-word routes with encoded ids and prefill', () => {
+    expect(paths.home).toBe('/')
+    expect(paths.learn).toBe('/learn')
+    expect(paths.review).toBe('/review')
     expect(paths.myWordNew()).toBe('/my-words/new')
     expect(paths.myWordNew('ice cream & co')).toBe('/my-words/new?word=ice%20cream%20%26%20co')
     const url = paths.myWordEdit('custom:1234-abcd')

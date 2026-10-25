@@ -11,21 +11,11 @@ interface ReviewStartProps {
   /** Undefined while loading. */
   overview: ReviewOverview | undefined
   today: string
-  /** Tự học: reviewing only the user's own words. */
-  mine: boolean
   onStart: () => void
 }
 
 /** "Lượt ôn tiếp theo: <ngày>, X từ" or a pointer to learning when there is nothing to schedule. */
-function EmptyState({
-  overview,
-  today,
-  mine,
-}: {
-  overview: ReviewOverview
-  today: string
-  mine: boolean
-}) {
+function EmptyState({ overview, today }: { overview: ReviewOverview; today: string }) {
   const { next, learnedCount } = overview
   return (
     <>
@@ -45,15 +35,13 @@ function EmptyState({
         ) : (
           <p className="review-empty__text">
             {learnedCount === 0
-              ? mine
-                ? 'Bạn chưa học từ nào của mình. Học trước rồi quay lại ôn nhé.'
-                : 'Bạn chưa học từ nào. Học bài đầu tiên rồi quay lại ôn nhé.'
+              ? 'Bạn chưa học từ nào của mình. Học trước rồi quay lại ôn nhé.'
               : 'Các từ đã học đang được bỏ tick trong Sổ tay nên không có lượt ôn nào.'}
           </p>
         )}
       </section>
       <div className="review-empty__actions">
-        <Link to={mine ? paths.learnMine : paths.learn} className={next ? 'btn btn--ghost' : 'btn btn--primary'}>
+        <Link to={paths.learn} className={next ? 'btn btn--ghost' : 'btn btn--primary'}>
           <GraduationCap size={20} aria-hidden="true" />
           Học từ mới
         </Link>
@@ -62,13 +50,13 @@ function EmptyState({
   )
 }
 
-export default function ReviewStart({ overview, today, mine, onStart }: ReviewStartProps) {
+export default function ReviewStart({ overview, today, onStart }: ReviewStartProps) {
   return (
     <>
-      <PageHeader title={mine ? 'Ôn từ của tôi' : 'Ôn tập'} />
+      <PageHeader title="Ôn tập" />
       <div className="page">
         {overview === undefined ? null : overview.dueCount === 0 ? (
-          <EmptyState overview={overview} today={today} mine={mine} />
+          <EmptyState overview={overview} today={today} />
         ) : (
           <>
             <section className="lesson-start__hero glass">

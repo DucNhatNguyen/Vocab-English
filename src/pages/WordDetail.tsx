@@ -30,7 +30,7 @@ export default function WordDetail() {
     setDeleted(true) // hides the page so the vanished word does not flash "not found"
     try {
       await deleteCustomWord(wordId)
-      void navigate(paths.selfStudy, { replace: true })
+      void navigate(paths.home, { replace: true })
     } catch {
       setDeleted(false)
     }
@@ -39,7 +39,7 @@ export default function WordDetail() {
   if (deleted) return <PageHeader title="" />
   // Loading: render only the shell so a valid word does not flash "not found"
   const isCustom = isCustomWordId(wordId)
-  const backTo = isCustom ? paths.selfStudy : paths.home
+  const backTo = paths.home
   if (word === undefined) return <PageHeader title="" backTo={backTo} />
   if (word === null) return <NotFound message="Không tìm thấy từ" backTo={backTo} />
 

@@ -27,8 +27,6 @@ type Phase =
 /** New-word lesson: start screen -> word cards -> quick check -> summary. */
 export default function Learn() {
   const navigate = useNavigate()
-  // Only the user's own words are taught; the page copy is reworked with the pages
-  const mine = true
   const { dailyGoal } = useSettings()
   // Live: after a lesson is saved this becomes the next lesson (or empty)
   const upcoming = useLiveQuery(() => loadLessonWords())
@@ -62,11 +60,11 @@ export default function Learn() {
     )
   }
 
-  const leave = () => void navigate(mine ? paths.selfStudy : paths.home)
+  const leave = () => void navigate(paths.home)
 
   switch (phase.name) {
     case 'start':
-      return <LessonStart words={upcoming} dailyGoal={dailyGoal} mine={mine} onStart={start} />
+      return <LessonStart words={upcoming} dailyGoal={dailyGoal} onStart={start} />
     case 'cards':
       return (
         <LessonCards
@@ -100,7 +98,6 @@ export default function Learn() {
       return (
         <LessonSummary
           words={phase.words}
-          mine={mine}
           hasMore={(upcoming?.length ?? 0) > 0}
           nextCount={upcoming?.length ?? 0}
           onMore={() => setPhase({ name: 'start' })}

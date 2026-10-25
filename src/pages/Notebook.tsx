@@ -80,7 +80,7 @@ export default function Notebook() {
       <div className="page">
         {showControls && (
           <>
-            <p className="deck-summary">
+            <p className="notebook-summary">
               <strong>{counts.all}</strong> từ đã học · <strong>{counts.levels[MAX_LEVEL]}</strong> từ
               đã thuộc (cấp 5)
             </p>

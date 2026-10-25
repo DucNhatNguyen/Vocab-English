@@ -37,8 +37,6 @@ type Phase =
 /** "Ôn tập Thời điểm vàng": start screen -> rounds of up to 20 questions -> summary. */
 export default function Review() {
   const navigate = useNavigate()
-  // Only the user's own words are reviewed; the page copy is reworked with the pages
-  const mine = true
   // Live: answers move cards out of the due list, so this is also the data of the next round
   const data = useLiveQuery(() => loadReviewData())
   // `data.learned` holds own words only; the pool still has built-in words for distractors
@@ -136,7 +134,7 @@ export default function Review() {
     settle(again, remaining)
   }
 
-  const leave = () => void navigate(mine ? paths.selfStudy : paths.home)
+  const leave = () => void navigate(paths.home)
 
   switch (phase.name) {
     case 'start':
@@ -144,7 +142,6 @@ export default function Review() {
         <ReviewStart
           overview={overview}
           today={data?.today ?? localToday()}
-          mine={mine}
           onStart={startNextRound}
         />
       )
@@ -188,7 +185,6 @@ export default function Review() {
           nextRoundSize={Math.min(phase.remaining, REVIEW_ROUND_SIZE)}
           next={nextReview}
           today={data?.today ?? localToday()}
-          mine={mine}
           onMore={startNextRound}
         />
       )

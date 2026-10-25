@@ -1,11 +1,8 @@
 import { LazyMotion, MotionConfig } from 'motion/react'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router'
-import DeckDetail from '../pages/DeckDetail.tsx'
-import Decks from '../pages/Decks.tsx'
 import Exercises from '../pages/Exercises.tsx'
 import ExerciseRun from '../pages/exercises/ExerciseRun.tsx'
 import ExerciseSet from '../pages/exercises/ExerciseSet.tsx'
-import Home from '../pages/Home.tsx'
 import Install from '../pages/Install.tsx'
 import Learn from '../pages/Learn.tsx'
 import MyWordForm from '../pages/my-words/MyWordForm.tsx'
@@ -49,17 +46,16 @@ export default function App() {
           <DeepLinkGate>
             <Routes>
               <Route element={<AppLayout />}>
-                <Route index element={<Home />} />
-                <Route path="decks" element={<Decks />} />
-                <Route path="decks/:deckId" element={<DeckDetail />} />
+                <Route index element={<SelfStudy />} />
                 <Route path="words/:wordId" element={<WordDetail />} />
                 <Route path="search" element={<Search />} />
-                <Route path="tu-hoc" element={<SelfStudy />} />
+                <Route path="tu-hoc" element={<Navigate to="/" replace />} />
+                <Route path="decks/*" element={<Navigate to="/" replace />} />
                 <Route path="bai-tap" element={<Exercises />} />
                 <Route path="bai-tap/cau-sai" element={<ExerciseRun retry />} />
                 <Route path="bai-tap/:setId" element={<ExerciseSet />} />
                 <Route path="bai-tap/:setId/lam" element={<ExerciseRun />} />
-                <Route path="my-words" element={<Navigate to="/tu-hoc" replace />} />
+                <Route path="my-words" element={<Navigate to="/" replace />} />
                 <Route path="my-words/new" element={<MyWordForm />} />
                 <Route path="my-words/:wordId/edit" element={<MyWordForm />} />
                 <Route path="learn" element={<Learn />} />

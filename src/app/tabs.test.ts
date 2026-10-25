@@ -2,26 +2,25 @@ import { describe, expect, it } from 'vitest'
 import { activeTab } from './tabs.ts'
 
 describe('activeTab', () => {
-  it('Học owns home and everything reached from it', () => {
-    for (const p of ['/', '/learn', '/review', '/notebook', '/stats', '/decks', '/decks/x', '/search', '/settings', '/install', '/words/hello']) {
-      expect(activeTab(p, '')).toBe('study')
-    }
-  })
-  it('Tự học owns its tab, own-word pages and the self-study sessions', () => {
-    expect(activeTab('/tu-hoc', '')).toBe('self')
-    expect(activeTab('/my-words/new', '')).toBe('self')
-    expect(activeTab('/my-words/custom%3Aabc/edit', '')).toBe('self')
-    expect(activeTab('/words/custom%3Aabc', '')).toBe('self')
-    expect(activeTab('/learn', '?nguon=tu-hoc')).toBe('self')
-    expect(activeTab('/review', '?nguon=tu-hoc')).toBe('self')
-  })
-  it('Bài tập owns its tab', () => {
-    expect(activeTab('/bai-tap', '')).toBe('exercises')
-    expect(activeTab('/bai-tap/practice-test-01', '')).toBe('exercises')
-    expect(activeTab('/bai-tap/practice-test-01/lam', '?phan=pt01-p1a')).toBe('exercises')
-    expect(activeTab('/bai-tap/cau-sai', '?bo=practice-test-01')).toBe('exercises')
-  })
+  it.each([
+    ['/', 'words'],
+    ['/learn', 'words'],
+    ['/review', 'words'],
+    ['/notebook', 'words'],
+    ['/stats', 'words'],
+    ['/search', 'words'],
+    ['/my-words/new', 'words'],
+    ['/my-words/custom%3Aabc/edit', 'words'],
+    ['/words/custom%3Aabc', 'words'],
+    ['/settings', 'words'],
+    ['/bai-tap', 'exercises'],
+    ['/bai-tap/practice-test-01', 'exercises'],
+    ['/bai-tap/practice-test-01/lam', 'exercises'],
+    ['/bai-tap/cau-sai', 'exercises'],
+  ])('%s -> %s', (path, tab) => expect(activeTab(path)).toBe(tab))
+
   it('ignores a trailing slash', () => {
-    expect(activeTab('/tu-hoc/', '')).toBe('self')
+    expect(activeTab('/bai-tap/')).toBe('exercises')
+    expect(activeTab('/learn/')).toBe('words')
   })
 })

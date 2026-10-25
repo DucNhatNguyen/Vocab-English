@@ -44,68 +44,15 @@
   font-weight: 500;
 }
 
-/* Decks */
+/* Notebook summary line */
 
-.group + .group {
-  margin-top: 8px;
-}
-
-.group__title {
-  margin: 20px 4px 8px;
-  color: var(--ink-muted);
-  font-size: 0.8125rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.deck-row__main {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  min-width: 0;
-}
-
-.deck-row__name {
-  color: var(--accent);
-  font-weight: 600;
-}
-
-.deck-row__meta {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 2px 8px;
-}
-
-.deck-row__meta,
-.deck-row__count {
-  color: var(--ink-muted);
-  font-size: 0.8125rem;
-}
-
-.deck-row__count {
-  flex: none;
-  text-align: right;
-}
-
-.deck-row__count strong {
-  color: var(--ink);
-  font-size: 0.9375rem;
-}
-
-.deck-summary {
+.notebook-summary {
   margin: 0 4px 12px;
   color: var(--ink-muted);
   font-size: 0.9375rem;
 }
 
-.deck-toggle {
-  width: 100%;
-  margin-bottom: 4px;
-}
-
-.deck-summary strong {
+.notebook-summary strong {
   color: var(--ink);
 }
 

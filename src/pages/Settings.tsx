@@ -2,7 +2,6 @@ import {
   ChevronRight,
   Gauge,
   Info,
-  Library,
   Mic,
   Moon,
   Music,
@@ -22,7 +21,6 @@ import IconBadge, { type BadgeHue } from '../components/IconBadge.tsx'
 import PageHeader from '../components/PageHeader.tsx'
 import Segmented, { type SegmentedOption } from '../components/Segmented.tsx'
 import Switch from '../components/Switch.tsx'
-import { decks } from '../data/index.ts'
 import { updateSettings } from '../db/settings.ts'
 import type { Settings as SettingsData } from '../db/types.ts'
 import { playSfx, setSoundEffectsEnabled } from '../lib/sfx.ts'
@@ -163,7 +161,6 @@ export default function Settings() {
   // Loading: render only the shell so default values do not flash
   if (loading) return <PageHeader title="Cài đặt" />
 
-  const activeDecks = decks.filter((deck) => settings.activeDeckIds.includes(deck.id)).length
   const speechSupported = isSpeechSupported()
 
   function previewVoice() {
@@ -187,21 +184,13 @@ export default function Settings() {
         <Section title="Học tập">
           <ul className="sheet ruled">
             <SegmentedSetting
-              label="Mục tiêu mỗi ngày"
+              label="Số từ mỗi bài học"
               icon={Target}
               hue="blue"
               options={GOAL_OPTIONS}
               value={settings.dailyGoal}
               onChange={(dailyGoal) => void updateSettings({ dailyGoal })}
             />
-            <li>
-              <Link to={paths.decks} className="row">
-                <IconBadge icon={Library} hue="violet" size="sm" />
-                <span className="row__label">Chọn bộ từ đang học</span>
-                <span className="row__value">{activeDecks} bộ</span>
-                <ChevronRight size={18} className="row__chevron" aria-hidden="true" />
-              </Link>
-            </li>
           </ul>
         </Section>
 
