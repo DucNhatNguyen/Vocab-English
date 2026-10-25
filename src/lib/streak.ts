@@ -1,9 +1,9 @@
 import type { StudyLog } from '../db/types.ts'
 import { addDays } from './date.ts'
 
-/** A day counts for the streak when at least one lesson was finished or one review answered. */
-export function isStudyDay(log: Pick<StudyLog, 'newLearned' | 'reviewed'>): boolean {
-  return log.newLearned > 0 || log.reviewed > 0
+/** A day counts for the streak when a lesson was finished, a review answered or an exercise answered. */
+export function isStudyDay(log: Pick<StudyLog, 'newLearned' | 'reviewed' | 'exercises'>): boolean {
+  return log.newLearned > 0 || log.reviewed > 0 || (log.exercises ?? 0) > 0
 }
 
 export interface StreakInfo {

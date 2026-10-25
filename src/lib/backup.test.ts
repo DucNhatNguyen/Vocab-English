@@ -310,6 +310,29 @@ describe('parseBackup', () => {
       expectRejected(file)
     })
 
+    it('keeps the exercises counter, and accepts a log without it', () => {
+      const file = sampleFile()
+      file.data.studyLogs[0].exercises = 4
+      const withCounter = parseBackup(JSON.stringify(file))
+      expect(withCounter.ok && withCounter.data.studyLogs).toEqual([{ ...log, exercises: 4 }])
+
+      delete file.data.studyLogs[0].exercises
+      const without = parseBackup(JSON.stringify(file))
+      expect(without.ok && without.data.studyLogs).toEqual([log])
+      expect(without.ok && without.data.studyLogs[0]).not.toHaveProperty('exercises')
+    })
+
+    it.each([
+      ['negative', -1],
+      ['fractional', 1.5],
+      ['text', '3'],
+      ['null', null],
+    ])('rejects a %s exercises counter', (_name, exercises) => {
+      const file = sampleFile()
+      file.data.studyLogs[0].exercises = exercises
+      expectRejected(file, /"exercises" phải là số nguyên không âm/)
+    })
+
     it('accepts logs without ids', () => {
       const file = sampleFile()
       delete file.data.studyLogs[0].id

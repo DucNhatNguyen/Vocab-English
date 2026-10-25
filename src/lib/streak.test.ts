@@ -17,6 +17,12 @@ describe('isStudyDay', () => {
     expect(isStudyDay({ newLearned: 0, reviewed: 1 })).toBe(true)
     expect(isStudyDay({ newLearned: 0, reviewed: 0 })).toBe(false)
   })
+
+  it('counts a day with only exercise answers', () => {
+    expect(isStudyDay({ newLearned: 0, reviewed: 0, exercises: 3 })).toBe(true)
+    expect(isStudyDay({ newLearned: 0, reviewed: 0, exercises: 0 })).toBe(false)
+    expect(isStudyDay({ newLearned: 0, reviewed: 0 })).toBe(false)
+  })
 })
 
 describe('computeStreak', () => {

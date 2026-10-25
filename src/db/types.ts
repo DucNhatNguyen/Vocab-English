@@ -25,8 +25,9 @@ export interface StudyLog {
   date: string // "2026-10-24"
   newLearned: number
   reviewed: number
-  correct: number
-  wrong: number
+  correct: number // review answers only
+  wrong: number // review answers only
+  exercises?: number // exercise answers that day; absent on older logs
 }
 
 export interface Settings {

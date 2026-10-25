@@ -298,6 +298,7 @@ function parseStudyLogs(rows: unknown[], problems: Problems): StudyLog[] {
     const reviewed = count(row, 'reviewed', where, problems)
     const correct = count(row, 'correct', where, problems)
     const wrong = count(row, 'wrong', where, problems)
+    const exercises = row.exercises === undefined ? undefined : count(row, 'exercises', where, problems)
     const id = row.id
     if (id !== undefined) {
       if (typeof id !== 'number' || !Number.isInteger(id) || id < 1) {
@@ -318,6 +319,7 @@ function parseStudyLogs(rows: unknown[], problems: Problems): StudyLog[] {
       wrong: wrong!,
     }
     if (typeof id === 'number') log.id = id
+    if (exercises !== undefined) log.exercises = exercises
     out.push(log)
   })
   return out

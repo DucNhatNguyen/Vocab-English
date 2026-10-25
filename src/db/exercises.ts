@@ -1,5 +1,6 @@
 import { EXERCISE_CATALOG, isExerciseSetId } from '../data/exercises/catalog.ts'
 import type { ExerciseSet } from '../data/exercises/types.ts'
+import { toLocalDateString } from '../lib/date.ts'
 import { db } from './db.ts'
 import type { ExerciseAnswer, ExerciseAttempt, ExerciseResult } from './types.ts'
 
@@ -67,7 +68,8 @@ export async function restartAttempt(setId: string, sectionId?: string, now: Dat
 /**
  * Saves one answer. The latest result of the question is always written (it feeds "câu sai");
  * the attempt is updated too when `attemptId` is given (a "Làm lại câu sai" run passes null).
- * Answering the same question again overwrites the earlier answer.
+ * Answering the same question again overwrites the earlier answer. Every answer, retries
+ * included, also counts toward the streak: today's StudyLog gets `exercises += 1`.
  */
 export async function recordAnswer(
   attemptId: number | null,
@@ -80,7 +82,7 @@ export async function recordAnswer(
   const clean: ExerciseAnswer = { value: answer.value, correct: answer.correct }
   if (answer.selfMarked) clean.selfMarked = true
 
-  await db.transaction('rw', db.exerciseAttempts, db.exerciseResults, async () => {
+  await db.transaction('rw', db.exerciseAttempts, db.exerciseResults, db.studyLogs, async () => {
     if (attemptId !== null) {
       const attempt = await db.exerciseAttempts.get(attemptId)
       if (attempt) {
@@ -88,6 +90,11 @@ export async function recordAnswer(
       }
     }
     await db.exerciseResults.put({ ...clean, questionId, setId, answeredAt: at })
+
+    const date = toLocalDateString(now)
+    const log = await db.studyLogs.where('date').equals(date).first()
+    if (log) await db.studyLogs.update(log.id!, { exercises: (log.exercises ?? 0) + 1 })
+    else await db.studyLogs.add({ date, newLearned: 0, reviewed: 0, correct: 0, wrong: 0, exercises: 1 })
   })
 }
 

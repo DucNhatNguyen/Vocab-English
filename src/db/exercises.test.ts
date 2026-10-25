@@ -172,6 +172,34 @@ describe('recordAnswer', () => {
     expect(await db.exerciseAttempts.count()).toBe(0)
     expect(await db.exerciseResults.get('pt01-q9')).toBeDefined()
   })
+
+  it("bumps today's StudyLog.exercises on every answer, retries included", async () => {
+    const now = new Date(2026, 9, 25, 9, 0)
+    await recordAnswer(null, 'practice-test-01', 'pt01-q1', right, now)
+    await recordAnswer(null, 'practice-test-01', 'pt01-q1', wrong, now)
+    const logs = await db.studyLogs.toArray()
+    expect(logs).toHaveLength(1)
+    expect(logs[0]).toMatchObject({ date: '2026-10-25', exercises: 2, newLearned: 0, reviewed: 0, correct: 0, wrong: 0 })
+  })
+
+  it('adds to an existing log of the day without touching its review counters', async () => {
+    await db.studyLogs.add({ date: '2026-10-25', newLearned: 2, reviewed: 7, correct: 5, wrong: 2 })
+    const attempt = await startOrResumeAttempt('practice-test-01')
+    await recordAnswer(attempt.id!, 'practice-test-01', 'pt01-q1', right, new Date(2026, 9, 25, 23, 59))
+    const logs = await db.studyLogs.toArray()
+    expect(logs).toHaveLength(1)
+    expect(logs[0]).toMatchObject({ newLearned: 2, reviewed: 7, correct: 5, wrong: 2, exercises: 1 })
+  })
+
+  it('files the answer under the local date, one log per day', async () => {
+    await recordAnswer(null, 'practice-test-01', 'pt01-q1', right, new Date(2026, 9, 25, 23, 59))
+    await recordAnswer(null, 'practice-test-01', 'pt01-q2', right, new Date(2026, 9, 26, 0, 1))
+    const logs = await db.studyLogs.orderBy('date').toArray()
+    expect(logs.map((l) => [l.date, l.exercises])).toEqual([
+      ['2026-10-25', 1],
+      ['2026-10-26', 1],
+    ])
+  })
 })
 
 describe('getExerciseOverview', () => {
