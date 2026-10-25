@@ -16,7 +16,7 @@ import { Link } from 'react-router'
 import { paths } from '../app/paths.ts'
 import IconBadge from '../components/IconBadge.tsx'
 import LevelTicks from '../components/LevelTicks.tsx'
-import { loadHomeData, type HomeData } from '../db/stats.ts'
+import { loadSelfStudyData, type SelfStudyData } from '../db/stats.ts'
 import { formatDateVi, formatWeekdayDateVi, today as localToday } from '../lib/date.ts'
 import type { StreakInfo } from '../lib/streak.ts'
 import InstallBanner from './home/InstallBanner.tsx'
@@ -43,7 +43,7 @@ function streakNote({ current, longest, todayDone }: StreakInfo): string | null 
 }
 
 /** The main block: reviews due, nothing due (next review day), or the first lesson. */
-function ReviewBlock({ data }: { data: HomeData }) {
+function ReviewBlock({ data }: { data: SelfStudyData }) {
   const { overview, stats, lessonCount, today } = data
 
   if (stats.learned === 0) {
@@ -109,9 +109,10 @@ function ReviewBlock({ data }: { data: HomeData }) {
 }
 
 /** "Bài mới: N từ" with today's goal progress; a pointer to the decks when nothing is left. */
-function LessonLine({ data }: { data: HomeData }) {
-  const { lessonCount, hasActiveDecks, stats } = data
-  // Deck words only: Tự học words are not part of the daily goal
+function LessonLine({ data }: { data: SelfStudyData }) {
+  const { lessonCount, stats } = data
+  // Stand-in for the old "any deck selected" flag until the page is rewritten
+  const hasActiveDecks = data.totalCount > 0
   const newLearned = data.newToday
   const { goal } = stats.today
   const progress = (
@@ -218,7 +219,7 @@ function Scores({ levels }: { levels: readonly number[] }) {
 /** Home dashboard: date and streak, what to do now (review / lesson), "Sổ điểm". */
 export default function Home() {
   // Live: finishing a lesson or a review round updates every number here
-  const data = useLiveQuery(() => loadHomeData())
+  const data = useLiveQuery(() => loadSelfStudyData())
   const today = data?.today ?? localToday()
   const note = data ? streakNote(data.stats.streak) : null
 

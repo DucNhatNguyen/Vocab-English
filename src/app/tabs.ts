@@ -1,8 +1,10 @@
-import { isSelfStudySearch } from '../lib/studySource.ts'
 import { paths } from './paths.ts'
 
 /** The three tabs of the tab bar. */
 export type TabId = 'study' | 'self' | 'exercises'
+
+/** `?nguon=tu-hoc` (the old self-study variant of Learn / Review); Task 3 removes the tabs this feeds. */
+const isSelfStudySearch = (search: string) => new URLSearchParams(search).get('nguon') === 'tu-hoc'
 
 function normalize(pathname: string): string {
   return pathname.length > 1 ? pathname.replace(/\/+$/, '') : pathname

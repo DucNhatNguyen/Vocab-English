@@ -3,7 +3,7 @@ import { afterAll, beforeEach, describe, expect, it } from 'vitest'
 import { createCustomWord } from './customWords.ts'
 import { db } from './db.ts'
 import { updateSettings } from './settings.ts'
-import { loadHomeData, loadSelfStudyData, loadStats } from './stats.ts'
+import { loadSelfStudyData, loadStats } from './stats.ts'
 import type { CardProgress, StudyLog } from './types.ts'
 
 beforeEach(async () => {
@@ -46,7 +46,7 @@ describe('loadStats', () => {
     expect(stats.today.goal).toBe(10)
   })
 
-  it('aggregates progress, logs and the daily goal, skipping cards of deleted words', async () => {
+  it('aggregates progress, logs and the daily goal, skipping built-in cards and cards of deleted words', async () => {
     await updateSettings({ dailyGoal: 5 })
     const mine = await createCustomWord({
       word: 'mine',
@@ -56,13 +56,20 @@ describe('loadStats', () => {
       exampleEn: '',
       exampleVi: '',
     })
+    const other = await createCustomWord({
+      word: 'other',
+      ipa: '',
+      pos: 'noun',
+      meaningVi: 'khác',
+      exampleEn: '',
+      exampleVi: '',
+    })
     await db.progress.bulkPut([
-      card('hello', 1),
-      card('goodbye', 3, { ignored: true }),
-      card('airport', 5),
-      card('not-a-word', 2), // word no longer exists
-      card('ticket', 0, { favorite: true }),
+      card('hello', 4), // built-in: hidden
+      card(other.id, 3, { ignored: true }),
       card(mine.id, 5),
+      card('custom:deleted', 2), // word no longer exists
+      card('custom:fav', 0, { favorite: true }),
     ])
     await db.studyLogs.bulkAdd([
       log('2026-10-23', { newLearned: 4, reviewed: 4, correct: 3, wrong: 1 }),
@@ -70,66 +77,73 @@ describe('loadStats', () => {
     ])
 
     const { stats } = await loadStats(TODAY)
-    expect(stats.levels).toEqual([1, 0, 1, 0, 2])
-    expect(stats.learned).toBe(4)
+    expect(stats.levels).toEqual([0, 0, 1, 0, 1])
+    expect(stats.learned).toBe(2)
     expect(stats.ignored).toBe(1)
-    expect(stats.mastered).toBe(2)
+    expect(stats.mastered).toBe(1)
     expect(stats.accuracy).toBeCloseTo(0.8)
     expect(stats.streak).toEqual({ current: 2, longest: 2, todayDone: true })
     expect(stats.today).toEqual({ newLearned: 2, reviewed: 1, goal: 5 })
   })
 })
 
-describe('loadHomeData', () => {
-  it('reports the next lesson size, due reviews and the next review day', async () => {
-    await updateSettings({ dailyGoal: 5, activeDeckIds: ['giao-tiep-hang-ngay'] })
-    await db.progress.bulkPut([
-      card('hello', 1, { dueDate: TODAY }),
-      card('goodbye', 2, { dueDate: '2026-10-27' }),
-      card('please', 2, { dueDate: '2026-10-27' }),
-    ])
-    const data = await loadHomeData(TODAY)
-    expect(data.lessonCount).toBe(5)
-    expect(data.hasActiveDecks).toBe(true)
-    expect(data.overview.dueCount).toBe(1)
-    expect(data.overview.next).toEqual({ date: '2026-10-27', count: 2 })
-    expect(data.stats.learned).toBe(3)
-  })
-
-  it('has no lesson when no deck is active, or when everything is learned', async () => {
-    await updateSettings({ activeDeckIds: [] })
-    expect(await loadHomeData(TODAY)).toMatchObject({ lessonCount: 0, hasActiveDecks: false })
-
-    await updateSettings({ activeDeckIds: ['giao-tiep-hang-ngay'], dailyGoal: 20 })
-    const all = (await import('../data/index.ts')).getDeckWords('giao-tiep-hang-ngay')
-    await db.progress.bulkPut(all.map((w) => card(w.id, 1, { dueDate: '2026-10-30' })))
-    const data = await loadHomeData(TODAY)
-    expect(data).toMatchObject({ lessonCount: 0, hasActiveDecks: true })
-    expect(data.overview.dueCount).toBe(0)
-  })
-})
-
-describe('loadHomeData newToday', () => {
-  it('counts only deck words first learned today', async () => {
-    await db.progress.bulkPut([
-      card('hello', 1, { dueDate: '2026-10-25', learnedAt: TODAY }),
-      card('custom:x', 1, { dueDate: '2026-10-25', learnedAt: TODAY }),
-      card('please', 1, { dueDate: '2026-10-24', learnedAt: '2026-10-23' }),
-    ])
-    expect((await loadHomeData(TODAY)).newToday).toBe(1)
-  })
-})
+const input = { ipa: '', pos: 'noun' as const, exampleEn: '', exampleVi: '' }
 
 describe('loadSelfStudyData', () => {
-  it('counts own words: total, unlearned, due today', async () => {
-    const a = await createCustomWord({ word: 'alpha', ipa: '', pos: 'noun', meaningVi: 'a', exampleEn: '', exampleVi: '' })
-    const b = await createCustomWord({ word: 'beta', ipa: '', pos: 'noun', meaningVi: 'b', exampleEn: '', exampleVi: '' })
-    await createCustomWord({ word: 'gamma', ipa: '', pos: 'noun', meaningVi: 'c', exampleEn: '', exampleVi: '' })
+  it('counts own words: total, unlearned, due today, next lesson, learned today', async () => {
+    await updateSettings({ dailyGoal: 5 })
+    const a = await createCustomWord({ ...input, word: 'alpha', meaningVi: 'a' })
+    const b = await createCustomWord({ ...input, word: 'beta', meaningVi: 'b' })
+    await createCustomWord({ ...input, word: 'gamma', meaningVi: 'c' })
     await db.progress.bulkPut([
-      card(a.id, 1, { dueDate: TODAY }),
+      card(a.id, 1, { dueDate: TODAY, learnedAt: TODAY }),
       card(b.id, 2, { dueDate: '2026-10-30' }),
-      card('hello', 1, { dueDate: TODAY }), // built-in: not counted
+      card('hello', 1, { dueDate: TODAY, learnedAt: TODAY }), // built-in: not counted
     ])
-    expect(await loadSelfStudyData(TODAY)).toEqual({ totalCount: 3, unlearnedCount: 1, dueCount: 1 })
+
+    const data = await loadSelfStudyData(TODAY)
+    expect(data).toMatchObject({
+      today: TODAY,
+      totalCount: 3,
+      unlearnedCount: 1,
+      dueCount: 1,
+      lessonCount: 1,
+      newToday: 1,
+    })
+    expect(data.overview.dueCount).toBe(1)
+    expect(data.overview.next).toEqual({ date: '2026-10-30', count: 1 })
+    expect(data.stats.learned).toBe(2)
+    expect(data.stats.today.goal).toBe(5)
+  })
+
+  it('caps the next lesson at the daily goal and is empty without own words', async () => {
+    expect(await loadSelfStudyData(TODAY)).toMatchObject({
+      totalCount: 0,
+      unlearnedCount: 0,
+      dueCount: 0,
+      lessonCount: 0,
+      newToday: 0,
+    })
+
+    await updateSettings({ dailyGoal: 2 })
+    for (const word of ['alpha', 'beta', 'gamma']) {
+      await createCustomWord({ ...input, word, meaningVi: word })
+    }
+    expect(await loadSelfStudyData(TODAY)).toMatchObject({ unlearnedCount: 3, lessonCount: 2 })
+  })
+
+  it('does not count ignored cards as due', async () => {
+    const a = await createCustomWord({ ...input, word: 'alpha', meaningVi: 'a' })
+    await db.progress.put(card(a.id, 2, { dueDate: TODAY, ignored: true }))
+    expect((await loadSelfStudyData(TODAY)).dueCount).toBe(0)
+  })
+
+  it('leaves built-in progress out of stats and levels', async () => {
+    const a = await createCustomWord({ ...input, word: 'alpha', meaningVi: 'a' })
+    await db.progress.bulkPut([card(a.id, 3), card('hello', 5), card('goodbye', 1)])
+    const { stats } = await loadSelfStudyData(TODAY)
+    expect(stats.learned).toBe(1)
+    expect(stats.levels).toEqual([0, 0, 1, 0, 0])
+    expect(stats.mastered).toBe(0)
   })
 })

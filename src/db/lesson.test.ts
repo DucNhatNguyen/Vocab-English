@@ -147,44 +147,32 @@ describe('completeLesson', () => {
 })
 
 describe('loadLessonWords', () => {
-  it('decks (default): up to dailyGoal deck words, never own words', async () => {
-    await updateSettings({ dailyGoal: 5, activeDeckIds: ['giao-tiep-hang-ngay'] })
-    await createCustomWord({
-      word: 'serendipity',
-      ipa: '',
-      pos: 'noun',
-      meaningVi: 'sự tình cờ may mắn',
-      exampleEn: '',
-      exampleVi: '',
-    })
+  const input = { ipa: '', pos: 'noun' as const, exampleEn: '', exampleVi: '' }
+
+  it('returns only own unlearned words, up to dailyGoal', async () => {
+    await updateSettings({ dailyGoal: 2, activeDeckIds: ['giao-tiep-hang-ngay'] })
+    for (const word of ['alpha', 'beta', 'gamma']) {
+      await createCustomWord({ ...input, word, meaningVi: word })
+    }
 
     const lesson = await loadLessonWords()
-    expect(lesson).toHaveLength(5)
-    expect(lesson[0].id).toBe('hello')
-    expect(lesson.some((w) => w.id.startsWith('custom:'))).toBe(false)
+    expect(lesson).toHaveLength(2)
+    expect(lesson.every((w) => w.id.startsWith('custom:'))).toBe(true)
   })
 
-  it('mine: only own unlearned words, up to dailyGoal, even with no active deck', async () => {
-    await updateSettings({ dailyGoal: 5, activeDeckIds: [] })
-    const mine = await createCustomWord({
-      word: 'serendipity',
-      ipa: '',
-      pos: 'noun',
-      meaningVi: 'sự tình cờ may mắn',
-      exampleEn: '',
-      exampleVi: '',
-    })
-    expect((await loadLessonWords('mine')).map((w) => w.id)).toEqual([mine.id])
-  })
-
-  it('skips learned words, keeps favorites, and follows changes in settings', async () => {
-    await updateSettings({ dailyGoal: 2 })
-    await db.progress.put(record({ wordId: 'hello', level: 2, dueDate: TODAY }))
-    await db.progress.put(record({ wordId: 'goodbye', favorite: true }))
-
-    expect((await loadLessonWords()).map((w) => w.id)).toEqual(['goodbye', 'please'])
-
-    await updateSettings({ activeDeckIds: [] })
+  it('is empty without own words, even with active decks', async () => {
+    await updateSettings({ dailyGoal: 5, activeDeckIds: ['giao-tiep-hang-ngay'] })
     expect(await loadLessonWords()).toEqual([])
+  })
+
+  it('skips learned words and keeps favorites', async () => {
+    await updateSettings({ dailyGoal: 5 })
+    const a = await createCustomWord({ ...input, word: 'alpha', meaningVi: 'a' })
+    const b = await createCustomWord({ ...input, word: 'beta', meaningVi: 'b' })
+    await db.progress.put(record({ wordId: a.id, level: 2, dueDate: TODAY }))
+    await db.progress.put(record({ wordId: b.id, favorite: true }))
+    await db.progress.put(record({ wordId: 'hello', favorite: true }))
+
+    expect((await loadLessonWords()).map((w) => w.id)).toEqual([b.id])
   })
 })

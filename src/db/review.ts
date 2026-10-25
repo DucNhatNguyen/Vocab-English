@@ -1,4 +1,4 @@
-import { getWord, words as builtInWords } from '../data/index.ts'
+import { words as builtInWords } from '../data/index.ts'
 import type { Word } from '../data/types.ts'
 import { reviewCard } from '../lib/srs.ts'
 import { today as localToday } from '../lib/date.ts'
@@ -56,11 +56,11 @@ export async function recordReviewAnswer(
 export interface ReviewData {
   /** Local date the data was read on. */
   today: string
-  /** Learned cards (level >= 1) whose word still exists, ignored ones included. */
+  /** Learned cards (level >= 1) of the user's own words that still exist, ignored ones included. */
   learned: CardProgress[]
   /** Words of the learned cards, by id. */
   words: Map<string, Word>
-  /** Every word that can be a distractor: built-in plus the user's own. */
+  /** Every word that can be a distractor: built-in plus the user's own (only own words are asked). */
   pool: Word[]
 }
 
@@ -78,9 +78,9 @@ export async function loadReviewData(today: string = localToday()): Promise<Revi
   const words = new Map<string, Word>()
   const learned: CardProgress[] = []
   for (const row of rows) {
-    const word = row.wordId.startsWith(CUSTOM_WORD_ID_PREFIX)
-      ? custom.get(row.wordId)
-      : getWord(row.wordId)
+    // Only the user's own words are studied; built-in progress stays stored but hidden
+    if (!row.wordId.startsWith(CUSTOM_WORD_ID_PREFIX)) continue
+    const word = custom.get(row.wordId)
     // A card whose word was deleted cannot be asked
     if (!word) continue
     words.set(row.wordId, word)

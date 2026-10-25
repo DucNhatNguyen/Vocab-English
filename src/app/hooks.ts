@@ -1,6 +1,5 @@
 import { useLiveQuery } from 'dexie-react-hooks'
 import { useMemo } from 'react'
-import { getWord } from '../data/index.ts'
 import type { Word } from '../data/types.ts'
 import { db } from '../db/db.ts'
 import type { CardProgress, CustomWord } from '../db/types.ts'
@@ -30,7 +29,7 @@ export function useCustomWords(): CustomWord[] {
 }
 
 /**
- * Built-in or custom ("custom:" prefix) word by id.
+ * Own word ("custom:" prefix) by id; built-in ids resolve to null (they are not shown any more).
  * undefined while loading, null when it does not exist.
  */
 export function useWord(wordId: string): Word | null | undefined {
@@ -39,6 +38,6 @@ export function useWord(wordId: string): Word | null | undefined {
     async () => (isCustom ? ((await getWordById(wordId)) ?? null) : null),
     [wordId, isCustom],
   )
-  if (!isCustom) return getWord(wordId) ?? null
+  if (!isCustom) return null
   return custom
 }

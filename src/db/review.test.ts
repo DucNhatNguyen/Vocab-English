@@ -173,17 +173,18 @@ describe('recordReviewAnswer', () => {
   })
 })
 
+const mineInput = {
+  word: 'serendipity',
+  ipa: '',
+  pos: 'noun' as const,
+  meaningVi: 'sự tình cờ may mắn',
+  exampleEn: '',
+  exampleVi: '',
+}
+
 describe('loadReviewData', () => {
-  it('returns learned cards with their words and a pool of built-in plus custom words', async () => {
-    const mine = await createCustomWord({
-      word: 'serendipity',
-      ipa: '',
-      pos: 'noun',
-      meaningVi: 'sự tình cờ may mắn',
-      exampleEn: '',
-      exampleVi: '',
-    })
-    await db.progress.put(record({ wordId: 'hello' }))
+  it('returns learned custom cards with their words and a pool of built-in plus custom words', async () => {
+    const mine = await createCustomWord(mineInput)
     await db.progress.put(record({ wordId: mine.id, level: 3 }))
     await db.progress.put(
       record({ wordId: 'goodbye', level: 0, dueDate: undefined, favorite: true }),
@@ -192,21 +193,36 @@ describe('loadReviewData', () => {
     const data = await loadReviewData(TODAY)
 
     expect(data.today).toBe(TODAY)
-    expect(data.learned.map((p) => p.wordId).sort()).toEqual(['hello', mine.id].sort())
-    expect(data.words.get('hello')?.word).toBe('hello')
+    expect(data.learned.map((p) => p.wordId)).toEqual([mine.id])
     expect(data.words.get(mine.id)?.word).toBe('serendipity')
     expect(data.pool.some((w) => w.id === mine.id)).toBe(true)
     expect(data.pool.some((w) => w.id === 'hello')).toBe(true)
   })
 
+  it('ignores progress of built-in words but keeps them in the pool', async () => {
+    const mine = await createCustomWord(mineInput)
+    await db.progress.put(record({ wordId: 'hello', level: 2, dueDate: '2026-10-20' }))
+    await db.progress.put(record({ wordId: mine.id, level: 1, dueDate: '2026-10-20' }))
+
+    const data = await loadReviewData(TODAY)
+
+    expect(data.learned.map((c) => c.wordId)).toEqual([mine.id])
+    expect(data.words.has('hello')).toBe(false)
+    expect(data.pool.some((w) => w.id === 'hello')).toBe(true)
+    // Hidden, not deleted
+    expect(await db.progress.get('hello')).toBeDefined()
+  })
+
   it('keeps ignored cards (for counts) and drops cards whose word no longer exists', async () => {
-    await db.progress.put(record({ wordId: 'hello', ignored: true }))
+    const mine = await createCustomWord(mineInput)
+    await db.progress.put(record({ wordId: mine.id, ignored: true }))
     await db.progress.put(record({ wordId: 'not-a-real-word' }))
     await db.progress.put(record({ wordId: 'custom:deleted' }))
 
     const data = await loadReviewData(TODAY)
 
-    expect(data.learned.map((p) => p.wordId)).toEqual(['hello'])
+    expect(data.learned.map((p) => p.wordId)).toEqual([mine.id])
     expect(data.words.has('not-a-real-word')).toBe(false)
+    expect(data.words.has('custom:deleted')).toBe(false)
   })
 })

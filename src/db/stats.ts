@@ -1,7 +1,6 @@
 import { today as localToday } from '../lib/date.ts'
 import { getReviewOverview, type ReviewOverview } from '../lib/review.ts'
-import { computeStats, type Stats } from '../lib/stats.ts'
-import { countNewToday, filterCardsBySource } from '../lib/studySource.ts'
+import { computeStats, countNewToday, type Stats } from '../lib/stats.ts'
 import { db } from './db.ts'
 import { loadLessonWords } from './lesson.ts'
 import { loadReviewData } from './review.ts'
@@ -27,53 +26,41 @@ export async function loadStats(today: string = localToday()): Promise<StatsData
   return { today, stats: computeStats(review.learned, logs, today, settings.dailyGoal) }
 }
 
-export interface HomeData extends StatsData {
-  /** Due / next reviews. */
-  overview: ReviewOverview
-  /** Words in the next new-word lesson (at most the daily goal); 0 when nothing is left to learn. */
-  lessonCount: number
-  /** Whether any deck is selected for learning. */
-  hasActiveDecks: boolean
-  /** Deck words first learned today (Tự học words are not part of the daily goal). */
-  newToday: number
-}
-
-/** Everything the Home dashboard shows. Live-query source, like `loadStats`. */
-export async function loadHomeData(today: string = localToday()): Promise<HomeData> {
-  const [review, logs, settings, lessonWords, progressRows] = await Promise.all([
-    loadReviewData(today),
-    db.studyLogs.toArray(),
-    getSettings(),
-    loadLessonWords(),
-    db.progress.toArray(),
-  ])
-  return {
-    today,
-    stats: computeStats(review.learned, logs, today, settings.dailyGoal),
-    overview: getReviewOverview(review.learned, today),
-    lessonCount: lessonWords.length,
-    hasActiveDecks: settings.activeDeckIds.length > 0,
-    newToday: countNewToday(progressRows, today, 'decks'),
-  }
-}
-
-export interface SelfStudyData {
+export interface SelfStudyData extends StatsData {
   /** All of the user's own words. */
   totalCount: number
   /** Own words not learned yet (no progress, or level 0). */
   unlearnedCount: number
-  /** Own words due for review today (ignored cards excluded, like the shared review). */
+  /** Own words due for review today (ignored cards excluded, like the review). */
   dueCount: number
+  /** Words in the next lesson (at most the daily goal); 0 when nothing is left to learn. */
+  lessonCount: number
+  /** Own words first learned today. */
+  newToday: number
+  /** Due / next reviews. */
+  overview: ReviewOverview
 }
 
-/** Numbers of the Tự học tab. Live-query friendly (reads progress and customWords). */
+/** Everything the own-words page shows. Live-query friendly (reads progress, customWords, studyLogs, settings). */
 export async function loadSelfStudyData(today: string = localToday()): Promise<SelfStudyData> {
-  const [review, customWords] = await Promise.all([loadReviewData(today), db.customWords.toArray()])
-  const mine = filterCardsBySource(review.learned, 'mine')
-  const learnedIds = new Set(mine.map((card) => card.wordId))
+  const [review, logs, settings, lessonWords, customWords, progressRows] = await Promise.all([
+    loadReviewData(today),
+    db.studyLogs.toArray(),
+    getSettings(),
+    loadLessonWords(),
+    db.customWords.toArray(),
+    db.progress.toArray(),
+  ])
+  const learnedIds = new Set(review.learned.map((card) => card.wordId))
+  const overview = getReviewOverview(review.learned, today)
   return {
+    today,
+    stats: computeStats(review.learned, logs, today, settings.dailyGoal),
     totalCount: customWords.length,
     unlearnedCount: customWords.filter((w) => !learnedIds.has(w.id)).length,
-    dueCount: getReviewOverview(mine, today).dueCount,
+    dueCount: overview.dueCount,
+    lessonCount: lessonWords.length,
+    newToday: countNewToday(progressRows, today),
+    overview,
   }
 }

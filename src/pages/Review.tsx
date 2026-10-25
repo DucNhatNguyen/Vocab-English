@@ -1,7 +1,7 @@
 import { useLiveQuery } from 'dexie-react-hooks'
 import { useMemo, useRef, useState } from 'react'
 import { TriangleAlert } from 'lucide-react'
-import { useLocation, useNavigate } from 'react-router'
+import { useNavigate } from 'react-router'
 import { paths } from '../app/paths.ts'
 import { useHideTabBar } from '../app/tabBarVisibility.ts'
 import IconBadge from '../components/IconBadge.tsx'
@@ -18,7 +18,6 @@ import {
   selectReviewRound,
 } from '../lib/review.ts'
 import { isSpeechSupported, speak } from '../lib/speech.ts'
-import { filterCardsBySource, isSelfStudySearch } from '../lib/studySource.ts'
 import ReviewRound from './review/ReviewRound.tsx'
 import ReviewStart from './review/ReviewStart.tsx'
 import ReviewSummary, { type SummaryItem } from './review/ReviewSummary.tsx'
@@ -38,17 +37,12 @@ type Phase =
 /** "Ôn tập Thời điểm vàng": start screen -> rounds of up to 20 questions -> summary. */
 export default function Review() {
   const navigate = useNavigate()
-  const { search } = useLocation()
-  // ?nguon=tu-hoc: review only the user's own words (Tự học); otherwise everything is due
-  const mine = isSelfStudySearch(search)
-  const source = mine ? 'mine' : 'all'
+  // Only the user's own words are reviewed; the page copy is reworked with the pages
+  const mine = true
   // Live: answers move cards out of the due list, so this is also the data of the next round
   const data = useLiveQuery(() => loadReviewData())
-  // Words and distractor pool in `data` stay complete, so distractors can come from every word
-  const learned = useMemo(
-    () => (data ? filterCardsBySource(data.learned, source) : undefined),
-    [data, source],
-  )
+  // `data.learned` holds own words only; the pool still has built-in words for distractors
+  const learned = data?.learned
   const [phase, setPhase] = useState<Phase>({ name: 'start' })
   // Words answered in this visit; a round never asks them again, even if the live data lags
   const reviewed = useRef(new Set<string>())

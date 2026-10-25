@@ -6,10 +6,10 @@ import { getSettings } from './settings.ts'
 import type { CardProgress } from './types.ts'
 
 /**
- * Words of the next new-word lesson of a source (`decks`: the daily lesson, `mine`: Tự học) for
- * the current settings and progress. Reads several tables, so it works as a `useLiveQuery` source.
+ * Words of the next new-word lesson (the user's own unlearned words, oldest first) for the current
+ * settings and progress. Reads several tables, so it works as a `useLiveQuery` source.
  */
-export async function loadLessonWords(source: 'decks' | 'mine' = 'decks'): Promise<Word[]> {
+export async function loadLessonWords(): Promise<Word[]> {
   const [settings, customWords, progressRows] = await Promise.all([
     getSettings(),
     db.customWords.toArray(),
@@ -18,9 +18,7 @@ export async function loadLessonWords(source: 'decks' | 'mine' = 'decks'): Promi
   return selectLessonWords({
     count: settings.dailyGoal,
     customWords,
-    activeDeckIds: settings.activeDeckIds,
     progress: new Map(progressRows.map((p: CardProgress) => [p.wordId, p])),
-    source,
   })
 }
 

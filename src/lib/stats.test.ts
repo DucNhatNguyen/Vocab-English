@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import type { CardProgress, StudyLog } from '../db/types.ts'
-import { computeStats, formatAccuracy } from './stats.ts'
+import { computeStats, countNewToday, formatAccuracy } from './stats.ts'
 
 const TODAY = '2026-10-24'
 
@@ -80,5 +80,33 @@ describe('formatAccuracy', () => {
     expect(formatAccuracy(0)).toBe('0%')
     expect(formatAccuracy(0.8333)).toBe('83%')
     expect(formatAccuracy(1)).toBe('100%')
+  })
+})
+
+describe('countNewToday', () => {
+  const today = '2026-10-25'
+  const mine = (wordId: string, over: Partial<CardProgress> = {}): CardProgress => ({
+    wordId,
+    level: 1,
+    correctCount: 0,
+    wrongCount: 0,
+    favorite: false,
+    ignored: false,
+    ...over,
+  })
+
+  it('counts only own words first learned today', () => {
+    const cards = [
+      mine('hello', { learnedAt: today }), // built-in: hidden
+      mine('custom:a', { learnedAt: today }),
+      mine('custom:b', { learnedAt: today }),
+      mine('custom:c', { learnedAt: '2026-10-24' }),
+      mine('custom:d', { level: 0, learnedAt: today }),
+    ]
+    expect(countNewToday(cards, today)).toBe(2)
+  })
+
+  it('is 0 for no cards', () => {
+    expect(countNewToday([], today)).toBe(0)
   })
 })

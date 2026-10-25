@@ -1,7 +1,7 @@
 import { useLiveQuery } from 'dexie-react-hooks'
 import { useState } from 'react'
 import { TriangleAlert } from 'lucide-react'
-import { useLocation, useNavigate } from 'react-router'
+import { useNavigate } from 'react-router'
 import { useSettings } from '../app/useSettings.ts'
 import { paths } from '../app/paths.ts'
 import { useHideTabBar } from '../app/tabBarVisibility.ts'
@@ -12,7 +12,6 @@ import { completeLesson, loadLessonWords } from '../db/lesson.ts'
 import { today } from '../lib/date.ts'
 import { scheduleTagSync } from '../lib/notifications.ts'
 import { speak } from '../lib/speech.ts'
-import { isSelfStudySearch } from '../lib/studySource.ts'
 import LessonCards from './learn/LessonCards.tsx'
 import LessonQuiz from './learn/LessonQuiz.tsx'
 import LessonStart from './learn/LessonStart.tsx'
@@ -28,12 +27,11 @@ type Phase =
 /** New-word lesson: start screen -> word cards -> quick check -> summary. */
 export default function Learn() {
   const navigate = useNavigate()
-  const { search } = useLocation()
-  // ?nguon=tu-hoc: learn only the user's own words (Tự học)
-  const mine = isSelfStudySearch(search)
+  // Only the user's own words are taught; the page copy is reworked with the pages
+  const mine = true
   const { dailyGoal } = useSettings()
   // Live: after a lesson is saved this becomes the next lesson (or empty)
-  const upcoming = useLiveQuery(() => loadLessonWords(mine ? 'mine' : 'decks'), [mine])
+  const upcoming = useLiveQuery(() => loadLessonWords())
   const [phase, setPhase] = useState<Phase>({ name: 'start' })
 
   // A failed save shows the tab bar again, so the user is never trapped

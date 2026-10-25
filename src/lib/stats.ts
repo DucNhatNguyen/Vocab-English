@@ -1,4 +1,5 @@
 import type { CardProgress, StudyLog } from '../db/types.ts'
+import { isCustomWordId } from '../db/words.ts'
 import { MAX_LEVEL } from './srs.ts'
 import { computeStreak, recentDays, type RecentDay, type StreakInfo } from './streak.ts'
 
@@ -76,4 +77,13 @@ export function computeStats(
 /** "83%", or "—" when there is no answer yet. */
 export function formatAccuracy(accuracy: number | null): string {
   return accuracy === null ? '—' : `${Math.round(accuracy * 100)}%`
+}
+
+/** Own words first learned today ("Hôm nay: x/N từ mới"). */
+export function countNewToday(cards: Iterable<CardProgress>, today: string): number {
+  let count = 0
+  for (const card of cards) {
+    if (card.level >= 1 && card.learnedAt === today && isCustomWordId(card.wordId)) count += 1
+  }
+  return count
 }

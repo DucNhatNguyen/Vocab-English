@@ -30,28 +30,27 @@ describe('loadNotebookEntries', () => {
     expect(await loadNotebookEntries()).toEqual([])
   })
 
-  it('returns learned and level-0 favorite words, built-in and custom', async () => {
-    const [a, b, c] = words
-    const mine = await createCustomWord({
-      word: 'mango',
-      ipa: '',
-      pos: 'noun',
-      meaningVi: 'quả xoài',
-      exampleEn: '',
-      exampleVi: '',
-    })
+  it('returns learned and level-0 favorite own words only', async () => {
+    const [a, b] = words
+    const input = { ipa: '', pos: 'noun' as const, exampleEn: '', exampleVi: '' }
+    const mine = await createCustomWord({ ...input, word: 'mango', meaningVi: 'quả xoài' })
+    const fav = await createCustomWord({ ...input, word: 'kiwi', meaningVi: 'quả kiwi' })
+    const neither = await createCustomWord({ ...input, word: 'plum', meaningVi: 'quả mận' })
     await db.progress.bulkPut([
+      record({ wordId: mine.id, level: 1, ignored: true }),
+      record({ wordId: fav.id, level: 0, favorite: true, dueDate: undefined }),
+      record({ wordId: neither.id, level: 0, favorite: false, dueDate: undefined }),
+      // Built-in progress stays stored but is hidden
       record({ wordId: a.id, level: 3 }),
       record({ wordId: b.id, level: 0, favorite: true, dueDate: undefined }),
-      record({ wordId: mine.id, level: 1, ignored: true }),
-      record({ wordId: c.id, level: 0, favorite: false, dueDate: undefined }), // neither
     ])
 
     const entries = await loadNotebookEntries()
-    expect(entries.map((e) => e.word.id).sort()).toEqual([a.id, b.id, mine.id].sort())
+    expect(entries.map((e) => e.word.id).sort()).toEqual([mine.id, fav.id].sort())
     const own = entries.find((e) => e.word.id === mine.id)
     expect(own?.word.word).toBe('mango')
     expect(own?.progress.ignored).toBe(true)
+    expect(await db.progress.get(a.id)).toBeDefined()
   })
 
   it('skips records whose word no longer exists', async () => {

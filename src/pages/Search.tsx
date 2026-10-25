@@ -6,7 +6,6 @@ import { paths } from '../app/paths.ts'
 import IconBadge from '../components/IconBadge.tsx'
 import PageHeader from '../components/PageHeader.tsx'
 import WordRow from '../components/WordRow.tsx'
-import { words } from '../data/index.ts'
 import { CUSTOM_WORD_ID_PREFIX } from '../db/customWords.ts'
 import { normalizeText, searchWords } from '../lib/search.ts'
 
@@ -20,11 +19,7 @@ export default function Search() {
     inputRef.current?.focus()
   }, [])
 
-  // Own words first, so they win ties against built-in words of the same rank
-  const results = useMemo(
-    () => searchWords(query, [...customWords, ...words]),
-    [query, customWords],
-  )
+  const results = useMemo(() => searchWords(query, customWords), [query, customWords])
   const normalizedQuery = normalizeText(query)
   const hasQuery = normalizedQuery !== ''
   // Offer to add the typed word unless that exact headword is already listed
